@@ -13,6 +13,9 @@ date_generation: 2025-12-10 18:54:53
 
 ## 어휘
 
-- **김치** → kimchi
-- **불고기** → bulgogi
-- **비빔밥** → bibimbap
+- **김치** → kimchi (chou fermenté épicé)
+- **냉면** → naengmyeon (nouilles froides)
+- **달콤해요** → dalkomhaeyo (sucré)
+- **매워요** → maewoyo (épicé)
+- **불고기** → bulgogi (viande marinée grillée)
+- **비빔밥** → bibimbap (mélange de riz et légumes)

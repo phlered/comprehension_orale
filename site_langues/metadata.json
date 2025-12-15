@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-12-15T16:48:07.663669",
+  "generated_at": "2025-12-15T16:52:47.283876",
   "total_resources": 50,
   "languages": [
-    "nl",
-    "all",
+    "eng",
     "fr",
+    "nl",
     "cor",
     "esp",
-    "eng"
+    "all"
   ],
   "resources": [
     {
@@ -66,7 +66,7 @@
       "date": "2025-12-10 18:54:53",
       "longueur": 50,
       "text_preview": "안녕하세요! 저는 한국 음식을 좋아해요. 김치, 불고기, 비빔밥을 좋아해요. 김치는 매워요. 불고기는 달콤해요. 비빔밥은 채소와 고기가 있어요. 냉면도 좋아요. 냉면은 차가워요. 맛있어요! 여러분은 어떤 음식을 좋아해요? 한국 음식 먹어보세요!",
-      "vocab_count": 3,
+      "vocab_count": 6,
       "audio_path": "resources/la_nourriture_20251210_1854/audio.mp3",
       "text_path": "resources/la_nourriture_20251210_1854/text.md"
     },

@@ -8,6 +8,7 @@ import os
 import json
 import re
 import shutil
+import unicodedata
 from pathlib import Path
 from datetime import datetime
 
@@ -39,6 +40,15 @@ LANGUAGE_NAMES = {
     "nl": "Néerlandais",
     "cor": "Coréen"
 }
+
+
+def slugify(value):
+    """Normalise en ASCII sûr pour les URLs/dossiers (accents supprimés)."""
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = re.sub(r"[^A-Za-z0-9]+", "_", value)
+    value = re.sub(r"_+", "_", value).strip("_")
+    return value or "resource"
 
 
 def extract_frontmatter(text_file):
@@ -109,9 +119,11 @@ def scan_docs_directory():
             print(f"⚠️  Langue inconnue '{langue_full}' dans : {folder.name}")
             continue
         
-        # Créer l'objet ressource
+        slug = slugify(folder.name)
+
+        # Créer l'objet ressource (id = slug pour stabilité côté site)
         resource = {
-            "id": folder.name,
+            "id": slug,
             "langue": langue_code,
             "prompt": metadata.get('prompt', ''),
             "niveau": metadata.get('niveau', ''),
@@ -122,19 +134,20 @@ def scan_docs_directory():
             "longueur": int(metadata.get('longueur', 0)),
             "text_preview": text_content[:200] + "..." if len(text_content) > 200 else text_content,
             "vocab_count": len(re.findall(r'^\s*[-*]\s+\*\*', vocab_content, re.MULTILINE)),
-            "audio_path": f"resources/{folder.name}/audio.mp3",
-            "text_path": f"resources/{folder.name}/text.md"
+            "audio_path": f"resources/{slug}/audio.mp3",
+            "text_path": f"resources/{slug}/text.md"
         }
         
         resources.append(resource)
-        print(f"✅ {folder.name} - {langue_full} - {resource['prompt'][:50]}")
+        print(f"✅ {folder.name} -> {slug} - {langue_full} - {resource['prompt'][:50]}")
     
     return resources
 
 
 def copy_resources():
-    """Copie les ressources (audio + text.md) vers site_langues/resources/"""
-    # Créer le répertoire resources s'il n'existe pas
+    """Copie les ressources (audio + text.md) vers site_langues/resources/, en nettoyant d'abord."""
+    if RESOURCES_DIR.exists():
+        shutil.rmtree(RESOURCES_DIR)
     RESOURCES_DIR.mkdir(parents=True, exist_ok=True)
     
     for folder in DOCS_DIR.iterdir():
@@ -147,11 +160,10 @@ def copy_resources():
         if not text_file.exists() or not audio_file.exists():
             continue
         
-        # Créer le dossier de destination
-        dest_folder = RESOURCES_DIR / folder.name
-        dest_folder.mkdir(exist_ok=True)
+        slug = slugify(folder.name)
+        dest_folder = RESOURCES_DIR / slug
+        dest_folder.mkdir(parents=True, exist_ok=True)
         
-        # Copier les fichiers
         shutil.copy2(audio_file, dest_folder / "audio.mp3")
         shutil.copy2(text_file, dest_folder / "text.md")
 

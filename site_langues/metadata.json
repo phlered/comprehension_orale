@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-12-15T15:58:22.209434",
+  "generated_at": "2025-12-15T16:38:07.578080",
   "total_resources": 50,
   "languages": [
+    "nl",
+    "all",
+    "fr",
     "cor",
     "eng",
-    "fr",
-    "nl",
-    "esp",
-    "all"
+    "esp"
   ],
   "resources": [
     {
@@ -41,7 +41,7 @@
       "text_path": "resources/comment_fonctionne_l_20251210_2037/text.md"
     },
     {
-      "id": "pourquoi_y_a_t'il_au_20251210_2037",
+      "id": "pourquoi_y_a_t_il_au_20251210_2037",
       "langue": "nl",
       "prompt": "Pourquoi y a t'il autant de canaux à Amsterdam ?",
       "niveau": "A1",
@@ -52,8 +52,8 @@
       "longueur": 150,
       "text_preview": "Amsterdam heeft veel kanalen. Er zijn meer dan honderd kilometer kanalen in de stad. Maar waarom zoveel kanalen?\n\nVroeger was Amsterdam een belangrijke handelsstad. Schepen brachten goederen naar de s...",
       "vocab_count": 32,
-      "audio_path": "resources/pourquoi_y_a_t'il_au_20251210_2037/audio.mp3",
-      "text_path": "resources/pourquoi_y_a_t'il_au_20251210_2037/text.md"
+      "audio_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/audio.mp3",
+      "text_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/text.md"
     },
     {
       "id": "la_nourriture_20251210_1854",
@@ -116,7 +116,7 @@
       "text_path": "resources/villancicos_y_concie_20251215_1550/text.md"
     },
     {
-      "id": "menú_navideño_saluda_20251215_1549",
+      "id": "menu_navideno_saluda_20251215_1549",
       "langue": "esp",
       "prompt": "Menú navideño saludable",
       "niveau": "B1",
@@ -127,8 +127,8 @@
       "longueur": 200,
       "text_preview": "El menú navideño puede ser tanto delicioso como saludable, sin perder la esencia de la celebración. Para empezar, una buena opción es ofrecer una crema de calabaza como entrante. Este plato es ligero ...",
       "vocab_count": 39,
-      "audio_path": "resources/menú_navideño_saluda_20251215_1549/audio.mp3",
-      "text_path": "resources/menú_navideño_saluda_20251215_1549/text.md"
+      "audio_path": "resources/menu_navideno_saluda_20251215_1549/audio.mp3",
+      "text_path": "resources/menu_navideno_saluda_20251215_1549/text.md"
     },
     {
       "id": "comment_se_deroule_u_20251210_2035",
@@ -146,7 +146,7 @@
       "text_path": "resources/comment_se_deroule_u_20251210_2035/text.md"
     },
     {
-      "id": "pourquoi_les_pays-ba_20251210_2037",
+      "id": "pourquoi_les_pays_ba_20251210_2037",
       "langue": "nl",
       "prompt": "Pourquoi les Pays-Bas sont-ils connus pour leurs moulins à vent et leurs tulipes ?",
       "niveau": "A1",
@@ -157,8 +157,8 @@
       "longueur": 150,
       "text_preview": "De Nederlanden zijn beroemd om molens en tulpen. Maar waarom?\n\nIn Nederland is er veel wind. De molens gebruiken de wind. Ze malen graan en pompen water. Vroeger waren er veel molens. Nu zijn er minde...",
       "vocab_count": 28,
-      "audio_path": "resources/pourquoi_les_pays-ba_20251210_2037/audio.mp3",
-      "text_path": "resources/pourquoi_les_pays-ba_20251210_2037/text.md"
+      "audio_path": "resources/pourquoi_les_pays_ba_20251210_2037/audio.mp3",
+      "text_path": "resources/pourquoi_les_pays_ba_20251210_2037/text.md"
     },
     {
       "id": "test_vocabulaire_20251210_1900",
@@ -236,7 +236,7 @@
       "text_path": "resources/demander_comment_all_20251210_2032/text.md"
     },
     {
-      "id": "generer_un_dialogue__20251210_1246",
+      "id": "generer_un_dialogue_20251210_1246",
       "langue": "all",
       "prompt": "Générer un dialogue entre deux jeunes Allemands débattant du Tracht (vêtement traditionnel bavarois ou autrichien) : l'un affirme que c'est un reflet d'identité, l'autre qu'il s'agit uniquement d'un phénomène de mode commercial.",
       "niveau": "B2",
@@ -247,8 +247,8 @@
       "longueur": 200,
       "text_preview": "**Paul**: Hallo Lisa! Ich habe gestern meine neue Lederhose gekauft. Es ist erstaunlich, wie stolz ich mich fühle, wenn ich sie trage. Für mich ist der Tracht ein bedeutendes Symbol unserer kulturelle...",
       "vocab_count": 23,
-      "audio_path": "resources/generer_un_dialogue__20251210_1246/audio.mp3",
-      "text_path": "resources/generer_un_dialogue__20251210_1246/text.md"
+      "audio_path": "resources/generer_un_dialogue_20251210_1246/audio.mp3",
+      "text_path": "resources/generer_un_dialogue_20251210_1246/text.md"
     },
     {
       "id": "family_photo_album_20251215_1535",
@@ -311,7 +311,7 @@
       "text_path": "resources/recycling_habits_20251215_1537/text.md"
     },
     {
-      "id": "decoración_del_hogar_20251215_1550",
+      "id": "decoracion_del_hogar_20251215_1550",
       "langue": "esp",
       "prompt": "Decoración del hogar en Navidad",
       "niveau": "B1",
@@ -322,8 +322,8 @@
       "longueur": 200,
       "text_preview": "La Navidad es una época especial del año en la que muchas personas decoran sus hogares para crear un ambiente festivo y acogedor. En España, la tradición de decorar la casa para esta temporada incluye...",
       "vocab_count": 46,
-      "audio_path": "resources/decoración_del_hogar_20251215_1550/audio.mp3",
-      "text_path": "resources/decoración_del_hogar_20251215_1550/text.md"
+      "audio_path": "resources/decoracion_del_hogar_20251215_1550/audio.mp3",
+      "text_path": "resources/decoracion_del_hogar_20251215_1550/text.md"
     },
     {
       "id": "carta_a_los_reyes_ma_20251215_1549",
@@ -341,7 +341,7 @@
       "text_path": "resources/carta_a_los_reyes_ma_20251215_1549/text.md"
     },
     {
-      "id": "comment_les_pays-bas_20251210_2038",
+      "id": "comment_les_pays_bas_20251210_2038",
       "langue": "nl",
       "prompt": "Comment les Pays-Bas se préparent-ils au réchauffement climatique ?",
       "niveau": "A1",
@@ -352,8 +352,8 @@
       "longueur": 150,
       "text_preview": "De Nederlanders denken veel aan het klimaat. Nederland is een klein land. Er is veel water. De zee is dichtbij. Het regent vaak in Nederland. Soms is er te veel regen. Dat is een probleem. \n\nDe Nederl...",
       "vocab_count": 31,
-      "audio_path": "resources/comment_les_pays-bas_20251210_2038/audio.mp3",
-      "text_path": "resources/comment_les_pays-bas_20251210_2038/text.md"
+      "audio_path": "resources/comment_les_pays_bas_20251210_2038/audio.mp3",
+      "text_path": "resources/comment_les_pays_bas_20251210_2038/text.md"
     },
     {
       "id": "die_jahreszeiten_20251210_1152",
@@ -491,7 +491,7 @@
       "text_path": "resources/demander_des_informa_20251210_2033/text.md"
     },
     {
-      "id": "tradiciones_navideña_20251215_1547",
+      "id": "tradiciones_navidena_20251215_1547",
       "langue": "esp",
       "prompt": "Tradiciones navideñas en España",
       "niveau": "B1",
@@ -502,8 +502,8 @@
       "longueur": 200,
       "text_preview": "La Navidad en España es una época llena de tradiciones y celebraciones que varían de una región a otra. Uno de los eventos más esperados es la \"Nochebuena\", que se celebra el 24 de diciembre. En esta ...",
       "vocab_count": 46,
-      "audio_path": "resources/tradiciones_navideña_20251215_1547/audio.mp3",
-      "text_path": "resources/tradiciones_navideña_20251215_1547/text.md"
+      "audio_path": "resources/tradiciones_navidena_20251215_1547/audio.mp3",
+      "text_path": "resources/tradiciones_navidena_20251215_1547/text.md"
     },
     {
       "id": "appel_au_telephone_p_20251210_2034",
@@ -551,7 +551,7 @@
       "text_path": "resources/quelles_sont_les_spe_20251210_2035/text.md"
     },
     {
-      "id": "demander_où_se_trouv_20251210_2033",
+      "id": "demander_ou_se_trouv_20251210_2033",
       "langue": "nl",
       "prompt": "Demander où se trouve la gare.",
       "niveau": "A1",
@@ -562,11 +562,11 @@
       "longueur": 150,
       "text_preview": "Hallo! Ik ben Anna. Ik ben in een nieuwe stad. Ik zoek de trein. Waar is het station? Ik zie een man op straat. Ik loop naar hem toe. \n\n\"Hallo, meneer,\" zeg ik. \"Kunt u mij helpen?\" \n\nDe man lacht. \"N...",
       "vocab_count": 29,
-      "audio_path": "resources/demander_où_se_trouv_20251210_2033/audio.mp3",
-      "text_path": "resources/demander_où_se_trouv_20251210_2033/text.md"
+      "audio_path": "resources/demander_ou_se_trouv_20251210_2033/audio.mp3",
+      "text_path": "resources/demander_ou_se_trouv_20251210_2033/text.md"
     },
     {
-      "id": "demander_où_se_trouv_20251210_2034",
+      "id": "demander_ou_se_trouv_20251210_2034",
       "langue": "nl",
       "prompt": "Demander où se trouve le supermarché le plus proche.",
       "niveau": "A1",
@@ -577,8 +577,8 @@
       "longueur": 150,
       "text_preview": "Hallo!\n\nIk ben Sara. Ik ben nieuw hier in de stad. Ik wil naar de supermarkt. Maar, ik weet niet waar de supermarkt is. Kun je mij helpen?\n\nIk loop op straat. Ik zie een man. Hij is oud en vriendelijk...",
       "vocab_count": 30,
-      "audio_path": "resources/demander_où_se_trouv_20251210_2034/audio.mp3",
-      "text_path": "resources/demander_où_se_trouv_20251210_2034/text.md"
+      "audio_path": "resources/demander_ou_se_trouv_20251210_2034/audio.mp3",
+      "text_path": "resources/demander_ou_se_trouv_20251210_2034/text.md"
     },
     {
       "id": "die_tiere_20251210_1901",
@@ -656,7 +656,7 @@
       "text_path": "resources/ecrire_un_court_essa_20251210_1252/text.md"
     },
     {
-      "id": "demander_l'heure_d'o_20251210_2033",
+      "id": "demander_l_heure_d_o_20251210_2033",
       "langue": "nl",
       "prompt": "Demander l'heure d'ouverture d'un musée.",
       "niveau": "A1",
@@ -667,8 +667,8 @@
       "longueur": 150,
       "text_preview": "Jan en Lisa zijn op vakantie in Amsterdam. Ze willen het Van Gogh Museum bezoeken. Ze lopen naar het informatiepunt.\n\nJan: \"Hallo! Hoe laat gaat het museum open?\"\n\nMedewerker: \"Hallo! Het museum gaat ...",
       "vocab_count": 32,
-      "audio_path": "resources/demander_l'heure_d'o_20251210_2033/audio.mp3",
-      "text_path": "resources/demander_l'heure_d'o_20251210_2033/text.md"
+      "audio_path": "resources/demander_l_heure_d_o_20251210_2033/audio.mp3",
+      "text_path": "resources/demander_l_heure_d_o_20251210_2033/text.md"
     },
     {
       "id": "nochevieja_y_las_uva_20251215_1549",
@@ -731,7 +731,7 @@
       "text_path": "resources/quelles_sont_les_act_20251210_2036/text.md"
     },
     {
-      "id": "voluntariado_navideñ_20251215_1549",
+      "id": "voluntariado_naviden_20251215_1549",
       "langue": "esp",
       "prompt": "Voluntariado navideño",
       "niveau": "B1",
@@ -742,11 +742,11 @@
       "longueur": 200,
       "text_preview": "Cada año, cuando llega la Navidad, muchas personas en España deciden participar en actividades de voluntariado para ayudar a los demás. El espíritu navideño inspira a la gente a compartir su tiempo y ...",
       "vocab_count": 42,
-      "audio_path": "resources/voluntariado_navideñ_20251215_1549/audio.mp3",
-      "text_path": "resources/voluntariado_navideñ_20251215_1549/text.md"
+      "audio_path": "resources/voluntariado_naviden_20251215_1549/audio.mp3",
+      "text_path": "resources/voluntariado_naviden_20251215_1549/text.md"
     },
     {
-      "id": "au_magasin,_est-il_p_20251210_2034",
+      "id": "au_magasin_est_il_p_20251210_2034",
       "langue": "nl",
       "prompt": "Au magasin, est-il possible de payer par carte bancaire ?",
       "niveau": "A1",
@@ -757,8 +757,8 @@
       "longueur": 150,
       "text_preview": "Titel: Betalen in de Winkel\n\nIn de winkel is het druk. Mensen kopen brood, melk en fruit. De winkel is groot en er zijn veel producten. Linda wil betalen. Ze vraagt: \"Kan ik met de kaart betalen?\" \n\nD...",
       "vocab_count": 31,
-      "audio_path": "resources/au_magasin,_est-il_p_20251210_2034/audio.mp3",
-      "text_path": "resources/au_magasin,_est-il_p_20251210_2034/text.md"
+      "audio_path": "resources/au_magasin_est_il_p_20251210_2034/audio.mp3",
+      "text_path": "resources/au_magasin_est_il_p_20251210_2034/text.md"
     }
   ]
 }

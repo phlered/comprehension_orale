@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-15T18:04:15.571181",
+  "generated_at": "2025-12-15T21:54:11.701100",
   "total_resources": 60,
   "languages": [
-    "it",
-    "esp",
-    "all",
-    "cor",
     "nl",
+    "it",
     "fr",
-    "eng"
+    "all",
+    "eng",
+    "esp",
+    "cor"
   ],
   "resources": [
     {
@@ -141,8 +141,8 @@
       "genre": "femme",
       "date": "2025-12-15 17:56:54",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "L'alimentazione è molto importante per la salute. Mangiare bene aiuta a sentirsi forti e felici. È bene mangiare vari tipi di cibo ogni giorno. La frutta è buona e dolce. Le mele e le banane sono molt...",
+      "vocab_count": 28,
       "audio_path": "resources/l_alimentazione_20251215_1756/audio.mp3",
       "text_path": "resources/l_alimentazione_20251215_1756/text.md"
     },
@@ -156,8 +156,8 @@
       "genre": "homme",
       "date": "2025-12-15 17:59:08",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Il campeggio si trova vicino al lago. È un bel posto per passare le vacanze. Per arrivare al campeggio, prendi la strada a destra dopo il ponte. Ci sono molti alberi e fiori intorno. Il campeggio ha t...",
+      "vocab_count": 27,
       "audio_path": "resources/dove_si_trova_il_cam_20251215_1758/audio.mp3",
       "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
     },
@@ -426,8 +426,8 @@
       "genre": "femme",
       "date": "2025-12-15 17:52:59",
       "longueur": 100,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Oggi io e i miei amici facciamo un’escursione in montagna. Partiamo presto la mattina. Indossiamo scarpe comode e portiamo lo zaino. Nel zaino abbiamo acqua, panini e una mappa. Il cielo è blu e il so...",
+      "vocab_count": 20,
       "audio_path": "resources/un_escursione_in_mon_20251215_1752/audio.mp3",
       "text_path": "resources/un_escursione_in_mon_20251215_1752/text.md"
     },
@@ -456,8 +456,8 @@
       "genre": "femme",
       "date": "2025-12-15 18:02:07",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Sono arrivato in Italia e sono in un albergo. L'albergo è piccolo ma molto carino. Alla reception, c'è una signora gentile. Il suo nome è Maria. Lei parla inglese e mi aiuta con il check-in. La mia ca...",
+      "vocab_count": 28,
       "audio_path": "resources/in_albergo_20251215_1801/audio.mp3",
       "text_path": "resources/in_albergo_20251215_1801/text.md"
     },
@@ -471,8 +471,8 @@
       "genre": "homme",
       "date": "2025-12-15 18:02:35",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "I colori sono molto belli. Il rosso è un colore vivace. Le mele e i pomodori sono rossi. Il blu è il colore del cielo e del mare. Mi piace il blu perché è calmo. \n\nIl giallo è il colore del sole. I fi...",
+      "vocab_count": 28,
       "audio_path": "resources/i_colori_20251215_1802/audio.mp3",
       "text_path": "resources/i_colori_20251215_1802/text.md"
     },
@@ -621,8 +621,8 @@
       "genre": "homme",
       "date": "2025-12-15 17:58:37",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "La mia famiglia è piccola ma molto importante per me. Ho una mamma, un papà e una sorella. La mia mamma si chiama Anna. Lei è insegnante. Mio papà si chiama Marco. Lui lavora in un ufficio. La mia sor...",
+      "vocab_count": 30,
       "audio_path": "resources/la_famiglia_20251215_1758/audio.mp3",
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
     },
@@ -666,8 +666,8 @@
       "genre": "femme",
       "date": "2025-12-15 18:03:04",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Ciao! Oggi voglio parlare di comprare i vestiti. Mi piace andare al negozio di vestiti. Il sabato è il giorno migliore per fare shopping. Io vado con mia mamma e la mia amica Anna. Il negozio ha molti...",
+      "vocab_count": 28,
       "audio_path": "resources/comprare_i_vestiti_20251215_1802/audio.mp3",
       "text_path": "resources/comprare_i_vestiti_20251215_1802/text.md"
     },
@@ -711,8 +711,8 @@
       "genre": "femme",
       "date": "2025-12-15 17:59:27",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Gli animali domestici sono molto amati dalle persone. I cani e i gatti sono i più comuni. Un cane è un amico fedele. Gli piace giocare e fare passeggiate. Un gatto è indipendente e ama dormire. Spesso...",
+      "vocab_count": 27,
       "audio_path": "resources/gli_animali_domestic_20251215_1759/audio.mp3",
       "text_path": "resources/gli_animali_domestic_20251215_1759/text.md"
     },
@@ -771,8 +771,8 @@
       "genre": "homme",
       "date": "2025-12-15 18:00:04",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "I giorni della settimana sono sette. Il primo giorno è lunedì. Lunedì inizia la settimana. Molte persone lavorano o vanno a scuola. Dopo lunedì c'è martedì. Martedì è il secondo giorno. Poi viene merc...",
+      "vocab_count": 28,
       "audio_path": "resources/i_giorni_della_setti_20251215_1759/audio.mp3",
       "text_path": "resources/i_giorni_della_setti_20251215_1759/text.md"
     },
@@ -891,8 +891,8 @@
       "genre": "homme",
       "date": "2025-12-15 18:03:51",
       "longueur": 150,
-      "text_preview": "",
-      "vocab_count": 0,
+      "text_preview": "Ciao! Mi chiamo Marco. Ho venti anni e vengo dall'Italia. Abito a Roma, ma la mia famiglia è di Napoli. Sono studente all'università. Studio ingegneria. Mi piace molto la matematica. \n\nHo una sorella....",
+      "vocab_count": 28,
       "audio_path": "resources/presentarsi_20251215_1803/audio.mp3",
       "text_path": "resources/presentarsi_20251215_1803/text.md"
     },

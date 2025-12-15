@@ -1,13 +1,14 @@
 {
-  "generated_at": "2025-12-15T16:52:47.283876",
-  "total_resources": 50,
+  "generated_at": "2025-12-15T17:53:15.204277",
+  "total_resources": 51,
   "languages": [
-    "eng",
-    "fr",
-    "nl",
-    "cor",
     "esp",
-    "all"
+    "it",
+    "nl",
+    "eng",
+    "all",
+    "fr",
+    "cor"
   ],
   "resources": [
     {
@@ -384,6 +385,21 @@
       "vocab_count": 29,
       "audio_path": "resources/rediger_un_article_d_20251210_1248/audio.mp3",
       "text_path": "resources/rediger_un_article_d_20251210_1248/text.md"
+    },
+    {
+      "id": "un_escursione_in_mon_20251215_1752",
+      "langue": "it",
+      "prompt": "Un'escursione in montagna",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-15 17:52:59",
+      "longueur": 100,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/un_escursione_in_mon_20251215_1752/audio.mp3",
+      "text_path": "resources/un_escursione_in_mon_20251215_1752/text.md"
     },
     {
       "id": "walking_in_the_park_20251215_1538",

@@ -29,7 +29,8 @@ LANGUAGE_MAP = {
     "Espagnol (Espagne)": "esp",
     "Espagnol (Amérique latine)": "esp",
     "Néerlandais": "nl",
-    "Coréen": "cor"
+    "Coréen": "cor",
+    "Italien": "it"
 }
 
 LANGUAGE_NAMES = {
@@ -38,7 +39,8 @@ LANGUAGE_NAMES = {
     "eng": "Anglais",
     "esp": "Espagnol",
     "nl": "Néerlandais",
-    "cor": "Coréen"
+    "cor": "Coréen",
+    "it": "Italien"
 }
 
 

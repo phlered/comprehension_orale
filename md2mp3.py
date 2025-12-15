@@ -197,6 +197,20 @@ class VoiceConfig:
                 "ko-KR-GookMinNeural",
                 "ko-KR-HyunsuNeural",
             ]
+        },
+        "it": {
+            "female": [
+                "it-IT-ElsaNeural",
+                "it-IT-IsabellaNeural",
+                "it-IT-DiegoNeural",
+                "it-IT-GiuseppeNeural",
+            ],
+            "male": [
+                "it-IT-DiegoNeural",
+                "it-IT-GiuseppeNeural",
+                "it-IT-LucioNeural",
+                "it-IT-FabioNeural",
+            ]
         }
     }
 
@@ -335,6 +349,14 @@ class VoiceConfig:
         "bongjin": "ko-KR-BongJinNeural",
         "gookmin": "ko-KR-GookMinNeural",
         "hyunsu": "ko-KR-HyunsuNeural",
+        
+        # Italien
+        "elsa": "it-IT-ElsaNeural",
+        "isabella": "it-IT-IsabellaNeural",
+        "diego": "it-IT-DiegoNeural",
+        "giuseppe": "it-IT-GiuseppeNeural",
+        "lucio": "it-IT-LucioNeural",
+        "fabio": "it-IT-FabioNeural",
     }
 
     @classmethod
@@ -935,7 +957,7 @@ Exemples:
     parser.add_argument(
         "-l", "--langue",
         required=True,
-        choices=['fr', 'all', 'eng', 'us', 'esp', 'hisp', 'nl', 'co'],
+        choices=['fr', 'all', 'eng', 'us', 'esp', 'hisp', 'nl', 'co', 'it'],
         help="Langue (fr=français, all=allemand, eng=anglais UK, us=anglais US, esp=espagnol, hisp=hispanique, nl=néerlandais, co=coréen)"
     )
 

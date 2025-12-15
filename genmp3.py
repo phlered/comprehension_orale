@@ -88,6 +88,14 @@ class LanguageConfig:
             "label_vocab": "어휘",
             "md2mp3_code": "co",
             "description": "en coréen"
+        },
+        "it": {
+            "code": "it",
+            "display": "Italien",
+            "label_text": "Testo",
+            "label_vocab": "Vocabolario",
+            "md2mp3_code": "it",
+            "description": "en italien"
         }
     }
 
@@ -207,6 +215,9 @@ Pour chaque mot :
         elif langue_code == "cor":
             vocab_prompt += "- Pour chaque mot coréen, donne d'abord la romanisation (phonétique), puis la traduction en français\n"
             vocab_prompt += "Format strict (un mot par ligne) :\nmot_coréen → romanisation (traduction_française)\n\nExemple:\n김치 → kimchi (chou fermenté épicé)\n불고기 → bulgogi (viande marinée grillée)\n"
+        elif langue_code == "it":
+            vocab_prompt += "- Pour les noms italiens, INDIQUE TOUJOURS l'article défini (il/la/lo/gli/le) devant le mot\n"
+            vocab_prompt += "Format strict (un mot par ligne) :\narticle mot_italien | traduction_française\n\nExemple:\nla casa | la maison\nil gatto | le chat\n"
         else:
             vocab_prompt += "- Pour les noms, INDIQUE l'article défini devant le mot si la langue l'utilise\n"
             vocab_prompt += "Format strict (un mot par ligne) :\nmot_langue | traduction_française\n\nExemple:\nword | traduction\n"
@@ -263,6 +274,11 @@ Pour chaque mot :
                 # Gérer le cas de l'apostrophe collée : l'arbre
                 if word.startswith("l'") or word.startswith("L'"):
                     return word[2:].lower()
+            # Pour l'italien, ignorer les articles (il/la/lo/gli/le)
+            elif langue_code == "it":
+                parts = word.split()
+                if len(parts) > 1 and parts[0].lower() in ['il', 'la', 'lo', 'gli', 'le', 'i', 'un', 'una', 'uno']:
+                    return parts[1].lower()
             return word.lower()
         
         vocabulary.sort(key=sort_key)
@@ -502,7 +518,7 @@ Exemples:
     parser.add_argument(
         '-l', '--langue',
         required=True,
-        choices=['fr', 'eng', 'us', 'all', 'esp', 'hisp', 'nl', 'cor'],
+        choices=['fr', 'eng', 'us', 'all', 'esp', 'hisp', 'nl', 'cor', 'it'],
         help=f"Langue cible. Options: {LanguageConfig.list_languages()}"
     )
 

@@ -516,51 +516,49 @@
             document.getElementById('toggle-vocab').addEventListener('click', toggleVocab);
         }
 
-        // Mettre en évidence les mots du vocabulaire dans le texte
+        // Mettre en évidence les mots du vocabulaire dans le texte (avec traduction au survol)
         function highlightVocabInText(text, vocabList) {
             let highlightedText = text;
-            
-            // Extraire les mots principaux du vocabulaire (sans articles, sans romanisation)
-            const wordsToHighlight = vocabList.map(item => {
-                let word = item.word;
-                
-                // Retirer les articles au début (le, la, les, der, die, das, el, la, los, las, de, het, il, lo, gli, le, i)
-                word = word.replace(/^(le|la|les|l'|der|die|das|el|los|las|un|una|uno|de|het|il|lo|gli|le|i|un'|l')\s+/i, '');
-                
-                // Retirer 'to' pour les verbes anglais
+
+            // Normalisation d'un mot (retire articles, 'to ', astérisques, romanisation)
+            const normalizeWord = (w) => {
+                let word = (w || '').toString();
+                word = word.replace(/^(le|la|les|l'|der|die|das|el|los|las|un|una|uno|unos|unas|de|het|il|lo|gli|le|i|un'|l')\s+/i, '');
                 word = word.replace(/^to\s+/i, '');
-                
-                // Retirer les espaces et les astérisques
-                word = word.trim().replace(/\*/g, '');
-                
-                // Pour le coréen, prendre seulement le mot avant →
-                if (word.includes('→')) {
-                    word = word.split('→')[0].trim();
+                word = word.replace(/\*/g, '');
+                if (word.includes('→')) word = word.split('→')[0].trim();
+                return word.trim();
+            };
+
+            // Construire une table mot normalisé -> traduction
+            const transByWord = new Map();
+            vocabList.forEach(item => {
+                const key = normalizeWord(item.word).toLowerCase();
+                if (key.length > 2 && !transByWord.has(key)) {
+                    transByWord.set(key, (item.translation || '').toString());
                 }
-                
-                return word;
-            }).filter(w => w.length > 2); // Ignorer les mots trop courts
-            
-            // Trier par longueur décroissante pour éviter les conflits (mots longs d'abord)
-            wordsToHighlight.sort((a, b) => b.length - a.length);
-            
-            // Créer un Set pour éviter les doublons
-            const uniqueWords = [...new Set(wordsToHighlight)];
-            
-            // Remplacer chaque mot par sa version surlignée (sans lookbehind pour compatibilité iOS/Safari)
+            });
+
+            // Liste des mots à surligner (longueur décroissante)
+            const uniqueWords = Array.from(transByWord.keys()).sort((a, b) => b.length - a.length);
+
+            // Remplacer chaque mot par sa version surlignée (compat iOS/Safari)
             uniqueWords.forEach(word => {
-                // Échapper les caractères spéciaux regex
                 const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                
-                // Utiliser des groupes de capture pour préserver le caractère précédent (ou début de ligne)
-                // (^|[^\wÀ-ÿ']) (mot) (?=$|[^\wÀ-ÿ'])
                 const regex = new RegExp(`(^|[^\\wÀ-ÿ'])(${escapedWord})(?=$|[^\\wÀ-ÿ'])`, 'gi');
-                
+
                 highlightedText = highlightedText.replace(regex, (_m, p1, p2) => {
-                    return `${p1}<span class="vocab-highlight" title="Mot du vocabulaire">${p2}</span>`;
+                    // Trouver la traduction à partir du mot trouvé (normalisé)
+                    const k = normalizeWord(p2).toLowerCase();
+                    let tr = transByWord.get(k) || '';
+                    if (tr) {
+                        tr = tr.replace(/\"/g, '&quot;');
+                    }
+                    const titleAttr = tr ? ` title=\"${tr}\"` : '';
+                    return `${p1}<span class=\"vocab-highlight\"${titleAttr}>${p2}</span>`;
                 });
             });
-            
+
             return highlightedText;
         }
 

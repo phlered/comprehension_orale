@@ -76,8 +76,8 @@ def extract_frontmatter(text_file):
 
 def extract_text_and_vocab(body):
     """Extrait le texte et le vocabulaire depuis le corps du markdown"""
-    # Extraire le texte (section ## Tekst, ## Text, ## Texto, etc.)
-    text_match = re.search(r'##\s+(Tekst|Text|Texto|Texte)\s*\n\n(.*?)(?=\n##|$)', body, re.DOTALL)
+    # Extraire le texte (section ## Tekst, ## Text, ## Texto, ## Texte, ## 텍스트)
+    text_match = re.search(r'##\s+(Tekst|Text|Texto|Texte|텍스트)\s*\n\n(.*?)(?=\n##|$)', body, re.DOTALL)
     text_content = text_match.group(2).strip() if text_match else ""
     
     # Extraire le vocabulaire (section ## Woordenschat, ## Wortschatz, ## Vocabulario, etc.)

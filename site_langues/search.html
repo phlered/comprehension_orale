@@ -296,6 +296,7 @@
                 <span id="language-flag"></span>
                 <span id="language-name"></span>
             </h1>
+            <a href="#" id="random-player-link" class="back-btn" style="margin-left: auto;">🎲 Aléatoire</a>
         </div>
         
         <div class="search-container">
@@ -381,6 +382,9 @@
             document.getElementById('language-flag').textContent = config.flag;
             document.getElementById('language-name').textContent = config.name;
             document.title = `${config.name} - Ressources Audio`;
+            
+            // Mettre à jour le lien du lecteur aléatoire
+            document.getElementById('random-player-link').href = `random_player.html?lang=${currentLanguage}`;
             
             // Charger les métadonnées
             await loadMetadata();

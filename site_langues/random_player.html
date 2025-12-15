@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Aléatoire - Langues</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .back-btn {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .timer-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .timer-display {
+            font-size: 48px;
+            font-weight: 700;
+            color: #667eea;
+            font-family: 'Courier New', monospace;
+        }
+
+        .timer-display.warning {
+            color: #f59e0b;
+        }
+
+        .timer-display.danger {
+            color: #ef4444;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .duration-input {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .duration-input label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .duration-input input {
+            padding: 8px 12px;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .player-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .resource-info {
+            margin-bottom: 20px;
+        }
+
+        .resource-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 12px;
+            background: #f7fafc;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .niveau-badge {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .content-section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .text-content {
+            line-height: 1.8;
+            color: #4a5568;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .vocab-list {
+            list-style: none;
+        }
+
+        .vocab-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .vocab-word {
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .vocab-translation {
+            color: #718096;
+            margin-left: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 5px;
+        }
+
+        .session-info {
+            background: #edf2f7;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .session-info strong {
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .timer-display {
+                font-size: 36px;
+            }
+
+            .title {
+                font-size: 22px;
+            }
+
+            .timer-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .duration-input {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+            <h1 class="title">🎲 Lecteur Aléatoire</h1>
+            
+            <div class="session-info" id="sessionInfo">
+                Sélectionnez une langue pour commencer
+            </div>
+
+            <div class="timer-controls">
+                <div class="timer-display" id="timerDisplay">--:--</div>
+                
+                <div class="duration-input">
+                    <label for="durationMinutes">Durée (min):</label>
+                    <input type="number" id="durationMinutes" value="15" min="1" max="120">
+                </div>
+
+                <button class="btn btn-success" id="startBtn" onclick="startSession()">▶️ Démarrer</button>
+                <button class="btn btn-danger" id="stopBtn" onclick="stopSession()" disabled>⏹️ Arrêter</button>
+                <button class="btn btn-primary" id="nextBtn" onclick="loadNextRandom()" disabled>⏭️ Suivant</button>
+            </div>
+
+            <div class="stats" id="stats" style="display: none;">
+                <div class="stat-item">
+                    <div class="stat-value" id="docsPlayed">0</div>
+                    <div class="stat-label">Documents lus</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="wordsLearned">0</div>
+                    <div class="stat-label">Mots appris</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-card" id="playerCard" style="display: none;">
+            <div class="resource-info">
+                <div class="resource-title" id="resourceTitle"></div>
+                <div class="meta" id="resourceMeta"></div>
+            </div>
+
+            <audio id="audio-player" class="audio-player" controls controlsList="nodownload">
+                <source id="audio-source" src="" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+
+            <div class="content-section">
+                <h2 class="section-title">📝 Texte</h2>
+                <div class="text-content" id="textContent"></div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">📚 Vocabulaire</h2>
+                <ul class="vocab-list" id="vocabList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const LANGUAGE_CONFIG = {
+            'fr': { name: 'Français', flag: '🇫🇷' },
+            'all': { name: 'Allemand', flag: '🇩🇪' },
+            'eng': { name: 'Anglais', flag: '🇬🇧' },
+            'esp': { name: 'Espagnol', flag: '🇪🇸' },
+            'nl': { name: 'Néerlandais', flag: '🇳🇱' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' },
+            'it': { name: 'Italien', flag: '🇮🇹' }
+        };
+
+        let allResources = [];
+        let currentLanguage = null;
+        let languageResources = [];
+        let currentResource = null;
+        let sessionActive = false;
+        let sessionTimer = null;
+        let sessionEndTime = null;
+        let docsPlayedCount = 0;
+        let totalWordsLearned = 0;
+
+        // Charger les métadonnées au démarrage
+        fetch('metadata.json')
+            .then(response => response.json())
+            .then(data => {
+                allResources = data.resources;
+                console.log(`📚 ${allResources.length} ressources chargées`);
+                initLanguageSelection();
+            })
+            .catch(error => {
+                console.error('Erreur chargement métadonnées:', error);
+                alert('Impossible de charger les ressources. Veuillez recharger la page.');
+            });
+
+        function initLanguageSelection() {
+            // Récupérer la langue depuis l'URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            
+            if (langParam && LANGUAGE_CONFIG[langParam]) {
+                currentLanguage = langParam;
+                languageResources = allResources.filter(r => r.langue === currentLanguage);
+                updateSessionInfo();
+            } else {
+                // Afficher un sélecteur de langue
+                showLanguageSelector();
+            }
+        }
+
+        function showLanguageSelector() {
+            const sessionInfo = document.getElementById('sessionInfo');
+            
+            let html = '<div style="margin-bottom: 10px; font-weight: 600;">Choisissez une langue:</div>';
+            html += '<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">';
+            
+            // Compter les ressources par langue
+            const langCounts = {};
+            allResources.forEach(r => {
+                langCounts[r.langue] = (langCounts[r.langue] || 0) + 1;
+            });
+            
+            Object.entries(LANGUAGE_CONFIG).forEach(([code, config]) => {
+                const count = langCounts[code] || 0;
+                if (count > 0) {
+                    html += `
+                        <button onclick="selectLanguage('${code}')" 
+                                class="btn btn-primary" 
+                                style="min-width: 120px;">
+                            ${config.flag} ${config.name} (${count})
+                        </button>
+                    `;
+                }
+            });
+            
+            html += '</div>';
+            sessionInfo.innerHTML = html;
+        }
+
+        function selectLanguage(langCode) {
+            currentLanguage = langCode;
+            languageResources = allResources.filter(r => r.langue === currentLanguage);
+            
+            // Mettre à jour l'URL
+            const url = new URL(window.location);
+            url.searchParams.set('lang', langCode);
+            window.history.pushState({}, '', url);
+            
+            updateSessionInfo();
+        }
+
+        function updateSessionInfo() {
+            const config = LANGUAGE_CONFIG[currentLanguage];
+            const sessionInfo = document.getElementById('sessionInfo');
+            sessionInfo.innerHTML = `
+                <strong>${config.flag} ${config.name}</strong> — 
+                ${languageResources.length} ressources disponibles
+            `;
+            document.getElementById('startBtn').disabled = false;
+        }
+
+        function startSession() {
+            if (!currentLanguage || languageResources.length === 0) {
+                alert('Veuillez sélectionner une langue avec des ressources disponibles.');
+                return;
+            }
+
+            const durationMinutes = parseInt(document.getElementById('durationMinutes').value);
+            if (durationMinutes < 1 || durationMinutes > 120) {
+                alert('Durée invalide. Choisissez entre 1 et 120 minutes.');
+                return;
+            }
+
+            // Initialiser la session
+            sessionActive = true;
+            sessionEndTime = Date.now() + (durationMinutes * 60 * 1000);
+            docsPlayedCount = 0;
+            totalWordsLearned = 0;
+
+            // Mettre à jour l'interface
+            document.getElementById('startBtn').disabled = true;
+            document.getElementById('stopBtn').disabled = false;
+            document.getElementById('nextBtn').disabled = false;
+            document.getElementById('durationMinutes').disabled = true;
+            document.getElementById('stats').style.display = 'flex';
+            document.getElementById('playerCard').style.display = 'block';
+
+            // Démarrer le timer
+            updateTimer();
+            sessionTimer = setInterval(updateTimer, 1000);
+
+            // Charger le premier document
+            loadNextRandom();
+
+            // Écouter la fin de l'audio pour passer au suivant
+            const audio = document.getElementById('audio-player');
+            audio.addEventListener('ended', onAudioEnded);
+        }
+
+        function stopSession() {
+            sessionActive = false;
+            clearInterval(sessionTimer);
+            
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+            document.getElementById('nextBtn').disabled = true;
+            document.getElementById('durationMinutes').disabled = false;
+            
+            const audio = document.getElementById('audio-player');
+            audio.pause();
+            audio.removeEventListener('ended', onAudioEnded);
+
+            alert(`Session terminée!\n\n📚 Documents lus: ${docsPlayedCount}\n📖 Mots appris: ${totalWordsLearned}`);
+        }
+
+        function updateTimer() {
+            if (!sessionActive) return;
+
+            const remaining = sessionEndTime - Date.now();
+            
+            if (remaining <= 0) {
+                // Session terminée
+                stopSession();
+                return;
+            }
+
+            const minutes = Math.floor(remaining / 60000);
+            const seconds = Math.floor((remaining % 60000) / 1000);
+            
+            const timerDisplay = document.getElementById('timerDisplay');
+            timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Changer la couleur selon le temps restant
+            timerDisplay.classList.remove('warning', 'danger');
+            if (remaining < 60000) { // Moins d'1 minute
+                timerDisplay.classList.add('danger');
+            } else if (remaining < 300000) { // Moins de 5 minutes
+                timerDisplay.classList.add('warning');
+            }
+        }
+
+        function loadNextRandom() {
+            if (!sessionActive || languageResources.length === 0) return;
+
+            // Sélectionner un document aléatoire
+            const randomIndex = Math.floor(Math.random() * languageResources.length);
+            currentResource = languageResources[randomIndex];
+
+            // Charger le contenu
+            displayResource();
+            
+            // Mettre à jour les stats
+            docsPlayedCount++;
+            totalWordsLearned += currentResource.vocab_count || 0;
+            document.getElementById('docsPlayed').textContent = docsPlayedCount;
+            document.getElementById('wordsLearned').textContent = totalWordsLearned;
+        }
+
+        function onAudioEnded() {
+            if (sessionActive) {
+                // Attendre 2 secondes avant de passer au suivant
+                setTimeout(() => {
+                    if (sessionActive) {
+                        loadNextRandom();
+                    }
+                }, 2000);
+            }
+        }
+
+        function displayResource() {
+            const config = LANGUAGE_CONFIG[currentResource.langue];
+            
+            // Titre
+            document.getElementById('resourceTitle').textContent = currentResource.prompt;
+            
+            // Déterminer l'affichage de la voix
+            let voiceDisplay = '';
+            let voiceEmoji = '🎤';
+            
+            if (currentResource.genre && currentResource.genre.charAt(0) === currentResource.genre.charAt(0).toUpperCase()) {
+                voiceDisplay = currentResource.genre;
+                voiceEmoji = '🎤';
+            } else {
+                voiceDisplay = currentResource.genre ? currentResource.genre.charAt(0).toUpperCase() + currentResource.genre.slice(1) : '';
+                voiceEmoji = currentResource.genre === 'femme' ? '👩🎤' : '👨🎤';
+            }
+            
+            // Métadonnées
+            const metaHTML = `
+                <div class="meta-item">
+                    <span>${config.flag}</span>
+                    <span>${config.name}</span>
+                </div>
+                <div class="meta-item">
+                    <span>${voiceEmoji}</span>
+                    <span>${voiceDisplay}</span>
+                </div>
+                <div class="meta-item niveau-badge">${currentResource.niveau}</div>
+                <div class="meta-item">
+                    <span>📝</span>
+                    <span>${currentResource.longueur} mots</span>
+                </div>
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>${currentResource.vocab_count} mots vocab.</span>
+                </div>
+            `;
+            document.getElementById('resourceMeta').innerHTML = metaHTML;
+            
+            // Audio
+            const audio = document.getElementById('audio-player');
+            document.getElementById('audio-source').src = currentResource.audio_path;
+            audio.load();
+            audio.play().catch(e => console.log('Lecture auto bloquée:', e));
+            
+            // Charger le texte complet
+            fetch(currentResource.text_path)
+                .then(response => response.text())
+                .then(content => {
+                    parseAndDisplayContent(content);
+                })
+                .catch(error => {
+                    console.error('Erreur chargement contenu:', error);
+                    document.getElementById('textContent').textContent = currentResource.text_preview;
+                });
+        }
+
+        function parseAndDisplayContent(content) {
+            // Extraire le texte et le vocabulaire
+            const textMatch = content.match(/## (?:Text|Texte|Texto|Tekst|텍스트|Testo)\s*\n\n(.*?)(?=\n## |$)/s);
+            const vocabMatch = content.match(/## (?:Vocabulary|Vocabulaire|Vocabulario|Wortschatz|Woordenschat|어휘|Vocabolario)\s*\n\n(.*?)$/s);
+            
+            // Afficher le texte
+            if (textMatch) {
+                document.getElementById('textContent').textContent = textMatch[1].trim();
+            } else {
+                document.getElementById('textContent').textContent = currentResource.text_preview;
+            }
+            
+            // Afficher le vocabulaire
+            const vocabList = document.getElementById('vocabList');
+            vocabList.innerHTML = '';
+            
+            if (vocabMatch) {
+                const vocabLines = vocabMatch[1].trim().split('\n');
+                vocabLines.forEach(line => {
+                    const cleanLine = line.replace(/^[-*]\s*/, '').trim();
+                    if (cleanLine) {
+                        // Parser les différents formats
+                        let word = '', translation = '';
+                        
+                        if (cleanLine.includes('→')) {
+                            // Format: **mot** → traduction OU mot → romanisation (traduction)
+                            const parts = cleanLine.split('→');
+                            word = parts[0].replace(/\*\*/g, '').trim();
+                            translation = parts[1].trim();
+                        } else if (cleanLine.includes('|')) {
+                            // Format: **mot** | traduction
+                            const parts = cleanLine.split('|');
+                            word = parts[0].replace(/\*\*/g, '').trim();
+                            translation = parts[1].trim();
+                        } else {
+                            word = cleanLine;
+                        }
+                        
+                        if (word) {
+                            const li = document.createElement('li');
+                            li.className = 'vocab-item';
+                            li.innerHTML = `
+                                <span class="vocab-word">${word}</span>
+                                ${translation ? `<span class="vocab-translation">${translation}</span>` : ''}
+                            `;
+                            vocabList.appendChild(li);
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

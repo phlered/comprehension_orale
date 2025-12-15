@@ -249,6 +249,32 @@
             border-radius: 3px;
         }
 
+        /* Tooltip tactile pour traduction */
+        .tooltip-bubble {
+            position: absolute;
+            max-width: 80vw;
+            background: rgba(17, 24, 39, 0.95);
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.3;
+            z-index: 1000;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            transform: translate(-50%, -8px);
+            pointer-events: none;
+        }
+        .tooltip-bubble::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            transform: translateX(-50%);
+            border-width: 6px 6px 0 6px;
+            border-style: solid;
+            border-color: rgba(17, 24, 39, 0.95) transparent transparent transparent;
+        }
+
         .stats {
             display: flex;
             justify-content: space-around;
@@ -663,7 +689,8 @@
                     let tr = transByWord.get(k) || '';
                     if (tr) tr = tr.replace(/\"/g, '&quot;');
                     const titleAttr = tr ? ` title=\"${tr}\"` : '';
-                    return `${p1}<span class=\"vocab-highlight\"${titleAttr}>${p2}</span>`;
+                    const dataAttr = tr ? ` data-translation=\"${tr}\"` : '';
+                    return `${p1}<span class=\"vocab-highlight\"${titleAttr}${dataAttr}>${p2}</span>`;
                 });
             });
 
@@ -754,6 +781,45 @@
                 });
             }
         }
+
+        // Tooltips tactiles: tap sur un mot pour afficher/masquer la traduction (iOS/Android)
+        (function setupTouchTooltips(){
+            let activeTooltip = null;
+            function hideTooltip(){
+                if (activeTooltip && activeTooltip.parentNode){
+                    activeTooltip.parentNode.removeChild(activeTooltip);
+                    activeTooltip = null;
+                }
+            }
+            function showTooltip(target, text){
+                hideTooltip();
+                const rect = target.getBoundingClientRect();
+                const tip = document.createElement('div');
+                tip.className = 'tooltip-bubble';
+                tip.textContent = text;
+                document.body.appendChild(tip);
+                const top = window.scrollY + rect.top;
+                const left = window.scrollX + rect.left + rect.width/2;
+                tip.style.top = `${top - 10}px`;
+                tip.style.left = `${left}px`;
+                activeTooltip = tip;
+            }
+            const handler = (e)=>{
+                const span = e.target.closest('.vocab-highlight');
+                if (span && (span.getAttribute('data-translation') || span.getAttribute('title'))){
+                    const text = span.getAttribute('data-translation') || span.getAttribute('title') || '';
+                    if (activeTooltip){ hideTooltip(); }
+                    else if (text){ showTooltip(span, text); }
+                    e.preventDefault(); e.stopPropagation();
+                } else {
+                    hideTooltip();
+                }
+            };
+            document.addEventListener('click', handler, { passive: true });
+            document.addEventListener('touchstart', handler, { passive: true });
+            window.addEventListener('scroll', hideTooltip, { passive: true });
+            window.addEventListener('resize', hideTooltip, { passive: true });
+        })();
     </script>
 </body>
 </html>

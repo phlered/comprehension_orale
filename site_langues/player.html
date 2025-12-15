@@ -547,17 +547,17 @@
             // Créer un Set pour éviter les doublons
             const uniqueWords = [...new Set(wordsToHighlight)];
             
-            // Remplacer chaque mot par sa version surlignée
+            // Remplacer chaque mot par sa version surlignée (sans lookbehind pour compatibilité iOS/Safari)
             uniqueWords.forEach(word => {
                 // Échapper les caractères spéciaux regex
                 const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
                 
-                // Créer une regex qui matche le mot entier (avec ou sans apostrophe)
-                // \b ne fonctionne pas bien avec les accents, donc on utilise des limites plus souples
-                const regex = new RegExp(`(?<![\\wÀ-ÿ'''])${escapedWord}(?![\\wÀ-ÿ'''])`, 'gi');
+                // Utiliser des groupes de capture pour préserver le caractère précédent (ou début de ligne)
+                // (^|[^\wÀ-ÿ']) (mot) (?=$|[^\wÀ-ÿ'])
+                const regex = new RegExp(`(^|[^\\wÀ-ÿ'])(${escapedWord})(?=$|[^\\wÀ-ÿ'])`, 'gi');
                 
-                highlightedText = highlightedText.replace(regex, match => {
-                    return `<span class="vocab-highlight" title="Mot du vocabulaire">${match}</span>`;
+                highlightedText = highlightedText.replace(regex, (_m, p1, p2) => {
+                    return `${p1}<span class="vocab-highlight" title="Mot du vocabulaire">${p2}</span>`;
                 });
             });
             

@@ -662,13 +662,13 @@
             // Créer un Set pour éviter les doublons
             const uniqueWords = [...new Set(wordsToHighlight)];
             
-            // Remplacer chaque mot par sa version surlignée
+            // Remplacer chaque mot par sa version surlignée (sans lookbehind pour compatibilité iOS/Safari)
             uniqueWords.forEach(word => {
                 const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const regex = new RegExp(`(?<![\\wÀ-ÿ'''])${escapedWord}(?![\\wÀ-ÿ'''])`, 'gi');
+                const regex = new RegExp(`(^|[^\\wÀ-ÿ'])(${escapedWord})(?=$|[^\\wÀ-ÿ'])`, 'gi');
                 
-                highlightedText = highlightedText.replace(regex, match => {
-                    return `<span class="vocab-highlight" title="Mot du vocabulaire">${match}</span>`;
+                highlightedText = highlightedText.replace(regex, (_m, p1, p2) => {
+                    return `${p1}<span class=\"vocab-highlight\" title=\"Mot du vocabulaire\">${p2}</span>`;
                 });
             });
             

@@ -448,6 +448,10 @@
                         <span>${config.flag}</span>
                         <span>${config.name}</span>
                     </div>
+                    <div class="meta-item">
+                        <span>${currentResource.genre === 'femme' ? '👩🎤' : '👨🎤'}</span>
+                        <span>${currentResource.genre.charAt(0).toUpperCase() + currentResource.genre.slice(1)}</span>
+                    </div>
                     <div class="meta-item niveau-badge">${currentResource.niveau}</div>
                     <div class="meta-item">
                         <span>📝</span>

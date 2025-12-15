@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-15T22:14:43.402385",
-  "total_resources": 61,
+  "generated_at": "2025-12-15T22:15:59.075765",
+  "total_resources": 62,
   "languages": [
-    "eng",
-    "nl",
-    "cor",
-    "esp",
     "fr",
-    "it",
-    "all"
+    "nl",
+    "all",
+    "eng",
+    "esp",
+    "cor",
+    "it"
   ],
   "resources": [
     {
@@ -175,6 +175,21 @@
       "vocab_count": 27,
       "audio_path": "resources/dove_si_trova_il_cam_20251215_1758/audio.mp3",
       "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
+    },
+    {
+      "id": "la_scuola_20251215_2215",
+      "langue": "it",
+      "prompt": "La scuola",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "Diego",
+      "date": "2025-12-15 22:15:43",
+      "longueur": 120,
+      "text_preview": "La scuola è un posto importante. Io vado a scuola tutti i giorni, dal lunedì al venerdì. La mia scuola è grande e bella. Ci sono molte aule e un grande giardino. In classe, ci sono venti studenti. Il ...",
+      "vocab_count": 24,
+      "audio_path": "resources/la_scuola_20251215_2215/audio.mp3",
+      "text_path": "resources/la_scuola_20251215_2215/text.md"
     },
     {
       "id": "comment_se_deroule_u_20251210_2035",

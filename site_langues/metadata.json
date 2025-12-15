@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-15T17:53:15.204277",
-  "total_resources": 51,
+  "generated_at": "2025-12-15T18:04:15.571181",
+  "total_resources": 60,
   "languages": [
-    "esp",
     "it",
-    "nl",
-    "eng",
+    "esp",
     "all",
+    "cor",
+    "nl",
     "fr",
-    "cor"
+    "eng"
   ],
   "resources": [
     {
@@ -130,6 +130,36 @@
       "vocab_count": 39,
       "audio_path": "resources/menu_navideno_saluda_20251215_1549/audio.mp3",
       "text_path": "resources/menu_navideno_saluda_20251215_1549/text.md"
+    },
+    {
+      "id": "l_alimentazione_20251215_1756",
+      "langue": "it",
+      "prompt": "L'alimentazione",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-15 17:56:54",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/l_alimentazione_20251215_1756/audio.mp3",
+      "text_path": "resources/l_alimentazione_20251215_1756/text.md"
+    },
+    {
+      "id": "dove_si_trova_il_cam_20251215_1758",
+      "langue": "it",
+      "prompt": "Dove si trova il campeggio",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-15 17:59:08",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/dove_si_trova_il_cam_20251215_1758/audio.mp3",
+      "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
     },
     {
       "id": "comment_se_deroule_u_20251210_2035",
@@ -417,6 +447,36 @@
       "text_path": "resources/walking_in_the_park_20251215_1538/text.md"
     },
     {
+      "id": "in_albergo_20251215_1801",
+      "langue": "it",
+      "prompt": "In albergo",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-15 18:02:07",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/in_albergo_20251215_1801/audio.mp3",
+      "text_path": "resources/in_albergo_20251215_1801/text.md"
+    },
+    {
+      "id": "i_colori_20251215_1802",
+      "langue": "it",
+      "prompt": "I colori",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-15 18:02:35",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/i_colori_20251215_1802/audio.mp3",
+      "text_path": "resources/i_colori_20251215_1802/text.md"
+    },
+    {
       "id": "baking_cookies_toget_20251215_1538",
       "langue": "eng",
       "prompt": "Baking Cookies Together",
@@ -552,6 +612,21 @@
       "text_path": "resources/birthday_party_plann_20251215_1537/text.md"
     },
     {
+      "id": "la_famiglia_20251215_1758",
+      "langue": "it",
+      "prompt": "La famiglia",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-15 17:58:37",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/la_famiglia_20251215_1758/audio.mp3",
+      "text_path": "resources/la_famiglia_20251215_1758/text.md"
+    },
+    {
       "id": "quelles_sont_les_spe_20251210_2035",
       "langue": "nl",
       "prompt": "Quelles sont les spécialités culinaires hollandaises ?",
@@ -582,6 +657,21 @@
       "text_path": "resources/demander_ou_se_trouv_20251210_2033/text.md"
     },
     {
+      "id": "comprare_i_vestiti_20251215_1802",
+      "langue": "it",
+      "prompt": "Comprare i vestiti",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-15 18:03:04",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/comprare_i_vestiti_20251215_1802/audio.mp3",
+      "text_path": "resources/comprare_i_vestiti_20251215_1802/text.md"
+    },
+    {
       "id": "demander_ou_se_trouv_20251210_2034",
       "langue": "nl",
       "prompt": "Demander où se trouve le supermarché le plus proche.",
@@ -610,6 +700,21 @@
       "vocab_count": 11,
       "audio_path": "resources/die_tiere_20251210_1901/audio.mp3",
       "text_path": "resources/die_tiere_20251210_1901/text.md"
+    },
+    {
+      "id": "gli_animali_domestic_20251215_1759",
+      "langue": "it",
+      "prompt": "Gli animali domestici",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-15 17:59:27",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/gli_animali_domestic_20251215_1759/audio.mp3",
+      "text_path": "resources/gli_animali_domestic_20251215_1759/text.md"
     },
     {
       "id": "simuler_une_intervie_20251210_1251",
@@ -655,6 +760,21 @@
       "vocab_count": 30,
       "audio_path": "resources/quels_sont_les_sites_20251210_2035/audio.mp3",
       "text_path": "resources/quels_sont_les_sites_20251210_2035/text.md"
+    },
+    {
+      "id": "i_giorni_della_setti_20251215_1759",
+      "langue": "it",
+      "prompt": "I giorni della settimana",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-15 18:00:04",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/i_giorni_della_setti_20251215_1759/audio.mp3",
+      "text_path": "resources/i_giorni_della_setti_20251215_1759/text.md"
     },
     {
       "id": "ecrire_un_court_essa_20251210_1252",
@@ -760,6 +880,21 @@
       "vocab_count": 42,
       "audio_path": "resources/voluntariado_naviden_20251215_1549/audio.mp3",
       "text_path": "resources/voluntariado_naviden_20251215_1549/text.md"
+    },
+    {
+      "id": "presentarsi_20251215_1803",
+      "langue": "it",
+      "prompt": "Presentarsi",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-15 18:03:51",
+      "longueur": 150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/presentarsi_20251215_1803/audio.mp3",
+      "text_path": "resources/presentarsi_20251215_1803/text.md"
     },
     {
       "id": "au_magasin_est_il_p_20251210_2034",

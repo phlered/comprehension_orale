@@ -309,7 +309,7 @@ class AudioGeneratorMD2MP3:
             return content.strip()
 
     @staticmethod
-    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8):
+    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8, voix=None):
         """Génère le fichier audio MP3 avec md2mp3.py"""
         lang_config = LanguageConfig.get_config(langue_code)
         md2mp3_lang = lang_config['md2mp3_code']
@@ -337,6 +337,10 @@ class AudioGeneratorMD2MP3:
             "-g", genre,
             "--vitesse", str(vitesse)
         ]
+        
+        # Ajouter la voix spécifique si fournie
+        if voix:
+            cmd.extend(["--voix", voix])
         
         print(f"🎤 Génération de l'audio avec md2mp3.py (langue: {md2mp3_lang}, genre: {genre}, vitesse: {vitesse}x)...")
         try:
@@ -381,6 +385,7 @@ class OutputGenerator:
         longueur,
         niveau,
         genre,
+        voix=None,
         niveau_scolaire=None,
         axe=None
     ):
@@ -395,6 +400,8 @@ longueur: {longueur}
 niveau: {niveau}
 genre: {genre}
 """
+        if voix:
+            yaml_header += f"voix: {voix}\n"
         if niveau_scolaire:
             yaml_header += f"niveau_scolaire: {GeneratorConfig.SCHOOL_LEVELS.get(niveau_scolaire, niveau_scolaire)}\n"
         if axe:
@@ -476,13 +483,14 @@ class CompressionOralApp:
                 args.longueur,
                 args.niveau,
                 args.genre,
+                args.voix,
                 args.niveau_scolaire,
                 axe_normalized
             )
             print(f"✅ Markdown généré: text.md\n")
 
             # Générer l'audio avec md2mp3.py
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=args.vitesse)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=args.vitesse, voix=args.voix)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")
@@ -548,6 +556,12 @@ Exemples:
         default='femme',
         choices=['femme', 'homme'],
         help="Genre de la voix (défaut: femme)"
+    )
+
+    parser.add_argument(
+        '--voix',
+        type=str,
+        help="Nom de la voix spécifique (ex: elsa, diego, denise, etc.)"
     )
 
     parser.add_argument(

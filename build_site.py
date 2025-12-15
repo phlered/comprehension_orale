@@ -131,7 +131,7 @@ def scan_docs_directory():
             "niveau": metadata.get('niveau', ''),
             "classe": metadata.get('classe', ''),  # Si disponible
             "axe": metadata.get('axe', ''),  # Si disponible
-            "genre": metadata.get('genre', metadata.get('voix', '')),
+            "genre": metadata.get('voix', metadata.get('genre', '')),  # Prioriser voix sur genre
             "date": metadata.get('date_generation', ''),
             "longueur": int(metadata.get('longueur', 0)),
             "text_preview": text_content[:200] + "..." if len(text_content) > 200 else text_content,

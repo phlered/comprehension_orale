@@ -438,6 +438,20 @@
         function displayResource() {
             const config = LANGUAGE_CONFIG[currentResource.langue];
             
+            // Déterminer l'affichage de la voix (nom spécifique ou genre)
+            let voiceDisplay = '';
+            let voiceEmoji = '🎤';
+            
+            // Si le champ contient un nom de voix spécifique (commence par une majuscule)
+            if (currentResource.genre && currentResource.genre.charAt(0) === currentResource.genre.charAt(0).toUpperCase()) {
+                voiceDisplay = currentResource.genre; // C'est un nom comme "Elsa" ou "Diego"
+                voiceEmoji = '🎤';
+            } else {
+                // C'est un genre générique "femme" ou "homme"
+                voiceDisplay = currentResource.genre ? currentResource.genre.charAt(0).toUpperCase() + currentResource.genre.slice(1) : '';
+                voiceEmoji = currentResource.genre === 'femme' ? '👩🎤' : '👨🎤';
+            }
+            
             // Header
             const header = document.getElementById('header');
             header.innerHTML = `
@@ -449,8 +463,8 @@
                         <span>${config.name}</span>
                     </div>
                     <div class="meta-item">
-                        <span>${currentResource.genre === 'femme' ? '👩🎤' : '👨🎤'}</span>
-                        <span>${currentResource.genre.charAt(0).toUpperCase() + currentResource.genre.slice(1)}</span>
+                        <span>${voiceEmoji}</span>
+                        <span>${voiceDisplay}</span>
                     </div>
                     <div class="meta-item niveau-badge">${currentResource.niveau}</div>
                     <div class="meta-item">

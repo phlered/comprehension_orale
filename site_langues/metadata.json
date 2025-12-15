@@ -1,16 +1,31 @@
 {
-  "generated_at": "2025-12-15T21:54:11.701100",
-  "total_resources": 60,
+  "generated_at": "2025-12-15T22:14:43.402385",
+  "total_resources": 61,
   "languages": [
-    "nl",
-    "it",
-    "fr",
-    "all",
     "eng",
+    "nl",
+    "cor",
     "esp",
-    "cor"
+    "fr",
+    "it",
+    "all"
   ],
   "resources": [
+    {
+      "id": "test_voix_20251215_2212",
+      "langue": "it",
+      "prompt": "Test voix",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "Elsa",
+      "date": "2025-12-15 22:13:03",
+      "longueur": 100,
+      "text_preview": "Ciao! Mi chiamo Luca. Oggi provo un nuovo test di voce. È molto interessante! Il mio amico Anna è con me. Lei parla e io ascolto la sua voce. Usiamo un microfono e un computer. La voce di Anna è chiar...",
+      "vocab_count": 19,
+      "audio_path": "resources/test_voix_20251215_2212/audio.mp3",
+      "text_path": "resources/test_voix_20251215_2212/text.md"
+    },
     {
       "id": "mercados_de_navidad_20251215_1548",
       "langue": "esp",

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .back-btn:hover {
+            background: #5568d3;
+        }
+
+        .title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .niveau-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .player-container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .toggle-btn {
+            padding: 15px 25px;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .toggle-btn.show-text {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .toggle-btn.show-text:hover {
+            background: #45a049;
+        }
+
+        .toggle-btn.show-vocab {
+            background: #2196F3;
+            color: white;
+        }
+
+        .toggle-btn.show-vocab:hover {
+            background: #0b7dda;
+        }
+
+        .toggle-btn.active {
+            transform: scale(0.98);
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: none;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .content-section.visible {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .text-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+            white-space: pre-wrap;
+        }
+
+        .text-content p {
+            margin-bottom: 15px;
+        }
+
+        .vocab-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .vocab-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .vocab-word {
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+            font-size: 1.05em;
+        }
+
+        .vocab-arrow {
+            color: #999;
+            padding: 0 10px;
+        }
+
+        .vocab-translation {
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            padding: 40px;
+        }
+
+        .error {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 15px;
+            }
+
+            .title {
+                font-size: 1.4em;
+            }
+
+            .player-container {
+                padding: 20px;
+            }
+
+            .controls {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 1.3em;
+            }
+
+            .text-content {
+                font-size: 1em;
+            }
+
+            .vocab-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .vocab-arrow {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .toggle-btn {
+                padding: 12px 20px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="header">
+            <div class="loading">⏳ Chargement...</div>
+        </div>
+        
+        <div class="player-container" id="player-container" style="display: none;">
+            <audio id="audio-player" class="audio-player" controls>
+                <source id="audio-source" type="audio/mpeg">
+                Votre navigateur ne supporte pas le lecteur audio.
+            </audio>
+            
+            <div class="controls">
+                <button class="toggle-btn show-text" id="toggle-text">
+                    <span>📄</span>
+                    <span>Afficher le texte</span>
+                </button>
+                <button class="toggle-btn show-vocab" id="toggle-vocab">
+                    <span>📚</span>
+                    <span>Afficher le vocabulaire</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="content-section" id="text-section">
+            <h2 class="section-title">
+                <span>📄</span>
+                <span>Texte</span>
+            </h2>
+            <div class="text-content" id="text-content"></div>
+        </div>
+        
+        <div class="content-section" id="vocab-section">
+            <h2 class="section-title">
+                <span>📚</span>
+                <span>Vocabulaire</span>
+            </h2>
+            <div class="vocab-list" id="vocab-list"></div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration des langues
+        const LANGUAGE_CONFIG = {
+            'eng': { name: 'Anglais', flag: '🇬🇧' },
+            'all': { name: 'Allemand', flag: '🇩🇪' },
+            'esp': { name: 'Espagnol', flag: '🇪🇸' },
+            'nl': { name: 'Néerlandais', flag: '🇳🇱' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
+        };
+
+        // Variables globales
+        let currentResource = null;
+        let textVisible = false;
+        let vocabVisible = false;
+
+        // Récupérer l'ID depuis l'URL
+        function getResourceIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Initialiser la page
+        async function init() {
+            const resourceId = getResourceIdFromURL();
+            
+            if (!resourceId) {
+                showError("Aucune ressource spécifiée");
+                return;
+            }
+            
+            await loadResource(resourceId);
+            setupEventListeners();
+        }
+
+        // Charger la ressource
+        async function loadResource(resourceId) {
+            try {
+                // Charger les métadonnées
+                const metadataResponse = await fetch('metadata.json');
+                const metadata = await metadataResponse.json();
+                
+                currentResource = metadata.resources.find(r => r.id === resourceId);
+                
+                if (!currentResource) {
+                    showError("Ressource introuvable");
+                    return;
+                }
+                
+                // Charger le texte complet
+                const textResponse = await fetch(currentResource.text_path);
+                const textContent = await textResponse.text();
+                
+                // Parser le texte
+                parseTextContent(textContent);
+                
+                // Afficher l'interface
+                displayResource();
+                
+            } catch (error) {
+                console.error('Erreur de chargement:', error);
+                showError("Impossible de charger la ressource");
+            }
+        }
+
+        // Parser le contenu du texte
+        function parseTextContent(content) {
+            // Extraire le front matter
+            const frontmatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
+            if (!frontmatterMatch) return;
+            
+            const body = frontmatterMatch[2];
+            
+            // Extraire le texte (section ## Tekst, ## Text, etc.)
+            const textMatch = body.match(/##\s+(Tekst|Text|Texto|Texte)\s*\n\n(.*?)(?=\n##|$)/s);
+            if (textMatch) {
+                currentResource.fullText = textMatch[2].trim();
+            }
+            
+            // Extraire le vocabulaire
+            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘)\s*\n\n(.*?)$/s);
+            if (vocabMatch) {
+                currentResource.fullVocab = parseVocabulary(vocabMatch[2].trim());
+            }
+        }
+
+        // Parser le vocabulaire
+        function parseVocabulary(vocabText) {
+            const lines = vocabText.split('\n');
+            const vocab = [];
+            
+            lines.forEach(line => {
+                // Format: - **mot** → traduction
+                const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s+→\s+(.+)$/);
+                if (match) {
+                    vocab.push({
+                        word: match[1].trim(),
+                        translation: match[2].trim()
+                    });
+                }
+            });
+            
+            return vocab;
+        }
+
+        // Afficher la ressource
+        function displayResource() {
+            const config = LANGUAGE_CONFIG[currentResource.langue];
+            
+            // Header
+            const header = document.getElementById('header');
+            header.innerHTML = `
+                <a href="search.html?lang=${currentResource.langue}" class="back-btn">← Retour à la recherche</a>
+                <h1 class="title">${currentResource.prompt}</h1>
+                <div class="meta">
+                    <div class="meta-item">
+                        <span>${config.flag}</span>
+                        <span>${config.name}</span>
+                    </div>
+                    <div class="meta-item niveau-badge">${currentResource.niveau}</div>
+                    <div class="meta-item">
+                        <span>📝</span>
+                        <span>${currentResource.longueur} mots</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>📚</span>
+                        <span>${currentResource.vocab_count} mots vocab.</span>
+                    </div>
+                    ${currentResource.classe ? `
+                        <div class="meta-item">
+                            <span>🎓</span>
+                            <span>Classe: ${currentResource.classe}</span>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            // Audio player
+            document.getElementById('audio-source').src = currentResource.audio_path;
+            document.getElementById('audio-player').load();
+            document.getElementById('player-container').style.display = 'block';
+            
+            // Texte
+            document.getElementById('text-content').textContent = currentResource.fullText || currentResource.text_preview;
+            
+            // Vocabulaire
+            if (currentResource.fullVocab) {
+                const vocabList = document.getElementById('vocab-list');
+                vocabList.innerHTML = currentResource.fullVocab.map(item => `
+                    <div class="vocab-item">
+                        <span class="vocab-word">${item.word}</span>
+                        <span class="vocab-arrow">→</span>
+                        <span class="vocab-translation">${item.translation}</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Configurer les événements
+        function setupEventListeners() {
+            document.getElementById('toggle-text').addEventListener('click', toggleText);
+            document.getElementById('toggle-vocab').addEventListener('click', toggleVocab);
+        }
+
+        // Basculer l'affichage du texte
+        function toggleText() {
+            textVisible = !textVisible;
+            const textSection = document.getElementById('text-section');
+            const btn = document.getElementById('toggle-text');
+            
+            if (textVisible) {
+                textSection.classList.add('visible');
+                btn.innerHTML = '<span>📄</span><span>Masquer le texte</span>';
+            } else {
+                textSection.classList.remove('visible');
+                btn.innerHTML = '<span>📄</span><span>Afficher le texte</span>';
+            }
+        }
+
+        // Basculer l'affichage du vocabulaire
+        function toggleVocab() {
+            vocabVisible = !vocabVisible;
+            const vocabSection = document.getElementById('vocab-section');
+            const btn = document.getElementById('toggle-vocab');
+            
+            if (vocabVisible) {
+                vocabSection.classList.add('visible');
+                btn.innerHTML = '<span>📚</span><span>Masquer le vocabulaire</span>';
+            } else {
+                vocabSection.classList.remove('visible');
+                btn.innerHTML = '<span>📚</span><span>Afficher le vocabulaire</span>';
+            }
+        }
+
+        // Afficher une erreur
+        function showError(message) {
+            document.getElementById('header').innerHTML = `
+                <div class="error">
+                    <div class="error-icon">⚠️</div>
+                    <h2>Erreur</h2>
+                    <p>${message}</p>
+                    <br>
+                    <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+                </div>
+            `;
+        }
+
+        // Initialiser au chargement de la page
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

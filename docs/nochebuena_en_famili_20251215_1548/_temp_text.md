@@ -1,0 +1,7 @@
+La Nochebuena es una de las celebraciones más importantes para las familias en España. Cada 24 de diciembre, nos reunimos con nuestros seres queridos para compartir una cena especial y pasar tiempo juntos. En mi familia, la tradición empieza por la tarde, cuando ayudamos a preparar la mesa. Siempre usamos un mantel blanco y sacamos la vajilla que solo utilizamos en ocasiones importantes.
+
+El menú de Nochebuena suele incluir platos tradicionales como el cordero asado o el pavo, acompañados de ensaladas variadas y mariscos. A mí me encanta la sopa de marisco que prepara mi abuela; su receta es secreta, pero siempre está deliciosa. También hay turrón y mazapanes para el postre, que son dulces típicos de Navidad.
+
+Después de la cena, hacemos un intercambio de regalos. Cada uno tiene que regalar algo sencillo a otro miembro de la familia, y es divertido ver las caras de sorpresa y emoción al abrir los paquetes. Luego, nos sentamos junto al árbol de Navidad para cantar villancicos y contar historias.
+
+Para nosotros, la Nochebuena es una noche especial llena de risas, amor y buenos momentos. Es una oportunidad para agradecer lo que tenemos y disfrutar de la compañía de las personas que más queremos.

@@ -1,0 +1,33 @@
+name: Build and Deploy Site
+
+# Déclencher lors des push sur main
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:  # Permet de lancer manuellement
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    
+    - name: Build site
+      run: python build_site.py
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site_langues
+        # Conserver l'historique git
+        keep_files: false
+        # Message de commit
+        commit_message: ${{ github.event.head_commit.message }}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche - Ressources Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #5568d3;
+        }
+
+        .language-title {
+            font-size: 1.8em;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 45px 15px 15px;
+            font-size: 1em;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3em;
+            color: #999;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .filter-label {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.95em;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .stats {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .resources-container {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .resource-card:active {
+            transform: translateY(-1px);
+        }
+
+        .resource-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        .resource-prompt {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+        }
+
+        .resource-niveau {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .resource-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .resource-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.85em;
+            color: #999;
+        }
+
+        .resource-meta-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .no-results {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .no-results-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            padding: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                align-items: start;
+                gap: 15px;
+            }
+
+            .language-title {
+                font-size: 1.5em;
+            }
+
+            .filters {
+                flex-direction: column;
+            }
+
+            .filter-group {
+                min-width: 100%;
+            }
+
+            .resource-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .resource-niveau {
+                margin-left: 0;
+                align-self: flex-start;
+            }
+
+            .resource-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 15px;
+            }
+
+            .language-title {
+                font-size: 1.3em;
+            }
+
+            .resource-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <a href="index.html" class="back-btn">← Retour</a>
+            <h1 class="language-title">
+                <span id="language-flag"></span>
+                <span id="language-name"></span>
+            </h1>
+        </div>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="search-input" 
+                class="search-input" 
+                placeholder="Rechercher par mots-clés..."
+                autocomplete="off"
+            >
+            <span class="search-icon">🔍</span>
+        </div>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label class="filter-label">Niveau</label>
+                <select id="filter-niveau" class="filter-select">
+                    <option value="">Tous les niveaux</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">Classe</label>
+                <select id="filter-classe" class="filter-select">
+                    <option value="">Toutes les classes</option>
+                    <option value="2">Seconde</option>
+                    <option value="1">Première</option>
+                    <option value="T">Terminale</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">Axe</label>
+                <select id="filter-axe" class="filter-select">
+                    <option value="">Tous les axes</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="stats" id="stats">
+            Chargement...
+        </div>
+    </div>
+    
+    <div class="resources-container" id="resources-container">
+        <div class="loading">⏳ Chargement des ressources...</div>
+    </div>
+
+    <script>
+        // Configuration des langues
+        const LANGUAGE_CONFIG = {
+            'eng': { name: 'Anglais', flag: '🇬🇧' },
+            'all': { name: 'Allemand', flag: '🇩🇪' },
+            'esp': { name: 'Espagnol', flag: '🇪🇸' },
+            'nl': { name: 'Néerlandais', flag: '🇳🇱' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
+        };
+
+        // Variables globales
+        let allResources = [];
+        let filteredResources = [];
+        let currentLanguage = '';
+
+        // Récupérer le paramètre de langue depuis l'URL
+        function getLanguageFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('lang') || 'eng';
+        }
+
+        // Initialiser la page
+        async function init() {
+            currentLanguage = getLanguageFromURL();
+            
+            // Afficher la langue
+            const config = LANGUAGE_CONFIG[currentLanguage];
+            document.getElementById('language-flag').textContent = config.flag;
+            document.getElementById('language-name').textContent = config.name;
+            document.title = `${config.name} - Ressources Audio`;
+            
+            // Charger les métadonnées
+            await loadMetadata();
+            
+            // Configurer les événements
+            setupEventListeners();
+            
+            // Afficher les ressources
+            filterAndDisplayResources();
+        }
+
+        // Charger les métadonnées
+        async function loadMetadata() {
+            try {
+                const response = await fetch('metadata.json');
+                const data = await response.json();
+                
+                // Filtrer par langue
+                allResources = data.resources.filter(r => r.langue === currentLanguage);
+                
+                // Populer les filtres dynamiques
+                populateAxeFilter();
+                
+            } catch (error) {
+                console.error('Erreur de chargement:', error);
+                document.getElementById('resources-container').innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">⚠️</div>
+                        <h2>Erreur de chargement</h2>
+                        <p>Impossible de charger les ressources.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Populer le filtre des axes
+        function populateAxeFilter() {
+            const axes = [...new Set(allResources.map(r => r.axe).filter(a => a))];
+            const axeSelect = document.getElementById('filter-axe');
+            
+            axes.forEach(axe => {
+                const option = document.createElement('option');
+                option.value = axe;
+                option.textContent = axe;
+                axeSelect.appendChild(option);
+            });
+        }
+
+        // Configurer les événements
+        function setupEventListeners() {
+            document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
+            document.getElementById('filter-niveau').addEventListener('change', filterAndDisplayResources);
+            document.getElementById('filter-classe').addEventListener('change', filterAndDisplayResources);
+            document.getElementById('filter-axe').addEventListener('change', filterAndDisplayResources);
+        }
+
+        // Filtrer et afficher les ressources
+        function filterAndDisplayResources() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const niveauFilter = document.getElementById('filter-niveau').value;
+            const classeFilter = document.getElementById('filter-classe').value;
+            const axeFilter = document.getElementById('filter-axe').value;
+            
+            filteredResources = allResources.filter(resource => {
+                // Filtre de recherche
+                const matchesSearch = !searchTerm || 
+                    resource.prompt.toLowerCase().includes(searchTerm) ||
+                    resource.text_preview.toLowerCase().includes(searchTerm);
+                
+                // Filtre de niveau
+                const matchesNiveau = !niveauFilter || resource.niveau === niveauFilter;
+                
+                // Filtre de classe
+                const matchesClasse = !classeFilter || resource.classe === classeFilter;
+                
+                // Filtre d'axe
+                const matchesAxe = !axeFilter || resource.axe === axeFilter;
+                
+                return matchesSearch && matchesNiveau && matchesClasse && matchesAxe;
+            });
+            
+            displayResources();
+            updateStats();
+        }
+
+        // Afficher les ressources
+        function displayResources() {
+            const container = document.getElementById('resources-container');
+            
+            if (filteredResources.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h2>Aucun résultat</h2>
+                        <p>Aucune ressource ne correspond à vos critères de recherche.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = filteredResources.map(resource => `
+                <a href="player.html?id=${resource.id}" class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-prompt">${resource.prompt}</div>
+                        <div class="resource-niveau">${resource.niveau}</div>
+                    </div>
+                    <div class="resource-preview">${resource.text_preview}</div>
+                    <div class="resource-meta">
+                        <div class="resource-meta-left">
+                            <div class="meta-item">
+                                <span>📝</span>
+                                <span>${resource.longueur} mots</span>
+                            </div>
+                            <div class="meta-item">
+                                <span>📚</span>
+                                <span>${resource.vocab_count} mots vocab.</span>
+                            </div>
+                            ${resource.classe ? `
+                                <div class="meta-item">
+                                    <span>🎓</span>
+                                    <span>Classe: ${resource.classe}</span>
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="meta-item">
+                            <span>🎤</span>
+                            <span>${resource.genre}</span>
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // Mettre à jour les statistiques
+        function updateStats() {
+            const stats = document.getElementById('stats');
+            stats.textContent = `${filteredResources.length} ressource(s) sur ${allResources.length} disponible(s)`;
+        }
+
+        // Initialiser au chargement de la page
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

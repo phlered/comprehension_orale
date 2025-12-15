@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Saisie manuelle du texte allemand</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+        h1 { color: #2c3e50; }
+        label { font-weight: bold; margin-top: 15px; display: block; }
+        textarea, input { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; }
+        button { background: #2980b9; color: #fff; border: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #1c5d8f; }
+        .flash { color: #c0392b; font-weight: bold; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Saisie manuelle du texte allemand</h1>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="flash">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+        <form method="post">
+            <label for="theme">Thème</label>
+            <input type="text" name="theme" id="theme" value="{{ theme|default('') }}" required>
+            <label for="niveau">Niveau de langue</label>
+            <select name="niveau" id="niveau">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1" selected>B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+                <option value="C2">C2</option>
+            </select>
+            <label for="texte">Texte allemand (saisissez ou collez votre texte)</label>
+            <textarea name="texte" id="texte" rows="12" required></textarea>
+            <label for="mots">Vocabulaire (optionnel, format : mot_allemand | traduction, un par ligne)</label>
+            <textarea name="mots" id="mots" rows="6"></textarea>
+            <button type="submit">Valider le texte</button>
+        </form>
+        <form method="get" action="/">
+            <button type="submit" style="background:#27ae60; margin-top:10px;">Retour à l'accueil</button>
+        </form>
+    </div>
+</body>
+</html>

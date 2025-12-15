@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout manuel de vocabulaire</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+        h1 { color: #2c3e50; }
+        label { font-weight: bold; margin-top: 15px; display: block; }
+        textarea, input { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; }
+        button { background: #27ae60; color: #fff; border: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #219150; }
+        .flash { color: #c0392b; font-weight: bold; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ajout manuel de vocabulaire</h1>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="flash">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+        <form method="post">
+            <label for="theme">Thème</label>
+            <input type="text" name="theme" id="theme" value="{{ theme|default('') }}" required>
+            <label for="mots">Vocabulaire (format : mot_allemand | traduction, un par ligne)</label>
+            <textarea name="mots" id="mots" rows="10" required></textarea>
+            <button type="submit">Valider le vocabulaire</button>
+        </form>
+        <form method="get" action="/">
+            <button type="submit" style="background:#2980b9; margin-top:10px;">Retour à l'accueil</button>
+        </form>
+    </div>
+</body>
+</html>

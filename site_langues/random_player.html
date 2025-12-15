@@ -235,6 +235,20 @@
             margin-left: 10px;
         }
 
+        .vocab-highlight {
+            background: linear-gradient(180deg, transparent 60%, #fef08a 60%);
+            font-weight: 600;
+            color: #854d0e;
+            cursor: help;
+            position: relative;
+            padding: 0 2px;
+        }
+
+        .vocab-highlight:hover {
+            background: #fef08a;
+            border-radius: 3px;
+        }
+
         .stats {
             display: flex;
             justify-content: space-around;
@@ -618,14 +632,90 @@
                 });
         }
 
+        function highlightVocabInText(text, vocabList) {
+            let highlightedText = text;
+            
+            // Extraire les mots principaux du vocabulaire (sans articles, sans romanisation)
+            const wordsToHighlight = vocabList.map(item => {
+                let word = item.word;
+                
+                // Retirer les articles au début
+                word = word.replace(/^(le|la|les|l'|der|die|das|el|los|las|un|una|uno|de|het|il|lo|gli|le|i|un'|l')\s+/i, '');
+                
+                // Retirer 'to' pour les verbes anglais
+                word = word.replace(/^to\s+/i, '');
+                
+                // Retirer les espaces et les astérisques
+                word = word.trim().replace(/\*/g, '');
+                
+                // Pour le coréen, prendre seulement le mot avant →
+                if (word.includes('→')) {
+                    word = word.split('→')[0].trim();
+                }
+                
+                return word;
+            }).filter(w => w.length > 2);
+            
+            // Trier par longueur décroissante
+            wordsToHighlight.sort((a, b) => b.length - a.length);
+            
+            // Créer un Set pour éviter les doublons
+            const uniqueWords = [...new Set(wordsToHighlight)];
+            
+            // Remplacer chaque mot par sa version surlignée
+            uniqueWords.forEach(word => {
+                const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(`(?<![\\wÀ-ÿ'''])${escapedWord}(?![\\wÀ-ÿ'''])`, 'gi');
+                
+                highlightedText = highlightedText.replace(regex, match => {
+                    return `<span class="vocab-highlight" title="Mot du vocabulaire">${match}</span>`;
+                });
+            });
+            
+            return highlightedText;
+        }
+
         function parseAndDisplayContent(content) {
             // Extraire le texte et le vocabulaire
             const textMatch = content.match(/## (?:Text|Texte|Texto|Tekst|텍스트|Testo)\s*\n\n(.*?)(?=\n## |$)/s);
             const vocabMatch = content.match(/## (?:Vocabulary|Vocabulaire|Vocabulario|Wortschatz|Woordenschat|어휘|Vocabolario)\s*\n\n(.*?)$/s);
             
-            // Afficher le texte
+            // Parser le vocabulaire d'abord pour la mise en évidence
+            const vocabWords = [];
+            if (vocabMatch) {
+                const vocabLines = vocabMatch[1].trim().split('\n');
+                vocabLines.forEach(line => {
+                    const cleanLine = line.replace(/^[-*]\s*/, '').trim();
+                    if (cleanLine) {
+                        let word = '', translation = '';
+                        
+                        if (cleanLine.includes('→')) {
+                            const parts = cleanLine.split('→');
+                            word = parts[0].replace(/\*\*/g, '').trim();
+                            translation = parts[1].trim();
+                        } else if (cleanLine.includes('|')) {
+                            const parts = cleanLine.split('|');
+                            word = parts[0].replace(/\*\*/g, '').trim();
+                            translation = parts[1].trim();
+                        } else {
+                            word = cleanLine;
+                        }
+                        
+                        if (word) {
+                            vocabWords.push({ word, translation });
+                        }
+                    }
+                });
+            }
+            
+            // Afficher le texte avec mise en évidence
             if (textMatch) {
-                document.getElementById('textContent').textContent = textMatch[1].trim();
+                const textContent = textMatch[1].trim();
+                if (vocabWords.length > 0) {
+                    document.getElementById('textContent').innerHTML = highlightVocabInText(textContent, vocabWords);
+                } else {
+                    document.getElementById('textContent').textContent = textContent;
+                }
             } else {
                 document.getElementById('textContent').textContent = currentResource.text_preview;
             }

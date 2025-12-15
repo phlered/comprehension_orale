@@ -489,8 +489,13 @@
             document.getElementById('audio-player').load();
             document.getElementById('player-container').style.display = 'block';
             
-            // Texte
-            document.getElementById('text-content').textContent = currentResource.fullText || currentResource.text_preview;
+            // Texte avec mise en évidence du vocabulaire
+            const textContent = currentResource.fullText || currentResource.text_preview;
+            if (currentResource.fullVocab && currentResource.fullVocab.length > 0) {
+                document.getElementById('text-content').innerHTML = highlightVocabInText(textContent, currentResource.fullVocab);
+            } else {
+                document.getElementById('text-content').textContent = textContent;
+            }
             
             // Vocabulaire
             if (currentResource.fullVocab) {
@@ -509,6 +514,54 @@
         function setupEventListeners() {
             document.getElementById('toggle-text').addEventListener('click', toggleText);
             document.getElementById('toggle-vocab').addEventListener('click', toggleVocab);
+        }
+
+        // Mettre en évidence les mots du vocabulaire dans le texte
+        function highlightVocabInText(text, vocabList) {
+            let highlightedText = text;
+            
+            // Extraire les mots principaux du vocabulaire (sans articles, sans romanisation)
+            const wordsToHighlight = vocabList.map(item => {
+                let word = item.word;
+                
+                // Retirer les articles au début (le, la, les, der, die, das, el, la, los, las, de, het, il, lo, gli, le, i)
+                word = word.replace(/^(le|la|les|l'|der|die|das|el|los|las|un|una|uno|de|het|il|lo|gli|le|i|un'|l')\s+/i, '');
+                
+                // Retirer 'to' pour les verbes anglais
+                word = word.replace(/^to\s+/i, '');
+                
+                // Retirer les espaces et les astérisques
+                word = word.trim().replace(/\*/g, '');
+                
+                // Pour le coréen, prendre seulement le mot avant →
+                if (word.includes('→')) {
+                    word = word.split('→')[0].trim();
+                }
+                
+                return word;
+            }).filter(w => w.length > 2); // Ignorer les mots trop courts
+            
+            // Trier par longueur décroissante pour éviter les conflits (mots longs d'abord)
+            wordsToHighlight.sort((a, b) => b.length - a.length);
+            
+            // Créer un Set pour éviter les doublons
+            const uniqueWords = [...new Set(wordsToHighlight)];
+            
+            // Remplacer chaque mot par sa version surlignée
+            uniqueWords.forEach(word => {
+                // Échapper les caractères spéciaux regex
+                const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                
+                // Créer une regex qui matche le mot entier (avec ou sans apostrophe)
+                // \b ne fonctionne pas bien avec les accents, donc on utilise des limites plus souples
+                const regex = new RegExp(`(?<![\\wÀ-ÿ'''])${escapedWord}(?![\\wÀ-ÿ'''])`, 'gi');
+                
+                highlightedText = highlightedText.replace(regex, match => {
+                    return `<span class="vocab-highlight" title="Mot du vocabulaire">${match}</span>`;
+                });
+            });
+            
+            return highlightedText;
         }
 
         // Basculer l'affichage du texte

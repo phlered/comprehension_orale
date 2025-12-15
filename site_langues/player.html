@@ -402,14 +402,14 @@
             
             const body = frontmatterMatch[2];
             
-            // Extraire le texte (section ## Tekst, ## Text, etc.)
-            const textMatch = body.match(/##\s+(Tekst|Text|Texto|Texte)\s*\n\n(.*?)(?=\n##|$)/s);
+            // Extraire le texte (section ## Tekst, ## Text, ## Texto, ## Texte, ## 텍스트, ## Testo)
+            const textMatch = body.match(/##\s+(Tekst|Text|Texto|Texte|텍스트|Testo)\s*\n\n(.*?)(?=\n##|$)/s);
             if (textMatch) {
                 currentResource.fullText = textMatch[2].trim();
             }
             
             // Extraire le vocabulaire
-            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘)\s*\n\n(.*?)$/s);
+            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘|Vocabolario)\s*\n\n(.*?)$/s);
             if (vocabMatch) {
                 currentResource.fullVocab = parseVocabulary(vocabMatch[2].trim());
             }

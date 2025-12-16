@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-12-16T12:09:08.286250",
-  "total_resources": 73,
+  "generated_at": "2025-12-16T13:04:18.217911",
+  "total_resources": 84,
   "languages": [
-    "cor",
     "nl",
-    "it",
-    "eng",
     "esp",
+    "eng",
     "fr",
+    "it",
+    "cor",
     "all"
   ],
   "resources": [
@@ -92,6 +92,22 @@
       "text_path": "resources/la_nourriture_20251210_1854/text.md"
     },
     {
+      "id": "envoyer_un_colis_a_l_20251216_1226",
+      "langue": "nl",
+      "prompt": "Envoyer un colis à la poste",
+      "resume": "Envoyer un colis à la poste",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:27:00",
+      "longueur": 150,
+      "text_preview": "Vandaag ga ik een pakketje sturen. Ik heb een cadeau voor mijn vriendin. Het is haar verjaardag binnenkort. Eerst pak ik het cadeau in met mooi papier. Daarna plak ik er een sticker op met haar adres....",
+      "vocab_count": 7,
+      "audio_path": "resources/envoyer_un_colis_a_l_20251216_1226/audio.mp3",
+      "text_path": "resources/envoyer_un_colis_a_l_20251216_1226/text.md"
+    },
+    {
       "id": "learning_to_use_a_sm_20251215_1535",
       "langue": "eng",
       "prompt": "Learning to Use a Smartphone",
@@ -172,6 +188,22 @@
       "text_path": "resources/menu_navideno_saluda_20251215_1549/text.md"
     },
     {
+      "id": "demander_un_rendez_v_20251216_1227",
+      "langue": "nl",
+      "prompt": "Demander un rendez-vous chez le médecin",
+      "resume": "Demander un rendez-vous médical",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:27:38",
+      "longueur": 150,
+      "text_preview": "Ik ben Jan. Ik ben ziek. Ik wil een afspraak bij de dokter maken. Ik bel de dokterspraktijk. De assistent antwoordt. \n\n\"Hallo, met de dokterspraktijk,\" zegt de assistent.\n\n\"Hallo,\" zeg ik. \"Ik ben Jan...",
+      "vocab_count": 7,
+      "audio_path": "resources/demander_un_rendez_v_20251216_1227/audio.mp3",
+      "text_path": "resources/demander_un_rendez_v_20251216_1227/text.md"
+    },
+    {
       "id": "l_alimentazione_20251215_1756",
       "langue": "it",
       "prompt": "L'alimentazione",
@@ -202,6 +234,22 @@
       "vocab_count": 0,
       "audio_path": "resources/utilise_un_style_jou_20251216_1151/audio.mp3",
       "text_path": "resources/utilise_un_style_jou_20251216_1151/text.md"
+    },
+    {
+      "id": "commander_une_pizza_20251216_1304",
+      "langue": "nl",
+      "prompt": "Commander une pizza",
+      "resume": "Commander une pizza",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 13:04:10",
+      "longueur": 150,
+      "text_preview": "Titel: Pizza Bestellen\n\nHallo! Ik wil graag een pizza bestellen. Ik hou van pizza. Het is mijn lievelingseten. Vandaag wil ik een pizza met kaas en tomaat.\n\nIk bel naar de pizzeria. \"Hallo, ik wil een...",
+      "vocab_count": 7,
+      "audio_path": "resources/commander_une_pizza_20251216_1304/audio.mp3",
+      "text_path": "resources/commander_une_pizza_20251216_1304/text.md"
     },
     {
       "id": "faire_les_courses_au_20251216_0837",
@@ -348,6 +396,22 @@
       "text_path": "resources/quelles_sont_les_dif_20251210_2038/text.md"
     },
     {
+      "id": "commander_un_sandwic_20251216_1228",
+      "langue": "nl",
+      "prompt": "Commander un sandwich dans une sandwicherie",
+      "resume": "Commander un sandwich",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:28:29",
+      "longueur": 150,
+      "text_preview": "Hallo! Ik ben in een sandwicherie. Ik wil een sandwich bestellen. De man achter de toonbank glimlacht. Hij zegt: \"Hallo, wat wil je eten?\" Ik kijk naar het menu. Er zijn veel opties. \n\nIk zeg: \"Ik wil...",
+      "vocab_count": 7,
+      "audio_path": "resources/commander_un_sandwic_20251216_1228/audio.mp3",
+      "text_path": "resources/commander_un_sandwic_20251216_1228/text.md"
+    },
+    {
       "id": "se_presenter_20251216_0836",
       "langue": "fr",
       "prompt": "Se présenter",
@@ -476,6 +540,22 @@
       "text_path": "resources/test_hybride_20251210_1206/text.md"
     },
     {
+      "id": "emprunter_un_livre_a_20251216_1228",
+      "langue": "nl",
+      "prompt": "Emprunter un livre à la bibliothèque",
+      "resume": "Emprunter un livre à la bibliothèque",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 12:28:43",
+      "longueur": 150,
+      "text_preview": "Ik ga naar de bibliotheek. De bibliotheek is groot. Er zijn veel boeken. Ik wil een boek lenen. Eerst zoek ik een mooi boek. Ik loop naar de kast met boeken. Ik zie veel kleuren en titels. Ik kies een...",
+      "vocab_count": 8,
+      "audio_path": "resources/emprunter_un_livre_a_20251216_1228/audio.mp3",
+      "text_path": "resources/emprunter_un_livre_a_20251216_1228/text.md"
+    },
+    {
       "id": "recycling_habits_20251215_1537",
       "langue": "eng",
       "prompt": "Recycling Habits",
@@ -588,6 +668,22 @@
       "text_path": "resources/rediger_un_article_d_20251210_1248/text.md"
     },
     {
+      "id": "commander_au_restaur_20251216_1219",
+      "langue": "nl",
+      "prompt": "Commander au restaurant",
+      "resume": "Commander au restaurant",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:20:05",
+      "longueur": 150,
+      "text_preview": "Titel: Eten in een restaurant\n\nHoi! Vandaag gaan we naar een restaurant. Het restaurant heet \"De Smakelijke Hap\". Het is gezellig en niet duur.\n\nWe zitten aan een tafel bij het raam. De ober komt naar...",
+      "vocab_count": 7,
+      "audio_path": "resources/commander_au_restaur_20251216_1219/audio.mp3",
+      "text_path": "resources/commander_au_restaur_20251216_1219/text.md"
+    },
+    {
       "id": "un_escursione_in_mon_20251215_1752",
       "langue": "it",
       "prompt": "Un'escursione in montagna",
@@ -618,6 +714,22 @@
       "vocab_count": 39,
       "audio_path": "resources/walking_in_the_park_20251215_1538/audio.mp3",
       "text_path": "resources/walking_in_the_park_20251215_1538/text.md"
+    },
+    {
+      "id": "acheter_des_fruits_e_20251216_1228",
+      "langue": "nl",
+      "prompt": "Acheter des fruits et légumes au marché",
+      "resume": "Acheter des fruits et légumes au marché",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:28:16",
+      "longueur": 150,
+      "text_preview": "Ik ga naar de markt. Het is zaterdag. Ik koop fruit en groenten. Op de markt zijn veel kraampjes. Er zijn appels, bananen en sinaasappels. Ik koop vier appels. Ze zijn rood en groot. Ik koop ook banan...",
+      "vocab_count": 7,
+      "audio_path": "resources/acheter_des_fruits_e_20251216_1228/audio.mp3",
+      "text_path": "resources/acheter_des_fruits_e_20251216_1228/text.md"
     },
     {
       "id": "la_crise_de_suez_te_20251216_0911",
@@ -956,6 +1068,22 @@
       "text_path": "resources/simuler_une_intervie_20251210_1251/text.md"
     },
     {
+      "id": "prendre_le_bus_pour_20251216_1226",
+      "langue": "nl",
+      "prompt": "Prendre le bus pour aller au travail",
+      "resume": "Prendre le bus pour aller au travail",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 12:26:35",
+      "longueur": 150,
+      "text_preview": "Elke ochtend neem ik de bus naar mijn werk. De bushalte is dichtbij mijn huis. Om acht uur 's ochtends sta ik bij de halte. De bus is vaak op tijd. Soms is de bus een beetje laat, maar dat is oké.\n\nIn...",
+      "vocab_count": 8,
+      "audio_path": "resources/prendre_le_bus_pour_20251216_1226/audio.mp3",
+      "text_path": "resources/prendre_le_bus_pour_20251216_1226/text.md"
+    },
+    {
       "id": "gardening_together_20251215_1536",
       "langue": "eng",
       "prompt": "Gardening Together",
@@ -986,6 +1114,22 @@
       "vocab_count": 29,
       "audio_path": "resources/ma_routine_quotidien_20251216_0837/audio.mp3",
       "text_path": "resources/ma_routine_quotidien_20251216_0837/text.md"
+    },
+    {
+      "id": "aller_a_la_pharmacie_20251216_1226",
+      "langue": "nl",
+      "prompt": "Aller à la pharmacie pour acheter un médicament",
+      "resume": "Acheter un médicament à la pharmacie",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 12:26:21",
+      "longueur": 150,
+      "text_preview": "Jasmin is ziek. Ze heeft hoofdpijn en haar keel doet pijn. Ze besluit naar de apotheek te gaan. Jasmin loopt naar de apotheek in haar buurt. \n\nBinnen in de apotheek is het rustig. Er staan weinig mens...",
+      "vocab_count": 7,
+      "audio_path": "resources/aller_a_la_pharmacie_20251216_1226/audio.mp3",
+      "text_path": "resources/aller_a_la_pharmacie_20251216_1226/text.md"
     },
     {
       "id": "quels_sont_les_sites_20251210_2035",
@@ -1068,6 +1212,22 @@
       "text_path": "resources/nochevieja_y_las_uva_20251215_1549/text.md"
     },
     {
+      "id": "commander_a_la_boula_20251216_1219",
+      "langue": "nl",
+      "prompt": "Commander à la boulangerie",
+      "resume": "Commander à la boulangerie",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 12:19:51",
+      "longueur": 150,
+      "text_preview": "Bij de bakker\n\nHet is een mooie ochtend. Lisa gaat naar de bakker. Ze wil brood kopen. Ze opent de deur en zegt: \"Goedemorgen!\" De bakker lacht en antwoordt: \"Goedemorgen! Hoe kan ik je helpen?\"\n\nLisa...",
+      "vocab_count": 7,
+      "audio_path": "resources/commander_a_la_boula_20251216_1219/audio.mp3",
+      "text_path": "resources/commander_a_la_boula_20251216_1219/text.md"
+    },
+    {
       "id": "comment_les_habitant_20251210_2036",
       "langue": "nl",
       "prompt": "Comment les habitants célèbrent-ils le Sinterklaas ?",
@@ -1130,6 +1290,22 @@
       "vocab_count": 42,
       "audio_path": "resources/voluntariado_naviden_20251215_1549/audio.mp3",
       "text_path": "resources/voluntariado_naviden_20251215_1549/text.md"
+    },
+    {
+      "id": "retirer_de_l_argent_20251216_1227",
+      "langue": "nl",
+      "prompt": "Retirer de l'argent à la banque",
+      "resume": "Retirer de l'argent à la banque",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 12:27:13",
+      "longueur": 150,
+      "text_preview": "Naar de bank gaan is makkelijk. Ik loop naar de bank in mijn buurt. De bank is dichtbij mijn huis. Ik wil geld opnemen. Ik heb geld nodig voor boodschappen. Bij de bank is een geldautomaat. Ik heb mij...",
+      "vocab_count": 8,
+      "audio_path": "resources/retirer_de_l_argent_20251216_1227/audio.mp3",
+      "text_path": "resources/retirer_de_l_argent_20251216_1227/text.md"
     },
     {
       "id": "presentarsi_20251215_1803",

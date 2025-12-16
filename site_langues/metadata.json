@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-16T09:08:21.845948",
+  "generated_at": "2025-12-16T11:34:12.957501",
   "total_resources": 72,
   "languages": [
-    "cor",
     "it",
+    "cor",
     "esp",
-    "fr",
+    "nl",
     "all",
-    "eng",
-    "nl"
+    "fr",
+    "eng"
   ],
   "resources": [
     {
@@ -567,6 +567,21 @@
       "text_path": "resources/walking_in_the_park_20251215_1538/text.md"
     },
     {
+      "id": "la_crise_de_suez_te_20251216_0911",
+      "langue": "fr",
+      "prompt": "La crise de Suez (test voix)",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 09:12:01",
+      "longueur": 120,
+      "text_preview": "La crise de Suez, survenue en 1956, marque un tournant dans l'histoire du Moyen-Orient. Le 26 juillet, le président égyptien, Gamal Abdel Nasser, nationalise le canal de Suez, une artère stratégique p...",
+      "vocab_count": 0,
+      "audio_path": "resources/la_crise_de_suez_te_20251216_0911/audio.mp3",
+      "text_path": "resources/la_crise_de_suez_te_20251216_0911/text.md"
+    },
+    {
       "id": "in_albergo_20251215_1801",
       "langue": "it",
       "prompt": "In albergo",
@@ -895,21 +910,6 @@
       "vocab_count": 29,
       "audio_path": "resources/ma_routine_quotidien_20251216_0837/audio.mp3",
       "text_path": "resources/ma_routine_quotidien_20251216_0837/text.md"
-    },
-    {
-      "id": "la_crise_de_suez_20251216_0907",
-      "langue": "fr",
-      "prompt": "La crise de Suez",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "date": "2025-12-16 09:07:40",
-      "longueur": 400,
-      "text_preview": "La crise de Suez, survenue en 1956, constitue un tournant majeur dans l'histoire géopolitique du Moyen-Orient et du monde. Cet événement est déclenché lorsque le président égyptien Gamal Abdel Nasser ...",
-      "vocab_count": 0,
-      "audio_path": "resources/la_crise_de_suez_20251216_0907/audio.mp3",
-      "text_path": "resources/la_crise_de_suez_20251216_0907/text.md"
     },
     {
       "id": "quels_sont_les_sites_20251210_2035",

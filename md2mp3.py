@@ -83,7 +83,6 @@ class VoiceConfig:
         "eng": {
             "female": [
                 "en-GB-LibbyNeural",
-                "en-GB-MaisieNeural",
                 "en-GB-SoniaNeural",
                 "en-GB-BellaNeural",
                 "en-GB-HollieNeural",
@@ -92,10 +91,8 @@ class VoiceConfig:
             "male": [
                 "en-GB-RyanNeural",
                 "en-GB-ThomasNeural",
-                "en-GB-AlfieNeural",
                 "en-GB-ElliotNeural",
                 "en-GB-EthanNeural",
-                "en-GB-NoahNeural",
                 "en-GB-OliverNeural",
             ]
         },
@@ -141,7 +138,6 @@ class VoiceConfig:
                 "es-ES-ArnauNeural",
                 "es-ES-DarioNeural",
                 "es-ES-EliasNeural",
-                "es-ES-NilNeural",
                 "es-ES-SaulNeural",
                 "es-ES-TeoNeural",
             ]
@@ -202,8 +198,6 @@ class VoiceConfig:
             "female": [
                 "it-IT-ElsaNeural",
                 "it-IT-IsabellaNeural",
-                "it-IT-DiegoNeural",
-                "it-IT-GiuseppeNeural",
             ],
             "male": [
                 "it-IT-DiegoNeural",

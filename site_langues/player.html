@@ -557,12 +557,19 @@
 
             // Tooltips tactiles pour iOS/Android: tap sur un mot surligné pour afficher la traduction
             let activeTooltip = null;
+            let activeTarget = null;
+            let tooltipTimer = null;
 
             function hideTooltip() {
+                if (tooltipTimer) {
+                    clearTimeout(tooltipTimer);
+                    tooltipTimer = null;
+                }
                 if (activeTooltip && activeTooltip.parentNode) {
                     activeTooltip.parentNode.removeChild(activeTooltip);
                     activeTooltip = null;
                 }
+                activeTarget = null;
             }
 
             function showTooltip(target, text) {
@@ -572,31 +579,38 @@
                 tip.className = 'tooltip-bubble';
                 tip.textContent = text;
                 document.body.appendChild(tip);
-                const top = window.scrollY + rect.top;
+                // Positionner au-dessus si possible, sinon en dessous
+                const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 8;
+                const belowTop = window.scrollY + rect.top + rect.height + 8;
                 const left = window.scrollX + rect.left + rect.width / 2;
-                tip.style.top = `${top - 10}px`;
+                const finalTop = desiredTop > window.scrollY ? desiredTop : belowTop;
+                tip.style.top = `${finalTop}px`;
                 tip.style.left = `${left}px`;
                 activeTooltip = tip;
+                activeTarget = target;
+                // Fermeture automatique après 5s
+                tooltipTimer = setTimeout(hideTooltip, 5000);
             }
 
             const clickHandler = (e) => {
                 const span = e.target.closest('.vocab-highlight');
                 if (span && (span.getAttribute('data-translation') || span.getAttribute('title'))) {
                     const text = span.getAttribute('data-translation') || span.getAttribute('title') || '';
-                    if (activeTooltip) {
+                    if (activeTarget === span) {
+                        // Tap sur le même mot: masquer
                         hideTooltip();
                     } else if (text) {
+                        // Tap sur un autre mot: remplacer
                         showTooltip(span, text);
                     }
                     e.preventDefault();
                     e.stopPropagation();
-                } else {
-                    hideTooltip();
                 }
             };
 
             document.addEventListener('click', clickHandler, { passive: true });
             document.addEventListener('touchstart', clickHandler, { passive: true });
+            // Toujours fermer au scroll/resize
             window.addEventListener('scroll', hideTooltip, { passive: true });
             window.addEventListener('resize', hideTooltip, { passive: true });
         }

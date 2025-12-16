@@ -238,16 +238,18 @@ Résumé (3-10 mots):"""
         """Extrait le vocabulaire du texte"""
         lang_config = LanguageConfig.get_config(langue_code)
         words = len(text.split())
-        # Règles de quantité de vocabulaire
-        # - FR C2: pas de vocabulaire
-        # - Autres langues (≠ fr): 5%
-        # - FR autres niveaux: 20%
-        if langue_code == "fr" and niveau == "C2":
-            return []
-        if langue_code != "fr":
-            vocab_count = max(1, int(words * 0.05 + 0.5))
-        else:
-            vocab_count = max(1, int(words * 0.2 + 0.5))
+        # Règles de quantité de vocabulaire: décroissance par niveau
+        # A1: 20% | A2: 17% | B1: 14% | B2: 11% | C1: 8% | C2: 5%
+        vocab_percentages = {
+            "A1": 0.20,
+            "A2": 0.17,
+            "B1": 0.14,
+            "B2": 0.11,
+            "C1": 0.08,
+            "C2": 0.05
+        }
+        vocab_ratio = vocab_percentages.get(niveau, 0.20)
+        vocab_count = max(1, int(words * vocab_ratio + 0.5))
 
         vocab_prompt = f"""Analyse ce texte {lang_config['description']} et extrais les {vocab_count} mots les plus importants et utiles pour un apprenant.
 

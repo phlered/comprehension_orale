@@ -206,20 +206,22 @@ Contraintes de style (C2 FR orienté apprentissage par le contenu):
         return text
 
     def generate_resume(self, prompt):
-        """Génère un résumé court du prompt (2-5 mots clés)"""
-        resume_prompt = f"""Extrait le sujet principal de ce prompt d'apprentissage en 2 à 5 mots maximum (sans article, sans guillemets, sans ponctuation finale).
-Le résumé doit être le thème concret, pas les instructions pédagogiques.
+        """Génère un résumé court du prompt (3-10 mots clés)"""
+        resume_prompt = f"""Extrait le sujet principal de ce prompt d'apprentissage en 3 à 10 mots maximum (sans guillemets, sans ponctuation finale).
+Le résumé doit être le thème concret, pas les instructions pédagogiques. Garde les articles si nécessaire pour la clarté.
 
 Exemples:
-- "Utilise un style journalistique pour parler des mutations génétiques au niveau seconde" → "mutations génétiques"
-- "Écris un dialogue entre deux jeunes Allemands décrivant leur école" → "l'école en Allemagne"
-- "Rédige un texte sur les traditions de Noël en Espagne" → "traditions de Noël espagnoles"
-- "Génère un texte sur la crise de Suez" → "crise de Suez"
-- "Les animaux domestiques" → "animaux domestiques"
+- "Utilise un style journalistique pour parler des mutations génétiques au niveau seconde" → "Les mutations génétiques"
+- "Écris un dialogue entre deux jeunes Allemands décrivant leur école" → "L'école en Allemagne"
+- "Rédige un texte sur les traditions de Noël en Espagne" → "Les traditions de Noël en Espagne"
+- "Comment fonctionne le système de vélo aux Pays-Bas ?" → "Le système de vélo aux Pays-Bas"
+- "Génère un texte sur la crise de Suez" → "La crise de Suez"
+- "Les animaux domestiques" → "Les animaux domestiques"
+- "Quelles sont les différences culturelles entre les Néerlandais et les Belges ?" → "Différences culturelles Pays-Bas et Belgique"
 
 Prompt à résumer: {prompt}
 
-Résumé (2-5 mots maximum):"""
+Résumé (3-10 mots):"""
 
         response = self.client.chat.completions.create(
             model="gpt-4o-mini",  # Modèle plus léger pour une tâche simple

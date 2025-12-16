@@ -97,6 +97,7 @@
         .filter-group {
             flex: 1;
             min-width: 150px;
+            max-width: 250px;
         }
 
         .filter-label {
@@ -323,23 +324,6 @@
                     <option value="C2">C2</option>
                 </select>
             </div>
-            
-            <div class="filter-group">
-                <label class="filter-label">Classe</label>
-                <select id="filter-classe" class="filter-select">
-                    <option value="">Toutes les classes</option>
-                    <option value="2">Seconde</option>
-                    <option value="1">Première</option>
-                    <option value="T">Terminale</option>
-                </select>
-            </div>
-            
-            <div class="filter-group">
-                <label class="filter-label">Axe</label>
-                <select id="filter-axe" class="filter-select">
-                    <option value="">Tous les axes</option>
-                </select>
-            </div>
         </div>
         
         <div class="stats" id="stats">
@@ -423,31 +407,19 @@
 
         // Populer le filtre des axes
         function populateAxeFilter() {
-            const axes = [...new Set(allResources.map(r => r.axe).filter(a => a))];
-            const axeSelect = document.getElementById('filter-axe');
-            
-            axes.forEach(axe => {
-                const option = document.createElement('option');
-                option.value = axe;
-                option.textContent = axe;
-                axeSelect.appendChild(option);
-            });
+            // Fonction conservée pour compatibilité (vide - axes pas affichés)
         }
 
         // Configurer les événements
         function setupEventListeners() {
             document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
             document.getElementById('filter-niveau').addEventListener('change', filterAndDisplayResources);
-            document.getElementById('filter-classe').addEventListener('change', filterAndDisplayResources);
-            document.getElementById('filter-axe').addEventListener('change', filterAndDisplayResources);
         }
 
         // Filtrer et afficher les ressources
         function filterAndDisplayResources() {
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             const niveauFilter = document.getElementById('filter-niveau').value;
-            const classeFilter = document.getElementById('filter-classe').value;
-            const axeFilter = document.getElementById('filter-axe').value;
             
             filteredResources = allResources.filter(resource => {
                 // Filtre de recherche
@@ -458,13 +430,7 @@
                 // Filtre de niveau
                 const matchesNiveau = !niveauFilter || resource.niveau === niveauFilter;
                 
-                // Filtre de classe
-                const matchesClasse = !classeFilter || resource.classe === classeFilter;
-                
-                // Filtre d'axe
-                const matchesAxe = !axeFilter || resource.axe === axeFilter;
-                
-                return matchesSearch && matchesNiveau && matchesClasse && matchesAxe;
+                return matchesSearch && matchesNiveau;
             });
             
             displayResources();

@@ -128,6 +128,7 @@ def scan_docs_directory():
             "id": slug,
             "langue": langue_code,
             "prompt": metadata.get('prompt', ''),
+            "resume": metadata.get('resume', metadata.get('prompt', '')),  # Fallback sur prompt si pas de résumé
             "niveau": metadata.get('niveau', ''),
             "classe": metadata.get('classe', ''),  # Si disponible
             "axe": metadata.get('axe', ''),  # Si disponible

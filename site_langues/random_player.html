@@ -734,7 +734,7 @@
             const config = LANGUAGE_CONFIG[currentResource.langue];
             
             // Titre
-            document.getElementById('resourceTitle').textContent = currentResource.prompt;
+            document.getElementById('resourceTitle').textContent = currentResource.resume || currentResource.prompt;
             
             // Déterminer l'affichage de la voix
             let voiceDisplay = '';

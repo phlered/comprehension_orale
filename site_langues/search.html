@@ -455,7 +455,7 @@
             container.innerHTML = filteredResources.map(resource => `
                 <a href="player.html?id=${resource.id}" class="resource-card">
                     <div class="resource-header">
-                        <div class="resource-prompt">${resource.prompt}</div>
+                        <div class="resource-prompt">${resource.resume || resource.prompt}</div>
                         <div class="resource-niveau">${resource.niveau}</div>
                     </div>
                     <div class="resource-preview">${resource.text_preview}</div>

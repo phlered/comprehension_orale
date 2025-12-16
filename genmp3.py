@@ -205,6 +205,33 @@ Contraintes de style (C2 FR orienté apprentissage par le contenu):
         text = response.choices[0].message.content.strip()
         return text
 
+    def generate_resume(self, prompt):
+        """Génère un résumé court du prompt (2-5 mots clés)"""
+        resume_prompt = f"""Extrait le sujet principal de ce prompt d'apprentissage en 2 à 5 mots maximum (sans article, sans guillemets, sans ponctuation finale).
+Le résumé doit être le thème concret, pas les instructions pédagogiques.
+
+Exemples:
+- "Utilise un style journalistique pour parler des mutations génétiques au niveau seconde" → "mutations génétiques"
+- "Écris un dialogue entre deux jeunes Allemands décrivant leur école" → "l'école en Allemagne"
+- "Rédige un texte sur les traditions de Noël en Espagne" → "traditions de Noël espagnoles"
+- "Génère un texte sur la crise de Suez" → "crise de Suez"
+- "Les animaux domestiques" → "animaux domestiques"
+
+Prompt à résumer: {prompt}
+
+Résumé (2-5 mots maximum):"""
+
+        response = self.client.chat.completions.create(
+            model="gpt-4o-mini",  # Modèle plus léger pour une tâche simple
+            messages=[{"role": "user", "content": resume_prompt}],
+            max_tokens=50,
+            temperature=0.3  # Basse température pour plus de cohérence
+        )
+        resume = response.choices[0].message.content.strip()
+        # Nettoyer les guillemets/ponctuation superflus
+        resume = resume.strip('"\'.,;:!? ')
+        return resume
+
     def generate_vocabulary(self, langue_code, text, prompt, niveau):
         """Extrait le vocabulaire du texte"""
         lang_config = LanguageConfig.get_config(langue_code)
@@ -415,6 +442,7 @@ class OutputGenerator:
         vocabulaire,
         langue_code,
         prompt,
+        resume,
         longueur,
         niveau,
         genre,
@@ -429,6 +457,7 @@ class OutputGenerator:
         yaml_header = f"""---
 langue: {lang_config['display']}
 prompt: {prompt}
+resume: {resume}
 longueur: {longueur}
 niveau: {niveau}
 genre: {genre}
@@ -508,6 +537,10 @@ class CompressionOralApp:
             )
             print(f"✅ Vocabulaire extrait ({len(vocabulaire)} mots)\n")
 
+            # Générer le résumé du prompt
+            resume = self.text_gen.generate_resume(args.prompt)
+            print(f"✅ Résumé généré: \"{resume}\"\n")
+
             # Générer le markdown AVANT l'audio (md2mp3 a besoin du fichier)
             fichier_md = self.output_gen.create_markdown(
                 dossier_sortie,
@@ -515,6 +548,7 @@ class CompressionOralApp:
                 vocabulaire,
                 args.langue,
                 args.prompt,
+                resume,
                 args.longueur,
                 args.niveau,
                 args.genre,

@@ -497,9 +497,8 @@
             const header = document.getElementById('header');
             header.innerHTML = `
                 <a href="search.html?lang=${currentResource.langue}" class="back-btn">← Retour à la recherche</a>
-                <h1 class="title">${currentResource.prompt}</h1>
-                <div class="meta">
-                    <div class="meta-item">
+                <h1 class="title">${currentResource.resume || currentResource.prompt}</h1>
+                <div class="meta">\n                    <div class="meta-item">
                         <span>${config.flag}</span>
                         <span>${config.name}</span>
                     </div>

@@ -453,10 +453,10 @@
         let currentResource = null;
         let sessionActive = false;
         let sessionTimer = null;
+        let sessionPlayTimer = null;  // Timer pour la lecture continue en arrière-plan
         let sessionEndTime = null;
         let docsPlayedCount = 0;
         let totalWordsLearned = 0;
-        let wakeLock = null;
 
         // Charger les métadonnées au démarrage
         fetch('metadata.json')
@@ -578,28 +578,6 @@
             availableResources = [...filteredResources];
             playedResources = [];
 
-            // Activer Wake Lock pour éviter le verrouillage de l'écran pendant la session
-            if ('wakeLock' in navigator) {
-                try {
-                    wakeLock = await navigator.wakeLock.request('screen');
-                    console.log('Wake Lock activé - lecture continue même en veille');
-                    
-                    // Réactiver le Wake Lock si le système le relâche (changement d'onglet, etc.)
-                    wakeLock.addEventListener('release', async () => {
-                        if (sessionActive) {
-                            try {
-                                wakeLock = await navigator.wakeLock.request('screen');
-                                console.log('Wake Lock réactivé');
-                            } catch (err) {
-                                console.log('Impossible de réactiver Wake Lock:', err);
-                            }
-                        }
-                    });
-                } catch (err) {
-                    console.log('Wake Lock non disponible sur ce navigateur:', err);
-                }
-            }
-
             // Mettre à jour l'interface
             document.getElementById('startBtn').disabled = true;
             document.getElementById('stopBtn').disabled = false;
@@ -609,7 +587,7 @@
             document.getElementById('stats').style.display = 'flex';
             document.getElementById('playerCard').style.display = 'block';
 
-            // Démarrer le timer
+            // Démarrer le timer d'affichage du compte à rebours
             updateTimer();
             sessionTimer = setInterval(updateTimer, 1000);
 
@@ -619,22 +597,29 @@
             // Écouter la fin de l'audio pour passer au suivant
             const audio = document.getElementById('audio-player');
             audio.addEventListener('ended', onAudioEnded);
+            
+            // Timer de lecture continue en arrière-plan (toutes les 100ms)
+            // Cela assure que si 'ended' n'est pas déclenché (en veille), on continue quand même
+            sessionPlayTimer = setInterval(() => {
+                if (!sessionActive || sessionEndTime <= Date.now()) return;
+                
+                const audio = document.getElementById('audio-player');
+                // Si l'audio n'est pas en cours de lecture ET que le temps n'est pas écoulé
+                if (audio.paused && !audio.ended) {
+                    // Essayer de relancer la lecture
+                    audio.play().catch(e => console.log('Play failed:', e));
+                } else if (audio.ended && sessionActive && sessionEndTime > Date.now()) {
+                    // L'audio s'est terminé, charger le suivant
+                    console.log('📄 Audio ended (via background timer)');
+                    loadNextRandom();
+                }
+            }, 100);
         }
 
         async function stopSession() {
             sessionActive = false;
             clearInterval(sessionTimer);
-            
-            // Relâcher le Wake Lock
-            if (wakeLock) {
-                try {
-                    await wakeLock.release();
-                    wakeLock = null;
-                    console.log('Wake Lock relâché');
-                } catch (err) {
-                    console.log('Erreur lors du relâchement du Wake Lock:', err);
-                }
-            }
+            clearInterval(sessionPlayTimer);
             
             document.getElementById('startBtn').disabled = false;
             document.getElementById('stopBtn').disabled = true;
@@ -967,33 +952,6 @@
             window.addEventListener('scroll', hideTooltip, { passive: true });
             window.addEventListener('resize', hideTooltip, { passive: true });
         })();
-
-        // Gérer la visibilité de la page pour maintenir la lecture en arrière-plan
-        document.addEventListener('visibilitychange', async () => {
-            if (!sessionActive) return;
-
-            if (document.hidden) {
-                console.log('Page cachée - maintien de la lecture');
-                // La lecture continue automatiquement
-            } else {
-                console.log('Page visible - vérification de la lecture');
-                // Si le wake lock a été relâché par le système, le réactiver
-                if (wakeLock === null && 'wakeLock' in navigator) {
-                    try {
-                        wakeLock = await navigator.wakeLock.request('screen');
-                        console.log('Wake Lock réactivé après changement de visibilité');
-                    } catch (err) {
-                        console.log('Impossible de réactiver Wake Lock:', err);
-                    }
-                }
-                
-                // Reprendre la lecture si elle était interrompue
-                const audio = document.getElementById('audio-player');
-                if (audio.paused && sessionActive && sessionEndTime > Date.now()) {
-                    audio.play().catch(e => console.log('Erreur reprise audio:', e));
-                }
-            }
-        });
     </script>
 </body>
 </html>

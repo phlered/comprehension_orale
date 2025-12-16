@@ -399,8 +399,8 @@
             'eng': { name: 'Anglais', flag: '🇬🇧' },
             'esp': { name: 'Espagnol', flag: '🇪🇸' },
             'nl': { name: 'Néerlandais', flag: '🇳🇱' },
-            'cor': { name: 'Coréen', flag: '🇰🇷' },
-            'it': { name: 'Italien', flag: '🇮🇹' }
+            'it': { name: 'Italien', flag: '🇮🇹' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
         };
 
         let allResources = [];
@@ -584,7 +584,7 @@
             
             // Mettre à jour les stats
             docsPlayedCount++;
-            totalWordsLearned += currentResource.vocab_count || 0;
+            totalWordsLearned += (currentResource.niveau === 'C2') ? 0 : (currentResource.vocab_count || 0);
             document.getElementById('docsPlayed').textContent = docsPlayedCount;
             document.getElementById('wordsLearned').textContent = totalWordsLearned;
         }
@@ -633,10 +633,12 @@
                     <span>📝</span>
                     <span>${currentResource.longueur} mots</span>
                 </div>
-                <div class="meta-item">
-                    <span>📚</span>
-                    <span>${currentResource.vocab_count} mots vocab.</span>
-                </div>
+                ${currentResource.niveau !== 'C2' ? `
+                    <div class="meta-item">
+                        <span>📚</span>
+                        <span>${currentResource.vocab_count} mots vocab.</span>
+                    </div>
+                ` : ''}
             `;
             document.getElementById('resourceMeta').innerHTML = metaHTML;
             
@@ -646,6 +648,14 @@
             audio.load();
             audio.play().catch(e => console.log('Lecture auto bloquée:', e));
             
+            // Afficher/masquer la section vocabulaire selon le niveau
+            const vocabSection = document.getElementById('vocabList').closest('.content-section');
+            if (currentResource.niveau === 'C2') {
+                vocabSection.style.display = 'none';
+            } else {
+                vocabSection.style.display = '';
+            }
+
             // Charger le texte complet
             fetch(currentResource.text_path)
                 .then(response => response.text())
@@ -730,10 +740,10 @@
                 });
             }
             
-            // Afficher le texte avec mise en évidence
+            // Afficher le texte avec mise en évidence (désactivée en C2)
             if (textMatch) {
                 const textContent = textMatch[1].trim();
-                if (vocabWords.length > 0) {
+                if (currentResource.niveau !== 'C2' && vocabWords.length > 0) {
                     document.getElementById('textContent').innerHTML = highlightVocabInText(textContent, vocabWords);
                 } else {
                     document.getElementById('textContent').textContent = textContent;
@@ -742,11 +752,11 @@
                 document.getElementById('textContent').textContent = currentResource.text_preview;
             }
             
-            // Afficher le vocabulaire
+            // Afficher le vocabulaire (masqué en C2)
             const vocabList = document.getElementById('vocabList');
             vocabList.innerHTML = '';
             
-            if (vocabMatch) {
+            if (vocabMatch && currentResource.niveau !== 'C2') {
                 const vocabLines = vocabMatch[1].trim().split('\n');
                 vocabLines.forEach(line => {
                     const cleanLine = line.replace(/^[-*]\s*/, '').trim();

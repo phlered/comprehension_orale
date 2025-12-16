@@ -164,14 +164,37 @@ class TextGenerator:
             raise ValueError("Clé API OpenAI manquante. Configurez OPENAI_API_KEY.")
         self.client = OpenAI(api_key=api_key)
 
-    def generate(self, langue_code, prompt, longueur, niveau):
+    def generate(self, langue_code, prompt, longueur, niveau, style=None):
         """Génère un texte selon les paramètres"""
         lang_config = LanguageConfig.get_config(langue_code)
         level_desc = GeneratorConfig.LEVELS.get(niveau, GeneratorConfig.LEVELS["B1"])
 
+        # Consignes générales
         prompt_text = f"""Écris un texte {lang_config['description']} de niveau {niveau} ({level_desc}) d'environ {longueur} mots sur le thème : {prompt}
 
 Le texte doit être naturel, intéressant et adapté au niveau {niveau}."""
+
+        # Consignes spécifiques: Français C2 orienté "informatif" (journalistique/chercheur)
+        if langue_code == "fr" and niveau == "C2":
+            style_label = (style or "sobre").lower()
+            # Normaliser quelques styles attendus
+            if style_label in ["journalistique", "journalistiq", "journal"]:
+                style_label = "journalistique"
+            elif style_label in ["scientifique", "chercheur", "research"]:
+                style_label = "scientifique"
+            else:
+                style_label = "sobre"
+
+            prompt_text += f"""
+
+Contraintes de style (C2 FR orienté apprentissage par le contenu):
+- Registre neutre, informatif et {style_label} (ton factuel, sans emphase ni métaphores).
+- Priorité au contenu: faits, chiffres, dates, acteurs, causalité; pas de verbiage.
+- Phrases claires (en moyenne 12 à 22 mots), éviter l'empilement de subordonnées.
+- Vocabulaire courant privilégié; n'utiliser des termes techniques que si nécessaire et les définir brièvement à la première occurrence.
+- Éviter les superlatifs, adverbes d'intensité et tournures inutilement complexes.
+- Structurer en paragraphes courts avec transitions explicites; conclure par 1 à 2 phrases récapitulatives.
+"""
 
         print(f"📝 Génération du texte ({longueur} mots, niveau {niveau})...")
         response = self.client.chat.completions.create(
@@ -182,11 +205,20 @@ Le texte doit être naturel, intéressant et adapté au niveau {niveau}."""
         text = response.choices[0].message.content.strip()
         return text
 
-    def generate_vocabulary(self, langue_code, text, prompt):
+    def generate_vocabulary(self, langue_code, text, prompt, niveau):
         """Extrait le vocabulaire du texte"""
         lang_config = LanguageConfig.get_config(langue_code)
         words = len(text.split())
-        vocab_count = max(1, int(words * 0.2 + 0.5))  # 20% au lieu de 10%
+        # Règles de quantité de vocabulaire
+        # - FR C2: pas de vocabulaire
+        # - Autres langues (≠ fr): 5%
+        # - FR autres niveaux: 20%
+        if langue_code == "fr" and niveau == "C2":
+            return []
+        if langue_code != "fr":
+            vocab_count = max(1, int(words * 0.05 + 0.5))
+        else:
+            vocab_count = max(1, int(words * 0.2 + 0.5))
 
         vocab_prompt = f"""Analyse ce texte {lang_config['description']} et extrais les {vocab_count} mots les plus importants et utiles pour un apprenant.
 
@@ -211,7 +243,8 @@ Pour chaque mot :
             vocab_prompt += "Format strict (un mot par ligne) :\narticle mot_néerlandais | traduction_française\n\nExemple:\nde hond | le chien\nhet huis | la maison\n"
         elif langue_code == "fr":
             vocab_prompt += "- Pour les noms français, INDIQUE TOUJOURS l'article défini (le/la/les) devant le mot\n"
-            vocab_prompt += "Format strict (un mot par ligne) :\narticle mot_français | traduction\n\nExemple:\nla maison | house\nle chat | cat\n"
+            vocab_prompt += "- La TRADUCTION doit être en NÉERLANDAIS (pas en français)\n"
+            vocab_prompt += "Format strict (un mot par ligne) :\narticle mot_français | traduction_néerlandaise\n\nExemples:\nla maison | huis\nle chat | kat\n"
         elif langue_code == "cor":
             vocab_prompt += "- Pour chaque mot coréen, donne d'abord la romanisation (phonétique), puis la traduction en français\n"
             vocab_prompt += "Format strict (un mot par ligne) :\nmot_coréen → romanisation (traduction_française)\n\nExemple:\n김치 → kimchi (chou fermenté épicé)\n불고기 → bulgogi (viande marinée grillée)\n"
@@ -461,7 +494,8 @@ class CompressionOralApp:
                 args.langue,
                 args.prompt,
                 args.longueur,
-                args.niveau
+                args.niveau,
+                style=args.style
             )
             print(f"✅ Texte généré ({len(texte.split())} mots)\n")
 
@@ -469,7 +503,8 @@ class CompressionOralApp:
             vocabulaire = self.text_gen.generate_vocabulary(
                 args.langue,
                 texte,
-                args.prompt
+                args.prompt,
+                args.niveau
             )
             print(f"✅ Vocabulaire extrait ({len(vocabulaire)} mots)\n")
 
@@ -489,8 +524,11 @@ class CompressionOralApp:
             )
             print(f"✅ Markdown généré: text.md\n")
 
+            # Choisir la vitesse par défaut selon le niveau si non fournie
+            vitesse_effective = args.vitesse if args.vitesse is not None else (1.0 if args.niveau in ['C1', 'C2'] else 0.8)
+
             # Générer l'audio avec md2mp3.py
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=args.vitesse, voix=args.voix)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=args.voix)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")
@@ -552,6 +590,12 @@ Exemples:
     )
 
     parser.add_argument(
+        '--style',
+        choices=['sobre', 'journalistique', 'scientifique'],
+        help="Style de rédaction (surtout utile pour C2 FR): 'sobre' (défaut), 'journalistique' ou 'scientifique'"
+    )
+
+    parser.add_argument(
         '-g', '--genre',
         default='femme',
         choices=['femme', 'homme'],
@@ -567,8 +611,8 @@ Exemples:
     parser.add_argument(
         '--vitesse',
         type=float,
-        default=0.8,
-        help="Vitesse de lecture de 0.6 à 1.0 (défaut: 0.8 pour apprentissage)"
+        default=None,
+        help="Vitesse de lecture de 0.6 à 1.0 (défaut: 1.0 pour C1/C2, 0.8 sinon)"
     )
 
     # Paramètres optionnels supplémentaires

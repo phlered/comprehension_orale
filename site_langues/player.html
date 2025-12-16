@@ -372,12 +372,13 @@
     <script>
         // Configuration des langues
         const LANGUAGE_CONFIG = {
+            'fr': { name: 'Français', flag: '🇫🇷' },
             'eng': { name: 'Anglais', flag: '🇬🇧' },
             'all': { name: 'Allemand', flag: '🇩🇪' },
             'esp': { name: 'Espagnol', flag: '🇪🇸' },
             'nl': { name: 'Néerlandais', flag: '🇳🇱' },
-            'cor': { name: 'Coréen', flag: '🇰🇷' },
-            'it': { name: 'Italien', flag: '🇮🇹' }
+            'it': { name: 'Italien', flag: '🇮🇹' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
         };
 
         // Variables globales
@@ -511,10 +512,12 @@
                         <span>📝</span>
                         <span>${currentResource.longueur} mots</span>
                     </div>
-                    <div class="meta-item">
-                        <span>📚</span>
-                        <span>${currentResource.vocab_count} mots vocab.</span>
-                    </div>
+                    ${currentResource.niveau !== 'C2' ? `
+                        <div class="meta-item">
+                            <span>📚</span>
+                            <span>${currentResource.vocab_count} mots vocab.</span>
+                        </div>
+                    ` : ''}
                     ${currentResource.classe ? `
                         <div class="meta-item">
                             <span>🎓</span>
@@ -529,24 +532,33 @@
             document.getElementById('audio-player').load();
             document.getElementById('player-container').style.display = 'block';
             
-            // Texte avec mise en évidence du vocabulaire
+            // Texte avec mise en évidence du vocabulaire (désactivée en C2)
             const textContent = currentResource.fullText || currentResource.text_preview;
-            if (currentResource.fullVocab && currentResource.fullVocab.length > 0) {
+            if (currentResource.niveau !== 'C2' && currentResource.fullVocab && currentResource.fullVocab.length > 0) {
                 document.getElementById('text-content').innerHTML = highlightVocabInText(textContent, currentResource.fullVocab);
             } else {
                 document.getElementById('text-content').textContent = textContent;
             }
             
-            // Vocabulaire
-            if (currentResource.fullVocab) {
-                const vocabList = document.getElementById('vocab-list');
-                vocabList.innerHTML = currentResource.fullVocab.map(item => `
-                    <div class="vocab-item">
-                        <span class="vocab-word">${item.word}</span>
-                        <span class="vocab-arrow">→</span>
-                        <span class="vocab-translation">${item.translation}</span>
-                    </div>
-                `).join('');
+            // Vocabulaire (masqué en C2)
+            const vocabSection = document.getElementById('vocab-section');
+            const vocabToggleBtn = document.getElementById('toggle-vocab');
+            if (currentResource.niveau === 'C2') {
+                vocabSection.style.display = 'none';
+                vocabToggleBtn.style.display = 'none';
+            } else {
+                vocabSection.style.display = '';
+                vocabToggleBtn.style.display = '';
+                if (currentResource.fullVocab) {
+                    const vocabList = document.getElementById('vocab-list');
+                    vocabList.innerHTML = currentResource.fullVocab.map(item => `
+                        <div class="vocab-item">
+                            <span class="vocab-word">${item.word}</span>
+                            <span class="vocab-arrow">→</span>
+                            <span class="vocab-translation">${item.translation}</span>
+                        </div>
+                    `).join('');
+                }
             }
         }
 

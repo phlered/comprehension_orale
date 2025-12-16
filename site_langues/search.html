@@ -354,12 +354,13 @@
     <script>
         // Configuration des langues
         const LANGUAGE_CONFIG = {
+            'fr': { name: 'Français', flag: '🇫🇷' },
             'eng': { name: 'Anglais', flag: '🇬🇧' },
             'all': { name: 'Allemand', flag: '🇩🇪' },
             'esp': { name: 'Espagnol', flag: '🇪🇸' },
             'nl': { name: 'Néerlandais', flag: '🇳🇱' },
-            'cor': { name: 'Coréen', flag: '🇰🇷' },
-            'it': { name: 'Italien', flag: '🇮🇹' }
+            'it': { name: 'Italien', flag: '🇮🇹' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
         };
 
         // Variables globales
@@ -498,10 +499,12 @@
                                 <span>📝</span>
                                 <span>${resource.longueur} mots</span>
                             </div>
-                            <div class="meta-item">
-                                <span>📚</span>
-                                <span>${resource.vocab_count} mots vocab.</span>
-                            </div>
+                            ${resource.niveau !== 'C2' ? `
+                                <div class="meta-item">
+                                    <span>📚</span>
+                                    <span>${resource.vocab_count} mots vocab.</span>
+                                </div>
+                            ` : ''}
                             ${resource.classe ? `
                                 <div class="meta-item">
                                     <span>🎓</span>

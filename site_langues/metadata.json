@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-15T22:15:59.075765",
-  "total_resources": 62,
+  "generated_at": "2025-12-16T09:08:21.845948",
+  "total_resources": 72,
   "languages": [
+    "cor",
+    "it",
+    "esp",
     "fr",
-    "nl",
     "all",
     "eng",
-    "esp",
-    "cor",
-    "it"
+    "nl"
   ],
   "resources": [
     {
@@ -117,6 +117,21 @@
       "text_path": "resources/la_nourriture_20251210_1853/text.md"
     },
     {
+      "id": "histoire_de_l_etat_d_20251216_0856",
+      "langue": "fr",
+      "prompt": "Histoire de l'état d'Israël depuis 1945",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:56:49",
+      "longueur": 400,
+      "text_preview": "L'histoire de l'État d'Israël depuis 1945 est marquée par des événements politiques, sociaux et militaires déterminants. En 1947, l'Assemblée générale des Nations Unies adopte le plan de partage de la...",
+      "vocab_count": 68,
+      "audio_path": "resources/histoire_de_l_etat_d_20251216_0856/audio.mp3",
+      "text_path": "resources/histoire_de_l_etat_d_20251216_0856/text.md"
+    },
+    {
       "id": "villancicos_y_concie_20251215_1550",
       "langue": "esp",
       "prompt": "Villancicos y conciertos",
@@ -162,6 +177,36 @@
       "text_path": "resources/l_alimentazione_20251215_1756/text.md"
     },
     {
+      "id": "faire_les_courses_au_20251216_0837",
+      "langue": "fr",
+      "prompt": "Faire les courses au supermarché",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 08:37:47",
+      "longueur": 150,
+      "text_preview": "Aujourd'hui, je vais au supermarché. J'ai une liste de courses. Je prends un caddie à l'entrée. D'abord, je vais au rayon des fruits et légumes. Je choisis des pommes, des bananes et une salade. Ensui...",
+      "vocab_count": 28,
+      "audio_path": "resources/faire_les_courses_au_20251216_0837/audio.mp3",
+      "text_path": "resources/faire_les_courses_au_20251216_0837/text.md"
+    },
+    {
+      "id": "les_loisirs_des_jeun_20251216_0834",
+      "langue": "fr",
+      "prompt": "Les loisirs des jeunes",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:34:16",
+      "longueur": 150,
+      "text_preview": "Les jeunes ont de nombreux loisirs. Beaucoup aiment écouter de la musique. Ils écoutent des chansons à la maison, dans le bus ou avec des amis. La musique aide à se détendre et à se sentir bien.\n\nCert...",
+      "vocab_count": 33,
+      "audio_path": "resources/les_loisirs_des_jeun_20251216_0834/audio.mp3",
+      "text_path": "resources/les_loisirs_des_jeun_20251216_0834/text.md"
+    },
+    {
       "id": "dove_si_trova_il_cam_20251215_1758",
       "langue": "it",
       "prompt": "Dove si trova il campeggio",
@@ -175,6 +220,21 @@
       "vocab_count": 27,
       "audio_path": "resources/dove_si_trova_il_cam_20251215_1758/audio.mp3",
       "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
+    },
+    {
+      "id": "les_loisirs_des_jeun_20251216_0833",
+      "langue": "fr",
+      "prompt": "Les loisirs des jeunes",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:33:12",
+      "longueur": 150,
+      "text_preview": "Les loisirs des jeunes sont très variés et intéressants. Beaucoup de jeunes aiment le sport. Ils jouent au football, au basket ou au tennis avec leurs amis. Le week-end, certains vont à la piscine pou...",
+      "vocab_count": 33,
+      "audio_path": "resources/les_loisirs_des_jeun_20251216_0833/audio.mp3",
+      "text_path": "resources/les_loisirs_des_jeun_20251216_0833/text.md"
     },
     {
       "id": "la_scuola_20251215_2215",
@@ -250,6 +310,21 @@
       "vocab_count": 29,
       "audio_path": "resources/quelles_sont_les_dif_20251210_2038/audio.mp3",
       "text_path": "resources/quelles_sont_les_dif_20251210_2038/text.md"
+    },
+    {
+      "id": "se_presenter_20251216_0836",
+      "langue": "fr",
+      "prompt": "Se présenter",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:36:59",
+      "longueur": 150,
+      "text_preview": "Bonjour ! Je m'appelle Marie. J'ai 20 ans. J'habite à Paris, en France. Je suis étudiante. J'aime beaucoup lire et dessiner. J'ai un frère. Il s'appelle Lucas. Il a 15 ans. Nous avons un chat. Le chat...",
+      "vocab_count": 29,
+      "audio_path": "resources/se_presenter_20251216_0836/audio.mp3",
+      "text_path": "resources/se_presenter_20251216_0836/text.md"
     },
     {
       "id": "quelles_sont_les_mes_20251210_2037",
@@ -432,6 +507,21 @@
       "text_path": "resources/die_jahreszeiten_20251210_1152/text.md"
     },
     {
+      "id": "ma_maison_et_les_pie_20251216_0837",
+      "langue": "fr",
+      "prompt": "Ma maison et les pièces",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:37:36",
+      "longueur": 150,
+      "text_preview": "Ma maison est petite mais jolie. Elle a deux chambres, une cuisine, un salon et une salle de bain. Dans ma chambre, il y a un lit, une armoire et une petite table. J'aime ma chambre parce qu'elle est ...",
+      "vocab_count": 31,
+      "audio_path": "resources/ma_maison_et_les_pie_20251216_0837/audio.mp3",
+      "text_path": "resources/ma_maison_et_les_pie_20251216_0837/text.md"
+    },
+    {
       "id": "rediger_un_article_d_20251210_1248",
       "langue": "all",
       "prompt": "Rédiger un article de blog pour une publication étudiante explorant le concept de 'Zweite Heimat' (Seconde Patrie) en Allemagne, décrivant comment les auteurs issus de la migration vivent et écrivent leur identité multiculturelle.",
@@ -595,6 +685,21 @@
       "vocab_count": 29,
       "audio_path": "resources/demander_des_informa_20251210_2033/audio.mp3",
       "text_path": "resources/demander_des_informa_20251210_2033/text.md"
+    },
+    {
+      "id": "ma_famille_20251216_0837",
+      "langue": "fr",
+      "prompt": "Ma famille",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-16 08:37:23",
+      "longueur": 150,
+      "text_preview": "Bonjour! Je m'appelle Julie. J'ai une petite famille. Dans ma famille, il y a quatre personnes. Il y a ma mère, mon père, mon frère et moi. Ma mère s'appelle Anne. Elle est gentille et elle aime cuisi...",
+      "vocab_count": 27,
+      "audio_path": "resources/ma_famille_20251216_0837/audio.mp3",
+      "text_path": "resources/ma_famille_20251216_0837/text.md"
     },
     {
       "id": "tradiciones_navidena_20251215_1547",
@@ -777,6 +882,36 @@
       "text_path": "resources/gardening_together_20251215_1536/text.md"
     },
     {
+      "id": "ma_routine_quotidien_20251216_0837",
+      "langue": "fr",
+      "prompt": "Ma routine quotidienne",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:38:02",
+      "longueur": 150,
+      "text_preview": "Je m'appelle Marie. J'ai 20 ans. Chaque jour, je me lève à 7 heures. Je prends une douche et je m'habille. Puis, je prends mon petit déjeuner. J'aime manger du pain avec du beurre et boire un café.\n\nJ...",
+      "vocab_count": 29,
+      "audio_path": "resources/ma_routine_quotidien_20251216_0837/audio.mp3",
+      "text_path": "resources/ma_routine_quotidien_20251216_0837/text.md"
+    },
+    {
+      "id": "la_crise_de_suez_20251216_0907",
+      "langue": "fr",
+      "prompt": "La crise de Suez",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 09:07:40",
+      "longueur": 400,
+      "text_preview": "La crise de Suez, survenue en 1956, constitue un tournant majeur dans l'histoire géopolitique du Moyen-Orient et du monde. Cet événement est déclenché lorsque le président égyptien Gamal Abdel Nasser ...",
+      "vocab_count": 0,
+      "audio_path": "resources/la_crise_de_suez_20251216_0907/audio.mp3",
+      "text_path": "resources/la_crise_de_suez_20251216_0907/text.md"
+    },
+    {
       "id": "quels_sont_les_sites_20251210_2035",
       "langue": "nl",
       "prompt": "Quels sont les sites touristiques incontournables à visiter à Amsterdam ?",
@@ -940,6 +1075,21 @@
       "vocab_count": 31,
       "audio_path": "resources/au_magasin_est_il_p_20251210_2034/audio.mp3",
       "text_path": "resources/au_magasin_est_il_p_20251210_2034/text.md"
+    },
+    {
+      "id": "histoire_de_l_etat_d_20251216_0846",
+      "langue": "fr",
+      "prompt": "Histoire de l'état d'Israël depuis 1945",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-16 08:47:11",
+      "longueur": 400,
+      "text_preview": "L'histoire de l'État d'Israël depuis 1945 est l'épopée fascinante et complexe d'une nation renaissante, mêlant espoir, conflit et résilience. Au sortir de la Seconde Guerre mondiale, le monde fut témo...",
+      "vocab_count": 68,
+      "audio_path": "resources/histoire_de_l_etat_d_20251216_0846/audio.mp3",
+      "text_path": "resources/histoire_de_l_etat_d_20251216_0846/text.md"
     }
   ]
 }

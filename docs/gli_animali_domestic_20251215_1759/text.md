@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Gli animali domestici
+resume: Les animaux domestiques
 longueur: 150
 niveau: A1
 genre: femme

@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Pourquoi y a t'il autant de canaux à Amsterdam ?
+resume: Les canaux à Amsterdam
 longueur: 150
 niveau: A1
 genre: femme

@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: In albergo
+resume: L'hébergement en hôtel
 longueur: 150
 niveau: A1
 genre: femme

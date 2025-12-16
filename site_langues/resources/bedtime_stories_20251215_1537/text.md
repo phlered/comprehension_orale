@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Bedtime Stories
+resume: Les histoires pour s'endormir
 longueur: 200
 niveau: B1
 genre: femme

@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Die Jahreszeiten
+resume: Les saisons de l'année
 longueur: 150
 niveau: B1
 voix: femme

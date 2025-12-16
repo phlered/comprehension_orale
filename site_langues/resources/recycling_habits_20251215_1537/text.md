@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Recycling Habits
+resume: Les habitudes de recyclage
 longueur: 200
 niveau: B1
 genre: femme

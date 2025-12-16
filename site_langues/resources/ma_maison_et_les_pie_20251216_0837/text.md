@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Ma maison et les pièces
+resume: Ma maison et les pièces
 longueur: 150
 niveau: A1
 genre: femme

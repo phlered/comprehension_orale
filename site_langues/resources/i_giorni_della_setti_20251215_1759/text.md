@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: I giorni della settimana
+resume: Les jours de la semaine
 longueur: 150
 niveau: A1
 genre: homme

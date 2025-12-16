@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Se présenter
+resume: Se présenter
 longueur: 150
 niveau: A1
 genre: femme

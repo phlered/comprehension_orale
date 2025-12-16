@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Comment fonctionne le système de vélo aux Pays-Bas ?
+resume: Le système de vélo aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quelles sont les traditions liées au King's Day aux Pays-Bas ?
+resume: Les traditions du King's Day aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: La scuola
+resume: Le système éducatif en Italie
 longueur: 120
 niveau: A1
 genre: homme

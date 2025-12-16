@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Demander l'heure d'ouverture d'un musée.
+resume: L'heure d'ouverture d'un musée
 longueur: 150
 niveau: A1
 genre: femme

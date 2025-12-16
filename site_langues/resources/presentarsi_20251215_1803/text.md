@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Presentarsi
+resume: Se présenter en italien
 longueur: 150
 niveau: A1
 genre: homme

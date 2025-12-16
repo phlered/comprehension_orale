@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Appel au téléphone pour appeler les secours car on vient d'arriver sur un accident de voiture.
+resume: Appel aux secours pour un accident de voiture
 longueur: 150
 niveau: A1
 genre: femme

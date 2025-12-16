@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Faire les courses au supermarché
+resume: Faire les courses au supermarché
 longueur: 150
 niveau: A1
 genre: homme

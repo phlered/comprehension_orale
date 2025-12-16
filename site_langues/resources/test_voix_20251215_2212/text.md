@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Test voix
+resume: Test de voix
 longueur: 100
 niveau: A1
 genre: femme

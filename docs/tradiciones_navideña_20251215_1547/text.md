@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Tradiciones navideñas en España
+resume: Les traditions de Noël en Espagne
 longueur: 200
 niveau: B1
 genre: homme

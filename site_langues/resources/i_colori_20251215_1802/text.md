@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: I colori
+resume: Les couleurs
 longueur: 150
 niveau: A1
 genre: homme

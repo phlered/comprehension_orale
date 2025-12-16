@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quelles sont les spécialités culinaires hollandaises ?
+resume: Les spécialités culinaires hollandaises
 longueur: 150
 niveau: A1
 genre: femme

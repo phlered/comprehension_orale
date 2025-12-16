@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quels sont les sites touristiques incontournables à visiter à Amsterdam ?
+resume: Les sites touristiques à Amsterdam
 longueur: 150
 niveau: A1
 genre: femme

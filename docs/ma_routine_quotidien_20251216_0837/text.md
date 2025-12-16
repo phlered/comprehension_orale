@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Ma routine quotidienne
+resume: Ma routine quotidienne
 longueur: 150
 niveau: A1
 genre: femme

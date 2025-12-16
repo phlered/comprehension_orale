@@ -1,6 +1,7 @@
 ---
 langue: Anglais (US)
 prompt: la nourriture
+resume: La nourriture
 longueur: 50
 niveau: A1
 genre: femme

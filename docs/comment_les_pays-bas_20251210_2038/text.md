@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Comment les Pays-Bas se préparent-ils au réchauffement climatique ?
+resume: La préparation des Pays-Bas au réchauffement climatique
 longueur: 150
 niveau: A1
 genre: femme

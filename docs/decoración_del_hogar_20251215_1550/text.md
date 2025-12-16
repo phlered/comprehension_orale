@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Decoración del hogar en Navidad
+resume: La décoration du foyer à Noël
 longueur: 200
 niveau: B1
 genre: homme

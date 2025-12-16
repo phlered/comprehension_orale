@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Different Music Tastes
+resume: Les goûts musicaux différents
 longueur: 200
 niveau: B1
 genre: femme

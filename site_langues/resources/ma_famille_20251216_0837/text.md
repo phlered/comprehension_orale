@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Ma famille
+resume: Ma famille
 longueur: 150
 niveau: A1
 genre: homme

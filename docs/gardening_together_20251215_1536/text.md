@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Gardening Together
+resume: Le jardinage en commun
 longueur: 200
 niveau: B1
 genre: femme

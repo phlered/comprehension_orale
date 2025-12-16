@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Birthday Party Planning
+resume: La planification d'une fête d'anniversaire
 longueur: 200
 niveau: B1
 genre: femme

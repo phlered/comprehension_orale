@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quelles sont les différences culturelles entre les Pays-Bas et la France ?
+resume: Les différences culturelles entre les Pays-Bas et la France
 longueur: 150
 niveau: A1
 genre: femme

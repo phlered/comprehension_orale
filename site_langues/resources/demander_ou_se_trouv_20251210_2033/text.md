@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Demander où se trouve la gare.
+resume: La gare
 longueur: 150
 niveau: A1
 genre: femme

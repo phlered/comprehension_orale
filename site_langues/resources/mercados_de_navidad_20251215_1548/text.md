@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Mercados de Navidad
+resume: Les marchés de Noël
 longueur: 200
 niveau: B1
 genre: homme

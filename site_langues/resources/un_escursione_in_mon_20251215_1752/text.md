@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Un'escursione in montagna
+resume: Une excursion en montagne
 longueur: 100
 niveau: A1
 genre: femme

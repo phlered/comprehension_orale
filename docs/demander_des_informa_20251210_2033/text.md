@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Demander des informations sur les transports en commun.
+resume: Les transports en commun
 longueur: 150
 niveau: A1
 genre: femme

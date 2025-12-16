@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Family Photo Album
+resume: L'album photo de famille
 longueur: 200
 niveau: B1
 genre: femme

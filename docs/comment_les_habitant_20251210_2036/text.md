@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Comment les habitants célèbrent-ils le Sinterklaas ?
+resume: La célébration du Sinterklaas
 longueur: 150
 niveau: A1
 genre: femme

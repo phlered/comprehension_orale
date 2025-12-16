@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: L'alimentazione
+resume: L'alimentation
 longueur: 150
 niveau: A1
 genre: femme

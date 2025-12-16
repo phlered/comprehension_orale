@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Pourquoi les Pays-Bas sont-ils connus pour leurs moulins à vent et leurs tulipes ?
+resume: Les moulins à vent et les tulipes aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

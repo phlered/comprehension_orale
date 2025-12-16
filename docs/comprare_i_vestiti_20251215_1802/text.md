@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Comprare i vestiti
+resume: L'achat de vêtements
 longueur: 150
 niveau: A1
 genre: femme

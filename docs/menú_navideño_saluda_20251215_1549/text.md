@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Menú navideño saludable
+resume: Le menu de Noël sain
 longueur: 200
 niveau: B1
 genre: homme

@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Demander où se trouve le supermarché le plus proche.
+resume: Le supermarché le plus proche
 longueur: 150
 niveau: A1
 genre: femme

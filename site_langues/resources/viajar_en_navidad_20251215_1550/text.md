@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Viajar en Navidad
+resume: Voyager à Noël
 longueur: 200
 niveau: B1
 genre: homme

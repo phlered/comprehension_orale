@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Les loisirs des jeunes
+resume: Les loisirs des jeunes
 longueur: 150
 niveau: A2
 genre: femme

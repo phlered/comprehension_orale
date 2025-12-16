@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Rédiger un article de blog pour une publication étudiante explorant le concept de 'Zweite Heimat' (Seconde Patrie) en Allemagne, décrivant comment les auteurs issus de la migration vivent et écrivent leur identité multiculturelle.
+resume: Le concept de 'Zweite Heimat' en Allemagne
 longueur: 300
 niveau: B2
 voix: femme

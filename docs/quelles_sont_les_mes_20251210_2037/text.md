@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quelles sont les mesures écologiques mises en place dans les villes hollandaises ?
+resume: Les mesures écologiques dans les villes hollandaises
 longueur: 150
 niveau: A1
 genre: femme

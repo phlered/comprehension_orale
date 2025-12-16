@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Histoire de l'état d'Israël depuis 1945
+resume: L'histoire de l'état d'Israël depuis 1945
 longueur: 400
 niveau: C2
 genre: femme

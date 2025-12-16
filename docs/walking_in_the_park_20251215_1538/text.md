@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Walking in the Park
+resume: La marche dans le parc
 longueur: 200
 niveau: B1
 genre: femme

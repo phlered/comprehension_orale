@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Die Tiere
+resume: Les animaux
 longueur: 60
 niveau: A2
 genre: homme

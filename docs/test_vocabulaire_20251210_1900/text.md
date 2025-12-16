@@ -1,6 +1,7 @@
 ---
 langue: Français
 prompt: Test vocabulaire
+resume: Le vocabulaire
 longueur: 50
 niveau: A2
 genre: femme

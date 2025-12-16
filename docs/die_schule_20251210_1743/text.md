@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Die Schule
+resume: L'école
 longueur: 80
 niveau: B1
 genre: homme

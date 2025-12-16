@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Sunday Dinner with Grandma
+resume: Le dîner du dimanche avec grand-mère
 longueur: 200
 niveau: B1
 genre: femme

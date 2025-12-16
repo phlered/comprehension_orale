@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Quelles sont les activités populaires pendant l'été aux Pays-Bas ?
+resume: Les activités populaires pendant l'été aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

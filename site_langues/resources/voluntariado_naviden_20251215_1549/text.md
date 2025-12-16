@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Voluntariado navideño
+resume: Le volontariat de Noël
 longueur: 200
 niveau: B1
 genre: homme

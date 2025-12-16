@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Comment se déroule une journée typique dans une école aux Pays-Bas ?
+resume: Une journée typique dans une école aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

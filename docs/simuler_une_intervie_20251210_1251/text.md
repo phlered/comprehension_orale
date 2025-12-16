@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Simuler une interview avec un jeune artiste contemporain qui explique comment l'autoportrait (Selbstporträt) lui permet de se mettre en scène et de négocier son image publique, en référence lointaine à Dürer ou Schiele.
+resume: L'autoportrait chez un jeune artiste contemporain
 longueur: 300
 niveau: B2
 voix: femme

@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: La famiglia
+resume: La famille
 longueur: 150
 niveau: A1
 genre: homme

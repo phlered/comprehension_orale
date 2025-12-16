@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Au magasin, est-il possible de payer par carte bancaire ?
+resume: Le paiement par carte bancaire en magasin
 longueur: 150
 niveau: A1
 genre: femme

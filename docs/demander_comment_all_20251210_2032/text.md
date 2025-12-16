@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Demander comment aller au camping le plus proche.
+resume: Le camping le plus proche
 longueur: 150
 niveau: A1
 genre: femme

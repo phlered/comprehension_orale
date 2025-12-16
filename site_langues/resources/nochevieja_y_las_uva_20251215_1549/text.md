@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Nochevieja y las uvas
+resume: Nochevieja et les uvas
 longueur: 200
 niveau: B1
 genre: homme

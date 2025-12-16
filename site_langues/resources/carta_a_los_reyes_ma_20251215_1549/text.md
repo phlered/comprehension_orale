@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Carta a los Reyes Magos
+resume: La carta a los Reyes Magos
 longueur: 200
 niveau: B1
 genre: homme

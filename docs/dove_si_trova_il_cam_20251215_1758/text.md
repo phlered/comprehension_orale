@@ -1,6 +1,7 @@
 ---
 langue: Italien
 prompt: Dove si trova il campeggio
+resume: Il campeggio
 longueur: 150
 niveau: A1
 genre: homme

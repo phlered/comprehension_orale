@@ -1,6 +1,7 @@
 ---
 langue: Néerlandais
 prompt: Comment se passe les fêtes de fin d'année aux Pays-Bas ?
+resume: Les fêtes de fin d'année aux Pays-Bas
 longueur: 150
 niveau: A1
 genre: femme

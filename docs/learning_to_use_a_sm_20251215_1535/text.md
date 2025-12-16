@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Learning to Use a Smartphone
+resume: L'utilisation d'un smartphone
 longueur: 200
 niveau: B1
 genre: femme

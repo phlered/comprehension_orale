@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Test hybride
+resume: Test hybride
 longueur: 50
 niveau: B1
 voix: femme

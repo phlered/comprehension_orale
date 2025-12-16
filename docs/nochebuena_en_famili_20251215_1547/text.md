@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Nochebuena en familia
+resume: Nochebuena en famille
 longueur: 200
 niveau: B1
 genre: homme

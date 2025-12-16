@@ -1,6 +1,7 @@
 ---
 langue: Anglais (UK)
 prompt: Baking Cookies Together
+resume: La cuisson de biscuits ensemble
 longueur: 200
 niveau: B1
 genre: femme

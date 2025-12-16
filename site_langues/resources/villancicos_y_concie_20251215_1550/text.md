@@ -1,6 +1,7 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Villancicos y conciertos
+resume: Les villancicos et concerts
 longueur: 200
 niveau: B1
 genre: homme

@@ -1,6 +1,7 @@
 ---
 langue: Allemand
 prompt: Écrire un court essai analysant le rôle des emblèmes nationaux (hymne, drapeau) et leur utilité ou non pour créer un sentiment d'unité dans des pays germanophones caractérisés par un système fédéral (comme l'Allemagne, l'Autriche ou la Suisse).
+resume: Le rôle des emblèmes nationaux dans l'unité
 longueur: 250
 niveau: B2
 voix: femme

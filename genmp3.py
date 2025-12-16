@@ -563,7 +563,16 @@ class CompressionOralApp:
             print(f"✅ Markdown généré: text.md\n")
 
             # Choisir la vitesse par défaut selon le niveau si non fournie
-            vitesse_effective = args.vitesse if args.vitesse is not None else (1.0 if args.niveau in ['C1', 'C2'] else 0.8)
+            # Progression linéaire: A1:0.75 → C2:1.0 (paliers de 0.05)
+            default_speeds = {
+                "A1": 0.75,
+                "A2": 0.80,
+                "B1": 0.85,
+                "B2": 0.90,
+                "C1": 0.95,
+                "C2": 1.00
+            }
+            vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 
             # Générer l'audio avec md2mp3.py
             AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=args.voix)
@@ -650,7 +659,7 @@ Exemples:
         '--vitesse',
         type=float,
         default=None,
-        help="Vitesse de lecture de 0.6 à 1.0 (défaut: 1.0 pour C1/C2, 0.8 sinon)"
+        help="Vitesse de lecture de 0.6 à 1.0 (défaut auto: A1=0.75, A2=0.80, B1=0.85, B2=0.90, C1=0.95, C2=1.0)"
     )
 
     # Paramètres optionnels supplémentaires

@@ -313,6 +313,34 @@
             font-size: 18px;
         }
 
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        .filter-label {
+            display: block;
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 15px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
         @media (max-width: 768px) {
             .timer-display {
                 font-size: 36px;
@@ -342,6 +370,19 @@
             
             <div class="session-info" id="sessionInfo">
                 Sélectionnez une langue pour commencer
+            </div>
+
+            <div class="filter-group">
+                <label class="filter-label" for="filterNiveau">📊 Niveau :</label>
+                <select id="filterNiveau" class="filter-select" onchange="updateFilteredResources()">
+                    <option value="">Tous les niveaux</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                </select>
             </div>
 
             <div class="timer-controls">
@@ -406,6 +447,9 @@
         let allResources = [];
         let currentLanguage = null;
         let languageResources = [];
+        let filteredResources = [];
+        let availableResources = [];
+        let playedResources = [];
         let currentResource = null;
         let sessionActive = false;
         let sessionTimer = null;
@@ -435,7 +479,7 @@
             if (langParam && LANGUAGE_CONFIG[langParam]) {
                 currentLanguage = langParam;
                 languageResources = allResources.filter(r => r.langue === currentLanguage);
-                updateSessionInfo();
+                updateFilteredResources();
             } else {
                 // Afficher un sélecteur de langue
                 showLanguageSelector();
@@ -480,21 +524,40 @@
             url.searchParams.set('lang', langCode);
             window.history.pushState({}, '', url);
             
+            // Initialiser les ressources filtrées
+            updateFilteredResources();
+            updateSessionInfo();
+        }
+
+        function updateFilteredResources() {
+            if (!currentLanguage) return;
+            
+            const niveauFilter = document.getElementById('filterNiveau').value;
+            
+            if (niveauFilter) {
+                filteredResources = languageResources.filter(r => r.niveau === niveauFilter);
+            } else {
+                filteredResources = [...languageResources];
+            }
+            
             updateSessionInfo();
         }
 
         function updateSessionInfo() {
             const config = LANGUAGE_CONFIG[currentLanguage];
             const sessionInfo = document.getElementById('sessionInfo');
+            const niveauFilter = document.getElementById('filterNiveau').value;
+            const niveauText = niveauFilter ? ` (${niveauFilter})` : '';
+            
             sessionInfo.innerHTML = `
-                <strong>${config.flag} ${config.name}</strong> — 
-                ${languageResources.length} ressources disponibles
+                <strong>${config.flag} ${config.name}${niveauText}</strong> — 
+                ${filteredResources.length} ressources disponibles
             `;
-            document.getElementById('startBtn').disabled = false;
+            document.getElementById('startBtn').disabled = filteredResources.length === 0;
         }
 
         async function startSession() {
-            if (!currentLanguage || languageResources.length === 0) {
+            if (!currentLanguage || filteredResources.length === 0) {
                 alert('Veuillez sélectionner une langue avec des ressources disponibles.');
                 return;
             }
@@ -510,6 +573,10 @@
             sessionEndTime = Date.now() + (durationMinutes * 60 * 1000);
             docsPlayedCount = 0;
             totalWordsLearned = 0;
+            
+            // Initialiser le pool de ressources disponibles (tirage sans remise)
+            availableResources = [...filteredResources];
+            playedResources = [];
 
             // Activer Wake Lock pour éviter le verrouillage de l'écran pendant la session
             if ('wakeLock' in navigator) {
@@ -538,6 +605,7 @@
             document.getElementById('stopBtn').disabled = false;
             document.getElementById('nextBtn').disabled = false;
             document.getElementById('durationMinutes').disabled = true;
+            document.getElementById('filterNiveau').disabled = true;
             document.getElementById('stats').style.display = 'flex';
             document.getElementById('playerCard').style.display = 'block';
 
@@ -572,6 +640,7 @@
             document.getElementById('stopBtn').disabled = true;
             document.getElementById('nextBtn').disabled = true;
             document.getElementById('durationMinutes').disabled = false;
+            document.getElementById('filterNiveau').disabled = false;
             
             const audio = document.getElementById('audio-player');
             audio.pause();
@@ -607,11 +676,38 @@
         }
 
         function loadNextRandom() {
-            if (!sessionActive || languageResources.length === 0) return;
+            if (!sessionActive || filteredResources.length === 0) return;
 
-            // Sélectionner un document aléatoire
-            const randomIndex = Math.floor(Math.random() * languageResources.length);
-            currentResource = languageResources[randomIndex];
+            // Si tous les documents ont été lus, réinitialiser avec un mélange intelligent
+            if (availableResources.length === 0) {
+                console.log('🔄 Tous les documents lus - réinitialisation du pool');
+                
+                // Créer un nouveau pool en évitant le dernier document joué si possible
+                availableResources = [...filteredResources];
+                
+                // Si on a plus d'un document et qu'on vient de finir un cycle,
+                // retirer temporairement le dernier joué pour éviter les répétitions immédiates
+                if (filteredResources.length > 1 && currentResource) {
+                    const lastPlayedIndex = availableResources.findIndex(r => r.id === currentResource.id);
+                    if (lastPlayedIndex !== -1) {
+                        const lastPlayed = availableResources.splice(lastPlayedIndex, 1);
+                        // On le remet à la fin du pool
+                        availableResources.push(...lastPlayed);
+                    }
+                }
+                
+                playedResources = [];
+            }
+
+            // Sélectionner un document aléatoire parmi les disponibles (tirage sans remise)
+            const randomIndex = Math.floor(Math.random() * availableResources.length);
+            currentResource = availableResources[randomIndex];
+            
+            // Retirer le document du pool disponible
+            availableResources.splice(randomIndex, 1);
+            playedResources.push(currentResource);
+            
+            console.log(`📄 Document: ${currentResource.prompt} (${currentResource.niveau}) - Reste: ${availableResources.length}/${filteredResources.length}`);
 
             // Charger le contenu
             displayResource();

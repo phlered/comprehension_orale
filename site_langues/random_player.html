@@ -417,7 +417,6 @@
             </div>
 
             <audio id="audio-player" class="audio-player" controls controlsList="nodownload" preload="auto" playsinline>
-                <source id="audio-source" src="" type="audio/mpeg">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
 
@@ -896,7 +895,7 @@
             
             // Audio
             const audio = document.getElementById('audio-player');
-            document.getElementById('audio-source').src = currentResource.audio_path;
+            audio.src = currentResource.audio_path;
             audio.load();
             audio.play().catch(e => console.log('Lecture auto bloquée:', e));
             

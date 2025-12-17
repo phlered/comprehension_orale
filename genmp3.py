@@ -18,6 +18,7 @@ from datetime import datetime
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
+from voices_config import FlagMapping, VoiceVariantConfig
 
 load_dotenv()
 
@@ -373,10 +374,22 @@ class AudioGeneratorMD2MP3:
             return content.strip()
 
     @staticmethod
-    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8, voix=None):
-        """Génère le fichier audio MP3 avec md2mp3.py"""
+    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8, voix=None, voix_variant=None):
+        """Génère le fichier audio MP3 avec md2mp3.py
+        
+        Args:
+            markdown_file: Chemin du fichier .md
+            langue_code: Code langue original (eng, us, esp, hisp, etc.)
+            genre: Genre de voix (femme/homme)
+            dossier_sortie: Dossier de sortie
+            vitesse: Vitesse de lecture
+            voix: Voix spécifique (optionnel)
+            voix_variant: Variante sélectionnée (eng/us, esp/hisp) - utilise celle-ci au lieu de langue_code
+        """
         lang_config = LanguageConfig.get_config(langue_code)
-        md2mp3_lang = lang_config['md2mp3_code']
+        # Utiliser la variante si fournie, sinon utiliser la langue originale
+        effective_lang = voix_variant if voix_variant else langue_code
+        md2mp3_lang = LanguageConfig.get_config(effective_lang)['md2mp3_code']
         
         # Créer un fichier temporaire avec seulement le texte
         text_only = AudioGeneratorMD2MP3.extract_text_only(markdown_file, lang_config['label_text'])
@@ -454,8 +467,25 @@ class OutputGenerator:
         niveau_scolaire=None,
         axe=None
     ):
-        """Crée le fichier markdown avec en-tête YAML et contenu"""
+        """Crée le fichier markdown avec en-tête YAML et contenu
+        
+        Retourne: (fichier_md, voix_variant) - le fichier généré et la variante de voix sélectionnée
+        """
         lang_config = LanguageConfig.get_config(langue_code)
+
+        # Déterminer la variante de voix (eng/us, esp/hisp) basée sur le contexte du texte
+        voix_variant = langue_code  # Par défaut, utiliser la langue directement
+        drapeau = FlagMapping.get_flag(voix_variant)
+        
+        # Pour l'anglais et l'espagnol, sélectionner la variante en fonction du contexte
+        if langue_code in ["eng", "us"]:
+            voix_variant = FlagMapping.select_voice_with_context(texte, langue_code)
+            drapeau = FlagMapping.get_flag(voix_variant)
+            print(f"🌐 Anglais: Variante sélectionnée {voix_variant} {drapeau}")
+        elif langue_code in ["esp", "hisp"]:
+            voix_variant = FlagMapping.select_voice_with_context(texte, langue_code)
+            drapeau = FlagMapping.get_flag(voix_variant)
+            print(f"🌐 Espagnol: Variante sélectionnée {voix_variant} {drapeau}")
 
         # En-tête YAML
         yaml_header = f"""---
@@ -465,6 +495,8 @@ resume: {resume}
 longueur: {longueur}
 niveau: {niveau}
 genre: {genre}
+drapeau: {drapeau}
+voix_variant: {voix_variant}
 """
         if voix:
             yaml_header += f"voix: {voix}\n"
@@ -490,7 +522,7 @@ genre: {genre}
         with open(fichier_md, 'w', encoding='utf-8') as f:
             f.write(contenu)
 
-        return fichier_md
+        return fichier_md, voix_variant
 
 
 class CompressionOralApp:
@@ -546,7 +578,7 @@ class CompressionOralApp:
             print(f"✅ Résumé généré: \"{resume}\"\n")
 
             # Générer le markdown AVANT l'audio (md2mp3 a besoin du fichier)
-            fichier_md = self.output_gen.create_markdown(
+            fichier_md, voix_variant = self.output_gen.create_markdown(
                 dossier_sortie,
                 texte,
                 vocabulaire,
@@ -574,8 +606,8 @@ class CompressionOralApp:
             }
             vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 
-            # Générer l'audio avec md2mp3.py
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=args.voix)
+            # Générer l'audio avec md2mp3.py (passer la variante de voix)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=args.voix, voix_variant=voix_variant)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")

@@ -28,6 +28,7 @@ LANGUAGE_MAP = {
     "Espagnol": "esp",
     "Espagnol (Espagne)": "esp",
     "Espagnol (Amérique latine)": "esp",
+    "Espagnol (Amérique du Sud)": "esp",
     "Néerlandais": "nl",
     "Coréen": "cor",
     "Italien": "it"
@@ -133,6 +134,8 @@ def scan_docs_directory():
             "classe": metadata.get('classe', ''),  # Si disponible
             "axe": metadata.get('axe', ''),  # Si disponible
             "genre": metadata.get('voix', metadata.get('genre', '')),  # Prioriser voix sur genre
+            "drapeau": metadata.get('drapeau', ''),  # Nouveau: drapeau
+            "voix_variant": metadata.get('voix_variant', ''),  # Nouveau: variante de voix
             "date": metadata.get('date_generation', ''),
             "longueur": int(metadata.get('longueur', 0)),
             "text_preview": text_content[:200] + "..." if len(text_content) > 200 else text_content,
@@ -142,7 +145,7 @@ def scan_docs_directory():
         }
         
         resources.append(resource)
-        print(f"✅ {folder.name} -> {slug} - {langue_full} - {resource['prompt'][:50]}")
+        print(f"✅ {folder.name} -> {slug} - {langue_full} - {resource['prompt'][:50]} {resource.get('drapeau', '')}")
     
     return resources
 

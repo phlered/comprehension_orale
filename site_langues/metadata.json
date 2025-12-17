@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-17T19:19:31.081490",
-  "total_resources": 141,
+  "generated_at": "2025-12-17T21:14:40.345054",
+  "total_resources": 140,
   "languages": [
-    "it",
-    "nl",
-    "esp",
-    "cor",
-    "all",
     "eng",
-    "fr"
+    "fr",
+    "nl",
+    "all",
+    "esp",
+    "it",
+    "cor"
   ],
   "resources": [
     {
@@ -820,24 +820,6 @@
       "vocab_count": 29,
       "audio_path": "resources/quelles_sont_les_dif_20251210_2038/audio.mp3",
       "text_path": "resources/quelles_sont_les_dif_20251210_2038/text.md"
-    },
-    {
-      "id": "my_name_is_john_and_20251217_1535",
-      "langue": "eng",
-      "prompt": "My name is John and I am 15 years old, talking about my school life",
-      "resume": "La vie scolaire de John",
-      "niveau": "A2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇺🇸",
-      "voix_variant": "us",
-      "date": "2025-12-17 15:35:42",
-      "longueur": 100,
-      "text_preview": "My name is John, and I am 15 years old. I go to high school. My school is big and has many students. I have classes every weekday. My favorite subjects are math and science. I like my teachers because...",
-      "vocab_count": 17,
-      "audio_path": "resources/my_name_is_john_and_20251217_1535/audio.mp3",
-      "text_path": "resources/my_name_is_john_and_20251217_1535/text.md"
     },
     {
       "id": "est_ce_que_les_adole_20251217_1133",

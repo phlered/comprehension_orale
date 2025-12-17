@@ -5,10 +5,252 @@ Gère:
 1. Mapping voix Azure → drapeaux
 2. Sélection aléatoire des variantes (60% eng/40% us, 80% esp/20% hisp)
 3. Détection de pays pour adapter la voix au contexte
+4. Détection du groupe d'âge du locuteur (enfant, adolescent, adulte, senior)
+5. Sélection de voix appropriée selon âge et genre
 """
 
 import random
 import re
+
+
+class SpeakerAgeDetector:
+    """Détecte l'âge apparent du locuteur dans le texte pour choisir une voix adaptée."""
+    
+    # Patterns pour détecter adolescents (13-18 ans)
+    ADOLESCENT_PATTERNS = [
+        r'\b(I am|je suis|tengo|ho)\s+1[3-8]\b',  # "I am 15", "je suis 16", "tengo 14"
+        r'\b(I am|je suis|tengo|ho)\s+(thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|treize|quatorze|quinze|seize|dix-sept|dix-huit)\b',
+        r'\bschoolboy\b|\bschoolgirl\b|\btélécolier\b|\btélécolière\b|\bestudiante?\b|\badolescent',
+        r'\bteen\b|\btéen\b|\btín\b',
+        r'\b(year|years|ans|años)\s+(old|viejo|vieja)\b',  # "16 years old"
+        r'\bmy name is\b.*\b(I am|je suis|tengo)',  # "my name is X and I am 15"
+    ]
+    
+    # Patterns pour détecter enfants (5-12 ans)
+    CHILD_PATTERNS = [
+        r'\b(I am|je suis|tengo|ho)\s+[5-9]\b',  # "I am 7", "je suis 8"
+        r'\b(I am|je suis|tengo|ho)\s+(five|six|seven|eight|nine|ten|eleven|twelve|cinq|six|sept|huit|neuf|dix|onze|douze)\b',
+        r'\bkindergarten\b|\bprimary school\b|\bécole maternelle\b|\bécole primaire\b',
+        r'\bchild\b|\bchildren\b|\benfants?\b|\bnene\b|\bnena\b',
+    ]
+    
+    # Patterns pour détecter seniors (60+)
+    SENIOR_PATTERNS = [
+        r'\b(I am|je suis|tengo|ho)\s+([6-9][0-9]|100)\b',  # "I am 65", "je suis 72"
+        r'\bgrandfather\b|\bgrandmother\b|\bgrands-parents\b|\babuelo\b|\babuela\b',
+        r'\bretired\b|\bretraité\b|\bjubilado\b',
+        r'\bsenior\b|\bpensioner\b|\bpensionné\b',
+    ]
+    
+    @staticmethod
+    def detect_speaker_age_group(text):
+        """
+        Analyse le texte pour détecter la tranche d'âge du locuteur.
+        Retourne: 'adolescent', 'child', 'senior', ou None (par défaut adulte)
+        """
+        text_lower = text.lower()
+        
+        # Chercher patterns dans l'ordre de spécificité
+        for pattern in SpeakerAgeDetector.SENIOR_PATTERNS:
+            if re.search(pattern, text_lower, re.IGNORECASE):
+                return 'senior'
+        
+        for pattern in SpeakerAgeDetector.CHILD_PATTERNS:
+            if re.search(pattern, text_lower, re.IGNORECASE):
+                return 'child'
+        
+        for pattern in SpeakerAgeDetector.ADOLESCENT_PATTERNS:
+            if re.search(pattern, text_lower, re.IGNORECASE):
+                return 'adolescent'
+        
+        return None  # Adulte par défaut
+
+
+class GenderDetector:
+    """Détecte le genre du locuteur basé sur les prénoms et pronoms."""
+    
+    # Prénoms féminins courants (EN, FR, ES)
+    FEMININE_NAMES = {
+        'emily', 'alice', 'sarah', 'jessica', 'anna', 'maria', 'sophia', 'olivia', 'charlotte', 'amelia',
+        'isabella', 'mia', 'evelyn', 'harper', 'lily', 'luna', 'grace', 'chloe', 'zoe', 'ella',
+        'emma', 'jennifer', 'patricia', 'margaret', 'linda', 'barbara', 'susan', 'jessica', 'pamela', 'nancy',
+        'catherine', 'christine', 'melissa', 'deborah', 'karen', 'nancy', 'sandra', 'ashley', 'dorothy', 'margaret',
+        'marie', 'jeanne', 'francoise', 'isabelle', 'christine', 'martine', 'sylvie', 'dominique', 'valerie', 'veronique',
+        'sophie', 'claire', 'nathalie', 'catherine', 'nicole', 'francoise', 'diane', 'christine', 'danielle', 'christine',
+        'rosa', 'carmen', 'teresa', 'josefina', 'mariana', 'gabriela', 'alejandra', 'monica', 'diego', 'victoria',
+        'sandra', 'patricia', 'gloria', 'rosa', 'elena', 'ana', 'laura', 'linda', 'karen', 'nancy',
+    }
+    
+    # Prénoms masculins courants (EN, FR, ES)
+    MASCULINE_NAMES = {
+        'john', 'robert', 'michael', 'william', 'david', 'richard', 'joseph', 'thomas', 'charles', 'christopher',
+        'daniel', 'matthew', 'anthony', 'mark', 'donald', 'steven', 'paul', 'andrew', 'joshua', 'kenneth',
+        'kevin', 'brian', 'george', 'edward', 'ronald', 'timothy', 'jason', 'jeffrey', 'ryan', 'jacob',
+        'gary', 'nicholas', 'eric', 'jonathan', 'stephen', 'larry', 'justin', 'scott', 'brandon', 'benjamin',
+        'samuel', 'frank', 'gregory', 'raymond', 'patrick', 'jack', 'dennis', 'jerry', 'tyler', 'aaron',
+        'pierre', 'jean', 'jacques', 'francois', 'marc', 'philippe', 'andre', 'paul', 'christophe', 'xavier',
+        'luc', 'serge', 'bernard', 'gerald', 'claude', 'olivier', 'stephane', 'laurent', 'vincent', 'bruno',
+        'carlos', 'juan', 'jose', 'miguel', 'luis', 'diego', 'francisco', 'rafael', 'antonio', 'pedro',
+        'ramon', 'marcos', 'ricardo', 'manuel', 'sergio', 'daniel', 'daniel', 'manuel', 'javier', 'angel',
+    }
+    
+    # Pronoms féminins
+    FEMININE_PRONOUNS = {
+        'she', 'her', 'hers', 'herself',  # Anglais
+        'elle', 'la', 'les', 'lui', 'son', 'sa', 'ses',  # Français
+        'ella', 'las', 'le', 'su', 'sus', 'suya',  # Espagnol
+    }
+    
+    # Pronoms masculins
+    MASCULINE_PRONOUNS = {
+        'he', 'him', 'his', 'himself',  # Anglais
+        'il', 'le', 'les', 'lui', 'son', 'sa', 'ses',  # Français
+        'él', 'los', 'le', 'su', 'sus', 'suyo',  # Espagnol
+    }
+    
+    @staticmethod
+    def detect_speaker_gender(text):
+        """
+        Détecte le genre du locuteur basé sur les prénoms et pronoms.
+        Retourne: 'femme', 'homme', ou None (indéterminé)
+        """
+        text_lower = text.lower()
+        
+        # Compter les occurrences de pronoms féminins vs masculins
+        feminine_count = sum(1 for pronoun in GenderDetector.FEMININE_PRONOUNS if pronoun in text_lower)
+        masculine_count = sum(1 for pronoun in GenderDetector.MASCULINE_PRONOUNS if pronoun in text_lower)
+        
+        # Extraire et analyser les prénoms (après "name is" ou "my name")
+        name_patterns = [
+            r'my name is (\w+)',
+            r"i'm (\w+)",
+            r'name is (\w+)',
+            r'm\'appelle (\w+)',
+            r'me llamo (\w+)',
+        ]
+        
+        for pattern in name_patterns:
+            matches = re.findall(pattern, text_lower)
+            for match in matches:
+                name = match.strip().lower()
+                # Enlever les caractères spéciaux
+                name = re.sub(r'[^\w]', '', name)
+                
+                if name in GenderDetector.FEMININE_NAMES:
+                    feminine_count += 3  # Pondération plus forte pour les prénoms
+                elif name in GenderDetector.MASCULINE_NAMES:
+                    masculine_count += 3
+        
+        # Décider basé sur le score
+        if feminine_count > masculine_count:
+            return 'femme'
+        elif masculine_count > feminine_count:
+            return 'homme'
+        
+        return None  # Indéterminé
+
+
+class VoiceSelector:
+    """Sélectionne une voix Azure optimale selon genre et âge détecté."""
+    
+    # Voix juvéniles/adolescentes (18-25 ans perçus)
+    YOUNG_VOICES = {
+        "en-US": {
+            "female": ["en-US-AriaNeural", "en-US-AvaNeural", "en-US-EmmaNeural"],
+            "male": ["en-US-BrianNeural", "en-US-EricNeural"]
+        },
+        "en-GB": {
+            "female": ["en-GB-SoniaNeural", "en-GB-BellaNeural"],
+            "male": ["en-GB-RyanNeural", "en-GB-ElliotNeural"]
+        },
+        "es-ES": {
+            "female": ["es-ES-EstrellaNeural", "es-ES-VerónicaNeural"],
+            "male": ["es-ES-AlvaroNeural", "es-ES-ArnauNeural"]
+        },
+        "es-MX": {
+            "female": ["es-MX-BeatrizNeural", "es-MX-CarlotaNeural"],
+            "male": ["es-MX-JorgeNeural", "es-MX-GerardoNeural"]
+        },
+        "es-AR": {
+            "female": ["es-AR-ElenaNeural"],
+            "male": ["es-AR-TomasNeural"]
+        },
+        "fr-FR": {
+            "female": ["fr-FR-DeniseNeural", "fr-FR-EloiseNeural"],
+            "male": ["fr-FR-HenriNeural", "fr-FR-AlainNeural"]
+        }
+    }
+    
+    # Voix d'enfants (5-12 ans)
+    CHILD_VOICES = {
+        "en-US": {"female": ["en-US-AvaNeural"], "male": ["en-US-BrianNeural"]},
+        "en-GB": {"female": ["en-GB-BellaNeural"], "male": ["en-GB-ElliotNeural"]},
+    }
+    
+    # Voix graves/matures (35-55 ans perçus)
+    MATURE_VOICES = {
+        "en-US": {
+            "female": ["en-US-MichelleNeural", "en-US-MonicaNeural"],
+            "male": ["en-US-GuyNeural", "en-US-JasonNeural"]
+        },
+        "en-GB": {
+            "female": ["en-GB-SoniaNeural"],
+            "male": ["en-GB-ThomasNeural"]
+        },
+    }
+    
+    @staticmethod
+    def azure_to_shortname(azure_voice_id):
+        """Convertit un ID Azure complet en shortname. Ex: 'en-GB-BellaNeural' → 'bella'"""
+        if not azure_voice_id:
+            return None
+        # Extraire la partie après le tiret final, avant "Neural"
+        # Pattern: "locale-FirstNameNeural" → "firstname"
+        parts = azure_voice_id.split('-')
+        if len(parts) >= 2:
+            # Prendre la dernière partie et enlever "Neural"
+            name_part = parts[-1].replace("Neural", "").lower()
+            return name_part
+        return None
+    
+    @staticmethod
+    def select_voice_by_age_and_gender(locale, gender, age_group):
+        """
+        Sélectionne une voix Azure selon la locale, le genre et le groupe d'âge détecté.
+        
+        Args:
+            locale: ex "en-US", "es-ES", "fr-FR"
+            gender: "femme" ou "homme"
+            age_group: "adolescent", "child", "senior", ou None (adulte)
+        
+        Returns:
+            Shortname de la voix (ex: "bella") pour md2mp3.py, ou None
+        """
+        gen = "female" if gender.lower() == "femme" else "male"
+        
+        # Child: chercher voix enfant si disponible
+        if age_group == "child" and locale in VoiceSelector.CHILD_VOICES:
+            voices = VoiceSelector.CHILD_VOICES[locale].get(gen, [])
+            if voices:
+                azure_id = random.choice(voices)
+                return VoiceSelector.azure_to_shortname(azure_id)
+        
+        # Adolescent/Young: chercher voix juvénile
+        if age_group == "adolescent" and locale in VoiceSelector.YOUNG_VOICES:
+            voices = VoiceSelector.YOUNG_VOICES[locale].get(gen, [])
+            if voices:
+                azure_id = random.choice(voices)
+                return VoiceSelector.azure_to_shortname(azure_id)
+        
+        # Senior/Mature: chercher voix grave
+        if age_group == "senior" and locale in VoiceSelector.MATURE_VOICES:
+            voices = VoiceSelector.MATURE_VOICES[locale].get(gen, [])
+            if voices:
+                azure_id = random.choice(voices)
+                return VoiceSelector.azure_to_shortname(azure_id)
+        
+        # Fallback: aucune correspondance trouvée
+        return None
 
 
 class VoiceVariantConfig:

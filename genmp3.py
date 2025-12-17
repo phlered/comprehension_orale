@@ -18,7 +18,7 @@ from datetime import datetime
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
-from voices_config import FlagMapping, VoiceVariantConfig
+from voices_config import FlagMapping, VoiceVariantConfig, SpeakerAgeDetector, GenderDetector, VoiceSelector
 
 load_dotenv()
 
@@ -469,7 +469,7 @@ class OutputGenerator:
     ):
         """Crée le fichier markdown avec en-tête YAML et contenu
         
-        Retourne: (fichier_md, voix_variant) - le fichier généré et la variante de voix sélectionnée
+        Retourne: (fichier_md, voix_variant, voix_specifique) - le fichier, la variante de langue, et la voix Azure spécifique
         """
         lang_config = LanguageConfig.get_config(langue_code)
 
@@ -487,6 +487,42 @@ class OutputGenerator:
             drapeau = FlagMapping.get_flag(voix_variant)
             print(f"🌐 Espagnol: Variante sélectionnée {voix_variant} {drapeau}")
 
+        # Détécter le groupe d'âge du locuteur et choisir une voix appropriée
+        age_group = SpeakerAgeDetector.detect_speaker_age_group(texte)
+        voix_specifique = voix  # Utiliser la voix forcée si fournie
+        
+        if not voix_specifique:
+            # Construire la locale Azure (ex: "en-US" ou "es-ES")
+            locale_map = {
+                "eng": "en-GB",
+                "us": "en-US",
+                "esp": "es-ES",
+                "hisp": "es-MX",  # Par défaut Mexique pour hisp
+                "fr": "fr-FR",
+                "all": "de-DE",
+                "nl": "nl-NL",
+                "it": "it-IT",
+                "cor": "ko-KR"
+            }
+            locale = locale_map.get(voix_variant, locale_map.get(langue_code))
+            
+            # Détecter le genre du locuteur (si non forcé)
+            gender_detected = GenderDetector.detect_speaker_gender(texte)
+            if gender_detected:
+                genre_final = gender_detected
+                print(f"👤 Genre détecté: {gender_detected}")
+            else:
+                genre_final = genre
+            
+            # Chercher une voix adaptée selon âge et genre
+            voix_candidate = VoiceSelector.select_voice_by_age_and_gender(locale, genre_final, age_group)
+            if voix_candidate:
+                voix_specifique = voix_candidate
+                if age_group:
+                    print(f"🎤 Âge détecté: {age_group} → voix: {voix_specifique}")
+                else:
+                    print(f"🎤 Adulte (défaut) → voix: {voix_specifique}")
+
         # En-tête YAML
         yaml_header = f"""---
 langue: {lang_config['display']}
@@ -494,7 +530,7 @@ prompt: {prompt}
 resume: {resume}
 longueur: {longueur}
 niveau: {niveau}
-genre: {genre}
+genre: {genre_final if 'genre_final' in locals() else genre}
 drapeau: {drapeau}
 voix_variant: {voix_variant}
 """
@@ -522,7 +558,7 @@ voix_variant: {voix_variant}
         with open(fichier_md, 'w', encoding='utf-8') as f:
             f.write(contenu)
 
-        return fichier_md, voix_variant
+        return fichier_md, voix_variant, voix_specifique
 
 
 class CompressionOralApp:
@@ -578,7 +614,7 @@ class CompressionOralApp:
             print(f"✅ Résumé généré: \"{resume}\"\n")
 
             # Générer le markdown AVANT l'audio (md2mp3 a besoin du fichier)
-            fichier_md, voix_variant = self.output_gen.create_markdown(
+            fichier_md, voix_variant, voix_specifique = self.output_gen.create_markdown(
                 dossier_sortie,
                 texte,
                 vocabulaire,
@@ -606,8 +642,8 @@ class CompressionOralApp:
             }
             vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 
-            # Générer l'audio avec md2mp3.py (passer la variante de voix)
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=args.voix, voix_variant=voix_variant)
+            # Générer l'audio avec md2mp3.py (passer la variante de voix et la voix spécifique détectée)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=voix_specifique, voix_variant=voix_variant)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-17T13:01:36.047780",
-  "total_resources": 135,
+  "generated_at": "2025-12-17T18:39:08.613295",
+  "total_resources": 142,
   "languages": [
     "it",
-    "eng",
-    "esp",
-    "fr",
-    "nl",
     "cor",
-    "all"
+    "nl",
+    "eng",
+    "all",
+    "fr",
+    "esp"
   ],
   "resources": [
     {
@@ -300,6 +300,24 @@
       "text_path": "resources/la_crise_de_l_identi_20251216_1903/text.md"
     },
     {
+      "id": "los_trabajos_de_adol_20251217_1536",
+      "langue": "esp",
+      "prompt": "Los trabajos de adolescentes en España, como cuidar niños o repartir periódicos",
+      "resume": "Les travaux des adolescents en Espagne",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-17 15:36:32",
+      "longueur": 120,
+      "text_preview": "En España, algunos adolescentes trabajan para ganar dinero y tener experiencia. Hay trabajos populares como cuidar niños y repartir periódicos. Estos trabajos son comunes porque no requieren mucha exp...",
+      "vocab_count": 24,
+      "audio_path": "resources/los_trabajos_de_adol_20251217_1536/audio.mp3",
+      "text_path": "resources/los_trabajos_de_adol_20251217_1536/text.md"
+    },
+    {
       "id": "repenser_le_modele_e_20251216_1903",
       "langue": "all",
       "prompt": "Repenser le modèle économique capitaliste",
@@ -444,6 +462,24 @@
       "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
     },
     {
+      "id": "my_name_is_emily_and_20251217_1534",
+      "langue": "eng",
+      "prompt": "My name is Emily and I am 16 years old, presenting my high school life and my school experiences",
+      "resume": "La vie scolaire d'Emily",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-17 15:35:09",
+      "longueur": 100,
+      "text_preview": "My name is Emily, and I am 16 years old. I am in high school. I like my school because I have many friends there. My favorite subject is English because I love reading and writing stories. I also enjo...",
+      "vocab_count": 17,
+      "audio_path": "resources/my_name_is_emily_and_20251217_1534/audio.mp3",
+      "text_path": "resources/my_name_is_emily_and_20251217_1534/text.md"
+    },
+    {
       "id": "les_loisirs_des_jeun_20251216_0833",
       "langue": "fr",
       "prompt": "Les loisirs des jeunes",
@@ -478,6 +514,24 @@
       "vocab_count": 27,
       "audio_path": "resources/raconte_une_journee_20251217_1138/audio.mp3",
       "text_path": "resources/raconte_une_journee_20251217_1138/text.md"
+    },
+    {
+      "id": "une_lyceenne_de_new_20251217_1838",
+      "langue": "eng",
+      "prompt": "Une lycéenne de New York parle de ses loisirs, de sa famille et de ce qu’elle aime dans sa ville.",
+      "resume": "Les loisirs et la vie d'une lycéenne à New York",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-17 18:38:32",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Emily, and I am a high school student in New York City. I have a few hobbies that I really enjoy. I love playing the guitar. Every weekend, I practice for a few hours. Music makes me...",
+      "vocab_count": 28,
+      "audio_path": "resources/une_lyceenne_de_new_20251217_1838/audio.mp3",
+      "text_path": "resources/une_lyceenne_de_new_20251217_1838/text.md"
     },
     {
       "id": "mon_appartement_et_m_20251216_1848",
@@ -730,6 +784,24 @@
       "vocab_count": 29,
       "audio_path": "resources/quelles_sont_les_dif_20251210_2038/audio.mp3",
       "text_path": "resources/quelles_sont_les_dif_20251210_2038/text.md"
+    },
+    {
+      "id": "my_name_is_john_and_20251217_1535",
+      "langue": "eng",
+      "prompt": "My name is John and I am 15 years old, talking about my school life",
+      "resume": "La vie scolaire de John",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-17 15:35:42",
+      "longueur": 100,
+      "text_preview": "My name is John, and I am 15 years old. I go to high school. My school is big and has many students. I have classes every weekday. My favorite subjects are math and science. I like my teachers because...",
+      "vocab_count": 17,
+      "audio_path": "resources/my_name_is_john_and_20251217_1535/audio.mp3",
+      "text_path": "resources/my_name_is_john_and_20251217_1535/text.md"
     },
     {
       "id": "est_ce_que_les_adole_20251217_1133",
@@ -1414,6 +1486,24 @@
       "vocab_count": 27,
       "audio_path": "resources/mes_loisirs_le_week_20251216_1849/audio.mp3",
       "text_path": "resources/mes_loisirs_le_week_20251216_1849/text.md"
+    },
+    {
+      "id": "un_lyceen_de_londres_20251217_1837",
+      "langue": "eng",
+      "prompt": "Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.",
+      "resume": "Les passe-temps et la vie à Londres",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-17 18:38:05",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Tom, and I am a high school student in London. I like to do many things in my free time. I love playing football with my friends in the park. It is fun and keeps me active. I also en...",
+      "vocab_count": 28,
+      "audio_path": "resources/un_lyceen_de_londres_20251217_1837/audio.mp3",
+      "text_path": "resources/un_lyceen_de_londres_20251217_1837/text.md"
     },
     {
       "id": "baking_cookies_toget_20251215_1538",
@@ -2316,6 +2406,24 @@
       "text_path": "resources/la_vie_en_ville_ou_a_20251216_1854/text.md"
     },
     {
+      "id": "une_correspondante_a_20251217_1837",
+      "langue": "eng",
+      "prompt": "Une correspondante américaine se présente et raconte ses loisirs préférés, sa vie de famille et ce qu’elle aime (ou non) dans l’endroit où elle habite dans les regions rurales du Midwest.",
+      "resume": "La vie d'une correspondante américaine dans le Midwest",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-17 18:37:50",
+      "longueur": 150,
+      "text_preview": "Hi! My name is Emily, and I am from a small town in the Midwest, USA. I am excited to be your pen pal. I live in the countryside with my family. My family is big: I have two brothers and one sister. W...",
+      "vocab_count": 27,
+      "audio_path": "resources/une_correspondante_a_20251217_1837/audio.mp3",
+      "text_path": "resources/une_correspondante_a_20251217_1837/text.md"
+    },
+    {
       "id": "retirer_de_l_argent_20251216_1227",
       "langue": "nl",
       "prompt": "Retirer de l'argent à la banque",
@@ -2440,6 +2548,24 @@
       "vocab_count": 30,
       "audio_path": "resources/l_egalite_hommes_fem_20251216_1856/audio.mp3",
       "text_path": "resources/l_egalite_hommes_fem_20251216_1856/text.md"
+    },
+    {
+      "id": "un_correspondant_bri_20251217_1837",
+      "langue": "eng",
+      "prompt": "Un correspondant britannique se présente : il parle de ses hobbies, décrit les membres de sa famille et explique sa vie à la campagne dans le Devon.",
+      "resume": "La vie à la campagne dans le Devon",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-17 18:37:21",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Tom, and I am from Devon, in the United Kingdom. Devon is a beautiful place in the countryside. I live in a small village with my family. My family is not very big. I have a sister a...",
+      "vocab_count": 28,
+      "audio_path": "resources/un_correspondant_bri_20251217_1837/audio.mp3",
+      "text_path": "resources/un_correspondant_bri_20251217_1837/text.md"
     }
   ]
 }

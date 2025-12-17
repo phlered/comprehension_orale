@@ -662,11 +662,11 @@
                     const k = normalizeWord(p2).toLowerCase();
                     let tr = transByWord.get(k) || '';
                     if (tr) {
-                        tr = tr.replace(/\"/g, '&quot;');
+                        tr = tr.replace(/"/g, '&quot;');
                     }
-                    const titleAttr = tr ? ` title=\"${tr}\"` : '';
-                    const dataAttr = tr ? ` data-translation=\"${tr}\"` : '';
-                    return `${p1}<span class=\"vocab-highlight\"${titleAttr}${dataAttr}>${p2}</span>`;
+                    const titleAttr = tr ? ` title="${tr}"` : '';
+                    const dataAttr = tr ? ` data-translation="${tr}"` : '';
+                    return `${p1}<span class="vocab-highlight"${titleAttr}${dataAttr}>${p2}</span>`;
                 });
             });
 

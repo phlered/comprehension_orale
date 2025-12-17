@@ -453,10 +453,11 @@
         let currentResource = null;
         let sessionActive = false;
         let sessionTimer = null;
-        let sessionPlayTimer = null;  // Timer pour la lecture continue en arrière-plan
         let sessionEndTime = null;
         let docsPlayedCount = 0;
         let totalWordsLearned = 0;
+        let sessionPlaylist = [];  // Playlist pré-calculée
+        let currentPlaylistIndex = 0;
 
         // Charger les métadonnées au démarrage
         fetch('metadata.json')
@@ -568,15 +569,26 @@
                 return;
             }
 
+            // Pré-calculer la playlist pour la durée demandée
+            sessionPlaylist = buildPlaylist(durationMinutes);
+            
+            if (sessionPlaylist.length === 0) {
+                alert('Impossible de créer une playlist avec les ressources disponibles.');
+                return;
+            }
+
+            // Calculer la durée totale réelle
+            const totalDuration = sessionPlaylist.reduce((sum, r) => sum + (r.duration || 60), 0);
+            const totalMinutes = Math.ceil(totalDuration / 60);
+            
+            console.log(`📋 Playlist créée: ${sessionPlaylist.length} documents, durée estimée: ${totalMinutes} min`);
+
             // Initialiser la session
             sessionActive = true;
-            sessionEndTime = Date.now() + (durationMinutes * 60 * 1000);
+            sessionEndTime = Date.now() + (totalMinutes * 60 * 1000);  // Durée réelle
+            currentPlaylistIndex = 0;
             docsPlayedCount = 0;
             totalWordsLearned = 0;
-            
-            // Initialiser le pool de ressources disponibles (tirage sans remise)
-            availableResources = [...filteredResources];
-            playedResources = [];
 
             // Mettre à jour l'interface
             document.getElementById('startBtn').disabled = true;
@@ -587,39 +599,24 @@
             document.getElementById('stats').style.display = 'flex';
             document.getElementById('playerCard').style.display = 'block';
 
-            // Démarrer le timer d'affichage du compte à rebours
+            // Démarrer le timer d'affichage
             updateTimer();
             sessionTimer = setInterval(updateTimer, 1000);
 
-            // Charger le premier document
-            loadNextRandom();
+            // Configurer Media Session API pour la lecture en arrière-plan
+            setupMediaSession();
+
+            // Charger et jouer le premier document de la playlist
+            loadPlaylistItem(0);
 
             // Écouter la fin de l'audio pour passer au suivant
             const audio = document.getElementById('audio-player');
             audio.addEventListener('ended', onAudioEnded);
-            
-            // Timer de lecture continue en arrière-plan (toutes les 100ms)
-            // Cela assure que si 'ended' n'est pas déclenché (en veille), on continue quand même
-            sessionPlayTimer = setInterval(() => {
-                if (!sessionActive || sessionEndTime <= Date.now()) return;
-                
-                const audio = document.getElementById('audio-player');
-                // Si l'audio n'est pas en cours de lecture ET que le temps n'est pas écoulé
-                if (audio.paused && !audio.ended) {
-                    // Essayer de relancer la lecture
-                    audio.play().catch(e => console.log('Play failed:', e));
-                } else if (audio.ended && sessionActive && sessionEndTime > Date.now()) {
-                    // L'audio s'est terminé, charger le suivant
-                    console.log('📄 Audio ended (via background timer)');
-                    loadNextRandom();
-                }
-            }, 100);
         }
 
         async function stopSession() {
             sessionActive = false;
             clearInterval(sessionTimer);
-            clearInterval(sessionPlayTimer);
             
             document.getElementById('startBtn').disabled = false;
             document.getElementById('stopBtn').disabled = true;
@@ -630,6 +627,11 @@
             const audio = document.getElementById('audio-player');
             audio.pause();
             audio.removeEventListener('ended', onAudioEnded);
+
+            // Nettoyer Media Session
+            if ('mediaSession' in navigator) {
+                navigator.mediaSession.metadata = null;
+            }
 
             alert(`Session terminée!\n\n📚 Documents lus: ${docsPlayedCount}\n📖 Mots appris: ${totalWordsLearned}`);
         }
@@ -660,59 +662,123 @@
             }
         }
 
-        function loadNextRandom() {
-            if (!sessionActive || filteredResources.length === 0) return;
-
-            // Si tous les documents ont été lus, réinitialiser avec un mélange intelligent
-            if (availableResources.length === 0) {
-                console.log('🔄 Tous les documents lus - réinitialisation du pool');
+        function buildPlaylist(durationMinutes) {
+            // Estimer combien de documents peuvent tenir dans la durée
+            const targetDuration = durationMinutes * 60; // en secondes
+            const avgDocDuration = 60; // estimation moyenne d'un document en secondes
+            const estimatedDocs = Math.ceil(targetDuration / avgDocDuration);
+            
+            // Créer un pool mélangé
+            const shuffled = [...filteredResources].sort(() => Math.random() - 0.5);
+            
+            // Sélectionner des documents jusqu'à atteindre approximativement la durée
+            const playlist = [];
+            let currentDuration = 0;
+            let poolIndex = 0;
+            
+            while (currentDuration < targetDuration && poolIndex < shuffled.length) {
+                const doc = shuffled[poolIndex];
+                const docDuration = doc.duration || avgDocDuration;
                 
-                // Créer un nouveau pool en évitant le dernier document joué si possible
-                availableResources = [...filteredResources];
+                playlist.push(doc);
+                currentDuration += docDuration;
+                poolIndex++;
                 
-                // Si on a plus d'un document et qu'on vient de finir un cycle,
-                // retirer temporairement le dernier joué pour éviter les répétitions immédiates
-                if (filteredResources.length > 1 && currentResource) {
-                    const lastPlayedIndex = availableResources.findIndex(r => r.id === currentResource.id);
-                    if (lastPlayedIndex !== -1) {
-                        const lastPlayed = availableResources.splice(lastPlayedIndex, 1);
-                        // On le remet à la fin du pool
-                        availableResources.push(...lastPlayed);
-                    }
+                // Si on a épuisé le pool mais pas atteint la durée, recommencer
+                if (poolIndex >= shuffled.length && currentDuration < targetDuration) {
+                    poolIndex = 0;
                 }
-                
-                playedResources = [];
+            }
+            
+            console.log(`📋 Playlist: ${playlist.length} docs, durée estimée: ${Math.ceil(currentDuration/60)} min (demandé: ${durationMinutes} min)`);
+            return playlist;
+        }
+
+        function loadPlaylistItem(index) {
+            if (index >= sessionPlaylist.length) {
+                // Fin de la playlist
+                console.log('✅ Playlist terminée');
+                stopSession();
+                return;
             }
 
-            // Sélectionner un document aléatoire parmi les disponibles (tirage sans remise)
-            const randomIndex = Math.floor(Math.random() * availableResources.length);
-            currentResource = availableResources[randomIndex];
+            currentPlaylistIndex = index;
+            currentResource = sessionPlaylist[index];
             
-            // Retirer le document du pool disponible
-            availableResources.splice(randomIndex, 1);
-            playedResources.push(currentResource);
-            
-            console.log(`📄 Document: ${currentResource.prompt} (${currentResource.niveau}) - Reste: ${availableResources.length}/${filteredResources.length}`);
+            console.log(`📄 [${index + 1}/${sessionPlaylist.length}] ${currentResource.prompt} (${currentResource.niveau})`);
 
             // Charger le contenu
             displayResource();
             
             // Mettre à jour les stats
-            docsPlayedCount++;
-            totalWordsLearned += (currentResource.niveau === 'C2') ? 0 : (currentResource.vocab_count || 0);
+            docsPlayedCount = index + 1;
+            totalWordsLearned = sessionPlaylist.slice(0, index + 1)
+                .reduce((sum, r) => sum + ((r.niveau === 'C2') ? 0 : (r.vocab_count || 0)), 0);
             document.getElementById('docsPlayed').textContent = docsPlayedCount;
             document.getElementById('wordsLearned').textContent = totalWordsLearned;
+            
+            // Mettre à jour Media Session
+            updateMediaSessionMetadata();
+        }
+
+        function loadNextRandom() {
+            // Fonction maintenue pour le bouton "Suivant" manuel
+            if (!sessionActive) return;
+            loadPlaylistItem(currentPlaylistIndex + 1);
         }
 
         function onAudioEnded() {
             if (sessionActive) {
-                // Attendre 2 secondes avant de passer au suivant
+                console.log('🎵 Audio terminé, pause de 3 secondes...');
+                // Attendre 3 secondes avant de charger le suivant
+                // L'événement 'ended' fonctionne même en veille
                 setTimeout(() => {
                     if (sessionActive) {
-                        loadNextRandom();
+                        loadPlaylistItem(currentPlaylistIndex + 1);
                     }
-                }, 2000);
+                }, 3000);
             }
+        }
+
+        function setupMediaSession() {
+            if (!('mediaSession' in navigator)) {
+                console.log('⚠️ Media Session API non disponible');
+                return;
+            }
+
+            // Configurer les handlers pour les contrôles média (écran verrouillé, notifications)
+            navigator.mediaSession.setActionHandler('play', () => {
+                const audio = document.getElementById('audio-player');
+                audio.play();
+            });
+
+            navigator.mediaSession.setActionHandler('pause', () => {
+                const audio = document.getElementById('audio-player');
+                audio.pause();
+            });
+
+            navigator.mediaSession.setActionHandler('nexttrack', () => {
+                loadNextRandom();
+            });
+
+            navigator.mediaSession.setActionHandler('previoustrack', () => {
+                if (currentPlaylistIndex > 0) {
+                    loadPlaylistItem(currentPlaylistIndex - 1);
+                }
+            });
+
+            console.log('✅ Media Session configurée');
+        }
+
+        function updateMediaSessionMetadata() {
+            if (!('mediaSession' in navigator) || !currentResource) return;
+
+            const config = LANGUAGE_CONFIG[currentResource.langue];
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: currentResource.resume || currentResource.prompt,
+                artist: `${config.name} - ${currentResource.niveau}`,
+                album: `Lecteur Aléatoire (${currentPlaylistIndex + 1}/${sessionPlaylist.length})`
+            });
         }
 
         function displayResource() {

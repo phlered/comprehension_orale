@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-17T18:39:08.613295",
-  "total_resources": 142,
+  "generated_at": "2025-12-17T19:14:23.165895",
+  "total_resources": 141,
   "languages": [
+    "eng",
     "it",
+    "esp",
     "cor",
     "nl",
-    "eng",
-    "all",
     "fr",
-    "esp"
+    "all"
   ],
   "resources": [
     {
@@ -444,6 +444,24 @@
       "text_path": "resources/les_loisirs_des_jeun_20251216_0834/text.md"
     },
     {
+      "id": "my_name_is_emily_and_20251217_1533",
+      "langue": "eng",
+      "prompt": "My name is Emily and I am 16 years old, presenting my high school life and my school experiences",
+      "resume": "La vie scolaire d'Emily",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-17 15:33:17",
+      "longueur": 100,
+      "text_preview": "Hello! My name is Emily, and I am 16 years old. I go to high school. I like my school because I have many friends here. Every day, I wake up early to go to school. My favorite subjects are English and...",
+      "vocab_count": 17,
+      "audio_path": "resources/my_name_is_emily_and_20251217_1533/audio.mp3",
+      "text_path": "resources/my_name_is_emily_and_20251217_1533/text.md"
+    },
+    {
       "id": "dove_si_trova_il_cam_20251215_1758",
       "langue": "it",
       "prompt": "Dove si trova il campeggio",
@@ -568,6 +586,24 @@
       "vocab_count": 24,
       "audio_path": "resources/la_scuola_20251215_2215/audio.mp3",
       "text_path": "resources/la_scuola_20251215_2215/text.md"
+    },
+    {
+      "id": "un_lyceen_de_londres_20251217_1913",
+      "langue": "eng",
+      "prompt": "Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.",
+      "resume": "Les passe-temps et la vie à Londres",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-17 19:14:02",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Tom and I am a high school student in London. I want to tell you about my hobbies, my family, and my favorite places in my city.\n\nI have many hobbies. I love playing football with my...",
+      "vocab_count": 30,
+      "audio_path": "resources/un_lyceen_de_londres_20251217_1913/audio.mp3",
+      "text_path": "resources/un_lyceen_de_londres_20251217_1913/text.md"
     },
     {
       "id": "comment_se_deroule_u_20251210_2035",
@@ -1308,24 +1344,6 @@
       "text_path": "resources/commander_au_restaur_20251216_1219/text.md"
     },
     {
-      "id": "ecris_un_message_dan_20251217_1134",
-      "langue": "eng",
-      "prompt": "Écris un message dans lequel un élève se présente à un correspondant étranger et décrit son lycée, ses matières préférées et ses projets.",
-      "resume": "Présentation d'un élève et de son lycée",
-      "niveau": "A2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-17 11:34:56",
-      "longueur": 150,
-      "text_preview": "Hello!\n\nMy name is Emily, and I am 16 years old. I live in France, and I am a student in high school. My school is big and has many students. We have a nice library and a big sports field. I like my s...",
-      "vocab_count": 27,
-      "audio_path": "resources/ecris_un_message_dan_20251217_1134/audio.mp3",
-      "text_path": "resources/ecris_un_message_dan_20251217_1134/text.md"
-    },
-    {
       "id": "un_escursione_in_mon_20251215_1752",
       "langue": "it",
       "prompt": "Un'escursione in montagna",
@@ -1378,24 +1396,6 @@
       "vocab_count": 26,
       "audio_path": "resources/les_reseaux_sociaux_20251217_1138/audio.mp3",
       "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
-    },
-    {
-      "id": "walking_in_the_park_20251215_1538",
-      "langue": "eng",
-      "prompt": "Walking in the Park",
-      "resume": "La marche dans le parc",
-      "niveau": "B1",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-15 15:39:02",
-      "longueur": 200,
-      "text_preview": "Walking in the park is a wonderful way to enjoy nature and relax. Every Saturday morning, I like to visit the local park near my home. It's a big park with many walking paths, beautiful trees, and col...",
-      "vocab_count": 39,
-      "audio_path": "resources/walking_in_the_park_20251215_1538/audio.mp3",
-      "text_path": "resources/walking_in_the_park_20251215_1538/text.md"
     },
     {
       "id": "acheter_des_fruits_e_20251216_1228",
@@ -1486,24 +1486,6 @@
       "vocab_count": 27,
       "audio_path": "resources/mes_loisirs_le_week_20251216_1849/audio.mp3",
       "text_path": "resources/mes_loisirs_le_week_20251216_1849/text.md"
-    },
-    {
-      "id": "un_lyceen_de_londres_20251217_1837",
-      "langue": "eng",
-      "prompt": "Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.",
-      "resume": "Les passe-temps et la vie à Londres",
-      "niveau": "A2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇬🇧",
-      "voix_variant": "eng",
-      "date": "2025-12-17 18:38:05",
-      "longueur": 150,
-      "text_preview": "Hello! My name is Tom, and I am a high school student in London. I like to do many things in my free time. I love playing football with my friends in the park. It is fun and keeps me active. I also en...",
-      "vocab_count": 28,
-      "audio_path": "resources/un_lyceen_de_londres_20251217_1837/audio.mp3",
-      "text_path": "resources/un_lyceen_de_londres_20251217_1837/text.md"
     },
     {
       "id": "baking_cookies_toget_20251215_1538",

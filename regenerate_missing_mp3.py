@@ -62,19 +62,27 @@ def extract_frontmatter(text_md_path):
 def generate_mp3(doc_folder, text_md_path, langue_code, vitesse, genre):
     """Génère le MP3 pour un document"""
     
-    cmd = [
-        ".venv312/bin/python",
-        "md2mp3.py",
-        str(text_md_path),
-        "-l", langue_code,
-        "-g", genre if genre else "femme",
-        "--vitesse", str(vitesse)
-    ]
+    # Créer un fichier temporaire _temp_text.md pour la génération
+    temp_md_path = text_md_path.parent / "_temp_text.md"
     
     try:
+        # Copier text.md vers _temp_text.md
+        import shutil
+        shutil.copy(text_md_path, temp_md_path)
+        
+        # Appeler md2mp3.py avec le fichier temporaire
+        cmd = [
+            ".venv312/bin/python",
+            "md2mp3.py",
+            str(temp_md_path),
+            "-l", langue_code,
+            "-g", genre if genre else "femme",
+            "--vitesse", str(vitesse)
+        ]
+        
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         
-        # Vérifier que le MP3 a été généré
+        # Vérifier que le MP3 a été généré (sera nommé _temp_text.mp3)
         temp_mp3 = text_md_path.parent / "_temp_text.mp3"
         audio_mp3 = text_md_path.parent / "audio.mp3"
         
@@ -83,7 +91,7 @@ def generate_mp3(doc_folder, text_md_path, langue_code, vitesse, genre):
             temp_mp3.rename(audio_mp3)
             return True, audio_mp3.stat().st_size
         else:
-            return False, "MP3 non généré"
+            return False, "MP3 non généré (fichier vide ou absent)"
     
     except subprocess.CalledProcessError as e:
         # Afficher stderr et stdout pour diagnostiquer
@@ -95,6 +103,14 @@ def generate_mp3(doc_folder, text_md_path, langue_code, vitesse, genre):
         if not error_msg:
             error_msg = str(e)
         return False, error_msg
+    
+    finally:
+        # Nettoyer le fichier temporaire
+        if temp_md_path.exists():
+            try:
+                temp_md_path.unlink()
+            except:
+                pass
 
 def main():
     docs_dir = Path("docs")

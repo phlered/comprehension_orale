@@ -79,6 +79,10 @@ class GenderDetector:
         'sophie', 'claire', 'nathalie', 'catherine', 'nicole', 'francoise', 'diane', 'christine', 'danielle', 'christine',
         'rosa', 'carmen', 'teresa', 'josefina', 'mariana', 'gabriela', 'alejandra', 'monica', 'diego', 'victoria',
         'sandra', 'patricia', 'gloria', 'rosa', 'elena', 'ana', 'laura', 'linda', 'karen', 'nancy',
+        # Diminutifs et variantes courantes
+        'liz', 'beth', 'kate', 'meg', 'sue', 'ann', 'lisa', 'jane', 'rose', 'ruby',
+        'amy', 'amy', 'jen', 'nancy', 'diane', 'angela', 'sandra', 'ashley', 'julie', 'holly',
+        'cathy', 'maggie', 'sammie', 'danny', 'jackie', 'casey', 'sam', 'alex', 'avery', 'riley',
     }
     
     # Prénoms masculins courants (EN, FR, ES)
@@ -91,7 +95,11 @@ class GenderDetector:
         'pierre', 'jean', 'jacques', 'francois', 'marc', 'philippe', 'andre', 'paul', 'christophe', 'xavier',
         'luc', 'serge', 'bernard', 'gerald', 'claude', 'olivier', 'stephane', 'laurent', 'vincent', 'bruno',
         'carlos', 'juan', 'jose', 'miguel', 'luis', 'diego', 'francisco', 'rafael', 'antonio', 'pedro',
-        'ramon', 'marcos', 'ricardo', 'manuel', 'sergio', 'daniel', 'daniel', 'manuel', 'javier', 'angel',
+        'ramon', 'marcos', 'ricardo', 'manuel', 'sergio', 'daniel', 'manuel', 'javier', 'angel',
+        # Diminutifs et variantes courantes
+        'tom', 'tom', 'max', 'alex', 'ben', 'chris', 'greg', 'alex', 'steve', 'nick',
+        'pete', 'joe', 'sam', 'dan', 'matt', 'luke', 'james', 'nick', 'leo', 'ethan',
+        'noah', 'oliver', 'liam', 'elias', 'lucas', 'gabriel', 'henry', 'alexander', 'oscar', 'jack',
     }
     
     # Pronoms féminins

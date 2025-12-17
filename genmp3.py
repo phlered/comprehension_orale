@@ -565,12 +565,12 @@ class CompressionOralApp:
             # Choisir la vitesse par défaut selon le niveau si non fournie
             # Progression linéaire: A1:0.75 → C2:1.0 (paliers de 0.05)
             default_speeds = {
-                "A1": 0.75,
-                "A2": 0.80,
-                "B1": 0.85,
-                "B2": 0.90,
-                "C1": 0.95,
-                "C2": 1.00
+                "A1": 0.7,
+                "A2": 0.75,
+                "B1": 0.8,
+                "B2": 0.85,
+                "C1": 0.90,
+                "C2": 0.95
             }
             vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 

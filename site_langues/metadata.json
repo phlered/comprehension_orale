@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-17T10:52:34.820520",
-  "total_resources": 114,
+  "generated_at": "2025-12-17T12:09:26.091478",
+  "total_resources": 131,
   "languages": [
-    "eng",
-    "cor",
+    "it",
     "nl",
     "all",
-    "esp",
+    "cor",
     "fr",
-    "it"
+    "esp",
+    "eng"
   ],
   "resources": [
     {
@@ -170,6 +170,22 @@
       "vocab_count": 68,
       "audio_path": "resources/histoire_de_l_etat_d_20251216_0856/audio.mp3",
       "text_path": "resources/histoire_de_l_etat_d_20251216_0856/text.md"
+    },
+    {
+      "id": "les_reseaux_sociaux_20251217_1122",
+      "langue": "nl",
+      "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
+      "resume": "Les réseaux sociaux et les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:22:43",
+      "longueur": 150,
+      "text_preview": "Sociale media zijn erg belangrijk in het leven van tieners. Elke dag gebruiken veel tieners in landen zoals de Verenigde Staten sociale media. Ze communiceren met vrienden, delen foto's en video's, en...",
+      "vocab_count": 27,
+      "audio_path": "resources/les_reseaux_sociaux_20251217_1122/audio.mp3",
+      "text_path": "resources/les_reseaux_sociaux_20251217_1122/text.md"
     },
     {
       "id": "l_intelligence_artif_20251216_1858",
@@ -396,6 +412,22 @@
       "text_path": "resources/les_loisirs_des_jeun_20251216_0833/text.md"
     },
     {
+      "id": "raconte_une_journee_20251217_1138",
+      "langue": "it",
+      "prompt": "Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.",
+      "resume": "Une journée d'école inattendue",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:38:55",
+      "longueur": 150,
+      "text_preview": "Oggi è stata una giornata di scuola davvero particolare. La mattina è iniziata come sempre: mi sono svegliato alle 7, ho fatto colazione e sono andato a scuola con il mio zaino pieno di libri. Tutto s...",
+      "vocab_count": 27,
+      "audio_path": "resources/raconte_une_journee_20251217_1138/audio.mp3",
+      "text_path": "resources/raconte_une_journee_20251217_1138/text.md"
+    },
+    {
       "id": "mon_appartement_et_m_20251216_1848",
       "langue": "all",
       "prompt": "Mon appartement et mes voisins",
@@ -476,6 +508,22 @@
       "text_path": "resources/les_enjeux_ethiques_20251216_1902/text.md"
     },
     {
+      "id": "raconte_une_journee_20251217_1130",
+      "langue": "cor",
+      "prompt": "Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.",
+      "resume": "Une journée d'école inattendue",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-17 11:30:27",
+      "longueur": 150,
+      "text_preview": "어제 학교에서 아주 특별한 일이 있었어요. 아침에는 보통처럼 일어났어요. 학교에 가고 싶지 않았지만, 어쩔 수 없이 갔어요. 첫 번째 수업은 수학이었어요. 수학 수업이 시작될 때 갑자기 불이 꺼졌어요. 모두 깜짝 놀랐어요. 선생님도 어떻게 해야 할지 몰랐어요.\n\n친구들과 나는 창문을 열고 밖을 보았어요. 날씨가 맑아서 다행이었어요. 선생님은 우리가 교실 밖...",
+      "vocab_count": 17,
+      "audio_path": "resources/raconte_une_journee_20251217_1130/audio.mp3",
+      "text_path": "resources/raconte_une_journee_20251217_1130/text.md"
+    },
+    {
       "id": "faut_il_limiter_l_us_20251216_1858",
       "langue": "all",
       "prompt": "Faut-il limiter l'usage des voitures en ville ?",
@@ -524,6 +572,22 @@
       "text_path": "resources/test_vocabulaire_20251210_1900/text.md"
     },
     {
+      "id": "presente_la_vie_quot_20251217_1131",
+      "langue": "it",
+      "prompt": "Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais ressortir les différences et ressemblances avec la vie d’un lycéen français.",
+      "resume": "La vie quotidienne d'un adolescent anglophone",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:31:59",
+      "longueur": 150,
+      "text_preview": "La vita quotidiana di un adolescente negli Stati Uniti ha alcune somiglianze e differenze rispetto a un liceale in Francia. Negli Stati Uniti, la scuola inizia presto, alle 8:00, proprio come in Franc...",
+      "vocab_count": 31,
+      "audio_path": "resources/presente_la_vie_quot_20251217_1131/audio.mp3",
+      "text_path": "resources/presente_la_vie_quot_20251217_1131/text.md"
+    },
+    {
       "id": "l_avenir_du_travail_20251216_1901",
       "langue": "all",
       "prompt": "L'avenir du travail à l'ère numérique",
@@ -556,6 +620,22 @@
       "text_path": "resources/chercher_un_nouvel_a_20251216_1850/text.md"
     },
     {
+      "id": "est_ce_que_les_adole_20251217_1134",
+      "langue": "cor",
+      "prompt": "Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.",
+      "resume": "Les petits boulots pour les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-17 11:34:13",
+      "longueur": 150,
+      "text_preview": "십대들이 아르바이트를 해야 할까요? 미국에서는 많은 십대들이 작은 일을 합니다. 예를 들어, 음식점에서 일하거나, 슈퍼마켓에서 물건을 정리합니다. 이런 아르바이트는 좋은 경험이 될 수 있습니다.\n\n첫째, 아르바이트를 하면서 돈을 벌 수 있습니다. 십대들은 번 돈으로 친구와 영화를 보거나, 새로운 옷을 살 수 있습니다. 이렇게 하면 부모님의 돈에 덜 의존하게...",
+      "vocab_count": 20,
+      "audio_path": "resources/est_ce_que_les_adole_20251217_1134/audio.mp3",
+      "text_path": "resources/est_ce_que_les_adole_20251217_1134/text.md"
+    },
+    {
       "id": "quelles_sont_les_dif_20251210_2038",
       "langue": "nl",
       "prompt": "Quelles sont les différences culturelles entre les Pays-Bas et la France ?",
@@ -570,6 +650,22 @@
       "vocab_count": 29,
       "audio_path": "resources/quelles_sont_les_dif_20251210_2038/audio.mp3",
       "text_path": "resources/quelles_sont_les_dif_20251210_2038/text.md"
+    },
+    {
+      "id": "est_ce_que_les_adole_20251217_1133",
+      "langue": "it",
+      "prompt": "Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.",
+      "resume": "Les petits boulots pour les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:34:01",
+      "longueur": 150,
+      "text_preview": "In molti paesi anglofoni, come gli Stati Uniti, è comune per gli adolescenti avere un piccolo lavoro. Questo può essere un'ottima esperienza per loro. Credo che gli adolescenti dovrebbero avere un pic...",
+      "vocab_count": 26,
+      "audio_path": "resources/est_ce_que_les_adole_20251217_1133/audio.mp3",
+      "text_path": "resources/est_ce_que_les_adole_20251217_1133/text.md"
     },
     {
       "id": "commander_un_sandwic_20251216_1228",
@@ -652,6 +748,22 @@
       "text_path": "resources/demander_comment_all_20251210_2032/text.md"
     },
     {
+      "id": "presente_la_vie_quot_20251217_1130",
+      "langue": "esp",
+      "prompt": "Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais ressortir les différences et ressemblances avec la vie d’un lycéen français.",
+      "resume": "La vie quotidienne d'un adolescent anglophone",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:31:06",
+      "longueur": 150,
+      "text_preview": "La vida de un adolescente en un país anglófono como Estados Unidos tiene similitudes y diferencias con la vida de un estudiante francés. Un día típico empieza temprano. Los adolescentes en ambos paíse...",
+      "vocab_count": 34,
+      "audio_path": "resources/presente_la_vie_quot_20251217_1130/audio.mp3",
+      "text_path": "resources/presente_la_vie_quot_20251217_1130/text.md"
+    },
+    {
       "id": "generer_un_dialogue_20251210_1246",
       "langue": "all",
       "prompt": "Générer un dialogue entre deux jeunes Allemands débattant du Tracht (vêtement traditionnel bavarois ou autrichien) : l'un affirme que c'est un reflet d'identité, l'autre qu'il s'agit uniquement d'un phénomène de mode commercial.",
@@ -698,6 +810,22 @@
       "vocab_count": 31,
       "audio_path": "resources/celebrer_un_annivers_20251216_1851/audio.mp3",
       "text_path": "resources/celebrer_un_annivers_20251216_1851/text.md"
+    },
+    {
+      "id": "est_ce_que_les_adole_20251217_1132",
+      "langue": "esp",
+      "prompt": "Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.",
+      "resume": "Les petits boulots pour les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:32:58",
+      "longueur": 150,
+      "text_preview": "En muchos países anglófonos, es común que los adolescentes tengan un pequeño trabajo después de la escuela o durante las vacaciones. Por ejemplo, en Estados Unidos, muchos jóvenes trabajan en restaura...",
+      "vocab_count": 26,
+      "audio_path": "resources/est_ce_que_les_adole_20251217_1132/audio.mp3",
+      "text_path": "resources/est_ce_que_les_adole_20251217_1132/text.md"
     },
     {
       "id": "family_photo_album_20251215_1535",
@@ -794,6 +922,22 @@
       "vocab_count": 34,
       "audio_path": "resources/le_recyclage_dans_ma_20251216_1852/audio.mp3",
       "text_path": "resources/le_recyclage_dans_ma_20251216_1852/text.md"
+    },
+    {
+      "id": "ecris_un_message_dan_20251217_1135",
+      "langue": "cor",
+      "prompt": "Écris un message dans lequel un élève se présente à un correspondant étranger et décrit son lycée, ses matières préférées et ses projets.",
+      "resume": "Présentation d'un élève et de son lycée",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-17 11:35:56",
+      "longueur": 150,
+      "text_preview": "안녕하세요!\n\n제 이름은 민수예요. 저는 한국에 살고 있는 고등학생이에요. 만나서 반가워요! 저는 새로운 친구를 사귀는 것을 좋아해요. 제 학교는 아주 크고 교실이 많아요. 우리 학교에는 큰 도서관과 운동장도 있어요.\n\n제가 좋아하는 과목은 수학과 영어예요. 수학은 문제를 푸는 게 재미있어요. 영어 수업에서는 외국 문화를 배울 수 있어서 좋아요. 가끔 영어...",
+      "vocab_count": 18,
+      "audio_path": "resources/ecris_un_message_dan_20251217_1135/audio.mp3",
+      "text_path": "resources/ecris_un_message_dan_20251217_1135/text.md"
     },
     {
       "id": "emprunter_un_livre_a_20251216_1228",
@@ -940,6 +1084,22 @@
       "text_path": "resources/commander_au_restaur_20251216_1219/text.md"
     },
     {
+      "id": "ecris_un_message_dan_20251217_1134",
+      "langue": "eng",
+      "prompt": "Écris un message dans lequel un élève se présente à un correspondant étranger et décrit son lycée, ses matières préférées et ses projets.",
+      "resume": "Présentation d'un élève et de son lycée",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-17 11:34:56",
+      "longueur": 150,
+      "text_preview": "Hello!\n\nMy name is Emily, and I am 16 years old. I live in France, and I am a student in high school. My school is big and has many students. We have a nice library and a big sports field. I like my s...",
+      "vocab_count": 27,
+      "audio_path": "resources/ecris_un_message_dan_20251217_1134/audio.mp3",
+      "text_path": "resources/ecris_un_message_dan_20251217_1134/text.md"
+    },
+    {
       "id": "un_escursione_in_mon_20251215_1752",
       "langue": "it",
       "prompt": "Un'escursione in montagna",
@@ -954,6 +1114,22 @@
       "vocab_count": 20,
       "audio_path": "resources/un_escursione_in_mon_20251215_1752/audio.mp3",
       "text_path": "resources/un_escursione_in_mon_20251215_1752/text.md"
+    },
+    {
+      "id": "les_reseaux_sociaux_20251217_1138",
+      "langue": "it",
+      "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
+      "resume": "Les réseaux sociaux et les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:38:37",
+      "longueur": 150,
+      "text_preview": "I social media sono molto importanti nella vita degli adolescenti, per esempio in paesi anglofoni come gli Stati Uniti. Gli adolescenti usano i social media ogni giorno per comunicare con gli amici e ...",
+      "vocab_count": 26,
+      "audio_path": "resources/les_reseaux_sociaux_20251217_1138/audio.mp3",
+      "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
     },
     {
       "id": "walking_in_the_park_20251215_1538",
@@ -1066,6 +1242,38 @@
       "vocab_count": 44,
       "audio_path": "resources/baking_cookies_toget_20251215_1538/audio.mp3",
       "text_path": "resources/baking_cookies_toget_20251215_1538/text.md"
+    },
+    {
+      "id": "les_reseaux_sociaux_20251217_1126",
+      "langue": "all",
+      "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
+      "resume": "Les réseaux sociaux et les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:27:07",
+      "longueur": 150,
+      "text_preview": "Soziale Medien sind wichtig im Leben von Jugendlichen, zum Beispiel in den USA. Jeden Tag benutzen viele Teenager Facebook, Instagram und TikTok. Sie können mit Freunden chatten, Fotos teilen und Vide...",
+      "vocab_count": 25,
+      "audio_path": "resources/les_reseaux_sociaux_20251217_1126/audio.mp3",
+      "text_path": "resources/les_reseaux_sociaux_20251217_1126/text.md"
+    },
+    {
+      "id": "les_reseaux_sociaux_20251217_1128",
+      "langue": "cor",
+      "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
+      "resume": "Les réseaux sociaux et les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:28:14",
+      "longueur": 150,
+      "text_preview": "소셜 미디어는 청소년의 일상 생활에서 아주 중요합니다. 미국에서는 많은 청소년이 소셜 미디어를 사용합니다. 페이스북, 인스타그램, 그리고 틱톡 같은 플랫폼을 자주 사용합니다. \n\n소셜 미디어는 친구와 쉽게 소통할 수 있는 방법입니다. 또, 새로운 친구를 사귈 수도 있습니다. 취미나 관심사에 대해 이야기할 수 있는 그룹도 많습니다. 그리고 정보를 빠르게 얻을...",
+      "vocab_count": 19,
+      "audio_path": "resources/les_reseaux_sociaux_20251217_1128/audio.mp3",
+      "text_path": "resources/les_reseaux_sociaux_20251217_1128/text.md"
     },
     {
       "id": "sunday_dinner_with_g_20251215_1534",
@@ -1210,6 +1418,22 @@
       "vocab_count": 27,
       "audio_path": "resources/appel_au_telephone_p_20251210_2034/audio.mp3",
       "text_path": "resources/appel_au_telephone_p_20251210_2034/text.md"
+    },
+    {
+      "id": "les_reseaux_sociaux_20251217_1127",
+      "langue": "it",
+      "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
+      "resume": "Les réseaux sociaux et les adolescents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "date": "2025-12-17 11:27:22",
+      "longueur": 150,
+      "text_preview": "I social network sono molto importanti nella vita degli adolescenti. Ogni giorno, i giovani usano piattaforme come Instagram, Facebook e TikTok per comunicare e condividere momenti con gli amici. Negl...",
+      "vocab_count": 28,
+      "audio_path": "resources/les_reseaux_sociaux_20251217_1127/audio.mp3",
+      "text_path": "resources/les_reseaux_sociaux_20251217_1127/text.md"
     },
     {
       "id": "birthday_party_plann_20251215_1537",
@@ -1516,6 +1740,22 @@
       "text_path": "resources/aller_a_la_pharmacie_20251216_1226/text.md"
     },
     {
+      "id": "presente_la_vie_quot_20251217_1132",
+      "langue": "cor",
+      "prompt": "Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais ressortir les différences et ressemblances avec la vie d’un lycéen français.",
+      "resume": "La vie quotidienne d'un adolescent anglophone",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:32:17",
+      "longueur": 150,
+      "text_preview": "학생들의 일상: 영국과 프랑스\n\n영국의 한 학생은 아침 8시쯤 일어납니다. 보통 시리얼이나 토스트로 아침을 먹고, 학교 uniform을 입습니다. 9시에 학교에 가고, 수업은 보통 6시간입니다. 영국 학생들은 점심시간에 샌드위치나 과일을 먹습니다.\n\n프랑스의 학생도 비슷하게 아침 7시나 8시에 일어납니다. 아침으로 빵이나 크루아상을 먹습니다. 프랑스 학교에...",
+      "vocab_count": 18,
+      "audio_path": "resources/presente_la_vie_quot_20251217_1132/audio.mp3",
+      "text_path": "resources/presente_la_vie_quot_20251217_1132/text.md"
+    },
+    {
       "id": "aller_chez_le_medeci_20251216_1848",
       "langue": "all",
       "prompt": "Aller chez le médecin",
@@ -1578,6 +1818,22 @@
       "vocab_count": 26,
       "audio_path": "resources/vers_une_societe_san_20251216_1900/audio.mp3",
       "text_path": "resources/vers_une_societe_san_20251216_1900/text.md"
+    },
+    {
+      "id": "raconte_une_journee_20251217_1129",
+      "langue": "it",
+      "prompt": "Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.",
+      "resume": "Une journée d'école inattendue",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:30:06",
+      "longueur": 150,
+      "text_preview": "Ciao! Mi chiamo Luca e voglio raccontarti una giornata di scuola molto speciale. Di solito, la mia giornata inizia alle 8:00 con la prima lezione di matematica. Ma ieri è stato diverso! \n\nLa mattina, ...",
+      "vocab_count": 25,
+      "audio_path": "resources/raconte_une_journee_20251217_1129/audio.mp3",
+      "text_path": "resources/raconte_une_journee_20251217_1129/text.md"
     },
     {
       "id": "travailler_dans_un_b_20251216_1852",
@@ -1674,6 +1930,22 @@
       "vocab_count": 27,
       "audio_path": "resources/comment_les_habitant_20251210_2036/audio.mp3",
       "text_path": "resources/comment_les_habitant_20251210_2036/text.md"
+    },
+    {
+      "id": "raconte_une_journee_20251217_1128",
+      "langue": "esp",
+      "prompt": "Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.",
+      "resume": "Une journée d'école inattendue",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "date": "2025-12-17 11:29:06",
+      "longueur": 150,
+      "text_preview": "Hoy fue un día muy extraño en la escuela. Me levanté tarde porque mi alarma no sonó. Corrí para vestirme y casi no desayuno. Llegué al autobús justo a tiempo. Pensé que sería un día normal, pero estab...",
+      "vocab_count": 27,
+      "audio_path": "resources/raconte_une_journee_20251217_1128/audio.mp3",
+      "text_path": "resources/raconte_une_journee_20251217_1128/text.md"
     },
     {
       "id": "different_music_tast_20251215_1536",

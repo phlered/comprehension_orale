@@ -145,7 +145,6 @@ class VoiceConfig:
         "hisp": {
             "female": [
                 "es-AR-ElenaNeural",
-                "es-MX-MartaNeural",
                 "es-CO-SalomeNeural",
                 "es-MX-BeatrizNeural",
                 "es-MX-CarlotaNeural",
@@ -183,7 +182,6 @@ class VoiceConfig:
             "female": [
                 "ko-KR-SunHiNeural",
                 "ko-KR-YuJinNeural",
-                "ko-KR-HyunjuNeural",
                 "ko-KR-SoonBokNeural",
                 "ko-KR-JiMinNeural",
             ],
@@ -202,7 +200,6 @@ class VoiceConfig:
             "male": [
                 "it-IT-DiegoNeural",
                 "it-IT-GiuseppeNeural",
-                "it-IT-LucioNeural",
                 "it-IT-FabioNeural",
             ]
         }

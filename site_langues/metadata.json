@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-18T07:55:28.523480",
-  "total_resources": 150,
+  "generated_at": "2025-12-18T09:24:51.182633",
+  "total_resources": 160,
   "languages": [
-    "it",
-    "cor",
-    "all",
     "nl",
+    "cor",
     "fr",
+    "all",
     "esp",
-    "eng"
+    "eng",
+    "it"
   ],
   "resources": [
     {
@@ -100,6 +100,24 @@
       "vocab_count": 32,
       "audio_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/audio.mp3",
       "text_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/text.md"
+    },
+    {
+      "id": "explique_pourquoi_be_20251218_0922",
+      "langue": "all",
+      "prompt": "Explique pourquoi Berlin est une destination touristique importante et ce que l’on peut y découvrir.",
+      "resume": "Berlin comme destination touristique importante",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:22:47",
+      "longueur": 150,
+      "text_preview": "Berlin, als pulsierende Metropole und geschichtsträchtige Hauptstadt Deutschlands, bietet eine Fülle von Attraktionen, die jährlich Millionen von Touristen anziehen. Diese Stadt, die einst durch die B...",
+      "vocab_count": 13,
+      "audio_path": "resources/explique_pourquoi_be_20251218_0922/audio.mp3",
+      "text_path": "resources/explique_pourquoi_be_20251218_0922/text.md"
     },
     {
       "id": "explique_limportanc_20251218_0747",
@@ -840,6 +858,24 @@
       "text_path": "resources/l_avenir_du_travail_20251216_1901/text.md"
     },
     {
+      "id": "decris_un_voyage_tou_20251218_0922",
+      "langue": "all",
+      "prompt": "Décris un voyage touristique en Allemagne à travers plusieurs villes ou régions et raconte les étapes principales.",
+      "resume": "Un voyage touristique en Allemagne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:22:32",
+      "longueur": 150,
+      "text_preview": "Im vergangenen Sommer unternahm ich eine unvergessliche Reise durch Deutschland, die mir die vielfältigen Facetten dieses faszinierenden Landes näherbrachte. Meine Reise begann in der pulsierenden Met...",
+      "vocab_count": 13,
+      "audio_path": "resources/decris_un_voyage_tou_20251218_0922/audio.mp3",
+      "text_path": "resources/decris_un_voyage_tou_20251218_0922/text.md"
+    },
+    {
       "id": "chercher_un_nouvel_a_20251216_1850",
       "langue": "all",
       "prompt": "Chercher un nouvel appartement",
@@ -1146,6 +1182,24 @@
       "text_path": "resources/les_energies_renouve_20251216_1854/text.md"
     },
     {
+      "id": "raconte_une_visite_t_20251218_0924",
+      "langue": "all",
+      "prompt": "Raconte une visite touristique en Allemagne pendant un événement particulier (marché de Noël, festival, fête locale).",
+      "resume": "Une visite touristique en Allemagne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:24:34",
+      "longueur": 150,
+      "text_preview": "Letzten Dezember ergab sich für mich die Gelegenheit, zum ersten Mal den berühmten Nürnberger Christkindlesmarkt zu besuchen. Schon bei meiner Ankunft in der Stadt war die Atmosphäre einfach zauberhaf...",
+      "vocab_count": 13,
+      "audio_path": "resources/raconte_une_visite_t_20251218_0924/audio.mp3",
+      "text_path": "resources/raconte_une_visite_t_20251218_0924/text.md"
+    },
+    {
       "id": "quelles_sont_les_tra_20251210_2036",
       "langue": "nl",
       "prompt": "Quelles sont les traditions liées au King's Day aux Pays-Bas ?",
@@ -1234,6 +1288,24 @@
       "vocab_count": 18,
       "audio_path": "resources/ecris_un_message_dan_20251217_1135/audio.mp3",
       "text_path": "resources/ecris_un_message_dan_20251217_1135/text.md"
+    },
+    {
+      "id": "explique_le_role_des_20251218_0923",
+      "langue": "all",
+      "prompt": "Explique le rôle des musées en Allemagne dans le tourisme et donne un exemple.",
+      "resume": "Le rôle des musées en Allemagne dans le tourisme",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:23:57",
+      "longueur": 150,
+      "text_preview": "Die Rolle der Museen in Deutschland im Tourismus ist von immenser Bedeutung, da sie nicht nur das kulturelle Erbe des Landes bewahren, sondern auch als Magneten für Millionen von Besuchern aus aller W...",
+      "vocab_count": 13,
+      "audio_path": "resources/explique_le_role_des_20251218_0923/audio.mp3",
+      "text_path": "resources/explique_le_role_des_20251218_0923/text.md"
     },
     {
       "id": "emprunter_un_livre_a_20251216_1228",
@@ -1452,6 +1524,24 @@
       "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
     },
     {
+      "id": "decris_un_site_histo_20251218_0923",
+      "langue": "all",
+      "prompt": "Décris un site historique allemand visité par des touristes et explique son importance.",
+      "resume": "Un site historique allemand",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:23:41",
+      "longueur": 150,
+      "text_preview": "Die Neuschwanstein Burg, majestätisch in den bayerischen Alpen gelegen, ist ein Paradebeispiel für den romantischen Historismus des 19. Jahrhunderts und zieht jährlich Millionen von Touristen in ihren...",
+      "vocab_count": 13,
+      "audio_path": "resources/decris_un_site_histo_20251218_0923/audio.mp3",
+      "text_path": "resources/decris_un_site_histo_20251218_0923/text.md"
+    },
+    {
       "id": "acheter_des_fruits_e_20251216_1228",
       "langue": "nl",
       "prompt": "Acheter des fruits et légumes au marché",
@@ -1560,6 +1650,24 @@
       "text_path": "resources/baking_cookies_toget_20251215_1538/text.md"
     },
     {
+      "id": "raconte_le_sejour_d_20251218_0923",
+      "langue": "all",
+      "prompt": "Raconte le séjour d’un touriste étranger en Allemagne et ce qui le surprend le plus.",
+      "resume": "Le séjour d'un touriste en Allemagne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:23:17",
+      "longueur": 150,
+      "text_preview": "Während seines Aufenthalts in Deutschland erlebte der amerikanische Tourist James mehrere Überraschungen, die seine Perspektive auf das Land nachhaltig prägten. Besonders beeindruckt zeigte er sich vo...",
+      "vocab_count": 13,
+      "audio_path": "resources/raconte_le_sejour_d_20251218_0923/audio.mp3",
+      "text_path": "resources/raconte_le_sejour_d_20251218_0923/text.md"
+    },
+    {
       "id": "les_reseaux_sociaux_20251217_1126",
       "langue": "all",
       "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
@@ -1630,6 +1738,24 @@
       "vocab_count": 37,
       "audio_path": "resources/viajar_en_navidad_20251215_1550/audio.mp3",
       "text_path": "resources/viajar_en_navidad_20251215_1550/text.md"
+    },
+    {
+      "id": "presente_une_region_20251218_0922",
+      "langue": "all",
+      "prompt": "Présente une région touristique allemande (Bavière, Forêt-Noire, vallée du Rhin…) et décris ses paysages et ses activités.",
+      "resume": "Une région touristique allemande",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:23:04",
+      "longueur": 150,
+      "text_preview": "Die Bayerische Alpenregion, ein Juwel im Süden Deutschlands, besticht durch ihre atemberaubenden Landschaften und vielfältigen Freizeitmöglichkeiten. Diese malerische Gegend bietet ein unvergleichlich...",
+      "vocab_count": 11,
+      "audio_path": "resources/presente_une_region_20251218_0922/audio.mp3",
+      "text_path": "resources/presente_une_region_20251218_0922/text.md"
     },
     {
       "id": "bedtime_stories_20251215_1537",
@@ -2010,6 +2136,24 @@
       "text_path": "resources/simuler_une_intervie_20251210_1251/text.md"
     },
     {
+      "id": "presente_le_tourisme_20251218_0924",
+      "langue": "all",
+      "prompt": "Présente le tourisme nature en Allemagne (randonnées, lacs, montagnes, forêts).",
+      "resume": "Le tourisme nature en Allemagne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:24:16",
+      "longueur": 150,
+      "text_preview": "Der Naturtourismus in Deutschland bietet Reisenden ein faszinierendes Spektrum an Erlebnissen, das sich von den majestätischen Alpen im Süden bis zu den malerischen Seenplatten im Norden erstreckt. Wa...",
+      "vocab_count": 12,
+      "audio_path": "resources/presente_le_tourisme_20251218_0924/audio.mp3",
+      "text_path": "resources/presente_le_tourisme_20251218_0924/text.md"
+    },
+    {
       "id": "prendre_le_bus_pour_20251216_1226",
       "langue": "nl",
       "prompt": "Prendre le bus pour aller au travail",
@@ -2080,6 +2224,24 @@
       "vocab_count": 34,
       "audio_path": "resources/l_alimentation_bio_e_20251216_1853/audio.mp3",
       "text_path": "resources/l_alimentation_bio_e_20251216_1853/text.md"
+    },
+    {
+      "id": "explique_pourquoi_l_20251218_0924",
+      "langue": "all",
+      "prompt": "Explique pourquoi l’Allemagne est une destination appréciée par les jeunes touristes.",
+      "resume": "L'Allemagne comme destination pour les jeunes touristes",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:24:45",
+      "longueur": 150,
+      "text_preview": "Deutschland ist bei jungen Touristen aus mehreren überzeugenden Gründen eine überaus geschätzte Destination. Zunächst einmal bietet das Land eine reiche kulturelle Vielfalt, die von historischen Städt...",
+      "vocab_count": 14,
+      "audio_path": "resources/explique_pourquoi_l_20251218_0924/audio.mp3",
+      "text_path": "resources/explique_pourquoi_l_20251218_0924/text.md"
     },
     {
       "id": "explique_ce_quest_l_20251218_0745",
@@ -2692,6 +2854,24 @@
       "vocab_count": 30,
       "audio_path": "resources/l_egalite_hommes_fem_20251216_1856/audio.mp3",
       "text_path": "resources/l_egalite_hommes_fem_20251216_1856/text.md"
+    },
+    {
+      "id": "presente_une_grande_20251218_0922",
+      "langue": "all",
+      "prompt": "Présente une grande ville allemande visitée par les touristes et explique ce qui attire les visiteurs (monuments, ambiance, histoire).",
+      "resume": "Une grande ville allemande pour les touristes",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:22:19",
+      "longueur": 150,
+      "text_preview": "Hamburg, die „Tor zur Welt“, zieht jährlich Millionen von Touristen in ihren Bann und überzeugt durch ihre Vielseitigkeit und den unvergleichlichen Charme. Die historische Speicherstadt, ein UNESCO-We...",
+      "vocab_count": 12,
+      "audio_path": "resources/presente_une_grande_20251218_0922/audio.mp3",
+      "text_path": "resources/presente_une_grande_20251218_0922/text.md"
     },
     {
       "id": "un_correspondant_bri_20251217_1837",

@@ -1,3 +1,15 @@
+---
+langue: Néerlandais
+prompt: Commander une pizza
+resume: Commander une pizza
+longueur: 150
+niveau: A1
+genre: homme
+date_generation: 2025-12-16 12:20:19
+---
+
+## Tekst
+
 Maria is thuis. Ze heeft honger. Ze wil pizza eten. Maria pakt haar telefoon. Ze belt naar de pizzeria. 
 
 "Hallo," zegt Maria. "Ik wil een pizza bestellen."
@@ -16,3 +28,14 @@ Maria is blij. Ze wacht op de pizza. Na 30 minuten belt de bel. Maria opent de d
 "Dank u wel," zegt Maria. Ze betaalt de pizza.
 
 Maria gaat naar binnen en eet de pizza. Ze is erg blij. De pizza is lekker!
+
+## Woordenschat
+
+- **het adres** → l'adresse
+- **bestellen** → commander
+- **eten** → manger
+- **lekker** → délicieux
+- **de medewerker** → l'employé
+- **de pizza** → la pizza
+- **de pizzeria** → la pizzeria
+- **de salade** → la salade

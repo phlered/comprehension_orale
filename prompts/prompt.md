@@ -1,21 +1,19 @@
-1. Présente une grande ville allemande visitée par les touristes et explique ce qui attire les visiteurs (monuments, ambiance, histoire).
+1. Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.
 
-2. Décris un voyage touristique en Allemagne à travers plusieurs villes ou régions et raconte les étapes principales.
+2. Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.
 
-3. Explique pourquoi Berlin est une destination touristique importante et ce que l’on peut y découvrir.
+3. Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.
 
-4. Présente une région touristique allemande (Bavière, Forêt-Noire, vallée du Rhin…) et décris ses paysages et ses activités.
+4. Décris une journée typique : le matin, l’après-midi et le soir.
 
-5. Raconte le séjour d’un touriste étranger en Allemagne et ce qui le surprend le plus.
+5. Présente tes loisirs et tes activités préférées après l’école.
 
-6. Décris un site historique allemand visité par des touristes et explique son importance.
+6. Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.
 
-7. Explique le rôle des musées en Allemagne dans le tourisme et donne un exemple.
+7. Explique ce que tu manges au petit-déjeuner, au déjeuner et au dîner.
 
-8. Présente le tourisme nature en Allemagne (randonnées, lacs, montagnes, forêts).
+8. Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.
 
-9. Raconte une visite touristique en Allemagne pendant un événement particulier (marché de Noël, festival, fête locale).
+9. Décris ce que tu aimes et ce que tu n’aimes pas (sports, musique, matières scolaires).
 
-10. Explique pourquoi l’Allemagne est une destination appréciée par les jeunes touristes.
-
-
+10. Présente une fête ou une tradition simple dans un pays hispanophone.

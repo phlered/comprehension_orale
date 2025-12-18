@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-12-18T09:24:51.182633",
-  "total_resources": 160,
+  "generated_at": "2025-12-18T10:45:49.283074",
+  "total_resources": 169,
   "languages": [
+    "esp",
+    "all",
+    "eng",
+    "fr",
     "nl",
     "cor",
-    "fr",
-    "all",
-    "esp",
-    "eng",
     "it"
   ],
   "resources": [
@@ -172,6 +172,24 @@
       "vocab_count": 31,
       "audio_path": "resources/le_changement_climat_20251216_1857/audio.mp3",
       "text_path": "resources/le_changement_climat_20251216_1857/text.md"
+    },
+    {
+      "id": "l_alimentazione_20251215_1757",
+      "langue": "it",
+      "prompt": "L'alimentazione",
+      "resume": "L'alimentation",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2025-12-15 17:57:54",
+      "longueur": 150,
+      "text_preview": "Ciao! Mi chiamo Luca e oggi parlo della mia alimentazione. Mi piace mangiare cibi sani. A colazione, bevo latte e mangio una fetta di pane con marmellata. Mi piace anche la frutta, specialmente le mel...",
+      "vocab_count": 27,
+      "audio_path": "resources/l_alimentazione_20251215_1757/audio.mp3",
+      "text_path": "resources/l_alimentazione_20251215_1757/text.md"
     },
     {
       "id": "envoyer_un_colis_a_l_20251216_1226",
@@ -858,6 +876,24 @@
       "text_path": "resources/l_avenir_du_travail_20251216_1901/text.md"
     },
     {
+      "id": "decris_ta_famille_20251218_1040",
+      "langue": "esp",
+      "prompt": "Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.",
+      "resume": "Ma famille et mes relations familiales",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:40:26",
+      "longueur": 150,
+      "text_preview": "¡Hola! Me llamo Carlos y quiero hablar de mi familia. Mi familia es pequeña pero muy unida. Mi padre se llama José y mi madre se llama Ana. Mi padre es profesor y mi madre es enfermera. Ellos son muy ...",
+      "vocab_count": 31,
+      "audio_path": "resources/decris_ta_famille_20251218_1040/audio.mp3",
+      "text_path": "resources/decris_ta_famille_20251218_1040/text.md"
+    },
+    {
       "id": "decris_un_voyage_tou_20251218_0922",
       "langue": "all",
       "prompt": "Décris un voyage touristique en Allemagne à travers plusieurs villes ou régions et raconte les étapes principales.",
@@ -1200,6 +1236,24 @@
       "text_path": "resources/raconte_une_visite_t_20251218_0924/text.md"
     },
     {
+      "id": "parle_de_ton_college_20251218_1040",
+      "langue": "esp",
+      "prompt": "Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.",
+      "resume": "Mon collège et mes matières étudiées",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:40:46",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Ana y voy al colegio en Madrid. Mi colegio es grande y bonito. Estudio muchas materias interesantes. Por la mañana, tengo clases de matemáticas, historia y ciencias. Me gusta mucho la c...",
+      "vocab_count": 29,
+      "audio_path": "resources/parle_de_ton_college_20251218_1040/audio.mp3",
+      "text_path": "resources/parle_de_ton_college_20251218_1040/text.md"
+    },
+    {
       "id": "quelles_sont_les_tra_20251210_2036",
       "langue": "nl",
       "prompt": "Quelles sont les traditions liées au King's Day aux Pays-Bas ?",
@@ -1344,6 +1398,24 @@
       "text_path": "resources/recycling_habits_20251215_1537/text.md"
     },
     {
+      "id": "presente_une_grande_20251218_0920",
+      "langue": "all",
+      "prompt": "Présente une grande ville allemande visitée par les touristes et explique ce qui attire les visiteurs (monuments, ambiance, histoire).",
+      "resume": "Une grande ville allemande pour les touristes",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-18 09:20:43",
+      "longueur": 150,
+      "text_preview": "Berlin, die pulsierende Hauptstadt Deutschlands, zieht jährlich Millionen von Touristen aus aller Welt an und besticht durch ihr reichhaltiges kulturelles Erbe und ihre dynamische Atmosphäre. Die Stad...",
+      "vocab_count": 13,
+      "audio_path": "resources/presente_une_grande_20251218_0920/audio.mp3",
+      "text_path": "resources/presente_une_grande_20251218_0920/text.md"
+    },
+    {
       "id": "decoracion_del_hogar_20251215_1550",
       "langue": "esp",
       "prompt": "Decoración del hogar en Navidad",
@@ -1450,6 +1522,24 @@
       "vocab_count": 29,
       "audio_path": "resources/rediger_un_article_d_20251210_1248/audio.mp3",
       "text_path": "resources/rediger_un_article_d_20251210_1248/text.md"
+    },
+    {
+      "id": "acheter_des_fruits_e_20251216_1227",
+      "langue": "nl",
+      "prompt": "Acheter des fruits et légumes au marché",
+      "resume": "Acheter des fruits et légumes au marché",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2025-12-16 12:27:52",
+      "longueur": 150,
+      "text_preview": "Op zaterdag ga ik naar de markt. Ik koop graag vers fruit en verse groenten. Eerst ga ik naar de appelkraam. Ik koop rode appels. Ze kosten drie euro per kilo. Daarna ga ik naar de groentekraam. Ik wi...",
+      "vocab_count": 7,
+      "audio_path": "resources/acheter_des_fruits_e_20251216_1227/audio.mp3",
+      "text_path": "resources/acheter_des_fruits_e_20251216_1227/text.md"
     },
     {
       "id": "commander_au_restaur_20251216_1219",
@@ -1758,6 +1848,24 @@
       "text_path": "resources/presente_une_region_20251218_0922/text.md"
     },
     {
+      "id": "commander_une_pizza_20251216_1220",
+      "langue": "nl",
+      "prompt": "Commander une pizza",
+      "resume": "Commander une pizza",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2025-12-16 12:20:19",
+      "longueur": 150,
+      "text_preview": "Maria is thuis. Ze heeft honger. Ze wil pizza eten. Maria pakt haar telefoon. Ze belt naar de pizzeria. \n\n\"Hallo,\" zegt Maria. \"Ik wil een pizza bestellen.\"\n\"Hallo,\" zegt de medewerker. \"Welke pizza w...",
+      "vocab_count": 8,
+      "audio_path": "resources/commander_une_pizza_20251216_1220/audio.mp3",
+      "text_path": "resources/commander_une_pizza_20251216_1220/text.md"
+    },
+    {
       "id": "bedtime_stories_20251215_1537",
       "langue": "eng",
       "prompt": "Bedtime Stories",
@@ -1936,6 +2044,42 @@
       "vocab_count": 30,
       "audio_path": "resources/la_famiglia_20251215_1758/audio.mp3",
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
+    },
+    {
+      "id": "nochebuena_en_famili_20251215_1548",
+      "langue": "esp",
+      "prompt": "Nochebuena en familia",
+      "resume": "Nochebuena en famille",
+      "niveau": "B1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2025-12-15 15:48:40",
+      "longueur": 200,
+      "text_preview": "La Nochebuena es una de las celebraciones más importantes para las familias en España. Cada 24 de diciembre, nos reunimos con nuestros seres queridos para compartir una cena especial y pasar tiempo ju...",
+      "vocab_count": 40,
+      "audio_path": "resources/nochebuena_en_famili_20251215_1548/audio.mp3",
+      "text_path": "resources/nochebuena_en_famili_20251215_1548/text.md"
+    },
+    {
+      "id": "la_famiglia_20251215_1756",
+      "langue": "it",
+      "prompt": "La famiglia",
+      "resume": "La famille",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2025-12-15 17:57:08",
+      "longueur": 150,
+      "text_preview": "La mia famiglia è piccola ma molto importante per me. Ci sono quattro persone nella mia famiglia: mio padre, mia madre, mia sorella e io. Mio padre si chiama Marco. Lui è alto e lavora in un ufficio. ...",
+      "vocab_count": 30,
+      "audio_path": "resources/la_famiglia_20251215_1756/audio.mp3",
+      "text_path": "resources/la_famiglia_20251215_1756/text.md"
     },
     {
       "id": "partir_en_vacances_e_20251216_1850",
@@ -2368,6 +2512,24 @@
       "vocab_count": 30,
       "audio_path": "resources/quels_sont_les_sites_20251210_2035/audio.mp3",
       "text_path": "resources/quels_sont_les_sites_20251210_2035/text.md"
+    },
+    {
+      "id": "un_collegien_espagno_20251218_1039",
+      "langue": "esp",
+      "prompt": "Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.",
+      "resume": "Présentation d'un collégien espagnol",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:40:03",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Miguel. Tengo doce años. Soy un chico español y vivo en Madrid. Estudio en el colegio San José. Estoy en sexto de primaria. Es un colegio grande y bonito. \n\nEn mi clase, hay 25 estudian...",
+      "vocab_count": 32,
+      "audio_path": "resources/un_collegien_espagno_20251218_1039/audio.mp3",
+      "text_path": "resources/un_collegien_espagno_20251218_1039/text.md"
     },
     {
       "id": "i_giorni_della_setti_20251215_1759",

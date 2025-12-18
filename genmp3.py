@@ -14,6 +14,7 @@ import os
 import subprocess
 import random
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 from openai import OpenAI
@@ -420,33 +421,51 @@ class AudioGeneratorMD2MP3:
             cmd.extend(["--voix", voix])
         
         print(f"🎤 Génération de l'audio avec md2mp3.py (langue: {md2mp3_lang}, genre: {genre}, vitesse: {vitesse}x)...")
-        try:
-            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-            
-            # Renommer le fichier généré
-            temp_mp3 = temp_md.replace('.md', '.mp3')
-            if os.path.exists(temp_mp3):
-                os.rename(temp_mp3, fichier_mp3)
-            
-            # Nettoyer le fichier temporaire
-            if os.path.exists(temp_md):
-                os.remove(temp_md)
-            
-            # Vérifier la taille
-            if os.path.exists(fichier_mp3):
-                size = os.path.getsize(fichier_mp3)
-                print(f"✅ Audio généré ({size} octets)")
-            else:
-                print(f"⚠️ Fichier audio non trouvé")
+        
+        # Retry logic pour gérer les erreurs temporaires Azure
+        max_retries = 3
+        retry_delay = 2  # secondes
+        
+        for attempt in range(max_retries):
+            try:
+                result = subprocess.run(cmd, capture_output=True, text=True, check=True)
                 
-        except subprocess.CalledProcessError as e:
-            print(f"❌ Erreur md2mp3.py: {e}")
-            print(f"Sortie: {e.stdout}")
-            print(f"Erreur: {e.stderr}")
-            raise
-        except Exception as e:
-            print(f"❌ Erreur: {e}")
-            raise
+                # Renommer le fichier généré
+                temp_mp3 = temp_md.replace('.md', '.mp3')
+                if os.path.exists(temp_mp3):
+                    os.rename(temp_mp3, fichier_mp3)
+                
+                # Nettoyer le fichier temporaire
+                if os.path.exists(temp_md):
+                    os.remove(temp_md)
+                
+                # Vérifier la taille
+                if os.path.exists(fichier_mp3):
+                    size = os.path.getsize(fichier_mp3)
+                    print(f"✅ Audio généré ({size} octets)")
+                else:
+                    print(f"⚠️ Fichier audio non trouvé")
+                
+                break  # Succès, sortir de la boucle retry
+                    
+            except subprocess.CalledProcessError as e:
+                if attempt < max_retries - 1:
+                    print(f"⚠️ Tentative {attempt + 1}/{max_retries} échouée, nouvelle tentative dans {retry_delay}s...")
+                    print(f"   Erreur: {e.stderr[:200] if e.stderr else 'Aucun détail'}")
+                    time.sleep(retry_delay)
+                else:
+                    print(f"❌ Erreur md2mp3.py après {max_retries} tentatives: {e}")
+                    print(f"Sortie: {e.stdout}")
+                    print(f"Erreur: {e.stderr}")
+                    raise
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    print(f"⚠️ Tentative {attempt + 1}/{max_retries} échouée, nouvelle tentative dans {retry_delay}s...")
+                    print(f"   Erreur: {str(e)[:200]}")
+                    time.sleep(retry_delay)
+                else:
+                    print(f"❌ Erreur après {max_retries} tentatives: {e}")
+                    raise
 
 
 class OutputGenerator:

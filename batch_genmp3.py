@@ -321,7 +321,8 @@ Exemples:
                     print(f"⚠️  Erreur Git (code {e.returncode})")
                     print(f"   Vous pouvez pousser manuellement avec: git push")
                 except Exception as e:
-                    print(f"⚠️  Erreur lors du push: {e}")            else:
+                    print(f"⚠️  Erreur lors du push: {e}")
+            else:
                 print(f"⚠️  Le script site.sh a retourné un code d'erreur")
         except Exception as e:
             print(f"⚠️  Erreur lors de la régénération du site: {e}")

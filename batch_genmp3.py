@@ -302,8 +302,26 @@ Exemples:
         try:
             site_build = subprocess.run(["./site.sh", "build"], check=False)
             if site_build.returncode == 0:
-                print(f"✅ Site régénéré avec succès!")
-            else:
+                print(f"✅ Site régénéré avec succès!")                
+                # Push automatique sur GitHub
+                print(f"\n📤 Push sur GitHub...")
+                try:
+                    # Git add
+                    subprocess.run(["git", "add", "."], check=True)
+                    
+                    # Git commit
+                    commit_msg = f"Batch: {success} nouvelles ressources ({', '.join(langues)}, {args.niveau})"
+                    subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+                    
+                    # Git push
+                    subprocess.run(["git", "push"], check=True)
+                    
+                    print(f"✅ Modifications poussées sur GitHub!")
+                except subprocess.CalledProcessError as e:
+                    print(f"⚠️  Erreur Git (code {e.returncode})")
+                    print(f"   Vous pouvez pousser manuellement avec: git push")
+                except Exception as e:
+                    print(f"⚠️  Erreur lors du push: {e}")            else:
                 print(f"⚠️  Le script site.sh a retourné un code d'erreur")
         except Exception as e:
             print(f"⚠️  Erreur lors de la régénération du site: {e}")

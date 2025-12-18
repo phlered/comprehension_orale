@@ -258,7 +258,7 @@ Exemples:
     langues = [l.strip() for l in args.langues.split(',')]
     
     # Valider les codes de langues
-    valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'it']
+    valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']
     invalid_langs = [l for l in langues if l not in valid_langs]
     if invalid_langs:
         print(f"❌ Erreur: Code(s) de langue invalide(s): {', '.join(invalid_langs)}")
@@ -270,9 +270,12 @@ Exemples:
         print(f"   esp   = Espagnol Espagne ✅")
         print(f"   hisp  = Espagnol Amérique ⚠️  (voix limitées)")
         print(f"   all   = Allemand ❓ (non testé)")
-        print(f"   co    = Coréen ✅")
+        print(f"   co/cor= Coréen ✅")
         print(f"   it    = Italien ✅")
         sys.exit(1)
+    
+    # Normaliser 'co' -> 'cor' (genmp3.py utilise 'cor')
+    langues = ['cor' if l == 'co' else l for l in langues]
     
     # Créer le générateur batch
     generator = BatchGenerator(
@@ -295,8 +298,15 @@ Exemples:
     print(f"📦 Total: {success + fail}")
     
     if not args.dry_run and success > 0:
-        print(f"\n💡 N'oubliez pas de régénérer le site:")
-        print(f"   ./site.sh build")
+        print(f"\n� Régénération du site...")
+        try:
+            site_build = subprocess.run(["./site.sh", "build"], check=False)
+            if site_build.returncode == 0:
+                print(f"✅ Site régénéré avec succès!")
+            else:
+                print(f"⚠️  Le script site.sh a retourné un code d'erreur")
+        except Exception as e:
+            print(f"⚠️  Erreur lors de la régénération du site: {e}")
     
     sys.exit(0 if fail == 0 else 1)
 

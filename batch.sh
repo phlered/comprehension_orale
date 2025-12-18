@@ -1,6 +1,7 @@
 #!/bin/bash
 # Wrapper pour batch_genmp3.py - utilise automatiquement le bon Python
 # Usage:
+# ./batch.sh -f prompts/prompt.md -l nl,eng -n A1 
 #     ./batch.sh -f prompts/prompt.md -l nl,eng -n A1 --longueur 150
 #     ./batch.sh --prompts prompts/prompts_hollandais.md --langues nl --niveau B1 --dry-run
 #     ./batch.sh -f prompts/prompt.md -l eng,esp,all -n A2 -g homme

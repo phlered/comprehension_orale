@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-17T21:14:40.345054",
-  "total_resources": 140,
+  "generated_at": "2025-12-18T07:55:28.523480",
+  "total_resources": 150,
   "languages": [
-    "eng",
-    "fr",
-    "nl",
-    "all",
-    "esp",
     "it",
-    "cor"
+    "cor",
+    "all",
+    "nl",
+    "fr",
+    "esp",
+    "eng"
   ],
   "resources": [
     {
@@ -28,6 +28,24 @@
       "vocab_count": 19,
       "audio_path": "resources/test_voix_20251215_2212/audio.mp3",
       "text_path": "resources/test_voix_20251215_2212/text.md"
+    },
+    {
+      "id": "raconte_la_vie_quoti_20251218_0748",
+      "langue": "cor",
+      "prompt": "Raconte la vie quotidienne d’un lycéen coréen qui aime la K-pop ou le cinéma et explique comment ces passions influencent sa vie.",
+      "resume": "La vie quotidienne d'un lycéen coréen",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:48:12",
+      "longueur": 150,
+      "text_preview": "안녕하세요! 저는 지훈이에요. 저는 고등학생이에요. 저는 K-팝을 아주 좋아해요. 매일 아침 학교에 가기 전에 K-팝 음악을 들어요. 음악을 들으면 기분이 좋아져요. 학교에서는 친구들과 K-팝 가수에 대해 이야기를 많이 해요. \n\n수업이 끝나면 친구들과 함께 댄스 연습을 해요. 학교 축제에서 K-팝 댄스를 보여주고 싶어요. 그래서 열심히 연습해요. 주말에는...",
+      "vocab_count": 16,
+      "audio_path": "resources/raconte_la_vie_quoti_20251218_0748/audio.mp3",
+      "text_path": "resources/raconte_la_vie_quoti_20251218_0748/text.md"
     },
     {
       "id": "mercados_de_navidad_20251215_1548",
@@ -82,6 +100,24 @@
       "vocab_count": 32,
       "audio_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/audio.mp3",
       "text_path": "resources/pourquoi_y_a_t_il_au_20251210_2037/text.md"
+    },
+    {
+      "id": "explique_limportanc_20251218_0747",
+      "langue": "cor",
+      "prompt": "Explique l’importance de la musique, du cinéma et des séries dans la culture des jeunes en Corée du Sud.",
+      "resume": "L'importance de la musique et du cinéma en Corée du Sud",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:47:57",
+      "longueur": 150,
+      "text_preview": "음악, 영화, 그리고 드라마는 한국의 젊은이들에게 중요한 문화 요소입니다. 첫째, 음악은 기분을 좋게 하고 스트레스를 줄여줍니다. 많은 젊은이들이 K-pop을 듣고 춤을 춥니다. K-pop 콘서트에 가서 친구들과 즐거운 시간을 보냅니다.\n\n둘째, 영화는 재미있고 감동적입니다. 주말에 친구들과 영화를 보러 가는 것은 인기 있는 활동입니다. 영화는 새로운 이야...",
+      "vocab_count": 17,
+      "audio_path": "resources/explique_limportanc_20251218_0747/audio.mp3",
+      "text_path": "resources/explique_limportanc_20251218_0747/text.md"
     },
     {
       "id": "la_nourriture_20251210_1854",
@@ -462,6 +498,24 @@
       "text_path": "resources/my_name_is_emily_and_20251217_1533/text.md"
     },
     {
+      "id": "raconte_la_premiere_20251218_0745",
+      "langue": "cor",
+      "prompt": "Raconte la première fois qu’un adolescent découvre un drama coréen : ce qu’il ressent, ce qui le surprend et ce qu’il apprend sur la culture coréenne.",
+      "resume": "La découverte d'un drama coréen",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:46:13",
+      "longueur": 150,
+      "text_preview": "안녕하세요! 저는 지민이에요. 저는 처음으로 한국 드라마를 봤어요. 그 드라마 이름은 '별에서 온 그대'예요. 처음 봤을 때, 정말 재미있었어요. 배우들이 너무 잘생기고 예뻤어요. 그리고 한국어가 매력적이었어요.\n\n드라마에서 한국 음식을 처음 봤어요. 김치찌개, 비빔밥 같은 음식들이 나왔어요. 너무 맛있어 보여서 먹어보고 싶었어요. 또, 한국 사람들은 인사...",
+      "vocab_count": 17,
+      "audio_path": "resources/raconte_la_premiere_20251218_0745/audio.mp3",
+      "text_path": "resources/raconte_la_premiere_20251218_0745/text.md"
+    },
+    {
       "id": "dove_si_trova_il_cam_20251215_1758",
       "langue": "it",
       "prompt": "Dove si trova il campeggio",
@@ -622,6 +676,24 @@
       "vocab_count": 33,
       "audio_path": "resources/comment_se_deroule_u_20251210_2035/audio.mp3",
       "text_path": "resources/comment_se_deroule_u_20251210_2035/text.md"
+    },
+    {
+      "id": "decris_une_journee_t_20251218_0745",
+      "langue": "cor",
+      "prompt": "Décris une journée typique d’un idol de K-pop, entre entraînements, répétitions, vie personnelle et relations avec les fans.",
+      "resume": "Une journée typique d'un idol de K-pop",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:45:23",
+      "longueur": 150,
+      "text_preview": "매일 아침, K-pop 아이돌은 일찍 일어납니다. 보통 아침 6시에 일어나서 체육관에 갑니다. 운동을 하고 나서 아침을 먹습니다. 아침 식사는 건강하게 먹어요. 예를 들어, 밥, 채소, 과일입니다. \n\n그 다음에는 연습실로 갑니다. 춤 연습과 노래 연습을 열심히 합니다. 보통 3시간에서 4시간 정도 연습합니다. 시간이 지나면, 점심을 먹고 잠깐 쉽니다. 오...",
+      "vocab_count": 16,
+      "audio_path": "resources/decris_une_journee_t_20251218_0745/audio.mp3",
+      "text_path": "resources/decris_une_journee_t_20251218_0745/text.md"
     },
     {
       "id": "pourquoi_les_pays_ba_20251210_2037",
@@ -2010,6 +2082,24 @@
       "text_path": "resources/l_alimentation_bio_e_20251216_1853/text.md"
     },
     {
+      "id": "explique_ce_quest_l_20251218_0745",
+      "langue": "cor",
+      "prompt": "Explique ce qu’est la K-pop et pourquoi elle attire autant de jeunes dans le monde entier, en donnant des exemples de groupes ou d’artistes coréens.",
+      "resume": "La K-pop et son attrait mondial",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:45:56",
+      "longueur": 150,
+      "text_preview": "케이팝(K-pop)은 한국의 대중음악입니다. 많은 젊은이들이 케이팝을 좋아합니다. 왜냐하면 케이팝은 멋진 음악과 춤을 보여주기 때문입니다. 케이팝 그룹은 열심히 연습합니다. 그래서 춤과 노래가 아주 잘 맞습니다.\n\n케이팝 그룹이나 가수들은 개성이 있습니다. 예를 들어, 방탄소년단(BTS)은 전 세계에서 유명합니다. 그들은 음악으로 많은 사람들에게 힘과 용기...",
+      "vocab_count": 15,
+      "audio_path": "resources/explique_ce_quest_l_20251218_0745/audio.mp3",
+      "text_path": "resources/explique_ce_quest_l_20251218_0745/text.md"
+    },
+    {
       "id": "preparer_un_repas_de_20251216_1849",
       "langue": "all",
       "prompt": "Préparer un repas de famille",
@@ -2044,6 +2134,24 @@
       "vocab_count": 7,
       "audio_path": "resources/aller_a_la_pharmacie_20251216_1226/audio.mp3",
       "text_path": "resources/aller_a_la_pharmacie_20251216_1226/text.md"
+    },
+    {
+      "id": "decris_un_concert_de_20251218_0746",
+      "langue": "cor",
+      "prompt": "Décris un concert de K-pop vu par un fan : l’ambiance, la musique, les chorégraphies et le lien avec le public.",
+      "resume": "Un concert de K-pop vu par un fan",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:47:19",
+      "longueur": 150,
+      "text_preview": "지난 주말에 나는 친구와 함께 K-pop 콘서트에 갔습니다. 콘서트장은 아주 크고 사람들로 가득 찼습니다. 팬들이 소리 지르며 응원하고 있었어요. 무대에는 유명한 K-pop 그룹이 나왔습니다. 그들은 멋진 옷을 입고 있었습니다. 음악은 신나고 재미있었어요. 노래마다 다른 스타일과 리듬이 있었습니다.\n\n댄스도 아주 인상적이었어요. 멤버들은 완벽한 안무를 보여...",
+      "vocab_count": 16,
+      "audio_path": "resources/decris_un_concert_de_20251218_0746/audio.mp3",
+      "text_path": "resources/decris_un_concert_de_20251218_0746/text.md"
     },
     {
       "id": "presente_la_vie_quot_20251217_1132",
@@ -2190,6 +2298,24 @@
       "text_path": "resources/ecrire_un_court_essa_20251210_1252/text.md"
     },
     {
+      "id": "presente_un_acteur_o_20251218_0746",
+      "langue": "cor",
+      "prompt": "Présente un acteur ou une actrice célèbre de cinéma coréen et explique son parcours et ses rôles les plus connus.",
+      "resume": "Un acteur ou une actrice célèbre du cinéma coréen",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:46:36",
+      "longueur": 150,
+      "text_preview": "배우 송강호 소개\n\n송강호는 한국의 유명한 영화 배우입니다. 그는 1967년 부산에서 태어났습니다. 송강호는 연극 무대에서 경력을 시작했습니다. 1996년 영화 '초록물고기'로 영화계에 데뷔했습니다.\n\n송강호는 많은 영화에 출연했습니다. 그의 가장 유명한 작품은 '괴물', '살인의 추억', '기생충'입니다. 특히 '기생충'은 세계적으로 큰 성공을 거두었습니...",
+      "vocab_count": 15,
+      "audio_path": "resources/presente_un_acteur_o_20251218_0746/audio.mp3",
+      "text_path": "resources/presente_un_acteur_o_20251218_0746/text.md"
+    },
+    {
       "id": "demander_l_heure_d_o_20251210_2033",
       "langue": "nl",
       "prompt": "Demander l'heure d'ouverture d'un musée.",
@@ -2334,6 +2460,24 @@
       "text_path": "resources/quelles_sont_les_act_20251210_2036/text.md"
     },
     {
+      "id": "presente_un_film_cor_20251218_0744",
+      "langue": "cor",
+      "prompt": "Présente un film coréen récent et explique de quoi il parle, pourquoi il est populaire et ce qu’il montre de la société coréenne.",
+      "resume": "Un film coréen récent",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:45:05",
+      "longueur": 150,
+      "text_preview": "한국 영화 \"기생충\"은 최근에 많은 인기를 얻었습니다. 이 영화는 2019년에 개봉했고, 봉준호 감독이 만들었습니다. \"기생충\"은 두 가족의 이야기를 다룹니다. 한 가족은 가난하고, 다른 가족은 부자입니다. 가난한 가족은 돈을 벌기 위해 부자 가족의 집에서 일을 시작합니다. 하지만, 여러 문제들이 생기면서 이야기가 복잡해집니다.\n\n이 영화는 전 세계적으로 ...",
+      "vocab_count": 15,
+      "audio_path": "resources/presente_un_film_cor_20251218_0744/audio.mp3",
+      "text_path": "resources/presente_un_film_cor_20251218_0744/text.md"
+    },
+    {
       "id": "voluntariado_naviden_20251215_1549",
       "langue": "esp",
       "prompt": "Voluntariado navideño",
@@ -2442,6 +2586,24 @@
       "text_path": "resources/au_magasin_est_il_p_20251210_2034/text.md"
     },
     {
+      "id": "presente_un_lieu_cul_20251218_0748",
+      "langue": "cor",
+      "prompt": "Présente un lieu culturel en Corée du Sud (cinéma, quartier de Séoul, salle de concert) et explique pourquoi il est important pour la culture coréenne moderne.",
+      "resume": "Un lieu culturel en Corée du Sud",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:48:27",
+      "longueur": 150,
+      "text_preview": "홍대는 서울에서 매우 인기 있는 장소입니다. 홍대는 특히 젊은 사람들 사이에서 유명합니다. 이곳은 많은 예술과 음악이 있는 문화적인 장소입니다. 홍대 거리에는 다양한 카페, 레스토랑 그리고 상점이 있습니다. 또한, 길거리 공연도 자주 열립니다. \n\n홍대는 현대 한국 문화에 중요합니다. 한국의 젊은이들이 창의적이고 새로운 것을 시도하는 곳이기 때문입니다. 많...",
+      "vocab_count": 16,
+      "audio_path": "resources/presente_un_lieu_cul_20251218_0748/audio.mp3",
+      "text_path": "resources/presente_un_lieu_cul_20251218_0748/text.md"
+    },
+    {
       "id": "le_role_de_l_europe_20251216_1859",
       "langue": "all",
       "prompt": "Le rôle de l'Europe dans le monde",
@@ -2458,6 +2620,24 @@
       "vocab_count": 26,
       "audio_path": "resources/le_role_de_l_europe_20251216_1859/audio.mp3",
       "text_path": "resources/le_role_de_l_europe_20251216_1859/text.md"
+    },
+    {
+      "id": "compare_le_cinema_co_20251218_0746",
+      "langue": "cor",
+      "prompt": "Compare le cinéma coréen et le cinéma occidental en parlant des thèmes, des personnages et de la manière de raconter les histoires.",
+      "resume": "Comparaison cinéma coréen et cinéma occidental",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇰🇷",
+      "voix_variant": "cor",
+      "date": "2025-12-18 07:46:53",
+      "longueur": 150,
+      "text_preview": "한국 영화와 서양 영화 비교\n\n한국 영화와 서양 영화는 여러 가지 면에서 다릅니다. 먼저, 한국 영화는 가족, 사회 문제, 인간 관계를 많이 다룹니다. 예를 들어, 가족 간의 사랑과 갈등, 친구와의 우정 이야기가 많습니다. 반면에, 서양 영화는 액션, 판타지, 모험 이야기가 많습니다. 히어로나 슈퍼히어로 이야기도 많이 나옵니다.\n\n또한, 한국 영화의 캐릭터...",
+      "vocab_count": 18,
+      "audio_path": "resources/compare_le_cinema_co_20251218_0746/audio.mp3",
+      "text_path": "resources/compare_le_cinema_co_20251218_0746/text.md"
     },
     {
       "id": "london_underground_20251217_1234",

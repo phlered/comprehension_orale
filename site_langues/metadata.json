@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-18T10:45:49.283074",
-  "total_resources": 169,
+  "generated_at": "2025-12-18T10:49:32.790493",
+  "total_resources": 178,
   "languages": [
     "esp",
-    "all",
+    "nl",
     "eng",
     "fr",
-    "nl",
-    "cor",
-    "it"
+    "all",
+    "it",
+    "cor"
   ],
   "resources": [
     {
@@ -318,6 +318,24 @@
       "text_path": "resources/villancicos_y_concie_20251215_1550/text.md"
     },
     {
+      "id": "presente_tes_loisirs_20251218_1047",
+      "langue": "esp",
+      "prompt": "Présente tes loisirs et tes activités préférées après l’école.",
+      "resume": "Tes loisirs et activités après l'école",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:47:31",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Marta. Después de la escuela, tengo algunas actividades favoritas. Me gusta mucho leer. Los libros de aventuras son mis favoritos. También me encanta dibujar. Uso lápices de colores y h...",
+      "vocab_count": 30,
+      "audio_path": "resources/presente_tes_loisirs_20251218_1047/audio.mp3",
+      "text_path": "resources/presente_tes_loisirs_20251218_1047/text.md"
+    },
+    {
       "id": "menu_navideno_saluda_20251215_1549",
       "langue": "esp",
       "prompt": "Menú navideño saludable",
@@ -496,6 +514,24 @@
       "vocab_count": 28,
       "audio_path": "resources/faire_les_courses_au_20251216_0837/audio.mp3",
       "text_path": "resources/faire_les_courses_au_20251216_0837/text.md"
+    },
+    {
+      "id": "parle_de_tes_amis_20251218_1048",
+      "langue": "esp",
+      "prompt": "Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.",
+      "resume": "Mes amis et nos activités ensemble",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:48:51",
+      "longueur": 150,
+      "text_preview": "Tengo tres amigos. Se llaman Ana, Luis y Marta. Ana es alta y muy simpática. Luis es muy divertido y le gusta contar chistes. Marta es muy lista y siempre ayuda con los deberes. Nos gusta pasar tiempo...",
+      "vocab_count": 30,
+      "audio_path": "resources/parle_de_tes_amis_20251218_1048/audio.mp3",
+      "text_path": "resources/parle_de_tes_amis_20251218_1048/text.md"
     },
     {
       "id": "les_loisirs_des_jeun_20251216_0834",
@@ -768,6 +804,24 @@
       "text_path": "resources/les_enjeux_ethiques_20251216_1902/text.md"
     },
     {
+      "id": "un_collegien_espagno_20251218_1045",
+      "langue": "esp",
+      "prompt": "Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.",
+      "resume": "Présentation d'un collégien espagnol",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:46:10",
+      "longueur": 150,
+      "text_preview": "¡Hola! Me llamo Alejandro. Tengo doce años. Soy de España. Vivo en Madrid con mi familia. Tengo un hermano y una hermana. Mi hermano se llama Pablo y mi hermana se llama Lucía.\n\nEstoy en 1º de ESO en ...",
+      "vocab_count": 30,
+      "audio_path": "resources/un_collegien_espagno_20251218_1045/audio.mp3",
+      "text_path": "resources/un_collegien_espagno_20251218_1045/text.md"
+    },
+    {
       "id": "raconte_une_journee_20251217_1130",
       "langue": "cor",
       "prompt": "Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.",
@@ -984,6 +1038,24 @@
       "text_path": "resources/est_ce_que_les_adole_20251217_1133/text.md"
     },
     {
+      "id": "parle_de_ton_college_20251218_1046",
+      "langue": "esp",
+      "prompt": "Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.",
+      "resume": "Mon collège et mes matières étudiées",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:46:56",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Javier y estudio en un colegio en España. Mi colegio es grande y moderno. Estudio muchas materias. Tengo clases de matemáticas, ciencias, historia y geografía. También estudio inglés y ...",
+      "vocab_count": 31,
+      "audio_path": "resources/parle_de_ton_college_20251218_1046/audio.mp3",
+      "text_path": "resources/parle_de_ton_college_20251218_1046/text.md"
+    },
+    {
       "id": "commander_un_sandwic_20251216_1228",
       "langue": "nl",
       "prompt": "Commander un sandwich dans une sandwicherie",
@@ -1090,6 +1162,24 @@
       "vocab_count": 34,
       "audio_path": "resources/presente_la_vie_quot_20251217_1130/audio.mp3",
       "text_path": "resources/presente_la_vie_quot_20251217_1130/text.md"
+    },
+    {
+      "id": "decris_lendroit_ou_20251218_1047",
+      "langue": "esp",
+      "prompt": "Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.",
+      "resume": "Ma maison et mon quartier",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:47:55",
+      "longueur": 150,
+      "text_preview": "Vivo en un apartamento pequeño en Madrid. Mi apartamento tiene una sala, una cocina, un baño y un dormitorio. La sala es cómoda. Hay un sofá y una televisión. En la cocina, tengo una mesa pequeña y un...",
+      "vocab_count": 32,
+      "audio_path": "resources/decris_lendroit_ou_20251218_1047/audio.mp3",
+      "text_path": "resources/decris_lendroit_ou_20251218_1047/text.md"
     },
     {
       "id": "ganaderia_de_vacas_e_20251217_1233",
@@ -1432,6 +1522,24 @@
       "vocab_count": 46,
       "audio_path": "resources/decoracion_del_hogar_20251215_1550/audio.mp3",
       "text_path": "resources/decoracion_del_hogar_20251215_1550/text.md"
+    },
+    {
+      "id": "decris_ce_que_tu_aim_20251218_1048",
+      "langue": "esp",
+      "prompt": "Décris ce que tu aimes et ce que tu n’aimes pas (sports, musique, matières scolaires).",
+      "resume": "Préférences personnelles en sports et musique",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:49:07",
+      "longueur": 150,
+      "text_preview": "¡Hola! Me llamo María. Vivo en Madrid. Me gusta mucho jugar al fútbol. Juego con mis amigos en el parque los fines de semana. También me gusta montar en bicicleta. Es muy divertido y me hace feliz.\n\nE...",
+      "vocab_count": 31,
+      "audio_path": "resources/decris_ce_que_tu_aim_20251218_1048/audio.mp3",
+      "text_path": "resources/decris_ce_que_tu_aim_20251218_1048/text.md"
     },
     {
       "id": "carta_a_los_reyes_ma_20251215_1549",
@@ -2280,6 +2388,24 @@
       "text_path": "resources/simuler_une_intervie_20251210_1251/text.md"
     },
     {
+      "id": "explique_ce_que_tu_m_20251218_1047",
+      "langue": "esp",
+      "prompt": "Explique ce que tu manges au petit-déjeuner, au déjeuner et au dîner.",
+      "resume": "Les repas de la journée",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:48:33",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Juan y voy a contarte lo que como en un día normal. Por la mañana, desayuno a las ocho. Me gusta tomar una tostada con mantequilla y mermelada. También bebo un vaso de leche o un café c...",
+      "vocab_count": 31,
+      "audio_path": "resources/explique_ce_que_tu_m_20251218_1047/audio.mp3",
+      "text_path": "resources/explique_ce_que_tu_m_20251218_1047/text.md"
+    },
+    {
       "id": "presente_le_tourisme_20251218_0924",
       "langue": "all",
       "prompt": "Présente le tourisme nature en Allemagne (randonnées, lacs, montagnes, forêts).",
@@ -2514,6 +2640,24 @@
       "text_path": "resources/quels_sont_les_sites_20251210_2035/text.md"
     },
     {
+      "id": "decris_une_journee_t_20251218_1047",
+      "langue": "esp",
+      "prompt": "Décris une journée typique : le matin, l’après-midi et le soir.",
+      "resume": "Une journée typique",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:47:11",
+      "longueur": 150,
+      "text_preview": "Hola, me llamo Ana y voy a describir mi día típico. Por la mañana, me levanto a las siete. Desayuno cereales con leche y una manzana. Después, me lavo los dientes y me visto. A las ocho, voy al colegi...",
+      "vocab_count": 29,
+      "audio_path": "resources/decris_une_journee_t_20251218_1047/audio.mp3",
+      "text_path": "resources/decris_une_journee_t_20251218_1047/text.md"
+    },
+    {
       "id": "un_collegien_espagno_20251218_1039",
       "langue": "esp",
       "prompt": "Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.",
@@ -2728,6 +2872,24 @@
       "vocab_count": 27,
       "audio_path": "resources/comment_les_habitant_20251210_2036/audio.mp3",
       "text_path": "resources/comment_les_habitant_20251210_2036/text.md"
+    },
+    {
+      "id": "presente_une_fete_ou_20251218_1049",
+      "langue": "esp",
+      "prompt": "Présente une fête ou une tradition simple dans un pays hispanophone.",
+      "resume": "Une fête ou tradition dans un pays hispanophone",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-18 10:49:22",
+      "longueur": 150,
+      "text_preview": "La Tomatina es una fiesta muy famosa en España. Se celebra en Buñol, un pueblo de Valencia. La fiesta es el último miércoles de agosto. En La Tomatina, las personas tiran tomates. ¡Es muy divertido!\n\n...",
+      "vocab_count": 31,
+      "audio_path": "resources/presente_une_fete_ou_20251218_1049/audio.mp3",
+      "text_path": "resources/presente_une_fete_ou_20251218_1049/text.md"
     },
     {
       "id": "raconte_une_journee_20251217_1128",

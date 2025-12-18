@@ -1,4 +1,4 @@
-1. Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.
+1. Un collégien anglais se présente : il dit son prénom, son âge, sa classe et sa nationalité.
 
 2. Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.
 
@@ -16,4 +16,4 @@
 
 9. Décris ce que tu aimes et ce que tu n’aimes pas (sports, musique, matières scolaires).
 
-10. Présente une fête ou une tradition simple dans un pays hispanophone.
+10. Présente une fête ou une tradition simple dans un pays du commonwealth.

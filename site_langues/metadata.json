@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-18T10:49:32.790493",
-  "total_resources": 178,
+  "generated_at": "2025-12-18T11:02:01.058105",
+  "total_resources": 188,
   "languages": [
-    "esp",
-    "nl",
     "eng",
     "fr",
-    "all",
     "it",
-    "cor"
+    "esp",
+    "nl",
+    "cor",
+    "all"
   ],
   "resources": [
     {
@@ -64,6 +64,24 @@
       "vocab_count": 45,
       "audio_path": "resources/mercados_de_navidad_20251215_1548/audio.mp3",
       "text_path": "resources/mercados_de_navidad_20251215_1548/text.md"
+    },
+    {
+      "id": "explique_ce_que_tu_m_20251218_1100",
+      "langue": "eng",
+      "prompt": "Explique ce que tu manges au petit-déjeuner, au déjeuner et au dîner.",
+      "resume": "Les repas de la journée",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 11:00:49",
+      "longueur": 150,
+      "text_preview": "Hello! I want to tell you about what I eat in a day. In the morning, I have breakfast. I like to eat a bowl of cereal with milk. Sometimes, I eat toast with butter and jam. I also like to drink orange...",
+      "vocab_count": 32,
+      "audio_path": "resources/explique_ce_que_tu_m_20251218_1100/audio.mp3",
+      "text_path": "resources/explique_ce_que_tu_m_20251218_1100/text.md"
     },
     {
       "id": "comment_fonctionne_l_20251210_2037",
@@ -894,6 +912,24 @@
       "text_path": "resources/test_vocabulaire_20251210_1900/text.md"
     },
     {
+      "id": "decris_une_journee_t_20251218_1059",
+      "langue": "eng",
+      "prompt": "Décris une journée typique : le matin, l’après-midi et le soir.",
+      "resume": "Une journée typique",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 10:59:43",
+      "longueur": 150,
+      "text_preview": "Here is a simple text in English about a typical day:\n\nMy name is Anna. I live in a small town. Every day, I wake up at 7:00 in the morning. I wash my face and brush my teeth. Then, I have breakfast. ...",
+      "vocab_count": 32,
+      "audio_path": "resources/decris_une_journee_t_20251218_1059/audio.mp3",
+      "text_path": "resources/decris_une_journee_t_20251218_1059/text.md"
+    },
+    {
       "id": "presente_la_vie_quot_20251217_1131",
       "langue": "it",
       "prompt": "Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais ressortir les différences et ressemblances avec la vie d’un lycéen français.",
@@ -1722,6 +1758,24 @@
       "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
     },
     {
+      "id": "presente_une_fete_ou_20251218_1101",
+      "langue": "eng",
+      "prompt": "Présente une fête ou une tradition simple dans un pays du commonwealth.",
+      "resume": "Une fête ou tradition dans un pays du Commonwealth",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-18 11:01:54",
+      "longueur": 150,
+      "text_preview": "In India, there is a special festival called Diwali. Diwali is the festival of lights. It is a happy time. People celebrate Diwali in October or November. Diwali lasts for five days.\n\nOn Diwali, famil...",
+      "vocab_count": 29,
+      "audio_path": "resources/presente_une_fete_ou_20251218_1101/audio.mp3",
+      "text_path": "resources/presente_une_fete_ou_20251218_1101/text.md"
+    },
+    {
       "id": "decris_un_site_histo_20251218_0923",
       "langue": "all",
       "prompt": "Décris un site historique allemand visité par des touristes et explique son importance.",
@@ -1882,6 +1936,24 @@
       "vocab_count": 25,
       "audio_path": "resources/les_reseaux_sociaux_20251217_1126/audio.mp3",
       "text_path": "resources/les_reseaux_sociaux_20251217_1126/text.md"
+    },
+    {
+      "id": "parle_de_tes_amis_20251218_1100",
+      "langue": "eng",
+      "prompt": "Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.",
+      "resume": "Tes amis et vos activités ensemble",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 11:01:08",
+      "longueur": 150,
+      "text_preview": "I have three best friends. Their names are Anna, Tom, and Lisa. We are in the same class at school. We like to play and have fun together. After school, we often go to the park. We play football and s...",
+      "vocab_count": 29,
+      "audio_path": "resources/parle_de_tes_amis_20251218_1100/audio.mp3",
+      "text_path": "resources/parle_de_tes_amis_20251218_1100/text.md"
     },
     {
       "id": "les_reseaux_sociaux_20251217_1128",
@@ -2208,6 +2280,24 @@
       "text_path": "resources/partir_en_vacances_e_20251216_1850/text.md"
     },
     {
+      "id": "decris_ta_famille_20251218_1058",
+      "langue": "eng",
+      "prompt": "Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.",
+      "resume": "Ma famille et mes relations familiales",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 10:59:03",
+      "longueur": 150,
+      "text_preview": "My family is small but special. I have a mother, a father, and one sister. My mother’s name is Anna. She is kind and loves to cook. My father’s name is John. He works in an office. He likes to read bo...",
+      "vocab_count": 30,
+      "audio_path": "resources/decris_ta_famille_20251218_1058/audio.mp3",
+      "text_path": "resources/decris_ta_famille_20251218_1058/text.md"
+    },
+    {
       "id": "ma_famille_et_mes_pa_20251216_1847",
       "langue": "all",
       "prompt": "Ma famille et mes parents",
@@ -2224,6 +2314,24 @@
       "vocab_count": 35,
       "audio_path": "resources/ma_famille_et_mes_pa_20251216_1847/audio.mp3",
       "text_path": "resources/ma_famille_et_mes_pa_20251216_1847/text.md"
+    },
+    {
+      "id": "parle_de_ton_college_20251218_1059",
+      "langue": "eng",
+      "prompt": "Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.",
+      "resume": "Mon collège et mes matières étudiées",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 10:59:29",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Alex. I go to Greenfield School. It is a big school. I am in class 7B. Let me tell you about my school and my classes.\n\nI study many subjects at school. I have Math, English, Science...",
+      "vocab_count": 30,
+      "audio_path": "resources/parle_de_ton_college_20251218_1059/audio.mp3",
+      "text_path": "resources/parle_de_ton_college_20251218_1059/text.md"
     },
     {
       "id": "quelles_sont_les_spe_20251210_2035",
@@ -2260,6 +2368,24 @@
       "vocab_count": 29,
       "audio_path": "resources/demander_ou_se_trouv_20251210_2033/audio.mp3",
       "text_path": "resources/demander_ou_se_trouv_20251210_2033/text.md"
+    },
+    {
+      "id": "un_collegien_anglais_20251218_1058",
+      "langue": "eng",
+      "prompt": "Un collégien anglais se présente : il dit son prénom, son âge, sa classe et sa nationalité.",
+      "resume": "Présentation d'un collégien anglais",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 10:58:47",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Tom. I am 12 years old. I am from England, and I am English. I live in a small town. I go to Green Hill School. I am in Year 7. I like my school. My favorite subject is math. I also ...",
+      "vocab_count": 29,
+      "audio_path": "resources/un_collegien_anglais_20251218_1058/audio.mp3",
+      "text_path": "resources/un_collegien_anglais_20251218_1058/text.md"
     },
     {
       "id": "comprare_i_vestiti_20251215_1802",
@@ -2928,6 +3054,24 @@
       "text_path": "resources/different_music_tast_20251215_1536/text.md"
     },
     {
+      "id": "decris_ce_que_tu_aim_20251218_1101",
+      "langue": "eng",
+      "prompt": "Décris ce que tu aimes et ce que tu n’aimes pas (sports, musique, matières scolaires).",
+      "resume": "Ce que j'aime et ce que je n'aime",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 11:01:28",
+      "longueur": 150,
+      "text_preview": "My name is Anna. I want to tell you about what I like and what I do not like. I like sports. My favorite sport is soccer. I play soccer with my friends after school. It is fun and good exercise. I als...",
+      "vocab_count": 31,
+      "audio_path": "resources/decris_ce_que_tu_aim_20251218_1101/audio.mp3",
+      "text_path": "resources/decris_ce_que_tu_aim_20251218_1101/text.md"
+    },
+    {
       "id": "quelles_sont_les_act_20251210_2036",
       "langue": "nl",
       "prompt": "Quelles sont les activités populaires pendant l'été aux Pays-Bas ?",
@@ -3000,6 +3144,24 @@
       "text_path": "resources/la_vie_en_ville_ou_a_20251216_1854/text.md"
     },
     {
+      "id": "presente_tes_loisirs_20251218_1059",
+      "langue": "eng",
+      "prompt": "Présente tes loisirs et tes activités préférées après l’école.",
+      "resume": "Tes loisirs et activités après l'école",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-18 11:00:06",
+      "longueur": 150,
+      "text_preview": "Hello! My name is Alex. After school, I like to have fun. I have many hobbies. I love to play soccer with my friends. We play in the park. Soccer is fun, and I like to run. \n\nI also enjoy reading book...",
+      "vocab_count": 31,
+      "audio_path": "resources/presente_tes_loisirs_20251218_1059/audio.mp3",
+      "text_path": "resources/presente_tes_loisirs_20251218_1059/text.md"
+    },
+    {
       "id": "une_correspondante_a_20251217_1837",
       "langue": "eng",
       "prompt": "Une correspondante américaine se présente et raconte ses loisirs préférés, sa vie de famille et ce qu’elle aime (ou non) dans l’endroit où elle habite dans les regions rurales du Midwest.",
@@ -3034,6 +3196,24 @@
       "vocab_count": 8,
       "audio_path": "resources/retirer_de_l_argent_20251216_1227/audio.mp3",
       "text_path": "resources/retirer_de_l_argent_20251216_1227/text.md"
+    },
+    {
+      "id": "decris_lendroit_ou_20251218_1100",
+      "langue": "eng",
+      "prompt": "Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.",
+      "resume": "Ma maison et mon quartier",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-18 11:00:29",
+      "longueur": 150,
+      "text_preview": "I live in a small apartment in the city. My apartment has two rooms. There is a bedroom and a living room. The bedroom is not big, but it is cozy. I have a bed, a desk, and a chair in my bedroom. I li...",
+      "vocab_count": 31,
+      "audio_path": "resources/decris_lendroit_ou_20251218_1100/audio.mp3",
+      "text_path": "resources/decris_lendroit_ou_20251218_1100/text.md"
     },
     {
       "id": "presentarsi_20251215_1803",

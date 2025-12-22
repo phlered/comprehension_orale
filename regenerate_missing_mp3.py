@@ -2,12 +2,17 @@
 """
 Régénère les MP3 manquants pour les docs qui ont text.md mais pas audio.mp3.
 Lit le frontmatter pour déterminer la langue et la vitesse.
+
+Options:
+- --all: Parcourt tous les dossiers sous docs/ (par défaut: seulement aujourd'hui)
+- --cleanup: Supprime les fichiers temporaires (_temp_text.*, _chunk_*.mp3, concat.txt)
 """
 
 import os
 import re
 import subprocess
 from pathlib import Path
+import argparse
 from datetime import datetime
 
 # Mapping langue frontmatter → code md2mp3
@@ -112,17 +117,49 @@ def generate_mp3(doc_folder, text_md_path, langue_code, vitesse, genre):
             except:
                 pass
 
+def cleanup_folder(folder: Path):
+    """Supprime les fichiers temporaires générés par md2mp3.py"""
+    patterns = [
+        "_temp_text.md",
+        "_temp_text.mp3",
+        "concat.txt",
+    ]
+    # Nettoyer les chunks éventuels
+    for p in folder.glob("_chunk_*.mp3"):
+        try:
+            p.unlink()
+        except:
+            pass
+    # Nettoyer les fichiers listés
+    for name in patterns:
+        f = folder / name
+        if f.exists():
+            try:
+                f.unlink()
+            except:
+                pass
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Régénérer les MP3 manquants")
+    parser.add_argument("--all", action="store_true", help="Parcourir tous les dossiers sous docs/")
+    parser.add_argument("--cleanup", action="store_true", help="Supprimer les fichiers temporaires après traitement")
+    args = parser.parse_args()
+
     docs_dir = Path("docs")
     today = datetime.now().strftime("%Y%m%d")
     
-    print(f"\n🔍 Recherche des docs créés aujourd'hui ({today})...")
+    scope_msg = "tous les dossiers" if args.all else f"les dossiers créés aujourd'hui ({today})"
+    print(f"\n🔍 Recherche dans {scope_msg}...")
     
-    # Trouver tous les dossiers créés aujourd'hui
-    folders = [f for f in docs_dir.iterdir() if f.is_dir() and today in f.name]
+    # Trouver les dossiers
+    if args.all:
+        folders = [f for f in docs_dir.iterdir() if f.is_dir()]
+    else:
+        folders = [f for f in docs_dir.iterdir() if f.is_dir() and today in f.name]
     
     if not folders:
-        print(f"❌ Aucun dossier trouvé pour {today}")
+        print("❌ Aucun dossier trouvé dans la portée sélectionnée")
         return
     
     print(f"✅ {len(folders)} dossier(s) trouvé(s)\n")
@@ -182,6 +219,9 @@ def main():
                 if line.strip():
                     print(f"      {line}")
             fail += 1
+        
+        if args.cleanup:
+            cleanup_folder(folder)
     
     # Résumé
     print(f"\n{'='*80}")
@@ -190,6 +230,9 @@ def main():
     print(f"✅ Succès: {success}")
     print(f"❌ Échecs: {fail}")
     print(f"📦 Total: {success + fail}")
+    
+    if args.cleanup:
+        print("\n🧹 Nettoyage des fichiers temporaires terminé.")
     
     if success > 0:
         print(f"\n💡 Pensez à régénérer le site: ./site.sh build")

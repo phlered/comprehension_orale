@@ -1139,17 +1139,25 @@ Exemples:
                 if speaker:
                     dialogue_segments.append((speaker, text))
             
-            # Générer l'audio du dialogue
-            # Azure TTS génère directement en MP3 ou WAV
+            # Générer l'audio du dialogue (Azure avec fallback Edge)
             tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
             success, msg = tts.generate_dialogue_audio(dialogue_segments, output_file, args.format)
+            if not success:
+                print(msg)
+                print("⚠️  Azure TTS indisponible, bascule vers Edge TTS...")
+                edge_tts = EdgeTTSGenerator(args.langue, args.genre)
+                success, msg = edge_tts.generate_dialogue_audio(dialogue_segments, output_file)
         else:
             print("📖 Texte standard")
             
-            # Générer l'audio du texte
-            # Azure TTS génère directement en MP3 ou WAV
+            # Générer l'audio du texte (Azure avec fallback Edge)
             tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
             success, msg = tts.generate_audio_from_text(cleaned_text, output_file)
+            if not success:
+                print(msg)
+                print("⚠️  Azure TTS indisponible, bascule vers Edge TTS...")
+                edge_tts = EdgeTTSGenerator(args.langue, args.genre)
+                success, msg = edge_tts.generate_audio_from_text(cleaned_text, output_file)
         
         if success:
             print(msg)

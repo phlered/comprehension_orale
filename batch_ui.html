@@ -191,6 +191,31 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
+        .prompt-textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            color: #333;
+            background: #fafafa;
+            resize: vertical;
+            transition: border-color 0.2s;
+        }
+
+        .prompt-textarea:hover {
+            border-color: #667eea;
+        }
+
+        .prompt-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            background: white;
+        }
+
         .button-group {
             display: flex;
             gap: 12px;
@@ -353,16 +378,19 @@
         </div>
 
         <form id="batchForm">
-            <!-- Prompt Selection -->
+            <!-- Prompt Input -->
             <div class="form-group">
-                <label for="promptFile">📝 Fichier de prompts</label>
-                <div class="file-input-wrapper">
-                    <input type="file" id="promptFile" name="promptFile" accept=".md,.txt" required>
-                    <div class="file-button" id="fileButton">
-                        <span class="file-name">Choisir un fichier...</span>
-                        <span class="icon">📁</span>
-                    </div>
-                </div>
+                <label for="promptText">📝 Prompts (format Markdown)</label>
+                <textarea 
+                    id="promptText" 
+                    name="promptText" 
+                    class="prompt-textarea" 
+                    placeholder="Collez vos prompts au format:\n1. Premier prompt\n2. Deuxième prompt\n3. Troisième prompt\n..."
+                    required
+                ></textarea>
+                <small style="color: #666; font-size: 12px; margin-top: 8px; display: block;">
+                    Format attendu : liste numérotée en Markdown (1. Premier prompt, 2. Deuxième prompt, etc.)
+                </small>
             </div>
 
             <!-- Languages Selection -->
@@ -473,20 +501,6 @@
         }
 
         function setupEventListeners() {
-            // File input
-            const fileInput = document.getElementById('promptFile');
-            const fileButton = document.getElementById('fileButton');
-            
-            fileButton.addEventListener('click', () => {
-                fileInput.click();
-            });
-            
-            fileInput.addEventListener('change', (e) => {
-                const fileName = e.target.files[0]?.name || 'Choisir un fichier...';
-                fileButton.querySelector('.file-name').textContent = fileName;
-                fileButton.classList.toggle('active', e.target.files.length > 0);
-            });
-
             // Select all buttons
             document.getElementById('selectAllBtn').addEventListener('click', (e) => {
                 e.preventDefault();
@@ -550,15 +564,15 @@
                 return;
             }
 
-            const fileInput = document.getElementById('promptFile');
-            if (!fileInput.files.length) {
-                showStatus('❌ Veuillez sélectionner un fichier de prompts', 'error');
+            const promptText = document.getElementById('promptText').value.trim();
+            if (!promptText) {
+                showStatus('❌ Veuillez coller vos prompts', 'error');
                 return;
             }
 
             // Prepare form data
             const formData = new FormData();
-            formData.append('promptFile', fileInput.files[0]);
+            formData.append('promptText', promptText);
             formData.append('level', level);
             formData.append('languages', Array.from(selectedLanguages).join(','));
 

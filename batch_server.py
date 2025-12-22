@@ -178,12 +178,9 @@ def create_app(project_root: str = "."):
         """API endpoint for batch generation with streaming output"""
         
         # Validate request
-        if 'promptFile' not in request.files:
-            return jsonify({"error": "No prompt file provided"}), 400
-        
-        prompt_file = request.files['promptFile']
-        if prompt_file.filename == '':
-            return jsonify({"error": "No file selected"}), 400
+        prompt_text = request.form.get('promptText')
+        if not prompt_text:
+            return jsonify({"error": "No prompt text provided"}), 400
         
         level = request.form.get('level')
         languages = request.form.get('languages')
@@ -203,10 +200,14 @@ def create_app(project_root: str = "."):
         if invalid_langs:
             return jsonify({"error": f"Invalid languages: {', '.join(invalid_langs)}"}), 400
         
-        # Save uploaded file
-        filename = secure_filename(prompt_file.filename)
-        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        prompt_file.save(filepath)
+        # Create temporary file with prompt text
+        temp_fd, filepath = tempfile.mkstemp(suffix='.md', dir=app.config['UPLOAD_FOLDER'])
+        try:
+            with os.fdopen(temp_fd, 'w', encoding='utf-8') as f:
+                f.write(prompt_text)
+        except Exception as e:
+            os.close(temp_fd)
+            return jsonify({"error": f"Failed to create temp file: {str(e)}"}), 500
         
         try:
             # Generate streaming response and cleanup the temp file AFTER stream ends

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-22T10:33:40.279719",
-  "total_resources": 221,
+  "generated_at": "2025-12-22T10:45:40.320638",
+  "total_resources": 223,
   "languages": [
+    "cor",
+    "esp",
+    "nl",
     "eng",
     "all",
-    "nl",
-    "fr",
-    "esp",
-    "cor",
-    "it"
+    "it",
+    "fr"
   ],
   "resources": [
     {
@@ -2190,6 +2190,24 @@
       "text_path": "resources/raconte_le_sejour_d_20251218_0923/text.md"
     },
     {
+      "id": "interet_de_faire_une_20251222_1045",
+      "langue": "eng",
+      "prompt": "Intérêt de faire une activité manuelle comme la couture pour la sensation de bien-être",
+      "resume": "L'intérêt de la couture pour le bien-être",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-22 10:45:25",
+      "longueur": 150,
+      "text_preview": "Engaging in a manual activity such as sewing offers a myriad of benefits, particularly in enhancing one's sense of well-being. In today's fast-paced digital world, finding time for hands-on crafts can...",
+      "vocab_count": 17,
+      "audio_path": "resources/interet_de_faire_une_20251222_1045/audio.mp3",
+      "text_path": "resources/interet_de_faire_une_20251222_1045/text.md"
+    },
+    {
       "id": "les_reseaux_sociaux_20251217_1126",
       "langue": "all",
       "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
@@ -3790,6 +3808,24 @@
       "vocab_count": 28,
       "audio_path": "resources/presentarsi_20251215_1803/audio.mp3",
       "text_path": "resources/presentarsi_20251215_1803/text.md"
+    },
+    {
+      "id": "chat_ou_chien_quel_20251222_1045",
+      "langue": "eng",
+      "prompt": "Chat ou chien ? Quel est votre animal préféré ? Cela dépend-il de votre personnalité ?",
+      "resume": "Chat ou chien comme animal de compagnie",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-22 10:45:36",
+      "longueur": 150,
+      "text_preview": "Choosing between a cat and a dog as a preferred pet often reflects distinct aspects of one's personality and lifestyle. Dogs, known for their unwavering loyalty and boundless energy, often appeal to i...",
+      "vocab_count": 17,
+      "audio_path": "resources/chat_ou_chien_quel_20251222_1045/audio.mp3",
+      "text_path": "resources/chat_ou_chien_quel_20251222_1045/text.md"
     },
     {
       "id": "au_magasin_est_il_p_20251210_2034",

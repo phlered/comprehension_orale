@@ -1,0 +1,310 @@
+#!/usr/bin/env python3
+"""
+Serveur web pour l'interface batch_genmp3.py
+Fournit une API REST pour générer les ressources audio
+
+Usage:
+    python batch_server.py        # Lance sur http://localhost:5000
+    python batch_server.py --port 8080
+"""
+
+import argparse
+import json
+import os
+import sys
+import tempfile
+import subprocess
+from pathlib import Path
+from typing import Generator
+import traceback
+
+try:
+    from flask import Flask, render_template, request, jsonify, send_from_directory, Response
+    from werkzeug.utils import secure_filename
+    HAS_FLASK = True
+except ImportError:
+    HAS_FLASK = False
+    print("❌ Flask non installé. Installez avec: pip install flask")
+    sys.exit(1)
+
+
+class BatchProcessor:
+    """Traite les demandes de génération batch"""
+    
+    def __init__(self, project_root: str = "."):
+        self.project_root = Path(project_root)
+        self.python_exe = str(self.project_root / ".venv312" / "bin" / "python")
+        
+    def process_batch(self, prompt_file: str, languages: str, level: str) -> Generator[str, None, None]:
+        """
+        Lance la génération batch et yield les résultats ligne par ligne
+        
+        Args:
+            prompt_file: Chemin du fichier de prompts
+            languages: Langues séparées par virgule (nl,eng,all)
+            level: Niveau CECRL (A1-C2)
+            
+        Yields:
+            Lignes JSON avec: type, message, status, current, total
+        """
+        # Construire la commande
+        cmd = [
+            self.python_exe,
+            str(self.project_root / "batch_genmp3.py"),
+            "-f", prompt_file,
+            "-l", languages,
+            "-n", level
+        ]
+        
+        yield json.dumps({
+            "type": "status",
+            "message": f"🚀 Démarrage de la génération batch...",
+            "status": "info"
+        }) + "\n"
+        
+        yield json.dumps({
+            "type": "output",
+            "message": f"Commande: {' '.join(cmd)}\n"
+        }) + "\n"
+        
+        try:
+            # Lancer le processus
+            process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1,  # Line buffered
+                cwd=str(self.project_root)
+            )
+            
+            # Lire la sortie ligne par ligne
+            for line in iter(process.stdout.readline, ''):
+                if line:
+                    yield json.dumps({
+                        "type": "output",
+                        "message": line.rstrip('\n')
+                    }) + "\n"
+            
+            # Attendre la fin du processus
+            process.wait()
+            
+            if process.returncode == 0:
+                yield json.dumps({
+                    "type": "status",
+                    "message": "✅ Génération batch réussie!",
+                    "status": "success"
+                }) + "\n"
+                
+                # Lancer la mise à jour du site
+                yield json.dumps({
+                    "type": "status",
+                    "message": "🔨 Mise à jour du site web...",
+                    "status": "info"
+                }) + "\n"
+                
+                site_cmd = ["bash", str(self.project_root / "site.sh"), "build"]
+                site_process = subprocess.Popen(
+                    site_cmd,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    bufsize=1,
+                    cwd=str(self.project_root)
+                )
+                
+                for line in iter(site_process.stdout.readline, ''):
+                    if line:
+                        yield json.dumps({
+                            "type": "output",
+                            "message": line.rstrip('\n')
+                        }) + "\n"
+                
+                site_process.wait()
+                
+                if site_process.returncode == 0:
+                    yield json.dumps({
+                        "type": "status",
+                        "message": "✅ Site web mis à jour avec succès!",
+                        "status": "success"
+                    }) + "\n"
+                else:
+                    yield json.dumps({
+                        "type": "status",
+                        "message": "⚠️  La mise à jour du site a rencontré une erreur",
+                        "status": "warning"
+                    }) + "\n"
+            else:
+                yield json.dumps({
+                    "type": "status",
+                    "message": f"❌ Génération batch échouée (code {process.returncode})",
+                    "status": "error"
+                }) + "\n"
+            
+            yield json.dumps({
+                "type": "complete",
+                "message": "Processus terminé"
+            }) + "\n"
+            
+        except Exception as e:
+            error_msg = f"Erreur lors de l'exécution: {str(e)}\n{traceback.format_exc()}"
+            yield json.dumps({
+                "type": "error",
+                "message": error_msg,
+                "status": "error"
+            }) + "\n"
+
+
+def create_app(project_root: str = "."):
+    """Crée l'application Flask"""
+    app = Flask(__name__, static_folder=".", static_url_path="")
+    
+    # Configuration
+    app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB max
+    UPLOAD_FOLDER = tempfile.gettempdir()
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+    app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+    
+    project_path = Path(project_root).resolve()
+    processor = BatchProcessor(str(project_path))
+    
+    @app.route('/')
+    def index():
+        """Serve the HTML interface"""
+        return send_from_directory(".", "batch_ui.html")
+    
+    @app.route('/api/batch-generate', methods=['POST'])
+    def batch_generate():
+        """API endpoint for batch generation with streaming output"""
+        
+        # Validate request
+        if 'promptFile' not in request.files:
+            return jsonify({"error": "No prompt file provided"}), 400
+        
+        prompt_file = request.files['promptFile']
+        if prompt_file.filename == '':
+            return jsonify({"error": "No file selected"}), 400
+        
+        level = request.form.get('level')
+        languages = request.form.get('languages')
+        
+        if not level or not languages:
+            return jsonify({"error": "Missing level or languages"}), 400
+        
+        # Validate level
+        valid_levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+        if level not in valid_levels:
+            return jsonify({"error": f"Invalid level: {level}"}), 400
+        
+        # Validate languages
+        valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']
+        langs = [l.strip() for l in languages.split(',')]
+        invalid_langs = [l for l in langs if l not in valid_langs]
+        if invalid_langs:
+            return jsonify({"error": f"Invalid languages: {', '.join(invalid_langs)}"}), 400
+        
+        # Save uploaded file
+        filename = secure_filename(prompt_file.filename)
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        prompt_file.save(filepath)
+        
+        try:
+            # Generate streaming response and cleanup the temp file AFTER stream ends
+            def stream_and_cleanup():
+                try:
+                    for line in processor.process_batch(filepath, languages, level):
+                        yield line
+                finally:
+                    try:
+                        os.remove(filepath)
+                    except Exception:
+                        pass
+            
+            return Response(stream_and_cleanup(), mimetype='application/x-ndjson')
+        except Exception as e:
+            error_msg = f"Server error: {str(e)}"
+            return Response(
+                json.dumps({"type": "error", "message": error_msg, "status": "error"}) + "\n",
+                status=500,
+                mimetype='application/json'
+            )
+    
+    @app.errorhandler(404)
+    def not_found(error):
+        return jsonify({"error": "Not found"}), 404
+    
+    @app.errorhandler(500)
+    def server_error(error):
+        return jsonify({"error": "Internal server error"}), 500
+    
+    return app
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Serveur web pour le générateur batch",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Exemples:
+  # Lancer sur localhost:5000 (défaut)
+  python batch_server.py
+  
+  # Lancer sur un port personnalisé
+  python batch_server.py --port 8080
+  
+  # Lancer en mode production (pas recommandé)
+  python batch_server.py --host 0.0.0.0
+        """
+    )
+    
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=5000,
+        help="Port du serveur (défaut: 5000)"
+    )
+    
+    parser.add_argument(
+        "--host",
+        default="127.0.0.1",
+        help="Adresse du serveur (défaut: 127.0.0.1)"
+    )
+    
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Mode debug Flask"
+    )
+    
+    args = parser.parse_args()
+    
+    # Get project root (directory of this script)
+    project_root = Path(__file__).parent.resolve()
+    
+    # Create and run app
+    app = create_app(str(project_root))
+    
+    print(f"""
+╔════════════════════════════════════════════════════════════════╗
+║          🚀 Serveur Batch Génération Audio                     ║
+╚════════════════════════════════════════════════════════════════╝
+
+🌐 Accédez à l'interface sur:
+   http://{args.host}:{args.port}
+
+💡 Pour arrêter le serveur: Appuyez sur Ctrl+C
+
+📝 Interface: {project_root}/batch_ui.html
+🔧 Serveur: {project_root}/batch_server.py
+    """)
+    
+    app.run(
+        host=args.host,
+        port=args.port,
+        debug=args.debug,
+        use_reloader=args.debug
+    )
+
+
+if __name__ == '__main__':
+    main()

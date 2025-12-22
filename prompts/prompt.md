@@ -1,19 +1,31 @@
-1. Un collégien anglais se présente : il dit son prénom, son âge, sa classe et sa nationalité.
+1. Décris comment une famille britannique prépare Noël à la maison : décorations, repas et traditions.
 
-2. Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.
+2. Raconte la journée de Noël d’un adolescent au Royaume-Uni, du matin jusqu’au soir.
 
-3. Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.
+3. Explique les traditions de Noël aux États-Unis et ce qui les rend différentes de celles du Royaume-Uni.
 
-4. Décris une journée typique : le matin, l’après-midi et le soir.
+4. Raconte le réveillon du Nouvel An dans une grande ville américaine.
 
-5. Présente tes loisirs et tes activités préférées après l’école.
+5. Décris l’ambiance dans une ville anglaise pendant les fêtes de fin d’année.
 
-6. Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.
+6. Raconte l’histoire d’une famille anglaise qui décide de passer Noël en Espagne et explique pourquoi.
 
-7. Explique ce que tu manges au petit-déjeuner, au déjeuner et au dîner.
+7. Décris Noël sous le soleil dans les Caraïbes vu par un touriste britannique.
 
-8. Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.
+8. Compare un Noël traditionnel en Angleterre et un Noël passé à l’étranger (Espagne ou Caraïbes).
 
-9. Décris ce que tu aimes et ce que tu n’aimes pas (sports, musique, matières scolaires).
+9. Raconte le premier Noël loin de chez soi pour un adolescent britannique.
 
-10. Présente une fête ou une tradition simple dans un pays du commonwealth.
+10. Explique pourquoi certaines familles préfèrent voyager pendant les fêtes de Noël.
+
+11. Décris un marché de Noël au Royaume-Uni et ce que l’on peut y trouver.
+
+12. Raconte une soirée de réveillon du Nouvel An passée entre amis aux États-Unis.
+
+13. Décris un Noël en famille aux États-Unis, avec les repas, les cadeaux et les traditions.
+
+14. Raconte le voyage de Noël d’une famille britannique qui quitte le froid pour le soleil.
+
+15. Explique ce que représentent Noël et le Nouvel An pour les adolescents au Royaume-Uni ou aux États-Unis.
+
+16. Les marché de Noël en Europe : une expérience à vivre pour les familles britanniques.

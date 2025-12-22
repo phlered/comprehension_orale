@@ -831,6 +831,25 @@ class AzureTTSGenerator:
         
         self.speech_config.speech_synthesis_voice_name = voice
         
+        # Configurer les timeouts pour Azure (en millisecondes)
+        # Augmenter pour les textes longs ou connexions lentes
+        self.speech_config.set_property(
+            speechsdk.PropertyId.SpeechServiceConnection_InitialSilenceTimeoutMs,
+            "120000"  # 120 secondes pour l'attente initiale
+        )
+        self.speech_config.set_property(
+            speechsdk.PropertyId.SpeechServiceConnection_EndSilenceTimeoutMs,
+            "120000"  # 120 secondes pour la fin du silence
+        )
+        
+        # Si le texte est très long (>2000 chars), le diviser en chunks
+        if len(text) > 2000:
+            return self._generate_audio_chunked(text, output_file, voice)
+        else:
+            return self._synthesize_to_file(text, output_file, voice)
+    
+    def _synthesize_to_file(self, text, output_file, voice):
+        """Synthétise le texte en fichier MP3 (sans chunking)"""
         # Configurer la sortie audio
         audio_config = speechsdk.audio.AudioOutputConfig(filename=output_file)
         
@@ -853,19 +872,106 @@ class AzureTTSGenerator:
             </voice>
         </speak>'''
         
-        # Générer l'audio avec SSML
-        result = synthesizer.speak_ssml_async(ssml).get()
+        # Générer l'audio avec SSML - avec retry en cas de timeout
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                result = synthesizer.speak_ssml_async(ssml).get()
+                
+                if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+                    return True, f"✅ Audio généré: {voice}"
+                elif result.reason == speechsdk.ResultReason.Canceled:
+                    cancellation = result.cancellation_details
+                    error_msg = f"Annulé: {cancellation.reason}"
+                    if cancellation.error_details:
+                        error_msg += f" - {cancellation.error_details}"
+                    
+                    # Retry si timeout
+                    if "Timeout" in error_msg and attempt < max_retries - 1:
+                        print(f"⏱️  Timeout Azure, tentative {attempt + 2}/{max_retries}...")
+                        continue
+                    
+                    return False, f"❌ Erreur TTS: {error_msg}"
+                else:
+                    return False, f"❌ Erreur TTS: Raison inconnue - {result.reason}"
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    print(f"⏱️  Exception, tentative {attempt + 2}/{max_retries}: {str(e)}")
+                    continue
+                return False, f"❌ Erreur TTS: {str(e)}"
         
-        if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
-            return True, f"✅ Audio généré: {voice}"
-        elif result.reason == speechsdk.ResultReason.Canceled:
-            cancellation = result.cancellation_details
-            error_msg = f"Annulé: {cancellation.reason}"
-            if cancellation.error_details:
-                error_msg += f" - {cancellation.error_details}"
-            return False, f"❌ Erreur TTS: {error_msg}"
-        else:
-            return False, f"❌ Erreur TTS: Raison inconnue - {result.reason}"
+        return False, "❌ Erreur TTS: Max retries atteint"
+    
+    def _generate_audio_chunked(self, text, output_file, voice):
+        """Génère l'audio en divisant le texte en chunks
+        
+        Divise par paragraphes et génère les audios séparément,
+        puis les combine en un seul fichier.
+        """
+        import subprocess
+        from pathlib import Path
+        
+        print(f"📦 Texte long ({len(text)} chars), division en chunks...")
+        
+        # Diviser par paragraphes
+        paragraphs = [p.strip() for p in text.split('\n\n') if p.strip()]
+        chunk_files = []
+        temp_dir = Path(output_file).parent
+        
+        for i, paragraph in enumerate(paragraphs):
+            chunk_file = temp_dir / f"_chunk_{i}.mp3"
+            chunk_files.append(chunk_file)
+            
+            print(f"📝 Chunk {i+1}/{len(paragraphs)}: {len(paragraph)} chars...")
+            
+            # Générer le chunk
+            success, msg = self._synthesize_to_file(paragraph, str(chunk_file), voice)
+            if not success:
+                # Nettoyer les chunks partiels
+                for f in chunk_files:
+                    f.unlink(missing_ok=True)
+                return False, msg
+        
+        # Combiner les fichiers MP3 avec ffmpeg
+        try:
+            concat_file = temp_dir / "concat.txt"
+            with open(concat_file, 'w') as f:
+                for chunk in chunk_files:
+                    f.write(f"file '{chunk.absolute()}'\n")
+            
+            cmd = [
+                'ffmpeg', '-f', 'concat', '-safe', '0',
+                '-i', str(concat_file.absolute()),
+                '-c', 'copy', '-y', output_file
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            # Nettoyer les fichiers temporaires
+            concat_file.unlink(missing_ok=True)
+            for chunk in chunk_files:
+                chunk.unlink(missing_ok=True)
+            
+            if result.returncode == 0:
+                return True, f"✅ Audio généré (en chunks): {voice}"
+            else:
+                return False, f"❌ Erreur ffmpeg: {result.stderr}"
+        
+        except FileNotFoundError:
+            # ffmpeg non disponible, retourner simplement le premier chunk
+            print("⚠️  ffmpeg non disponible, utilisation du premier chunk")
+            try:
+                chunk_files[0].rename(output_file)
+                for chunk in chunk_files[1:]:
+                    chunk.unlink(missing_ok=True)
+                return True, f"✅ Audio généré (chunk 1): {voice}"
+            except Exception as e:
+                return False, f"❌ Erreur: {str(e)}"
+        except Exception as e:
+            # Nettoyer en cas d'erreur
+            for chunk in chunk_files:
+                chunk.unlink(missing_ok=True)
+            return False, f"❌ Erreur lors de la combinaison: {str(e)}"
 
     def generate_dialogue_audio(self, dialogue_segments, output_file, output_format='mp3'):
         """Génère un fichier audio à partir de segments de dialogue

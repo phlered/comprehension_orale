@@ -55,11 +55,24 @@ class BatchGenerator:
     def __init__(self, niveau: str, longueur: int, vitesse: float = None, 
                  genre: str = None, dry_run: bool = False):
         self.niveau = niveau
-        self.longueur = longueur
+        self.longueur = longueur if longueur is not None else self._default_length_for_level(niveau)
         self.vitesse = vitesse
         self.genre = genre
         self.dry_run = dry_run
         self.python_exe = ".venv312/bin/python"
+
+    @staticmethod
+    def _default_length_for_level(niveau: str) -> int:
+        """Retourne la longueur par défaut en fonction du niveau CECRL"""
+        defaults = {
+            "A1": 150,
+            "A2": 200,
+            "B1": 250,
+            "B2": 300,
+            "C1": 350,
+            "C2": 400,
+        }
+        return defaults.get(niveau, 150)
         
     def generate_for_prompt(self, prompt: str, langue: str, index: int, total: int) -> bool:
         """
@@ -211,8 +224,8 @@ Exemples:
     parser.add_argument(
         '--longueur',
         type=int,
-        default=150,
-        help="Nombre de mots approximatif (défaut: 150)"
+        default=None,
+        help="Nombre de mots approximatif (défaut auto par niveau: A1=150, A2=200, B1=250, B2=300, C1=350, C2=400)"
     )
     
     parser.add_argument(

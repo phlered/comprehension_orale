@@ -709,11 +709,21 @@ Exemples:
     )
 
     # Paramètres optionnels avec défauts
+    # Longueur auto par niveau si non fournie
+    DEFAULT_LENGTHS = {
+        "A1": 150,
+        "A2": 200,
+        "B1": 250,
+        "B2": 300,
+        "C1": 350,
+        "C2": 400,
+    }
+
     parser.add_argument(
         '--longueur',
         type=int,
-        default=150,
-        help="Longueur du texte en mots (défaut: 150)"
+        default=None,
+        help="Longueur du texte en mots (défaut auto par niveau: A1=150, A2=200, B1=250, B2=300, C1=350, C2=400)"
     )
 
     parser.add_argument(
@@ -763,6 +773,10 @@ Exemples:
     )
 
     args = parser.parse_args()
+
+    # Appliquer la longueur par défaut en fonction du niveau si non fournie
+    if args.longueur is None:
+        args.longueur = DEFAULT_LENGTHS.get(args.niveau, 150)
 
     # Exécuter l'application
     app = CompressionOralApp()

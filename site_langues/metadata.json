@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-22T10:45:40.320638",
-  "total_resources": 223,
+  "generated_at": "2025-12-26T19:47:11.801564",
+  "total_resources": 228,
   "languages": [
+    "all",
+    "fr",
     "cor",
-    "esp",
     "nl",
     "eng",
-    "all",
-    "it",
-    "fr"
+    "esp",
+    "it"
   ],
   "resources": [
     {
@@ -1992,6 +1992,24 @@
       "text_path": "resources/hollywood_y_sus_estu_20251217_1232/text.md"
     },
     {
+      "id": "travailler_comme_ass_20251226_1946",
+      "langue": "nl",
+      "prompt": "Travailler comme assistant français aux pays-bas",
+      "resume": "Assistant français aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-26 19:46:31",
+      "longueur": 200,
+      "text_preview": "Werken als Franse assistent in Nederland\n\nHallo! Mijn naam is Marie en ik werk als Franse assistent in Nederland. Ik woon nu drie maanden in Amsterdam. Het leven hier is heel leuk en interessant. Elke...",
+      "vocab_count": 34,
+      "audio_path": "resources/travailler_comme_ass_20251226_1946/audio.mp3",
+      "text_path": "resources/travailler_comme_ass_20251226_1946/text.md"
+    },
+    {
       "id": "les_reseaux_sociaux_20251217_1138",
       "langue": "it",
       "prompt": "Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.",
@@ -2892,6 +2910,24 @@
       "text_path": "resources/demander_ou_se_trouv_20251210_2034/text.md"
     },
     {
+      "id": "van_life_aux_pays_ba_20251226_1945",
+      "langue": "nl",
+      "prompt": "van life aux pays-bas",
+      "resume": "La van life aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-26 19:46:08",
+      "longueur": 200,
+      "text_preview": "Van life is populair in Nederland. Veel mensen kiezen ervoor om in een camper of busje te wonen. Dit is spannend en geeft veel vrijheid. Nederland is een klein land, maar heeft veel mooie plekken om t...",
+      "vocab_count": 34,
+      "audio_path": "resources/van_life_aux_pays_ba_20251226_1945/audio.mp3",
+      "text_path": "resources/van_life_aux_pays_ba_20251226_1945/text.md"
+    },
+    {
       "id": "die_tiere_20251210_1901",
       "langue": "all",
       "prompt": "Die Tiere",
@@ -3070,6 +3106,24 @@
       "vocab_count": 45,
       "audio_path": "resources/gardening_together_20251215_1536/audio.mp3",
       "text_path": "resources/gardening_together_20251215_1536/text.md"
+    },
+    {
+      "id": "les_restaurants_vege_20251226_1946",
+      "langue": "nl",
+      "prompt": "Les restaurants végétariens : quelles spécialités ?",
+      "resume": "Les spécialités des restaurants végétariens",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-26 19:47:05",
+      "longueur": 200,
+      "text_preview": "Restaurants zijn populaire plekken om te eten. In Nederland zijn er veel vegetarische restaurants. Deze restaurants hebben speciale gerechten zonder vlees. Maar wat kun je daar eten?\n\nEen bekend gerec...",
+      "vocab_count": 34,
+      "audio_path": "resources/les_restaurants_vege_20251226_1946/audio.mp3",
+      "text_path": "resources/les_restaurants_vege_20251226_1946/text.md"
     },
     {
       "id": "ma_routine_quotidien_20251216_0837",
@@ -3594,6 +3648,24 @@
       "text_path": "resources/raconte_une_journee_20251217_1128/text.md"
     },
     {
+      "id": "tourisme_en_velo_iti_20251226_1945",
+      "langue": "nl",
+      "prompt": "Tourisme en vélo itinérant aux pays-bas",
+      "resume": "Tourisme en vélo aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-26 19:45:47",
+      "longueur": 200,
+      "text_preview": "Fietstoerisme in Nederland is heel populair. Nederland heeft veel goede fietspaden. Je kunt veilig en gemakkelijk fietsen. Een populaire route is de \"LF Kustroute\". Deze route loopt langs de Noordzeek...",
+      "vocab_count": 32,
+      "audio_path": "resources/tourisme_en_velo_iti_20251226_1945/audio.mp3",
+      "text_path": "resources/tourisme_en_velo_iti_20251226_1945/text.md"
+    },
+    {
       "id": "different_music_tast_20251215_1536",
       "langue": "eng",
       "prompt": "Different Music Tastes",
@@ -3862,6 +3934,24 @@
       "vocab_count": 16,
       "audio_path": "resources/presente_un_lieu_cul_20251218_0748/audio.mp3",
       "text_path": "resources/presente_un_lieu_cul_20251218_0748/text.md"
+    },
+    {
+      "id": "velo_electrique_ou_v_20251226_1946",
+      "langue": "nl",
+      "prompt": "Vélo électrique ou vélo musculaire ?",
+      "resume": "Vélo électrique ou vélo musculaire",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-26 19:46:48",
+      "longueur": 200,
+      "text_preview": "Fietsen is populair in Nederland. Er zijn twee soorten fietsen: elektrische fietsen en gewone fietsen, ook wel ‘musculaire fietsen’ genoemd. Beide hebben voor- en nadelen.\n\nEen elektrische fiets heeft...",
+      "vocab_count": 33,
+      "audio_path": "resources/velo_electrique_ou_v_20251226_1946/audio.mp3",
+      "text_path": "resources/velo_electrique_ou_v_20251226_1946/text.md"
     },
     {
       "id": "le_role_de_l_europe_20251216_1859",

@@ -17,6 +17,10 @@ import subprocess
 from pathlib import Path
 from typing import Generator
 import traceback
+import webbrowser
+import threading
+import time
+import signal
 
 try:
     from flask import Flask, render_template, request, jsonify, send_from_directory, Response
@@ -242,6 +246,25 @@ def create_app(project_root: str = "."):
     return app
 
 
+def open_browser(url: str, delay: float = 1.5):
+    """Ouvre le navigateur après un court délai"""
+    def _open():
+        time.sleep(delay)
+        print(f"🌐 Ouverture du navigateur sur {url}...")
+        webbrowser.open(url)
+    
+    threading.Thread(target=_open, daemon=True).start()
+
+
+def setup_signal_handler():
+    """Configure un gestionnaire propre pour Ctrl+C"""
+    def signal_handler(sig, frame):
+        print("\n\n👋 Arrêt du serveur...")
+        sys.exit(0)
+    
+    signal.signal(signal.SIGINT, signal_handler)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Serveur web pour le générateur batch",
@@ -256,6 +279,9 @@ Exemples:
   
   # Lancer en mode production (pas recommandé)
   python batch_server.py --host 0.0.0.0
+  
+  # Ne pas ouvrir le navigateur automatiquement
+  python batch_server.py --no-browser
         """
     )
     
@@ -278,6 +304,12 @@ Exemples:
         help="Mode debug Flask"
     )
     
+    parser.add_argument(
+        "--no-browser",
+        action="store_true",
+        help="Ne pas ouvrir le navigateur automatiquement"
+    )
+    
     args = parser.parse_args()
     
     # Get project root (directory of this script)
@@ -286,13 +318,19 @@ Exemples:
     # Create and run app
     app = create_app(str(project_root))
     
+    # Configure le gestionnaire de signal pour Ctrl+C
+    setup_signal_handler()
+    
+    # URL du serveur
+    server_url = f"http://{args.host}:{args.port}"
+    
     print(f"""
 ╔════════════════════════════════════════════════════════════════╗
 ║          🚀 Serveur Batch Génération Audio                     ║
 ╚════════════════════════════════════════════════════════════════╝
 
 🌐 Accédez à l'interface sur:
-   http://{args.host}:{args.port}
+   {server_url}
 
 💡 Pour arrêter le serveur: Appuyez sur Ctrl+C
 
@@ -300,12 +338,20 @@ Exemples:
 🔧 Serveur: {project_root}/batch_server.py
     """)
     
-    app.run(
-        host=args.host,
-        port=args.port,
-        debug=args.debug,
-        use_reloader=args.debug
-    )
+    # Ouvrir le navigateur automatiquement (sauf si --no-browser)
+    if not args.no_browser:
+        open_browser(server_url)
+    
+    try:
+        app.run(
+            host=args.host,
+            port=args.port,
+            debug=args.debug,
+            use_reloader=args.debug
+        )
+    except KeyboardInterrupt:
+        print("\n\n👋 Arrêt du serveur...")
+        sys.exit(0)
 
 
 if __name__ == '__main__':

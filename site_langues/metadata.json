@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-27T21:21:35.821254",
-  "total_resources": 235,
+  "generated_at": "2025-12-27T21:54:19.257536",
+  "total_resources": 246,
   "languages": [
-    "fr",
     "it",
-    "cor",
-    "eng",
+    "fr",
     "nl",
+    "eng",
     "all",
-    "esp"
+    "esp",
+    "cor"
   ],
   "resources": [
     {
@@ -552,6 +552,24 @@
       "text_path": "resources/los_trabajos_de_adol_20251217_1536/text.md"
     },
     {
+      "id": "chomage_frictionnel_20251227_2152",
+      "langue": "all",
+      "prompt": "Chômage frictionnel avec l'IA",
+      "resume": "Le chômage frictionnel et l'IA",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-27 21:52:54",
+      "longueur": 400,
+      "text_preview": "Die moderne Arbeitswelt unterliegt einem ständigen Wandel, und mit der rasanten Entwicklung der Künstlichen Intelligenz (KI) gewinnen bestimmte Debatten an Brisanz, insbesondere jene um den sogenannte...",
+      "vocab_count": 19,
+      "audio_path": "resources/chomage_frictionnel_20251227_2152/audio.mp3",
+      "text_path": "resources/chomage_frictionnel_20251227_2152/text.md"
+    },
+    {
       "id": "repenser_le_modele_e_20251216_1903",
       "langue": "all",
       "prompt": "Repenser le modèle économique capitaliste",
@@ -948,6 +966,24 @@
       "text_path": "resources/aller_travailler_en_20251226_1948/text.md"
     },
     {
+      "id": "een_dag_op_het_stran_20251227_2144",
+      "langue": "nl",
+      "prompt": "Een dag op het strand",
+      "resume": "Une journée à la plage",
+      "niveau": "B1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-27 21:44:52",
+      "longueur": 300,
+      "text_preview": "Een dag op het strand\n\nHet was een warme zomerdag toen ik besloot een dag naar het strand te gaan. De zon scheen helder en de lucht was blauw zonder een wolkje. Ik pakte mijn tas in met een handdoek, ...",
+      "vocab_count": 43,
+      "audio_path": "resources/een_dag_op_het_stran_20251227_2144/audio.mp3",
+      "text_path": "resources/een_dag_op_het_stran_20251227_2144/text.md"
+    },
+    {
       "id": "decris_une_journee_t_20251218_0745",
       "langue": "cor",
       "prompt": "Décris une journée typique d’un idol de K-pop, entre entraînements, répétitions, vie personnelle et relations avec les fans.",
@@ -1090,6 +1126,24 @@
       "vocab_count": 10,
       "audio_path": "resources/test_vocabulaire_20251210_1900/audio.mp3",
       "text_path": "resources/test_vocabulaire_20251210_1900/text.md"
+    },
+    {
+      "id": "l_impact_de_l_ia_sur_20251227_2149",
+      "langue": "eng",
+      "prompt": "L'impact de l'IA sur le chômage",
+      "resume": "L'impact de l'IA sur le chômage",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-27 21:50:10",
+      "longueur": 400,
+      "text_preview": "The advent of artificial intelligence has undeniably revolutionized numerous sectors, heralding an era akin to a modern industrial revolution. While its benefits are manifold, there lingers an unsettl...",
+      "vocab_count": 22,
+      "audio_path": "resources/l_impact_de_l_ia_sur_20251227_2149/audio.mp3",
+      "text_path": "resources/l_impact_de_l_ia_sur_20251227_2149/text.md"
     },
     {
       "id": "decris_une_journee_t_20251218_1059",
@@ -1236,6 +1290,24 @@
       "text_path": "resources/est_ce_que_les_adole_20251217_1134/text.md"
     },
     {
+      "id": "las_ventajas_de_la_e_20251227_2146",
+      "langue": "esp",
+      "prompt": "Las ventajas de la energía solar",
+      "resume": "Les avantages de l'énergie solaire",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇦🇷",
+      "voix_variant": "hisp",
+      "date": "2025-12-27 21:47:03",
+      "longueur": 350,
+      "text_preview": "La energía solar, una fuente renovable y sostenible, ha ganado protagonismo en los últimos años debido a sus numerosas ventajas. En un mundo donde el cambio climático y el agotamiento de recursos fósi...",
+      "vocab_count": 38,
+      "audio_path": "resources/las_ventajas_de_la_e_20251227_2146/audio.mp3",
+      "text_path": "resources/las_ventajas_de_la_e_20251227_2146/text.md"
+    },
+    {
       "id": "quelles_sont_les_dif_20251210_2038",
       "langue": "nl",
       "prompt": "Quelles sont les différences culturelles entre les Pays-Bas et la France ?",
@@ -1306,6 +1378,24 @@
       "vocab_count": 7,
       "audio_path": "resources/commander_un_sandwic_20251216_1228/audio.mp3",
       "text_path": "resources/commander_un_sandwic_20251216_1228/text.md"
+    },
+    {
+      "id": "the_future_of_renewa_20251227_2143",
+      "langue": "eng",
+      "prompt": "The future of renewable energy",
+      "resume": "L'avenir de l'énergie renouvelable",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-27 21:44:02",
+      "longueur": 300,
+      "text_preview": "In the crescendo of the 21st century's environmental clamor, the future of renewable energy stands as a beacon of promise amidst the shadows of ecological degradation. No longer a fringe topic trotted...",
+      "vocab_count": 16,
+      "audio_path": "resources/the_future_of_renewa_20251227_2143/audio.mp3",
+      "text_path": "resources/the_future_of_renewa_20251227_2143/text.md"
     },
     {
       "id": "se_presenter_20251216_0836",
@@ -2460,6 +2550,24 @@
       "text_path": "resources/nochebuena_en_famili_20251215_1547/text.md"
     },
     {
+      "id": "chomage_frictionnel_20251227_2151",
+      "langue": "eng",
+      "prompt": "Chômage frictionnel avec l'IA",
+      "resume": "Chômage frictionnel et IA",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-27 21:52:09",
+      "longueur": 400,
+      "text_preview": "Frictional unemployment, an intrinsic facet of modern economies, becomes particularly intriguing when viewed through the lens of artificial intelligence. As AI revolutionizes industries at breakneck s...",
+      "vocab_count": 22,
+      "audio_path": "resources/chomage_frictionnel_20251227_2151/audio.mp3",
+      "text_path": "resources/chomage_frictionnel_20251227_2151/text.md"
+    },
+    {
       "id": "faire_les_courses_20251227_2117",
       "langue": "fr",
       "prompt": "Faire les courses",
@@ -2730,6 +2838,24 @@
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
     },
     {
+      "id": "test_diagnostic_ffmp_20251227_2143",
+      "langue": "fr",
+      "prompt": "Test diagnostic ffmpeg",
+      "resume": "Test diagnostic ffmpeg",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2025-12-27 21:43:42",
+      "longueur": 50,
+      "text_preview": "FFmpeg est un outil pour les vidéos et audios. Il aide à convertir et éditer des fichiers média. Pour un test, on utilise une vidéo. On peut changer son format ou qualité. FFmpeg est utile pour ceux q...",
+      "vocab_count": 10,
+      "audio_path": "resources/test_diagnostic_ffmp_20251227_2143/audio.mp3",
+      "text_path": "resources/test_diagnostic_ffmp_20251227_2143/text.md"
+    },
+    {
       "id": "nochebuena_en_famili_20251215_1548",
       "langue": "esp",
       "prompt": "Nochebuena en familia",
@@ -2946,6 +3072,24 @@
       "text_path": "resources/quelles_sont_les_spe_20251210_2035/text.md"
     },
     {
+      "id": "vers_une_nouvelle_re_20251227_2151",
+      "langue": "all",
+      "prompt": "Vers une nouvelle révolution industrielle avec l'IA ?",
+      "resume": "Une nouvelle révolution industrielle avec l'IA",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-27 21:51:26",
+      "longueur": 400,
+      "text_preview": "Der Beginn des 21. Jahrhunderts markiert ohne Zweifel eine Phase bahnbrechender technologischer Fortschritte, und im Herzen dieser Entwicklung steht die künstliche Intelligenz (KI). Vergleicht man die...",
+      "vocab_count": 22,
+      "audio_path": "resources/vers_une_nouvelle_re_20251227_2151/audio.mp3",
+      "text_path": "resources/vers_une_nouvelle_re_20251227_2151/text.md"
+    },
+    {
       "id": "demander_ou_se_trouv_20251210_2033",
       "langue": "nl",
       "prompt": "Demander où se trouve la gare.",
@@ -3052,6 +3196,24 @@
       "vocab_count": 11,
       "audio_path": "resources/die_tiere_20251210_1901/audio.mp3",
       "text_path": "resources/die_tiere_20251210_1901/text.md"
+    },
+    {
+      "id": "gains_de_productivit_20251227_2153",
+      "langue": "all",
+      "prompt": "Gains de productivité : réduction du temps de travail comme seule solution au chômage ?",
+      "resume": "Réduction du temps de travail et chômage",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-27 21:54:06",
+      "longueur": 400,
+      "text_preview": "**Produktivitätsgewinne: Ist die Arbeitszeitverkürzung die einzige Lösung für die Arbeitslosigkeit?**\n\nIn einer Zeit, in der technologische Fortschritte unaufhaltsam voranschreiten und Unternehmen imm...",
+      "vocab_count": 20,
+      "audio_path": "resources/gains_de_productivit_20251227_2153/audio.mp3",
+      "text_path": "resources/gains_de_productivit_20251227_2153/text.md"
     },
     {
       "id": "gli_animali_domestic_20251215_1759",
@@ -3196,6 +3358,24 @@
       "vocab_count": 8,
       "audio_path": "resources/prendre_le_bus_pour_20251216_1226/audio.mp3",
       "text_path": "resources/prendre_le_bus_pour_20251216_1226/text.md"
+    },
+    {
+      "id": "vers_une_nouvelle_re_20251227_2150",
+      "langue": "eng",
+      "prompt": "Vers une nouvelle révolution industrielle avec l'IA ?",
+      "resume": "Une nouvelle révolution industrielle avec l'IA",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-27 21:51:08",
+      "longueur": 400,
+      "text_preview": "Title: Towards a New Industrial Revolution with AI?\n\nAs we stand on the brink of what many are hailing as the next industrial revolution, the transformative potential of artificial intelligence (AI) i...",
+      "vocab_count": 23,
+      "audio_path": "resources/vers_une_nouvelle_re_20251227_2150/audio.mp3",
+      "text_path": "resources/vers_une_nouvelle_re_20251227_2150/text.md"
     },
     {
       "id": "gardening_together_20251215_1536",
@@ -3520,6 +3700,24 @@
       "vocab_count": 28,
       "audio_path": "resources/i_giorni_della_setti_20251215_1759/audio.mp3",
       "text_path": "resources/i_giorni_della_setti_20251215_1759/text.md"
+    },
+    {
+      "id": "l_impact_de_l_ia_sur_20251227_2150",
+      "langue": "all",
+      "prompt": "L'impact de l'IA sur le chômage",
+      "resume": "L'impact de l'IA sur le chômage",
+      "niveau": "C2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2025-12-27 21:50:28",
+      "longueur": 400,
+      "text_preview": "Der rasante Fortschritt der künstlichen Intelligenz (KI) hat in den letzten Jahren vielfältige Diskussionen über ihren Einfluss auf den Arbeitsmarkt entfacht. Während manche Stimmen die Hoffnung äußer...",
+      "vocab_count": 19,
+      "audio_path": "resources/l_impact_de_l_ia_sur_20251227_2150/audio.mp3",
+      "text_path": "resources/l_impact_de_l_ia_sur_20251227_2150/text.md"
     },
     {
       "id": "vers_une_societe_san_20251216_1900",

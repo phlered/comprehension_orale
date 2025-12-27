@@ -1054,7 +1054,7 @@ class AzureTTSGenerator:
                     f.unlink(missing_ok=True)
                 return False, msg
         
-        # Combiner les fichiers MP3 avec ffmpeg
+        # Combiner les fichiers MP3 avec ffmpeg (ou alternative pydub)
         try:
             concat_file = temp_dir / "concat.txt"
             with open(concat_file, 'w') as f:
@@ -1067,33 +1067,85 @@ class AzureTTSGenerator:
                 '-c', 'copy', '-y', output_file
             ]
             
-            result = subprocess.run(cmd, capture_output=True, text=True)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
             
-            # Nettoyer les fichiers temporaires
+            # Nettoyer le fichier concat
             concat_file.unlink(missing_ok=True)
+            
+            # Vérifier le résultat
+            if result.returncode == 0:
+                # Succès: nettoyer les chunks
+                for chunk in chunk_files:
+                    chunk.unlink(missing_ok=True)
+                return True, f"✅ Audio généré (en chunks): {voice}"
+            elif result.returncode < 0:
+                # ffmpeg a été tué (signal), essayer pydub
+                print(f"⚠️  ffmpeg crash detected (signal {-result.returncode}), essai avec pydub...")
+                return self._combine_with_pydub(chunk_files, output_file, voice)
+            else:
+                print(f"⚠️  ffmpeg error (code {result.returncode}), essai avec pydub...")
+                return self._combine_with_pydub(chunk_files, output_file, voice)
+        
+        except (FileNotFoundError, subprocess.TimeoutExpired) as e:
+            # ffmpeg non disponible ou timeout, essayer pydub
+            print(f"⚠️  ffmpeg indisponible ({type(e).__name__}), essai avec pydub...")
+            return self._combine_with_pydub(chunk_files, output_file, voice)
+        except Exception as e:
+            print(f"⚠️  Erreur inattendue ({str(e)}), essai avec pydub...")
+            return self._combine_with_pydub(chunk_files, output_file, voice)
+    
+    def _combine_with_pydub(self, chunk_files, output_file, voice):
+        """Combine les chunks avec pydub (alternative à ffmpeg) ou concaténation binaire"""
+        try:
+            from pydub import AudioSegment
+            
+            # Combiner tous les chunks
+            combined = AudioSegment.empty()
+            for i, chunk_file in enumerate(chunk_files):
+                print(f"   Ajout chunk {i+1}/{len(chunk_files)}...")
+                segment = AudioSegment.from_mp3(str(chunk_file))
+                combined += segment
+            
+            # Exporter le résultat
+            combined.export(output_file, format="mp3")
+            
+            # Nettoyer les chunks
             for chunk in chunk_files:
                 chunk.unlink(missing_ok=True)
             
-            if result.returncode == 0:
-                return True, f"✅ Audio généré (en chunks): {voice}"
-            else:
-                return False, f"❌ Erreur ffmpeg: {result.stderr}"
-        
-        except FileNotFoundError:
-            # ffmpeg non disponible, retourner simplement le premier chunk
-            print("⚠️  ffmpeg non disponible, utilisation du premier chunk")
+            return True, f"✅ Audio généré (chunks combinés avec pydub): {voice}"
+        except (ImportError, ModuleNotFoundError):
+            # pydub non disponible, essayer la concaténation binaire
+            print("⚠️  pydub non disponible (Python 3.13+), essai de concaténation binaire...")
             try:
-                chunk_files[0].rename(output_file)
-                for chunk in chunk_files[1:]:
+                # Concaténation binaire simple des MP3
+                with open(output_file, 'wb') as outfile:
+                    for i, chunk_file in enumerate(chunk_files):
+                        print(f"   Ajout chunk {i+1}/{len(chunk_files)}...")
+                        with open(chunk_file, 'rb') as infile:
+                            outfile.write(infile.read())
+                
+                # Nettoyer les chunks
+                for chunk in chunk_files:
                     chunk.unlink(missing_ok=True)
-                return True, f"✅ Audio généré (chunk 1): {voice}"
-            except Exception as e:
-                return False, f"❌ Erreur: {str(e)}"
+                
+                return True, f"✅ Audio généré (concaténation binaire de {len(chunk_files)} chunks): {voice}"
+            except Exception as e2:
+                print(f"⚠️  Erreur concaténation ({str(e2)}), fallback sur premier chunk")
+                return self._fallback_first_chunk(chunk_files, output_file, voice)
         except Exception as e:
-            # Nettoyer en cas d'erreur
-            for chunk in chunk_files:
+            print(f"⚠️  Erreur pydub ({str(e)}), fallback sur premier chunk")
+            return self._fallback_first_chunk(chunk_files, output_file, voice)
+    
+    def _fallback_first_chunk(self, chunk_files, output_file, voice):
+        """Fallback: utiliser seulement le premier chunk si ffmpeg échoue"""
+        try:
+            chunk_files[0].rename(output_file)
+            for chunk in chunk_files[1:]:
                 chunk.unlink(missing_ok=True)
-            return False, f"❌ Erreur lors de la combinaison: {str(e)}"
+            return True, f"✅ Audio généré (chunk 1 seulement, ffmpeg indisponible): {voice}"
+        except Exception as e:
+            return False, f"❌ Erreur lors du fallback: {str(e)}"
 
     def generate_dialogue_audio(self, dialogue_segments, output_file, output_format='mp3'):
         """Génère un fichier audio à partir de segments de dialogue
@@ -1261,35 +1313,23 @@ Exemples:
                 if speaker:
                     dialogue_segments.append((speaker, text))
             
-            # Générer l'audio du dialogue (Azure avec fallback Edge)
+            # Générer l'audio du dialogue (Azure TTS uniquement)
             try:
                 tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
                 success, msg = tts.generate_dialogue_audio(dialogue_segments, output_file, args.format)
             except Exception as e:
                 success = False
-                msg = f"❌ Azure TTS indisponible: {str(e)}"
-            
-            if not success:
-                print(msg)
-                print("⚠️  Bascule vers Edge TTS...")
-                edge_tts = EdgeTTSGenerator(args.langue, args.genre)
-                success, msg = edge_tts.generate_dialogue_audio(dialogue_segments, output_file)
+                msg = f"❌ Azure TTS indisponible: {str(e)}\n💡 Vérifiez AZURE_SPEECH_KEY et AZURE_SPEECH_REGION dans .env"
         else:
             print("📖 Texte standard")
             
-            # Générer l'audio du texte (Azure avec fallback Edge)
+            # Générer l'audio du texte (Azure TTS uniquement)
             try:
                 tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
                 success, msg = tts.generate_audio_from_text(cleaned_text, output_file)
             except Exception as e:
                 success = False
-                msg = f"❌ Azure TTS indisponible: {str(e)}"
-            
-            if not success:
-                print(msg)
-                print("⚠️  Bascule vers Edge TTS...")
-                edge_tts = EdgeTTSGenerator(args.langue, args.genre)
-                success, msg = edge_tts.generate_audio_from_text(cleaned_text, output_file)
+                msg = f"❌ Azure TTS indisponible: {str(e)}\n💡 Vérifiez AZURE_SPEECH_KEY et AZURE_SPEECH_REGION dans .env"
         
         if success:
             print(msg)

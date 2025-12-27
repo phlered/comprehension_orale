@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-26T19:47:11.801564",
-  "total_resources": 228,
+  "generated_at": "2025-12-27T21:21:35.821254",
+  "total_resources": 235,
   "languages": [
-    "all",
     "fr",
+    "it",
     "cor",
-    "nl",
     "eng",
-    "esp",
-    "it"
+    "nl",
+    "all",
+    "esp"
   ],
   "resources": [
     {
@@ -46,6 +46,24 @@
       "vocab_count": 8,
       "audio_path": "resources/explique_pourquoi_il_20251222_1031/audio.mp3",
       "text_path": "resources/explique_pourquoi_il_20251222_1031/text.md"
+    },
+    {
+      "id": "going_to_the_grocery_20251227_2112",
+      "langue": "eng",
+      "prompt": "Going to the grocery store",
+      "resume": "Aller au supermarché",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2025-12-27 21:12:47",
+      "longueur": 150,
+      "text_preview": "I go to the grocery store with my mom. We go every Saturday morning. The grocery store is big. It has many things. We need a cart to carry our food. First, we go to the fruit section. We buy apples, b...",
+      "vocab_count": 29,
+      "audio_path": "resources/going_to_the_grocery_20251227_2112/audio.mp3",
+      "text_path": "resources/going_to_the_grocery_20251227_2112/text.md"
     },
     {
       "id": "test_voix_20251215_2212",
@@ -370,6 +388,24 @@
       "vocab_count": 39,
       "audio_path": "resources/villancicos_y_concie_20251215_1550/audio.mp3",
       "text_path": "resources/villancicos_y_concie_20251215_1550/text.md"
+    },
+    {
+      "id": "commander_a_la_boula_20251227_2117",
+      "langue": "eng",
+      "prompt": "Commander à la boulangerie",
+      "resume": "Commander à la boulangerie",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2025-12-27 21:17:53",
+      "longueur": 150,
+      "text_preview": "Title: At the Bakery\n\nAnna goes to the bakery. She wants to buy some bread. The bakery smells nice. There are many things to buy. Anna sees bread, croissants, and cakes.\n\nAnna stands in line. The bake...",
+      "vocab_count": 29,
+      "audio_path": "resources/commander_a_la_boula_20251227_2117/audio.mp3",
+      "text_path": "resources/commander_a_la_boula_20251227_2117/text.md"
     },
     {
       "id": "les_marche_de_noel_e_20251222_0946",
@@ -892,6 +928,24 @@
       "vocab_count": 13,
       "audio_path": "resources/is_artificial_intell_20251222_0953/audio.mp3",
       "text_path": "resources/is_artificial_intell_20251222_0953/text.md"
+    },
+    {
+      "id": "aller_travailler_en_20251226_1948",
+      "langue": "esp",
+      "prompt": "Aller travailler en vélo",
+      "resume": "Aller travailler en vélo",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2025-12-26 19:48:56",
+      "longueur": 300,
+      "text_preview": "Ir al trabajo en bicicleta se ha convertido en una tendencia creciente en muchas ciudades españolas, y no es de extrañar dada la serie de beneficios que esta práctica ofrece. En primer lugar, el cicli...",
+      "vocab_count": 34,
+      "audio_path": "resources/aller_travailler_en_20251226_1948/audio.mp3",
+      "text_path": "resources/aller_travailler_en_20251226_1948/text.md"
     },
     {
       "id": "decris_une_journee_t_20251218_0745",
@@ -2028,6 +2082,24 @@
       "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
     },
     {
+      "id": "la_pma_et_la_gpa_aux_20251227_2120",
+      "langue": "nl",
+      "prompt": "La PMA et la GPA aux Pays-Bas",
+      "resume": "La PMA et la GPA aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-27 21:20:52",
+      "longueur": 200,
+      "text_preview": "In Nederland zijn er mogelijkheden voor kinderen krijgen met behulp van medisch ondersteunde methoden. Twee veelvoorkomende methoden zijn PMA (Procreatie Medisch Assistentie) en GPA (Gestationeel Pare...",
+      "vocab_count": 34,
+      "audio_path": "resources/la_pma_et_la_gpa_aux_20251227_2120/audio.mp3",
+      "text_path": "resources/la_pma_et_la_gpa_aux_20251227_2120/text.md"
+    },
+    {
       "id": "walking_in_the_park_20251215_1538",
       "langue": "eng",
       "prompt": "Walking in the Park",
@@ -2388,6 +2460,24 @@
       "text_path": "resources/nochebuena_en_famili_20251215_1547/text.md"
     },
     {
+      "id": "faire_les_courses_20251227_2117",
+      "langue": "fr",
+      "prompt": "Faire les courses",
+      "resume": "Faire les courses",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2025-12-27 21:17:14",
+      "longueur": 150,
+      "text_preview": "Je vais au supermarché pour faire les courses. J'ai besoin de légumes, de fruits et de pain. D'abord, je prends un chariot à l'entrée. Je vais au rayon des fruits et légumes. Je prends des pommes, des...",
+      "vocab_count": 27,
+      "audio_path": "resources/faire_les_courses_20251227_2117/audio.mp3",
+      "text_path": "resources/faire_les_courses_20251227_2117/text.md"
+    },
+    {
       "id": "explique_limportanc_20251222_1032",
       "langue": "fr",
       "prompt": "Explique l’importance de l’écoute et de la bienveillance dans la vie de famille.",
@@ -2494,6 +2584,24 @@
       "vocab_count": 46,
       "audio_path": "resources/tradiciones_navidena_20251215_1547/audio.mp3",
       "text_path": "resources/tradiciones_navidena_20251215_1547/text.md"
+    },
+    {
+      "id": "le_droit_a_l_avortem_20251227_2120",
+      "langue": "nl",
+      "prompt": "Le droit à l'avortement aux Pays-Bas",
+      "resume": "Le droit à l'avortement aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-27 21:21:03",
+      "longueur": 200,
+      "text_preview": "In Nederland is het recht op abortus belangrijk. Vrouwen hebben de keuze om een zwangerschap te beëindigen. Dit recht bestaat sinds 1984 dankzij de Wet afbreking zwangerschap. Het geeft vrouwen de vri...",
+      "vocab_count": 34,
+      "audio_path": "resources/le_droit_a_l_avortem_20251227_2120/audio.mp3",
+      "text_path": "resources/le_droit_a_l_avortem_20251227_2120/text.md"
     },
     {
       "id": "raconte_la_journee_d_20251222_0942",
@@ -3700,6 +3808,24 @@
       "vocab_count": 31,
       "audio_path": "resources/decris_ce_que_tu_aim_20251218_1101/audio.mp3",
       "text_path": "resources/decris_ce_que_tu_aim_20251218_1101/text.md"
+    },
+    {
+      "id": "le_mariage_homosexue_20251227_2121",
+      "langue": "nl",
+      "prompt": "Le mariage homosexuel aux Pays-Bas",
+      "resume": "Le mariage homosexuel aux Pays-Bas",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2025-12-27 21:21:16",
+      "longueur": 200,
+      "text_preview": "Natuurlijk! Voici un texte en néerlandais pour le niveau A2, sur le thème du mariage homosexuel aux Pays-Bas :\n\n---\n\nIn Nederland is het homohuwelijk al lange tijd toegestaan. Nederland was het eerste...",
+      "vocab_count": 39,
+      "audio_path": "resources/le_mariage_homosexue_20251227_2121/audio.mp3",
+      "text_path": "resources/le_mariage_homosexue_20251227_2121/text.md"
     },
     {
       "id": "raconte_lhistoire_d_20251222_0943",

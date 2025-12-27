@@ -47,9 +47,10 @@ class BatchProcessor:
         Yields:
             Lignes JSON avec: type, message, status, current, total
         """
-        # Construire la commande
+        # Construire la commande avec Python unbuffered
         cmd = [
             self.python_exe,
+            "-u",  # Unbuffered output
             str(self.project_root / "batch_genmp3.py"),
             "-f", prompt_file,
             "-l", languages,

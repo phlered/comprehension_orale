@@ -109,29 +109,41 @@ class BatchGenerator:
         print(f"📝 [{index}/{total}] Langue: {langue.upper()} | Genre: {genre_effectif}")
         print(f"💬 Prompt: {prompt}")
         print(f"{'='*80}")
+        sys.stdout.flush()
         
         if self.dry_run:
             print(f"🔍 [DRY-RUN] Commande: {' '.join(cmd)}")
+            sys.stdout.flush()
             return True
         
         try:
-            # Afficher la sortie en temps réel, aussi capturer pour erreurs
-            result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-            print(result.stdout, end="")  # Afficher stdout
-            print(f"✅ Génération réussie !")
-            return True
-        except subprocess.CalledProcessError as e:
-            print(f"❌ Erreur lors de la génération (code {e.returncode}):")
-            # Afficher toute la sortie pour diagnostiquer
-            if e.stdout:
-                print("STDOUT:")
-                print(e.stdout)
-            if e.stderr:
-                print("STDERR:")
-                print(e.stderr)
-            return False
+            # Streamer la sortie en temps réel
+            process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1  # Line buffered
+            )
+            
+            # Lire et afficher la sortie ligne par ligne
+            for line in iter(process.stdout.readline, ''):
+                if line:
+                    print(line, end='', flush=True)
+            
+            returncode = process.wait()
+            
+            if returncode == 0:
+                print(f"✅ Génération réussie !")
+                sys.stdout.flush()
+                return True
+            else:
+                print(f"❌ Erreur lors de la génération (code {returncode}):")
+                sys.stdout.flush()
+                return False
         except Exception as e:
             print(f"❌ Erreur inattendue: {e}")
+            sys.stdout.flush()
             return False
     
     def generate_batch(self, prompts: List[str], langues: List[str]) -> Tuple[int, int]:
@@ -160,6 +172,7 @@ class BatchGenerator:
         else:
             print(f", genre=aléatoire", end="")
         print()
+        sys.stdout.flush()
         
         for i, prompt in enumerate(prompts, 1):
             for langue in langues:
@@ -174,6 +187,7 @@ class BatchGenerator:
                         response = input("\n⚠️  Continuer malgré l'erreur ? [O/n]: ").strip().lower()
                         if response == 'n':
                             print("🛑 Arrêt de la génération batch")
+                            sys.stdout.flush()
                             return success_count, fail_count
         
         return success_count, fail_count

@@ -702,7 +702,13 @@ class EdgeTTSGenerator:
     
     def __init__(self, langue="fr", gender=None):
         self.langue = langue
-        self.gender = gender
+        # Convertir gender de français vers anglais
+        if gender == "femme":
+            self.gender = "female"
+        elif gender == "homme":
+            self.gender = "male"
+        else:
+            self.gender = gender
     
     async def generate_audio_from_text_async(self, text, output_file, voice=None):
         """Génère un fichier MP3 à partir du texte (async)"""
@@ -711,21 +717,116 @@ class EdgeTTSGenerator:
         except ImportError:
             return False, "❌ edge-tts non installé"
         
+        # Valider le texte
+        if not text or not text.strip():
+            return False, "❌ Texte vide"
+        
         if voice is None:
             # Choisir une voix par défaut
             gender = self.gender or "female"
             voice = self.EDGE_VOICES.get(self.langue, {}).get(gender, "fr-FR-DeniseNeural")
         
         try:
+            # Limiter la longueur du texte (Edge TTS a des limites)
+            max_length = 10000
+            if len(text) > max_length:
+                text = text[:max_length]
+                print(f"⚠️  Texte tronqué à {max_length} caractères pour Edge TTS")
+            
             comm = edge_tts.Communicate(text=text, voice=voice)
-            await comm.save(output_file)
+            await asyncio.wait_for(comm.save(output_file), timeout=30.0)
+            
+            # Vérifier que le fichier a été créé et n'est pas vide
+            from pathlib import Path
+            if not Path(output_file).exists() or Path(output_file).stat().st_size == 0:
+                return False, f"❌ Edge TTS n'a pas généré de fichier audio valide"
+            
             return True, f"✅ Audio généré (Edge TTS): {voice}"
+        except asyncio.TimeoutError:
+            return False, f"❌ Timeout Edge TTS (30s dépassé)"
         except Exception as e:
-            return False, f"❌ Erreur Edge TTS: {str(e)}"
+            error_msg = str(e)
+            if "No audio" in error_msg:
+                return False, f"❌ Edge TTS ne peut pas synthétiser ce texte. Vérifiez la langue '{self.langue}' et la voix '{voice}'"
+            return False, f"❌ Erreur Edge TTS: {error_msg}"
     
     def generate_audio_from_text(self, text, output_file, voice=None):
         """Génère un fichier MP3 à partir du texte (wrapper sync)"""
-        return asyncio.run(self.generate_audio_from_text_async(text, output_file, voice))
+        try:
+            # Si le texte est très long, le diviser en chunks
+            if len(text) > 2000:
+                return self._generate_audio_chunked(text, output_file, voice)
+            
+            return asyncio.run(self.generate_audio_from_text_async(text, output_file, voice))
+        except Exception as e:
+            return False, f"❌ Erreur lors de l'exécution async Edge TTS: {str(e)}"
+    
+    def _generate_audio_chunked(self, text, output_file, voice=None):
+        """Génère l'audio Edge TTS en divisant le texte en chunks"""
+        from pathlib import Path
+        
+        print(f"📦 Texte long ({len(text)} chars), division en chunks...")
+        
+        # Diviser par paragraphes
+        paragraphs = [p.strip() for p in text.split('\n\n') if p.strip()]
+        chunk_files = []
+        temp_dir = Path(output_file).parent
+        
+        for i, paragraph in enumerate(paragraphs):
+            chunk_file = temp_dir / f"_edge_chunk_{i}.mp3"
+            chunk_files.append(chunk_file)
+            
+            print(f"📝 Chunk {i+1}/{len(paragraphs)}: {len(paragraph)} chars...")
+            
+            # Générer le chunk
+            success, msg = asyncio.run(self.generate_audio_from_text_async(paragraph, str(chunk_file), voice))
+            if not success:
+                # Nettoyer les chunks partiels
+                for f in chunk_files:
+                    f.unlink(missing_ok=True)
+                return False, msg
+        
+        # Combiner les fichiers MP3 avec ffmpeg
+        try:
+            import subprocess
+            concat_file = temp_dir / "concat.txt"
+            with open(concat_file, 'w') as f:
+                for chunk in chunk_files:
+                    f.write(f"file '{chunk.absolute()}'\n")
+            
+            cmd = [
+                'ffmpeg', '-f', 'concat', '-safe', '0',
+                '-i', str(concat_file.absolute()),
+                '-c', 'copy', '-y', output_file
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            # Nettoyer les fichiers temporaires
+            concat_file.unlink(missing_ok=True)
+            for chunk in chunk_files:
+                chunk.unlink(missing_ok=True)
+            
+            if result.returncode == 0:
+                return True, f"✅ Audio généré (en chunks): {voice or 'Edge TTS'}"
+            else:
+                return False, f"❌ Erreur ffmpeg: {result.stderr}"
+        
+        except FileNotFoundError:
+            # ffmpeg non disponible, retourner simplement le premier chunk
+            print("⚠️  ffmpeg non disponible, utilisation du premier chunk")
+            try:
+                chunk_files[0].rename(output_file)
+                for chunk in chunk_files[1:]:
+                    chunk.unlink(missing_ok=True)
+                return True, f"✅ Audio généré (chunk 1): {voice or 'Edge TTS'}"
+            except Exception as e:
+                return False, f"❌ Erreur: {str(e)}"
+        except Exception as e:
+            # Nettoyer en cas d'erreur
+            for chunk in chunk_files:
+                chunk.unlink(missing_ok=True)
+            return False, f"❌ Erreur lors de la combinaison: {str(e)}"
     
     async def generate_dialogue_audio_async(self, dialogue_segments, output_file):
         """Génère un MP3 à partir de segments de dialogue (async)"""
@@ -733,6 +834,9 @@ class EdgeTTSGenerator:
             import edge_tts
         except ImportError:
             return False, "❌ edge-tts non installé"
+        
+        if not dialogue_segments:
+            return False, "❌ Aucun segment de dialogue"
         
         # Choisir des voix aléatoires pour chaque locuteur
         speakers_voices = {}
@@ -742,6 +846,9 @@ class EdgeTTSGenerator:
         segment_files = []
         
         for i, (speaker, text) in enumerate(dialogue_segments):
+            if not text or not text.strip():
+                continue
+                
             # Obtenir ou assigner une voix pour ce locuteur
             if speaker not in speakers_voices:
                 speakers_voices[speaker] = random.choice(available_voices)
@@ -753,10 +860,22 @@ class EdgeTTSGenerator:
             
             try:
                 comm = edge_tts.Communicate(text=text, voice=edge_voice)
-                await comm.save(segment_file)
-                segment_files.append(segment_file)
+                await asyncio.wait_for(comm.save(segment_file), timeout=30.0)
+                
+                # Vérifier que le fichier a été créé
+                from pathlib import Path
+                if Path(segment_file).exists() and Path(segment_file).stat().st_size > 0:
+                    segment_files.append(segment_file)
+                else:
+                    return False, f"❌ Segment {i} n'a pas généré de fichier valide"
+                    
+            except asyncio.TimeoutError:
+                return False, f"❌ Timeout Edge TTS sur le segment {i}"
             except Exception as e:
-                return False, f"❌ Erreur lors de la génération du segment {i}: {str(e)}"
+                error_msg = str(e)
+                if "No audio" in error_msg:
+                    return False, f"❌ Edge TTS ne peut pas synthétiser le segment {i}"
+                return False, f"❌ Erreur sur le segment {i}: {error_msg}"
         
         # Fusionner les MP3 (simple concaténation)
         if segment_files:
@@ -783,7 +902,10 @@ class EdgeTTSGenerator:
     
     def generate_dialogue_audio(self, dialogue_segments, output_file, output_format='mp3'):
         """Génère un MP3 à partir de segments de dialogue (wrapper sync)"""
-        return asyncio.run(self.generate_dialogue_audio_async(dialogue_segments, output_file))
+        try:
+            return asyncio.run(self.generate_dialogue_audio_async(dialogue_segments, output_file))
+        except Exception as e:
+            return False, f"❌ Erreur lors de l'exécution async dialogue Edge TTS: {str(e)}"
 
 
 class AzureTTSGenerator:
@@ -1140,22 +1262,32 @@ Exemples:
                     dialogue_segments.append((speaker, text))
             
             # Générer l'audio du dialogue (Azure avec fallback Edge)
-            tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
-            success, msg = tts.generate_dialogue_audio(dialogue_segments, output_file, args.format)
+            try:
+                tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
+                success, msg = tts.generate_dialogue_audio(dialogue_segments, output_file, args.format)
+            except Exception as e:
+                success = False
+                msg = f"❌ Azure TTS indisponible: {str(e)}"
+            
             if not success:
                 print(msg)
-                print("⚠️  Azure TTS indisponible, bascule vers Edge TTS...")
+                print("⚠️  Bascule vers Edge TTS...")
                 edge_tts = EdgeTTSGenerator(args.langue, args.genre)
                 success, msg = edge_tts.generate_dialogue_audio(dialogue_segments, output_file)
         else:
             print("📖 Texte standard")
             
             # Générer l'audio du texte (Azure avec fallback Edge)
-            tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
-            success, msg = tts.generate_audio_from_text(cleaned_text, output_file)
+            try:
+                tts = AzureTTSGenerator(args.langue, args.genre, args.voix, args.vitesse)
+                success, msg = tts.generate_audio_from_text(cleaned_text, output_file)
+            except Exception as e:
+                success = False
+                msg = f"❌ Azure TTS indisponible: {str(e)}"
+            
             if not success:
                 print(msg)
-                print("⚠️  Azure TTS indisponible, bascule vers Edge TTS...")
+                print("⚠️  Bascule vers Edge TTS...")
                 edge_tts = EdgeTTSGenerator(args.langue, args.genre)
                 success, msg = edge_tts.generate_audio_from_text(cleaned_text, output_file)
         

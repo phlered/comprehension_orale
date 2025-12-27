@@ -253,6 +253,30 @@
             border-color: rgba(17, 24, 39, 0.95) transparent transparent transparent;
         }
 
+        /* Mots cliquables pour traduction à la demande */
+        .clickable-word {
+            cursor: pointer;
+            padding: 0 1px;
+            border-radius: 2px;
+            transition: background 0.2s;
+        }
+        .clickable-word:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+        .clickable-word:active {
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        /* Loader de traduction */
+        .tooltip-bubble.loading::before {
+            content: '⏳ ';
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         .loading {
             text-align: center;
             color: white;
@@ -537,9 +561,9 @@
             // Texte avec mise en évidence du vocabulaire (désactivée en C2)
             const textContent = currentResource.fullText || currentResource.text_preview;
             if (currentResource.niveau !== 'C2' && currentResource.fullVocab && currentResource.fullVocab.length > 0) {
-                document.getElementById('text-content').innerHTML = highlightVocabInText(textContent, currentResource.fullVocab);
+                document.getElementById('text-content').innerHTML = makeWordsClickable(highlightVocabInText(textContent, currentResource.fullVocab));
             } else {
-                document.getElementById('text-content').textContent = textContent;
+                document.getElementById('text-content').innerHTML = makeWordsClickable(textContent);
             }
             
             // Vocabulaire (masqué en C2)
@@ -606,24 +630,71 @@
                 tooltipTimer = setTimeout(hideTooltip, 5000);
             }
 
-            const clickHandler = (e) => {
-                const span = e.target.closest('.vocab-highlight');
-                if (span && (span.getAttribute('data-translation') || span.getAttribute('title'))) {
-                    const text = span.getAttribute('data-translation') || span.getAttribute('title') || '';
-                    if (activeTarget === span) {
-                        // Tap sur le même mot: masquer
+            const clickHandler = async (e) => {
+                console.log('🖱️ Clic détecté sur:', e.target);
+                
+                // Gérer les mots du vocabulaire (surlignés)
+                const vocabSpan = e.target.closest('.vocab-highlight');
+                if (vocabSpan && (vocabSpan.getAttribute('data-translation') || vocabSpan.getAttribute('title'))) {
+                    console.log('📚 Mot vocabulaire:', vocabSpan.textContent);
+                    const text = vocabSpan.getAttribute('data-translation') || vocabSpan.getAttribute('title') || '';
+                    if (activeTarget === vocabSpan) {
                         hideTooltip();
                     } else if (text) {
-                        // Tap sur un autre mot: remplacer
-                        showTooltip(span, text);
+                        showTooltip(vocabSpan, text);
                     }
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return;
+                }
+
+                // Gérer tous les autres mots (traduction à la demande)
+                const clickableSpan = e.target.closest('.clickable-word');
+                if (clickableSpan) {
+                    const word = clickableSpan.dataset.word || clickableSpan.textContent.trim();
+                    
+                    if (activeTarget === clickableSpan) {
+                        hideTooltip();
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return;
+                    }
+
+                    // Afficher un loader
+                    const rect = clickableSpan.getBoundingClientRect();
+                    const tip = document.createElement('div');
+                    tip.className = 'tooltip-bubble loading';
+                    tip.textContent = 'Traduction...';
+                    document.body.appendChild(tip);
+                    const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 8;
+                    const left = window.scrollX + rect.left + rect.width / 2;
+                    tip.style.top = `${desiredTop}px`;
+                    tip.style.left = `${left}px`;
+                    activeTooltip = tip;
+                    activeTarget = clickableSpan;
+
+                    // Traduire le mot
+                    const sourceLang = getSourceLanguage();
+                    const translation = await translateWord(word, sourceLang, 'fr');
+                    
+                    if (translation && activeTarget === clickableSpan) {
+                        // Mettre à jour le tooltip
+                        tip.classList.remove('loading');
+                        tip.textContent = translation;
+                        // Auto-fermeture après 5s
+                        tooltipTimer = setTimeout(hideTooltip, 5000);
+                    } else if (activeTarget === clickableSpan) {
+                        tip.textContent = '❌ Traduction indisponible';
+                        tooltipTimer = setTimeout(hideTooltip, 2000);
+                    }
+
                     e.preventDefault();
                     e.stopPropagation();
                 }
             };
 
-            document.addEventListener('click', clickHandler, { passive: true });
-            document.addEventListener('touchstart', clickHandler, { passive: true });
+            document.addEventListener('click', clickHandler);
+            document.addEventListener('touchstart', clickHandler);
             // Toujours fermer au scroll/resize
             window.addEventListener('scroll', hideTooltip, { passive: true });
             window.addEventListener('resize', hideTooltip, { passive: true });
@@ -674,6 +745,133 @@
             });
 
             return highlightedText;
+        }
+
+        // Wrapper tous les mots dans des spans cliquables pour traduction
+        function makeWordsClickable(text) {
+            // Ne pas toucher aux balises HTML existantes (vocab-highlight)
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = text;
+            
+            function wrapTextNodes(node) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    const textContent = node.textContent;
+                    // Séparer le texte en mots et non-mots
+                    const parts = textContent.split(/(\s+|[.,;:!?()«»"\[\]{}—–-]+)/);
+                    const fragment = document.createDocumentFragment();
+                    
+                    parts.forEach(part => {
+                        if (part && /^[\wÀ-ÿ'-]+$/.test(part) && part.length > 1) {
+                            // C'est un mot - le wrapper
+                            const span = document.createElement('span');
+                            span.className = 'clickable-word';
+                            span.textContent = part;
+                            span.dataset.word = part;
+                            fragment.appendChild(span);
+                        } else if (part) {
+                            // Espaces ou ponctuation - texte brut
+                            fragment.appendChild(document.createTextNode(part));
+                        }
+                    });
+                    
+                    node.parentNode.replaceChild(fragment, node);
+                } else if (node.nodeType === Node.ELEMENT_NODE && !node.classList.contains('vocab-highlight')) {
+                    // Récursion sur les enfants (sauf vocab-highlight déjà traité)
+                    Array.from(node.childNodes).forEach(child => wrapTextNodes(child));
+                }
+            }
+            
+            wrapTextNodes(tempDiv);
+            return tempDiv.innerHTML;
+        }
+
+        // Extraire le contexte autour d'un mot (X mots avant et après)
+        function getWordContext(spanElement, wordsAround = 5) {
+            const textContainer = document.getElementById('text-content');
+            if (!textContainer) return '';
+            
+            // Collecter tous les mots cliquables
+            const allWords = Array.from(textContainer.querySelectorAll('.clickable-word'));
+            const targetIndex = allWords.indexOf(spanElement);
+            
+            if (targetIndex === -1) return spanElement.textContent;
+            
+            // Prendre X mots avant et après
+            const startIdx = Math.max(0, targetIndex - wordsAround);
+            const endIdx = Math.min(allWords.length, targetIndex + wordsAround + 1);
+            
+            return allWords.slice(startIdx, endIdx).map(el => el.textContent).join(' ');
+        }
+
+        // Détecter la langue source à partir des métadonnées
+        function getSourceLanguage() {
+            const langMap = {
+                // Noms complets
+                'Néerlandais': 'nl',
+                'Allemand': 'de',
+                'Anglais': 'en',
+                'Espagnol': 'es',
+                'Coréen': 'ko',
+                'Italien': 'it',
+                'Français': 'fr',
+                // Codes courts (utilisés par genmp3.py)
+                'nl': 'nl',
+                'all': 'de',
+                'eng': 'en',
+                'us': 'en',
+                'esp': 'es',
+                'hisp': 'es',
+                'co': 'ko',
+                'it': 'it',
+                'fr': 'fr'
+            };
+            const lang = langMap[currentResource.langue] || 'en';
+            console.log(`🔍 Langue ressource: "${currentResource.langue}" → Code: ${lang}`);
+            return lang;
+        }
+
+        // Traduire un mot via API MyMemory (gratuit, pas de clé requise)
+        async function translateWord(word, sourceLang = 'en', targetLang = 'fr') {
+            const cacheKey = `trans_${sourceLang}_${targetLang}_${word.toLowerCase()}`;
+            
+            // Vérifier le cache localStorage
+            try {
+                const cached = localStorage.getItem(cacheKey);
+                if (cached) {
+                    return cached;
+                }
+            } catch (e) {
+                console.warn('localStorage non disponible:', e);
+            }
+            
+            // Appeler l'API MyMemory
+            try {
+                const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=${sourceLang}|${targetLang}`;
+                
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.responseData && data.responseData.translatedText) {
+                    let translation = data.responseData.translatedText;
+                    
+                    // Nettoyer la traduction (retirer ponctuation finale)
+                    translation = translation.replace(/[.,!?;:]$/, '').trim();
+                    
+                    // Mettre en cache
+                    try {
+                        localStorage.setItem(cacheKey, translation);
+                    } catch (e) {
+                        console.warn('Impossible de mettre en cache:', e);
+                    }
+                    
+                    return translation;
+                }
+                
+                return null;
+            } catch (error) {
+                console.error('Erreur de traduction:', error);
+                return null;
+            }
         }
 
         // Basculer l'affichage du texte

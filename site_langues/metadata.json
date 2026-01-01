@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-01T16:55:47.082224",
-  "total_resources": 252,
+  "generated_at": "2026-01-01T17:32:56.165578",
+  "total_resources": 248,
   "languages": [
-    "it",
     "cor",
-    "fr",
     "nl",
+    "esp",
     "all",
-    "eng",
-    "esp"
+    "it",
+    "fr",
+    "eng"
   ],
   "resources": [
     {
@@ -64,24 +64,6 @@
       "vocab_count": 29,
       "audio_path": "resources/going_to_the_grocery_20251227_2112/audio.mp3",
       "text_path": "resources/going_to_the_grocery_20251227_2112/text.md"
-    },
-    {
-      "id": "test_voix_20251215_2212",
-      "langue": "it",
-      "prompt": "Test voix",
-      "resume": "Test de voix",
-      "niveau": "A1",
-      "classe": "",
-      "axe": "",
-      "genre": "Elsa",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-15 22:13:03",
-      "longueur": 100,
-      "text_preview": "Ciao! Mi chiamo Luca. Oggi provo un nuovo test di voce. È molto interessante! Il mio amico Anna è con me. Lei parla e io ascolto la sua voce. Usiamo un microfono e un computer. La voce di Anna è chiar...",
-      "vocab_count": 19,
-      "audio_path": "resources/test_voix_20251215_2212/audio.mp3",
-      "text_path": "resources/test_voix_20251215_2212/text.md"
     },
     {
       "id": "raconte_la_vie_quoti_20251218_0748",
@@ -1128,24 +1110,6 @@
       "text_path": "resources/l_immigration_en_eur_20251216_1855/text.md"
     },
     {
-      "id": "test_vocabulaire_20251210_1900",
-      "langue": "fr",
-      "prompt": "Test vocabulaire",
-      "resume": "Le vocabulaire",
-      "niveau": "A2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-10 19:01:03",
-      "longueur": 50,
-      "text_preview": "Aujourd'hui, nous avons un test de vocabulaire en classe. Nous apprenons de nouveaux mots en français. J'aime étudier les mots des animaux et des couleurs. Mon amie Marie préfère les mots pour les vêt...",
-      "vocab_count": 10,
-      "audio_path": "resources/test_vocabulaire_20251210_1900/audio.mp3",
-      "text_path": "resources/test_vocabulaire_20251210_1900/text.md"
-    },
-    {
       "id": "l_impact_de_l_ia_sur_20251227_2149",
       "langue": "eng",
       "prompt": "L'impact de l'IA sur le chômage",
@@ -1738,24 +1702,6 @@
       "vocab_count": 29,
       "audio_path": "resources/quelles_sont_les_tra_20251210_2036/audio.mp3",
       "text_path": "resources/quelles_sont_les_tra_20251210_2036/text.md"
-    },
-    {
-      "id": "test_hybride_20251210_1206",
-      "langue": "all",
-      "prompt": "Test hybride",
-      "resume": "Test hybride",
-      "niveau": "B1",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-10 12:06:09",
-      "longueur": 50,
-      "text_preview": "Ein hybrider Test kombiniert traditionelle und digitale Methoden. In Schulen könnte man zum Beispiel schriftliche und Online-Prüfungen miteinander verbinden. Das fördert nicht nur technologische Fähig...",
-      "vocab_count": 4,
-      "audio_path": "resources/test_hybride_20251210_1206/audio.mp3",
-      "text_path": "resources/test_hybride_20251210_1206/text.md"
     },
     {
       "id": "faire_les_courses_au_20251216_1848",
@@ -2908,24 +2854,6 @@
       "vocab_count": 30,
       "audio_path": "resources/la_famiglia_20251215_1758/audio.mp3",
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
-    },
-    {
-      "id": "test_diagnostic_ffmp_20251227_2143",
-      "langue": "fr",
-      "prompt": "Test diagnostic ffmpeg",
-      "resume": "Test diagnostic ffmpeg",
-      "niveau": "A1",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-27 21:43:42",
-      "longueur": 50,
-      "text_preview": "FFmpeg est un outil pour les vidéos et audios. Il aide à convertir et éditer des fichiers média. Pour un test, on utilise une vidéo. On peut changer son format ou qualité. FFmpeg est utile pour ceux q...",
-      "vocab_count": 10,
-      "audio_path": "resources/test_diagnostic_ffmp_20251227_2143/audio.mp3",
-      "text_path": "resources/test_diagnostic_ffmp_20251227_2143/text.md"
     },
     {
       "id": "nochebuena_en_famili_20251215_1548",

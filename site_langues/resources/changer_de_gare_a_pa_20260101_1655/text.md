@@ -33,8 +33,8 @@ Dans le métro, fais attention. Il y a souvent du monde. Reste calme et suis les
 - **le exemple** → het voorbeeld
 - **la France** → Frankrijk
 - **la gare** → het station
-- **la gare du nord** → Station Noord
-- **la gare de Lyon** → Station Lyon
+- **la gare du nord** → Gare du Nord
+- **la gare de Lyon** → Gare de Lyon
 - **la indication** → de aanwijzing
 - **la ligne** → de lijn
 - **la ligne 4** → lijn 4

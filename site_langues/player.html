@@ -686,10 +686,20 @@
                         // Mettre à jour le tooltip
                         tip.classList.remove('loading');
                         tip.textContent = translation;
+                        // Recalculer la position avec la nouvelle hauteur
+                        const newDesiredTop = window.scrollY + rect.top - tip.offsetHeight - 2;
+                        const newLeft = window.scrollX + rect.left + rect.width / 2;
+                        tip.style.top = `${newDesiredTop}px`;
+                        tip.style.left = `${newLeft}px`;
                         // Auto-fermeture après 4s
                         tooltipTimer = setTimeout(hideTooltip, 4000);
                     } else if (activeTarget === clickableSpan) {
                         tip.textContent = '❌ Traduction indisponible';
+                        // Recalculer la position avec la nouvelle hauteur
+                        const newDesiredTop = window.scrollY + rect.top - tip.offsetHeight - 2;
+                        const newLeft = window.scrollX + rect.left + rect.width / 2;
+                        tip.style.top = `${newDesiredTop}px`;
+                        tip.style.left = `${newLeft}px`;
                         tooltipTimer = setTimeout(hideTooltip, 2000);
                     }
 

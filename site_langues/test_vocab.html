@@ -19,8 +19,11 @@ function highlightVocabInText(text, vocabList) {
     const transByWord = new Map();
     vocabList.forEach(item => {
         const key = normalizeWord(item.word).toLowerCase();
-        if (key.length > 2 && !transByWord.has(key)) {
-            transByWord.set(key, (item.translation || '').toString());
+        const translation = (item.translation || '').toString();
+        const translationNormalized = normalizeWord(translation).toLowerCase();
+        // Ignorer si la traduction est identique au mot (noms propres)
+        if (key.length > 2 && key !== translationNormalized && !transByWord.has(key)) {
+            transByWord.set(key, translation);
         }
     });
     const uniqueWords = Array.from(transByWord.keys()).sort((a, b) => b.length - a.length);

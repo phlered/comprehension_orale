@@ -680,7 +680,9 @@
 
                     // Traduire le mot
                     const sourceLang = getSourceLanguage();
-                    const translation = await translateWord(word, sourceLang, 'fr');
+                    // Pour le français: traduire en hollandais, pour les autres langues: traduire en français
+                    const targetLang = sourceLang === 'fr' ? 'nl' : 'fr';
+                    const translation = await translateWord(word, sourceLang, targetLang);
                     
                     if (translation && activeTarget === clickableSpan) {
                         // Mettre à jour le tooltip

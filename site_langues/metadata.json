@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-01T17:46:48.729207",
-  "total_resources": 248,
+  "generated_at": "2026-01-01T19:17:09.059237",
+  "total_resources": 239,
   "languages": [
     "nl",
-    "eng",
-    "fr",
+    "cor",
     "esp",
+    "eng",
     "it",
     "all",
-    "cor"
+    "fr"
   ],
   "resources": [
     {
@@ -28,24 +28,6 @@
       "vocab_count": 13,
       "audio_path": "resources/should_smartphones_b_20251222_0954/audio.mp3",
       "text_path": "resources/should_smartphones_b_20251222_0954/text.md"
-    },
-    {
-      "id": "explique_pourquoi_il_20251222_1031",
-      "langue": "fr",
-      "prompt": "Explique pourquoi il est important de partager et d’apprendre à attendre son tour en famille.",
-      "resume": "L'importance de partager en famille",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:32:10",
-      "longueur": 150,
-      "text_preview": "Partager et apprendre à attendre son tour en famille sont des compétences essentielles qui favorisent le développement harmonieux des relations interpersonnelles. En milieu familial, ces aptitudes per...",
-      "vocab_count": 8,
-      "audio_path": "resources/explique_pourquoi_il_20251222_1031/audio.mp3",
-      "text_path": "resources/explique_pourquoi_il_20251222_1031/text.md"
     },
     {
       "id": "going_to_the_grocery_20251227_2112",
@@ -858,24 +840,6 @@
       "text_path": "resources/la_scuola_20251215_2215/text.md"
     },
     {
-      "id": "parle_de_la_jalousie_20251222_1031",
-      "langue": "fr",
-      "prompt": "Parle de la jalousie entre frères et sœurs et explique d’où elle peut venir.",
-      "resume": "La jalousie entre frères et sœurs",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:31:36",
-      "longueur": 150,
-      "text_preview": "La jalousie entre frères et sœurs est un phénomène fréquent dans de nombreuses familles. Elle peut se manifester dès le plus jeune âge et persiste parfois à l'âge adulte. Elle naît souvent de la perce...",
-      "vocab_count": 8,
-      "audio_path": "resources/parle_de_la_jalousie_20251222_1031/audio.mp3",
-      "text_path": "resources/parle_de_la_jalousie_20251222_1031/text.md"
-    },
-    {
       "id": "un_lyceen_de_londres_20251217_1913",
       "langue": "eng",
       "prompt": "Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.",
@@ -1578,24 +1542,6 @@
       "text_path": "resources/celebrer_un_annivers_20251216_1851/text.md"
     },
     {
-      "id": "explique_comment_cha_20251222_1033",
-      "langue": "fr",
-      "prompt": "Explique comment chacun peut trouver sa place dans la famille sans se comparer aux autres.",
-      "resume": "Trouver sa place dans la famille",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:33:35",
-      "longueur": 150,
-      "text_preview": "Dans une famille, chaque individu doit trouver sa place sans se comparer aux autres. Pour cela, il est essentiel d'identifier ses propres talents et intérêts. Chacun a des aptitudes uniques qui, lorsq...",
-      "vocab_count": 8,
-      "audio_path": "resources/explique_comment_cha_20251222_1033/audio.mp3",
-      "text_path": "resources/explique_comment_cha_20251222_1033/text.md"
-    },
-    {
       "id": "est_ce_que_les_adole_20251217_1132",
       "langue": "esp",
       "prompt": "Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.",
@@ -2118,24 +2064,6 @@
       "text_path": "resources/un_escursione_in_mon_20251215_1752/text.md"
     },
     {
-      "id": "parle_du_role_des_pa_20251222_1032",
-      "langue": "fr",
-      "prompt": "Parle du rôle des parents pour aider les enfants à mieux gérer les conflits familiaux.",
-      "resume": "Le rôle des parents dans les conflits familiaux",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:32:47",
-      "longueur": 150,
-      "text_preview": "Les parents jouent un rôle crucial dans l’apprentissage des enfants pour gérer les conflits au sein de la famille. En premier lieu, ils servent de modèles. Les enfants, par observation, adoptent souve...",
-      "vocab_count": 9,
-      "audio_path": "resources/parle_du_role_des_pa_20251222_1032/audio.mp3",
-      "text_path": "resources/parle_du_role_des_pa_20251222_1032/text.md"
-    },
-    {
       "id": "hollywood_y_sus_estu_20251217_1232",
       "langue": "esp",
       "prompt": "Hollywood y sus estudios de cine",
@@ -2604,24 +2532,6 @@
       "text_path": "resources/faire_les_courses_20251227_2117/text.md"
     },
     {
-      "id": "explique_limportanc_20251222_1032",
-      "langue": "fr",
-      "prompt": "Explique l’importance de l’écoute et de la bienveillance dans la vie de famille.",
-      "resume": "L'écoute et la bienveillance en famille",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:33:03",
-      "longueur": 150,
-      "text_preview": "L'écoute et la bienveillance jouent un rôle crucial dans la dynamique familiale. L'écoute attentive permet à chaque membre de la famille de se sentir entendu et compris, renforçant ainsi les liens aff...",
-      "vocab_count": 8,
-      "audio_path": "resources/explique_limportanc_20251222_1032/audio.mp3",
-      "text_path": "resources/explique_limportanc_20251222_1032/text.md"
-    },
-    {
       "id": "demander_des_informa_20251210_2033",
       "langue": "nl",
       "prompt": "Demander des informations sur les transports en commun.",
@@ -2802,24 +2712,6 @@
       "text_path": "resources/birthday_party_plann_20251215_1537/text.md"
     },
     {
-      "id": "decris_comment_une_f_20251222_0942",
-      "langue": "eng",
-      "prompt": "Décris comment une famille britannique prépare Noël à la maison : décorations, repas et traditions.",
-      "resume": "La préparation de Noël en famille britannique",
-      "niveau": "B2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇬🇧",
-      "voix_variant": "eng",
-      "date": "2025-12-22 09:42:44",
-      "longueur": 150,
-      "text_preview": "In the heart of a traditional British home, the anticipation of Christmas begins as the first frost of December blankets the ground. The family unearths a treasure trove of decorations from the attic,...",
-      "vocab_count": 21,
-      "audio_path": "resources/decris_comment_une_f_20251222_0942/audio.mp3",
-      "text_path": "resources/decris_comment_une_f_20251222_0942/text.md"
-    },
-    {
       "id": "decris_un_noel_en_fa_20251222_0945",
       "langue": "eng",
       "prompt": "Décris un Noël en famille aux États-Unis, avec les repas, les cadeaux et les traditions.",
@@ -2890,24 +2782,6 @@
       "vocab_count": 30,
       "audio_path": "resources/la_famiglia_20251215_1756/audio.mp3",
       "text_path": "resources/la_famiglia_20251215_1756/text.md"
-    },
-    {
-      "id": "raconte_une_experien_20251222_1033",
-      "langue": "fr",
-      "prompt": "Raconte une expérience où la jalousie cause un malentendu mais permet finalement de mieux se comprendre.",
-      "resume": "La jalousie et le malentendu",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:33:25",
-      "longueur": 150,
-      "text_preview": "En 2019, lors d'un projet professionnel, j'ai fait l'expérience d'une situation où la jalousie a causé un malentendu. La collaboration impliquait trois collègues : Claire, Julien et moi-même. Claire e...",
-      "vocab_count": 8,
-      "audio_path": "resources/raconte_une_experien_20251222_1033/audio.mp3",
-      "text_path": "resources/raconte_une_experien_20251222_1033/text.md"
     },
     {
       "id": "partir_en_vacances_e_20251216_1850",
@@ -3052,24 +2926,6 @@
       "vocab_count": 19,
       "audio_path": "resources/decris_noel_sous_le_20251222_0944/audio.mp3",
       "text_path": "resources/decris_noel_sous_le_20251222_0944/text.md"
-    },
-    {
-      "id": "raconte_une_histoire_20251222_1031",
-      "langue": "fr",
-      "prompt": "Raconte une histoire où deux sœurs sont jalouses l’une de l’autre et trouvent une solution pour mieux s’entendre.",
-      "resume": "La jalousie entre sœurs",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:31:50",
-      "longueur": 150,
-      "text_preview": "Émilie et Sophie sont deux sœurs vivant en Bretagne. Elles ont respectivement 25 et 27 ans et travaillent dans le même domaine : l'architecture d'intérieur. Depuis l'adolescence, une jalousie latente ...",
-      "vocab_count": 9,
-      "audio_path": "resources/raconte_une_histoire_20251222_1031/audio.mp3",
-      "text_path": "resources/raconte_une_histoire_20251222_1031/text.md"
     },
     {
       "id": "quelles_sont_les_spe_20251210_2035",
@@ -3484,24 +3340,6 @@
       "vocab_count": 14,
       "audio_path": "resources/explique_pourquoi_l_20251218_0924/audio.mp3",
       "text_path": "resources/explique_pourquoi_l_20251218_0924/text.md"
-    },
-    {
-      "id": "decris_comment_le_di_20251222_1032",
-      "langue": "fr",
-      "prompt": "Décris comment le dialogue peut aider à résoudre un problème de jalousie entre sœurs.",
-      "resume": "Le dialogue pour résoudre la jalousie entre sœurs",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:32:32",
-      "longueur": 150,
-      "text_preview": "Le dialogue est souvent un outil efficace pour résoudre des conflits de jalousie entre sœurs. Premièrement, il favorise l'écoute active, essentielle pour comprendre les sources du problème. Lorsqu'une...",
-      "vocab_count": 8,
-      "audio_path": "resources/decris_comment_le_di_20251222_1032/audio.mp3",
-      "text_path": "resources/decris_comment_le_di_20251222_1032/text.md"
     },
     {
       "id": "explique_ce_quest_l_20251218_0745",

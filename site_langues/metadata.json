@@ -1,14 +1,14 @@
 {
-  "generated_at": "2025-12-27T21:54:23.397255",
-  "total_resources": 246,
+  "generated_at": "2026-01-01T16:52:29.577855",
+  "total_resources": 249,
   "languages": [
     "cor",
-    "eng",
-    "nl",
-    "it",
-    "all",
     "esp",
-    "fr"
+    "it",
+    "nl",
+    "fr",
+    "eng",
+    "all"
   ],
   "resources": [
     {
@@ -948,6 +948,24 @@
       "text_path": "resources/is_artificial_intell_20251222_0953/text.md"
     },
     {
+      "id": "le_repas_de_noel_en_20260101_1651",
+      "langue": "nl",
+      "prompt": "Le repas de Nöel en France : que mange-t'on ?",
+      "resume": "Le repas de Noël en France",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2026-01-01 16:51:45",
+      "longueur": 150,
+      "text_preview": "Kerstmis in Frankrijk is een speciale tijd. Mensen eten lekker eten samen met familie. Het kerstdiner in Frankrijk is groot en speciaal. \n\nVoor de maaltijd eten mensen vaak \"foie gras\". Dat is een soo...",
+      "vocab_count": 30,
+      "audio_path": "resources/le_repas_de_noel_en_20260101_1651/audio.mp3",
+      "text_path": "resources/le_repas_de_noel_en_20260101_1651/text.md"
+    },
+    {
       "id": "aller_travailler_en_20251226_1948",
       "langue": "esp",
       "prompt": "Aller travailler en vélo",
@@ -1884,6 +1902,24 @@
       "text_path": "resources/decoracion_del_hogar_20251215_1550/text.md"
     },
     {
+      "id": "voyage_en_france_sur_20260101_1651",
+      "langue": "nl",
+      "prompt": "Voyage en France sur la côte d'Azur",
+      "resume": "Voyage en France sur la côte d'Azur",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2026-01-01 16:52:05",
+      "longueur": 150,
+      "text_preview": "Mijn naam is Anna. Ik ga op vakantie naar Frankrijk. Ik reis naar de Côte d'Azur. Het is zomer en het weer is warm. De zon schijnt en de lucht is blauw. Ik draag een zonnehoed en zonnebril. \n\nIk blijf...",
+      "vocab_count": 30,
+      "audio_path": "resources/voyage_en_france_sur_20260101_1651/audio.mp3",
+      "text_path": "resources/voyage_en_france_sur_20260101_1651/text.md"
+    },
+    {
       "id": "raconte_le_premier_n_20251222_0944",
       "langue": "eng",
       "prompt": "Raconte le premier Noël loin de chez soi pour un adolescent britannique.",
@@ -1990,6 +2026,24 @@
       "vocab_count": 17,
       "audio_path": "resources/die_jahreszeiten_20251210_1152/audio.mp3",
       "text_path": "resources/die_jahreszeiten_20251210_1152/text.md"
+    },
+    {
+      "id": "changer_de_gare_a_pa_20260101_1652",
+      "langue": "nl",
+      "prompt": "Changer de gare à Paris : prendre le métro d'une gare à l'autre",
+      "resume": "Changer de gare à Paris par le métro",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇳🇱",
+      "voix_variant": "nl",
+      "date": "2026-01-01 16:52:24",
+      "longueur": 150,
+      "text_preview": "Parijs is een grote stad. Er zijn veel treinstations. Soms moet je van het ene station naar het andere gaan. Bijvoorbeeld, je komt aan op Gare du Nord en je moet naar Gare de Lyon.\n\nEerst koop je een ...",
+      "vocab_count": 31,
+      "audio_path": "resources/changer_de_gare_a_pa_20260101_1652/audio.mp3",
+      "text_path": "resources/changer_de_gare_a_pa_20260101_1652/text.md"
     },
     {
       "id": "ma_maison_et_les_pie_20251216_0837",

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-01T19:29:43.250455",
-  "total_resources": 237,
+  "generated_at": "2026-01-01T19:45:02.670116",
+  "total_resources": 241,
   "languages": [
-    "it",
-    "cor",
     "fr",
-    "eng",
-    "esp",
     "nl",
-    "all"
+    "it",
+    "all",
+    "cor",
+    "eng",
+    "esp"
   ],
   "resources": [
     {
@@ -550,6 +550,24 @@
       "vocab_count": 19,
       "audio_path": "resources/repenser_le_modele_e_20251216_1903/audio.mp3",
       "text_path": "resources/repenser_le_modele_e_20251216_1903/text.md"
+    },
+    {
+      "id": "es_tu_deja_alle_en_f_20260101_1944",
+      "langue": "fr",
+      "prompt": "Es-tu déjà allé en France avec tes parents ? Qu'est ce qui t'a plus lors de ton voyage ?",
+      "resume": "Un voyage en France avec ses parents",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 19:44:56",
+      "longueur": 200,
+      "text_preview": "Je suis déjà allé en France avec mes parents l'année dernière. C'était un voyage très excitant pour moi. Nous avons visité Paris, la capitale. La ville est très belle avec beaucoup de monuments célèbr...",
+      "vocab_count": 33,
+      "audio_path": "resources/es_tu_deja_alle_en_f_20260101_1944/audio.mp3",
+      "text_path": "resources/es_tu_deja_alle_en_f_20260101_1944/text.md"
     },
     {
       "id": "l_alimentazione_20251215_1756",
@@ -3558,6 +3576,24 @@
       "text_path": "resources/l_impact_de_l_ia_sur_20251227_2150/text.md"
     },
     {
+      "id": "quel_est_ton_sport_p_20260101_1944",
+      "langue": "fr",
+      "prompt": "Quel est ton sport préféré ?",
+      "resume": "Le sport préféré",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 19:44:43",
+      "longueur": 200,
+      "text_preview": "Mon sport préféré est le football. J'adore jouer au football avec mes amis le week-end. C'est un sport très populaire dans le monde entier. Le football est un sport d'équipe. Il y a onze joueurs dans ...",
+      "vocab_count": 32,
+      "audio_path": "resources/quel_est_ton_sport_p_20260101_1944/audio.mp3",
+      "text_path": "resources/quel_est_ton_sport_p_20260101_1944/text.md"
+    },
+    {
       "id": "vers_une_societe_san_20251216_1900",
       "langue": "all",
       "prompt": "Vers une société sans argent liquide ?",
@@ -4026,6 +4062,24 @@
       "text_path": "resources/decris_lendroit_ou_20251218_1100/text.md"
     },
     {
+      "id": "decris_ton_dernier_w_20260101_1944",
+      "langue": "fr",
+      "prompt": "Décris ton dernier week-end",
+      "resume": "Mon dernier week-end",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 19:44:29",
+      "longueur": 200,
+      "text_preview": "Le week-end dernier, j'ai passé un très bon moment. Samedi matin, je suis allé au marché avec ma mère. Nous avons acheté des légumes, des fruits et du pain frais. Il y avait beaucoup de monde et l'amb...",
+      "vocab_count": 34,
+      "audio_path": "resources/decris_ton_dernier_w_20260101_1944/audio.mp3",
+      "text_path": "resources/decris_ton_dernier_w_20260101_1944/text.md"
+    },
+    {
       "id": "presentarsi_20251215_1803",
       "langue": "it",
       "prompt": "Presentarsi",
@@ -4168,6 +4222,24 @@
       "vocab_count": 18,
       "audio_path": "resources/compare_le_cinema_co_20251218_0746/audio.mp3",
       "text_path": "resources/compare_le_cinema_co_20251218_0746/text.md"
+    },
+    {
+      "id": "tu_ecris_un_mail_a_t_20260101_1943",
+      "langue": "fr",
+      "prompt": "Tu écris un mail à ton correspondant français pour te présenter",
+      "resume": "Se présenter à un correspondant français",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 19:44:09",
+      "longueur": 200,
+      "text_preview": "Objet : Salut de [Ton Prénom] !\n\nBonjour [Nom du correspondant],\n\nJe m'appelle [Ton Prénom] et j'ai [ton âge] ans. Je suis très content(e) de commencer à échanger des mails avec toi. J'habite à [Ville...",
+      "vocab_count": 30,
+      "audio_path": "resources/tu_ecris_un_mail_a_t_20260101_1943/audio.mp3",
+      "text_path": "resources/tu_ecris_un_mail_a_t_20260101_1943/text.md"
     },
     {
       "id": "london_underground_20251217_1234",

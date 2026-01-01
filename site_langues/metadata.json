@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-01-01T16:52:29.577855",
-  "total_resources": 249,
+  "generated_at": "2026-01-01T16:55:43.874666",
+  "total_resources": 252,
   "languages": [
-    "cor",
+    "fr",
     "esp",
+    "cor",
     "it",
     "nl",
-    "fr",
     "eng",
     "all"
   ],
@@ -1992,6 +1992,24 @@
       "text_path": "resources/carta_a_los_reyes_ma_20251215_1549/text.md"
     },
     {
+      "id": "changer_de_gare_a_pa_20260101_1655",
+      "langue": "fr",
+      "prompt": "Changer de gare à Paris : prendre le métro d'une gare à l'autre",
+      "resume": "Changer de gare à Paris par le métro",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 16:55:36",
+      "longueur": 150,
+      "text_preview": "Changer de gare à Paris est facile. Paris a plusieurs gares. Par exemple, il y a Gare du Nord et Gare de Lyon. Pour voyager entre ces gares, le métro est très pratique.\n\nD'abord, il faut connaître la ...",
+      "vocab_count": 30,
+      "audio_path": "resources/changer_de_gare_a_pa_20260101_1655/audio.mp3",
+      "text_path": "resources/changer_de_gare_a_pa_20260101_1655/text.md"
+    },
+    {
       "id": "comment_les_pays_bas_20251210_2038",
       "langue": "nl",
       "prompt": "Comment les Pays-Bas se préparent-ils au réchauffement climatique ?",
@@ -3016,6 +3034,24 @@
       "vocab_count": 35,
       "audio_path": "resources/ma_famille_et_mes_pa_20251216_1847/audio.mp3",
       "text_path": "resources/ma_famille_et_mes_pa_20251216_1847/text.md"
+    },
+    {
+      "id": "le_repas_de_noel_en_20260101_1655",
+      "langue": "fr",
+      "prompt": "Le repas de Nöel en France : que mange-t'on ?",
+      "resume": "Le repas de Noël en France",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 16:55:11",
+      "longueur": 150,
+      "text_preview": "Le repas de Noël en France est très spécial. Les familles se réunissent pour célébrer Noël ensemble. On prépare un grand repas pour cette occasion.\n\nEn entrée, on mange souvent du foie gras ou des huî...",
+      "vocab_count": 29,
+      "audio_path": "resources/le_repas_de_noel_en_20260101_1655/audio.mp3",
+      "text_path": "resources/le_repas_de_noel_en_20260101_1655/text.md"
     },
     {
       "id": "parle_de_ton_college_20251218_1059",
@@ -4330,6 +4366,24 @@
       "vocab_count": 33,
       "audio_path": "resources/velo_electrique_ou_v_20251226_1946/audio.mp3",
       "text_path": "resources/velo_electrique_ou_v_20251226_1946/text.md"
+    },
+    {
+      "id": "voyage_en_france_sur_20260101_1655",
+      "langue": "fr",
+      "prompt": "Voyage en France sur la côte d'Azur",
+      "resume": "Voyage en France sur la côte d'Azur",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-01 16:55:24",
+      "longueur": 150,
+      "text_preview": "Je m'appelle Sophie. Cet été, je fais un voyage en France. Je vais sur la côte d'Azur. C'est très joli. Je prends l'avion pour Nice. Le vol est court. Il fait beau et chaud.\n\nÀ Nice, je vois la mer. L...",
+      "vocab_count": 29,
+      "audio_path": "resources/voyage_en_france_sur_20260101_1655/audio.mp3",
+      "text_path": "resources/voyage_en_france_sur_20260101_1655/text.md"
     },
     {
       "id": "le_role_de_l_europe_20251216_1859",

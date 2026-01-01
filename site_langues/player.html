@@ -619,17 +619,17 @@
                 tip.className = 'tooltip-bubble';
                 tip.textContent = text;
                 document.body.appendChild(tip);
-                // Positionner au-dessus si possible, sinon en dessous
-                const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 8;
-                const belowTop = window.scrollY + rect.top + rect.height + 8;
+                // Positionner juste au-dessus du mot (très proche)
+                const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 2;
+                const belowTop = window.scrollY + rect.top + rect.height + 2;
                 const left = window.scrollX + rect.left + rect.width / 2;
                 const finalTop = desiredTop > window.scrollY ? desiredTop : belowTop;
                 tip.style.top = `${finalTop}px`;
                 tip.style.left = `${left}px`;
                 activeTooltip = tip;
                 activeTarget = target;
-                // Fermeture automatique après 5s
-                tooltipTimer = setTimeout(hideTooltip, 5000);
+                // Fermeture automatique après 4s
+                tooltipTimer = setTimeout(hideTooltip, 4000);
             }
 
             const clickHandler = async (e) => {
@@ -662,13 +662,16 @@
                         return;
                     }
 
+                    // Masquer le tooltip précédent avant d'afficher le nouveau
+                    hideTooltip();
+
                     // Afficher un loader
                     const rect = clickableSpan.getBoundingClientRect();
                     const tip = document.createElement('div');
                     tip.className = 'tooltip-bubble loading';
                     tip.textContent = 'Traduction...';
                     document.body.appendChild(tip);
-                    const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 8;
+                    const desiredTop = window.scrollY + rect.top - tip.offsetHeight - 2;
                     const left = window.scrollX + rect.left + rect.width / 2;
                     tip.style.top = `${desiredTop}px`;
                     tip.style.left = `${left}px`;
@@ -683,8 +686,8 @@
                         // Mettre à jour le tooltip
                         tip.classList.remove('loading');
                         tip.textContent = translation;
-                        // Auto-fermeture après 5s
-                        tooltipTimer = setTimeout(hideTooltip, 5000);
+                        // Auto-fermeture après 4s
+                        tooltipTimer = setTimeout(hideTooltip, 4000);
                     } else if (activeTarget === clickableSpan) {
                         tip.textContent = '❌ Traduction indisponible';
                         tooltipTimer = setTimeout(hideTooltip, 2000);

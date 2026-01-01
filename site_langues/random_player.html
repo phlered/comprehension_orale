@@ -69,6 +69,11 @@
             font-weight: 700;
             color: #667eea;
             font-family: 'Courier New', monospace;
+            display: none;
+        }
+
+        .timer-display.active {
+            display: block;
         }
 
         .timer-display.warning {
@@ -418,6 +423,7 @@
                 </div>
 
                 <button class="btn btn-success" id="startBtn" onclick="startSession()">▶️ Démarrer</button>
+                <button class="btn btn-primary" id="pauseBtn" onclick="togglePause()" disabled style="display: none;">⏸️ Pause</button>
                 <button class="btn btn-danger" id="stopBtn" onclick="stopSession()" disabled>⏹️ Arrêter</button>
                 <button class="btn btn-primary" id="nextBtn" onclick="loadNextRandom()" disabled>⏭️ Suivant</button>
             </div>
@@ -475,6 +481,7 @@
         let playedResources = [];
         let currentResource = null;
         let sessionActive = false;
+        let sessionPaused = false;
         let sessionTimer = null;
         let sessionEndTime = null;
         let docsPlayedCount = 0;
@@ -617,12 +624,17 @@
 
             // Mettre à jour l'interface
             document.getElementById('startBtn').disabled = true;
+            document.getElementById('pauseBtn').disabled = false;
+            document.getElementById('pauseBtn').style.display = 'inline-block';
+            document.getElementById('pauseBtn').textContent = '⏸️ Pause';
             document.getElementById('stopBtn').disabled = false;
             document.getElementById('nextBtn').disabled = false;
             document.getElementById('durationMinutes').disabled = true;
             document.getElementById('filterNiveau').disabled = true;
             document.getElementById('stats').style.display = 'flex';
             document.getElementById('playerCard').style.display = 'block';
+            document.getElementById('timerDisplay').classList.add('active');
+            sessionPaused = false;
 
             // Démarrer le timer d'affichage
             updateTimer();
@@ -646,13 +658,17 @@
 
         async function stopSession() {
             sessionActive = false;
+            sessionPaused = false;
             clearInterval(sessionTimer);
             
             document.getElementById('startBtn').disabled = false;
+            document.getElementById('pauseBtn').disabled = true;
+            document.getElementById('pauseBtn').style.display = 'none';
             document.getElementById('stopBtn').disabled = true;
             document.getElementById('nextBtn').disabled = true;
             document.getElementById('durationMinutes').disabled = false;
             document.getElementById('filterNiveau').disabled = false;
+            document.getElementById('timerDisplay').classList.remove('active');
             
             const audio = document.getElementById('audio-player');
             audio.pause();
@@ -664,6 +680,35 @@
             }
 
             alert(`Session terminée!\n\n📚 Documents lus: ${docsPlayedCount}\n📖 Mots appris: ${totalWordsLearned}`);
+        }
+
+        function togglePause() {
+            const audio = document.getElementById('audio-player');
+            const pauseBtn = document.getElementById('pauseBtn');
+            
+            if (sessionPaused) {
+                // Reprendre la lecture
+                sessionPaused = false;
+                audio.play().catch(e => console.log('Erreur reprise:', e));
+                pauseBtn.textContent = '⏸️ Pause';
+                pauseBtn.classList.remove('btn-danger');
+                pauseBtn.classList.add('btn-primary');
+                
+                if ('mediaSession' in navigator) {
+                    navigator.mediaSession.playbackState = 'playing';
+                }
+            } else {
+                // Mettre en pause
+                sessionPaused = true;
+                audio.pause();
+                pauseBtn.textContent = '▶️ Reprendre';
+                pauseBtn.classList.remove('btn-primary');
+                pauseBtn.classList.add('btn-danger');
+                
+                if ('mediaSession' in navigator) {
+                    navigator.mediaSession.playbackState = 'paused';
+                }
+            }
         }
 
         function updateTimer() {
@@ -732,6 +777,15 @@
                 return;
             }
 
+            // Réinitialiser l'état de pause lors du chargement d'un nouveau document
+            sessionPaused = false;
+            const pauseBtn = document.getElementById('pauseBtn');
+            if (pauseBtn) {
+                pauseBtn.textContent = '⏸️ Pause';
+                pauseBtn.classList.remove('btn-danger');
+                pauseBtn.classList.add('btn-primary');
+            }
+
             currentPlaylistIndex = index;
             currentResource = sessionPlaylist[index];
             
@@ -754,6 +808,16 @@
         function loadNextRandom() {
             // Fonction maintenue pour le bouton "Suivant" manuel
             if (!sessionActive) return;
+            
+            // Réinitialiser l'état de pause
+            if (sessionPaused) {
+                sessionPaused = false;
+                const pauseBtn = document.getElementById('pauseBtn');
+                pauseBtn.textContent = '⏸️ Pause';
+                pauseBtn.classList.remove('btn-danger');
+                pauseBtn.classList.add('btn-primary');
+            }
+            
             loadPlaylistItem(currentPlaylistIndex + 1);
         }
 

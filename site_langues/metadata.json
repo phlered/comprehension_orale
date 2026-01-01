@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-01T19:17:09.059237",
-  "total_resources": 239,
+  "generated_at": "2026-01-01T19:20:54.429071",
+  "total_resources": 237,
   "languages": [
-    "nl",
-    "cor",
-    "esp",
-    "eng",
-    "it",
+    "fr",
     "all",
-    "fr"
+    "cor",
+    "eng",
+    "nl",
+    "it",
+    "esp"
   ],
   "resources": [
     {
@@ -1846,24 +1846,6 @@
       "vocab_count": 31,
       "audio_path": "resources/decris_ce_que_tu_aim_20251218_1048/audio.mp3",
       "text_path": "resources/decris_ce_que_tu_aim_20251218_1048/text.md"
-    },
-    {
-      "id": "explique_quelles_son_20251222_1030",
-      "langue": "fr",
-      "prompt": "Explique quelles sont les valeurs importantes pour bien vivre en famille et pourquoi le respect est essentiel.",
-      "resume": "Les valeurs importantes en famille",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:31:01",
-      "longueur": 150,
-      "text_preview": "Vivre harmonieusement en famille repose sur des valeurs fondamentales telles que le respect, la communication et la solidarité. Le respect est crucial car il soutient la reconnaissance des besoins et ...",
-      "vocab_count": 8,
-      "audio_path": "resources/explique_quelles_son_20251222_1030/audio.mp3",
-      "text_path": "resources/explique_quelles_son_20251222_1030/text.md"
     },
     {
       "id": "carta_a_los_reyes_ma_20251215_1549",
@@ -4186,24 +4168,6 @@
       "vocab_count": 18,
       "audio_path": "resources/compare_le_cinema_co_20251218_0746/audio.mp3",
       "text_path": "resources/compare_le_cinema_co_20251218_0746/text.md"
-    },
-    {
-      "id": "raconte_une_situatio_20251222_1031",
-      "langue": "fr",
-      "prompt": "Raconte une situation de la vie quotidienne où l’entraide permet de résoudre un conflit familial.",
-      "resume": "L'entraide dans un conflit familial",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "🇫🇷",
-      "voix_variant": "fr",
-      "date": "2025-12-22 10:31:22",
-      "longueur": 150,
-      "text_preview": "Dans le cadre d'une réunion familiale en janvier de cette année, un désaccord a éclaté concernant l'héritage de la maison de nos grands-parents. Les quatre enfants, pourtant proches, se trouvaient en ...",
-      "vocab_count": 8,
-      "audio_path": "resources/raconte_une_situatio_20251222_1031/audio.mp3",
-      "text_path": "resources/raconte_une_situatio_20251222_1031/text.md"
     },
     {
       "id": "london_underground_20251217_1234",

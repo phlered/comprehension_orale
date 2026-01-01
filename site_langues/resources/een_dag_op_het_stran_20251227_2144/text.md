@@ -2,70 +2,60 @@
 langue: Néerlandais
 prompt: Een dag op het strand
 resume: Une journée à la plage
-longueur: 300
+longueur: 250
 niveau: B1
 genre: femme
 drapeau: 🇳🇱
 voix_variant: nl
-date_generation: 2025-12-27 21:44:52
+date_generation: 2026-01-01 22:45:53
 ---
 
 ## Tekst
 
-Een dag op het strand
+Een dag op het strand is altijd een goed idee, vooral tijdens de warme zomerdagen. Vorige week zaterdag ben ik met een groep vrienden naar het strand gegaan. We zijn vroeg in de ochtend vertrokken, zodat we de hele dag van de zon en de zee konden genieten.
 
-Het was een warme zomerdag toen ik besloot een dag naar het strand te gaan. De zon scheen helder en de lucht was blauw zonder een wolkje. Ik pakte mijn tas in met een handdoek, zonnebrandcrème, een boek en wat snacks. Rond tien uur verlieten mijn vrienden en ik ons huis en stapten we op de fiets richting de kust.
+Aangekomen op het strand hebben we eerst een plekje gezocht om onze handdoeken neer te leggen. Het was al vrij druk, maar gelukkig vonden we een mooi plekje dicht bij het water. We smeerden ons goed in met zonnebrandcrème om te voorkomen dat we zouden verbranden. Daarna renden we meteen naar de zee om een verfrissende duik te nemen. Het water was koel en verkwikkend, precies wat we nodig hadden op zo'n warme dag.
 
-Na een halfuurtje fietsen, kwamen we aan bij het strand. Het zand voelde warm aan onder onze voeten toen we een plek zochten om onze spullen neer te leggen. We vonden een rustig plekje dicht bij de zee. Het geluid van de golven was rustgevend en er was een zachte bries uit zee die ons hielp koel te blijven.
+Na het zwemmen hebben we een spelletje beachvolleybal gespeeld. Het was erg leuk en we hebben veel gelachen, vooral toen iemand tot zijn knieën in het zand viel. De tijd vloog voorbij en voordat we het wisten was het tijd voor de lunch. We hadden allemaal iets te eten meegenomen, dus we maakten een kleine picknick op het strand. Er was brood, fruit, salade en natuurlijk veel water om te drinken.
 
-We begonnen onze dag met een duik in het frisse zeewater. Het was verfrissend en wakkerde onze energie aan. Na het zwemmen besloten we een wedstrijdje strandvolleybal te spelen. Het was leuk om met vrienden te lachen en te genieten van de zon. Natuurlijk aten we ook ijs; een stranddag is niet compleet zonder een lekker ijsje!
+In de namiddag hebben we heerlijk gerelaxt en gelezen. Sommigen van ons maakten een wandeling langs de kustlijn. De zon begon langzaam onder te gaan, wat zorgde voor een prachtig uitzicht. We zijn pas laat in de avond terug naar huis gegaan, moe maar zeer tevreden.
 
-Na het sporten gingen we terug naar onze handdoeken om te ontspannen. Ik genoot van mijn boek terwijl ik in de schaduw zat van een grote parasol. Sommige van mijn vrienden besloten een dutje te doen, terwijl anderen zandkastelen bouwden aan de waterkant. De tijd ging snel voorbij en voordat we het wisten was het al laat in de middag.
-
-Voordat we naar huis gingen, maakten we nog een laatste wandeling langs de kustlijn. We verzamelden wat mooie schelpen als aandenken aan deze gezellige dag. Toen de zon onderging, pakten we onze spullen in en fietsten we met z’n allen terug naar huis. Het was een perfecte dag op het strand, vol plezier en ontspanning. Ik kijk ernaar uit om snel weer terug te gaan!
+Een dag op het strand is niet alleen ontspannend, maar ook een geweldige manier om quality time door te brengen met vrienden. Ik kan niet wachten om het binnenkort weer te doen!
 
 ## Woordenschat
 
-- **het aandenken** → le souvenir
 - **de avond** → le soir
-- **het boek** → le livre
-- **het boek** → le livre
-- **bouwen** → construire
-- **de bries** → la brise
+- **het beachvolleybal** → le volleyball
+- **het brood** → le pain
 - **de dag** → le jour
-- **de energie** → l'énergie
-- **de fiets** → le vélo
-- **fietsen** → faire du vélo
-- **gaan** → aller
-- **het geluid** → le son
-- **de golf** → la vague
+- **de duik** → le plongeon
+- **het fruit** → les fruits
 - **de handdoek** → la serviette
 - **het huis** → la maison
-- **het ijs** → la glace
-- **de kust** → la côte
-- **de kustlijn** → la ligne côtière
-- **de lucht** → le ciel
+- **de knie** → le genou
+- **de kustlijn** → la côte
+- **de lach** → le rire
+- **de lunch** → le déjeuner
+- **de manier** → la manière
 - **de middag** → l'après-midi
-- **de ontspanning** → la détente
-- **de parasol** → le parasol
-- **de plek** → l'endroit
+- **het moment** → le moment
+- **de ochtend** → le matin
+- **de picknick** → le pique-nique
+- **het plekje** → l'endroit
 - **het plezier** → le plaisir
-- **de schelp** → le coquillage
-- **de spullen** → les affaires
+- **de rust** → le repos
+- **de salade** → la salade
+- **het spelletje** → le jeu
 - **het strand** → la plage
-- **de tas** → le sac
 - **de tijd** → le temps
-- **verzamelen** → collectionner
-- **de voet** → le pied
-- **de vrienden** → les amis
+- **het uitzicht** → la vue
+- **de vriend** → l'ami
 - **de wandeling** → la promenade
 - **het water** → l'eau
-- **de waterkant** → le bord de l'eau
-- **de wedstrijd** → la compétition
-- **de wolk** → le nuage
+- **de week** → la semaine
 - **het zand** → le sable
-- **het zandkasteel** → le château de sable
 - **de zee** → la mer
+- **de zomer** → l'été
 - **de zon** → le soleil
 - **de zonnebrandcrème** → la crème solaire
-- **zwemmen** → nager
+- **de zonsondergang** → le coucher de soleil

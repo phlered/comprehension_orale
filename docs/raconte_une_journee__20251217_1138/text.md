@@ -2,48 +2,60 @@
 langue: Italien
 prompt: Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.
 resume: Une journée d'école inattendue
-longueur: 150
+longueur: 200
 niveau: A2
 genre: femme
-date_generation: 2025-12-17 11:38:55
+drapeau: 🇮🇹
+voix_variant: it
+date_generation: 2026-01-01 22:44:28
 ---
 
 ## Testo
 
-Oggi è stata una giornata di scuola davvero particolare. La mattina è iniziata come sempre: mi sono svegliato alle 7, ho fatto colazione e sono andato a scuola con il mio zaino pieno di libri. Tutto sembrava normale fino all’intervallo.
+Oggi è stata una giornata strana a scuola. Mi sono svegliato presto per prepararmi. Ho fatto colazione e sono uscito di casa. Quando sono arrivato a scuola, ho scoperto che la porta era chiusa. Non c’erano insegnanti né studenti.
 
-Durante l’intervallo, mentre giocavamo in cortile, ha iniziato a piovere all'improvviso. Tutti i miei compagni e io siamo corsi dentro, ma eravamo già bagnati. Poi, la cosa sorprendente è successa: un uccellino è entrato nella nostra aula attraverso la finestra che era rimasta aperta.
+Dopo qualche minuto, ho visto il mio amico Marco. Anche lui sembrava confuso. Abbiamo controllato il calendario e abbiamo capito che c’era uno sciopero degli insegnanti. Era una sorpresa!
 
-Tutti abbiamo cercato di aiutare l’uccellino a uscire, ma volava in tutte le direzioni. Alla fine, è riuscito a trovare la finestra e a volare via. La nostra maestra rideva e ci ha detto che anche gli uccellini a volte vogliono imparare qualcosa di nuovo.
+Non sapevamo cosa fare. Allora, abbiamo deciso di andare al parco vicino alla scuola. Al parco, abbiamo incontrato alcuni compagni di classe. Abbiamo iniziato a giocare a pallone. È stato molto divertente!
 
-La giornata è continuata con le lezioni, ma con un sorriso in più. Questa esperienza è stata davvero inaspettata e divertente, e sicuramente non dimenticherò questa giornata di scuola speciale!
+Più tardi, abbiamo trovato una piccola tartaruga vicino al laghetto. Era bellissima e molto lenta. Abbiamo deciso di chiamarla "Turbo" per scherzo. L’abbiamo osservata per un po’, poi l’abbiamo lasciata andare.
+
+Infine, sono tornato a casa e ho raccontato tutto ai miei genitori. Anche se la scuola era chiusa, la giornata è stata interessante e piena di sorprese. Spero che domani ci sia lezione, ma oggi è stato davvero speciale!
 
 ## Vocabolario
 
-- **aiutare** → aider
+- **il amico** → l'ami
+- **il amico** → l'ami
+- **arrivare** → arriver
+- **il calendario** → le calendrier
+- **capire** → comprendre
+- **la casa** → la maison
+- **chiudere** → fermer
+- **la classe** → la classe
+- **la colazione** → le petit déjeuner
 - **il compagno** → le camarade
-- **continuare** → continuer
-- **correre** → courir
-- **il cortile** → la cour
-- **la cosa** → la chose
-- **dimenticare** → oublier
+- **decidere** → décider
 - **divertente** → amusant
-- **entrare** → entrer
-- **fare colazione** → prendre le petit-déjeuner
-- **la finestra** → la fenêtre
+- **il genitore** → le parent
 - **giocare** → jouer
 - **la giornata** → la journée
-- **imparare** → apprendre
-- **l'aula** → la salle de classe
-- **l'intervallo** → la récréation
-- **l'uccellino** → le petit oiseau
-- **il libro** → le livre
-- **la maestra** → la maîtresse
-- **il mattino** → le matin
-- **la pioggia** → la pluie
-- **ridere** → rire
+- **il giorno** → le jour
+- **guardare** → regarder
+- **incontrare** → rencontrer
+- **il insegnante** → l'enseignant
+- **interessante** → intéressant
+- **il laghetto** → le petit lac
+- **la lezione** → la leçon
+- **il minuto** → la minute
+- **il pallone** → le ballon
+- **il parco** → le parc
+- **la porta** → la porte
+- **prepararsi** → se préparer
+- **raccontare** → raconter
+- **lo sciopero** → la grève
 - **la scuola** → l'école
-- **svegliare** → réveiller
+- **la sorpresa** → la surprise
+- **la strada** → la route
+- **lo studente** → l'étudiant
+- **la tartaruga** → la tortue
 - **uscire** → sortir
-- **volare** → voler
-- **lo zaino** → le sac à dos

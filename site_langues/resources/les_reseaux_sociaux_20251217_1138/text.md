@@ -2,47 +2,58 @@
 langue: Italien
 prompt: Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.
 resume: Les réseaux sociaux et les adolescents
-longueur: 150
+longueur: 200
 niveau: A2
 genre: femme
-date_generation: 2025-12-17 11:38:37
+drapeau: 🇮🇹
+voix_variant: it
+date_generation: 2026-01-01 22:52:14
 ---
 
 ## Testo
 
-I social media sono molto importanti nella vita degli adolescenti, per esempio in paesi anglofoni come gli Stati Uniti. Gli adolescenti usano i social media ogni giorno per comunicare con gli amici e la famiglia. È un modo facile e veloce per restare in contatto. Su piattaforme come Instagram, TikTok e Snapchat, possono condividere foto, video e messaggi.
+I social media sono molto importanti nella vita degli adolescenti. Ogni giorno, milioni di ragazzi usano piattaforme come Instagram, Facebook e Snapchat. In un paese come gli Stati Uniti, quasi tutti gli adolescenti hanno uno smartphone. Questo rende facile e veloce connettersi con gli amici, condividere foto e video.
 
-Ci sono anche aspetti positivi. I social media aiutano a trovare nuove informazioni e a conoscere persone con interessi simili. Gli adolescenti possono seguire le notizie e imparare cose nuove.
+Un aspetto positivo dei social media è che aiutano a mantenere i contatti con amici e familiari, anche se vivono lontano. Inoltre, i social media permettono di scoprire nuove idee, musica e tendenze. Gli adolescenti possono anche trovare gruppi e comunità online con interessi simili ai loro.
 
-Tuttavia, ci sono anche dei rischi. A volte, i social media possono creare pressione. Gli adolescenti possono sentirsi obbligati a mostrare una vita perfetta. Inoltre, c'è il rischio di cyberbullismo e di incontrare persone sconosciute.
+Tuttavia, ci sono anche dei rischi. Passare troppo tempo sui social media può influire sui voti a scuola e ridurre il tempo per altre attività importanti come lo sport o la lettura. Inoltre, sui social media si può incontrare cyberbullismo o commenti negativi. È importante sapere come proteggere la propria privacy e segnalare i comportamenti scorretti.
 
-È importante usare i social media con attenzione. Gli adulti devono aiutare gli adolescenti a capire questi rischi e a usare i social media in modo sicuro.
+In conclusione, i social media sono parte della vita quotidiana degli adolescenti in modo positivo, ma è importante usarli con attenzione e trovare un equilibrio.
 
 ## Vocabolario
 
-- **gli adolescenti** → les adolescents
-- **gli adulti** → les adultes
-- **gli amici** → les amis
-- **gli aspetti** → les aspects
+- **il commento** → le commentaire
+- **il comportamento** → le comportement
+- **la comunità** → la communauté
+- **la conclusione** → la conclusion
 - **condividere** → partager
+- **connettersi** → se connecter
+- **il contatto** → le contact
 - **il cyberbullismo** → le cyberharcèlement
 - **la famiglia** → la famille
-- **le foto** → les photos
-- **le informazioni** → les informations
-- **gli interessi** → les intérêts
-- **l'attenzione** → l'attention
-- **l'uso** → l'utilisation
-- **i messaggi** → les messages
-- **il modo** → le moyen
-- **le notizie** → les nouvelles
-- **i paesi** → les pays
-- **le persone** → les personnes
-- **le piattaforme** → les plateformes
-- **la pressione** → la pression
-- **i rischi** → les risques
-- **la sicurezza** → la sécurité
-- **i social** → les réseaux sociaux
+- **la foto** → la photo
+- **il gruppo** → le groupe
+- **importante** → important
+- **l'adolescente** → l'adolescent
+- **l'amico** → l'ami
+- **l'aspetto** → l'aspect
+- **l'attività** → l'activité
+- **l'equilibrio** → l'équilibre
+- **l'interesse** → l'intérêt
+- **la lettura** → la lecture
+- **la musica** → la musique
+- **la piattaforma** → la plateforme
+- **la privacy** → la vie privée
+- **proteggere** → protéger
+- **il quotidiano** → le quotidien
+- **il rischio** → le risque
+- **la scuola** → l'école
+- **il social media** → le réseau social
+- **lo sport** → le sport
 - **gli Stati Uniti** → les États-Unis
+- **il tempo** → le temps
+- **la tendenza** → la tendance
 - **usare** → utiliser
-- **i video** → les vidéos
+- **il video** → la vidéo
 - **la vita** → la vie
+- **vivere** → vivre

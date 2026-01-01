@@ -2,62 +2,62 @@
 langue: Anglais (UK)
 prompt: Recycling Habits
 resume: Les habitudes de recyclage
-longueur: 200
+longueur: 250
 niveau: B1
 genre: femme
-date_generation: 2025-12-15 15:37:32
+drapeau: 🇬🇧
+voix_variant: eng
+date_generation: 2026-01-01 22:50:06
 ---
 
 ## Text
 
-Recycling is an important habit that many people around the world are trying to adopt. It is a simple way to help protect the environment and reduce waste. In many cities, there are special bins for different types of materials like paper, plastic, glass, and metal. By separating these materials, we can make sure they are recycled properly.
+Recycling has become an important part of our lives, and it's something we should all practice. It helps us protect the environment by reducing waste and saving natural resources. When we recycle, we can turn old materials into new products. This reduces the need to use new resources from the Earth.
 
-One of the easiest ways to start recycling is at home. Families can set up a small recycling station in their kitchen or garage. They can label different containers for each type of recyclable material. This makes it easier for everyone to remember where to put their waste. Some families also teach their children about the importance of recycling from a young age. This helps create good habits for the future.
+In many communities, recycling is easy to do. People often have different bins for recycling materials like paper, glass, plastic, and metal. It's important to sort these materials correctly so they can be recycled properly. For example, cardboard boxes should be flattened, and glass bottles should be cleaned before putting them in the recycling bin.
 
-Recycling is not only beneficial for the environment but also helps save energy. For example, recycling aluminum cans saves 95% of the energy needed to make new ones. Additionally, recycling can create jobs in the recycling industry, which is good for the economy.
+Recycling is not only about separating materials but also about making smart choices. For instance, when shopping, we can choose products with less packaging or buy items made from recycled materials. This way, we contribute to reducing waste from the start.
 
-However, recycling alone is not enough. People should also try to reduce their waste by reusing items and buying products with less packaging. By combining recycling with these practices, individuals can make a significant positive impact on the environment.
+Some people might think recycling is too much work, but it's actually quite simple. Once it becomes a habit, it feels natural, just like brushing your teeth. Many schools and workplaces also have recycling programs, which encourage more people to participate.
+
+Recycling can have a positive impact on our planet. It helps reduce pollution and save energy. For example, recycling aluminum cans saves a lot of energy compared to producing new cans from raw materials. By recycling, we can make sure the Earth stays clean and healthy for future generations.
+
+In conclusion, developing good recycling habits is important for everyone. It’s an easy way to make a big difference. Let's all try to improve our recycling habits and encourage others to do the same.
 
 ## Vocabulary
 
-- **to adopt** → adopter
 - **aluminum** → aluminium
+- **to become** → devenir
 - **bin** → bac
-- **can** → boîte
-- **child** → enfant
-- **city** → ville
-- **container** → contenant
-- **economy** → économie
+- **bottle** → bouteille
+- **cardboard** → carton
+- **to choose** → choisir
+- **to clean** → nettoyer
+- **community** → communauté
+- **difference** → différence
 - **energy** → énergie
 - **environment** → environnement
-- **family** → famille
-- **future** → avenir
-- **garage** → garage
+- **to flatten** → aplatir
 - **glass** → verre
 - **habit** → habitude
-- **home** → maison
-- **impact** → impact
-- **importance** → importance
-- **individual** → individu
-- **industry** → industrie
-- **item** → article
-- **job** → emploi
-- **kitchen** → cuisine
-- **to label** → étiqueter
+- **life** → vie
+- **material** → matériel
 - **material** → matériau
 - **metal** → métal
 - **packaging** → emballage
 - **paper** → papier
 - **plastic** → plastique
-- **positive** → positif
-- **practice** → pratique
+- **pollution** → pollution
+- **to practice** → pratiquer
 - **product** → produit
-- **recyclable** → recyclable
+- **program** → programme
+- **to protect** → protéger
+- **to recycle** → recycler
 - **recycling** → recyclage
 - **to reduce** → réduire
-- **to remember** → se souvenir
-- **to reuse** → réutiliser
-- **to separate** → séparer
-- **station** → station
-- **to teach** → enseigner
+- **resource** → ressource
+- **to save** → sauver
+- **school** → école
+- **to sort** → trier
 - **waste** → déchets
+- **workplace** → lieu de travail

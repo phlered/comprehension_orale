@@ -2,35 +2,58 @@
 langue: Italien
 prompt: Un'escursione in montagna
 resume: Une excursion en montagne
-longueur: 100
+longueur: 150
 niveau: A1
 genre: femme
-date_generation: 2025-12-15 17:52:59
+drapeau: 🇮🇹
+voix_variant: it
+date_generation: 2026-01-01 22:51:52
 ---
 
 ## Testo
 
-Oggi io e i miei amici facciamo un’escursione in montagna. Partiamo presto la mattina. Indossiamo scarpe comode e portiamo lo zaino. Nel zaino abbiamo acqua, panini e una mappa. Il cielo è blu e il sole splende. Camminiamo nel bosco e vediamo tanti alberi e fiori. È bello e tranquillo. Sentiamo il canto degli uccelli. Dopo un’ora, arriviamo a una grande roccia. Facciamo una pausa e mangiamo i panini. La vista dalla roccia è fantastica. Vediamo la valle e un piccolo lago. Siamo felici e facciamo molte foto. Poi torniamo giù, stanchi ma contenti. È stata una bella giornata!
+Oggi vado in montagna con i miei amici. Siamo molto felici. Partiamo presto la mattina. Prendiamo gli zaini, l'acqua e il pranzo al sacco. Indossiamo scarpe comode e cappelli. Il sole brilla e il cielo è azzurro.
+
+La strada è lunga, ma è bella. Camminiamo tra gli alberi e ascoltiamo il canto degli uccelli. Vediamo anche piccoli animali: conigli, scoiattoli e farfalle. L'aria è fresca e pulita.
+
+Dopo due ore, arriviamo in cima alla montagna. La vista è meravigliosa! Possiamo vedere tutto il paesaggio: le valli, i fiumi e le altre montagne. Facciamo una pausa per mangiare. Il pranzo è semplice ma buono: panini, frutta e biscotti.
+
+Dopo il pranzo, riposiamo un po'. Poi cominciamo a scendere. Siamo un po' stanchi, ma molto contenti. È stata una giornata bellissima in montagna. Non vediamo l'ora di tornare!
 
 ## Vocabolario
 
-- **il bosco** → le bois
+- **gli alberi** → les arbres
+- **gli amici** → les amis
+- **andare** → aller
+- **gli animali** → les animaux
+- **arrivare** → arriver
+- **i biscotti** → les biscuits
+- **camminare** → marcher
+- **il canto** → le chant
+- **i cappelli** → les chapeaux
 - **il cielo** → le ciel
-- **la escursione** → l'excursion
-- **il fiore** → la fleur
-- **la foto** → la photo
-- **il giorno** → le jour
+- **la cima** → le sommet
+- **i conigli** → les lapins
+- **le farfalle** → les papillons
+- **i fiumi** → les rivières
+- **la frutta** → les fruits
+- **la giornata** → la journée
 - **l'acqua** → l'eau
-- **l'albero** → l'arbre
-- **l'uccello** → l'oiseau
-- **il lago** → le lac
-- **la mappa** → la carte
+- **l'aria** → l'air
+- **mangiare** → manger
 - **la mattina** → le matin
 - **la montagna** → la montagne
-- **il panino** → le sandwich
-- **la roccia** → le rocher
-- **la scarpa** → la chaussure
+- **le montagne** → les montagnes
+- **il paesaggio** → le paysage
+- **i panini** → les sandwiches
+- **la pausa** → la pause
+- **il pranzo** → le déjeuner
+- **le scarpe** → les chaussures
+- **gli scoiattoli** → les écureuils
 - **il sole** → le soleil
-- **la valle** → la vallée
+- **la strada** → la route
+- **gli uccelli** → les oiseaux
+- **le valli** → les vallées
+- **vedere** → voir
 - **la vista** → la vue
-- **lo zaino** → le sac à dos
+- **gli zaini** → les sacs à dos

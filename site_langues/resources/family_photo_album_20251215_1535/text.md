@@ -2,66 +2,58 @@
 langue: Anglais (UK)
 prompt: Family Photo Album
 resume: L'album photo de famille
-longueur: 200
+longueur: 250
 niveau: B1
 genre: femme
-date_generation: 2025-12-15 15:35:56
+drapeau: 🇬🇧
+voix_variant: eng
+date_generation: 2026-01-01 22:49:05
 ---
 
 ## Text
 
-A family photo album is like a treasure chest full of memories. Each photo tells a story and captures a moment in time that we never want to forget. My favorite family photo album sits on the bookshelf in our living room. The cover is old and a bit faded, but the pictures inside are full of life and color.
+One of my favorite things to do on a rainy day is to look through our family photo album. It's like a treasure chest full of memories. The album is old and a bit worn out, but every page tells a story. It starts with photos from my grandparents' wedding. They look so young and happy, surrounded by friends and family. I love imagining what their lives were like back then.
 
-As I flip through the pages, I see photos of birthdays, holidays, and family trips. There is a picture of my sister and me as kids, with ice cream smeared all over our faces. Another photo shows my grandparents on their wedding day, looking young and happy. Every picture brings back memories and feelings of joy, love, and sometimes even sadness.
+As I flip through the pages, I see pictures of my parents, my brother, and me. There’s a funny photo of my brother and me making silly faces during a family vacation at the beach. I remember that day well; we built a huge sandcastle and were very proud of it. There’s also a photo of our first family dog, Rocky, who was always full of energy and loved playing with us in the backyard.
 
-One of my favorite photos is of our trip to the beach last summer. We are all smiling, with the ocean behind us and the sun setting in the background. That picture reminds me of the fun we had playing in the sand and water.
+One of the most special photos is of my grandmother and me baking cookies together. I can almost smell the sweet aroma from that day. She taught me her secret recipe, which I still use today. In the back of the album, there are newer photos from last year’s family reunion. It was amazing to see all our relatives, some of whom I hadn't seen in years.
 
-Looking through the family photo album helps me feel connected to my family. It reminds me of all the good times we’ve shared and makes me excited for the new memories we will create together. A family photo album is more than just a book; it’s a collection of stories that keep our family history alive.
+Looking through the album makes me grateful for my family. Each photo is a reminder of the love and joy we share, despite the occasional ups and downs. It's a wonderful way to remember the past and cherish the moments we've had together.
 
 ## Vocabulary
 
 - **album** → album
-- **background** → arrière-plan
-- **to be** → être
+- **backyard** → jardin
+- **to bake** → cuire
+- **to be grateful** → être reconnaissant
 - **beach** → plage
-- **birthday** → anniversaire
-- **book** → livre
-- **bookshelf** → étagère
-- **to capture** → capturer
-- **color** → couleur
-- **cover** → couverture
-- **day** → jour
-- **face** → visage
+- **brother** → frère
+- **cookie** → biscuit
+- **dog** → chien
+- **energy** → énergie
 - **family** → famille
-- **favorite** → préféré
-- **feeling** → sentiment
+- **to flip** → feuilleter
+- **friend** → ami
+- **grandmother** → grand-mère
 - **grandparent** → grand-parent
-- **happy** → heureux
-- **to have** → avoir
-- **history** → histoire
-- **holiday** → vacances
-- **ice cream** → glace
+- **to imagine** → imaginer
 - **joy** → joie
-- **kid** → enfant
 - **life** → vie
-- **living room** → salon
+- **to look** → regarder
 - **love** → amour
 - **memory** → souvenir
-- **moment** → moment
-- **ocean** → océan
-- **old** → vieux
 - **page** → page
+- **parent** → parent
 - **photo** → photo
 - **picture** → image
-- **sadness** → tristesse
-- **sand** → sable
+- **to play** → jouer
+- **proud** → fier
+- **recipe** → recette
+- **relative** → parent
+- **to remember** → se souvenir
+- **reunion** → réunion
+- **sandcastle** → château de sable
 - **to see** → voir
-- **sister** → sœur
-- **to sit** → s'asseoir
 - **story** → histoire
-- **summer** → été
-- **to tell** → raconter
-- **trip** → voyage
-- **water** → eau
+- **vacation** → vacances
 - **wedding** → mariage
-- **young** → jeune

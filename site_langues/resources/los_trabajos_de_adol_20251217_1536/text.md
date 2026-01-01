@@ -2,47 +2,60 @@
 langue: Espagnol (Espagne)
 prompt: Los trabajos de adolescentes en España, como cuidar niños o repartir periódicos
 resume: Les travaux des adolescents en Espagne
-longueur: 120
+longueur: 200
 niveau: A2
-genre: femme
+genre: homme
 drapeau: 🇪🇸
 voix_variant: esp
-date_generation: 2025-12-17 15:36:32
+date_generation: 2026-01-01 22:43:39
 ---
 
 ## Texto
 
-En España, algunos adolescentes trabajan para ganar dinero y tener experiencia. Hay trabajos populares como cuidar niños y repartir periódicos. Estos trabajos son comunes porque no requieren mucha experiencia y son flexibles con los horarios de estudio.
+En España, muchos adolescentes tienen trabajos a tiempo parcial para ganar un poco de dinero extra. Un trabajo común es cuidar niños. Algunas familias necesitan ayuda porque los padres trabajan hasta tarde. Los adolescentes cuidan a los niños después del colegio, juegan con ellos y preparan la cena. Es una buena manera de aprender responsabilidad y ganar experiencia.
 
-Cuidar niños es un trabajo ideal para los adolescentes que son responsables y pacientes. Muchas familias buscan jóvenes que puedan cuidar de sus hijos por las tardes o los fines de semana. Es importante ser amable y atento con los niños.
+Otro trabajo popular es repartir periódicos. Los adolescentes suelen repartir periódicos por la mañana antes de ir al colegio. Caminan o van en bicicleta a diferentes casas y dejan los periódicos. Este trabajo ayuda a los adolescentes a ser puntuales y organizados, ya que los periódicos deben entregarse a tiempo.
 
-Repartir periódicos es otra opción popular. Este trabajo se hace temprano por la mañana, antes de que empiecen las clases. Los adolescentes recorren el barrio en bicicleta o a pie para entregar los periódicos a los vecinos. Es una manera de hacer ejercicio y conocer mejor la comunidad.
+Además, algunos adolescentes trabajan en cafeterías o restaurantes durante los fines de semana. Ayudan como camareros o en la cocina. Este tipo de trabajo permite a los adolescentes mejorar sus habilidades de comunicación y trabajo en equipo.
 
-Ambos trabajos enseñan responsabilidad y ayudan a los adolescentes a ganar su propio dinero.
+A veces, los adolescentes trabajan en negocios familiares, como tiendas o pequeñas granjas. Ayudan en diferentes tareas y aprenden sobre el negocio. Esto también es una oportunidad para pasar tiempo con la familia.
+
+En general, los trabajos de adolescentes en España son una excelente manera de aprender y ganar dinero, mientras se equilibran los estudios y el tiempo libre.
 
 ## Vocabulario
 
 - **el adolescente** → l'adolescent
-- **amable** → aimable
-- **atento** → attentif
-- **el barrio** → le quartier
-- **la bicicleta** → la bicyclette
-- **la clase** → la classe
-- **la comunidad** → la communauté
+- **aprender** → apprendre
+- **la bicicleta** → le vélo
+- **la cafetería** → le café
+- **el camarero** → le serveur
+- **la casa** → la maison
+- **la cena** → le dîner
+- **la cocina** → la cuisine
+- **el colegio** → l'école
+- **el cuidado** → la garde
+- **cuidar** → garder
 - **el dinero** → l'argent
-- **el ejercicio** → l'exercice
-- **enseñar** → enseigner
+- **el equipo** → l'équipe
+- **el estudio** → l'étude
+- **la experiencia** → l'expérience
 - **la experiencia** → l'expérience
 - **la familia** → la famille
-- **el fin de semana** → le week-end
-- **el hijo** → le fils
-- **el joven** → le jeune
+- **el fin** → le week-end
+- **ganar** → gagner
+- **la granja** → la ferme
+- **la habilidad** → la compétence
 - **la mañana** → le matin
+- **el negocio** → le commerce
 - **el niño** → l'enfant
-- **paciente** → patient
+- **la oportunidad** → l'opportunité
+- **el padre** → le parent
 - **el periódico** → le journal
 - **repartir** → distribuer
-- **responsable** → responsable
-- **la tarde** → l'après-midi
+- **el restaurante** → le restaurant
+- **la tarea** → la tâche
+- **el tiempo** → le temps
+- **el tiempo libre** → le temps libre
+- **la tienda** → le magasin
+- **trabajar** → travailler
 - **el trabajo** → le travail
-- **el vecino** → le voisin

@@ -2,48 +2,60 @@
 langue: Néerlandais
 prompt: Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.
 resume: Les réseaux sociaux et les adolescents
-longueur: 150
+longueur: 200
 niveau: A2
 genre: femme
-date_generation: 2025-12-17 11:22:43
+drapeau: 🇳🇱
+voix_variant: nl
+date_generation: 2026-01-01 22:42:02
 ---
 
 ## Tekst
 
-Sociale media zijn erg belangrijk in het leven van tieners. Elke dag gebruiken veel tieners in landen zoals de Verenigde Staten sociale media. Ze communiceren met vrienden, delen foto's en video's, en volgen nieuws en trends. 
+Sociale media in het leven van tieners zijn erg belangrijk. In een land zoals de Verenigde Staten gebruiken veel tieners platforms als Instagram, Snapchat en TikTok. Deze platforms helpen hen om in contact te blijven met vrienden en familie. Het is makkelijk om foto's en video's te delen en nieuwe dingen te leren.
 
-Sociale media helpen tieners om te leren over wat er in de wereld gebeurt. Ze kunnen nieuwe ideeën en informatie vinden. Ook maken zij nieuwe vrienden, zelfs uit andere landen. Dit is positief voor hun sociale vaardigheden en culturele begrip.
+Sociale media hebben veel positieve kanten. Ze maken het mogelijk om snel met andere mensen te praten, zelfs als ze ver weg wonen. Tieners kunnen ook meer te weten komen over andere culturen en talen. Ze kunnen hun creativiteit laten zien door foto's en video's te maken en te delen.
 
-Maar er zijn ook risico's. Soms besteden tieners te veel tijd aan sociale media en vergeten ze hun huiswerk. Er kunnen ook problemen zijn met online pesten. Het is belangrijk dat tieners weten hoe ze veilig kunnen blijven online.
+Maar er zijn ook risico's. Bijvoorbeeld, er is het gevaar van cyberpesten. Soms schrijven mensen gemene dingen online, en dat kan anderen verdrietig maken. Ook kunnen tieners zich vergelijken met anderen die perfect lijken online, wat hen onzeker kan maken.
 
-Ouders en leraren moeten praten met tieners over het verstandig gebruik van sociale media. Ze moeten leren wanneer ze stoppen en wat ze wel en niet moeten delen. Zo kunnen sociale media een positieve rol spelen in het leven van tieners.
+Verder is het belangrijk dat tieners niet te veel tijd op sociale media doorbrengen. Het is goed om ook buiten te spelen en tijd met vrienden en familie door te brengen zonder scherm.
+
+In het algemeen zijn sociale media belangrijk in het leven van tieners, maar het is nodig om ze op een gezonde manier te gebruiken. Zo kunnen ze genieten van de voordelen en de risico's vermijden.
 
 ## Woordenschat
 
-- **het begrip** → la compréhension
-- **communiceren** → communiquer
+- **blijven** → rester
+- **het contact** → le contact
+- **de creativiteit** → la créativité
+- **de cultuur** → la culture
+- **het cyberpesten** → le cyberharcèlement
 - **delen** → partager
+- **de familie** → la famille
 - **de foto** → la photo
-- **het gebruik** → l'utilisation
-- **het huiswerk** → les devoirs
-- **het idee** → l'idée
-- **de informatie** → l'information
+- **gebruiken** → utiliser
+- **genieten** → profiter
+- **het gevaar** → le danger
+- **de gezondheid** → la santé
+- **de kant** → le côté
 - **het land** → le pays
-- **de leraar** → le professeur
+- **leren** → apprendre
 - **het leven** → la vie
-- **het nieuws** → les nouvelles
-- **de ouder** → le parent
-- **het pesten** → le harcèlement
-- **positief** → positif
-- **het probleem** → le problème
+- **de manier** → la manière
+- **de mensen** → les gens
+- **het nadeel** → le désavantage
+- **de onzekerheid** → l'incertitude
+- **het platform** → la plateforme
+- **praten** → parler
 - **het risico** → le risque
-- **de sociale_media** → les réseaux_sociaux
-- **de tiener** → l'adolescent
-- **de trend** → la tendance
-- **de vaardigheid** → la compétence
-- **veilig** → sûr
-- **vergeten** → oublier
+- **het scherm** → l'écran
+- **het spel** → le jeu
+- **de taal** → la langue
+- **de tieners** → les adolescents
+- **de tijd** → le temps
+- **de Verenigde Staten** → les États-Unis
+- **vergelijken** → comparer
+- **de vergelijking** → la comparaison
 - **de video** → la vidéo
-- **volgen** → suivre
-- **de vriend** → l'ami
-- **de wereld** → le monde
+- **het voordeel** → l'avantage
+- **het voordeel** → le bénéfice
+- **de vrienden** → les amis

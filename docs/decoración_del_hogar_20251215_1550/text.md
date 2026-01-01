@@ -2,69 +2,62 @@
 langue: Espagnol (Espagne)
 prompt: Decoración del hogar en Navidad
 resume: La décoration du foyer à Noël
-longueur: 200
+longueur: 250
 niveau: B1
-genre: homme
-date_generation: 2025-12-15 15:50:16
+genre: femme
+drapeau: 🇪🇸
+voix_variant: esp
+date_generation: 2026-01-01 22:50:46
 ---
 
 ## Texto
 
-La Navidad es una época especial del año en la que muchas personas decoran sus hogares para crear un ambiente festivo y acogedor. En España, la tradición de decorar la casa para esta temporada incluye varios elementos que transforman el hogar en un lugar mágico.
+La Navidad es una época del año muy especial, y decorar el hogar es una tradición que muchas familias en España disfrutan. La decoración navideña no solo embellece la casa, sino que también crea un ambiente cálido y acogedor.
 
-Uno de los elementos más importantes es el árbol de Navidad. Muchas familias colocan un árbol en su salón y lo decoran con luces, bolas de colores y estrellas. Además, es común poner un belén, que es una representación del nacimiento de Jesús. Algunas personas tienen belenes muy grandes y detallados que son verdaderas obras de arte.
+En primer lugar, un elemento esencial es el árbol de Navidad. Muchas familias optan por un árbol natural, pero también hay árboles artificiales que se pueden usar año tras año. Se decora con luces, bolas de colores y cintas. Además, algunos colocan una estrella en la cima. También es común añadir adornos especiales, como figuras de ángeles o Papá Noel.
 
-Otra decoración típica son las guirnaldas y coronas, que se colocan en las puertas y ventanas para dar la bienvenida a familiares y amigos. Las luces navideñas también son fundamentales; se pueden ver en balcones, fachadas y jardines, iluminando las noches frías de invierno.
+Además del árbol, otras decoraciones populares incluyen los belenes, que son representaciones del nacimiento de Jesús. Los belenes pueden ser simples o muy elaborados, y algunas personas dedican mucho tiempo a montar escenas detalladas con figuras de barro o cerámica. Muchos incluso participan en concursos de belenes en sus comunidades.
 
-Las velas y centros de mesa son populares para decorar el interior de la casa. Crean una atmósfera cálida y acogedora, perfecta para las cenas familiares. No hay que olvidar el muérdago, que según la tradición se coloca en el techo para atraer la buena suerte.
+No podemos olvidar los adornos para las ventanas y puertas. Las luces navideñas se usan para iluminar el exterior de las casas, y suelen tener formas de estrellas, copos de nieve o renos. También es común colgar guirnaldas de pino en la puerta principal y poner coronas decorativas.
 
-En resumen, la decoración del hogar en Navidad es una forma de compartir alegría y espíritu navideño con quienes nos rodean. Es un momento para ser creativos y disfrutar del proceso.
+Dentro de casa, se suelen usar centros de mesa con velas y flores de Pascua. Estas flores, de un rojo intenso, son un símbolo navideño clásico que no puede faltar. Por último, muchas familias colocan un calendario de adviento para contar los días que faltan hasta Navidad, añadiendo un toque de emoción para los más pequeños.
+
+Decorar el hogar en Navidad es una manera de compartir momentos alegres y crear recuerdos que durarán toda la vida.
 
 ## Vocabulario
 
-- **acogedor** → accueillant
-- **la alegría** → la joie
-- **el ambiente** → l'atmosphère
-- **los amigos** → les amis
-- **la atmósfera** → l'atmosphère
+- **los adornos** → les décorations
+- **el ambiente** → l'ambiance
 - **el año** → l'année
-- **los balcones** → les balcons
-- **el belén** → la crèche
-- **la bienvenida** → la bienvenue
+- **los belenes** → les crèches
 - **las bolas** → les boules
+- **el calendario de adviento** → le calendrier de l'Avent
 - **la casa** → la maison
-- **las cenas** → les dîners
-- **los centros** → les centres
-- **los colores** → les couleurs
+- **el centro de mesa** → le centre de table
+- **las cintas** → les rubans
+- **la comunidad** → la communauté
 - **las coronas** → les couronnes
-- **la creatividad** → la créativité
-- **creativos** → créatifs
-- **los elementos** → les éléments
-- **el espíritu** → l'esprit
-- **las estrellas** → les étoiles
-- **las fachadas** → les façades
+- **la decoración** → la décoration
+- **la emoción** → l'émotion
+- **la escena** → la scène
+- **la estrella** → l'étoile
+- **el exterior** → l'extérieur
 - **la familia** → la famille
-- **los familiares** → les membres de la famille
-- **festivo** → festif
-- **las guirnaldas** → les guirlandes
+- **la figura** → la figurine
+- **las flores de Pascua** → les poinsettias
+- **la guirnalda** → la guirlande
 - **el hogar** → le foyer
-- **los hogares** → les foyers
-- **el invierno** → l'hiver
-- **los jardines** → les jardins
 - **las luces** → les lumières
-- **las luces** → les lumières
-- **la mesa** → la table
-- **los momentos** → les moments
-- **el muérdago** → le gui
 - **el nacimiento** → la naissance
 - **la Navidad** → Noël
-- **las noches** → les nuits
-- **las personas** → les personnes
-- **el proceso** → le processus
+- **el Papá Noel** → le Père Noël
+- **la puerta** → la porte
 - **las puertas** → les portes
-- **la suerte** → la chance
-- **la temporada** → la saison
+- **los recuerdos** → les souvenirs
+- **el símbolo** → le symbole
 - **la tradición** → la tradition
 - **las velas** → les bougies
 - **las ventanas** → les fenêtres
+- **la vida** → la vie
+- **el ángel** → l'ange
 - **el árbol** → l'arbre

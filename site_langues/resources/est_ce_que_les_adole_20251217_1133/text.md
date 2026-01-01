@@ -2,45 +2,58 @@
 langue: Italien
 prompt: Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.
 resume: Les petits boulots pour les adolescents
-longueur: 150
+longueur: 200
 niveau: A2
 genre: femme
-date_generation: 2025-12-17 11:34:01
+drapeau: 🇮🇹
+voix_variant: it
+date_generation: 2026-01-01 22:47:29
 ---
 
 ## Testo
 
-In molti paesi anglofoni, come gli Stati Uniti, è comune per gli adolescenti avere un piccolo lavoro. Questo può essere un'ottima esperienza per loro. Credo che gli adolescenti dovrebbero avere un piccolo lavoro. Prima di tutto, lavorare part-time aiuta i giovani a imparare la responsabilità. Imparano a gestire il proprio tempo tra scuola, lavoro e tempo libero.
+Lavorare durante l'adolescenza è una questione importante. In molti paesi anglofoni, come gli Stati Uniti, è comune vedere adolescenti con piccoli lavori, chiamati "part-time job". Questi lavori possono essere in negozi, ristoranti o come babysitter. Ma, è una buona idea?
 
-Inoltre, avere un piccolo lavoro permette agli adolescenti di guadagnare i propri soldi. Questo li aiuta a essere più indipendenti e ad apprezzare il valore del denaro. Possono usare i loro guadagni per comprare cose che desiderano, come vestiti, libri o per risparmiare per l'università.
+Da un lato, avere un lavoro aiuta i ragazzi a guadagnare soldi. Possono usarli per comprare cose che vogliono, risparmiare o contribuire alle spese della famiglia. Inoltre, lavorare insegna il valore del denaro e come gestirlo. È anche un modo per imparare la responsabilità e migliorare le abilità sociali, conversando con clienti e colleghi.
 
-Infine, un lavoro part-time può anche insegnare nuove abilità. Per esempio, lavorare in un negozio o in un ristorante può migliorare le loro capacità comunicative e di lavoro di squadra. In conclusione, penso che avere un piccolo lavoro sia una buona idea per gli adolescenti, proprio come succede nei paesi anglofoni.
+Dall'altro lato, lavorare può essere difficile. Gli adolescenti devono andare a scuola, fare compiti e studiare. Avere un lavoro potrebbe rubare tempo prezioso per l'istruzione e il riposo. Alcuni ragazzi potrebbero sentirsi stressati o stanchi. È importante non dimenticare che la scuola deve essere la priorità.
+
+In conclusione, avere un piccolo lavoro può essere utile, ma è fondamentale trovare un equilibrio. Gli adolescenti dovrebbero parlare con i genitori e decidere insieme. Un lavoro part-time può essere una buona esperienza, se non interferisce troppo con la scuola e altre attività importanti.
 
 ## Vocabolario
 
-- **le capacità** → les capacités
-- **la comunicazione** → la communication
-- **la cultura** → la culture
+- **le abilità** → les compétences
+- **gli adolescenti** → les adolescents
+- **i clienti** → les clients
+- **i colleghi** → les collègues
+- **i compiti** → les devoirs
+- **comprare** → acheter
+- **comune** → commun
+- **contribuire** → contribuer
+- **decidere** → décider
 - **il denaro** → l'argent
-- **il giovane** → le jeune
-- **il guadagno** → le gain
-- **l'abilità** → l'aptitude
-- **l'adolescente** → l'adolescent
+- **dimenticare** → oublier
+- **la famiglia** → la famille
+- **i genitori** → les parents
+- **gestire** → gérer
+- **imparare** → apprendre
+- **importante** → important
+- **l'equilibrio** → l'équilibre
 - **l'esperienza** → l'expérience
 - **l'idea** → l'idée
-- **l'indipendenza** → l'indépendance
-- **l'università** → l'université
+- **l'istruzione** → l'éducation
 - **il lavoro** → le travail
-- **il libro** → le livre
+- **migliorare** → améliorer
 - **il negozio** → le magasin
-- **il paese** → le pays
-- **il punto** → le point
+- **il ragazzo** → le garçon
 - **la responsabilità** → la responsabilité
+- **il riposo** → le repos
 - **il ristorante** → le restaurant
+- **rubare** → voler
 - **la scuola** → l'école
-- **i soldi** → les sous
-- **la squadra** → l'équipe
-- **gli Stati** → les États
+- **sentirsi** → se sentir
+- **gli Stati Uniti** → les États-Unis
+- **lo stress** → le stress
 - **il tempo** → le temps
-- **il valore** → la valeur
-- **i vestiti** → les vêtements
+- **utile** → utile
+- **valere** → valoir

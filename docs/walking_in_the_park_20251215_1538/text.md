@@ -2,60 +2,61 @@
 langue: Anglais (UK)
 prompt: Walking in the Park
 resume: La marche dans le parc
-longueur: 200
+longueur: 250
 niveau: B1
 genre: femme
-date_generation: 2025-12-15 15:39:02
+drapeau: 🇬🇧
+voix_variant: eng
+date_generation: 2026-01-01 22:52:24
 ---
 
 ## Text
 
-Walking in the park is a wonderful way to enjoy nature and relax. Every Saturday morning, I like to visit the local park near my home. It's a big park with many walking paths, beautiful trees, and colorful flowers. It's the perfect place to unwind after a busy week.
+Walking in the park is one of my favorite activities, especially on a sunny day. The park near my house is full of beautiful trees, colorful flowers, and chirping birds. Walking there helps me relax and clear my mind after a busy day. 
 
-When I arrive, the first thing I notice is the fresh air. It's much cleaner and more refreshing than in the city. I often see people jogging, walking their dogs, or just sitting on benches reading a book. The sound of birds singing is very calming and adds to the peaceful atmosphere.
+Every morning, many people gather in the park to enjoy the fresh air. Some are jogging along the path, while others do yoga on the grass. I often see families with children playing on the playground or having a picnic. It’s a lively scene, full of laughter and joy. Walking around, I often meet friendly dogs with their owners. Sometimes, I stop to pet them and chat with the owners. It’s a good way to meet new people and make friends.
 
-As I walk, I take time to admire the different plants and animals. Sometimes, I see ducks swimming in the pond or squirrels playing in the trees. There's also a small playground where children are laughing and playing, which always brings a smile to my face.
+Walking in the park is not only fun but also healthy. It’s good exercise for my body and helps me stay fit. I love feeling the sun on my face and the gentle breeze as I walk. I sometimes listen to music or a podcast while walking, which makes the experience even more enjoyable. 
 
-Walking in the park gives me time to think and clear my mind. It's a moment to escape from technology and enjoy the simple pleasures of life. I believe that spending time in nature is good for both the body and the mind. Every time I leave the park, I feel more relaxed and happy.
+In the park, there is also a small lake. Ducks and swans swim gracefully, and people often feed them pieces of bread. I like to sit on the bench by the lake and watch the water. It’s a peaceful moment that I truly cherish. 
+
+Walking in the park gives me time to think and appreciate nature. It reminds me of the simple joys of life and how important it is to take a break and enjoy our surroundings.
 
 ## Vocabulary
 
 - **air** → air
-- **animal** → animal
-- **atmosphere** → atmosphère
 - **bench** → banc
 - **bird** → oiseau
-- **book** → livre
+- **body** → corps
+- **breeze** → brise
 - **child** → enfant
-- **city** → ville
+- **day** → jour
+- **to do yoga** → faire du yoga
 - **dog** → chien
 - **duck** → canard
+- **exercise** → exercice
+- **family** → famille
+- **favorite** → favori
 - **flower** → fleur
-- **fresh** → frais
-- **home** → maison
-- **to jog** → courir
-- **to laugh** → rire
-- **life** → vie
+- **friend** → ami
+- **grass** → herbe
+- **house** → maison
+- **to jog** → faire du jogging
+- **lake** → lac
+- **laughter** → rire
+- **to meet** → rencontrer
 - **mind** → esprit
-- **morning** → matin
+- **music** → musique
 - **nature** → nature
+- **owner** → propriétaire
 - **park** → parc
 - **path** → chemin
 - **people** → gens
-- **place** → endroit
-- **plant** → plante
+- **picnic** → pique-nique
 - **playground** → aire de jeux
-- **pleasure** → plaisir
-- **pond** → étang
+- **podcast** → podcast
 - **to relax** → se détendre
-- **to see** → voir
-- **to sing** → chanter
-- **to sit** → s'asseoir
-- **sound** → son
-- **squirrel** → écureuil
-- **technology** → technologie
+- **scene** → scène
+- **sunny** → ensoleillé
 - **tree** → arbre
-- **to unwind** → se relaxer
-- **to visit** → visiter
 - **to walk** → marcher
-- **week** → semaine

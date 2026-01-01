@@ -1,61 +1,63 @@
 ---
 langue: Espagnol (Espagne)
 prompt: Menú navideño saludable
-resume: Le menu de Noël sain
-longueur: 200
+resume: Menu de Noël sain
+longueur: 250
 niveau: B1
 genre: homme
-date_generation: 2025-12-15 15:50:00
+drapeau: 🇪🇸
+voix_variant: esp
+date_generation: 2026-01-01 22:43:26
 ---
 
 ## Texto
 
-El menú navideño puede ser tanto delicioso como saludable, sin perder la esencia de la celebración. Para empezar, una buena opción es ofrecer una crema de calabaza como entrante. Este plato es ligero y nutritivo, ideal para preparar el estómago para el resto del banquete. Además, la calabaza es rica en fibra y vitaminas.
+La Navidad es una época del año llena de celebraciones, reuniones familiares y, por supuesto, comidas deliciosas. Sin embargo, muchas veces se asocia con platos abundantes y poco saludables. Pero, ¿qué tal si este año probamos un menú navideño saludable que no sacrifique el sabor?
 
-Como plato principal, el pavo al horno es una elección clásica y saludable. Cuando se cocina con hierbas como el romero y el tomillo, adquiere un sabor delicioso. Se recomienda acompañarlo con guarniciones de verduras asadas, como zanahorias y espárragos, que añaden color y beneficios nutricionales al plato.
+Para empezar, podemos preparar una ensalada de hojas verdes con granada y nueces. La granada le dará un toque dulce y colorido, mientras que las nueces añadirán esa textura crujiente que tanto nos gusta. Un poco de aceite de oliva y vinagre balsámico bastará para aliñarla.
 
-Para el postre, una opción saludable es preparar una macedonia de frutas frescas de temporada. Se puede incluir piña, kiwi, y uvas, que son frutas típicas de esta época del año. Si se desea algo más especial, se puede añadir un toque de canela o menta para realzar el sabor.
+Como plato principal, el pescado es una excelente opción. Un buen lomo de salmón al horno, por ejemplo, es fácil de preparar y muy nutritivo. Se puede cocinar con hierbas aromáticas como el romero y el tomillo, y acompañar con una guarnición de verduras al vapor, como brócoli y espárragos. 
 
-Por último, para brindar, elegir un buen vino tinto o una sidra natural complementa el menú sin añadir excesivas calorías. Así, con estas opciones, es posible disfrutar de una cena de Navidad sabrosa y saludable que cuida de todos los comensales.
+Para el postre, un sorbete de frutas naturales es refrescante y ligero. También podemos optar por una macedonia de frutas con un toque de canela. Esto no solo ayudará con la digestión, sino que también nos permitirá disfrutar de un dulce placer sin culpa.
+
+En cuanto a las bebidas, en lugar de refrescos azucarados, podemos servir agua con cítricos o un té helado sin azúcar. Ambos son opciones refrescantes y saludables.
+
+Con este tipo de menú, no solo disfrutaremos de una comida deliciosa, sino que también cuidaremos de nuestra salud. Así, podemos disfrutar de las fiestas con energía y bienestar. ¡Feliz Navidad!
 
 ## Vocabulario
 
-- **el banquete** → le banquet
-- **los beneficios** → les bénéfices
-- **la calabaza** → le potiron
-- **las calorías** → les calories
+- **el aceite** → l'huile
+- **el agua** → l'eau
+- **el azúcar** → le sucre
+- **el año** → l'année
+- **el balsámico** → balsamique
+- **la bebida** → la boisson
+- **el brócoli** → le brocoli
 - **la canela** → la cannelle
-- **la cena** → le dîner
-- **el color** → la couleur
-- **los comensales** → les convives
-- **la crema** → la crème
-- **delicioso** → délicieux
-- **el entrante** → l'entrée
-- **los espárragos** → les asperges
-- **el estómago** → l'estomac
-- **la fibra** → la fibre
-- **las frutas** → les fruits
-- **las guarniciones** → les accompagnements
-- **las hierbas** → les herbes
+- **la celebración** → la célébration
+- **la comida** → la nourriture
+- **el cítrico** → l'agrume
+- **la ensalada** → la salade
+- **el espárrago** → l'asperge
+- **la fruta** → le fruit
+- **la granada** → la grenade
+- **la hierba** → l'herbe
 - **el horno** → le four
-- **el kiwi** → le kiwi
-- **la macedonia** → la macédoine
-- **la menta** → la menthe
-- **el menú** → le menu
-- **la Navidad** → le Noël
-- **la nutrición** → la nutrition
-- **el pavo** → la dinde
-- **la piña** → l'ananas
+- **el lomo** → le filet
+- **la Navidad** → Noël
+- **la nuez** → la noix
+- **el oliva** → l'olive
+- **el pescado** → le poisson
 - **el plato** → le plat
 - **el postre** → le dessert
-- **el romero** → le romarin
+- **el refresco** → le soda
+- **la reunión** → la réunion
 - **el sabor** → la saveur
-- **saludable** → sain
-- **la sidra** → le cidre
-- **la temporada** → la saison
-- **el tomillo** → le thym
-- **las uvas** → les raisins
-- **las verduras** → les légumes
-- **el vino** → le vin
-- **las vitaminas** → les vitamines
-- **las zanahorias** → les carottes
+- **el salmón** → le saumon
+- **la salud** → la santé
+- **el sorbete** → le sorbet
+- **el té** → le thé
+- **el vapor** → la vapeur
+- **la verdura** → le légume
+- **el vinagre** → le vinaigre
+- **la época** → l'époque

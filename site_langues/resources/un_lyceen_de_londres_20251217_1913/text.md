@@ -1,56 +1,61 @@
 ---
 langue: Anglais (UK)
 prompt: Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.
-resume: Les passe-temps et la vie à Londres
-longueur: 150
+resume: Les passe-temps et la famille à Londres
+longueur: 200
 niveau: A2
 genre: homme
 drapeau: 🇬🇧
 voix_variant: eng
-date_generation: 2025-12-17 19:14:02
+date_generation: 2026-01-01 22:45:21
 ---
 
 ## Text
 
-Hello! My name is Tom and I am a high school student in London. I want to tell you about my hobbies, my family, and my favorite places in my city.
+Hello! My name is James, and I am a high school student in London. I want to tell you about my hobbies, my family, and my favorite places in my city. 
 
-I have many hobbies. I love playing football with my friends in the park. We play every Saturday. It is very fun and good exercise. I also like listening to music. My favorite band is Coldplay. Their songs are amazing! I often listen to them when I do my homework.
+In my free time, I love to play football with my friends. We often play in the park near my house. I also enjoy reading books, especially adventure stories. Sometimes, I play video games, but not too much because I have to study.
 
-I have a small family. I live with my parents and my little sister. My sister's name is Anna and she is 10 years old. She is very funny and we like to watch movies together. My parents work in the city. My mom is a teacher and my dad is an engineer.
+I live with my family in a small house. My mom is a nurse, and she works at the hospital. My dad is a teacher at a nearby school. I have a younger sister named Emily. She is 10 years old and very funny. We like to watch movies together.
 
-London is a big and interesting city. My favorite place is Hyde Park. It is very beautiful and I like to walk there. I also love the London Eye. The view from the top is fantastic!
+London is a big city with many interesting places. My favorite place is the British Museum. I like to see the old objects and learn about history. I also enjoy visiting Hyde Park. It is a nice place to relax and have a picnic. Sometimes, we see ducks and birds there.
 
-Thank you for reading about my life in London!
+On weekends, my friends and I like to go to the Science Museum. It is very exciting because we can try different experiments and learn new things. London is a wonderful city with so much to explore!
 
 ## Vocabulary
 
-- **to be** → être
-- **beautiful** → beau
+- **adventure** → aventure
+- **birds** → oiseaux
+- **books** → livres
 - **city** → ville
-- **engineer** → ingénieur
+- **dad** → papa
+- **ducks** → canards
+- **to enjoy** → apprécier
+- **experiments** → expériences
+- **to explore** → explorer
 - **family** → famille
-- **fantastic** → fantastique
 - **football** → football
 - **friends** → amis
 - **funny** → drôle
+- **history** → histoire
 - **hobbies** → passe-temps
-- **homework** → devoirs
+- **hospital** → hôpital
+- **house** → maison
 - **Hyde Park** → Hyde Park
-- **life** → vie
-- **to listen** → écouter
-- **London Eye** → London Eye
-- **to love** → aimer
+- **mom** → maman
 - **movies** → films
-- **music** → musique
+- **museum** → musée
 - **name** → nom
-- **parents** → parents
+- **nurse** → infirmière
+- **park** → parc
+- **picnic** → pique-nique
+- **places** → endroits
 - **to play** → jouer
+- **to relax** → se détendre
+- **school** → école
 - **sister** → sœur
-- **songs** → chansons
+- **stories** → histoires
 - **student** → étudiant
-- **teacher** → enseignant
-- **top** → sommet
-- **view** → vue
-- **to walk** → marcher
-- **to watch** → regarder
-- **to work** → travailler
+- **to study** → étudier
+- **teacher** → professeur
+- **weekends** → week-ends

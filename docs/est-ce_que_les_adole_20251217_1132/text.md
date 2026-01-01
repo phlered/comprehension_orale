@@ -2,47 +2,60 @@
 langue: Espagnol (Espagne)
 prompt: Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.
 resume: Les petits boulots pour les adolescents
-longueur: 150
+longueur: 200
 niveau: A2
-genre: femme
-date_generation: 2025-12-17 11:32:58
+genre: homme
+drapeau: 🇪🇸
+voix_variant: esp
+date_generation: 2026-01-01 22:48:53
 ---
 
 ## Texto
 
-En muchos países anglófonos, es común que los adolescentes tengan un pequeño trabajo después de la escuela o durante las vacaciones. Por ejemplo, en Estados Unidos, muchos jóvenes trabajan en restaurantes, tiendas o como canguros. Tener un trabajo a esta edad tiene varias ventajas.
+En mi opinión, los adolescentes deberían tener un pequeño trabajo. En muchos países anglófonos, como Estados Unidos, es común que los jóvenes trabajen a tiempo parcial mientras estudian. Esto tiene varias ventajas.
 
-Primero, los adolescentes ganan su propio dinero y aprenden a gestionarlo. Esto es importante para ser más responsables. Además, trabajando, los jóvenes adquieren experiencia que puede ser útil para futuros trabajos. Otra ventaja es que conocer gente nueva en su entorno laboral es una oportunidad para mejorar sus habilidades sociales.
+Primero, trabajar les ayuda a ser más responsables. Cuando tienen un trabajo, aprenden a cumplir con horarios y a ser puntuales. Además, entienden mejor el valor del dinero. Ganar su propio dinero les enseña a ahorrar y a gastar con cuidado.
 
-Sin embargo, algunos pueden pensar que trabajar puede distraer a los adolescentes de sus estudios. Esto es posible si no organizan bien su tiempo. Por eso, es importante encontrar un equilibrio entre el trabajo y el estudio.
+Segundo, tener un trabajo ofrece experiencia laboral que puede ser útil en el futuro. Por ejemplo, si un joven trabaja en una tienda, aprende a tratar con clientes y a trabajar en equipo. Estas habilidades son valiosas en cualquier trabajo.
 
-En resumen, tener un pequeño trabajo puede ser algo positivo para los adolescentes si se organizan bien y no descuidan sus estudios.
+También, un pequeño trabajo puede hacer que los adolescentes sean más independientes. Con su propio dinero, pueden pagar sus cosas, como ropa o salidas con amigos, sin depender de sus padres.
+
+Sin embargo, es importante que el trabajo no interfiera con los estudios. Los adolescentes deben encontrar un equilibrio entre el trabajo, la escuela y el tiempo libre. En resumen, un pequeño trabajo puede ser beneficioso siempre que se mantenga el equilibrio adecuado.
 
 ## Vocabulario
 
-- **los adolescentes** → les adolescents
-- **aprenden** → ils apprennent
-- **conocer** → rencontrer
+- **el adolescente** → l'adolescent
+- **ahorrar** → économiser
+- **los amigos** → les amis
+- **aprender** → apprendre
+- **el cliente** → le client
+- **cumplir** → accomplir
 - **el dinero** → l'argent
-- **distraer** → distraire
-- **el entorno** → l'environnement
+- **encontrar** → trouver
+- **enseñar** → enseigner
 - **el equilibrio** → l'équilibre
+- **el equipo** → l'équipe
 - **la escuela** → l'école
 - **los estudios** → les études
 - **la experiencia** → l'expérience
-- **el futuro** → l'avenir
-- **ganar** → gagner
-- **gente** → gens
-- **gestionarlo** → le gérer
-- **las habilidades** → les compétences
-- **los jóvenes** → les jeunes
-- **mejorar** → améliorer
-- **la oportunidad** → l'opportunité
-- **los países** → les pays
-- **las responsabilidades** → les responsabilités
-- **los restaurantes** → les restaurants
-- **teniendo** → ayant
-- **las tiendas** → les magasins
+- **el futuro** → le futur
+- **la habilidad** → la compétence
+- **el horario** → l'horaire
+- **la independencia** → l'indépendance
+- **independiente** → indépendant
+- **interferir** → interférer
+- **el joven** → le jeune
+- **mantener** → maintenir
+- **mejor** → mieux
+- **los padres** → les parents
+- **pagar** → payer
+- **el país** → le pays
+- **responsable** → responsable
+- **la ropa** → les vêtements
+- **el tiempo** → le temps
+- **la tienda** → le magasin
 - **el trabajo** → le travail
-- **las vacaciones** → les vacances
-- **las ventajas** → les avantages
+- **valioso** → précieux
+- **el valor** → la valeur
+- **la ventaja** → l'avantage
+- **útil** → utile

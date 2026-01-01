@@ -2,65 +2,68 @@
 langue: Espagnol (Espagne)
 prompt: Carta a los Reyes Magos
 resume: La carta a los Reyes Magos
-longueur: 200
+longueur: 250
 niveau: B1
-genre: homme
-date_generation: 2025-12-15 15:49:24
+genre: femme
+drapeau: 🇪🇸
+voix_variant: esp
+date_generation: 2026-01-01 22:51:15
 ---
 
 ## Texto
 
 Queridos Reyes Magos,
 
-Espero que al recibir esta carta, se encuentren bien después de su largo viaje desde Oriente. Este año he sido bastante bueno, aunque sé que siempre hay espacio para mejorar. Quería contarles algunas de mis esperanzas para este Día de Reyes.
+Espero que se encuentren bien. Me llamo Ana y tengo 12 años. Este año ha sido muy especial para mí porque he aprendido muchas cosas nuevas en la escuela y he hecho nuevos amigos. También he intentado portarme bien tanto en casa como en clase, aunque a veces sea difícil.
 
-Primero, me gustaría pedirles un libro de aventuras. Me encanta perderme entre páginas llenas de misterios y personajes intrigantes. También he pensado mucho en lo útil que sería recibir un juego de mesa para poder disfrutar de momentos divertidos en familia. En estos tiempos, es importante compartir experiencias con nuestros seres queridos.
+Quería escribirles para compartir mi lista de deseos para este año. Sé que el espíritu de esta época no es solo recibir regalos, sino también compartir momentos especiales con la familia y los amigos. Aun así, tengo mucha ilusión por contarles lo que me gustaría recibir.
 
-Además, sería maravilloso si pudieran traerme una bicicleta nueva. La que tengo ya está bastante vieja y me gustaría poder pasear por el parque con una más moderna. Practicar deporte siempre es una buena idea y quiero aprovechar para mantenerme activo.
+En primer lugar, me encantaría un libro de aventuras. Últimamente, he estado leyendo mucho y he descubierto que me encanta viajar a mundos nuevos a través de las historias. Además, he mejorado mi vocabulario y lectura, ¡y mi profesor está muy contento!
 
-Por último, quiero pedir que nos traigan paz y salud a todos. Sé que esta tarea es difícil, pero tengo fe en que ustedes pueden hacer magia. Espero que la luz de su estrella siga guiando a los hogares de todo el mundo, llenándolos de amor y esperanza.
+También me gustaría recibir un set de pintura. Me gusta mucho dibujar y pintar; me relaja y es una manera genial de expresar mis emociones. Quiero experimentar con nuevas técnicas y colores.
 
-Con mucha ilusión y cariño,
+Finalmente, aunque esto no es un objeto, me gustaría pedir que mi familia siga estando unida y feliz. Este año hemos pasado por algunas dificultades, pero creo que lo más importante es que nos tenemos los unos a los otros.
 
-[Tu Nombre]
+Gracias por todo lo que hacen y por mantener viva esta hermosa tradición. Espero que tengan un buen viaje y que visiten muchos hogares llenos de alegría y amor.
+
+Con cariño,
+
+Ana
 
 ## Vocabulario
 
+- **el amigo** → l'ami
 - **el amor** → l'amour
-- **las aventuras** → les aventures
+- **la aventura** → l'aventure
 - **el año** → l'année
-- **la bicicleta** → la bicyclette
-- **la carta** → la lettre
+- **la casa** → la maison
+- **la clase** → la classe
+- **el color** → la couleur
 - **compartir** → partager
-- **el deporte** → le sport
-- **encantar** → ravir
-- **encontrar** → rencontrer
-- **la esperanza** → l'espoir
-- **la estrella** → l'étoile
-- **las experiencias** → les expériences
+- **descubrir** → découvrir
+- **el deseo** → le souhait
+- **la emoción** → l'émotion
+- **encantar** → adorer
+- **la escuela** → l'école
+- **expresar** → exprimer
 - **la familia** → la famille
-- **la fe** → la foi
-- **guiar** → guider
-- **los hogares** → les foyers
-- **la idea** → l'idée
-- **el juego de mesa** → le jeu de société
+- **la historia** → l'histoire
+- **el hogar** → le foyer
+- **ilusionar** → enthousiasmer
+- **leer** → lire
 - **el libro** → le livre
-- **la luz** → la lumière
-- **la magia** → la magie
+- **la lista** → la liste
 - **mejorar** → améliorer
-- **el misterio** → le mystère
-- **los momentos** → les moments
-- **el mundo** → le monde
-- **el parque** → le parc
-- **la paz** → la paix
+- **el momento** → le moment
+- **el objeto** → l'objet
+- **pasar** → passer
 - **pedir** → demander
-- **los personajes** → les personnages
-- **practicar** → pratiquer
-- **las páginas** → les pages
-- **queridos** → chers
+- **la pintura** → la peinture
+- **querer** → vouloir/aimer
 - **recibir** → recevoir
-- **los Reyes Magos** → les Rois Mages
-- **la salud** → la santé
-- **los seres queridos** → les êtres chers
-- **la tarea** → la tâche
-- **los tiempos** → les temps
+- **el regalo** → le cadeau
+- **relajar** → détendre
+- **el set** → le kit
+- **tener** → avoir
+- **la técnica** → la technique
+- **el viaje** → le voyage

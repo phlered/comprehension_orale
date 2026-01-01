@@ -714,12 +714,15 @@
                 return word.trim();
             };
 
-            // Construire une table mot normalisé -> traduction
+            // Construire une table mot normalisé -> traduction (ignore si traduction identique au mot)
             const transByWord = new Map();
             vocabList.forEach(item => {
                 const key = normalizeWord(item.word).toLowerCase();
-                if (key.length > 2 && !transByWord.has(key)) {
-                    transByWord.set(key, (item.translation || '').toString());
+                const translation = (item.translation || '').toString();
+                const translationNormalized = normalizeWord(translation).toLowerCase();
+                // Ne pas surligner si la "traduction" est identique au mot (ex: noms propres)
+                if (key.length > 2 && key !== translationNormalized && !transByWord.has(key)) {
+                    transByWord.set(key, translation);
                 }
             });
 

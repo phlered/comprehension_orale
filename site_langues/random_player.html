@@ -508,10 +508,21 @@
             // Récupérer la langue depuis l'URL
             const urlParams = new URLSearchParams(window.location.search);
             const langParam = urlParams.get('lang');
+            const niveauParam = urlParams.get('niveau');
             
             if (langParam && LANGUAGE_CONFIG[langParam]) {
                 currentLanguage = langParam;
                 languageResources = allResources.filter(r => r.langue === currentLanguage);
+                
+                // Restaurer le niveau depuis l'URL (prioritaire) ou localStorage
+                const savedNiveau = niveauParam || localStorage.getItem('selectedNiveau');
+                if (savedNiveau) {
+                    const filterSelect = document.getElementById('filterNiveau');
+                    filterSelect.value = savedNiveau;
+                    // Propager dans localStorage pour les autres pages
+                    localStorage.setItem('selectedNiveau', savedNiveau);
+                }
+                
                 updateFilteredResources();
             } else {
                 // Afficher un sélecteur de langue
@@ -555,7 +566,19 @@
             // Mettre à jour l'URL
             const url = new URL(window.location);
             url.searchParams.set('lang', langCode);
+            const currentNiveau = document.getElementById('filterNiveau').value || localStorage.getItem('selectedNiveau');
+            if (currentNiveau) {
+                url.searchParams.set('niveau', currentNiveau);
+            } else {
+                url.searchParams.delete('niveau');
+            }
             window.history.pushState({}, '', url);
+            
+            // Restaurer le niveau depuis localStorage avant de filtrer
+            const savedNiveau = localStorage.getItem('selectedNiveau');
+            if (savedNiveau) {
+                document.getElementById('filterNiveau').value = savedNiveau;
+            }
             
             // Initialiser les ressources filtrées
             updateFilteredResources();
@@ -567,9 +590,12 @@
             
             const niveauFilter = document.getElementById('filterNiveau').value;
             
+            // Sauvegarder le niveau dans localStorage
             if (niveauFilter) {
+                localStorage.setItem('selectedNiveau', niveauFilter);
                 filteredResources = languageResources.filter(r => r.niveau === niveauFilter);
             } else {
+                localStorage.removeItem('selectedNiveau');
                 filteredResources = [...languageResources];
             }
             

@@ -13,6 +13,8 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                updateRandomPlayerLink();
+                updateRandomPlayerLink();
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
@@ -484,8 +486,15 @@
             document.getElementById('language-name').textContent = config.name;
             document.title = `${config.name} - Ressources Audio`;
             
-            // Mettre à jour le lien du lecteur aléatoire
-            document.getElementById('random-player-link').href = `random_player.html?lang=${currentLanguage}`;
+            // Restaurer le niveau depuis localStorage
+            const savedNiveau = localStorage.getItem('selectedNiveau');
+            if (savedNiveau) {
+                document.getElementById('filter-niveau').value = savedNiveau;
+                currentNiveauFilter = savedNiveau;
+            }
+            
+            // Mettre à jour les liens dépendants du niveau/langue
+            updateRandomPlayerLink();
             updateGlobalQuizLink();
             
             // Charger les métadonnées
@@ -536,13 +545,30 @@
             if (link) link.href = href;
         }
 
+        // Mettre à jour le lien vers le lecteur aléatoire (respecte le niveau filtré)
+        function updateRandomPlayerLink() {
+            const niveauFilter = document.getElementById('filter-niveau').value;
+            const base = `random_player.html?lang=${currentLanguage}`;
+            const href = niveauFilter ? `${base}&niveau=${niveauFilter}` : base;
+            const link = document.getElementById('random-player-link');
+            if (link) link.href = href;
+        }
+
         // Configurer les événements
         function setupEventListeners() {
             document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
             document.getElementById('filter-niveau').addEventListener('change', () => {
                 currentNiveauFilter = document.getElementById('filter-niveau').value;
+                // Sauvegarder le niveau dans localStorage
+                if (currentNiveauFilter) {
+                    localStorage.setItem('selectedNiveau', currentNiveauFilter);
+                } else {
+                    localStorage.removeItem('selectedNiveau');
+                }
                 filterAndDisplayResources();
                 updateVocabButtonLink();
+                updateRandomPlayerLink();
+                updateGlobalQuizLink();
             });
             document.getElementById('toggle-vocab-btn').addEventListener('click', navigateToVocab);
         }

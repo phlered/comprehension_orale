@@ -156,7 +156,15 @@
         async function init() {
             const params = new URLSearchParams(window.location.search);
             const langParam = params.get('lang') || '';
-            const levelParam = params.get('niveau') || '';
+            let levelParam = params.get('niveau') || '';
+            
+            // Si pas de niveau dans l'URL, restaurer depuis localStorage
+            if (!levelParam) {
+                const savedNiveau = localStorage.getItem('selectedNiveau');
+                if (savedNiveau) {
+                    levelParam = savedNiveau;
+                }
+            }
 
             if (!langParam || !LANGUAGE_CONFIG[langParam]) {
                 setStatus('Aucune langue sélectionnée. Retournez à l\'accueil et choisissez une langue.', true);
@@ -229,6 +237,13 @@
 
         async function loadVocabularyOnly() {
             currentLevel = document.getElementById('niveauSelect').value;
+            
+            // Sauvegarder le niveau dans localStorage
+            if (currentLevel) {
+                localStorage.setItem('selectedNiveau', currentLevel);
+            } else {
+                localStorage.removeItem('selectedNiveau');
+            }
 
             if (!currentLanguage) {
                 setStatus('Aucune langue sélectionnée.', true);

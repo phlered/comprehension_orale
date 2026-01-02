@@ -626,6 +626,11 @@
             
             await loadResource(resourceId);
             setupEventListeners();
+            
+            // Sauvegarder le niveau de la ressource actuelle dans localStorage
+            if (currentResource && currentResource.niveau) {
+                localStorage.setItem('selectedNiveau', currentResource.niveau);
+            }
         }
 
         // Charger la ressource

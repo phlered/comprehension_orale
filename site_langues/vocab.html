@@ -280,6 +280,14 @@
         async function init() {
             currentLanguage = getLanguageFromURL();
             currentNiveau = getNiveauFromURL();
+            
+            // Si pas de niveau dans l'URL, restaurer depuis localStorage
+            if (!currentNiveau) {
+                const savedNiveau = localStorage.getItem('selectedNiveau');
+                if (savedNiveau) {
+                    currentNiveau = savedNiveau;
+                }
+            }
 
             const config = LANGUAGE_CONFIG[currentLanguage];
             document.getElementById('language-flag').textContent = config.flag;

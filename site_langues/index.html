@@ -61,6 +61,8 @@
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 15px;
             margin-top: 30px;
+            justify-items: stretch;
+            align-items: stretch;
         }
 
         @media (min-width: 769px) {
@@ -85,6 +87,11 @@
             text-decoration: none;
             color: #333;
             border: 3px solid transparent;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .language-card:hover {

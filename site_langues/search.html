@@ -298,6 +298,7 @@
                 <span id="language-name"></span>
             </h1>
             <a href="#" id="random-player-link" class="back-btn" style="margin-left: auto;">🎲 Aléatoire</a>
+            <a href="#" id="global-quiz-link" class="back-btn" style="margin-left: 10px;">🎯 Quiz global</a>
         </div>
         
         <div class="search-container">
@@ -370,6 +371,7 @@
             
             // Mettre à jour le lien du lecteur aléatoire
             document.getElementById('random-player-link').href = `random_player.html?lang=${currentLanguage}`;
+            updateGlobalQuizLink();
             
             // Charger les métadonnées
             await loadMetadata();
@@ -410,6 +412,15 @@
             // Fonction conservée pour compatibilité (vide - axes pas affichés)
         }
 
+        // Mettre à jour le lien vers le quiz global (respecte le niveau filtré)
+        function updateGlobalQuizLink() {
+            const niveauFilter = document.getElementById('filter-niveau').value;
+            const base = `global_quiz.html?lang=${currentLanguage}`;
+            const href = niveauFilter ? `${base}&niveau=${niveauFilter}` : base;
+            const link = document.getElementById('global-quiz-link');
+            if (link) link.href = href;
+        }
+
         // Configurer les événements
         function setupEventListeners() {
             document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
@@ -435,6 +446,7 @@
             
             displayResources();
             updateStats();
+            updateGlobalQuizLink();
         }
 
         // Afficher les ressources

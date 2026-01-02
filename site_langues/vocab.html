@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulaire - Ressources Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .back-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+            flex-shrink: 0;
+        }
+
+        .back-btn:hover {
+            background: #5568d3;
+        }
+
+        .header-title {
+            font-size: 1.8em;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vocab-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .vocab-count {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .vocab-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-label {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.95em;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .vocab-status {
+            color: #555;
+            font-size: 0.9em;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .vocab-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .vocab-item {
+            background: #f8fafc;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .vocab-word {
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .vocab-translation {
+            color: #4a5568;
+            margin-left: 6px;
+        }
+
+        .vocab-source {
+            display: block;
+            color: #94a3b8;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            padding: 40px;
+        }
+
+        .no-results {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .no-results-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-title {
+                font-size: 1.5em;
+                width: 100%;
+            }
+
+            .back-btn {
+                align-self: flex-start;
+            }
+
+            .vocab-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .vocab-controls {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .filter-select {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 15px;
+            }
+
+            .header-title {
+                font-size: 1.3em;
+            }
+
+            .vocab-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#" id="backLink" class="back-btn">← Retour</a>
+            <h1 class="header-title">
+                <span id="language-flag"></span>
+                <span>Vocabulaire</span>
+            </h1>
+        </div>
+
+        <div class="vocab-card">
+            <div class="vocab-header">
+                <div class="vocab-count" id="vocab-count">0 mot(s)</div>
+                <div class="vocab-controls">
+                    <label class="filter-label" for="vocab-sort-select">Trier</label>
+                    <select id="vocab-sort-select" class="filter-select">
+                        <option value="alphabetic">Alphabétique</option>
+                        <option value="byDoc">Par document</option>
+                    </select>
+                </div>
+            </div>
+            <div class="vocab-status" id="vocab-status">Chargement du vocabulaire...</div>
+            <div class="vocab-list" id="vocab-list"></div>
+        </div>
+    </div>
+
+    <script>
+        const LANGUAGE_CONFIG = {
+            'fr': { name: 'Français', flag: '🇫🇷' },
+            'eng': { name: 'Anglais', flag: '🇬🇧' },
+            'all': { name: 'Allemand', flag: '🇩🇪' },
+            'esp': { name: 'Espagnol', flag: '🇪🇸' },
+            'nl': { name: 'Néerlandais', flag: '🇳🇱' },
+            'it': { name: 'Italien', flag: '🇮🇹' },
+            'cor': { name: 'Coréen', flag: '🇰🇷' }
+        };
+
+        let currentLanguage = '';
+        let currentNiveau = '';
+        let vocabData = [];
+        let allResources = [];
+        let vocabSortMode = 'alphabetic';
+
+        function getLanguageFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('lang') || 'eng';
+        }
+
+        function getNiveauFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('niveau') || '';
+        }
+
+        async function init() {
+            currentLanguage = getLanguageFromURL();
+            currentNiveau = getNiveauFromURL();
+
+            const config = LANGUAGE_CONFIG[currentLanguage];
+            document.getElementById('language-flag').textContent = config.flag;
+            document.getElementById('backLink').href = `search.html?lang=${currentLanguage}`;
+
+            await loadMetadata();
+            await loadAndShowVocabulary();
+
+            document.getElementById('vocab-sort-select').addEventListener('change', (e) => {
+                vocabSortMode = e.target.value;
+                renderVocabularyList();
+            });
+        }
+
+        async function loadMetadata() {
+            try {
+                const response = await fetch('metadata.json');
+                const data = await response.json();
+                allResources = data.resources.filter(r => r.langue === currentLanguage);
+                if (currentNiveau) {
+                    allResources = allResources.filter(r => r.niveau === currentNiveau);
+                }
+            } catch (e) {
+                setVocabStatus('Erreur de chargement des données.', true);
+            }
+        }
+
+        async function loadAndShowVocabulary() {
+            if (!allResources.length) {
+                setVocabStatus('Aucune ressource disponible.', true);
+                return;
+            }
+
+            vocabData = await collectVocabulary(allResources);
+
+            if (!vocabData.length) {
+                setVocabStatus('Aucun vocabulaire trouvé.', true);
+                return;
+            }
+
+            document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
+            renderVocabularyList();
+            const scope = currentNiveau ? `niveau ${currentNiveau}` : 'tous niveaux';
+            setVocabStatus(`Vocabulaire sur ${allResources.length} ressource(s) (${scope}).`);
+        }
+
+        async function collectVocabulary(resources) {
+            const vocabAccumulator = [];
+            const fetches = resources.map(async (res) => {
+                try {
+                    const response = await fetch(res.text_path);
+                    const content = await response.text();
+                    const vocab = extractVocabFromContent(content);
+                    return vocab.map(item => ({ ...item, sourceId: res.id, sourceTitle: res.resume || res.prompt }));
+                } catch (e) {
+                    console.warn('Erreur vocab ressource', res.id, e);
+                    return [];
+                }
+            });
+
+            const results = await Promise.allSettled(fetches);
+            results.forEach(r => {
+                if (r.status === 'fulfilled') {
+                    vocabAccumulator.push(...r.value);
+                }
+            });
+
+            return dedupeVocabulary(vocabAccumulator);
+        }
+
+        function extractVocabFromContent(content) {
+            const frontmatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
+            if (!frontmatterMatch) return [];
+            const body = frontmatterMatch[2];
+            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘|Vocabolario)\s*\n\n(.*?)$/s);
+            if (!vocabMatch) return [];
+            return parseVocabulary(vocabMatch[2].trim());
+        }
+
+        function parseVocabulary(vocabText) {
+            const lines = vocabText.split('\n');
+            const vocab = [];
+            lines.forEach(line => {
+                const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s+→\s+(.+)$/);
+                if (match) {
+                    vocab.push({ word: match[1].trim(), translation: match[2].trim() });
+                }
+            });
+            return vocab;
+        }
+
+        function dedupeVocabulary(list) {
+            const seen = new Set();
+            return list.filter(item => {
+                const key = `${item.word.trim().toLowerCase()}|${item.translation.trim().toLowerCase()}`;
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        function renderVocabularyList() {
+            const list = document.getElementById('vocab-list');
+            if (!vocabData.length) {
+                list.innerHTML = '<div class="no-results">Aucun vocabulaire disponible.</div>';
+                return;
+            }
+
+            if (vocabSortMode === 'byDoc') {
+                renderVocabByDoc(list);
+            } else {
+                renderVocabAlphabetic(list);
+            }
+        }
+
+        function renderVocabAlphabetic(listEl) {
+            const sorted = [...vocabData].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
+            listEl.innerHTML = sorted.map(item => `
+                <div class="vocab-item">
+                    <span class="vocab-word">${item.translation}</span>
+                    <span class="vocab-translation">→ ${item.word}</span>
+                    ${item.sourceTitle ? `<span class="vocab-source">${item.sourceTitle}</span>` : ''}
+                </div>
+            `).join('');
+        }
+
+        function renderVocabByDoc(listEl) {
+            const grouped = {};
+            vocabData.forEach(item => {
+                const source = item.sourceTitle || 'Sans source';
+                if (!grouped[source]) grouped[source] = [];
+                grouped[source].push(item);
+            });
+
+            const sortedDocs = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'fr'));
+            let html = '';
+            sortedDocs.forEach(doc => {
+                html += `<div class="vocab-item" style="border-left-color:#FF9800; background:#fff7ed;">${doc}</div>`;
+                const words = grouped[doc].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
+                html += words.map(item => `
+                    <div class="vocab-item" style="border-left-color:#667eea;">
+                        <span class="vocab-word">${item.translation}</span>
+                        <span class="vocab-translation">→ ${item.word}</span>
+                    </div>
+                `).join('');
+            });
+            listEl.innerHTML = html;
+        }
+
+        function normalizeForSort(word) {
+            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
+            return word.trim().toLowerCase().replace(articles, '');
+        }
+
+        function setVocabStatus(message, isError = false) {
+            const el = document.getElementById('vocab-status');
+            el.textContent = message;
+            el.style.color = isError ? '#b91c1c' : '#555';
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

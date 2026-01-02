@@ -133,7 +133,7 @@
         }
 
         .action-icon {
-            font-size: 1.8em;
+            font-size: 2.2em;
             margin-bottom: 6px;
         }
 
@@ -152,6 +152,25 @@
             cursor: not-allowed;
             box-shadow: none;
             transform: none;
+        }
+
+        @media (max-width: 640px) {
+            .action-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .action-card {
+                padding: 12px 8px;
+            }
+
+            .action-icon {
+                font-size: 2em;
+                margin-bottom: 2px;
+            }
+
+            .action-label {
+                display: none;
+            }
         }
 
         .filter-group {
@@ -192,65 +211,6 @@
             color: #666;
             font-size: 0.9em;
         }
-
-        .vocab-bar {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        .vocab-status {
-            color: #555;
-            font-size: 0.9em;
-        }
-
-        .vocab-panel {
-            background: white;
-            border-radius: 12px;
-            padding: 16px;
-            margin-top: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            display: none;
-        }
-
-        .vocab-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .vocab-count {
-            font-weight: 700;
-            color: #667eea;
-        }
-
-        .vocab-controls {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-
-        .vocab-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 8px;
-        }
-
-        .vocab-item {
-            background: #f8fafc;
-            padding: 10px 12px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-
-        .vocab-word { font-weight: 700; color: #2d3748; }
-        .vocab-translation { color: #4a5568; margin-left: 6px; }
-        .vocab-source { display: block; color: #94a3b8; font-size: 12px; margin-top: 3px; }
 
         .resources-container {
             display: grid;
@@ -375,25 +335,6 @@
             border-left: 4px solid #667eea;
         }
 
-        @media (max-width: 640px) {
-            .action-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .action-card {
-                padding: 12px 8px;
-            }
-
-            .action-icon {
-                font-size: 1.5em;
-                margin-bottom: 2px;
-            }
-
-            .action-label {
-                display: none;
-            }
-        }
-
         @media (max-width: 768px) {
             .header-top {
                 flex-direction: column;
@@ -469,7 +410,7 @@
             </a>
             <button id="toggle-vocab-btn" type="button" class="action-card action-button">
                 <span class="action-icon">📚</span>
-                <span class="action-label">Afficher le vocabulaire</span>
+                <span class="action-label">Vocabulaire</span>
             </button>
         </div>
 
@@ -505,23 +446,6 @@
         </div>
     </div>
     
-    <div class="vocab-bar">
-        <span class="vocab-status" id="vocab-status"></span>
-    </div>
-    <div class="vocab-panel" id="vocab-panel">
-        <div class="vocab-header">
-            <div class="vocab-count" id="vocab-count">0 mot(s)</div>
-            <div class="vocab-controls">
-                <label class="filter-label" for="vocab-sort-select" style="margin-bottom: 0;">Trier</label>
-                <select id="vocab-sort-select" class="filter-select" style="width: auto; min-width: 160px;">
-                    <option value="alphabetic">Alphabétique</option>
-                    <option value="byDoc">Par document</option>
-                </select>
-            </div>
-        </div>
-        <div class="vocab-list" id="vocab-list"></div>
-    </div>
-    
     <div class="resources-container" id="resources-container">
         <div class="loading">⏳ Chargement des ressources...</div>
     </div>
@@ -542,10 +466,7 @@
         let allResources = [];
         let filteredResources = [];
         let currentLanguage = '';
-        let vocabData = [];
-        let vocabVisible = false;
-        let vocabSortMode = 'alphabetic';
-        let vocabLoading = false;
+        let currentNiveauFilter = '';
 
         // Récupérer le paramètre de langue depuis l'URL
         function getLanguageFromURL() {
@@ -619,20 +540,30 @@
         function setupEventListeners() {
             document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
             document.getElementById('filter-niveau').addEventListener('change', () => {
+                currentNiveauFilter = document.getElementById('filter-niveau').value;
                 filterAndDisplayResources();
-                resetVocabularyPanel();
+                updateVocabButtonLink();
             });
-            document.getElementById('toggle-vocab-btn').addEventListener('click', toggleVocabularyPanel);
-            document.getElementById('vocab-sort-select').addEventListener('change', (e) => {
-                vocabSortMode = e.target.value;
-                renderVocabularyList();
-            });
+            document.getElementById('toggle-vocab-btn').addEventListener('click', navigateToVocab);
+        }
+
+        // Naviguer vers la page de vocabulaire avec lang et niveau
+        function navigateToVocab() {
+            const niveauParam = currentNiveauFilter ? `&niveau=${currentNiveauFilter}` : '';
+            window.location.href = `vocab.html?lang=${currentLanguage}${niveauParam}`;
+        }
+
+        // Mettre à jour le lien du bouton de vocabulaire
+        function updateVocabButtonLink() {
+            // Mise à jour du contexte currentNiveauFilter pour la navigation
+            currentNiveauFilter = document.getElementById('filter-niveau').value;
         }
 
         // Filtrer et afficher les ressources
         function filterAndDisplayResources() {
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             const niveauFilter = document.getElementById('filter-niveau').value;
+            currentNiveauFilter = niveauFilter;
             
             filteredResources = allResources.filter(resource => {
                 // Filtre de recherche
@@ -703,555 +634,6 @@
         function updateStats() {
             const stats = document.getElementById('stats');
             stats.textContent = `${filteredResources.length} ressource(s) sur ${allResources.length} disponible(s)`;
-        }
-
-        // Gestion vocabulaire global
-        function resetVocabularyPanel() {
-            vocabData = [];
-            vocabVisible = false;
-            vocabLoading = false;
-            document.getElementById('vocab-panel').style.display = 'none';
-            setVocabButtonLabel('Afficher le vocabulaire');
-            setVocabStatus('');
-        }
-
-        function setVocabStatus(message, isError = false) {
-            const el = document.getElementById('vocab-status');
-            el.textContent = message || '';
-            el.style.color = isError ? '#b91c1c' : '#555';
-        }
-
-        function getResourcesForVocabulary() {
-            const niveauFilter = document.getElementById('filter-niveau').value;
-            return niveauFilter ? allResources.filter(r => r.niveau === niveauFilter) : allResources;
-        }
-
-        async function toggleVocabularyPanel() {
-            if (vocabVisible) {
-                hideVocabularyPanel();
-                return;
-            }
-            await loadAndShowVocabulary();
-        }
-
-        function hideVocabularyPanel() {
-            vocabVisible = false;
-            document.getElementById('vocab-panel').style.display = 'none';
-            setVocabButtonLabel('Afficher le vocabulaire');
-        }
-
-        async function loadAndShowVocabulary() {
-            if (vocabLoading) return;
-            vocabLoading = true;
-            setVocabStatus('Chargement du vocabulaire...');
-            document.getElementById('toggle-vocab-btn').disabled = true;
-
-            const targetResources = getResourcesForVocabulary();
-            if (!targetResources.length) {
-                setVocabStatus('Aucune ressource pour cette langue/niveau.', true);
-                vocabLoading = false;
-                document.getElementById('toggle-vocab-btn').disabled = false;
-                return;
-            }
-
-            vocabData = await collectVocabulary(targetResources);
-            vocabLoading = false;
-            document.getElementById('toggle-vocab-btn').disabled = false;
-
-            if (!vocabData.length) {
-                setVocabStatus('Aucun vocabulaire trouvé dans les ressources filtrées.', true);
-                return;
-            }
-
-            document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
-            renderVocabularyList();
-            document.getElementById('vocab-panel').style.display = 'block';
-            setVocabButtonLabel('Masquer le vocabulaire');
-            vocabVisible = true;
-
-            const niveauLabel = document.getElementById('filter-niveau').value;
-            const scope = niveauLabel ? `niveau ${niveauLabel}` : 'tous niveaux';
-            setVocabStatus(`Vocabulaire chargé sur ${targetResources.length} ressource(s) (${scope}).`);
-        }
-
-        function renderVocabularyList() {
-            const list = document.getElementById('vocab-list');
-            if (!vocabData.length) {
-                list.innerHTML = '<div class="no-results">Aucun vocabulaire disponible.</div>';
-                return;
-            }
-
-            if (vocabSortMode === 'byDoc') {
-                renderVocabByDoc(list);
-            } else {
-                renderVocabAlphabetic(list);
-            }
-        }
-
-        function renderVocabAlphabetic(listEl) {
-            const sorted = [...vocabData].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
-            listEl.innerHTML = sorted.map(item => `
-                <div class="vocab-item">
-                    <span class="vocab-word">${item.translation}</span>
-                    <span class="vocab-translation">→ ${item.word}</span>
-                    ${item.sourceTitle ? `<span class="vocab-source">${item.sourceTitle}</span>` : ''}
-                </div>
-            `).join('');
-        }
-
-        function renderVocabByDoc(listEl) {
-            const grouped = {};
-            vocabData.forEach(item => {
-                const source = item.sourceTitle || 'Sans source';
-                if (!grouped[source]) grouped[source] = [];
-                grouped[source].push(item);
-            });
-
-            const sortedDocs = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'fr'));
-            let html = '';
-            sortedDocs.forEach(doc => {
-                html += `<div class="vocab-item" style="border-left-color:#FF9800; background:#fff7ed;">${doc}</div>`;
-                const words = grouped[doc].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
-                html += words.map(item => `
-                    <div class="vocab-item" style="border-left-color:#667eea;">
-                        <span class="vocab-word">${item.translation}</span>
-                        <span class="vocab-translation">→ ${item.word}</span>
-                    </div>
-                `).join('');
-            });
-            listEl.innerHTML = html;
-        }
-
-        async function collectVocabulary(resources) {
-            const vocabAccumulator = [];
-            const fetches = resources.map(async (res) => {
-                try {
-                    const response = await fetch(res.text_path);
-                    const content = await response.text();
-                    const vocab = extractVocabFromContent(content);
-                    return vocab.map(item => ({ ...item, sourceId: res.id, sourceTitle: res.resume || res.prompt }));
-                } catch (e) {
-                    console.warn('Erreur vocab ressource', res.id, e);
-                    return [];
-                }
-            });
-
-            const results = await Promise.allSettled(fetches);
-            results.forEach(r => {
-                if (r.status === 'fulfilled') {
-                    vocabAccumulator.push(...r.value);
-                }
-            });
-
-            return dedupeVocabulary(vocabAccumulator);
-        }
-
-        function extractVocabFromContent(content) {
-            const frontmatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
-            if (!frontmatterMatch) return [];
-            const body = frontmatterMatch[2];
-            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘|Vocabolario)\s*\n\n(.*?)$/s);
-            if (!vocabMatch) return [];
-            return parseVocabulary(vocabMatch[2].trim());
-        }
-
-        function parseVocabulary(vocabText) {
-            const lines = vocabText.split('\n');
-            const vocab = [];
-            lines.forEach(line => {
-                const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s+→\s+(.+)$/);
-                if (match) {
-                    vocab.push({ word: match[1].trim(), translation: match[2].trim() });
-                }
-            });
-            return vocab;
-        }
-
-        function dedupeVocabulary(list) {
-            const seen = new Set();
-            return list.filter(item => {
-                const key = `${item.word.trim().toLowerCase()}|${item.translation.trim().toLowerCase()}`;
-                if (seen.has(key)) return false;
-                seen.add(key);
-                return true;
-            });
-        }
-
-        function normalizeForSort(word) {
-            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
-            return word.trim().toLowerCase().replace(articles, '');
-        }
-
-        function setVocabButtonLabel(label) {
-            const btn = document.getElementById('toggle-vocab-btn');
-            if (!btn) return;
-            btn.innerHTML = `<span class="action-icon">📚</span><span class="action-label">${label}</span>`;
-        }
-
-        // Initialiser au chargement de la page
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
-</body>
-</html>
-        // Configuration des langues
-        const LANGUAGE_CONFIG = {
-            'fr': { name: 'Français', flag: '🇫🇷' },
-            'eng': { name: 'Anglais', flag: '🇬🇧' },
-            'all': { name: 'Allemand', flag: '🇩🇪' },
-            'esp': { name: 'Espagnol', flag: '🇪🇸' },
-            'nl': { name: 'Néerlandais', flag: '🇳🇱' },
-            'it': { name: 'Italien', flag: '🇮🇹' },
-            'cor': { name: 'Coréen', flag: '🇰🇷' }
-        };
-
-        // Variables globales
-        let allResources = [];
-        let filteredResources = [];
-        let currentLanguage = '';
-        let vocabData = [];
-        let vocabVisible = false;
-        let vocabSortMode = 'alphabetic';
-        let vocabLoading = false;
-
-        // Récupérer le paramètre de langue depuis l'URL
-        function getLanguageFromURL() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('lang') || 'eng';
-        }
-
-        // Initialiser la page
-        async function init() {
-            currentLanguage = getLanguageFromURL();
-            
-            // Afficher la langue
-            const config = LANGUAGE_CONFIG[currentLanguage];
-            document.getElementById('language-flag').textContent = config.flag;
-            document.getElementById('language-name').textContent = config.name;
-            document.title = `${config.name} - Ressources Audio`;
-            
-            // Mettre à jour le lien du lecteur aléatoire
-            document.getElementById('random-player-link').href = `random_player.html?lang=${currentLanguage}`;
-            updateGlobalQuizLink();
-            
-            // Charger les métadonnées
-            await loadMetadata();
-            
-            // Configurer les événements
-            setupEventListeners();
-            
-            // Afficher les ressources
-            filterAndDisplayResources();
-        }
-
-        // Charger les métadonnées
-        async function loadMetadata() {
-            try {
-                const response = await fetch('metadata.json');
-                const data = await response.json();
-                
-                // Filtrer par langue
-                allResources = data.resources.filter(r => r.langue === currentLanguage);
-                
-                // Populer les filtres dynamiques
-                populateAxeFilter();
-                
-            } catch (error) {
-                console.error('Erreur de chargement:', error);
-                document.getElementById('resources-container').innerHTML = `
-                    <div class="no-results">
-                        <div class="no-results-icon">⚠️</div>
-                        <h2>Erreur de chargement</h2>
-                        <p>Impossible de charger les ressources.</p>
-                    </div>
-                `;
-            }
-        }
-
-        // Populer le filtre des axes
-        function populateAxeFilter() {
-            // Fonction conservée pour compatibilité (vide - axes pas affichés)
-        }
-
-        // Mettre à jour le lien vers le quiz global (respecte le niveau filtré)
-        function updateGlobalQuizLink() {
-            const niveauFilter = document.getElementById('filter-niveau').value;
-            const base = `global_quiz.html?lang=${currentLanguage}`;
-            const href = niveauFilter ? `${base}&niveau=${niveauFilter}` : base;
-            const link = document.getElementById('global-quiz-link');
-            if (link) link.href = href;
-        }
-
-        // Configurer les événements
-        function setupEventListeners() {
-            document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
-            document.getElementById('filter-niveau').addEventListener('change', () => {
-                filterAndDisplayResources();
-                resetVocabularyPanel();
-            });
-            document.getElementById('toggle-vocab-btn').addEventListener('click', toggleVocabularyPanel);
-            document.getElementById('vocab-sort-select').addEventListener('change', (e) => {
-                vocabSortMode = e.target.value;
-                renderVocabularyList();
-            });
-        }
-
-        // Filtrer et afficher les ressources
-        function filterAndDisplayResources() {
-            const searchTerm = document.getElementById('search-input').value.toLowerCase();
-            const niveauFilter = document.getElementById('filter-niveau').value;
-            
-            filteredResources = allResources.filter(resource => {
-                // Filtre de recherche
-                const matchesSearch = !searchTerm || 
-                    resource.prompt.toLowerCase().includes(searchTerm) ||
-                    resource.text_preview.toLowerCase().includes(searchTerm);
-                
-                // Filtre de niveau
-                const matchesNiveau = !niveauFilter || resource.niveau === niveauFilter;
-                
-                return matchesSearch && matchesNiveau;
-            });
-            
-            displayResources();
-            updateStats();
-            updateGlobalQuizLink();
-        }
-
-        // Afficher les ressources
-        function displayResources() {
-            const container = document.getElementById('resources-container');
-            
-            if (filteredResources.length === 0) {
-                container.innerHTML = `
-                    <div class="no-results">
-                        <div class="no-results-icon">🔍</div>
-                        <h2>Aucun résultat</h2>
-                        <p>Aucune ressource ne correspond à vos critères de recherche.</p>
-                    </div>
-                `;
-                return;
-            }
-            
-            container.innerHTML = filteredResources.map(resource => `
-                <a href="player.html?id=${resource.id}" class="resource-card">
-                    <div class="resource-header">
-                        <div class="resource-prompt">${resource.resume || resource.prompt}</div>
-                        <div class="resource-niveau">${resource.niveau}</div>
-                    </div>
-                    <div class="resource-preview">${resource.text_preview}</div>
-                    <div class="resource-meta">
-                        <div class="resource-meta-left">
-                            <div class="meta-item">
-                                <span>📝</span>
-                                <span>${resource.longueur} mots</span>
-                            </div>
-                            <div class="meta-item">
-                                <span>📚</span>
-                                <span>${resource.vocab_count} mots vocab.</span>
-                            </div>
-                            ${resource.classe ? `
-                                <div class="meta-item">
-                                    <span>🎓</span>
-                                    <span>Classe: ${resource.classe}</span>
-                                </div>
-                            ` : ''}
-                        </div>
-                        <div class="meta-item">
-                            <span>${resource.drapeau || '🎤'}</span>
-                            <span>${resource.genre}</span>
-                        </div>
-                    </div>
-                </a>
-            `).join('');
-        }
-
-        // Mettre à jour les statistiques
-        function updateStats() {
-            const stats = document.getElementById('stats');
-            stats.textContent = `${filteredResources.length} ressource(s) sur ${allResources.length} disponible(s)`;
-        }
-
-        // Gestion vocabulaire global
-        function resetVocabularyPanel() {
-            vocabData = [];
-            vocabVisible = false;
-            vocabLoading = false;
-            document.getElementById('vocab-panel').style.display = 'none';
-            setVocabButtonLabel('Afficher le vocabulaire');
-            setVocabStatus('');
-        }
-
-        function setVocabStatus(message, isError = false) {
-            const el = document.getElementById('vocab-status');
-            el.textContent = message || '';
-            el.style.color = isError ? '#b91c1c' : '#555';
-        }
-
-        function getResourcesForVocabulary() {
-            const niveauFilter = document.getElementById('filter-niveau').value;
-            return niveauFilter ? allResources.filter(r => r.niveau === niveauFilter) : allResources;
-        }
-
-        async function toggleVocabularyPanel() {
-            if (vocabVisible) {
-                hideVocabularyPanel();
-                return;
-            }
-            await loadAndShowVocabulary();
-        }
-
-        function hideVocabularyPanel() {
-            vocabVisible = false;
-            document.getElementById('vocab-panel').style.display = 'none';
-            setVocabButtonLabel('Afficher le vocabulaire');
-        }
-
-        async function loadAndShowVocabulary() {
-            if (vocabLoading) return;
-            vocabLoading = true;
-            setVocabStatus('Chargement du vocabulaire...');
-            document.getElementById('toggle-vocab-btn').disabled = true;
-
-            const targetResources = getResourcesForVocabulary();
-            if (!targetResources.length) {
-                setVocabStatus('Aucune ressource pour cette langue/niveau.', true);
-                vocabLoading = false;
-                document.getElementById('toggle-vocab-btn').disabled = false;
-                return;
-            }
-
-            vocabData = await collectVocabulary(targetResources);
-            vocabLoading = false;
-            document.getElementById('toggle-vocab-btn').disabled = false;
-
-            if (!vocabData.length) {
-                setVocabStatus('Aucun vocabulaire trouvé dans les ressources filtrées.', true);
-                return;
-            }
-
-            document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
-            renderVocabularyList();
-            document.getElementById('vocab-panel').style.display = 'block';
-            setVocabButtonLabel('Masquer le vocabulaire');
-            vocabVisible = true;
-
-            const niveauLabel = document.getElementById('filter-niveau').value;
-            const scope = niveauLabel ? `niveau ${niveauLabel}` : 'tous niveaux';
-            setVocabStatus(`Vocabulaire chargé sur ${targetResources.length} ressource(s) (${scope}).`);
-        }
-
-        function renderVocabularyList() {
-            const list = document.getElementById('vocab-list');
-            if (!vocabData.length) {
-                list.innerHTML = '<div class="no-results">Aucun vocabulaire disponible.</div>';
-                return;
-            }
-
-            if (vocabSortMode === 'byDoc') {
-                renderVocabByDoc(list);
-            } else {
-                renderVocabAlphabetic(list);
-            }
-        }
-
-        function renderVocabAlphabetic(listEl) {
-            const sorted = [...vocabData].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
-            listEl.innerHTML = sorted.map(item => `
-                <div class="vocab-item">
-                    <span class="vocab-word">${item.translation}</span>
-                    <span class="vocab-translation">→ ${item.word}</span>
-                    ${item.sourceTitle ? `<span class="vocab-source">${item.sourceTitle}</span>` : ''}
-                </div>
-            `).join('');
-        }
-
-        function renderVocabByDoc(listEl) {
-            const grouped = {};
-            vocabData.forEach(item => {
-                const source = item.sourceTitle || 'Sans source';
-                if (!grouped[source]) grouped[source] = [];
-                grouped[source].push(item);
-            });
-
-            const sortedDocs = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'fr'));
-            let html = '';
-            sortedDocs.forEach(doc => {
-                html += `<div class="vocab-item" style="border-left-color:#FF9800; background:#fff7ed;">${doc}</div>`;
-                const words = grouped[doc].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
-                html += words.map(item => `
-                    <div class="vocab-item" style="border-left-color:#667eea;">
-                        <span class="vocab-word">${item.translation}</span>
-                        <span class="vocab-translation">→ ${item.word}</span>
-                    </div>
-                `).join('');
-            });
-            listEl.innerHTML = html;
-        }
-
-        async function collectVocabulary(resources) {
-            const vocabAccumulator = [];
-            const fetches = resources.map(async (res) => {
-                try {
-                    const response = await fetch(res.text_path);
-                    const content = await response.text();
-                    const vocab = extractVocabFromContent(content);
-                    return vocab.map(item => ({ ...item, sourceId: res.id, sourceTitle: res.resume || res.prompt }));
-                } catch (e) {
-                    console.warn('Erreur vocab ressource', res.id, e);
-                    return [];
-                }
-            });
-
-            const results = await Promise.allSettled(fetches);
-            results.forEach(r => {
-                if (r.status === 'fulfilled') {
-                    vocabAccumulator.push(...r.value);
-                }
-            });
-
-            return dedupeVocabulary(vocabAccumulator);
-        }
-
-        function extractVocabFromContent(content) {
-            const frontmatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
-            if (!frontmatterMatch) return [];
-            const body = frontmatterMatch[2];
-            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘|Vocabolario)\s*\n\n(.*?)$/s);
-            if (!vocabMatch) return [];
-            return parseVocabulary(vocabMatch[2].trim());
-        }
-
-        function parseVocabulary(vocabText) {
-            const lines = vocabText.split('\n');
-            const vocab = [];
-            lines.forEach(line => {
-                const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s+→\s+(.+)$/);
-                if (match) {
-                    vocab.push({ word: match[1].trim(), translation: match[2].trim() });
-                }
-            });
-            return vocab;
-        }
-
-        function dedupeVocabulary(list) {
-            const seen = new Set();
-            return list.filter(item => {
-                const key = `${item.word.trim().toLowerCase()}|${item.translation.trim().toLowerCase()}`;
-                if (seen.has(key)) return false;
-                seen.add(key);
-                return true;
-            });
-        }
-
-        function setVocabButtonLabel(label) {
-            const btn = document.getElementById('toggle-vocab-btn');
-            if (!btn) return;
-            btn.innerHTML = `<span class="action-icon">📚</span><span class="action-label">${label}</span>`;
-        }
-
-        function normalizeForSort(word) {
-            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
-            return word.trim().toLowerCase().replace(articles, '');
         }
 
         // Initialiser au chargement de la page

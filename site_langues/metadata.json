@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-02T11:37:40.494388",
-  "total_resources": 263,
+  "generated_at": "2026-01-02T11:43:23.693552",
+  "total_resources": 260,
   "languages": [
-    "esp",
-    "it",
-    "nl",
-    "cor",
     "all",
-    "eng",
-    "fr"
+    "esp",
+    "fr",
+    "cor",
+    "nl",
+    "it",
+    "eng"
   ],
   "resources": [
     {
@@ -604,24 +604,6 @@
       "vocab_count": 35,
       "audio_path": "resources/l_alimentazione_20251215_1756/audio.mp3",
       "text_path": "resources/l_alimentazione_20251215_1756/text.md"
-    },
-    {
-      "id": "utilise_un_style_jou_20251216_1151",
-      "langue": "fr",
-      "prompt": "Utilise un style journalistique pour parler des mutations génétiques au niveau",
-      "resume": "mutations génétiques",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-16 11:52:03",
-      "longueur": 200,
-      "text_preview": "Les mutations génétiques constituent un phénomène incontournable dans le domaine de la biologie. Survenant de manière spontanée ou induites par l'environnement, ces modifications de l'ADN ont des impl...",
-      "vocab_count": 0,
-      "audio_path": "resources/utilise_un_style_jou_20251216_1151/audio.mp3",
-      "text_path": "resources/utilise_un_style_jou_20251216_1151/text.md"
     },
     {
       "id": "commander_une_pizza_20251216_1304",
@@ -2478,24 +2460,6 @@
       "text_path": "resources/acheter_des_fruits_e_20251216_1228/text.md"
     },
     {
-      "id": "la_crise_de_suez_te_20251216_0911",
-      "langue": "fr",
-      "prompt": "La crise de Suez (test voix)",
-      "resume": "La crise de Suez",
-      "niveau": "C2",
-      "classe": "",
-      "axe": "",
-      "genre": "femme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-16 09:12:01",
-      "longueur": 120,
-      "text_preview": "La crise de Suez, survenue en 1956, marque un tournant dans l'histoire du Moyen-Orient. Le 26 juillet, le président égyptien, Gamal Abdel Nasser, nationalise le canal de Suez, une artère stratégique p...",
-      "vocab_count": 0,
-      "audio_path": "resources/la_crise_de_suez_te_20251216_0911/audio.mp3",
-      "text_path": "resources/la_crise_de_suez_te_20251216_0911/text.md"
-    },
-    {
       "id": "in_albergo_20251215_1801",
       "langue": "it",
       "prompt": "In albergo",
@@ -3376,24 +3340,6 @@
       "vocab_count": 34,
       "audio_path": "resources/van_life_aux_pays_ba_20251226_1945/audio.mp3",
       "text_path": "resources/van_life_aux_pays_ba_20251226_1945/text.md"
-    },
-    {
-      "id": "die_tiere_20251210_1901",
-      "langue": "all",
-      "prompt": "Die Tiere",
-      "resume": "Les animaux",
-      "niveau": "A2",
-      "classe": "",
-      "axe": "",
-      "genre": "homme",
-      "drapeau": "",
-      "voix_variant": "",
-      "date": "2025-12-10 19:01:44",
-      "longueur": 60,
-      "text_preview": "Die Tiere sind unsere Freunde. Viele Menschen haben Haustiere. Katzen und Hunde sind sehr beliebt. Sie sind liebevoll und spielen gern. Auf dem Bauernhof gibt es Kühe, Schafe und Hühner. Sie geben uns...",
-      "vocab_count": 35,
-      "audio_path": "resources/die_tiere_20251210_1901/audio.mp3",
-      "text_path": "resources/die_tiere_20251210_1901/text.md"
     },
     {
       "id": "gains_de_productivit_20251227_2153",

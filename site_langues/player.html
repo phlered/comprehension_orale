@@ -275,6 +275,21 @@
             animation: slideDown 0.3s ease-out;
         }
 
+        #quiz-section.visible {
+            animation: slideDownBig 0.4s ease-out;
+        }
+
+        @keyframes slideDownBig {
+            from {
+                opacity: 0;
+                transform: translateY(-30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
         .content-section.visible {
             display: block;
         }
@@ -1109,6 +1124,11 @@
                 quizSection.classList.add('visible');
                 btn.innerHTML = '<span>🎯</span><span>Masquer le quiz</span>';
                 initializeQuiz();
+                
+                // Scroller vers le quiz avec un délai pour l'animation
+                setTimeout(() => {
+                    quizSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
             } else {
                 quizSection.classList.remove('visible');
                 btn.innerHTML = '<span>🎯</span><span>Quiz vocabulaire</span>';

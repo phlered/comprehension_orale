@@ -97,12 +97,9 @@
         <div class="card">
             <a href="index.html" class="back-btn">← Retour à l'accueil</a>
             <div class="header-title">🎯 Quiz vocabulaire global</div>
-            <p class="subtitle">Choisissez une langue et un niveau : le quiz pioche dans tous les docs du niveau choisi, avec les mêmes règles que les quiz individuels.</p>
+            <p class="subtitle">Langue déjà choisie : sélectionnez un niveau et le quiz pioche dans tous les docs du niveau choisi.</p>
+            <div class="pill" id="selectedLanguage" style="display: inline-flex; margin-top: 8px;"></div>
             <div class="controls-grid">
-                <div class="control">
-                    <label for="languageSelect">Langue</label>
-                    <select id="languageSelect"></select>
-                </div>
                 <div class="control">
                     <label for="niveauSelect">Niveau</label>
                     <select id="niveauSelect">
@@ -126,7 +123,7 @@
             </div>
         </div>
 
-        <div id="statusCard" class="status-card">Sélectionnez une langue et un niveau pour lancer le quiz.</div>
+        <div id="statusCard" class="status-card">Sélectionnez un niveau pour lancer le quiz.</div>
 
         <div class="stats-grid">
             <div class="stat-item">
@@ -209,8 +206,16 @@
             const langParam = params.get('lang') || '';
             const levelParam = params.get('niveau') || '';
 
+            if (!langParam || !LANGUAGE_CONFIG[langParam]) {
+                setStatus('Aucune langue sélectionnée. Retournez à l\'accueil et choisissez une langue.', true);
+                disableControls(true);
+                return;
+            }
+
+            currentLanguage = langParam;
+            renderSelectedLanguage();
+
             await loadMetadata();
-            populateLanguageSelect(langParam);
             document.getElementById('niveauSelect').value = levelParam;
 
             document.getElementById('loadBtn').addEventListener('click', handleLoad);
@@ -222,8 +227,6 @@
                 renderFullVocab();
             });
             
-            // Auto-load vocabulary when language or level changes
-            document.getElementById('languageSelect').addEventListener('change', loadVocabularyOnly);
             document.getElementById('niveauSelect').addEventListener('change', loadVocabularyOnly);
 
             // Auto-load on init
@@ -234,6 +237,22 @@
             }
         }
 
+        function renderSelectedLanguage() {
+            const badge = document.getElementById('selectedLanguage');
+            const cfg = LANGUAGE_CONFIG[currentLanguage];
+            if (badge && cfg) {
+                badge.textContent = `${cfg.flag} ${cfg.name}`;
+            }
+        }
+
+        function disableControls(disabled) {
+            document.getElementById('niveauSelect').disabled = disabled;
+            document.getElementById('loadBtn').disabled = disabled;
+            document.getElementById('showVocabBtn').disabled = true;
+            document.getElementById('newRoundBtn').disabled = disabled;
+            document.getElementById('stopQuizBtn').disabled = disabled;
+        }
+
         async function loadMetadata() {
             try {
                 const response = await fetch('metadata.json');
@@ -241,16 +260,6 @@
                 allResources = data.resources || [];
             } catch (e) {
                 setStatus('Impossible de charger metadata.json', true);
-            }
-        }
-
-        function populateLanguageSelect(defaultLang) {
-            const select = document.getElementById('languageSelect');
-            select.innerHTML = Object.entries(LANGUAGE_CONFIG).map(([code, cfg]) => {
-                return `<option value="${code}">${cfg.flag} ${cfg.name}</option>`;
-            }).join('');
-            if (defaultLang && LANGUAGE_CONFIG[defaultLang]) {
-                select.value = defaultLang;
             }
         }
 
@@ -269,11 +278,16 @@
         }
 
         async function loadVocabularyOnly() {
-            currentLanguage = document.getElementById('languageSelect').value;
             currentLevel = document.getElementById('niveauSelect').value;
 
-            if (!currentLanguage || !currentLevel) {
-                setStatus('Sélectionnez une langue et un niveau.', false);
+            if (!currentLanguage) {
+                setStatus('Aucune langue sélectionnée.', true);
+                document.getElementById('showVocabBtn').disabled = true;
+                return false;
+            }
+
+            if (!currentLevel) {
+                setStatus('Sélectionnez un niveau.', false);
                 document.getElementById('showVocabBtn').disabled = true;
                 return false;
             }

@@ -26,6 +26,8 @@ Am Ende seiner Reise war John nicht nur von der Schönheit der Landschaft und de
 
 ## Wortschatz
 
+
+
 - **das Abenteuer** → l'aventure
 - **beeinflussen** → influencer
 - **bestehen** → exister

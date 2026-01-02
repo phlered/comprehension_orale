@@ -24,6 +24,8 @@ Anna leaves the bakery. She has fresh bread and croissants. She walks home. She 
 
 ## Vocabulary
 
+
+
 - **to add** → ajouter
 - **bag** → sac
 - **baguette** → baguette

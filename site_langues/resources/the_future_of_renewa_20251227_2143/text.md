@@ -30,6 +30,8 @@ In conclusion, while the path to a renewable energy future is fraught with chall
 
 ## Vocabulary
 
+
+
 - **battery** → batterie
 - **challenge** → défi
 - **change** → changement

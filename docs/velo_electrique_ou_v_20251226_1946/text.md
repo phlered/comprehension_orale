@@ -24,6 +24,8 @@ Wat kies jij? Een elektrische fiets of een gewone fiets? Beide zijn een goede ke
 
 ## Woordenschat
 
+
+
 - **actief** → actif
 - **de afstand** → la distance
 - **de batterij** → la batterie

@@ -24,6 +24,8 @@ En resumen, los villancicos y conciertos navideños son una expresión cultural 
 
 ## Vocabulario
 
+
+
 - **la alegría** → la joie
 - **el ambiente** → l'ambiance
 - **los amigos** → les amis

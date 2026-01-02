@@ -27,38 +27,40 @@ Much like previous epochs of industrial transformation, this AI-driven revolutio
 
 ## Vocabulary
 
-access | accès
-algorithm | algorithme
-automation | automatisation
-bias | biais
-capability | capacité
-challenge | défi
-consequence | conséquence
-data | données
-to diagnose | diagnostiquer
-disease | maladie
-education | éducation
-experience | expérience
-finance | finance
-foresight | prévoyance
-future | avenir
-governance | gouvernance
-healthcare | soins de santé
-innovation | innovation
-intelligence | intelligence
-labor | travail
-learning | apprentissage
-manufacturing | fabrication
-opportunity | opportunité
-precision | précision
-privacy | vie privée
-production | production
-progress | progrès
-retraining | reconversion
-revolution | révolution
-risk | risque
-symbiosis | symbiose
-system | système
-technology | technologie
-to transform | transformer
-trend | tendance
+
+
+- **access** → accès
+- **algorithm** → algorithme
+- **automation** → automatisation
+- **bias** → biais
+- **capability** → capacité
+- **challenge** → défi
+- **consequence** → conséquence
+- **data** → données
+- **to diagnose** → diagnostiquer
+- **disease** → maladie
+- **education** → éducation
+- **experience** → expérience
+- **finance** → finance
+- **foresight** → prévoyance
+- **future** → avenir
+- **governance** → gouvernance
+- **healthcare** → soins de santé
+- **innovation** → innovation
+- **intelligence** → intelligence
+- **labor** → travail
+- **learning** → apprentissage
+- **manufacturing** → fabrication
+- **opportunity** → opportunité
+- **precision** → précision
+- **privacy** → vie privée
+- **production** → production
+- **progress** → progrès
+- **retraining** → reconversion
+- **revolution** → révolution
+- **risk** → risque
+- **symbiosis** → symbiose
+- **system** → système
+- **technology** → technologie
+- **to transform** → transformer
+- **trend** → tendance

@@ -20,6 +20,8 @@ Dopo l'incidente, la scuola ha deciso di mandarci a casa più presto per precauz
 
 ## Vocabolario
 
+
+
 - **il amico** → l'ami
 - **il amico** → l'ami
 - **la casa** → la maison

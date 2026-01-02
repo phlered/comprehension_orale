@@ -20,6 +20,8 @@ Nach ein paar Stunden komme ich am Zielbahnhof an. Ich nehme meinen Koffer und s
 
 ## Wortschatz
 
+
+
 - **der Bahnhof** → la gare
 - **bequem** → confortable
 - **das Bistro** → le bistro

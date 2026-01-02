@@ -20,6 +20,8 @@ Para nosotros, la Nochebuena es una noche especial llena de risas, amor y buenos
 
 ## Vocabulario
 
+
+
 - **abrir** → ouvrir
 - **la abuela** → la grand-mère
 - **el amor** → l'amour

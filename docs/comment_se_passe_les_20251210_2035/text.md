@@ -22,6 +22,8 @@ De feestdagen in Nederland zijn een tijd om samen te zijn met familie en vriende
 
 ## Woordenschat
 
+
+
 - **cadeautjes** → cadeaux
 - **chocoladeletters** → lettres de chocolat
 - **december** → décembre

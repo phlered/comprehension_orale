@@ -24,6 +24,8 @@ Thus, while the pivot towards parcel delivery has revitalized postal services in
 
 ## Vocabulary
 
+
+
 - **accessibility** → accessibilité
 - **to adapt** → adapter
 - **challenge** → défi

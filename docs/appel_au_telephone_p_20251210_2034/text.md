@@ -32,6 +32,8 @@ Doe snel, alstublieft!
 
 ## Woordenschat
 
+
+
 - **het alarmnummer** → le numéro d'urgence
 - **de ambulance** → l'ambulance
 - **de auto** → la voiture

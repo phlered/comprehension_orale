@@ -24,6 +24,8 @@ Sin embargo, es importante que el trabajo no interfiera con los estudios. Los ad
 
 ## Vocabulario
 
+
+
 - **el adolescente** → l'adolescent
 - **ahorrar** → économiser
 - **los amigos** → les amis

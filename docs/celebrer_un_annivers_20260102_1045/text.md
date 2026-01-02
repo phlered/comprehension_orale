@@ -24,6 +24,8 @@ C'était une belle journée. Ma sœur a passé un très bon anniversaire, et nou
 
 ## Vocabulaire
 
+
+
 - **les amis** → vrienden
 - **amusant** → leuk
 - **le an** → jaar

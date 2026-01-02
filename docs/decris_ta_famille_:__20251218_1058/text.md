@@ -18,6 +18,8 @@ In the evenings, my family sits together for dinner. After dinner, we sometimes 
 
 ## Vocabulary
 
+
+
 - **books** → livres
 - **cartoons** → dessins animés
 - **to cook** → cuisiner

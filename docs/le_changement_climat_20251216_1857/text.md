@@ -24,6 +24,8 @@ Zusammenfassend lässt sich sagen, dass der Klimawandel eine komplexe Herausford
 
 ## Wortschatz
 
+
+
 - **die Auswirkung** → l'impact
 - **die CO2-Emission** → l'émission de CO2
 - **die Durchschnittstemperatur** → la température moyenne

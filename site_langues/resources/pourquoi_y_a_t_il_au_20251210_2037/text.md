@@ -24,6 +24,8 @@ De kanalen zijn een belangrijk deel van Amsterdam. Ze maken de stad uniek en spe
 
 ## Woordenschat
 
+
+
 - **afvoeren** → évacuer
 - **attractie** → attraction
 - **belangrijk** → important

@@ -25,38 +25,40 @@ In Anbetracht all dessen ist die KI sowohl Bedrohung als auch Chance. Es liegt a
 
 ## Wortschatz
 
-der Arbeitsablauf | le processus de travail
-der Arbeitsmarkt | le marché du travail
-der Arbeitsplatzverlust | la perte d'emploi
-die Automobilindustrie | l'industrie automobile
-die Bedrohung | la menace
-der Beruf | le métier
-das Beschäftigungsverhältnis | la relation d'emploi
-die Bildungs- und Arbeitsmarktpolitik | la politique de l'éducation et du marché du travail
-die Chance | la chance
-die Chemie | la chimie
-das Denken | la pensée
-die Diskussion | la discussion
-die Disruption | la perturbation
-die Effizienz | l'efficacité
-der Einfluss | l'influence
-die Elektrotechnik | l'électrotechnique
-die Empathie | l'empathie
-der Fortschritt | le progrès
-die Hoffnung | l'espoir
-die Intelligenz | l'intelligence
-die Interaktion | l'interaction
-die Kreativität | la créativité
-das Lernen | l'apprentissage
-die Menschheit | l'humanité
-das Potenzial | le potentiel
-die Programmierung | la programmation
-die Revolution | la révolution
-die Technologie | la technologie
-die Transformation | la transformation
-das Umschulungsprogramm | le programme de reconversion
-das Unternehmen | l'entreprise
-die Wartung | la maintenance
-der Wettbewerb | la compétition
-die Wettbewerbsfähigkeit | la compétitivité
-die Überwachung | la surveillance
+
+
+- **der Arbeitsablauf** → le processus de travail
+- **der Arbeitsmarkt** → le marché du travail
+- **der Arbeitsplatzverlust** → la perte d'emploi
+- **die Automobilindustrie** → l'industrie automobile
+- **die Bedrohung** → la menace
+- **der Beruf** → le métier
+- **das Beschäftigungsverhältnis** → la relation d'emploi
+- **die Bildungs- und Arbeitsmarktpolitik** → la politique de l'éducation et du marché du travail
+- **die Chance** → la chance
+- **die Chemie** → la chimie
+- **das Denken** → la pensée
+- **die Diskussion** → la discussion
+- **die Disruption** → la perturbation
+- **die Effizienz** → l'efficacité
+- **der Einfluss** → l'influence
+- **die Elektrotechnik** → l'électrotechnique
+- **die Empathie** → l'empathie
+- **der Fortschritt** → le progrès
+- **die Hoffnung** → l'espoir
+- **die Intelligenz** → l'intelligence
+- **die Interaktion** → l'interaction
+- **die Kreativität** → la créativité
+- **das Lernen** → l'apprentissage
+- **die Menschheit** → l'humanité
+- **das Potenzial** → le potentiel
+- **die Programmierung** → la programmation
+- **die Revolution** → la révolution
+- **die Technologie** → la technologie
+- **die Transformation** → la transformation
+- **das Umschulungsprogramm** → le programme de reconversion
+- **das Unternehmen** → l'entreprise
+- **die Wartung** → la maintenance
+- **der Wettbewerb** → la compétition
+- **die Wettbewerbsfähigkeit** → la compétitivité
+- **die Überwachung** → la surveillance

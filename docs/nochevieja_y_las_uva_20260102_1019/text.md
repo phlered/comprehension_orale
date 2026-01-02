@@ -22,6 +22,8 @@ La tradición de las uvas no solo es un acto festivo, sino también un momento d
 
 ## Vocabulario
 
+
+
 - **el agricultor** → l'agriculteur
 - **la alegría** → la joie
 - **el amigo** → l'ami

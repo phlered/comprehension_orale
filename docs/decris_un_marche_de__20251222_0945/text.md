@@ -17,37 +17,39 @@ Additionally, many markets boast an impressive selection of international foods,
 
 ## Vocabulary
 
-to add | ajouter
-adult | adulte
-aroma | arôme
-atmosphere | atmosphère
-caroler | chanteur
-chestnut | châtaigne
-child | enfant
-Christmas | Noël
-city | ville
-community | communauté
-craft | artisanat
-culture | culture
-experience | expérience
-festivity | festivité
-food | nourriture
-gift | cadeau
-historic | historique
-ice | glace
-light | lumière
-market | marché
-to offer | offrir
-ornament | ornement
-rink | patinoire
-to sample | goûter
-scarf | écharpe
-shopping | shopping
-to sing | chanter
-skating | patinage
-stall | étal
-town | ville
-tradition | tradition
-tune | mélodie
-visitor | visiteur
-wine | vin
+
+
+- **to add** → ajouter
+- **adult** → adulte
+- **aroma** → arôme
+- **atmosphere** → atmosphère
+- **caroler** → chanteur
+- **chestnut** → châtaigne
+- **child** → enfant
+- **Christmas** → Noël
+- **city** → ville
+- **community** → communauté
+- **craft** → artisanat
+- **culture** → culture
+- **experience** → expérience
+- **festivity** → festivité
+- **food** → nourriture
+- **gift** → cadeau
+- **historic** → historique
+- **ice** → glace
+- **light** → lumière
+- **market** → marché
+- **to offer** → offrir
+- **ornament** → ornement
+- **rink** → patinoire
+- **to sample** → goûter
+- **scarf** → écharpe
+- **shopping** → shopping
+- **to sing** → chanter
+- **skating** → patinage
+- **stall** → étal
+- **town** → ville
+- **tradition** → tradition
+- **tune** → mélodie
+- **visitor** → visiteur
+- **wine** → vin

@@ -19,38 +19,40 @@ Op 6 december gaat Sinterklaas terug naar Spanje. Iedereen zegt "tot volgend jaa
 
 ## Woordenschat
 
-blij | heureux
-het cadeau | le cadeau
-het cadeautje | le cadeau
-de chocoladeletter | la lettre en chocolat
-het feest | la fête
-het gedicht | le poème
-gezellig | convivial
-het grapje | la blague
-helpen | aider
-de hulp | l'aide
-het jaar | l'année
-jong | jeune
-het kind | l'enfant
-de klas | la classe
-de koekjes | les biscuits
-het liedje | la chanson
-de lootjes | les billets (tirage au sort)
-de mensen | les gens
-de Nederland | les Pays-Bas
-de ontvanger | le destinataire
-oud | vieux
-het paard | le cheval
-de pepernoot | le biscuit (type)
-de Piet | le Pierre
-het plezier | le plaisir
-de schoen | la chaussure
-de schoorsteen | la cheminée
-de Sinterklaas | le saint Nicolas
-het snoepje | la friandise
-Spanje | Espagne
-de tijd | le temps
-de verrassing | la surprise
-vieren | célébrer
-het werk | le travail
-zingen | chanter
+
+
+- **blij** → heureux
+- **het cadeau** → le cadeau
+- **het cadeautje** → le cadeau
+- **de chocoladeletter** → la lettre en chocolat
+- **het feest** → la fête
+- **het gedicht** → le poème
+- **gezellig** → convivial
+- **het grapje** → la blague
+- **helpen** → aider
+- **de hulp** → l'aide
+- **het jaar** → l'année
+- **jong** → jeune
+- **het kind** → l'enfant
+- **de klas** → la classe
+- **de koekjes** → les biscuits
+- **het liedje** → la chanson
+- **de lootjes** → les billets (tirage au sort)
+- **de mensen** → les gens
+- **de Nederland** → les Pays-Bas
+- **de ontvanger** → le destinataire
+- **oud** → vieux
+- **het paard** → le cheval
+- **de pepernoot** → le biscuit (type)
+- **de Piet** → le Pierre
+- **het plezier** → le plaisir
+- **de schoen** → la chaussure
+- **de schoorsteen** → la cheminée
+- **de Sinterklaas** → le saint Nicolas
+- **het snoepje** → la friandise
+- **Spanje** → Espagne
+- **de tijd** → le temps
+- **de verrassing** → la surprise
+- **vieren** → célébrer
+- **het werk** → le travail
+- **zingen** → chanter

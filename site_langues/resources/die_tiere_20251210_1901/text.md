@@ -13,38 +13,40 @@ Die Tiere sind unsere Freunde. Viele Menschen haben Haustiere. Katzen und Hunde 
 
 ## Wortschatz
 
-der Bauernhof | la ferme
-beliebt | apprécié
-das Ei | l'œuf
-der Freund | l'ami
-freundlich | amical
-der Fuchs | le renard
-geben | donner
-gern | volontiers
-haben | avoir
-das Haustier | l'animal de compagnie
-das Huhn | la poule
-der Hund | le chien
-häufig | souvent
-die Katze | le chat
-die Kuh | la vache
-das Leben | la vie
-leben | vivre
-liebevoll | affectueux
-machen | rendre
-der Mensch | l'être humain
-die Milch | le lait
-die Natur | la nature
-das Reh | le chevreuil
-das Schaf | le mouton
-schön | beau
-sein | être
-spielen | jouer
-das Tier | l'animal
-die Tiere | les animaux
-unser | notre
-viele | beaucoup
-der Wald | la forêt
-wichtig | important
-wild | sauvage
-die Wolle | la laine
+
+
+- **der Bauernhof** → la ferme
+- **beliebt** → apprécié
+- **das Ei** → l'œuf
+- **der Freund** → l'ami
+- **freundlich** → amical
+- **der Fuchs** → le renard
+- **geben** → donner
+- **gern** → volontiers
+- **haben** → avoir
+- **das Haustier** → l'animal de compagnie
+- **das Huhn** → la poule
+- **der Hund** → le chien
+- **häufig** → souvent
+- **die Katze** → le chat
+- **die Kuh** → la vache
+- **das Leben** → la vie
+- **leben** → vivre
+- **liebevoll** → affectueux
+- **machen** → rendre
+- **der Mensch** → l'être humain
+- **die Milch** → le lait
+- **die Natur** → la nature
+- **das Reh** → le chevreuil
+- **das Schaf** → le mouton
+- **schön** → beau
+- **sein** → être
+- **spielen** → jouer
+- **das Tier** → l'animal
+- **die Tiere** → les animaux
+- **unser** → notre
+- **viele** → beaucoup
+- **der Wald** → la forêt
+- **wichtig** → important
+- **wild** → sauvage
+- **die Wolle** → la laine

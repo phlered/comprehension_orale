@@ -18,6 +18,8 @@ La comida también es diferente. En Francia, los estudiantes disfrutan de un alm
 
 ## Vocabulario
 
+
+
 - **las actividades** → les activités
 - **el adolescente** → l'adolescent
 - **los adolescentes** → les adolescents

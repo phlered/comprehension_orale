@@ -22,6 +22,8 @@ Zusammenfassend lässt sich sagen, dass Museen in Deutschland eine Schlüsselrol
 
 ## Wortschatz
 
+
+
 - **die Anziehungskraft** → l'attraction
 - **die Architektur** → l'architecture
 - **das Artefakt** → l'artefact

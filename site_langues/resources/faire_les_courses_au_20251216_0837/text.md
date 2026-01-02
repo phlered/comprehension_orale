@@ -13,38 +13,40 @@ Aujourd'hui, je vais au supermarché. J'ai une liste de courses. Je prends un ca
 
 ## Vocabulaire
 
-acheter | kopen
-la banane | banaan
-le biscuit | koekje
-la boisson | drank
-la bouteille | fles
-le caddie | winkelwagen
-la caisse | kassa
-la caissière | kassière
-la carte | kaart
-choisir | kiezen
-les courses | boodschappen
-l'eau | water
-l'entrée | ingang
-le frigo | koelkast
-le fromage | kaas
-le fruit | fruit
-le gâteau | taart
-le jambon | ham
-le jus | sap
-le lait | melk
-la liste | lijst
-le légume | groente
-la maison | huis
-payer | betalen
-le placard | kast
-la pomme | appel
-le poulet | kip
-prendre | nemen
-le produit laitier | zuivelproduct
-ranger | opbergen
-le rayon | afdeling
-la salade | salade
-le supermarché | supermarkt
-la viande | vlees
-le yaourt | yoghurt
+
+
+- **acheter** → kopen
+- **la banane** → banaan
+- **le biscuit** → koekje
+- **la boisson** → drank
+- **la bouteille** → fles
+- **le caddie** → winkelwagen
+- **la caisse** → kassa
+- **la caissière** → kassière
+- **la carte** → kaart
+- **choisir** → kiezen
+- **les courses** → boodschappen
+- **l'eau** → water
+- **l'entrée** → ingang
+- **le frigo** → koelkast
+- **le fromage** → kaas
+- **le fruit** → fruit
+- **le gâteau** → taart
+- **le jambon** → ham
+- **le jus** → sap
+- **le lait** → melk
+- **la liste** → lijst
+- **le légume** → groente
+- **la maison** → huis
+- **payer** → betalen
+- **le placard** → kast
+- **la pomme** → appel
+- **le poulet** → kip
+- **prendre** → nemen
+- **le produit laitier** → zuivelproduct
+- **ranger** → opbergen
+- **le rayon** → afdeling
+- **la salade** → salade
+- **le supermarché** → supermarkt
+- **la viande** → vlees
+- **le yaourt** → yoghurt

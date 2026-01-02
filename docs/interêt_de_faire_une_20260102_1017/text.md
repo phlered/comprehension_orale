@@ -26,6 +26,8 @@ In conclusion, sewing provides numerous well-being benefits, encompassing emotio
 
 ## Vocabulary
 
+
+
 - **accomplishment** → accomplissement
 - **to achieve** → atteindre
 - **activity** → activité

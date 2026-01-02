@@ -24,6 +24,8 @@ Denk eraan om een regenjas mee te nemen. Het weer in Nederland kan soms wisselen
 
 ## Woordenschat
 
+
+
 - **Amsterdam** → Amsterdam
 - **de appeltaart** → la tarte aux pommes
 - **het bos** → la forêt

@@ -19,38 +19,40 @@ La sera, torno in albergo e leggo un libro. Poi, vado a dormire. Il letto è com
 
 ## Vocabolario
 
-aiutare | aider
-arrivare | arriver
-il bagno | la salle de bain
-bere | boire
-il caffè | le café
-la camera | la chambre
-la città | la ville
-la colazione | le petit-déjeuner
-il cornetto | le croissant
-la doccia | la douche
-dormire | dormir
-essere | être
-la finestra | la fenêtre
-la frutta | le fruit
-il giardino | le jardin
-l'albergo | l'hôtel
-l'armadio | l'armoire
-il letto | le lit
-il letto | le lit
-il libro | le livre
-mangiare | manger
-il nome | le nom
-parlare | parler
-il piano | l'étage
-la reception | la réception
-il ristorante | le restaurant
-la sedia | la chaise
-la sera | le soir
-la signora | la dame
-il tavolo | la table
-la TV | la télévision
-le vacanze | les vacances
-vedere | voir
-la vista | la vue
-lo yogurt | le yaourt
+
+
+- **aiutare** → aider
+- **arrivare** → arriver
+- **il bagno** → la salle de bain
+- **bere** → boire
+- **il caffè** → le café
+- **la camera** → la chambre
+- **la città** → la ville
+- **la colazione** → le petit-déjeuner
+- **il cornetto** → le croissant
+- **la doccia** → la douche
+- **dormire** → dormir
+- **essere** → être
+- **la finestra** → la fenêtre
+- **la frutta** → le fruit
+- **il giardino** → le jardin
+- **l'albergo** → l'hôtel
+- **l'armadio** → l'armoire
+- **il letto** → le lit
+- **il letto** → le lit
+- **il libro** → le livre
+- **mangiare** → manger
+- **il nome** → le nom
+- **parlare** → parler
+- **il piano** → l'étage
+- **la reception** → la réception
+- **il ristorante** → le restaurant
+- **la sedia** → la chaise
+- **la sera** → le soir
+- **la signora** → la dame
+- **il tavolo** → la table
+- **la TV** → la télévision
+- **le vacanze** → les vacances
+- **vedere** → voir
+- **la vista** → la vue
+- **lo yogurt** → le yaourt

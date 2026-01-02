@@ -21,38 +21,40 @@ Bij de bank werken vriendelijke mensen. Soms help ik mijn vriend met geld opneme
 
 ## Woordenschat
 
-de automaat | l'automate
-de bank | la banque
-de bankpas | la carte bancaire
-het bedrag | le montant
-blij | content
-de boodschappen | les courses
-het briefje | le billet
-de buurt | le quartier
-dichtbij | près de
-de euro | l'euro
-het geheim | le secret
-het geld | l'argent
-de geldautomaat | le distributeur automatique
-het geluid | le son
-handig | pratique
-het huis | la maison
-de hulp | l'aide
-de keuze | le choix
-kiezen | choisir
-de machine | la machine
-makkelijk | facile
-de mensen | les gens
-nemen | prendre
-nodig | nécessaire
-het nummer | le numéro
-de optie | l'option
-de pincode | le code PIN
-de portemonnee | le porte-monnaie
-het scherm | l'écran
-de stap | la marche
-stoppen | mettre
-het terug | le retour
-vergeten | oublier
-de vriend | l'ami
-het winkelen | le shopping
+
+
+- **de automaat** → l'automate
+- **de bank** → la banque
+- **de bankpas** → la carte bancaire
+- **het bedrag** → le montant
+- **blij** → content
+- **de boodschappen** → les courses
+- **het briefje** → le billet
+- **de buurt** → le quartier
+- **dichtbij** → près de
+- **de euro** → l'euro
+- **het geheim** → le secret
+- **het geld** → l'argent
+- **de geldautomaat** → le distributeur automatique
+- **het geluid** → le son
+- **handig** → pratique
+- **het huis** → la maison
+- **de hulp** → l'aide
+- **de keuze** → le choix
+- **kiezen** → choisir
+- **de machine** → la machine
+- **makkelijk** → facile
+- **de mensen** → les gens
+- **nemen** → prendre
+- **nodig** → nécessaire
+- **het nummer** → le numéro
+- **de optie** → l'option
+- **de pincode** → le code PIN
+- **de portemonnee** → le porte-monnaie
+- **het scherm** → l'écran
+- **de stap** → la marche
+- **stoppen** → mettre
+- **het terug** → le retour
+- **vergeten** → oublier
+- **de vriend** → l'ami
+- **het winkelen** → le shopping

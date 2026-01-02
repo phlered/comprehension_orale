@@ -32,6 +32,8 @@ Ik ga naar binnen en koop een kaartje. Waar gaat mijn trein naartoe? Misschien e
 
 ## Woordenschat
 
+
+
 - **ben** → suis
 - **blij** → content
 - **dag** → journée

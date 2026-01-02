@@ -22,6 +22,8 @@ Soy español y hablo español en casa y en el colegio. Estoy aprendiendo inglés
 
 ## Vocabulario
 
+
+
 - **el amigo** → l'ami
 - **aprender** → apprendre
 - **el arte** → l'art

@@ -24,6 +24,8 @@ I hope you enjoyed learning about me and my life in Devon.
 
 ## Vocabulary
 
+
+
 - **adventure** → aventure
 - **animal** → animal
 - **book** → livre

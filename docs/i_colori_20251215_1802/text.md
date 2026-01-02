@@ -21,38 +21,40 @@ Mi piace disegnare con tanti colori. Uso la matita rossa, il pennarello verde e 
 
 ## Vocabolario
 
-gli alberi | les arbres
-le arance | les oranges
-bello | beau
-il bianco | le blanc
-il blu | le bleu
-il cielo | le ciel
-il colore | la couleur
-i colori | les couleurs
-il disegno | le dessin
-i fiori | les fleurs
-il giallo | le jaune
-l'arancione | l'orange
-l'erba | l'herbe
-la lavanda | la lavande
-il mare | la mer
-la matita | le crayon
-le mele | les pommes
-misterioso | mystérieux
-il mondo | le monde
-la natura | la nature
-il nero | le noir
-la neve | la neige
-la notte | la nuit
-le nuvole | les nuages
-la penna | le stylo
-il pennarello | le feutre
-i pomodori | les tomates
-il preferito | le préféré
-il rosso | le rouge
-il sole | le soleil
-il tuo | ton/votre
-il verde | le vert
-il viola | le violet
-vivace | vif/vivante
-le zucche | les citrouilles
+
+
+- **gli alberi** → les arbres
+- **le arance** → les oranges
+- **bello** → beau
+- **il bianco** → le blanc
+- **il blu** → le bleu
+- **il cielo** → le ciel
+- **il colore** → la couleur
+- **i colori** → les couleurs
+- **il disegno** → le dessin
+- **i fiori** → les fleurs
+- **il giallo** → le jaune
+- **l'arancione** → l'orange
+- **l'erba** → l'herbe
+- **la lavanda** → la lavande
+- **il mare** → la mer
+- **la matita** → le crayon
+- **le mele** → les pommes
+- **misterioso** → mystérieux
+- **il mondo** → le monde
+- **la natura** → la nature
+- **il nero** → le noir
+- **la neve** → la neige
+- **la notte** → la nuit
+- **le nuvole** → les nuages
+- **la penna** → le stylo
+- **il pennarello** → le feutre
+- **i pomodori** → les tomates
+- **il preferito** → le préféré
+- **il rosso** → le rouge
+- **il sole** → le soleil
+- **il tuo** → ton/votre
+- **il verde** → le vert
+- **il viola** → le violet
+- **vivace** → vif/vivante
+- **le zucche** → les citrouilles

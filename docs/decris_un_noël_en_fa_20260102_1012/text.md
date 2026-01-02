@@ -26,6 +26,8 @@ In essence, Christmas in the United States is a blend of joy, gratitude, and war
 
 ## Vocabulary
 
+
+
 - **to admire** → admirer
 - **appreciation** → appréciation
 - **to celebrate** → célébrer

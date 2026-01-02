@@ -22,6 +22,8 @@ Enfin, beaucoup de jeunes aiment passer du temps sur les réseaux sociaux. Ils p
 
 ## Vocabulaire
 
+
+
 - **l'ami** → vriend
 - **la bande dessinée** → stripboek
 - **le basket** → basketbal

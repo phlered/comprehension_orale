@@ -26,6 +26,8 @@ Tot ziens!
 
 ## Woordenschat
 
+
+
 - **begin** → commencer
 - **blauw** → bleu
 - **bloemen** → fleurs

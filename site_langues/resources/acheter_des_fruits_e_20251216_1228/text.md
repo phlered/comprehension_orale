@@ -19,38 +19,40 @@ Ik ga naar huis. Mijn tas is vol. Thuis maak ik een fruitsalade. Ik snijd de app
 
 ## Woordenschat
 
-de aardbei | la fraise
-de appel | la pomme
-de banaan | la banane
-de druif | le raisin
-druk | animé
-fris | frais
-het fruit | le fruit
-gaan | aller
-geel | jaune
-genieten | profiter
-gezond | sain
-groen | vert
-de groente | le légume
-groot | grand
-het huis | la maison
-knapperig | croustillant
-de komkommer | le concombre
-kopen | acheter
-de kraam | l'étal
-lang | long
-lekker | délicieux
-de markt | le marché
-oranje | orange
-de paprika | le poivron
-rond | rond
-rood | rouge
-de salade | la salade
-de sinaasappel | l'orange
-snijden | couper
-de tas | le sac
-de tomaat | la tomate
-vol | plein
-de wortel | la carotte
-de zaterdag | le samedi
-zoet | sucré
+
+
+- **de aardbei** → la fraise
+- **de appel** → la pomme
+- **de banaan** → la banane
+- **de druif** → le raisin
+- **druk** → animé
+- **fris** → frais
+- **het fruit** → le fruit
+- **gaan** → aller
+- **geel** → jaune
+- **genieten** → profiter
+- **gezond** → sain
+- **groen** → vert
+- **de groente** → le légume
+- **groot** → grand
+- **het huis** → la maison
+- **knapperig** → croustillant
+- **de komkommer** → le concombre
+- **kopen** → acheter
+- **de kraam** → l'étal
+- **lang** → long
+- **lekker** → délicieux
+- **de markt** → le marché
+- **oranje** → orange
+- **de paprika** → le poivron
+- **rond** → rond
+- **rood** → rouge
+- **de salade** → la salade
+- **de sinaasappel** → l'orange
+- **snijden** → couper
+- **de tas** → le sac
+- **de tomaat** → la tomate
+- **vol** → plein
+- **de wortel** → la carotte
+- **de zaterdag** → le samedi
+- **zoet** → sucré

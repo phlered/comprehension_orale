@@ -24,6 +24,8 @@ As the evening draws to a close, the market takes on a more magical ambiance. Th
 
 ## Vocabulary
 
+
+
 - **to adorn** → orner
 - **ambiance** → ambiance
 - **aroma** → arôme

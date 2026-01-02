@@ -28,6 +28,8 @@ Diese Reise durch Deutschland war für mich nicht nur eine Erkundung geografisch
 
 ## Wortschatz
 
+
+
 - **der Abenteuer** → l'aventure
 - **der Anfang** → le début
 - **die Architektur** → l'architecture

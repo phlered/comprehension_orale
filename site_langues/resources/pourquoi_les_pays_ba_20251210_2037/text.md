@@ -22,38 +22,40 @@ Dus, molens en tulpen zijn beroemd omdat ze uniek en mooi zijn. Ze zijn een bela
 
 ## Woordenschat
 
-belangrijk | important
-bijkomen | ajouter
-bloeien | fleurir
-bloemen | fleurir
-de cultuur | la culture
-het deel | la partie
-elk | chaque
-fotograferen | photographier
-genieten | profiter
-het graan | le grain
-historisch | historique
-jaar | an
-de Keukenhof | le Keukenhof
-kleurrijk | coloré
-komen | venir
-het land | le pays
-het landschap | le paysage
-de lente | le printemps
-maken | rendre
-de mensen | les gens
-de molen | le moulin
-mooi | beau
-de Nederlanden | les Pays-Bas
-Nederlands | néerlandais
-speciaal | spécial
-symbool | symbole
-de toerist | le touriste
-de tuin | le jardin
-de tulp | la tulipe
-uniek | unique
-het voorjaar | le printemps
-vroeger | autrefois
-het water | l'eau
-de wind | le vent
-zien | voir
+
+
+- **belangrijk** → important
+- **bijkomen** → ajouter
+- **bloeien** → fleurir
+- **bloemen** → fleurir
+- **de cultuur** → la culture
+- **het deel** → la partie
+- **elk** → chaque
+- **fotograferen** → photographier
+- **genieten** → profiter
+- **het graan** → le grain
+- **historisch** → historique
+- **jaar** → an
+- **de Keukenhof** → le Keukenhof
+- **kleurrijk** → coloré
+- **komen** → venir
+- **het land** → le pays
+- **het landschap** → le paysage
+- **de lente** → le printemps
+- **maken** → rendre
+- **de mensen** → les gens
+- **de molen** → le moulin
+- **mooi** → beau
+- **de Nederlanden** → les Pays-Bas
+- **Nederlands** → néerlandais
+- **speciaal** → spécial
+- **symbool** → symbole
+- **de toerist** → le touriste
+- **de tuin** → le jardin
+- **de tulp** → la tulipe
+- **uniek** → unique
+- **het voorjaar** → le printemps
+- **vroeger** → autrefois
+- **het water** → l'eau
+- **de wind** → le vent
+- **zien** → voir

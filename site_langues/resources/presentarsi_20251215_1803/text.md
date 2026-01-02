@@ -23,39 +23,41 @@ E tu? Come ti chiami? Quanti anni hai? Dove abiti?
 
 ## Vocabolario
 
-abito | habite
-gli anni | les ans
-il calcio | le football
-chiamo | appelle
-ciao | salut
-il cibo | la nourriture
-la città | la ville
-la cultura | la culture
-la famiglia | la famille
-i genitori | les parents
-giocare | jouer
-ho | ai
-l'amico | l'ami
-l'ingegneria | l'ingénierie
-l'Italia | l'Italie
-l'università | l'université
-il lavoro | le travail
-la madre | la mère
-la matematica | les mathématiques
-il medico | le médecin
-mi | me
-mi piace | j'aime
-la musica | la musique
-il nome | le prénom
-il padre | le père
-il paese | le pays
-parlo | parle
-la pizza | la pizza
-sono | suis
-la sorella | la sœur
-la squadra | l'équipe
-lo studente | l'étudiant
-studio | étudie
-il tempo libero | le temps libre
-viaggiare | voyager
-vorrei | voudrais
+
+
+- **abito** → habite
+- **gli anni** → les ans
+- **il calcio** → le football
+- **chiamo** → appelle
+- **ciao** → salut
+- **il cibo** → la nourriture
+- **la città** → la ville
+- **la cultura** → la culture
+- **la famiglia** → la famille
+- **i genitori** → les parents
+- **giocare** → jouer
+- **ho** → ai
+- **l'amico** → l'ami
+- **l'ingegneria** → l'ingénierie
+- **l'Italia** → l'Italie
+- **l'università** → l'université
+- **il lavoro** → le travail
+- **la madre** → la mère
+- **la matematica** → les mathématiques
+- **il medico** → le médecin
+- **mi** → me
+- **mi piace** → j'aime
+- **la musica** → la musique
+- **il nome** → le prénom
+- **il padre** → le père
+- **il paese** → le pays
+- **parlo** → parle
+- **la pizza** → la pizza
+- **sono** → suis
+- **la sorella** → la sœur
+- **la squadra** → l'équipe
+- **lo studente** → l'étudiant
+- **studio** → étudie
+- **il tempo libero** → le temps libre
+- **viaggiare** → voyager
+- **vorrei** → voudrais

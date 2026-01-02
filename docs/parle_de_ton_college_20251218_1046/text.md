@@ -18,6 +18,8 @@ Mis profesores son amables y me ayudan mucho. Estoy contento en mi colegio y con
 
 ## Vocabulario
 
+
+
 - **el amigo** → l'ami
 - **aprender** → apprendre
 - **el arte** → l'art

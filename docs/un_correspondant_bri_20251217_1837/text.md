@@ -18,38 +18,40 @@ At home, we have three chickens, and we get fresh eggs every day. We also have a
 
 ## Vocabulary
 
-air | air
-bike | vélo
-books | livres
-brother | frère
-brother’s | du frère
-calm | calme
-chickens | poules
-countryside | campagne
-cycling | cyclisme
-Devon | Devon
-dog | chien
-eggs | œufs
-to enjoy | apprécier
-to explore | explorer
-family | famille
-football | football
-friendly | amical
-hiking | randonnée
-hills | collines
-hobbies | loisirs
-home | maison
-life | vie
-to like | aimer
-to live | vivre
-name | nom
-to play | jouer
-quiet | tranquille
-to read | lire
-sister | sœur
-sister’s | de la sœur
-snacks | collations
-time | temps
-town | ville
-views | vues
-village | village
+
+
+- **air** → air
+- **bike** → vélo
+- **books** → livres
+- **brother** → frère
+- **brother’s** → du frère
+- **calm** → calme
+- **chickens** → poules
+- **countryside** → campagne
+- **cycling** → cyclisme
+- **Devon** → Devon
+- **dog** → chien
+- **eggs** → œufs
+- **to enjoy** → apprécier
+- **to explore** → explorer
+- **family** → famille
+- **football** → football
+- **friendly** → amical
+- **hiking** → randonnée
+- **hills** → collines
+- **hobbies** → loisirs
+- **home** → maison
+- **life** → vie
+- **to like** → aimer
+- **to live** → vivre
+- **name** → nom
+- **to play** → jouer
+- **quiet** → tranquille
+- **to read** → lire
+- **sister** → sœur
+- **sister’s** → de la sœur
+- **snacks** → collations
+- **time** → temps
+- **town** → ville
+- **views** → vues
+- **village** → village

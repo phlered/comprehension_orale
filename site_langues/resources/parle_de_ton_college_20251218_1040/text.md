@@ -18,6 +18,8 @@ Mi horario es de lunes a viernes, desde las ocho de la mañana hasta las tres de
 
 ## Vocabulario
 
+
+
 - **el amigo** → l'ami
 - **aprender** → apprendre
 - **el arte** → l'art

@@ -22,6 +22,8 @@ Um die Vorteile der sozialen Netzwerke optimal zu nutzen und gleichzeitig ihre R
 
 ## Wortschatz
 
+
+
 - **die Abhängigkeit** → la dépendance
 - **der Alltag** → le quotidien
 - **der Austausch** → l'échange

@@ -26,6 +26,8 @@ Overall, while both nations cherish Christmas as a time for family, joy, and goo
 
 ## Vocabulary
 
+
+
 - **atmosphere** → atmosphère
 - **Boxing Day** → lendemain de Noël
 - **carols** → chants de Noël

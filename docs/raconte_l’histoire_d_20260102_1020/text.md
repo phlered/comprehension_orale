@@ -24,6 +24,8 @@ The Johnsons' Spanish Christmas turned out to be a heartwarming experience that 
 
 ## Vocabulary
 
+
+
 - **art** → art
 - **celebration** → célébration
 - **change** → changement

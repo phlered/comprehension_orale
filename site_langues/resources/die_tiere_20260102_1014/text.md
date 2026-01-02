@@ -24,6 +24,8 @@ Ein Lieblingstier von vielen Kindern ist der Hase. Hasen sind schnell und haben 
 
 ## Wortschatz
 
+
+
 - **das Blatt** → la feuille
 - **der Clownfisch** → le poisson-clown
 - **der Delfin** → le dauphin

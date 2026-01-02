@@ -13,38 +13,40 @@ I giorni della settimana sono sette. Il primo giorno è lunedì. Lunedì inizia 
 
 ## Vocabolario
 
-andare | aller
-il bambino | l'enfant
-cantare | chanter
-la canzone | la chanson
-conoscere | connaître
-la domenica | le dimanche
-essere | être
-la famiglia | la famille
-finalmente | enfin
-il giorno | le jour
-il giovedì | le jeudi
-imparare | apprendre
-importante | important
-iniziare | commencer
-l'aiuto | l'aide
-lavorare | travailler
-il lavoro | le travail
-il lunedì | le lundi
-il martedì | le mardi
-il mercoledì | le mercredi
-la messa | la messe
-metà | milieu
-organizzare | organiser
-passare | passer
-la persona | la personne
-riposarsi | se reposer
-il riposo | le repos
-il sabato | le samedi
-sapere | savoir
-la scuola | l'école
-la settimana | la semaine
-stanco | fatigué
-il tempo | le temps
-unico | unique
-il venerdì | le vendredi
+
+
+- **andare** → aller
+- **il bambino** → l'enfant
+- **cantare** → chanter
+- **la canzone** → la chanson
+- **conoscere** → connaître
+- **la domenica** → le dimanche
+- **essere** → être
+- **la famiglia** → la famille
+- **finalmente** → enfin
+- **il giorno** → le jour
+- **il giovedì** → le jeudi
+- **imparare** → apprendre
+- **importante** → important
+- **iniziare** → commencer
+- **l'aiuto** → l'aide
+- **lavorare** → travailler
+- **il lavoro** → le travail
+- **il lunedì** → le lundi
+- **il martedì** → le mardi
+- **il mercoledì** → le mercredi
+- **la messa** → la messe
+- **metà** → milieu
+- **organizzare** → organiser
+- **passare** → passer
+- **la persona** → la personne
+- **riposarsi** → se reposer
+- **il riposo** → le repos
+- **il sabato** → le samedi
+- **sapere** → savoir
+- **la scuola** → l'école
+- **la settimana** → la semaine
+- **stanco** → fatigué
+- **il tempo** → le temps
+- **unico** → unique
+- **il venerdì** → le vendredi

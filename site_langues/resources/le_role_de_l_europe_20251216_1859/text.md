@@ -25,38 +25,40 @@ Zusammenfassend lässt sich feststellen, dass Europas Rolle in der Welt eine del
 
 ## Wortschatz
 
-das Abkommen | l'accord
-der Austausch | l'échange
-die Bedeutung | l'importance
-der Bereich | le domaine
-die Bewegung | le mouvement
-der Brexit | le Brexit
-die Bühne | la scène
-der Dialog | le dialogue
-der Einfluss | l'influence
-der Frieden | la paix
-die Fähigkeit | la capacité
-der Handel | le commerce
-die Herausforderung | le défi
-das Interesse | l'intérêt
-die Investition | l'investissement
-der Konflikt | le conflit
-die Krise | la crise
-die Kunst | l'art
-der Markt | le marché
-das Modell | le modèle
-die Partnerschaft | le partenariat
-die Politik | la politique
-die Rolle | le rôle
-der Schutz | la protection
-die Strahlkraft | le rayonnement
-die Struktur | la structure
-die Supermacht | la superpuissance
-die Union | l'union
-der Vermittler | le médiateur
-die Welt | le monde
-die Währung | la monnaie
-das Ziel | l'objectif
-die Zivilisation | la civilisation
-die Zukunft | l'avenir
-die Zusammenarbeit | la coopération
+
+
+- **das Abkommen** → l'accord
+- **der Austausch** → l'échange
+- **die Bedeutung** → l'importance
+- **der Bereich** → le domaine
+- **die Bewegung** → le mouvement
+- **der Brexit** → le Brexit
+- **die Bühne** → la scène
+- **der Dialog** → le dialogue
+- **der Einfluss** → l'influence
+- **der Frieden** → la paix
+- **die Fähigkeit** → la capacité
+- **der Handel** → le commerce
+- **die Herausforderung** → le défi
+- **das Interesse** → l'intérêt
+- **die Investition** → l'investissement
+- **der Konflikt** → le conflit
+- **die Krise** → la crise
+- **die Kunst** → l'art
+- **der Markt** → le marché
+- **das Modell** → le modèle
+- **die Partnerschaft** → le partenariat
+- **die Politik** → la politique
+- **die Rolle** → le rôle
+- **der Schutz** → la protection
+- **die Strahlkraft** → le rayonnement
+- **die Struktur** → la structure
+- **die Supermacht** → la superpuissance
+- **die Union** → l'union
+- **der Vermittler** → le médiateur
+- **die Welt** → le monde
+- **die Währung** → la monnaie
+- **das Ziel** → l'objectif
+- **die Zivilisation** → la civilisation
+- **die Zukunft** → l'avenir
+- **die Zusammenarbeit** → la coopération

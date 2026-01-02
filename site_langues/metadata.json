@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-02T11:26:29.852494",
+  "generated_at": "2026-01-02T11:37:40.494388",
   "total_resources": 263,
   "languages": [
     "esp",
-    "fr",
+    "it",
+    "nl",
     "cor",
     "all",
     "eng",
-    "nl",
-    "it"
+    "fr"
   ],
   "resources": [
     {
@@ -61,7 +61,7 @@
       "date": "2025-12-18 07:48:12",
       "longueur": 150,
       "text_preview": "안녕하세요! 저는 지훈이에요. 저는 고등학생이에요. 저는 K-팝을 아주 좋아해요. 매일 아침 학교에 가기 전에 K-팝 음악을 들어요. 음악을 들으면 기분이 좋아져요. 학교에서는 친구들과 K-팝 가수에 대해 이야기를 많이 해요. \n\n수업이 끝나면 친구들과 함께 댄스 연습을 해요. 학교 축제에서 K-팝 댄스를 보여주고 싶어요. 그래서 열심히 연습해요. 주말에는...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/raconte_la_vie_quoti_20251218_0748/audio.mp3",
       "text_path": "resources/raconte_la_vie_quoti_20251218_0748/text.md"
     },
@@ -169,7 +169,7 @@
       "date": "2025-12-18 07:47:57",
       "longueur": 150,
       "text_preview": "음악, 영화, 그리고 드라마는 한국의 젊은이들에게 중요한 문화 요소입니다. 첫째, 음악은 기분을 좋게 하고 스트레스를 줄여줍니다. 많은 젊은이들이 K-pop을 듣고 춤을 춥니다. K-pop 콘서트에 가서 친구들과 즐거운 시간을 보냅니다.\n\n둘째, 영화는 재미있고 감동적입니다. 주말에 친구들과 영화를 보러 가는 것은 인기 있는 활동입니다. 영화는 새로운 이야...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/explique_limportanc_20251218_0747/audio.mp3",
       "text_path": "resources/explique_limportanc_20251218_0747/text.md"
     },
@@ -205,7 +205,7 @@
       "date": "2025-12-10 18:54:53",
       "longueur": 50,
       "text_preview": "안녕하세요! 저는 한국 음식을 좋아해요. 김치, 불고기, 비빔밥을 좋아해요. 김치는 매워요. 불고기는 달콤해요. 비빔밥은 채소와 고기가 있어요. 냉면도 좋아요. 냉면은 차가워요. 맛있어요! 여러분은 어떤 음식을 좋아해요? 한국 음식 먹어보세요!",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/la_nourriture_20251210_1854/audio.mp3",
       "text_path": "resources/la_nourriture_20251210_1854/text.md"
     },
@@ -241,7 +241,7 @@
       "date": "2025-12-15 17:57:54",
       "longueur": 150,
       "text_preview": "Ciao! Mi chiamo Luca e oggi parlo della mia alimentazione. Mi piace mangiare cibi sani. A colazione, bevo latte e mangio una fetta di pane con marmellata. Mi piace anche la frutta, specialmente le mel...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/l_alimentazione_20251215_1757/audio.mp3",
       "text_path": "resources/l_alimentazione_20251215_1757/text.md"
     },
@@ -259,7 +259,7 @@
       "date": "2025-12-16 12:27:00",
       "longueur": 150,
       "text_preview": "Vandaag ga ik een pakketje sturen. Ik heb een cadeau voor mijn vriendin. Het is haar verjaardag binnenkort. Eerst pak ik het cadeau in met mooi papier. Daarna plak ik er een sticker op met haar adres....",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/envoyer_un_colis_a_l_20251216_1226/audio.mp3",
       "text_path": "resources/envoyer_un_colis_a_l_20251216_1226/text.md"
     },
@@ -493,7 +493,7 @@
       "date": "2025-12-16 12:27:38",
       "longueur": 150,
       "text_preview": "Ik ben Jan. Ik ben ziek. Ik wil een afspraak bij de dokter maken. Ik bel de dokterspraktijk. De assistent antwoordt. \n\n\"Hallo, met de dokterspraktijk,\" zegt de assistent.\n\n\"Hallo,\" zeg ik. \"Ik ben Jan...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/demander_un_rendez_v_20251216_1227/audio.mp3",
       "text_path": "resources/demander_un_rendez_v_20251216_1227/text.md"
     },
@@ -511,7 +511,7 @@
       "date": "2025-12-16 19:03:34",
       "longueur": 400,
       "text_preview": "Die gegenwärtige Krise der europäischen Identität ist ein Phänomen, das tief in den sozioökonomischen, politischen und kulturellen Strukturen unseres Kontinents verankert ist. Europa, ein historisch r...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/la_crise_de_l_identi_20251216_1903/audio.mp3",
       "text_path": "resources/la_crise_de_l_identi_20251216_1903/text.md"
     },
@@ -547,7 +547,7 @@
       "date": "2025-12-27 21:52:54",
       "longueur": 400,
       "text_preview": "Die moderne Arbeitswelt unterliegt einem ständigen Wandel, und mit der rasanten Entwicklung der Künstlichen Intelligenz (KI) gewinnen bestimmte Debatten an Brisanz, insbesondere jene um den sogenannte...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/chomage_frictionnel_20251227_2152/audio.mp3",
       "text_path": "resources/chomage_frictionnel_20251227_2152/text.md"
     },
@@ -565,7 +565,7 @@
       "date": "2025-12-16 19:04:03",
       "longueur": 400,
       "text_preview": "Der Kapitalismus als vorherrschendes Wirtschaftssystem hat ohne Zweifel zahlreiche Erfolge verzeichnet, die den Lebensstandard in unzähligen Teilen der Welt beträchtlich erhöht haben. Dennoch häufen s...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/repenser_le_modele_e_20251216_1903/audio.mp3",
       "text_path": "resources/repenser_le_modele_e_20251216_1903/text.md"
     },
@@ -601,7 +601,7 @@
       "date": "2025-12-15 17:56:54",
       "longueur": 150,
       "text_preview": "L'alimentazione è molto importante per la salute. Mangiare bene aiuta a sentirsi forti e felici. È bene mangiare vari tipi di cibo ogni giorno. La frutta è buona e dolce. Le mele e le banane sono molt...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/l_alimentazione_20251215_1756/audio.mp3",
       "text_path": "resources/l_alimentazione_20251215_1756/text.md"
     },
@@ -637,7 +637,7 @@
       "date": "2025-12-16 13:04:10",
       "longueur": 150,
       "text_preview": "Titel: Pizza Bestellen\n\nHallo! Ik wil graag een pizza bestellen. Ik hou van pizza. Het is mijn lievelingseten. Vandaag wil ik een pizza met kaas en tomaat.\n\nIk bel naar de pizzeria. \"Hallo, ik wil een...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/commander_une_pizza_20251216_1304/audio.mp3",
       "text_path": "resources/commander_une_pizza_20251216_1304/text.md"
     },
@@ -673,7 +673,7 @@
       "date": "2025-12-16 08:37:47",
       "longueur": 150,
       "text_preview": "Aujourd'hui, je vais au supermarché. J'ai une liste de courses. Je prends un caddie à l'entrée. D'abord, je vais au rayon des fruits et légumes. Je choisis des pommes, des bananes et une salade. Ensui...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/faire_les_courses_au_20251216_0837/audio.mp3",
       "text_path": "resources/faire_les_courses_au_20251216_0837/text.md"
     },
@@ -781,7 +781,7 @@
       "date": "2025-12-15 17:59:08",
       "longueur": 150,
       "text_preview": "Il campeggio si trova vicino al lago. È un bel posto per passare le vacanze. Per arrivare al campeggio, prendi la strada a destra dopo il ponte. Ci sono molti alberi e fiori intorno. Il campeggio ha t...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/dove_si_trova_il_cam_20251215_1758/audio.mp3",
       "text_path": "resources/dove_si_trova_il_cam_20251215_1758/text.md"
     },
@@ -1051,7 +1051,7 @@
       "date": "2025-12-18 07:45:23",
       "longueur": 150,
       "text_preview": "매일 아침, K-pop 아이돌은 일찍 일어납니다. 보통 아침 6시에 일어나서 체육관에 갑니다. 운동을 하고 나서 아침을 먹습니다. 아침 식사는 건강하게 먹어요. 예를 들어, 밥, 채소, 과일입니다. \n\n그 다음에는 연습실로 갑니다. 춤 연습과 노래 연습을 열심히 합니다. 보통 3시간에서 4시간 정도 연습합니다. 시간이 지나면, 점심을 먹고 잠깐 쉽니다. 오...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/decris_une_journee_t_20251218_0745/audio.mp3",
       "text_path": "resources/decris_une_journee_t_20251218_0745/text.md"
     },
@@ -1069,7 +1069,7 @@
       "date": "2025-12-10 20:37:48",
       "longueur": 150,
       "text_preview": "De Nederlanden zijn beroemd om molens en tulpen. Maar waarom?\n\nIn Nederland is er veel wind. De molens gebruiken de wind. Ze malen graan en pompen water. Vroeger waren er veel molens. Nu zijn er minde...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/pourquoi_les_pays_ba_20251210_2037/audio.mp3",
       "text_path": "resources/pourquoi_les_pays_ba_20251210_2037/text.md"
     },
@@ -1087,7 +1087,7 @@
       "date": "2025-12-16 19:02:40",
       "longueur": 400,
       "text_preview": "Die Biotechnologie ist unzweifelhaft ein Feld, das in den letzten Jahrzehnten enorme Fortschritte gemacht hat und weiterhin große Versprechungen für die Zukunft birgt. Doch mit dem beeindruckenden Pot...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/les_enjeux_ethiques_20251216_1902/audio.mp3",
       "text_path": "resources/les_enjeux_ethiques_20251216_1902/text.md"
     },
@@ -1141,7 +1141,7 @@
       "date": "2025-12-17 11:30:27",
       "longueur": 150,
       "text_preview": "어제 학교에서 아주 특별한 일이 있었어요. 아침에는 보통처럼 일어났어요. 학교에 가고 싶지 않았지만, 어쩔 수 없이 갔어요. 첫 번째 수업은 수학이었어요. 수학 수업이 시작될 때 갑자기 불이 꺼졌어요. 모두 깜짝 놀랐어요. 선생님도 어떻게 해야 할지 몰랐어요.\n\n친구들과 나는 창문을 열고 밖을 보았어요. 날씨가 맑아서 다행이었어요. 선생님은 우리가 교실 밖...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/raconte_une_journee_20251217_1130/audio.mp3",
       "text_path": "resources/raconte_une_journee_20251217_1130/text.md"
     },
@@ -1195,7 +1195,7 @@
       "date": "2025-12-27 21:50:10",
       "longueur": 400,
       "text_preview": "The advent of artificial intelligence has undeniably revolutionized numerous sectors, heralding an era akin to a modern industrial revolution. While its benefits are manifold, there lingers an unsettl...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/l_impact_de_l_ia_sur_20251227_2149/audio.mp3",
       "text_path": "resources/l_impact_de_l_ia_sur_20251227_2149/text.md"
     },
@@ -1267,7 +1267,7 @@
       "date": "2025-12-16 19:01:28",
       "longueur": 400,
       "text_preview": "In der heutigen Zeit, in der sich das digitale Zeitalter unaufhaltsam entfaltet, stellt sich die Frage: Wie wird die Zukunft der Arbeit in dieser neuen Ära aussehen? Die technologische Revolution hat ...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/l_avenir_du_travail_20251216_1901/audio.mp3",
       "text_path": "resources/l_avenir_du_travail_20251216_1901/text.md"
     },
@@ -1357,7 +1357,7 @@
       "date": "2025-12-17 11:34:13",
       "longueur": 150,
       "text_preview": "십대들이 아르바이트를 해야 할까요? 미국에서는 많은 십대들이 작은 일을 합니다. 예를 들어, 음식점에서 일하거나, 슈퍼마켓에서 물건을 정리합니다. 이런 아르바이트는 좋은 경험이 될 수 있습니다.\n\n첫째, 아르바이트를 하면서 돈을 벌 수 있습니다. 십대들은 번 돈으로 친구와 영화를 보거나, 새로운 옷을 살 수 있습니다. 이렇게 하면 부모님의 돈에 덜 의존하게...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/est_ce_que_les_adole_20251217_1134/audio.mp3",
       "text_path": "resources/est_ce_que_les_adole_20251217_1134/text.md"
     },
@@ -1483,7 +1483,7 @@
       "date": "2025-12-16 12:28:29",
       "longueur": 150,
       "text_preview": "Hallo! Ik ben in een sandwicherie. Ik wil een sandwich bestellen. De man achter de toonbank glimlacht. Hij zegt: \"Hallo, wat wil je eten?\" Ik kijk naar het menu. Er zijn veel opties. \n\nIk zeg: \"Ik wil...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/commander_un_sandwic_20251216_1228/audio.mp3",
       "text_path": "resources/commander_un_sandwic_20251216_1228/text.md"
     },
@@ -1717,7 +1717,7 @@
       "date": "2025-12-16 19:02:06",
       "longueur": 400,
       "text_preview": "Die Demokratie, eine Staatsform, die auf dem Willen des Volkes basiert, steht heutzutage vor großen Herausforderungen. Diese ergeben sich nicht zuletzt durch das weltweite Erstarken populistischer Bew...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/la_democratie_face_a_20251216_1901/audio.mp3",
       "text_path": "resources/la_democratie_face_a_20251216_1901/text.md"
     },
@@ -1951,7 +1951,7 @@
       "date": "2025-12-17 11:35:56",
       "longueur": 150,
       "text_preview": "안녕하세요!\n\n제 이름은 민수예요. 저는 한국에 살고 있는 고등학생이에요. 만나서 반가워요! 저는 새로운 친구를 사귀는 것을 좋아해요. 제 학교는 아주 크고 교실이 많아요. 우리 학교에는 큰 도서관과 운동장도 있어요.\n\n제가 좋아하는 과목은 수학과 영어예요. 수학은 문제를 푸는 게 재미있어요. 영어 수업에서는 외국 문화를 배울 수 있어서 좋아요. 가끔 영어...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/ecris_un_message_dan_20251217_1135/audio.mp3",
       "text_path": "resources/ecris_un_message_dan_20251217_1135/text.md"
     },
@@ -1987,7 +1987,7 @@
       "date": "2025-12-16 12:28:43",
       "longueur": 150,
       "text_preview": "Ik ga naar de bibliotheek. De bibliotheek is groot. Er zijn veel boeken. Ik wil een boek lenen. Eerst zoek ik een mooi boek. Ik loop naar de kast met boeken. Ik zie veel kleuren en titels. Ik kies een...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/emprunter_un_livre_a_20251216_1228/audio.mp3",
       "text_path": "resources/emprunter_un_livre_a_20251216_1228/text.md"
     },
@@ -2257,7 +2257,7 @@
       "date": "2025-12-16 12:27:52",
       "longueur": 150,
       "text_preview": "Op zaterdag ga ik naar de markt. Ik koop graag vers fruit en verse groenten. Eerst ga ik naar de appelkraam. Ik koop rode appels. Ze kosten drie euro per kilo. Daarna ga ik naar de groentekraam. Ik wi...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/acheter_des_fruits_e_20251216_1227/audio.mp3",
       "text_path": "resources/acheter_des_fruits_e_20251216_1227/text.md"
     },
@@ -2311,7 +2311,7 @@
       "date": "2025-12-16 12:20:05",
       "longueur": 150,
       "text_preview": "Titel: Eten in een restaurant\n\nHoi! Vandaag gaan we naar een restaurant. Het restaurant heet \"De Smakelijke Hap\". Het is gezellig en niet duur.\n\nWe zitten aan een tafel bij het raam. De ober komt naar...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/commander_au_restaur_20251216_1219/audio.mp3",
       "text_path": "resources/commander_au_restaur_20251216_1219/text.md"
     },
@@ -2473,7 +2473,7 @@
       "date": "2025-12-16 12:28:16",
       "longueur": 150,
       "text_preview": "Ik ga naar de markt. Het is zaterdag. Ik koop fruit en groenten. Op de markt zijn veel kraampjes. Er zijn appels, bananen en sinaasappels. Ik koop vier appels. Ze zijn rood en groot. Ik koop ook banan...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/acheter_des_fruits_e_20251216_1228/audio.mp3",
       "text_path": "resources/acheter_des_fruits_e_20251216_1228/text.md"
     },
@@ -2509,7 +2509,7 @@
       "date": "2025-12-15 18:02:07",
       "longueur": 150,
       "text_preview": "Sono arrivato in Italia e sono in un albergo. L'albergo è piccolo ma molto carino. Alla reception, c'è una signora gentile. Il suo nome è Maria. Lei parla inglese e mi aiuta con il check-in. La mia ca...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/in_albergo_20251215_1801/audio.mp3",
       "text_path": "resources/in_albergo_20251215_1801/text.md"
     },
@@ -2527,7 +2527,7 @@
       "date": "2025-12-15 18:02:35",
       "longueur": 150,
       "text_preview": "I colori sono molto belli. Il rosso è un colore vivace. Le mele e i pomodori sono rossi. Il blu è il colore del cielo e del mare. Mi piace il blu perché è calmo. \n\nIl giallo è il colore del sole. I fi...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/i_colori_20251215_1802/audio.mp3",
       "text_path": "resources/i_colori_20251215_1802/text.md"
     },
@@ -2599,7 +2599,7 @@
       "date": "2025-12-22 10:45:25",
       "longueur": 150,
       "text_preview": "Engaging in a manual activity such as sewing offers a myriad of benefits, particularly in enhancing one's sense of well-being. In today's fast-paced digital world, finding time for hands-on crafts can...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/interet_de_faire_une_20251222_1045/audio.mp3",
       "text_path": "resources/interet_de_faire_une_20251222_1045/text.md"
     },
@@ -2743,7 +2743,7 @@
       "date": "2025-12-18 09:23:04",
       "longueur": 150,
       "text_preview": "Die Bayerische Alpenregion, ein Juwel im Süden Deutschlands, besticht durch ihre atemberaubenden Landschaften und vielfältigen Freizeitmöglichkeiten. Diese malerische Gegend bietet ein unvergleichlich...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/presente_une_region_20251218_0922/audio.mp3",
       "text_path": "resources/presente_une_region_20251218_0922/text.md"
     },
@@ -2761,7 +2761,7 @@
       "date": "2025-12-16 12:20:19",
       "longueur": 150,
       "text_preview": "Maria is thuis. Ze heeft honger. Ze wil pizza eten. Maria pakt haar telefoon. Ze belt naar de pizzeria. \n\n\"Hallo,\" zegt Maria. \"Ik wil een pizza bestellen.\"\n\"Hallo,\" zegt de medewerker. \"Welke pizza w...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/commander_une_pizza_20251216_1220/audio.mp3",
       "text_path": "resources/commander_une_pizza_20251216_1220/text.md"
     },
@@ -2851,7 +2851,7 @@
       "date": "2025-12-27 21:17:14",
       "longueur": 150,
       "text_preview": "Je vais au supermarché pour faire les courses. J'ai besoin de légumes, de fruits et de pain. D'abord, je prends un chariot à l'entrée. Je vais au rayon des fruits et légumes. Je prends des pommes, des...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/faire_les_courses_20251227_2117/audio.mp3",
       "text_path": "resources/faire_les_courses_20251227_2117/text.md"
     },
@@ -2887,7 +2887,7 @@
       "date": "2025-12-16 08:37:23",
       "longueur": 150,
       "text_preview": "Bonjour! Je m'appelle Julie. J'ai une petite famille. Dans ma famille, il y a quatre personnes. Il y a ma mère, mon père, mon frère et moi. Ma mère s'appelle Anne. Elle est gentille et elle aime cuisi...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/ma_famille_20251216_0837/audio.mp3",
       "text_path": "resources/ma_famille_20251216_0837/text.md"
     },
@@ -3049,7 +3049,7 @@
       "date": "2025-12-22 09:45:57",
       "longueur": 150,
       "text_preview": "Christmas in the United States is a vibrant tapestry of cherished traditions, delicious meals, and familial warmth. An American family Christmas often begins with weeks of preparation, from decorating...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/decris_un_noel_en_fa_20251222_0945/audio.mp3",
       "text_path": "resources/decris_un_noel_en_fa_20251222_0945/text.md"
     },
@@ -3211,7 +3211,7 @@
       "date": "2025-12-22 09:44:34",
       "longueur": 150,
       "text_preview": "Celebrating Christmas in England is a blend of tradition and festive spirit. Typically, the holiday revolves around a cozy family gathering. Homes are adorned with twinkling lights and lush, green Chr...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/compare_un_noel_trad_20251222_0944/audio.mp3",
       "text_path": "resources/compare_un_noel_trad_20251222_0944/text.md"
     },
@@ -3229,7 +3229,7 @@
       "date": "2025-12-22 09:46:23",
       "longueur": 150,
       "text_preview": "For adolescents in the United Kingdom and the United States, Christmas and New Year’s are much more than just festive holidays; they are a time of reflection, connection, and anticipation. Christmas, ...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/explique_ce_que_repr_20251222_0946/audio.mp3",
       "text_path": "resources/explique_ce_que_repr_20251222_0946/text.md"
     },
@@ -3247,7 +3247,7 @@
       "date": "2025-12-22 09:44:20",
       "longueur": 150,
       "text_preview": "Spending Christmas in the Caribbean is a captivating experience for a British tourist accustomed to chilly, snow-dusted holidays. Instead of bundling up in thick sweaters and scarves, you find yoursel...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/decris_noel_sous_le_20251222_0944/audio.mp3",
       "text_path": "resources/decris_noel_sous_le_20251222_0944/text.md"
     },
@@ -3283,7 +3283,7 @@
       "date": "2025-12-27 21:51:26",
       "longueur": 400,
       "text_preview": "Der Beginn des 21. Jahrhunderts markiert ohne Zweifel eine Phase bahnbrechender technologischer Fortschritte, und im Herzen dieser Entwicklung steht die künstliche Intelligenz (KI). Vergleicht man die...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/vers_une_nouvelle_re_20251227_2151/audio.mp3",
       "text_path": "resources/vers_une_nouvelle_re_20251227_2151/text.md"
     },
@@ -3337,7 +3337,7 @@
       "date": "2025-12-15 18:03:04",
       "longueur": 150,
       "text_preview": "Ciao! Oggi voglio parlare di comprare i vestiti. Mi piace andare al negozio di vestiti. Il sabato è il giorno migliore per fare shopping. Io vado con mia mamma e la mia amica Anna. Il negozio ha molti...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/comprare_i_vestiti_20251215_1802/audio.mp3",
       "text_path": "resources/comprare_i_vestiti_20251215_1802/text.md"
     },
@@ -3391,7 +3391,7 @@
       "date": "2025-12-10 19:01:44",
       "longueur": 60,
       "text_preview": "Die Tiere sind unsere Freunde. Viele Menschen haben Haustiere. Katzen und Hunde sind sehr beliebt. Sie sind liebevoll und spielen gern. Auf dem Bauernhof gibt es Kühe, Schafe und Hühner. Sie geben uns...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/die_tiere_20251210_1901/audio.mp3",
       "text_path": "resources/die_tiere_20251210_1901/text.md"
     },
@@ -3427,7 +3427,7 @@
       "date": "2025-12-15 17:59:27",
       "longueur": 150,
       "text_preview": "Gli animali domestici sono molto amati dalle persone. I cani e i gatti sono i più comuni. Un cane è un amico fedele. Gli piace giocare e fare passeggiate. Un gatto è indipendente e ama dormire. Spesso...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/gli_animali_domestic_20251215_1759/audio.mp3",
       "text_path": "resources/gli_animali_domestic_20251215_1759/text.md"
     },
@@ -3445,7 +3445,7 @@
       "date": "2025-12-16 19:00:09",
       "longueur": 350,
       "text_preview": "Der Schutz personenbezogener Daten ist in der modernen digitalen Gesellschaft zu einer der drängendsten Herausforderungen geworden. Während die digitale Transformation unbestreitbar zahlreiche Vorteil...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/la_protection_des_do_20251216_1859/audio.mp3",
       "text_path": "resources/la_protection_des_do_20251216_1859/text.md"
     },
@@ -3499,7 +3499,7 @@
       "date": "2025-12-22 09:45:02",
       "longueur": 150,
       "text_preview": "During the Christmas holidays, many families choose to travel rather than stay at home, and there are several compelling reasons behind this decision. Firstly, traveling during Christmas allows famili...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/explique_pourquoi_ce_20251222_0944/audio.mp3",
       "text_path": "resources/explique_pourquoi_ce_20251222_0944/text.md"
     },
@@ -3535,7 +3535,7 @@
       "date": "2025-12-18 09:24:16",
       "longueur": 150,
       "text_preview": "Der Naturtourismus in Deutschland bietet Reisenden ein faszinierendes Spektrum an Erlebnissen, das sich von den majestätischen Alpen im Süden bis zu den malerischen Seenplatten im Norden erstreckt. Wa...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/presente_le_tourisme_20251218_0924/audio.mp3",
       "text_path": "resources/presente_le_tourisme_20251218_0924/text.md"
     },
@@ -3553,7 +3553,7 @@
       "date": "2025-12-16 12:26:35",
       "longueur": 150,
       "text_preview": "Elke ochtend neem ik de bus naar mijn werk. De bushalte is dichtbij mijn huis. Om acht uur 's ochtends sta ik bij de halte. De bus is vaak op tijd. Soms is de bus een beetje laat, maar dat is oké.\n\nIn...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/prendre_le_bus_pour_20251216_1226/audio.mp3",
       "text_path": "resources/prendre_le_bus_pour_20251216_1226/text.md"
     },
@@ -3571,7 +3571,7 @@
       "date": "2025-12-27 21:51:08",
       "longueur": 400,
       "text_preview": "Title: Towards a New Industrial Revolution with AI?\n\nAs we stand on the brink of what many are hailing as the next industrial revolution, the transformative potential of artificial intelligence (AI) i...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/vers_une_nouvelle_re_20251227_2150/audio.mp3",
       "text_path": "resources/vers_une_nouvelle_re_20251227_2150/text.md"
     },
@@ -3679,7 +3679,7 @@
       "date": "2025-12-18 09:24:45",
       "longueur": 150,
       "text_preview": "Deutschland ist bei jungen Touristen aus mehreren überzeugenden Gründen eine überaus geschätzte Destination. Zunächst einmal bietet das Land eine reiche kulturelle Vielfalt, die von historischen Städt...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/explique_pourquoi_l_20251218_0924/audio.mp3",
       "text_path": "resources/explique_pourquoi_l_20251218_0924/text.md"
     },
@@ -3697,7 +3697,7 @@
       "date": "2025-12-18 07:45:56",
       "longueur": 150,
       "text_preview": "케이팝(K-pop)은 한국의 대중음악입니다. 많은 젊은이들이 케이팝을 좋아합니다. 왜냐하면 케이팝은 멋진 음악과 춤을 보여주기 때문입니다. 케이팝 그룹은 열심히 연습합니다. 그래서 춤과 노래가 아주 잘 맞습니다.\n\n케이팝 그룹이나 가수들은 개성이 있습니다. 예를 들어, 방탄소년단(BTS)은 전 세계에서 유명합니다. 그들은 음악으로 많은 사람들에게 힘과 용기...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/explique_ce_quest_l_20251218_0745/audio.mp3",
       "text_path": "resources/explique_ce_quest_l_20251218_0745/text.md"
     },
@@ -3769,7 +3769,7 @@
       "date": "2025-12-22 09:46:10",
       "longueur": 150,
       "text_preview": "The Thompson family, weary of the biting British cold, decided to embark on a festive adventure to the sun-drenched shores of Tenerife for Christmas. Leaving behind the frosty mornings and endless gra...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/raconte_le_voyage_de_20251222_0946/audio.mp3",
       "text_path": "resources/raconte_le_voyage_de_20251222_0946/text.md"
     },
@@ -3787,7 +3787,7 @@
       "date": "2025-12-22 09:56:43",
       "longueur": 150,
       "text_preview": "In 2025, the role of social media influencers as positive role models for teenagers remains a contentious issue, sparking both intrigue and skepticism. These digital trendsetters, previously celebrate...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/are_social_media_inf_20251222_0956/audio.mp3",
       "text_path": "resources/are_social_media_inf_20251222_0956/text.md"
     },
@@ -3823,7 +3823,7 @@
       "date": "2025-12-16 12:26:21",
       "longueur": 150,
       "text_preview": "Jasmin is ziek. Ze heeft hoofdpijn en haar keel doet pijn. Ze besluit naar de apotheek te gaan. Jasmin loopt naar de apotheek in haar buurt. \n\nBinnen in de apotheek is het rustig. Er staan weinig mens...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/aller_a_la_pharmacie_20251216_1226/audio.mp3",
       "text_path": "resources/aller_a_la_pharmacie_20251216_1226/text.md"
     },
@@ -3859,7 +3859,7 @@
       "date": "2025-12-17 11:32:17",
       "longueur": 150,
       "text_preview": "학생들의 일상: 영국과 프랑스\n\n영국의 한 학생은 아침 8시쯤 일어납니다. 보통 시리얼이나 토스트로 아침을 먹고, 학교 uniform을 입습니다. 9시에 학교에 가고, 수업은 보통 6시간입니다. 영국 학생들은 점심시간에 샌드위치나 과일을 먹습니다.\n\n프랑스의 학생도 비슷하게 아침 7시나 8시에 일어납니다. 아침으로 빵이나 크루아상을 먹습니다. 프랑스 학교에...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/presente_la_vie_quot_20251217_1132/audio.mp3",
       "text_path": "resources/presente_la_vie_quot_20251217_1132/text.md"
     },
@@ -3949,7 +3949,7 @@
       "date": "2025-12-15 18:00:04",
       "longueur": 150,
       "text_preview": "I giorni della settimana sono sette. Il primo giorno è lunedì. Lunedì inizia la settimana. Molte persone lavorano o vanno a scuola. Dopo lunedì c'è martedì. Martedì è il secondo giorno. Poi viene merc...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/i_giorni_della_setti_20251215_1759/audio.mp3",
       "text_path": "resources/i_giorni_della_setti_20251215_1759/text.md"
     },
@@ -3967,7 +3967,7 @@
       "date": "2025-12-27 21:50:28",
       "longueur": 400,
       "text_preview": "Der rasante Fortschritt der künstlichen Intelligenz (KI) hat in den letzten Jahren vielfältige Diskussionen über ihren Einfluss auf den Arbeitsmarkt entfacht. Während manche Stimmen die Hoffnung äußer...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/l_impact_de_l_ia_sur_20251227_2150/audio.mp3",
       "text_path": "resources/l_impact_de_l_ia_sur_20251227_2150/text.md"
     },
@@ -4003,7 +4003,7 @@
       "date": "2025-12-16 19:00:46",
       "longueur": 350,
       "text_preview": "Der Trend zu einer bargeldlosen Gesellschaft hat in den letzten Jahren erheblich an Fahrt aufgenommen, insbesondere in Industrieländern, in denen technologische Innovationen den Alltag prägen. Doch we...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/vers_une_societe_san_20251216_1900/audio.mp3",
       "text_path": "resources/vers_une_societe_san_20251216_1900/text.md"
     },
@@ -4021,7 +4021,7 @@
       "date": "2025-12-17 11:30:06",
       "longueur": 150,
       "text_preview": "Ciao! Mi chiamo Luca e voglio raccontarti una giornata di scuola molto speciale. Di solito, la mia giornata inizia alle 8:00 con la prima lezione di matematica. Ma ieri è stato diverso! \n\nLa mattina, ...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/raconte_une_journee_20251217_1129/audio.mp3",
       "text_path": "resources/raconte_une_journee_20251217_1129/text.md"
     },
@@ -4039,7 +4039,7 @@
       "date": "2025-12-22 09:45:16",
       "longueur": 150,
       "text_preview": "A Christmas market in the United Kingdom is a delightful blend of tradition and festivity, offering a mesmerizing experience for visitors. Set against the backdrop of historic towns or bustling cities...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/decris_un_marche_de_20251222_0945/audio.mp3",
       "text_path": "resources/decris_un_marche_de_20251222_0945/text.md"
     },
@@ -4075,7 +4075,7 @@
       "date": "2025-12-10 12:53:03",
       "longueur": 250,
       "text_preview": "Die Rolle von nationalen Symbolen wie Hymnen und Flaggen in föderalen Ländern wie Deutschland, Österreich und der Schweiz ist ein faszinierendes Thema. Diese Symbole dienen oft als Bindeglieder innerh...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/ecrire_un_court_essa_20251210_1252/audio.mp3",
       "text_path": "resources/ecrire_un_court_essa_20251210_1252/text.md"
     },
@@ -4093,7 +4093,7 @@
       "date": "2025-12-18 07:46:36",
       "longueur": 150,
       "text_preview": "배우 송강호 소개\n\n송강호는 한국의 유명한 영화 배우입니다. 그는 1967년 부산에서 태어났습니다. 송강호는 연극 무대에서 경력을 시작했습니다. 1996년 영화 '초록물고기'로 영화계에 데뷔했습니다.\n\n송강호는 많은 영화에 출연했습니다. 그의 가장 유명한 작품은 '괴물', '살인의 추억', '기생충'입니다. 특히 '기생충'은 세계적으로 큰 성공을 거두었습니...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/presente_un_acteur_o_20251218_0746/audio.mp3",
       "text_path": "resources/presente_un_acteur_o_20251218_0746/text.md"
     },
@@ -4165,7 +4165,7 @@
       "date": "2025-12-16 12:19:51",
       "longueur": 150,
       "text_preview": "Bij de bakker\n\nHet is een mooie ochtend. Lisa gaat naar de bakker. Ze wil brood kopen. Ze opent de deur en zegt: \"Goedemorgen!\" De bakker lacht en antwoordt: \"Goedemorgen! Hoe kan ik je helpen?\"\n\nLisa...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/commander_a_la_boula_20251216_1219/audio.mp3",
       "text_path": "resources/commander_a_la_boula_20251216_1219/text.md"
     },
@@ -4183,7 +4183,7 @@
       "date": "2025-12-10 20:36:44",
       "longueur": 150,
       "text_preview": "Sinterklaas is een groot feest in Nederland. Het feest begint op 5 december. Kinderen zijn heel blij. Ze zetten hun schoen bij de schoorsteen. Ze zingen liedjes voor Sinterklaas. Soms krijgen ze een c...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/comment_les_habitant_20251210_2036/audio.mp3",
       "text_path": "resources/comment_les_habitant_20251210_2036/text.md"
     },
@@ -4219,7 +4219,7 @@
       "date": "2025-12-17 11:29:06",
       "longueur": 150,
       "text_preview": "Hoy fue un día muy extraño en la escuela. Me levanté tarde porque mi alarma no sonó. Corrí para vestirme y casi no desayuno. Llegué al autobús justo a tiempo. Pensé que sería un día normal, pero estab...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/raconte_une_journee_20251217_1128/audio.mp3",
       "text_path": "resources/raconte_une_journee_20251217_1128/text.md"
     },
@@ -4309,7 +4309,7 @@
       "date": "2025-12-22 09:44:08",
       "longueur": 150,
       "text_preview": "The Thompson family, hailing from the quaint town of Stratford-upon-Avon, decided to break away from their traditional yuletide celebrations by spending Christmas in the sun-drenched landscapes of Spa...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/raconte_lhistoire_d_20251222_0943/audio.mp3",
       "text_path": "resources/raconte_lhistoire_d_20251222_0943/text.md"
     },
@@ -4345,7 +4345,7 @@
       "date": "2025-12-18 07:45:05",
       "longueur": 150,
       "text_preview": "한국 영화 \"기생충\"은 최근에 많은 인기를 얻었습니다. 이 영화는 2019년에 개봉했고, 봉준호 감독이 만들었습니다. \"기생충\"은 두 가족의 이야기를 다룹니다. 한 가족은 가난하고, 다른 가족은 부자입니다. 가난한 가족은 돈을 벌기 위해 부자 가족의 집에서 일을 시작합니다. 하지만, 여러 문제들이 생기면서 이야기가 복잡해집니다.\n\n이 영화는 전 세계적으로 ...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/presente_un_film_cor_20251218_0744/audio.mp3",
       "text_path": "resources/presente_un_film_cor_20251218_0744/text.md"
     },
@@ -4417,7 +4417,7 @@
       "date": "2025-12-17 18:37:50",
       "longueur": 150,
       "text_preview": "Hi! My name is Emily, and I am from a small town in the Midwest, USA. I am excited to be your pen pal. I live in the countryside with my family. My family is big: I have two brothers and one sister. W...",
-      "vocab_count": 0,
+      "vocab_count": 34,
       "audio_path": "resources/une_correspondante_a_20251217_1837/audio.mp3",
       "text_path": "resources/une_correspondante_a_20251217_1837/text.md"
     },
@@ -4435,7 +4435,7 @@
       "date": "2025-12-16 12:27:13",
       "longueur": 150,
       "text_preview": "Naar de bank gaan is makkelijk. Ik loop naar de bank in mijn buurt. De bank is dichtbij mijn huis. Ik wil geld opnemen. Ik heb geld nodig voor boodschappen. Bij de bank is een geldautomaat. Ik heb mij...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/retirer_de_l_argent_20251216_1227/audio.mp3",
       "text_path": "resources/retirer_de_l_argent_20251216_1227/text.md"
     },
@@ -4489,7 +4489,7 @@
       "date": "2025-12-15 18:03:51",
       "longueur": 150,
       "text_preview": "Ciao! Mi chiamo Marco. Ho venti anni e vengo dall'Italia. Abito a Roma, ma la mia famiglia è di Napoli. Sono studente all'università. Studio ingegneria. Mi piace molto la matematica. \n\nHo una sorella....",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/presentarsi_20251215_1803/audio.mp3",
       "text_path": "resources/presentarsi_20251215_1803/text.md"
     },
@@ -4507,7 +4507,7 @@
       "date": "2025-12-22 10:45:36",
       "longueur": 150,
       "text_preview": "Choosing between a cat and a dog as a preferred pet often reflects distinct aspects of one's personality and lifestyle. Dogs, known for their unwavering loyalty and boundless energy, often appeal to i...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/chat_ou_chien_quel_20251222_1045/audio.mp3",
       "text_path": "resources/chat_ou_chien_quel_20251222_1045/text.md"
     },
@@ -4543,7 +4543,7 @@
       "date": "2025-12-18 07:48:27",
       "longueur": 150,
       "text_preview": "홍대는 서울에서 매우 인기 있는 장소입니다. 홍대는 특히 젊은 사람들 사이에서 유명합니다. 이곳은 많은 예술과 음악이 있는 문화적인 장소입니다. 홍대 거리에는 다양한 카페, 레스토랑 그리고 상점이 있습니다. 또한, 길거리 공연도 자주 열립니다. \n\n홍대는 현대 한국 문화에 중요합니다. 한국의 젊은이들이 창의적이고 새로운 것을 시도하는 곳이기 때문입니다. 많...",
-      "vocab_count": 0,
+      "vocab_count": 36,
       "audio_path": "resources/presente_un_lieu_cul_20251218_0748/audio.mp3",
       "text_path": "resources/presente_un_lieu_cul_20251218_0748/text.md"
     },
@@ -4597,7 +4597,7 @@
       "date": "2025-12-16 18:59:30",
       "longueur": 350,
       "text_preview": "Der Einfluss Europas in der globalen Arena: Eine Analyse\n\nIn einer sich stetig wandelnden Welt behält Europa, trotz seiner geographischen Kompaktheit, eine unverhältnismäßig große Bedeutung. Diese Bed...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/le_role_de_l_europe_20251216_1859/audio.mp3",
       "text_path": "resources/le_role_de_l_europe_20251216_1859/text.md"
     },
@@ -4615,7 +4615,7 @@
       "date": "2025-12-18 07:46:53",
       "longueur": 150,
       "text_preview": "한국 영화와 서양 영화 비교\n\n한국 영화와 서양 영화는 여러 가지 면에서 다릅니다. 먼저, 한국 영화는 가족, 사회 문제, 인간 관계를 많이 다룹니다. 예를 들어, 가족 간의 사랑과 갈등, 친구와의 우정 이야기가 많습니다. 반면에, 서양 영화는 액션, 판타지, 모험 이야기가 많습니다. 히어로나 슈퍼히어로 이야기도 많이 나옵니다.\n\n또한, 한국 영화의 캐릭터...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/compare_le_cinema_co_20251218_0746/audio.mp3",
       "text_path": "resources/compare_le_cinema_co_20251218_0746/text.md"
     },
@@ -4651,7 +4651,7 @@
       "date": "'2026-01-02 10:42:10'",
       "longueur": 110,
       "text_preview": "The London Underground is a famous subway system. It opened in 1863, making it the oldest metro in the world. People often call it \"the Tube\" because of the shape of the tunnels. There are 11 lines, a...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/london_underground_20251217_1234/audio.mp3",
       "text_path": "resources/london_underground_20251217_1234/text.md"
     },
@@ -4687,7 +4687,7 @@
       "date": "2025-12-22 09:53:48",
       "longueur": 150,
       "text_preview": "The advent of AI-generated videos on social media platforms necessitates a nuanced dialogue about transparency, with the proposition of clear labeling taking center stage. On one hand, labeling serves...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/should_ai_generated_20251222_0953/audio.mp3",
       "text_path": "resources/should_ai_generated_20251222_0953/text.md"
     },
@@ -4723,7 +4723,7 @@
       "date": "2025-12-18 09:22:19",
       "longueur": 150,
       "text_preview": "Hamburg, die „Tor zur Welt“, zieht jährlich Millionen von Touristen in ihren Bann und überzeugt durch ihre Vielseitigkeit und den unvergleichlichen Charme. Die historische Speicherstadt, ein UNESCO-We...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/presente_une_grande_20251218_0922/audio.mp3",
       "text_path": "resources/presente_une_grande_20251218_0922/text.md"
     },
@@ -4741,7 +4741,7 @@
       "date": "'2026-01-02 10:42:26'",
       "longueur": 165,
       "text_preview": "Hello! My name is Tom, and I am from Devon, in the United Kingdom. Devon is a beautiful place in the countryside. I live in a small village with my family. My family is not very big. I have a sister a...",
-      "vocab_count": 0,
+      "vocab_count": 35,
       "audio_path": "resources/un_correspondant_bri_20251217_1837/audio.mp3",
       "text_path": "resources/un_correspondant_bri_20251217_1837/text.md"
     }

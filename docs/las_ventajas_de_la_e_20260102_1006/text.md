@@ -22,6 +22,8 @@ No obstante, es importante mencionar que la energía solar presenta ciertos desa
 
 ## Vocabulario
 
+
+
 - **el almacenamiento** → le stockage
 - **las aplicaciones** → les applications
 - **el autoconsumo** → l'autoconsommation

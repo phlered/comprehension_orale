@@ -26,6 +26,8 @@ Zusammengefasst ist Berlin eine Stadt der Kontraste und der ständigen Transform
 
 ## Wortschatz
 
+
+
 - **der Anziehungspunkt** → le point d'attraction
 - **die Architektur** → l'architecture
 - **die Berliner Mauer** → le mur de Berlin

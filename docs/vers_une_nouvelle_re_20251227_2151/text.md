@@ -27,38 +27,40 @@ In dieser kritischen Phase ist es unumgänglich, über die technische Innovation
 
 ## Wortschatz
 
-die Analyse | l'analyse
-die Automatisierung | l'automatisation
-der Beginn | le début
-die Effizienz | l'efficacité
-die Elektrizität | l'électricité
-die Entscheidung | la décision
-der Fortschritt | le progrès
-der Fortschritt | le progrès
-die Frage | la question
-die Fähigkeit | la capacité
-die Gelegenheit | l'opportunité
-die Gesellschaft | la société
-das Gesundheitswesen | le système de santé
-die Herausforderung | le défi
-die Innovation | l'innovation
-das Jahrhundert | le siècle
-die Konnektivität | la connectivité
-die künstliche Intelligenz | l'intelligence artificielle
-die Maschine | la machine
-die Medizin | la médecine
-das Muster | le modèle
-das Potenzial | le potentiel
-die Privatsphäre | la vie privée
-die Revolution | la révolution
-die Robotik | la robotique
-der Sektor | le secteur
-die Transformation | la transformation
-der Umgang | la gestion
-die Verantwortung | la responsabilité
-die Verschmelzung | la fusion
-das Wachstum | la croissance
-das Wachstum | la croissance
-die Werte | les valeurs
-die Zukunft | l'avenir
-die Ära | l'ère
+
+
+- **die Analyse** → l'analyse
+- **die Automatisierung** → l'automatisation
+- **der Beginn** → le début
+- **die Effizienz** → l'efficacité
+- **die Elektrizität** → l'électricité
+- **die Entscheidung** → la décision
+- **der Fortschritt** → le progrès
+- **der Fortschritt** → le progrès
+- **die Frage** → la question
+- **die Fähigkeit** → la capacité
+- **die Gelegenheit** → l'opportunité
+- **die Gesellschaft** → la société
+- **das Gesundheitswesen** → le système de santé
+- **die Herausforderung** → le défi
+- **die Innovation** → l'innovation
+- **das Jahrhundert** → le siècle
+- **die Konnektivität** → la connectivité
+- **die künstliche Intelligenz** → l'intelligence artificielle
+- **die Maschine** → la machine
+- **die Medizin** → la médecine
+- **das Muster** → le modèle
+- **das Potenzial** → le potentiel
+- **die Privatsphäre** → la vie privée
+- **die Revolution** → la révolution
+- **die Robotik** → la robotique
+- **der Sektor** → le secteur
+- **die Transformation** → la transformation
+- **der Umgang** → la gestion
+- **die Verantwortung** → la responsabilité
+- **die Verschmelzung** → la fusion
+- **das Wachstum** → la croissance
+- **das Wachstum** → la croissance
+- **die Werte** → les valeurs
+- **die Zukunft** → l'avenir
+- **die Ära** → l'ère

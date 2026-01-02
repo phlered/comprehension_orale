@@ -22,6 +22,8 @@ As evening descended, the family gathered around the fireplace, basking in the w
 
 ## Vocabulary
 
+
+
 - **bond** → lien
 - **cinnamon** → cannelle
 - **clove** → clou de girofle

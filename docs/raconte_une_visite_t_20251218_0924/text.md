@@ -26,6 +26,8 @@ Meine Reise nach Nürnberg war zweifellos eine unvergleichliche Erfahrung, die m
 
 ## Wortschatz
 
+
+
 - **der Alltag** → quotidien
 - **die Atmosphäre** → atmosphère
 - **die Atmosphäre** → atmosphère

@@ -34,6 +34,8 @@ J'ai hâte d'en savoir plus sur toi et ta vie en France. C'est excitant de comme
 
 ## Vocabulaire
 
+
+
 - **l'ami** → vriend
 - **le chanteur** → zanger
 - **le chat** → kat

@@ -24,6 +24,8 @@ The party continued into the early hours of the morning, the soundtrack of laugh
 
 ## Vocabulary
 
+
+
 - **anticipation** → anticipation
 - **apartment** → appartement
 - **ball** → boule

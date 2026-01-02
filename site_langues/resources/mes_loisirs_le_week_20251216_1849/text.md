@@ -20,6 +20,8 @@ Am Sonntag schlafe ich lange. Nach dem Frühstück helfe ich im Garten. Unsere B
 
 ## Wortschatz
 
+
+
 - **der Abend** → le soir
 - **das Bett** → le lit
 - **die Blume** → la fleur

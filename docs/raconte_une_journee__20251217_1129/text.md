@@ -20,38 +20,40 @@ Alla fine della giornata, tutti erano contenti e abbiamo cantato insieme una can
 
 ## Vocabolario
 
-il calcio | le football
-la canzone | la chanson
-la corrente | le courant
-il cortile | la cour
-divertente | amusant
-elettrica | électrique
-essere | être
-felice | heureux
-felici | heureux
-la fine | la fin
-la giornata | la journée
-godersi | profiter
-ieri | hier
-imparare | apprendre
-indimenticabile | inoubliable
-insieme | ensemble
-l'amico | l’ami
-l'attività | l’activité
-l'importanza | l’importance
-l'insegnante | l’enseignant
-la lezione | la leçon
-il Luca | Luca
-la matematica | les mathématiques
-la mattina | le matin
-il momento | le moment
-la palestra | le gymnase
-il ping-pong | le ping-pong
-il preside | le proviseur
-la recita | la pièce de théâtre
-il ritardo | le retard
-la scuola | l’école
-sorpreso | surpris
-lo studente | l’étudiant
-la sveglia | le réveil
-il torneo | le tournoi
+
+
+- **il calcio** → le football
+- **la canzone** → la chanson
+- **la corrente** → le courant
+- **il cortile** → la cour
+- **divertente** → amusant
+- **elettrica** → électrique
+- **essere** → être
+- **felice** → heureux
+- **felici** → heureux
+- **la fine** → la fin
+- **la giornata** → la journée
+- **godersi** → profiter
+- **ieri** → hier
+- **imparare** → apprendre
+- **indimenticabile** → inoubliable
+- **insieme** → ensemble
+- **l'amico** → l’ami
+- **l'attività** → l’activité
+- **l'importanza** → l’importance
+- **l'insegnante** → l’enseignant
+- **la lezione** → la leçon
+- **il Luca** → Luca
+- **la matematica** → les mathématiques
+- **la mattina** → le matin
+- **il momento** → le moment
+- **la palestra** → le gymnase
+- **il ping-pong** → le ping-pong
+- **il preside** → le proviseur
+- **la recita** → la pièce de théâtre
+- **il ritardo** → le retard
+- **la scuola** → l’école
+- **sorpreso** → surpris
+- **lo studente** → l’étudiant
+- **la sveglia** → le réveil
+- **il torneo** → le tournoi

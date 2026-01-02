@@ -26,6 +26,8 @@ Estos son mis pasatiempos y actividades favoritas.
 
 ## Vocabulario
 
+
+
 - **la actividad** → l'activité
 - **el amigo** → l'ami
 - **la animación** → l'animation

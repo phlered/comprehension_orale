@@ -26,6 +26,8 @@ Vegetarische restaurants bieden veel variatie. Of je nu van burgers, pasta, sala
 
 ## Woordenschat
 
+
+
 - **de avocado** → l'avocat
 - **de bonen** → les haricots
 - **de burger** → le hamburger

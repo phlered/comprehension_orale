@@ -22,6 +22,8 @@ In conclusione, avere un piccolo lavoro può essere utile, ma è fondamentale tr
 
 ## Vocabolario
 
+
+
 - **le abilità** → les compétences
 - **gli adolescenti** → les adolescents
 - **i clienti** → les clients

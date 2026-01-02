@@ -26,6 +26,8 @@ Zusammenfassend bietet Bayern mit seiner einzigartigen Kombination aus Natur, Ku
 
 ## Wortschatz
 
+
+
 - **die Aktivität** → l'activité
 - **der Alpen** → les Alpes
 - **die Bauwerke** → les bâtiments

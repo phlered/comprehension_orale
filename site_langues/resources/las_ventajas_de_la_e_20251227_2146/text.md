@@ -26,6 +26,8 @@ En resumen, la energía solar no solo representa una solución energética limpi
 
 ## Vocabulario
 
+
+
 - **el beneficio** → le bénéfice
 - **la calidad** → la qualité
 - **el cambio** → le changement

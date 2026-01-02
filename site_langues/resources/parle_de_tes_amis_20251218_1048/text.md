@@ -20,6 +20,8 @@ Mis amigos son especiales y siempre lo pasamos bien juntos. Me gusta mucho estar
 
 ## Vocabulario
 
+
+
 - **el ajedrez** → les échecs
 - **alta** → grande
 - **la amiga** → l'amie

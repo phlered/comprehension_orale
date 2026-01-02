@@ -20,6 +20,8 @@ Es ist wichtig, sorgfältig mit sozialen Medien umzugehen. Eltern und Lehrer sol
 
 ## Wortschatz
 
+
+
 - **der Aspekt** → l'aspect
 - **das Cybermobbing** → le cyberharcèlement
 - **der Eltern** → les parents

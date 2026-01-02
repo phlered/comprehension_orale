@@ -23,38 +23,40 @@ Abschließend bleibt festzuhalten, dass die Biotechnologie zweifellos ein mächt
 
 ## Wortschatz
 
-das Baby | le bébé
-die Bevölkerung | la population
-die Biotechnologie | la biotechnologie
-die Diskussion | la discussion
-der Eingriff | l'intervention
-die Erbkrankheit | la maladie héréditaire
-der Fortschritt | le progrès
-die Frage | la question
-das Genom | le génome
-die Gentechnik | la génie génétique
-die Gerechtigkeit | la justice
-die Gesellschaft | la société
-die Grenze | la limite
-die Heilung | la guérison
-die Identität | l'identité
-die Individualität | l'individualité
-das Klonen | le clonage
-die Konsequenz | la conséquence
-das Land | le pays
-die Manipulation | la manipulation
-der Mensch | l'homme
-die Norm | la norme
-der Nutzen | le bénéfice
-das Risiko | le risque
-die Rolle | le rôle
-die Spezies | l'espèce
-die Technologie | la technologie
-das Tier | l'animal
-der Umweltschutz | la protection de l'environnement
-die Verantwortung | la responsabilité
-das Werkzeug | l'outil
-der Zugang | l'accès
-die Zukunft | l'avenir
-die Zusammenarbeit | la collaboration
-das Ökosystem | l'écosystème
+
+
+- **das Baby** → le bébé
+- **die Bevölkerung** → la population
+- **die Biotechnologie** → la biotechnologie
+- **die Diskussion** → la discussion
+- **der Eingriff** → l'intervention
+- **die Erbkrankheit** → la maladie héréditaire
+- **der Fortschritt** → le progrès
+- **die Frage** → la question
+- **das Genom** → le génome
+- **die Gentechnik** → la génie génétique
+- **die Gerechtigkeit** → la justice
+- **die Gesellschaft** → la société
+- **die Grenze** → la limite
+- **die Heilung** → la guérison
+- **die Identität** → l'identité
+- **die Individualität** → l'individualité
+- **das Klonen** → le clonage
+- **die Konsequenz** → la conséquence
+- **das Land** → le pays
+- **die Manipulation** → la manipulation
+- **der Mensch** → l'homme
+- **die Norm** → la norme
+- **der Nutzen** → le bénéfice
+- **das Risiko** → le risque
+- **die Rolle** → le rôle
+- **die Spezies** → l'espèce
+- **die Technologie** → la technologie
+- **das Tier** → l'animal
+- **der Umweltschutz** → la protection de l'environnement
+- **die Verantwortung** → la responsabilité
+- **das Werkzeug** → l'outil
+- **der Zugang** → l'accès
+- **die Zukunft** → l'avenir
+- **die Zusammenarbeit** → la collaboration
+- **das Ökosystem** → l'écosystème

@@ -20,6 +20,8 @@ Ich wohne gerne in meiner Wohnung. Die Nachbarschaft ist ruhig und sicher. Es gi
 
 ## Wortschatz
 
+
+
 - **das Badezimmer** → la salle de bain
 - **bequem** → confortable
 - **das Bett** → le lit

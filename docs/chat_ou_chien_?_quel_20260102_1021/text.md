@@ -24,6 +24,8 @@ Ultimately, whether you are drawn to the quiet elegance of a cat or the outgoing
 
 ## Vocabulary
 
+
+
 - **active** → actif
 - **affection** → affection
 - **allergy** → allergie

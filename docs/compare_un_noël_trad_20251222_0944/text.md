@@ -20,38 +20,40 @@ Both experiences have their charm: England’s nostalgic customs and Spain’s v
 
 ## Vocabulary
 
-to celebrate | célébrer
-to celebrate | célébrer
-charm | charme
-children | enfants
-Christmas | Noël
-to come | venir
-community | communauté
-custom | coutume
-December | décembre
-dessert | dessert
-England | Angleterre
-eve | veille
-events | événements
-family | famille
-feast | festin
-festive | festif
-gathering | rassemblement
-home | maison
-joy | joie
-lights | lumières
-locals | locaux
-mass | messe
-presents | cadeaux
-pudding | pudding
-to savor | savourer
-seafood | fruits de mer
-Spain | Espagne
-speech | discours
-spirit | esprit
-stuffing | farce
-tradition | tradition
-tree | arbre
-turkey | dinde
-unique | unique
-warmth | chaleur
+
+
+- **to celebrate** → célébrer
+- **to celebrate** → célébrer
+- **charm** → charme
+- **children** → enfants
+- **Christmas** → Noël
+- **to come** → venir
+- **community** → communauté
+- **custom** → coutume
+- **December** → décembre
+- **dessert** → dessert
+- **England** → Angleterre
+- **eve** → veille
+- **events** → événements
+- **family** → famille
+- **feast** → festin
+- **festive** → festif
+- **gathering** → rassemblement
+- **home** → maison
+- **joy** → joie
+- **lights** → lumières
+- **locals** → locaux
+- **mass** → messe
+- **presents** → cadeaux
+- **pudding** → pudding
+- **to savor** → savourer
+- **seafood** → fruits de mer
+- **Spain** → Espagne
+- **speech** → discours
+- **spirit** → esprit
+- **stuffing** → farce
+- **tradition** → tradition
+- **tree** → arbre
+- **turkey** → dinde
+- **unique** → unique
+- **warmth** → chaleur

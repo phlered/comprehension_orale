@@ -22,6 +22,8 @@ Enfin, le football m'apprend l'esprit d'équipe et la discipline. Je dois travai
 
 ## Vocabulaire
 
+
+
 - **adorer** → dol zijn op
 - **amusant** → leuk
 - **le ballon** → bal

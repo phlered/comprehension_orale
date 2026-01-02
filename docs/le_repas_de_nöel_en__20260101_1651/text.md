@@ -24,6 +24,8 @@ Mensen drinken wijn of champagne bij het kerstdiner. Het is een gezellige tijd m
 
 ## Woordenschat
 
+
+
 - **de aardappelpuree** → la purée de pommes de terre
 - **het bijgerecht** → l'accompagnement
 - **het brood** → le pain

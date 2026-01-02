@@ -20,6 +20,8 @@ drapeau: 🇰🇷
 
 ## 어휘
 
+
+
 - **개인 정보** → gaein jeongbo (informations personnelles)
 - **건강하다** → geonganghada (être sain)
 - **공부** → gongbu (études)

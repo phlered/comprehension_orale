@@ -22,6 +22,8 @@ Dopo il pranzo, riposiamo un po'. Poi cominciamo a scendere. Siamo un po' stanch
 
 ## Vocabolario
 
+
+
 - **gli alberi** → les arbres
 - **gli amici** → les amis
 - **andare** → aller

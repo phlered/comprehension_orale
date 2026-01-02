@@ -18,38 +18,40 @@ Conversely, for creators, labeling AI content could pose both challenges and opp
 
 ## Vocabulary
 
-age | ère
-AI-generated | généré par IA
-to assess | évaluer
-audience | audience
-authentic | authentique
-benefit | avantage
-challenge | défi
-content | contenu
-creativity | créativité
-creator | créateur
-deception | tromperie
-era | ère
-evolution | évolution
-expression | expression
-genuine | authentique
-imperative | impératif
-ingenuity | ingéniosité
-innovation | innovation
-integrity | intégrité
-to label | étiqueter
-to manipulate | manipuler
-misinformation | désinformation
-narrative | récit
-opportunity | opportunité
-perception | perception
-platform | plateforme
-protection | protection
-risk | risque
-storytelling | narration
-technology | technologie
-transparency | transparence
-trust | confiance
-truthfulness | véracité
-user | utilisateur
-video | vidéo
+
+
+- **age** → ère
+- **AI-generated** → généré par IA
+- **to assess** → évaluer
+- **audience** → audience
+- **authentic** → authentique
+- **benefit** → avantage
+- **challenge** → défi
+- **content** → contenu
+- **creativity** → créativité
+- **creator** → créateur
+- **deception** → tromperie
+- **era** → ère
+- **evolution** → évolution
+- **expression** → expression
+- **genuine** → authentique
+- **imperative** → impératif
+- **ingenuity** → ingéniosité
+- **innovation** → innovation
+- **integrity** → intégrité
+- **to label** → étiqueter
+- **to manipulate** → manipuler
+- **misinformation** → désinformation
+- **narrative** → récit
+- **opportunity** → opportunité
+- **perception** → perception
+- **platform** → plateforme
+- **protection** → protection
+- **risk** → risque
+- **storytelling** → narration
+- **technology** → technologie
+- **transparency** → transparence
+- **trust** → confiance
+- **truthfulness** → véracité
+- **user** → utilisateur
+- **video** → vidéo

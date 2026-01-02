@@ -22,6 +22,8 @@ In het algemeen zijn sociale media belangrijk in het leven van tieners, maar het
 
 ## Woordenschat
 
+
+
 - **blijven** → rester
 - **het contact** → le contact
 - **de creativiteit** → la créativité

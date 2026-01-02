@@ -16,38 +16,40 @@ The Thompson family, hailing from the quaint town of Stratford-upon-Avon, decide
 
 ## Vocabulary
 
-adventure | aventure
-Alhambra | Alhambra
-architecture | architecture
-Barcelona | Barcelone
-bonds | liens
-change | changement
-chocolate | chocolat
-Christmas | Noël
-churros | churros
-cultures | cultures
-to decide | décider
-to embrace | embrasser
-enthusiast | passionné
-experiences | expériences
-to explain | expliquer
-to explore | explorer
-family | famille
-history | histoire
-to hope | espérer
-land | terre
-laughter | rire
-oranges | oranges
-pies | tartes
-to retire | prendre sa retraite
-sangria | sangría
-snow | neige
-Spain | Espagne
-spirit | esprit
-streets | rues
-to strengthen | renforcer
-sun | soleil
-trees | arbres
-warmth | chaleur
-wine | vin
-winter | hiver
+
+
+- **adventure** → aventure
+- **Alhambra** → Alhambra
+- **architecture** → architecture
+- **Barcelona** → Barcelone
+- **bonds** → liens
+- **change** → changement
+- **chocolate** → chocolat
+- **Christmas** → Noël
+- **churros** → churros
+- **cultures** → cultures
+- **to decide** → décider
+- **to embrace** → embrasser
+- **enthusiast** → passionné
+- **experiences** → expériences
+- **to explain** → expliquer
+- **to explore** → explorer
+- **family** → famille
+- **history** → histoire
+- **to hope** → espérer
+- **land** → terre
+- **laughter** → rire
+- **oranges** → oranges
+- **pies** → tartes
+- **to retire** → prendre sa retraite
+- **sangria** → sangría
+- **snow** → neige
+- **Spain** → Espagne
+- **spirit** → esprit
+- **streets** → rues
+- **to strengthen** → renforcer
+- **sun** → soleil
+- **trees** → arbres
+- **warmth** → chaleur
+- **wine** → vin
+- **winter** → hiver

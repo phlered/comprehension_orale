@@ -28,6 +28,8 @@ Ik raad iedereen aan om als assistent in het buitenland te werken. Het is een av
 
 ## Woordenschat
 
+
+
 - **de assistent** → l'assistant
 - **het avontuur** → l'aventure
 - **behulpzaam** → serviable

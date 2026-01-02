@@ -25,37 +25,39 @@ We betalen de rekening. We zeggen "dank u" en gaan naar huis. Het was een fijne 
 
 ## Woordenschat
 
-de avond | la soirée
-bestellen | commander
-betalen | payer
-brengen | apporter
-de cola | le coca
-dank u | merci
-het dessert | le dessert
-het drankje | la boisson
-duur | cher
-het eten | la nourriture
-gezellig | convivial
-het huis | la maison
-het ijs | la glace
-kiezen | choisir
-de menukaart | le menu
-de ober | le serveur
-de pasta | les pâtes
-het raam | la fenêtre
-de rekening | l'addition
-het restaurant | le restaurant
-de salade | la salade
-de salade | la salade
-het sap | le jus
-de saus | la sauce
-schrijven | écrire
-de soep | la soupe
-de soep | la soupe
-de spaghetti | les spaghettis
-de tafel | la table
-de tomatensoep | la soupe de tomates
-de vis | le poisson
-het vlees | la viande
-de vriend | l'ami
-het water | l'eau
+
+
+- **de avond** → la soirée
+- **bestellen** → commander
+- **betalen** → payer
+- **brengen** → apporter
+- **de cola** → le coca
+- **dank u** → merci
+- **het dessert** → le dessert
+- **het drankje** → la boisson
+- **duur** → cher
+- **het eten** → la nourriture
+- **gezellig** → convivial
+- **het huis** → la maison
+- **het ijs** → la glace
+- **kiezen** → choisir
+- **de menukaart** → le menu
+- **de ober** → le serveur
+- **de pasta** → les pâtes
+- **het raam** → la fenêtre
+- **de rekening** → l'addition
+- **het restaurant** → le restaurant
+- **de salade** → la salade
+- **de salade** → la salade
+- **het sap** → le jus
+- **de saus** → la sauce
+- **schrijven** → écrire
+- **de soep** → la soupe
+- **de soep** → la soupe
+- **de spaghetti** → les spaghettis
+- **de tafel** → la table
+- **de tomatensoep** → la soupe de tomates
+- **de vis** → le poisson
+- **het vlees** → la viande
+- **de vriend** → l'ami
+- **het water** → l'eau

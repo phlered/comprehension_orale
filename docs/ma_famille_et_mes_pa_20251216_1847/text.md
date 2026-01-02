@@ -22,6 +22,8 @@ Meine Familie ist wichtig für mich. Wir essen jeden Abend zusammen. Wir lachen 
 
 ## Wortschatz
 
+
+
 - **der Abend** → le soir
 - **besuchen** → visiter
 - **die Familie** → la famille

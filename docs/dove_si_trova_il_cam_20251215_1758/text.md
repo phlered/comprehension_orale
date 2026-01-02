@@ -17,38 +17,40 @@ Il lago è perfetto per nuotare e prendere il sole. Puoi anche fare una passeggi
 
 ## Vocabolario
 
-accogliente | accueillant
-il ballo | la danse
-il bambino | l’enfant
-bello | beau
-la bevanda | la boisson
-il bungalow | le bungalow
-il campeggio | le camping
-il cibo | la nourriture
-confortevole | confortable
-il fiore | la fleur
-giocare | jouer
-grande | grand
-il lago | le lac
-il luogo | le lieu
-l’albero | l’arbre
-l’amicizia | l’amitié
-la musica | la musique
-nuotare | nager
-la passeggiata | la promenade
-la pasta | les pâtes
-piccolo | petit
-la piscina | la piscine
-la pizza | la pizza
-il ponte | le pont
-il posto | le lieu
-il ristorante | le restaurant
-semplice | simple
-la sera | le soir
-il sole | le soleil
-la stella | l’étoile
-la strada | la route
-il supermercato | le supermarché
-la tenda | la tente
-la vacanza | les vacances
-vicino | proche
+
+
+- **accogliente** → accueillant
+- **il ballo** → la danse
+- **il bambino** → l’enfant
+- **bello** → beau
+- **la bevanda** → la boisson
+- **il bungalow** → le bungalow
+- **il campeggio** → le camping
+- **il cibo** → la nourriture
+- **confortevole** → confortable
+- **il fiore** → la fleur
+- **giocare** → jouer
+- **grande** → grand
+- **il lago** → le lac
+- **il luogo** → le lieu
+- **l’albero** → l’arbre
+- **l’amicizia** → l’amitié
+- **la musica** → la musique
+- **nuotare** → nager
+- **la passeggiata** → la promenade
+- **la pasta** → les pâtes
+- **piccolo** → petit
+- **la piscina** → la piscine
+- **la pizza** → la pizza
+- **il ponte** → le pont
+- **il posto** → le lieu
+- **il ristorante** → le restaurant
+- **semplice** → simple
+- **la sera** → le soir
+- **il sole** → le soleil
+- **la stella** → l’étoile
+- **la strada** → la route
+- **il supermercato** → le supermarché
+- **la tenda** → la tente
+- **la vacanza** → les vacances
+- **vicino** → proche

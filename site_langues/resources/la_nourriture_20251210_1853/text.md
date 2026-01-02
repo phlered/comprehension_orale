@@ -26,6 +26,8 @@ Food makes me happy!
 
 ## Vocabulary
 
+
+
 - **to add** → ajouter
 - **apple** → pomme
 - **banana** → banane

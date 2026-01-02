@@ -20,6 +20,8 @@ Dans le métro, fais attention. Il y a souvent du monde. Reste calme et suis les
 
 ## Vocabulaire
 
+
+
 - **la aide** → de hulp
 - **la aventure** → het avontuur
 - **la belle** → het mooie

@@ -24,6 +24,8 @@ Christmas Eve was unlike any they had experienced. Instead of huddling around a 
 
 ## Vocabulary
 
+
+
 - **airplane** → avion
 - **to anticipate** → anticiper
 - **beach** → plage

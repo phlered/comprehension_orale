@@ -19,38 +19,40 @@ Deutschland, reich an Naturlandschaften, bietet für jeden Geschmack das Richtig
 
 ## Wortschatz
 
-die Alpen | les Alpes
-die Alpen | les Alpes
-der Ausblick | la vue
-der Bach | le ruisseau
-das Erlebnis | l'expérience
-die Gesundheit | la santé
-das Gewässer | l'étendue d'eau
-der Gipfelstürmer | l'alpiniste
-der Harz | le Harz
-die Herausforderung | le défi
-die Inspiration | l'inspiration
-die Landschaft | le paysage
-Mecklenburg-Vorpommern | Mecklembourg-Poméranie-Occidentale
-das Mittelgebirge | le massif central
-die Möglichkeit | la possibilité
-der Naturliebhaber | l'amoureux de la nature
-der Naturtourismus | le tourisme nature
-der Norden | le nord
-das Panorama | le panorama
-die Platte | la plaine
-der Reisende | le voyageur
-die Route | l'itinéraire
-die Ruhe | le calme
-der Schwarzwald | la Forêt-Noire
-die Schönheit | la beauté
-der See | le lac
-die Seen | les lacs
-das Spektrum | le spectre
-der Süden | le sud
-die Vielzahl | la multitude
-der Vogel | l'oiseau
-der Wald | la forêt
-der Wanderer | le randonneur
-der Wassersportler | le sportif nautique
-der Weg | le chemin
+
+
+- **die Alpen** → les Alpes
+- **die Alpen** → les Alpes
+- **der Ausblick** → la vue
+- **der Bach** → le ruisseau
+- **das Erlebnis** → l'expérience
+- **die Gesundheit** → la santé
+- **das Gewässer** → l'étendue d'eau
+- **der Gipfelstürmer** → l'alpiniste
+- **der Harz** → le Harz
+- **die Herausforderung** → le défi
+- **die Inspiration** → l'inspiration
+- **die Landschaft** → le paysage
+- **Mecklenburg-Vorpommern** → Mecklembourg-Poméranie-Occidentale
+- **das Mittelgebirge** → le massif central
+- **die Möglichkeit** → la possibilité
+- **der Naturliebhaber** → l'amoureux de la nature
+- **der Naturtourismus** → le tourisme nature
+- **der Norden** → le nord
+- **das Panorama** → le panorama
+- **die Platte** → la plaine
+- **der Reisende** → le voyageur
+- **die Route** → l'itinéraire
+- **die Ruhe** → le calme
+- **der Schwarzwald** → la Forêt-Noire
+- **die Schönheit** → la beauté
+- **der See** → le lac
+- **die Seen** → les lacs
+- **das Spektrum** → le spectre
+- **der Süden** → le sud
+- **die Vielzahl** → la multitude
+- **der Vogel** → l'oiseau
+- **der Wald** → la forêt
+- **der Wanderer** → le randonneur
+- **der Wassersportler** → le sportif nautique
+- **der Weg** → le chemin

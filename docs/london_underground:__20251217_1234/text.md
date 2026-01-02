@@ -14,38 +14,40 @@ The London Underground is a famous subway system. It opened in 1863, making it t
 
 ## Vocabulary
 
-to call | appeler
-city | ville
-color | couleur
-crowded | bondé
-day | jour
-evening | soir
-to explore | explorer
-fast | rapide
-to find | trouver
-hour | heure
-line | ligne
-map | carte
-morning | matin
-oldest | plus ancien
-to open | ouvrir
-passenger | passager
-people | gens
-place | endroit
-rush | affluence
-school | école
-shape | forme
-sign | panneau
-station | station
-subway | métro
-system | système
-train | train
-to travel | voyager
-tube | tube
-tunnel | tunnel
-Underground | métro
-to use | utiliser
-to visit | visiter
-way | moyen
-work | travail
-world | monde
+
+
+- **to call** → appeler
+- **city** → ville
+- **color** → couleur
+- **crowded** → bondé
+- **day** → jour
+- **evening** → soir
+- **to explore** → explorer
+- **fast** → rapide
+- **to find** → trouver
+- **hour** → heure
+- **line** → ligne
+- **map** → carte
+- **morning** → matin
+- **oldest** → plus ancien
+- **to open** → ouvrir
+- **passenger** → passager
+- **people** → gens
+- **place** → endroit
+- **rush** → affluence
+- **school** → école
+- **shape** → forme
+- **sign** → panneau
+- **station** → station
+- **subway** → métro
+- **system** → système
+- **train** → train
+- **to travel** → voyager
+- **tube** → tube
+- **tunnel** → tunnel
+- **Underground** → métro
+- **to use** → utiliser
+- **to visit** → visiter
+- **way** → moyen
+- **work** → travail
+- **world** → monde

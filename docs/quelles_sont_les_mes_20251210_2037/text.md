@@ -20,6 +20,8 @@ Er zijn ook winkels die geen plastic tassen geven. Mensen brengen hun eigen tas 
 
 ## Woordenschat
 
+
+
 - **afvalbakken** → poubelles
 - **auto's** → voitures
 - **beschermen** → protéger

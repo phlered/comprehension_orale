@@ -24,6 +24,8 @@ C'était une belle soirée, et j'espère retourner bientôt dans ce restaurant. 
 
 ## Vocabulaire
 
+
+
 - **l'addition** → rekening
 - **aller** → gaan
 - **arriver** → aankomen

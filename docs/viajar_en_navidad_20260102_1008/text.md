@@ -24,6 +24,8 @@ En resumen, viajar en Navidad puede ofrecerte la oportunidad de descubrir nuevas
 
 ## Vocabulario
 
+
+
 - **el adorno** → la décoration
 - **el aeropuerto** → l'aéroport
 - **la alegría** → la joie

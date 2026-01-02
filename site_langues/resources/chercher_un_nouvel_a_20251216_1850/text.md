@@ -24,6 +24,8 @@ Max ist sehr glücklich und beginnt sofort mit den Umzugsvorbereitungen. Er freu
 
 ## Wortschatz
 
+
+
 - **das Angebot** → l'offre
 - **die Antwort** → la réponse
 - **der Balkon** → le balcon

@@ -22,6 +22,8 @@ Es war ein wunderbarer Tag. Ich war sehr glücklich. Nächstes Jahr möchte ich 
 
 ## Wortschatz
 
+
+
 - **der Abend** → le soir
 - **bestellen** → commander
 - **das Brettspiel** → le jeu de société

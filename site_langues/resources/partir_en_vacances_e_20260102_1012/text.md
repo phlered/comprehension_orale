@@ -16,6 +16,8 @@ Im Sommer fahre ich gerne mit dem Zug in den Urlaub. Reisen mit dem Zug ist bequ
 
 ## Wortschatz
 
+
+
 - **das Abenteuer** → l'aventure
 - **ankommen** → arriver
 - **die Aussicht** → la vue

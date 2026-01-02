@@ -22,6 +22,8 @@ Il pomeriggio, torno a casa e faccio i compiti. Imparo cose nuove ogni giorno. L
 
 ## Vocabolario
 
+
+
 - **gli amici** → les amis
 - **la biblioteca** → la bibliothèque
 - **la casa** → la maison

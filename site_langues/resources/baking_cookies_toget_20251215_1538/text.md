@@ -20,6 +20,8 @@ Waiting for them to bake is a good time to relax and talk. When they are done, t
 
 ## Vocabulary
 
+
+
 - **to bake** → cuire
 - **blend** → mélange
 - **to bond** → lier

@@ -22,38 +22,40 @@ Dennoch gibt es auch kritische Stimmen, die die Bedeutung solcher Symbole hinter
 
 ## Wortschatz
 
-das Bundesland | le land (région)
-die Demokratie | la démocratie
-die Differenz | la différence
-die Diskussion | la discussion
-die Einheit | l'unité
-die Einigkeit | l'unité
-die Erfahrung | l'expérience
-die Errungenschaft | la réalisation
-die Feierlichkeit | la célébration
-die Flagge | le drapeau
-die Fragmentierung | la fragmentation
-das föderale System | le système fédéral
-der Geist | l'esprit
-die Herausforderung | le défi
-die Herausforderung | le défi
-die Hymne | l'hymne
-die Identität | l'identité
-der Kanton | le canton
-die Kohäsion | la cohésion
-kontrovers | controversé
-das Kreuz | la croix
-kritisch | critique
-die Nationalhymne | l'hymne national
-die Neutralität | la neutralité
-das Recht | le droit
-die Solidarität | la solidarité
-die Sprachregion | la région linguistique
-der Staat | l'état
-das Symbol | le symbole
-die Unabhängigkeit | l'indépendance
-der Unterschied | la différence
-der Vertreter | le représentant
-die Widerstandsfähigkeit | la résilience
-die Zugehörigkeit | l'appartenance
-das Zusammengehörigkeitsgefühl | le sentiment d'appartenance
+
+
+- **das Bundesland** → le land (région)
+- **die Demokratie** → la démocratie
+- **die Differenz** → la différence
+- **die Diskussion** → la discussion
+- **die Einheit** → l'unité
+- **die Einigkeit** → l'unité
+- **die Erfahrung** → l'expérience
+- **die Errungenschaft** → la réalisation
+- **die Feierlichkeit** → la célébration
+- **die Flagge** → le drapeau
+- **die Fragmentierung** → la fragmentation
+- **das föderale System** → le système fédéral
+- **der Geist** → l'esprit
+- **die Herausforderung** → le défi
+- **die Herausforderung** → le défi
+- **die Hymne** → l'hymne
+- **die Identität** → l'identité
+- **der Kanton** → le canton
+- **die Kohäsion** → la cohésion
+- **kontrovers** → controversé
+- **das Kreuz** → la croix
+- **kritisch** → critique
+- **die Nationalhymne** → l'hymne national
+- **die Neutralität** → la neutralité
+- **das Recht** → le droit
+- **die Solidarität** → la solidarité
+- **die Sprachregion** → la région linguistique
+- **der Staat** → l'état
+- **das Symbol** → le symbole
+- **die Unabhängigkeit** → l'indépendance
+- **der Unterschied** → la différence
+- **der Vertreter** → le représentant
+- **die Widerstandsfähigkeit** → la résilience
+- **die Zugehörigkeit** → l'appartenance
+- **das Zusammengehörigkeitsgefühl** → le sentiment d'appartenance

@@ -19,38 +19,40 @@ Le week-end, ma famille et moi allons souvent faire des promenades. Nous aimons 
 
 ## Vocabulaire
 
-actif | actief
-aimer | houden van
-aller | gaan
-avoir | hebben
-la balle | bal
-beaucoup | veel
-le chien | hond
-courir | rennen
-cuisiner | koken
-drôle | grappig
-ensemble | samen
-faire | doen
-la famille | familie
-le film | film
-le foot | voetbal
-le frère | broer
-gentil | vriendelijk
-heureux | gelukkig
-je | ik
-joli | mooi
-jouer | spelen
-mignon | schattig
-la mère | moeder
-le parc | park
-petit | klein
-la promenade | wandeling
-le père | vader
-regarder | kijken
-s'amuser | zich vermaken
-s'appeler | heten
-le soir | avond
-souvent | vaak
-travailler | werken
-voilà | alstublieft
-le week-end | weekend
+
+
+- **actif** → actief
+- **aimer** → houden van
+- **aller** → gaan
+- **avoir** → hebben
+- **la balle** → bal
+- **beaucoup** → veel
+- **le chien** → hond
+- **courir** → rennen
+- **cuisiner** → koken
+- **drôle** → grappig
+- **ensemble** → samen
+- **faire** → doen
+- **la famille** → familie
+- **le film** → film
+- **le foot** → voetbal
+- **le frère** → broer
+- **gentil** → vriendelijk
+- **heureux** → gelukkig
+- **je** → ik
+- **joli** → mooi
+- **jouer** → spelen
+- **mignon** → schattig
+- **la mère** → moeder
+- **le parc** → park
+- **petit** → klein
+- **la promenade** → wandeling
+- **le père** → vader
+- **regarder** → kijken
+- **s'amuser** → zich vermaken
+- **s'appeler** → heten
+- **le soir** → avond
+- **souvent** → vaak
+- **travailler** → werken
+- **voilà** → alstublieft
+- **le week-end** → weekend

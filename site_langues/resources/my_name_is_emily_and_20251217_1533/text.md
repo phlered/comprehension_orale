@@ -26,6 +26,8 @@ I like my high school life because I learn new things and have fun with my frien
 
 ## Vocabulary
 
+
+
 - **afternoon** → après-midi
 - **art** → art
 - **to be** → être

@@ -26,6 +26,8 @@ Natürlich trägt auch das pulsierende Nachtleben zur Faszination Berlins bei. D
 
 ## Wortschatz
 
+
+
 - **das Atelier** → l'atelier
 - **die Atmosphäre** → l'atmosphère
 - **die Bar** → le bar

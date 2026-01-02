@@ -22,6 +22,8 @@ Fietsen is goedkoop, gezond en goed voor het milieu. Daarom fietsen Nederlanders
 
 ## Woordenschat
 
+
+
 - **betalen** → payer
 - **fiets** → vélo
 - **fietsen** → faire du vélo

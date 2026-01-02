@@ -20,6 +20,8 @@ The trains are usually busy, especially in the morning and evening. People need 
 
 ## Vocabulary
 
+
+
 - **busy** → occupé
 - **to call** → appeler
 - **card** → carte

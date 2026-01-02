@@ -30,6 +30,8 @@ Beide landen zijn uniek. Cultuur is mooi en interessant!
 
 ## Woordenschat
 
+
+
 - **auto** → voiture
 - **baguettes** → baguettes
 - **belangrijk** → important

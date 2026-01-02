@@ -25,37 +25,39 @@ Jasmin bedankt de apotheker en gaat naar huis. Ze voelt zich beter omdat ze nu m
 
 ## Woordenschat
 
-de apotheek | la pharmacie
-de apotheker | le pharmacien
-betalen | payer
-de beurt | le tour
-blij | content
-de buurt | le quartier
-de dag | le jour
-het doosje | la boîte
-gaan | aller
-het geld | l'argent
-het gevoel | le sentiment
-glimlachen | sourire
-hebben | avoir
-de hoofdpijn | le mal de tête
-het huis | la maison
-de keel | la gorge
-de keelpastille | la pastille pour la gorge
-de keelpijn | le mal de gorge
-kiezen | choisir
-het medicijn | le médicament
-het mens | la personne
-nemen | prendre
-de paracetamol | le paracétamol
-de pijn | la douleur
-de rij | la file
-rustig | calme
-het uur | l'heure
-vertrekken | partir
-voelen | sentir
-wachten | attendre
-de zes | le six
-zich | soi-même
-ziek | malade
-zijn | être
+
+
+- **de apotheek** → la pharmacie
+- **de apotheker** → le pharmacien
+- **betalen** → payer
+- **de beurt** → le tour
+- **blij** → content
+- **de buurt** → le quartier
+- **de dag** → le jour
+- **het doosje** → la boîte
+- **gaan** → aller
+- **het geld** → l'argent
+- **het gevoel** → le sentiment
+- **glimlachen** → sourire
+- **hebben** → avoir
+- **de hoofdpijn** → le mal de tête
+- **het huis** → la maison
+- **de keel** → la gorge
+- **de keelpastille** → la pastille pour la gorge
+- **de keelpijn** → le mal de gorge
+- **kiezen** → choisir
+- **het medicijn** → le médicament
+- **het mens** → la personne
+- **nemen** → prendre
+- **de paracetamol** → le paracétamol
+- **de pijn** → la douleur
+- **de rij** → la file
+- **rustig** → calme
+- **het uur** → l'heure
+- **vertrekken** → partir
+- **voelen** → sentir
+- **wachten** → attendre
+- **de zes** → le six
+- **zich** → soi-même
+- **ziek** → malade
+- **zijn** → être

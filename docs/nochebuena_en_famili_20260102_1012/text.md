@@ -24,6 +24,8 @@ Esta noche es especial porque refuerza el cariño en la familia. Aunque los rega
 
 ## Vocabulario
 
+
+
 - **los abuelos** → les grands-parents
 - **las aceitunas** → les olives
 - **la alegría** → la joie

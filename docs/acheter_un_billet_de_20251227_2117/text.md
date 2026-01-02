@@ -24,6 +24,8 @@ Marie est contente. Elle a son billet. Elle va préparer sa valise pour le voyag
 
 ## Vocabulaire
 
+
+
 - **acheter** → kopen
 - **aller** → gaan
 - **attendre** → wachten

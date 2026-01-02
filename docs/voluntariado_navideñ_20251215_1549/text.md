@@ -22,6 +22,8 @@ El voluntariado navideño es una manera maravillosa de practicar la solidaridad 
 
 ## Vocabulario
 
+
+
 - **la actividad** → l'activité
 - **la alegría** → la joie
 - **el alimento** → la nourriture

@@ -24,6 +24,8 @@ Abschließend kann festgehalten werden, dass die Limitierung des Autoverkehrs in
 
 ## Wortschatz
 
+
+
 - **der Arbeitsplatz** → l'emploi
 - **das Auto** → la voiture
 - **der Autoverkehr** → le trafic automobile

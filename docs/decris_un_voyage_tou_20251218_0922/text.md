@@ -26,6 +26,8 @@ Mit einem Kopf voller Eindrücke und einem Herzen, das von der Schönheit und Vi
 
 ## Wortschatz
 
+
+
 - **die Alte Brücke** → le vieux pont
 - **die Altstadt** → la vieille ville
 - **die Architektur** → l'architecture

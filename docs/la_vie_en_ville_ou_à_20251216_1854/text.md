@@ -22,6 +22,8 @@ Letztendlich hängt die Entscheidung, ob man in der Stadt oder auf dem Land lebt
 
 ## Wortschatz
 
+
+
 - **die Arbeitsmöglichkeit** → l'opportunité d'emploi
 - **das Auto** → la voiture
 - **die Besorgung** → la course

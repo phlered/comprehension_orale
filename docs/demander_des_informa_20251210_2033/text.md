@@ -22,6 +22,8 @@ Ik ben blij. “Bedankt voor de hulp!”, zeg ik. Ik ga naar de bushalte. Ik zie
 
 ## Woordenschat
 
+
+
 - **bakkerij** → boulangerie
 - **blij** → content
 - **bus** → bus

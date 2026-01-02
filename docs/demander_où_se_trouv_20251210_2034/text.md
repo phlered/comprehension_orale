@@ -30,6 +30,8 @@ Tot ziens!
 
 ## Woordenschat
 
+
+
 - **appels** → pommes
 - **bakkerij** → boulangerie
 - **binnen** → à l'intérieur

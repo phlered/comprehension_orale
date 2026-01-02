@@ -22,6 +22,8 @@ Estoy contento de ser estudiante en mi colegio y tengo muchos amigos. ¡Gracias 
 
 ## Vocabulario
 
+
+
 - **el amigo** → l'ami
 - **ayudar** → aider
 - **el año** → l'année

@@ -24,6 +24,8 @@ Estas tradiciones hacen de la Navidad en España un tiempo mágico lleno de aleg
 
 ## Vocabulario
 
+
+
 - **el 28** → 28
 - **el 31** → 31
 - **la alegría** → la joie

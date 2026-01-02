@@ -25,38 +25,40 @@ Nu is het tijd om te eten. De pizza ruikt heerlijk. Ik ben heel gelukkig. Eet sm
 
 ## Woordenschat
 
-het adres | l'adresse
-het antwoord | la réponse
-bestellen | commander
-de bestelling | la commande
-betalen | payer
-blij | content
-de deurbel | la sonnette
-de euro | l'euro
-de fooi | le pourboire
-het geld | l'argent
-gelukkig | heureux
-het gesprek | la conversation
-geven | donner
-houden van | aimer
-het huis | la maison
-de kaas | le fromage
-komt | vient
-het lievelingseten | le plat préféré
-de maaltijd | le repas
-de man | l'homme
-de minuut | la minute
-de pizza | la pizza
-de pizzabezorger | le livreur de pizza
-de pizzeria | la pizzeria
-de smaak | le goût
-de telefoon | le téléphone
-de tijd | le temps
-de tomaat | la tomate
-het uur | l'heure
-vindt | trouve
-vragen | demander
-de vrouw | la femme
-wachten | attendre
-zeggen | dire
-zitten | être (assis)
+
+
+- **het adres** → l'adresse
+- **het antwoord** → la réponse
+- **bestellen** → commander
+- **de bestelling** → la commande
+- **betalen** → payer
+- **blij** → content
+- **de deurbel** → la sonnette
+- **de euro** → l'euro
+- **de fooi** → le pourboire
+- **het geld** → l'argent
+- **gelukkig** → heureux
+- **het gesprek** → la conversation
+- **geven** → donner
+- **houden van** → aimer
+- **het huis** → la maison
+- **de kaas** → le fromage
+- **komt** → vient
+- **het lievelingseten** → le plat préféré
+- **de maaltijd** → le repas
+- **de man** → l'homme
+- **de minuut** → la minute
+- **de pizza** → la pizza
+- **de pizzabezorger** → le livreur de pizza
+- **de pizzeria** → la pizzeria
+- **de smaak** → le goût
+- **de telefoon** → le téléphone
+- **de tijd** → le temps
+- **de tomaat** → la tomate
+- **het uur** → l'heure
+- **vindt** → trouve
+- **vragen** → demander
+- **de vrouw** → la femme
+- **wachten** → attendre
+- **zeggen** → dire
+- **zitten** → être (assis)

@@ -18,6 +18,8 @@ My neighborhood is nice. There is a park near my apartment. I walk there with my
 
 ## Vocabulary
 
+
+
 - **apartment** → appartement
 - **bathroom** → salle de bain
 - **bed** → lit

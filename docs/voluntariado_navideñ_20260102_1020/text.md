@@ -24,6 +24,8 @@ Participar en actividades de voluntariado navideño no solo beneficia a los dest
 
 ## Vocabulario
 
+
+
 - **la actividad** → l'activité
 - **las actividades** → les activités
 - **los ancianos** → les personnes âgées

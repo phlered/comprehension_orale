@@ -20,6 +20,8 @@ In conclusione, i social media sono parte della vita quotidiana degli adolescent
 
 ## Vocabolario
 
+
+
 - **il commento** → le commentaire
 - **il comportamento** → le comportement
 - **la comunità** → la communauté

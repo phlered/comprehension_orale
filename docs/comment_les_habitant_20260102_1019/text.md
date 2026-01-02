@@ -24,6 +24,8 @@ Sinterklaas is een vrolijke tijd. Mensen zingen samen en lachen veel. Het is een
 
 ## Woordenschat
 
+
+
 - **het cadeau** → le cadeau
 - **de chocoladeletter** → la lettre en chocolat
 - **de deur** → la porte

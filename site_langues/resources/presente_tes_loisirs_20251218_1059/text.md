@@ -26,6 +26,8 @@ These are my hobbies. I enjoy my activities after school. They make me happy. Wh
 
 ## Vocabulary
 
+
+
 - **animals** → animaux
 - **bike** → vélo
 - **books** → livres

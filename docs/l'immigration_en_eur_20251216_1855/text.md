@@ -22,6 +22,8 @@ Zusammenfassend lässt sich sagen, dass die Einwanderung in Europa sowohl eine H
 
 ## Wortschatz
 
+
+
 - **die Angst** → la peur
 - **der Arbeitsmarkt** → le marché du travail
 - **die Armut** → la pauvreté

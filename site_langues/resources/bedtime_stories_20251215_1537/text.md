@@ -26,6 +26,8 @@ In today's digital age, it's important to keep the tradition of bedtime stories 
 
 ## Vocabulary
 
+
+
 - **adventure** → aventure
 - **adventurous** → aventureux
 - **bed** → lit

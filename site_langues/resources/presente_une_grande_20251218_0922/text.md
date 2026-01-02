@@ -20,38 +20,40 @@ Die kosmopolitische Atmosphäre, das reiche kulturelle Erbe und die unverwechsel
 
 ## Wortschatz
 
-die Atmosphäre | l'atmosphère
-das Backsteingebäude | le bâtiment en briques
-die Bar | le bar
-der Besucher | le visiteur
-der Charme | le charme
-die Coolness | la décontraction
-die Elbphilharmonie | la Philharmonie de l'Elbe
-das Erbe | le patrimoine
-das Erlebnis | l'expérience
-der Fleete | le bras de mer
-die Galerie | la galerie
-die Gastfreundschaft | l'hospitalité
-das Gebäude | le bâtiment
-die Geschichte | l'histoire
-die Handelsmetropole | la métropole commerciale
-das Highlight | le clou du spectacle
-der Kulturliebhaber | l'amateur de culture
-das Leben | la vie
-der Magnet | l'aimant
-das Meisterwerk | le chef-d'œuvre
-das Miniatur Wunderland | le pays des merveilles en miniature
-die Modelleisenbahn | le chemin de fer miniature
-die Moderne | la modernité
-das Museum | le musée
-das Repertoire | le répertoire
-die Speicherstadt | la ville des entrepôts
-St. Pauli | Saint-Pauli
-die Stadt | la ville
-das Theater | le théâtre
-der Touristen | le touriste
-die Tradition | la tradition
-das UNESCO-Weltkulturerbe | le patrimoine mondial de l'UNESCO
-die Vielseitigkeit | la diversité
-das Viertel | le quartier
-die Welt | le monde
+
+
+- **die Atmosphäre** → l'atmosphère
+- **das Backsteingebäude** → le bâtiment en briques
+- **die Bar** → le bar
+- **der Besucher** → le visiteur
+- **der Charme** → le charme
+- **die Coolness** → la décontraction
+- **die Elbphilharmonie** → la Philharmonie de l'Elbe
+- **das Erbe** → le patrimoine
+- **das Erlebnis** → l'expérience
+- **der Fleete** → le bras de mer
+- **die Galerie** → la galerie
+- **die Gastfreundschaft** → l'hospitalité
+- **das Gebäude** → le bâtiment
+- **die Geschichte** → l'histoire
+- **die Handelsmetropole** → la métropole commerciale
+- **das Highlight** → le clou du spectacle
+- **der Kulturliebhaber** → l'amateur de culture
+- **das Leben** → la vie
+- **der Magnet** → l'aimant
+- **das Meisterwerk** → le chef-d'œuvre
+- **das Miniatur Wunderland** → le pays des merveilles en miniature
+- **die Modelleisenbahn** → le chemin de fer miniature
+- **die Moderne** → la modernité
+- **das Museum** → le musée
+- **das Repertoire** → le répertoire
+- **die Speicherstadt** → la ville des entrepôts
+- **St. Pauli** → Saint-Pauli
+- **die Stadt** → la ville
+- **das Theater** → le théâtre
+- **der Touristen** → le touriste
+- **die Tradition** → la tradition
+- **das UNESCO-Weltkulturerbe** → le patrimoine mondial de l'UNESCO
+- **die Vielseitigkeit** → la diversité
+- **das Viertel** → le quartier
+- **die Welt** → le monde

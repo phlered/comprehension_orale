@@ -24,6 +24,8 @@ Anche se il giorno non è iniziato come previsto, è stata una bella giornata. H
 
 ## Vocabolario
 
+
+
 - **accarezzare** → caresser
 - **ammalare** → tomber malade
 - **ascoltare** → écouter

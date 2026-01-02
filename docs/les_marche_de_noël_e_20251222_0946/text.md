@@ -24,6 +24,8 @@ Visiting a Christmas market in Europe is not merely a shopping excursion; it is 
 
 ## Vocabulary
 
+
+
 - **alternative** → alternative
 - **aroma** → arôme
 - **atmosphere** → atmosphère

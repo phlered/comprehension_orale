@@ -24,6 +24,8 @@ Nederlanders proberen minder plastic te gebruiken. Minder plastic is beter voor 
 
 ## Woordenschat
 
+
+
 - **aarde** → terre
 - **belangrijk** → important
 - **bomen** → arbres

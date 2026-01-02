@@ -24,6 +24,8 @@ In summary, sewing is not just a hobby; it is a powerful tool for improving ment
 
 ## Vocabulary
 
+
+
 - **accomplishment** → accomplissement
 - **belonging** → appartenance
 - **community** → communauté

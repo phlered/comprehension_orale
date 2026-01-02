@@ -28,6 +28,8 @@ Zusammenfassend lässt sich sagen, dass die Reduzierung der Arbeitszeit lediglic
 
 ## Wortschatz
 
+
+
 - **der Arbeitnehmer** → le salarié
 - **die Arbeitslosigkeit** → le chômage
 - **die Arbeitszeit** → le temps de travail

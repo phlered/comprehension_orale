@@ -26,6 +26,8 @@ Con este tipo de menú, no solo disfrutaremos de una comida deliciosa, sino que 
 
 ## Vocabulario
 
+
+
 - **el aceite** → l'huile
 - **el agua** → l'eau
 - **el azúcar** → le sucre

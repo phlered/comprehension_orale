@@ -26,6 +26,8 @@ Marie sort du métro. Elle voit la tour Eiffel devant elle. Elle est très heure
 
 ## Vocabulaire
 
+
+
 - **arriver** → aankomen
 - **l'arrêt** → halte
 - **belle** → mooi

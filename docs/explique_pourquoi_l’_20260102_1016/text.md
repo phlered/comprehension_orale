@@ -28,6 +28,8 @@ Insgesamt macht die Kombination aus kulturellem Reichtum, Bildungsmöglichkeiten
 
 ## Wortschatz
 
+
+
 - **das Abenteuer** → l'aventure
 - **die Alpen** → les Alpes
 - **die Anziehungskraft** → l'attraction

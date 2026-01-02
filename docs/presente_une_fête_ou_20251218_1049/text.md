@@ -22,6 +22,8 @@ Después de la batalla de tomates, la gente se limpia con agua en las duchas o e
 
 ## Vocabulario
 
+
+
 - **los adultos** → les adultes
 - **el agosto** → août
 - **el agua** → l'eau

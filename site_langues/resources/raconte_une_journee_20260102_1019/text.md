@@ -24,6 +24,8 @@ Hoy aprendí que a veces, cuando las cosas no salen como planeamos, pueden pasar
 
 ## Vocabulario
 
+
+
 - **los alumnos** → les élèves
 - **los amigos** → les amis
 - **aprender** → apprendre

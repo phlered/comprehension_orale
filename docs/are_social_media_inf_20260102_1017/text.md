@@ -24,6 +24,8 @@ In conclusion, while social media influencers have the potential to serve as pos
 
 ## Vocabulary
 
+
+
 - **anxiety** → anxiété
 - **audiences** → publics
 - **authenticity** → authenticité

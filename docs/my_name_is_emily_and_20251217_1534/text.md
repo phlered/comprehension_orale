@@ -24,6 +24,8 @@ This is my high school life. I enjoy learning new things and spending time with 
 
 ## Vocabulary
 
+
+
 - **active** → actif
 - **art** → art
 - **breakfast** → petit-déjeuner

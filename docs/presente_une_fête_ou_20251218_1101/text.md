@@ -26,6 +26,8 @@ Diwali is a very important and joyful festival in India. Everyone looks forward 
 
 ## Vocabulary
 
+
+
 - **to celebrate** → célébrer
 - **child** → enfant
 - **to clean** → nettoyer

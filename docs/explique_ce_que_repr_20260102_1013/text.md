@@ -24,6 +24,8 @@ In essence, Christmas and the New Year epitomize a duality of looking back and m
 
 ## Vocabulary
 
+
+
 - **adulthood** → âge adulte
 - **to anticipate** → anticiper
 - **to bake** → cuire

@@ -30,6 +30,8 @@ Emily
 
 ## Vocabulary
 
+
+
 - **activities** → activités
 - **adventure** → aventure
 - **art** → art

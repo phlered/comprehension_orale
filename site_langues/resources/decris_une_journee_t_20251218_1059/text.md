@@ -20,6 +20,8 @@ In the evening, my family and I have dinner at 7:00. We eat together and talk ab
 
 ## Vocabulary
 
+
+
 - **afternoon** → après-midi
 - **bread** → pain
 - **breakfast** → petit-déjeuner

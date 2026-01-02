@@ -23,38 +23,40 @@ Somit ist ein Umdenken erforderlich, das über kosmetische Änderungen hinausgeh
 
 ## Wortschatz
 
-der Akteur | l'acteur
-die Aktivität | l'activité
-die Alternative | l'alternative
-die Bedrohung | la menace
-die Definition | la définition
-die Demokratie | la démocratie
-das Denken | la pensée
-die Diskussion | la discussion
-die Folge | la conséquence
-die Förderung | le soutien
-die Grenze | la limite
-die Investition | l'investissement
-der Kapitalismus | le capitalisme
-die Kluft | le fossé
-die Logik | la logique
-die Lösung | la solution
-die Macht | le pouvoir
-die Menge | la quantité
-der Mensch | l'être humain
-der Mittelstand | les PME
-die Nachhaltigkeit | la durabilité
-die Neubewertung | la réévaluation
-die Reform | la réforme
-der Reichtum | la richesse
-die Ressource | la ressource
-die Schieflage | le déséquilibre
-die Strategie | la stratégie
-das Unternehmen | l'entreprise
-die Verteilung | la répartition
-das Wachstum | la croissance
-das Wachstum | la croissance
-der Wechsel | le changement
-der Wert | la valeur
-das Wirtschaftssystem | le système économique
-das Wirtschaftssystem | le système économique
+
+
+- **der Akteur** → l'acteur
+- **die Aktivität** → l'activité
+- **die Alternative** → l'alternative
+- **die Bedrohung** → la menace
+- **die Definition** → la définition
+- **die Demokratie** → la démocratie
+- **das Denken** → la pensée
+- **die Diskussion** → la discussion
+- **die Folge** → la conséquence
+- **die Förderung** → le soutien
+- **die Grenze** → la limite
+- **die Investition** → l'investissement
+- **der Kapitalismus** → le capitalisme
+- **die Kluft** → le fossé
+- **die Logik** → la logique
+- **die Lösung** → la solution
+- **die Macht** → le pouvoir
+- **die Menge** → la quantité
+- **der Mensch** → l'être humain
+- **der Mittelstand** → les PME
+- **die Nachhaltigkeit** → la durabilité
+- **die Neubewertung** → la réévaluation
+- **die Reform** → la réforme
+- **der Reichtum** → la richesse
+- **die Ressource** → la ressource
+- **die Schieflage** → le déséquilibre
+- **die Strategie** → la stratégie
+- **das Unternehmen** → l'entreprise
+- **die Verteilung** → la répartition
+- **das Wachstum** → la croissance
+- **das Wachstum** → la croissance
+- **der Wechsel** → le changement
+- **der Wert** → la valeur
+- **das Wirtschaftssystem** → le système économique
+- **das Wirtschaftssystem** → le système économique

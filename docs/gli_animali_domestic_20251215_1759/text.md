@@ -19,38 +19,40 @@ Prendersi cura di un animale è una grande responsabilità. Gli animali domestic
 
 ## Vocabolario
 
-acqua | eau
-amamare | aimer
-un amico | un ami
-gli animali | les animaux
-i bambini | les enfants
-il cane | le chien
-cantano | chantent
-le carote | les carottes
-cibo | nourriture
-colorati | colorés
-la compagnia | la compagnie
-i conigli | les lapins
-i criceti | les hamsters
-felici | heureux
-la gabbia | la cage
-i gatti | les chats
-un gatto | un chat
-l'acquario | l'aquarium
-l'amore | l'amour
-l'esperienza | l'expérience
-meravigliosa | merveilleuse
-le orecchie | les oreilles
-i pappagalli | les perroquets
-parlano | parlent
-le passeggiate | les promenades
-le persone | les personnes
-i pesci | les poissons
-la poltrona | le fauteuil
-prendersi cura | prendre soin
-la responsabilità | la responsabilité
-una ruota | une roue
-saltare | sauter
-soffici | doux
-gli uccelli | les oiseaux
-le verdure | les légumes
+
+
+- **acqua** → eau
+- **amamare** → aimer
+- **un amico** → un ami
+- **gli animali** → les animaux
+- **i bambini** → les enfants
+- **il cane** → le chien
+- **cantano** → chantent
+- **le carote** → les carottes
+- **cibo** → nourriture
+- **colorati** → colorés
+- **la compagnia** → la compagnie
+- **i conigli** → les lapins
+- **i criceti** → les hamsters
+- **felici** → heureux
+- **la gabbia** → la cage
+- **i gatti** → les chats
+- **un gatto** → un chat
+- **l'acquario** → l'aquarium
+- **l'amore** → l'amour
+- **l'esperienza** → l'expérience
+- **meravigliosa** → merveilleuse
+- **le orecchie** → les oreilles
+- **i pappagalli** → les perroquets
+- **parlano** → parlent
+- **le passeggiate** → les promenades
+- **le persone** → les personnes
+- **i pesci** → les poissons
+- **la poltrona** → le fauteuil
+- **prendersi cura** → prendre soin
+- **la responsabilità** → la responsabilité
+- **una ruota** → une roue
+- **saltare** → sauter
+- **soffici** → doux
+- **gli uccelli** → les oiseaux
+- **le verdure** → les légumes

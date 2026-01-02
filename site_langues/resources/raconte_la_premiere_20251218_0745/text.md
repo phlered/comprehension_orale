@@ -22,6 +22,8 @@ drapeau: 🇰🇷
 
 ## 어휘
 
+
+
 - **가족** → gajok (famille)
 - **고개** → gogae (tête)
 - **공부하다** → gongbuhada (étudier)

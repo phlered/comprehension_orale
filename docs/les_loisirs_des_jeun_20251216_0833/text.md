@@ -20,6 +20,8 @@ Enfin, il y a ceux qui aiment lire des livres ou écouter de la musique. La lect
 
 ## Vocabulaire
 
+
+
 - **aimer** → houden van
 - **les amis** → vrienden
 - **le basket** → basketbal

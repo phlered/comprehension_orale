@@ -24,6 +24,8 @@ Voting is a right and a responsibility in American democracy. By participating i
 
 ## Vocabulary
 
+
+
 - **branch** → branche
 - **campaign** → campagne
 - **candidate** → candidat

@@ -26,6 +26,8 @@ The integration of AI into the labor market is indisputable and inexorable. It p
 
 ## Vocabulary
 
+
+
 - **advancement** → progrès
 - **algorithm** → algorithme
 - **applicant** → candidat

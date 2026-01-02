@@ -22,6 +22,8 @@ After dinner, if I am still a little hungry, I might have a piece of fruit or a 
 
 ## Vocabulary
 
+
+
 - **bowl** → bol
 - **breakfast** → petit-déjeuner
 - **butter** → beurre

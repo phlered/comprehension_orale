@@ -24,6 +24,8 @@ Visitar un mercado de Navidad es una excelente manera de empezar la temporada na
 
 ## Vocabulario
 
+
+
 - **las actividades** → les activités
 - **los adornos** → les décorations
 - **la alegría** → la joie

@@ -21,38 +21,40 @@ Grazie per aver letto la mia storia! Ciao!
 
 ## Vocabolario
 
-andare | aller
-bello | beau
-carino | mignon
-la cassa | la caisse
-la cintura | la ceinture
-la commessa | la vendeuse
-comodo | confortable
-comprare | acheter
-comprare | acheter
-divertente | amusant
-felice | heureux
-gentile | aimable
-il giorno | le jour
-guardare | regarder
-il jeans | le jean
-l'acquisto | l'achat
-l'amica | l'amie
-la maglia | la chemise
-la maglietta | le tee-shirt
-la mamma | la maman
-il negozio | le magasin
-nuovo | nouveau
-pagare | payer
-il paio | la paire
-il pantalone | le pantalon
-perfetto | parfait
-provare | essayer
-il sabato | le samedi
-il sacchetto | le sac
-il sandalo | la sandale
-la scarpa | la chaussure
-scegliere | choisir
-lo shopping | le shopping
-i soldi | l'argent
-il vestito | le vêtement
+
+
+- **andare** → aller
+- **bello** → beau
+- **carino** → mignon
+- **la cassa** → la caisse
+- **la cintura** → la ceinture
+- **la commessa** → la vendeuse
+- **comodo** → confortable
+- **comprare** → acheter
+- **comprare** → acheter
+- **divertente** → amusant
+- **felice** → heureux
+- **gentile** → aimable
+- **il giorno** → le jour
+- **guardare** → regarder
+- **il jeans** → le jean
+- **l'acquisto** → l'achat
+- **l'amica** → l'amie
+- **la maglia** → la chemise
+- **la maglietta** → le tee-shirt
+- **la mamma** → la maman
+- **il negozio** → le magasin
+- **nuovo** → nouveau
+- **pagare** → payer
+- **il paio** → la paire
+- **il pantalone** → le pantalon
+- **perfetto** → parfait
+- **provare** → essayer
+- **il sabato** → le samedi
+- **il sacchetto** → le sac
+- **il sandalo** → la sandale
+- **la scarpa** → la chaussure
+- **scegliere** → choisir
+- **lo shopping** → le shopping
+- **i soldi** → l'argent
+- **il vestito** → le vêtement

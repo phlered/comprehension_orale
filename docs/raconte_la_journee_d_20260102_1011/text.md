@@ -24,6 +24,8 @@ As evening descended, the family gathered once more around a roaring fire, indul
 
 ## Vocabulary
 
+
+
 - **alarm** → alarme
 - **bacon** → bacon
 - **breakfast** → petit-déjeuner

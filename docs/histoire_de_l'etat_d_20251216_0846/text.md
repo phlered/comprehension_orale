@@ -24,6 +24,8 @@ Ainsi, l'histoire de l'État d'Israël post-1945 est lumière et ombre, une quê
 
 ## Vocabulaire
 
+
+
 - **les accords d'Oslo** → Akkoorden van Oslo
 - **les accords d'Abraham** → Abraham-akkoorden
 - **l'adaptation** → aanpassing

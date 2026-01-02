@@ -23,38 +23,40 @@ Lisa verlaat de bakkerij met haar brood en croissantjes. Ze is blij. Het eten za
 
 ## Woordenschat
 
-alles | tout
-ander | autre
-de bakker | le boulanger
-de bakkerij | la boulangerie
-betalen | payer
-blij | content
-de briefje | le billet
-het brood | le pain
-bruin | brun
-het croissantje | le croissant
-de dag | le jour
-denken | penser
-de deur | la porte
-het eten | la nourriture
-het euro | l'euro
-gaan | aller
-het geld | l'argent
-geven | donner
-helpen | aider
-de iets | la chose
-kopen | acheter
-het kost | le coût
-lachen | rire
-de lacht | le rire
-lekker | bon
-mooi | beau
-de ochtend | le matin
-openen | ouvrir
-pakken | prendre
-verlaten | quitter
-vers | frais
-vragen | demander
-willen | vouloir
-het zak | le sac
-zeggen | dire
+
+
+- **alles** → tout
+- **ander** → autre
+- **de bakker** → le boulanger
+- **de bakkerij** → la boulangerie
+- **betalen** → payer
+- **blij** → content
+- **de briefje** → le billet
+- **het brood** → le pain
+- **bruin** → brun
+- **het croissantje** → le croissant
+- **de dag** → le jour
+- **denken** → penser
+- **de deur** → la porte
+- **het eten** → la nourriture
+- **het euro** → l'euro
+- **gaan** → aller
+- **het geld** → l'argent
+- **geven** → donner
+- **helpen** → aider
+- **de iets** → la chose
+- **kopen** → acheter
+- **het kost** → le coût
+- **lachen** → rire
+- **de lacht** → le rire
+- **lekker** → bon
+- **mooi** → beau
+- **de ochtend** → le matin
+- **openen** → ouvrir
+- **pakken** → prendre
+- **verlaten** → quitter
+- **vers** → frais
+- **vragen** → demander
+- **willen** → vouloir
+- **het zak** → le sac
+- **zeggen** → dire

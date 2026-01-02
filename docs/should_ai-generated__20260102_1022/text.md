@@ -24,6 +24,8 @@ In conclusion, while there are nuanced considerations to be taken into account, 
 
 ## Vocabulary
 
+
+
 - **accountability** → responsabilité
 - **advancement** → avancée
 - **artificial** → artificiel

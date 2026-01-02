@@ -23,38 +23,40 @@ Letztlich muss sich Europa der Herausforderung stellen, seine Identität neu zu 
 
 ## Wortschatz
 
-die Assimilation | l’assimilation
-die Bedrohung | la menace
-die Bewegung | le mouvement
-die Dekade | la décennie
-die Digitalisierung | la numérisation
-die Disparität | la disparité
-der Druck | la pression
-die Einheit | l’unité
-die Europäische Union | l'Union européenne
-der Frieden | la paix
-der Föderalismus | le fédéralisme
-die Gefahr | le danger
-die Gemeinschaft | la communauté
-die Generation | la génération
-die Gesellschaft | la société
-die Grenze | la frontière
-die Herausforderung | le défi
-die Identität | l'identité
-die Integration | l’intégration
-der Interessen | l’intérêt
-der Kontinent | le continent
-die Krise | la crise
-die Macht | le pouvoir
-die Migration | la migration
-der Mitgliedsstaat | l'État membre
-die Norm | la norme
-die Politik | la politique
-der Populismus | le populisme
-das Projekt | le projet
-die Renationalisierung | la renationalisation
-der Respekt | le respect
-der Spaltung | la division
-die Vielfalt | la diversité
-der Wandel | le changement
-der Wert | la valeur
+
+
+- **die Assimilation** → l’assimilation
+- **die Bedrohung** → la menace
+- **die Bewegung** → le mouvement
+- **die Dekade** → la décennie
+- **die Digitalisierung** → la numérisation
+- **die Disparität** → la disparité
+- **der Druck** → la pression
+- **die Einheit** → l’unité
+- **die Europäische Union** → l'Union européenne
+- **der Frieden** → la paix
+- **der Föderalismus** → le fédéralisme
+- **die Gefahr** → le danger
+- **die Gemeinschaft** → la communauté
+- **die Generation** → la génération
+- **die Gesellschaft** → la société
+- **die Grenze** → la frontière
+- **die Herausforderung** → le défi
+- **die Identität** → l'identité
+- **die Integration** → l’intégration
+- **der Interessen** → l’intérêt
+- **der Kontinent** → le continent
+- **die Krise** → la crise
+- **die Macht** → le pouvoir
+- **die Migration** → la migration
+- **der Mitgliedsstaat** → l'État membre
+- **die Norm** → la norme
+- **die Politik** → la politique
+- **der Populismus** → le populisme
+- **das Projekt** → le projet
+- **die Renationalisierung** → la renationalisation
+- **der Respekt** → le respect
+- **der Spaltung** → la division
+- **die Vielfalt** → la diversité
+- **der Wandel** → le changement
+- **der Wert** → la valeur

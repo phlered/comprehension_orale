@@ -19,38 +19,40 @@ De bus nemen is handig en snel. Ik vind het fijn dat ik niet hoef te rijden. Zo 
 
 ## Woordenschat
 
-beginnen | commencer
-het boek | le livre
-de bus | le bus
-de bushalte | l'arrêt de bus
-de dag | la journée
-de halte | l'arrêt
-handig | pratique
-hoeven | avoir besoin
-het huis | la maison
-het kantoor | le bureau
-komen | venir
-laat | tard
-lezen | lire
-lopen | marcher
-luisteren | écouter
-de manier | la manière
-de mens | la personne
-de minuut | la minute
-moeten | devoir
-de muziek | la musique
-de ochtend | le matin
-praten | parler
-reizen | voyager
-rijden | conduire
-de rit | le trajet
-rustig | calmement
-slapen | dormir
-snel | rapide
-stappen | monter/débarquer
-de tijd | le temps
-het uur | l'heure
-vinden | trouver
-de vriendin | l'amie
-het werk | le travail
-zien | voir
+
+
+- **beginnen** → commencer
+- **het boek** → le livre
+- **de bus** → le bus
+- **de bushalte** → l'arrêt de bus
+- **de dag** → la journée
+- **de halte** → l'arrêt
+- **handig** → pratique
+- **hoeven** → avoir besoin
+- **het huis** → la maison
+- **het kantoor** → le bureau
+- **komen** → venir
+- **laat** → tard
+- **lezen** → lire
+- **lopen** → marcher
+- **luisteren** → écouter
+- **de manier** → la manière
+- **de mens** → la personne
+- **de minuut** → la minute
+- **moeten** → devoir
+- **de muziek** → la musique
+- **de ochtend** → le matin
+- **praten** → parler
+- **reizen** → voyager
+- **rijden** → conduire
+- **de rit** → le trajet
+- **rustig** → calmement
+- **slapen** → dormir
+- **snel** → rapide
+- **stappen** → monter/débarquer
+- **de tijd** → le temps
+- **het uur** → l'heure
+- **vinden** → trouver
+- **de vriendin** → l'amie
+- **het werk** → le travail
+- **zien** → voir

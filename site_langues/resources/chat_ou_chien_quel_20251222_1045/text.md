@@ -18,38 +18,40 @@ Interestingly, some experts suggest that extroverted personalities might gravita
 
 ## Vocabulary
 
-activity | activité
-affection | affection
-to appeal | attirer
-to attract | attirer
-bond | lien
-cat | chat
-character | caractère
-to choose | choisir
-companionship | compagnie
-compatibility | compatibilité
-demeanor | comportement
-dog | chien
-energy | énergie
-to enrich | enrichir
-exception | exception
-expert | expert
-extroverted | extraverti
-to favor | préférer
-friend | ami
-independent | indépendant
-individual | individu
-interaction | interaction
-kinship | affinité
-life | vie
-lifestyle | mode de vie
-loyalty | loyauté
-nature | nature
-personality | personnalité
-personality | personnalité
-pet | animal de compagnie
-to play | jouer
-to suggest | suggérer
-tranquility | tranquillité
-unique | unique
-walk | promenade
+
+
+- **activity** → activité
+- **affection** → affection
+- **to appeal** → attirer
+- **to attract** → attirer
+- **bond** → lien
+- **cat** → chat
+- **character** → caractère
+- **to choose** → choisir
+- **companionship** → compagnie
+- **compatibility** → compatibilité
+- **demeanor** → comportement
+- **dog** → chien
+- **energy** → énergie
+- **to enrich** → enrichir
+- **exception** → exception
+- **expert** → expert
+- **extroverted** → extraverti
+- **to favor** → préférer
+- **friend** → ami
+- **independent** → indépendant
+- **individual** → individu
+- **interaction** → interaction
+- **kinship** → affinité
+- **life** → vie
+- **lifestyle** → mode de vie
+- **loyalty** → loyauté
+- **nature** → nature
+- **personality** → personnalité
+- **personality** → personnalité
+- **pet** → animal de compagnie
+- **to play** → jouer
+- **to suggest** → suggérer
+- **tranquility** → tranquillité
+- **unique** → unique
+- **walk** → promenade

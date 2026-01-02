@@ -24,6 +24,8 @@ Thank you for reading about my life. I hope you enjoyed it!
 
 ## Vocabulary
 
+
+
 - **adventure** → aventure
 - **basketball** → basketball
 - **books** → livres

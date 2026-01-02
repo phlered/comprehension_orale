@@ -17,38 +17,40 @@ Ogni tanto, si può mangiare un dolce. Una piccola torta o un gelato sono buoni,
 
 ## Vocabolario
 
-la banana | la banane
-bere | boire
-buono | bon
-la carne | la viande
-le carote | les carottes
-il cibo | la nourriture
-il corpo | le corps
-il cuore | le cœur
-il dolce | le dessert
-la frutta | le fruit
-il gelato | la glace
-importante | important
-insieme | ensemble
-l'acqua | l'eau
-l'alimentazione | l'alimentation
-l'energia | l'énergie
-l'equilibrio | l'équilibre
-mangiare | manger
-la mela | la pomme
-la mente | l'esprit
-ogni | chaque
-il pane | le pain
-la pasta | les pâtes
-il pesce | le poisson
-il pollo | le poulet
-i pomodori | les tomates
-popolare | populaire
-le proteine | les protéines
-ricco | riche
-la salute | la santé
-gli spinaci | les épinards
-il tonno | le thon
-la torta | le gâteau
-vario | varié
-la verdura | le légume
+
+
+- **la banana** → la banane
+- **bere** → boire
+- **buono** → bon
+- **la carne** → la viande
+- **le carote** → les carottes
+- **il cibo** → la nourriture
+- **il corpo** → le corps
+- **il cuore** → le cœur
+- **il dolce** → le dessert
+- **la frutta** → le fruit
+- **il gelato** → la glace
+- **importante** → important
+- **insieme** → ensemble
+- **l'acqua** → l'eau
+- **l'alimentazione** → l'alimentation
+- **l'energia** → l'énergie
+- **l'equilibrio** → l'équilibre
+- **mangiare** → manger
+- **la mela** → la pomme
+- **la mente** → l'esprit
+- **ogni** → chaque
+- **il pane** → le pain
+- **la pasta** → les pâtes
+- **il pesce** → le poisson
+- **il pollo** → le poulet
+- **i pomodori** → les tomates
+- **popolare** → populaire
+- **le proteine** → les protéines
+- **ricco** → riche
+- **la salute** → la santé
+- **gli spinaci** → les épinards
+- **il tonno** → le thon
+- **la torta** → le gâteau
+- **vario** → varié
+- **la verdura** → le légume

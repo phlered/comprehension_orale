@@ -24,6 +24,8 @@ En resumen, la ganadería de vacas es una actividad vital para Argentina. No sol
 
 ## Vocabulario
 
+
+
 - **la alimentación** → l'alimentation
 - **los animales** → les animaux
 - **los antibióticos** → les antibiotiques

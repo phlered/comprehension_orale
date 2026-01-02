@@ -28,6 +28,8 @@ In conclusion, while the AI revolution is in its nascent stages, its potential t
 
 ## Vocabulary
 
+
+
 - **accuracy** → précision
 - **adaptability** → adaptabilité
 - **algorithm** → algorithme

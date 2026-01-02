@@ -25,6 +25,8 @@ Die so entstehende Literatur trägt nicht nur zur kulturellen Vielfalt bei, sond
 
 ## Wortschatz
 
+
+
 - **der Titel** → le titre
 - **die Welt** → le monde
 - **die Realität** → la réalité

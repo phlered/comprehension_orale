@@ -22,6 +22,8 @@ Looking through the album makes me grateful for my family. Each photo is a remin
 
 ## Vocabulary
 
+
+
 - **album** → album
 - **backyard** → jardin
 - **to bake** → cuire

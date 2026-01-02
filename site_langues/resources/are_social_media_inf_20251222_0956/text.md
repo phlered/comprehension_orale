@@ -18,38 +18,40 @@ However, the line between genuine inspiration and commercialization can blur, ra
 
 ## Vocabulary
 
-advocacy | plaidoyer
-authenticity | authenticité
-awareness | sensibilisation
-to blur | brouiller
-to celebrate | célébrer
-comparisons | comparaisons
-concerns | préoccupations
-consumerism | consumérisme
-content | contenu
-contentious | controversé
-to democratize | démocratiser
-development | développement
-digital | numérique
-fame | célébrité
-to foster | encourager
-influence | influence
-influencers | influenceurs
-issue | question
-justice | justice
-literacy | littéracie
-living | mode de vie
-mental health | santé mentale
-perspectives | perspectives
-pivotal | crucial
-positive | positif
-pursuit | quête
-to remain | rester
-role | rôle
-to scrutinize | examiner
-skepticism | scepticisme
-to spark | susciter
-standards | normes
-sustainable | durable
-teenagers | adolescents
-trendsetters | influenceurs
+
+
+- **advocacy** → plaidoyer
+- **authenticity** → authenticité
+- **awareness** → sensibilisation
+- **to blur** → brouiller
+- **to celebrate** → célébrer
+- **comparisons** → comparaisons
+- **concerns** → préoccupations
+- **consumerism** → consumérisme
+- **content** → contenu
+- **contentious** → controversé
+- **to democratize** → démocratiser
+- **development** → développement
+- **digital** → numérique
+- **fame** → célébrité
+- **to foster** → encourager
+- **influence** → influence
+- **influencers** → influenceurs
+- **issue** → question
+- **justice** → justice
+- **literacy** → littéracie
+- **living** → mode de vie
+- **mental health** → santé mentale
+- **perspectives** → perspectives
+- **pivotal** → crucial
+- **positive** → positif
+- **pursuit** → quête
+- **to remain** → rester
+- **role** → rôle
+- **to scrutinize** → examiner
+- **skepticism** → scepticisme
+- **to spark** → susciter
+- **standards** → normes
+- **sustainable** → durable
+- **teenagers** → adolescents
+- **trendsetters** → influenceurs

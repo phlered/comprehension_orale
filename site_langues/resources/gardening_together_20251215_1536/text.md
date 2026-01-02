@@ -20,6 +20,8 @@ Finally, gardening together can help create beautiful outdoor spaces that everyo
 
 ## Vocabulary
 
+
+
 - **basil** → basilic
 - **to bring** → apporter
 - **confident** → confiant

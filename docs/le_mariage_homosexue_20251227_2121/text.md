@@ -26,6 +26,8 @@ Het homohuwelijk is een belangrijk onderwerp in Nederland. Het laat zien dat Ned
 
 ## Woordenschat
 
+
+
 - **de acceptatie** → l'acceptation
 - **de bloem** → la fleur
 - **de bruiloft** → le mariage (la cérémonie)

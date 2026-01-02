@@ -22,6 +22,8 @@ Everyone has different reasons for their music preferences, and that's what make
 
 ## Vocabulary
 
+
+
 - **artist** → artiste
 - **aspect** → aspect
 - **beat** → rythme

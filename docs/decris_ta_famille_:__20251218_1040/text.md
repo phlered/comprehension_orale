@@ -20,6 +20,8 @@ Estoy contento con mi familia y me gusta mucho estar con ellos. Siempre tenemos 
 
 ## Vocabulario
 
+
+
 - **amable** → aimable
 - **amar** → adorer
 - **el barrio** → le quartier

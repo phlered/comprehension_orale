@@ -25,38 +25,40 @@ In conclusion, while the impact of AI on unemployment is a legitimate concern, i
 
 ## Vocabulary
 
-adaptability | adaptabilité
-advancement | progrès
-artificial | artificiel
-to automate | automatiser
-breakthrough | percée
-capital | capital
-challenge | défi
-diagnostics | diagnostics
-displacement | déplacement
-to disrupt | perturber
-education | éducation
-to engender | engendrer
-epoch | époque
-to herald | annoncer
-impact | impact
-industry | industrie
-intelligence | intelligence
-job | emploi
-labor | travail
-learning | apprentissage
-machine | machine
-opportunity | opportunité
-oversight | surveillance
-paradigm | paradigme
-policy | politique
-profession | profession
-progress | progrès
-revolution | révolution
-sector | secteur
-socio-economic | socio-économique
-synergy | synergie
-task | tâche
-transformative | transformateur
-unemployment | chômage
-workforce | main-d'œuvre
+
+
+- **adaptability** → adaptabilité
+- **advancement** → progrès
+- **artificial** → artificiel
+- **to automate** → automatiser
+- **breakthrough** → percée
+- **capital** → capital
+- **challenge** → défi
+- **diagnostics** → diagnostics
+- **displacement** → déplacement
+- **to disrupt** → perturber
+- **education** → éducation
+- **to engender** → engendrer
+- **epoch** → époque
+- **to herald** → annoncer
+- **impact** → impact
+- **industry** → industrie
+- **intelligence** → intelligence
+- **job** → emploi
+- **labor** → travail
+- **learning** → apprentissage
+- **machine** → machine
+- **opportunity** → opportunité
+- **oversight** → surveillance
+- **paradigm** → paradigme
+- **policy** → politique
+- **profession** → profession
+- **progress** → progrès
+- **revolution** → révolution
+- **sector** → secteur
+- **socio-economic** → socio-économique
+- **synergy** → synergie
+- **task** → tâche
+- **transformative** → transformateur
+- **unemployment** → chômage
+- **workforce** → main-d'œuvre

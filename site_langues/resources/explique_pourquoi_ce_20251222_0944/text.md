@@ -18,38 +18,40 @@ Additionally, traveling during this time provides an opportunity for family bond
 
 ## Vocabulary
 
-bonding | rapprochement
-to celebrate | célébrer
-child | enfant
-country | pays
-culture | culture
-to disrupt | perturber
-distraction | distraction
-educational | éducatif
-to escape | échapper
-expectation | attente
-to experience | expérimenter
-family | famille
-gathering | rassemblement
-holiday | vacances
-home | maison
-opportunity | opportunité
-parent | parent
-perspective | perspective
-pressure | pression
-reason | raison
-relationship | relation
-respite | répit
-responsibility | responsabilité
-routine | routine
-schedule | emploi du temps
-school | école
-season | saison
-to stay | rester
-time | temps
-tradition | tradition
-tradition | tradition
-to travel | voyager
-vacation | vacances
-window | fenêtre
-work | travail
+
+
+- **bonding** → rapprochement
+- **to celebrate** → célébrer
+- **child** → enfant
+- **country** → pays
+- **culture** → culture
+- **to disrupt** → perturber
+- **distraction** → distraction
+- **educational** → éducatif
+- **to escape** → échapper
+- **expectation** → attente
+- **to experience** → expérimenter
+- **family** → famille
+- **gathering** → rassemblement
+- **holiday** → vacances
+- **home** → maison
+- **opportunity** → opportunité
+- **parent** → parent
+- **perspective** → perspective
+- **pressure** → pression
+- **reason** → raison
+- **relationship** → relation
+- **respite** → répit
+- **responsibility** → responsabilité
+- **routine** → routine
+- **schedule** → emploi du temps
+- **school** → école
+- **season** → saison
+- **to stay** → rester
+- **time** → temps
+- **tradition** → tradition
+- **tradition** → tradition
+- **to travel** → voyager
+- **vacation** → vacances
+- **window** → fenêtre
+- **work** → travail

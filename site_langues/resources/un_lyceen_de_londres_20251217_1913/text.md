@@ -24,6 +24,8 @@ On weekends, my friends and I like to go to the Science Museum. It is very excit
 
 ## Vocabulary
 
+
+
 - **adventure** → aventure
 - **birds** → oiseaux
 - **books** → livres

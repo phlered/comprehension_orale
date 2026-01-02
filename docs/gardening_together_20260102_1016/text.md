@@ -26,6 +26,8 @@ In conclusion, gardening together is a fun and beneficial activity. It allows pe
 
 ## Vocabulary
 
+
+
 - **advantage** → avantage
 - **age** → âge
 - **to bond** → se lier

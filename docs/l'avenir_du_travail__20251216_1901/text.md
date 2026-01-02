@@ -23,38 +23,40 @@ Abschließend lässt sich festhalten, dass die Zukunft der Arbeit im digitalen Z
 
 ## Wortschatz
 
-die Anpassungsfähigkeit | l'adaptabilité
-der Arbeit | le travail
-der Arbeitnehmer | le salarié
-die Aufgabe | la tâche
-die Automatisierung | l'automatisation
-der Beruf | le métier
-der Datenschutz | la protection des données
-die Digitalisierung | la numérisation
-die Einladung | l'invitation
-die Entwicklung | le développement
-die Flexibilität | la flexibilité
-die Freiheit | la liberté
-die Herausforderung | le défi
-das Homeoffice | le télétravail
-die Intelligenz | l'intelligence
-die Kompetenz | la compétence
-die Kreativität | la créativité
-das Model | le modèle
-die Privatsphäre | la vie privée
-der Prozess | le processus
-die Revolution | la révolution
-das Risiko | le risque
-der Roboter | le robot
-das System | le système
-die Technologie | la technologie
-die Transformation | la transformation
-das Umfeld | l'environnement
-die Umschulung | la reconversion
-die Verantwortung | la responsabilité
-die Vernetzung | la mise en réseau
-die Veränderung | le changement
-die Weiterbildung | la formation continue
-das Werkzeug | l'outil
-das Zeitalter | l'époque
-die Zukunft | le futur
+
+
+- **die Anpassungsfähigkeit** → l'adaptabilité
+- **der Arbeit** → le travail
+- **der Arbeitnehmer** → le salarié
+- **die Aufgabe** → la tâche
+- **die Automatisierung** → l'automatisation
+- **der Beruf** → le métier
+- **der Datenschutz** → la protection des données
+- **die Digitalisierung** → la numérisation
+- **die Einladung** → l'invitation
+- **die Entwicklung** → le développement
+- **die Flexibilität** → la flexibilité
+- **die Freiheit** → la liberté
+- **die Herausforderung** → le défi
+- **das Homeoffice** → le télétravail
+- **die Intelligenz** → l'intelligence
+- **die Kompetenz** → la compétence
+- **die Kreativität** → la créativité
+- **das Model** → le modèle
+- **die Privatsphäre** → la vie privée
+- **der Prozess** → le processus
+- **die Revolution** → la révolution
+- **das Risiko** → le risque
+- **der Roboter** → le robot
+- **das System** → le système
+- **die Technologie** → la technologie
+- **die Transformation** → la transformation
+- **das Umfeld** → l'environnement
+- **die Umschulung** → la reconversion
+- **die Verantwortung** → la responsabilité
+- **die Vernetzung** → la mise en réseau
+- **die Veränderung** → le changement
+- **die Weiterbildung** → la formation continue
+- **das Werkzeug** → l'outil
+- **das Zeitalter** → l'époque
+- **die Zukunft** → le futur

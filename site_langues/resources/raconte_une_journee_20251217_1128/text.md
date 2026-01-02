@@ -20,38 +20,40 @@ Después de eso, la directora nos dejó salir antes. ¡Fue un día diferente y d
 
 ## Vocabulario
 
-la alarma | le réveil
-el autobús | le bus
-la clase | la classe
-la clase | la leçon
-correr | courir
-desayunar | prendre le petit déjeuner
-diferente | différent
-la directora | la directrice
-divertido | amusant
-el día | la journée
-el día | le jour
-enfermo | malade
-entrar | entrer
-la escuela | l'école
-esperar | attendre
-estudiar | étudier
-extraño | étrange
-gritar | crier
-increíble | incroyable
-levantarse | se lever
-el momento | le moment
-olvidar | oublier
-pensar | penser
-la pizarra | le tableau
-el profesor | le professeur
-el pájaro | l'oiseau
-rápido | rapide
-la sala | la salle
-salir | sortir
-el tiempo | le temps
-la ventana | la fenêtre
-las ventanas | les fenêtres
-vestirse | s'habiller
-visitar | visiter
-volar | voler
+
+
+- **la alarma** → le réveil
+- **el autobús** → le bus
+- **la clase** → la classe
+- **la clase** → la leçon
+- **correr** → courir
+- **desayunar** → prendre le petit déjeuner
+- **diferente** → différent
+- **la directora** → la directrice
+- **divertido** → amusant
+- **el día** → la journée
+- **el día** → le jour
+- **enfermo** → malade
+- **entrar** → entrer
+- **la escuela** → l'école
+- **esperar** → attendre
+- **estudiar** → étudier
+- **extraño** → étrange
+- **gritar** → crier
+- **increíble** → incroyable
+- **levantarse** → se lever
+- **el momento** → le moment
+- **olvidar** → oublier
+- **pensar** → penser
+- **la pizarra** → le tableau
+- **el profesor** → le professeur
+- **el pájaro** → l'oiseau
+- **rápido** → rapide
+- **la sala** → la salle
+- **salir** → sortir
+- **el tiempo** → le temps
+- **la ventana** → la fenêtre
+- **las ventanas** → les fenêtres
+- **vestirse** → s'habiller
+- **visitar** → visiter
+- **volar** → voler

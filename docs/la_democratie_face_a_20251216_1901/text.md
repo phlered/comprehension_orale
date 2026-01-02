@@ -21,38 +21,40 @@ Zusammenfassend lässt sich konstatieren, dass die Demokratie in ihrem Streben n
 
 ## Wortschatz
 
-die Angst | la peur
-die Antwort | la réponse
-der Aspekt | l'aspect
-die Bewegung | le mouvement
-die Bildung | l'éducation
-der Bürger | le citoyen
-die Demokratie | la démocratie
-die Desinformation | la désinformation
-der Diskurs | le discours
-die Elite | l'élite
-die Erneuerung | le renouvellement
-die Gerechtigkeit | la justice
-die Herausforderung | le défi
-die Identität | l'identité
-die Information | l'information
-die Institution | l'institution
-die Integrität | l'intégrité
-der Konflikt | le conflit
-die Lösung | la solution
-die Macht | le pouvoir
-der Mechanismus | le mécanisme
-das Medium | le média
-die Mitbestimmung | la cogestion
-die Moderation | la modération
-die Nachricht | la nouvelle
-die Partizipation | la participation
-das Phänomen | le phénomène
-die Pluralität | la pluralité
-der Populismus | le populisme
-das Problem | le problème
-die Stabilität | la stabilité
-die Transparenz | la transparence
-die Unsicherheit | l'incertitude
-das Vertrauen | la confiance
-das Volk | le peuple
+
+
+- **die Angst** → la peur
+- **die Antwort** → la réponse
+- **der Aspekt** → l'aspect
+- **die Bewegung** → le mouvement
+- **die Bildung** → l'éducation
+- **der Bürger** → le citoyen
+- **die Demokratie** → la démocratie
+- **die Desinformation** → la désinformation
+- **der Diskurs** → le discours
+- **die Elite** → l'élite
+- **die Erneuerung** → le renouvellement
+- **die Gerechtigkeit** → la justice
+- **die Herausforderung** → le défi
+- **die Identität** → l'identité
+- **die Information** → l'information
+- **die Institution** → l'institution
+- **die Integrität** → l'intégrité
+- **der Konflikt** → le conflit
+- **die Lösung** → la solution
+- **die Macht** → le pouvoir
+- **der Mechanismus** → le mécanisme
+- **das Medium** → le média
+- **die Mitbestimmung** → la cogestion
+- **die Moderation** → la modération
+- **die Nachricht** → la nouvelle
+- **die Partizipation** → la participation
+- **das Phänomen** → le phénomène
+- **die Pluralität** → la pluralité
+- **der Populismus** → le populisme
+- **das Problem** → le problème
+- **die Stabilität** → la stabilité
+- **die Transparenz** → la transparence
+- **die Unsicherheit** → l'incertitude
+- **das Vertrauen** → la confiance
+- **das Volk** → le peuple

@@ -26,6 +26,8 @@ Van life is een mooi avontuur in Nederland. Het is perfect voor mensen die van r
 
 ## Woordenschat
 
+
+
 - **het avontuur** → l'aventure
 - **het bos** → la forêt
 - **het busje** → la camionnette

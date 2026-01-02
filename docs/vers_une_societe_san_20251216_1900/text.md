@@ -23,38 +23,40 @@ Letztlich ist es wichtig, eine Balance zu finden. Eine gänzlich bargeldlose Ges
 
 ## Wortschatz
 
-der Alltag | le quotidien
-das Anliegen | la préoccupation
-die App | l'application
-die Auswirkung | l'impact
-das Bargeld | l'argent liquide
-die Bedrohung | la menace
-die Cyberkriminalität | la cybercriminalité
-die Datensicherheit | la sécurité des données
-die Debitkarte | la carte de débit
-der Diebstahl | le vol
-die Exklusion | l'exclusion
-das Geld | l'argent
-die Gesellschaft | la société
-die Herausforderung | le défi
-das Konsumverhalten | le comportement de consommation
-die Kreditkarte | la carte de crédit
-die Kryptowährung | la cryptomonnaie
-das Leben | la vie
-die Nachverfolgbarkeit | la traçabilité
-das Risiko | le risque
-die Schulden | les dettes
-der Schutz | la protection
-die Sorge | l'inquiétude
-die Stabilität | la stabilité
-die Transaktion | la transaction
-der Trend | la tendance
-das Unternehmen | l'entreprise
-der Verbraucher | le consommateur
-das Vertrauen | la confiance
-der Vorteil | l'avantage
-der Wandel | le changement
-die Welt | le monde
-die Zahlungsmethode | le mode de paiement
-der Zugang | l'accès
-die Ära | l'ère
+
+
+- **der Alltag** → le quotidien
+- **das Anliegen** → la préoccupation
+- **die App** → l'application
+- **die Auswirkung** → l'impact
+- **das Bargeld** → l'argent liquide
+- **die Bedrohung** → la menace
+- **die Cyberkriminalität** → la cybercriminalité
+- **die Datensicherheit** → la sécurité des données
+- **die Debitkarte** → la carte de débit
+- **der Diebstahl** → le vol
+- **die Exklusion** → l'exclusion
+- **das Geld** → l'argent
+- **die Gesellschaft** → la société
+- **die Herausforderung** → le défi
+- **das Konsumverhalten** → le comportement de consommation
+- **die Kreditkarte** → la carte de crédit
+- **die Kryptowährung** → la cryptomonnaie
+- **das Leben** → la vie
+- **die Nachverfolgbarkeit** → la traçabilité
+- **das Risiko** → le risque
+- **die Schulden** → les dettes
+- **der Schutz** → la protection
+- **die Sorge** → l'inquiétude
+- **die Stabilität** → la stabilité
+- **die Transaktion** → la transaction
+- **der Trend** → la tendance
+- **das Unternehmen** → l'entreprise
+- **der Verbraucher** → le consommateur
+- **das Vertrauen** → la confiance
+- **der Vorteil** → l'avantage
+- **der Wandel** → le changement
+- **die Welt** → le monde
+- **die Zahlungsmethode** → le mode de paiement
+- **der Zugang** → l'accès
+- **die Ära** → l'ère

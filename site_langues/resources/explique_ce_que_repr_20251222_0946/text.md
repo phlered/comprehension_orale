@@ -18,38 +18,40 @@ The advent of the New Year, on the other hand, symbolizes fresh beginnings and p
 
 ## Vocabulary
 
-academic | scolaire
-activities | activités
-adolescents | adolescents
-anticipation | anticipation
-atmosphere | ambiance
-beginnings | commencements
-belonging | appartenance
-to bond | se lier
-Christmas | Noël
-community | communauté
-connection | connexion
-decorating | décoration
-empathy | empathie
-events | événements
-experiences | expériences
-family | famille
-future | avenir
-gatherings | rassemblements
-generation | génération
-gifts | cadeaux
-goals | objectifs
-growth | croissance
-hope | espoir
-joy | joie
-meals | repas
-mindset | état d'esprit
-months | mois
-New Year | Nouvel An
-to participate | participer
-to reflect | réfléchir
-resolutions | résolutions
-season | saison
-traditions | traditions
-tree | arbre
-to volunteer | faire du bénévolat
+
+
+- **academic** → scolaire
+- **activities** → activités
+- **adolescents** → adolescents
+- **anticipation** → anticipation
+- **atmosphere** → ambiance
+- **beginnings** → commencements
+- **belonging** → appartenance
+- **to bond** → se lier
+- **Christmas** → Noël
+- **community** → communauté
+- **connection** → connexion
+- **decorating** → décoration
+- **empathy** → empathie
+- **events** → événements
+- **experiences** → expériences
+- **family** → famille
+- **future** → avenir
+- **gatherings** → rassemblements
+- **generation** → génération
+- **gifts** → cadeaux
+- **goals** → objectifs
+- **growth** → croissance
+- **hope** → espoir
+- **joy** → joie
+- **meals** → repas
+- **mindset** → état d'esprit
+- **months** → mois
+- **New Year** → Nouvel An
+- **to participate** → participer
+- **to reflect** → réfléchir
+- **resolutions** → résolutions
+- **season** → saison
+- **traditions** → traditions
+- **tree** → arbre
+- **to volunteer** → faire du bénévolat

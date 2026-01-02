@@ -21,38 +21,40 @@ Abschließend lässt sich sagen, dass der Schutz personenbezogener Daten in der 
 
 ## Wortschatz
 
-der Betrug | la fraude
-die Cyberkriminalität | la cybercriminalité
-die Daten | les données
-der Diebstahl | le vol
-die Erfassung | la collecte
-die Freiheit | la liberté
-die Fußspuren | les traces
-die Gefahr | le danger
-die Gesellschaft | la société
-die Herausforderung | le défi
-der Imperativ | l'impératif
-die Information | l'information
-die Information | l'information
-die Maßnahme | la mesure
-der Missbrauch | l'abus
-der Nutzer | l'utilisateur
-das Passwort | le mot de passe
-die Privatsphäre | la vie privée
-das Recht | le droit
-das Risiko | le risque
-der Schutz | la protection
-die Software | le logiciel
-die Speicherung | le stockage
-der Umgang | la gestion
-die Umgebung | l'environnement
-die Umsetzung | la mise en œuvre
-das Unternehmen | l'entreprise
-die Verantwortung | la responsabilité
-die Verantwortung | la responsabilité
-der Verbraucher | le consommateur
-die Verordnung | le règlement
-die Verpflichtung | l'obligation
-das Verständnis | la compréhension
-die Werbung | la publicité
-das Wissen | la connaissance
+
+
+- **der Betrug** → la fraude
+- **die Cyberkriminalität** → la cybercriminalité
+- **die Daten** → les données
+- **der Diebstahl** → le vol
+- **die Erfassung** → la collecte
+- **die Freiheit** → la liberté
+- **die Fußspuren** → les traces
+- **die Gefahr** → le danger
+- **die Gesellschaft** → la société
+- **die Herausforderung** → le défi
+- **der Imperativ** → l'impératif
+- **die Information** → l'information
+- **die Information** → l'information
+- **die Maßnahme** → la mesure
+- **der Missbrauch** → l'abus
+- **der Nutzer** → l'utilisateur
+- **das Passwort** → le mot de passe
+- **die Privatsphäre** → la vie privée
+- **das Recht** → le droit
+- **das Risiko** → le risque
+- **der Schutz** → la protection
+- **die Software** → le logiciel
+- **die Speicherung** → le stockage
+- **der Umgang** → la gestion
+- **die Umgebung** → l'environnement
+- **die Umsetzung** → la mise en œuvre
+- **das Unternehmen** → l'entreprise
+- **die Verantwortung** → la responsabilité
+- **die Verantwortung** → la responsabilité
+- **der Verbraucher** → le consommateur
+- **die Verordnung** → le règlement
+- **die Verpflichtung** → l'obligation
+- **das Verständnis** → la compréhension
+- **die Werbung** → la publicité
+- **das Wissen** → la connaissance

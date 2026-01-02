@@ -22,6 +22,8 @@ Quand les invités arrivent, on sert d'abord l'entrée. Puis, le plat principal 
 
 ## Vocabulaire
 
+
+
 - **acheter** → kopen
 - **l'ambiance** → sfeer
 - **arriver** → aankomen

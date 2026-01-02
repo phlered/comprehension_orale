@@ -24,6 +24,8 @@ Insgesamt ist der Trend zu biologischen und lokalen Lebensmitteln ein wichtiger 
 
 ## Wortschatz
 
+
+
 - **anbauen** → cultiver
 - **der Apfel** → la pomme
 - **die Arbeitsplätze** → les emplois

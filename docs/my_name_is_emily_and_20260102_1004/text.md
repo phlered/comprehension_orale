@@ -24,6 +24,8 @@ I like my school because I learn new things every day. My teachers are nice and 
 
 ## Vocabulary
 
+
+
 - **basketball** → basket
 - **to be** → être
 - **break** → pause

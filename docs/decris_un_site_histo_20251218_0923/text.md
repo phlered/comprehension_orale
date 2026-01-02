@@ -26,6 +26,8 @@ Zusammengefasst ist das Schloss Neuschwanstein nicht nur ein hervorragendes Beis
 
 ## Wortschatz
 
+
+
 - **die Alpen** → les Alpes
 - **die Anziehungskraft** → l'attrait
 - **die Architektur** → l'architecture

@@ -20,6 +20,8 @@ Es ist wichtig, dass Eltern mit ihren Kindern über die Nutzung von sozialen Med
 
 ## Wortschatz
 
+
+
 - **der Alltag** → le quotidien
 - **der Aspekt** → l'aspect
 - **das Cybermobbing** → le cyberharcèlement

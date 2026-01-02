@@ -24,6 +24,8 @@ Le week-end est passé vite, mais j'ai beaucoup apprécié chaque moment. Mainte
 
 ## Vocabulaire
 
+
+
 - **aider** → helpen
 - **l'ami** → vriend
 - **boire** → drinken

@@ -24,6 +24,8 @@ Zomer in Nederland is gezellig en vol met activiteiten!
 
 ## Woordenschat
 
+
+
 - **activiteiten** → activités
 - **bouwen** → construire
 - **families** → familles

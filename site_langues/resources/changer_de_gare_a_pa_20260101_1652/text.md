@@ -24,6 +24,8 @@ Veel plezier in Parijs en succes met het reizen!
 
 ## Woordenschat
 
+
+
 - **aankomen** → arriver
 - **de automaat** → le distributeur automatique
 - **de bordjes** → les panneaux

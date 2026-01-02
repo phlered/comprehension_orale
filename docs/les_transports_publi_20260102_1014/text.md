@@ -26,6 +26,8 @@ Zusammenfassend lässt sich sagen, dass die öffentlichen Verkehrsmittel in Deut
 
 ## Wortschatz
 
+
+
 - **die Alternative** → l'alternative
 - **das Angebot** → l'offre
 - **die App** → l'application

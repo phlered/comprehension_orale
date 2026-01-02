@@ -24,6 +24,8 @@ Dit zijn een paar lekkere specialiteiten uit Nederland. Proef ze als je in Neder
 
 ## Woordenschat
 
+
+
 - **anders** → différent
 - **boter** → beurre
 - **brood** → pain

@@ -24,6 +24,8 @@ In conclusion, the decision for families to travel during Christmas is driven by
 
 ## Vocabulary
 
+
+
 - **adventure** → aventure
 - **bonding** → lien
 - **celebration** → célébration

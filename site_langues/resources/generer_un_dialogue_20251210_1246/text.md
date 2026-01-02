@@ -28,6 +28,8 @@ Die beiden sitzen eine Weile schweigend da, beobachten die Menschen um sie herum
 
 ## Wortschatz
 
+
+
 - **der Ausdruck** → l'expression
 - **der Ausdruck** → l'expression
 - **bayerisch** → bavarois

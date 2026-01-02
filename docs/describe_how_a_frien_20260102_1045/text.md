@@ -24,6 +24,8 @@ I hope we will be friends forever. Lisa is not just a friend; she is like family
 
 ## Vocabulary
 
+
+
 - **advice** → conseil
 - **to call** → appeler
 - **to count on** → compter sur

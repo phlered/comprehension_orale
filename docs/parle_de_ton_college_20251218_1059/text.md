@@ -22,6 +22,8 @@ I enjoy going to school and learning new things. I have many friends in my class
 
 ## Vocabulary
 
+
+
 - **afternoon** → après-midi
 - **Art** → art
 - **break** → pause

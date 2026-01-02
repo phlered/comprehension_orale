@@ -26,6 +26,8 @@ Sunday dinners at Grandma's are special and create wonderful memories. They remi
 
 ## Vocabulary
 
+
+
 - **apple** → pomme
 - **to arrive** → arriver
 - **chicken** → poulet

@@ -20,38 +20,40 @@ Nicht zuletzt ist das relativ hohe Sicherheitsgefühl im Land ein weiterer wicht
 
 ## Wortschatz
 
-die Alpen | les Alpes
-der Aspekt | l'aspect
-attraktiv | attractif
-die Berlinale | la Berlinale
-der Besucher | le visiteur
-das Brandenburger Tor | la Porte de Brandebourg
-der Bus | le bus
-die Destination | la destination
-das Deutschland | l'Allemagne
-effizient | efficace
-das Erlebnis | l'expérience
-das Event | l'événement
-der Faktor | le facteur
-das Festival | le festival
-die Geschichte | l'histoire
-die Infrastruktur | l'infrastructure
-die Kultur | la culture
-das Land | le pays
-die Landschaft | le paysage
-lieblich | charmant
-malerisch | pittoresque
-das Netz | le réseau
-das Oktoberfest | la fête de la bière
-der Ort | le lieu
-die Region | la région
-der Reisende | le voyageur
-das Reiseziel | la destination de voyage
-die Rolle | le rôle
-der Schwarzwald | la Forêt-Noire
-das Sicherheitsgefühl | le sentiment de sécurité
-die Stadt | la ville
-der Tourist | le touriste
-die Vielfalt | la diversité
-das Viertel | le quartier
-der Zug | le train
+
+
+- **die Alpen** → les Alpes
+- **der Aspekt** → l'aspect
+- **attraktiv** → attractif
+- **die Berlinale** → la Berlinale
+- **der Besucher** → le visiteur
+- **das Brandenburger Tor** → la Porte de Brandebourg
+- **der Bus** → le bus
+- **die Destination** → la destination
+- **das Deutschland** → l'Allemagne
+- **effizient** → efficace
+- **das Erlebnis** → l'expérience
+- **das Event** → l'événement
+- **der Faktor** → le facteur
+- **das Festival** → le festival
+- **die Geschichte** → l'histoire
+- **die Infrastruktur** → l'infrastructure
+- **die Kultur** → la culture
+- **das Land** → le pays
+- **die Landschaft** → le paysage
+- **lieblich** → charmant
+- **malerisch** → pittoresque
+- **das Netz** → le réseau
+- **das Oktoberfest** → la fête de la bière
+- **der Ort** → le lieu
+- **die Region** → la région
+- **der Reisende** → le voyageur
+- **das Reiseziel** → la destination de voyage
+- **die Rolle** → le rôle
+- **der Schwarzwald** → la Forêt-Noire
+- **das Sicherheitsgefühl** → le sentiment de sécurité
+- **die Stadt** → la ville
+- **der Tourist** → le touriste
+- **die Vielfalt** → la diversité
+- **das Viertel** → le quartier
+- **der Zug** → le train

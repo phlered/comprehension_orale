@@ -22,6 +22,8 @@ No me gusta ver la televisión. Prefiero leer libros o jugar con mis amigos. Tam
 
 ## Vocabulario
 
+
+
 - **aburrido** → ennuyeux
 - **el amigo** → l'ami
 - **el arte** → l'art

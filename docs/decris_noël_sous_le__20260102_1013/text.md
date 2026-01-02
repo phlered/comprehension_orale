@@ -22,6 +22,8 @@ As the day unfolds, I marvel at festivities that spill out into the streets. Par
 
 ## Vocabulary
 
+
+
 - **aromas** → arômes
 - **carol** → chant de Noël
 - **to celebrate** → célébrer

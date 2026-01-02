@@ -26,6 +26,8 @@ Insgesamt sind erneuerbare Energien eine wichtige Lösung für viele der heutige
 
 ## Wortschatz
 
+
+
 - **der Abfall** → le déchet
 - **die Arbeitsplätze** → les emplois
 - **das Biogas** → le biogaz

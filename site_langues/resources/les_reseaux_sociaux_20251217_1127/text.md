@@ -20,6 +20,8 @@ In conclusione, i social media sono strumenti potenti nella vita degli adolescen
 
 ## Vocabolario
 
+
+
 - **i "mi piace"** → les "j'aime"
 - **gli adolescenti** → les adolescents
 - **il commento** → le commentaire

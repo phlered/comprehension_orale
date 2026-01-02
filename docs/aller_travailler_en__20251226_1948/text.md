@@ -22,6 +22,8 @@ Sin embargo, es importante tener en cuenta ciertos desafíos. La seguridad vial 
 
 ## Vocabulario
 
+
+
 - **la autoridad** → l'autorité
 - **el beneficio** → le bénéfice
 - **la bicicleta** → le vélo

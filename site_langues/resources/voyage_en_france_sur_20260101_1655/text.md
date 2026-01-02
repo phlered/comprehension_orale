@@ -24,6 +24,8 @@ Je suis contente de mon voyage. La côte d'Azur est magnifique. Je veux revenir 
 
 ## Vocabulaire
 
+
+
 - **agréable** → aangenaam
 - **l'année** → jaar
 - **l'Azur** → azuur

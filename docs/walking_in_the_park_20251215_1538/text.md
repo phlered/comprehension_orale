@@ -24,6 +24,8 @@ Walking in the park gives me time to think and appreciate nature. It reminds me 
 
 ## Vocabulary
 
+
+
 - **air** → air
 - **bench** → banc
 - **bird** → oiseau

@@ -24,6 +24,8 @@ Linda verlaat de winkel. Ze is tevreden. Haar tas is vol en ze heeft alles betaa
 
 ## Woordenschat
 
+
+
 - **automaat** → distributeur
 - **bankpas** → carte bancaire
 - **betalen** → payer

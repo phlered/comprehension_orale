@@ -20,6 +20,8 @@ Trotz seiner Herausforderungen bietet das deutsche Bildungssystem eine Vielzahl 
 
 ## Wortschatz
 
+
+
 - **das Abitur** → le baccalauréat
 - **die Ausbildung** → la formation
 - **die Berufsausbildung** → la formation professionnelle

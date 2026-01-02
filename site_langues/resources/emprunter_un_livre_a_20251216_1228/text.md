@@ -19,38 +19,40 @@ Na drie weken ga ik terug naar de bibliotheek. Ik breng het boek terug. Misschie
 
 ## Woordenschat
 
-de balie | le comptoir
-de bibliotheek | la bibliothèque
-de bibliotheekpas | la carte de bibliothèque
-blij | content
-het boek | le livre
-de boeken | les livres
-brengen | apporter
-het dier | l'animal
-het ding | la chose
-groot | grand
-het huis | la maison
-interessant | intéressant
-de kaart | la carte
-het kast | l'étagère
-de keuze | le choix
-kiesen | choisir
-de kleuren | les couleurs
-de leeuw | le lion
-lenen | emprunter
-leren | apprendre
-leuk | amusant
-lezen | lire
-de mensen | les gens
-de mevrouw | la dame
-de pas | la carte
-stoppen | mettre
-het tas | le sac
-de tijger | le tigre
-de titels | les titres
-veel | beaucoup
-het verhaal | l'histoire
-vriendelijk | amical
-de weken | les semaines
-het woord | le mot
-zoeken | chercher
+
+
+- **de balie** → le comptoir
+- **de bibliotheek** → la bibliothèque
+- **de bibliotheekpas** → la carte de bibliothèque
+- **blij** → content
+- **het boek** → le livre
+- **de boeken** → les livres
+- **brengen** → apporter
+- **het dier** → l'animal
+- **het ding** → la chose
+- **groot** → grand
+- **het huis** → la maison
+- **interessant** → intéressant
+- **de kaart** → la carte
+- **het kast** → l'étagère
+- **de keuze** → le choix
+- **kiesen** → choisir
+- **de kleuren** → les couleurs
+- **de leeuw** → le lion
+- **lenen** → emprunter
+- **leren** → apprendre
+- **leuk** → amusant
+- **lezen** → lire
+- **de mensen** → les gens
+- **de mevrouw** → la dame
+- **de pas** → la carte
+- **stoppen** → mettre
+- **het tas** → le sac
+- **de tijger** → le tigre
+- **de titels** → les titres
+- **veel** → beaucoup
+- **het verhaal** → l'histoire
+- **vriendelijk** → amical
+- **de weken** → les semaines
+- **het woord** → le mot
+- **zoeken** → chercher

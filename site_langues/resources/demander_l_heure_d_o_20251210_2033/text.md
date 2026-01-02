@@ -36,6 +36,8 @@ Jan en Lisa zijn blij. Ze kopen kaartjes en wachten tot het tien uur is. Ze will
 
 ## Woordenschat
 
+
+
 - **Amsterdam** → Amsterdam
 - **bezoeken** → visiter
 - **blij** → content

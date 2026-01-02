@@ -24,6 +24,8 @@ Avant de dormir, je prépare mes affaires pour le lendemain. Je me couche vers 2
 
 ## Vocabulaire
 
+
+
 - **les activités** → activiteiten
 - **les amis** → vrienden
 - **l'après-midi** → middag

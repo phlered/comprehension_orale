@@ -24,6 +24,8 @@ Zusammenfassend lässt sich sagen, dass nationale Symbole in föderalen und kult
 
 ## Wortschatz
 
+
+
 - **die Bedeutung** → l'importance
 - **die Besonderheit** → la particularité
 - **das Bewusstsein** → la conscience

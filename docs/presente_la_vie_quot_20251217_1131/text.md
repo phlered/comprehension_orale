@@ -22,6 +22,8 @@ In sintesi, la vita quotidiana degli adolescenti in entrambi i paesi ha somiglia
 
 ## Vocabolario
 
+
+
 - **gli amici** → les amis
 - **casa** → maison
 - **il club** → le club

@@ -26,6 +26,8 @@ In conclusion, developing good recycling habits is important for everyone. It’
 
 ## Vocabulary
 
+
+
 - **aluminum** → aluminium
 - **to become** → devenir
 - **bin** → bac

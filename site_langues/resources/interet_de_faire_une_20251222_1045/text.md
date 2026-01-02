@@ -20,38 +20,40 @@ Therefore, embracing sewing or any similar manual activity can significantly con
 
 ## Vocabulary
 
-accomplishment | accomplissement
-act | acte
-activity | activité
-anxiety | anxiété
-balance | équilibre
-benefit | avantage
-calm | calme
-concentration | concentration
-craft | artisanat
-creativity | créativité
-to engage | s'engager
-to enhance | améliorer
-fabric | tissu
-to find | trouver
-flow | flux
-focus | concentration
-fulfillment | épanouissement
-health | santé
-joy | joie
-meditative | méditatif
-mental | mental
-pattern | motif
-precision | précision
-problem-solving | résolution de problèmes
-purpose | but
-satisfaction | satisfaction
-self-esteem | estime de soi
-self-expression | expression de soi
-sense | sens
-sewing | couture
-state | état
-stress | stress
-time | temps
-well-being | bien-être
-world | monde
+
+
+- **accomplishment** → accomplissement
+- **act** → acte
+- **activity** → activité
+- **anxiety** → anxiété
+- **balance** → équilibre
+- **benefit** → avantage
+- **calm** → calme
+- **concentration** → concentration
+- **craft** → artisanat
+- **creativity** → créativité
+- **to engage** → s'engager
+- **to enhance** → améliorer
+- **fabric** → tissu
+- **to find** → trouver
+- **flow** → flux
+- **focus** → concentration
+- **fulfillment** → épanouissement
+- **health** → santé
+- **joy** → joie
+- **meditative** → méditatif
+- **mental** → mental
+- **pattern** → motif
+- **precision** → précision
+- **problem-solving** → résolution de problèmes
+- **purpose** → but
+- **satisfaction** → satisfaction
+- **self-esteem** → estime de soi
+- **self-expression** → expression de soi
+- **sense** → sens
+- **sewing** → couture
+- **state** → état
+- **stress** → stress
+- **time** → temps
+- **well-being** → bien-être
+- **world** → monde

@@ -26,6 +26,8 @@ Nicht zuletzt ist es die erfrischend lebendige Atmosphäre Stuttgarts, die jeden
 
 ## Wortschatz
 
+
+
 - **die Architektur** → l'architecture
 - **die Atmosphäre** → l'atmosphère
 - **die Ausstellung** → l'exposition

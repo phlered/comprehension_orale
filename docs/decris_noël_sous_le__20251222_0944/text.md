@@ -19,39 +19,41 @@ While traditions differ, the essence of camaraderie and celebration remains the 
 
 ## Vocabulary
 
-calypso | calypso
-camaraderie | camaraderie
-Caribbean | Caraïbes
-celebration | célébration
-chicken | poulet
-Christmas | Noël
-cinnamon | cannelle
-climates | climats
-clove | clou de girofle
-continents | continents
-crafts | artisanat
-culture | culture
-delicacies | délices
-experience | expérience
-festive | festif
-flavors | saveurs
-holiday | vacances
-jerk | épicé
-magic | magie
-markets | marchés
-music | musique
-nutmeg | muscade
-ornaments | ornements
-palm | palmier
-reggae | reggae
-seafood | fruits de mer
-shores | rivages
-to spend | passer
-spices | épices
-sun | soleil
-swim | nager
-tourist | touriste
-traditions | traditions
-trees | arbres
-warmth | chaleur
-waters | eaux
+
+
+- **calypso** → calypso
+- **camaraderie** → camaraderie
+- **Caribbean** → Caraïbes
+- **celebration** → célébration
+- **chicken** → poulet
+- **Christmas** → Noël
+- **cinnamon** → cannelle
+- **climates** → climats
+- **clove** → clou de girofle
+- **continents** → continents
+- **crafts** → artisanat
+- **culture** → culture
+- **delicacies** → délices
+- **experience** → expérience
+- **festive** → festif
+- **flavors** → saveurs
+- **holiday** → vacances
+- **jerk** → épicé
+- **magic** → magie
+- **markets** → marchés
+- **music** → musique
+- **nutmeg** → muscade
+- **ornaments** → ornements
+- **palm** → palmier
+- **reggae** → reggae
+- **seafood** → fruits de mer
+- **shores** → rivages
+- **to spend** → passer
+- **spices** → épices
+- **sun** → soleil
+- **swim** → nager
+- **tourist** → touriste
+- **traditions** → traditions
+- **trees** → arbres
+- **warmth** → chaleur
+- **waters** → eaux

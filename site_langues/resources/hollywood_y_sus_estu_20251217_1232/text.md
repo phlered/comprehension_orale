@@ -24,6 +24,8 @@ En resumen, Hollywood es un lugar mágico donde convergen la creatividad, la inn
 
 ## Vocabulario
 
+
+
 - **el amante** → l'amateur
 - **la audiencia** → le public
 - **el cine** → le cinéma

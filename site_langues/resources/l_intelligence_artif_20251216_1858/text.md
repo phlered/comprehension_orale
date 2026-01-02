@@ -22,6 +22,8 @@ Zusammenfassend lässt sich sagen, dass KI zugleich eine immense Chance und eine
 
 ## Wortschatz
 
+
+
 - **die Aufgabe** → la tâche
 - **die Automatisierung** → l'automatisation
 - **die Chance** → l'opportunité

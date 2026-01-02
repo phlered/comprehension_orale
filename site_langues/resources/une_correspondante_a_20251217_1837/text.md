@@ -23,37 +23,39 @@ I hope you enjoyed learning about me. I am excited to hear about you and your li
 
 ## Vocabulary
 
-adventure | aventure
-beautiful | beau
-book | livre
-boring | ennuyeux
-to do | faire
-dog | chien
-to enjoy | apprécier
-to enjoy | apprécier
-family | famille
-forest | forêt
-free time | temps libre
-fresh air | air frais
-friend | ami
-friendly | amical
-to go | aller
-to have | avoir
-to hear | entendre
-to hope | espérer
-life | vie
-little | petit
-to live | vivre
-to love | aimer
-mystery | mystère
-name | nom
-nature | nature
-open space | espace ouvert
-people | gens
-place | endroit
-to play | jouer
-to read | lire
-shop | magasin
-soccer | football
-walk | promenade
-weekend | week-end
+
+
+- **adventure** → aventure
+- **beautiful** → beau
+- **book** → livre
+- **boring** → ennuyeux
+- **to do** → faire
+- **dog** → chien
+- **to enjoy** → apprécier
+- **to enjoy** → apprécier
+- **family** → famille
+- **forest** → forêt
+- **free time** → temps libre
+- **fresh air** → air frais
+- **friend** → ami
+- **friendly** → amical
+- **to go** → aller
+- **to have** → avoir
+- **to hear** → entendre
+- **to hope** → espérer
+- **life** → vie
+- **little** → petit
+- **to live** → vivre
+- **to love** → aimer
+- **mystery** → mystère
+- **name** → nom
+- **nature** → nature
+- **open space** → espace ouvert
+- **people** → gens
+- **place** → endroit
+- **to play** → jouer
+- **to read** → lire
+- **shop** → magasin
+- **soccer** → football
+- **walk** → promenade
+- **weekend** → week-end

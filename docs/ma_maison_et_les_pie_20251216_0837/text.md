@@ -22,6 +22,8 @@ J'aime ma maison parce qu'elle est simple et accueillante. C'est un endroit où 
 
 ## Vocabulaire
 
+
+
 - **l'armoire** → kast
 - **le canapé** → bank
 - **la chambre** → kamer

@@ -26,6 +26,8 @@ In this vibrant city, the festive season is a time of coming together, celebrati
 
 ## Vocabulary
 
+
+
 - **artisan** → artisan
 - **carols** → chants de Noël
 - **chestnuts** → châtaignes

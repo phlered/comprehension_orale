@@ -24,6 +24,8 @@ In conclusion, while the labeling of AI-generated videos on social media serves 
 
 ## Vocabulary
 
+
+
 - **art** → art
 - **audience** → audience
 - **authenticity** → authenticité

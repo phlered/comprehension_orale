@@ -22,6 +22,8 @@ Finally, make sure you have enough decorations to liven up the space. Balloons, 
 
 ## Vocabulary
 
+
+
 - **activities** → activités
 - **adults** → adultes
 - **advance** → avance

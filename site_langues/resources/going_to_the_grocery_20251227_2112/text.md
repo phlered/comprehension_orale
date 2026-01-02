@@ -20,6 +20,8 @@ My little brother loves cookies, so we get a box of cookies, too. Finally, we go
 
 ## Vocabulary
 
+
+
 - **apples** → pommes
 - **bananas** → bananes
 - **big** → grand

@@ -16,6 +16,8 @@ Mi barrio es muy bonito y tranquilo. Hay un parque cerca de mi casa. En el parqu
 
 ## Vocabulario
 
+
+
 - **el apartamento** → l'appartement
 - **el barrio** → le quartier
 - **el baño** → la salle de bain

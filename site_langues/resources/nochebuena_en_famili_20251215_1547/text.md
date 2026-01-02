@@ -24,6 +24,8 @@ Finalmente, terminamos la noche cantando villancicos alrededor del árbol de Nav
 
 ## Vocabulario
 
+
+
 - **la abuela** → la grand-mère
 - **el adulto** → l'adulte
 - **el ambiente** → l'ambiance

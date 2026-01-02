@@ -24,6 +24,8 @@ In conclusion, while AI offers promising opportunities to revolutionize the educ
 
 ## Vocabulary
 
+
+
 - **ability** → capacité
 - **access** → accès
 - **AI** → IA

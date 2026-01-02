@@ -26,6 +26,8 @@ In conclusion, while learning to use a smartphone may take some time, it can be 
 
 ## Vocabulary
 
+
+
 - **app** → application
 - **browser** → navigateur
 - **to call** → appeler

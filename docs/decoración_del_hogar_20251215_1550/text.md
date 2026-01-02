@@ -26,6 +26,8 @@ Decorar el hogar en Navidad es una manera de compartir momentos alegres y crear 
 
 ## Vocabulario
 
+
+
 - **los adornos** → les décorations
 - **el ambiente** → l'ambiance
 - **el año** → l'année

@@ -28,6 +28,8 @@ In conclusion, while AI undoubtedly poses challenges to existing job structures,
 
 ## Vocabulary
 
+
+
 - **advancements** → avancées
 - **anxiety** → anxiété
 - **artificial** → artificiel

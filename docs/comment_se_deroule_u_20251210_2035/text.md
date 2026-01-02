@@ -26,6 +26,8 @@ Om drie uur is de school uit. Kinderen pakken hun fiets en gaan naar huis. Ze ve
 
 ## Woordenschat
 
+
+
 - **begint** → commence
 - **boeken** → livres
 - **boterhammen** → sandwichs

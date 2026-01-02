@@ -22,6 +22,8 @@ Für die Zukunft hoffe ich, dass noch mehr Menschen aktiv am Recycling teilnehme
 
 ## Wortschatz
 
+
+
 - **der Abfall** → le déchet
 - **die Batterie** → la pile
 - **die Bedeutung** → la signification

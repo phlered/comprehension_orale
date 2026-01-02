@@ -26,6 +26,8 @@ Viaggiare in Italia è un'avventura che arricchisce cuore e mente, e lascia rico
 
 ## Vocabolario
 
+
+
 - **la Basilica** → la Basilique
 - **la bellezza** → la beauté
 - **i canali** → les canaux

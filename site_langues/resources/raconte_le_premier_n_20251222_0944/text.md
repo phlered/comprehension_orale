@@ -24,6 +24,8 @@ The experience taught Sarah that while she dearly missed her home and family tra
 
 ## Vocabulary
 
+
+
 - **atmosphere** → ambiance
 - **British** → britannique
 - **carols** → chants

@@ -18,6 +18,8 @@ drapeau: 🇰🇷
 
 ## 어휘
 
+
+
 - **감사하다** → gamsahada (remercier)
 - **공연** → gongyeon (spectacle)
 - **그룹** → geurup (groupe)

@@ -24,6 +24,8 @@ Een dag op het strand is niet alleen ontspannend, maar ook een geweldige manier 
 
 ## Woordenschat
 
+
+
 - **de avond** → le soir
 - **het beachvolleybal** → le volleyball
 - **het brood** → le pain

@@ -21,37 +21,39 @@ Faire les courses est simple et rapide. J'aime bien acheter de bons produits pou
 
 ## Vocabulaire
 
-l'achat | aankoop
-la baguette | stokbrood
-la banane | banaan
-le bon | goed
-la caisse | kassa
-la caissière | kassière
-la carte | kaart
-le chariot | winkelwagentje
-le choix | keuze
-le client | klant
-la course | boodschap
-le coût | kosten
-la cuisine | koken
-l'entrée | ingang
-le frais | vers
-la fraise | aardbei
-le fruit | fruit
-le goût | smaak
-l'idée | idee
-le lait | melk
-le légume | groente
-la maison | huis
-l'option | optie
-le pain | brood
-la pomme | appel
-le prix | prijs
-le produit laitier | zuivelproduct
-le rayon | afdeling
-le rayon boulangerie | bakkerijafdeling
-le sac | tas
-le supermarché | supermarkt
-le temps | tijd
-la tomate | tomaat
-le yaourt | yoghurt
+
+
+- **l'achat** → aankoop
+- **la baguette** → stokbrood
+- **la banane** → banaan
+- **le bon** → goed
+- **la caisse** → kassa
+- **la caissière** → kassière
+- **la carte** → kaart
+- **le chariot** → winkelwagentje
+- **le choix** → keuze
+- **le client** → klant
+- **la course** → boodschap
+- **le coût** → kosten
+- **la cuisine** → koken
+- **l'entrée** → ingang
+- **le frais** → vers
+- **la fraise** → aardbei
+- **le fruit** → fruit
+- **le goût** → smaak
+- **l'idée** → idee
+- **le lait** → melk
+- **le légume** → groente
+- **la maison** → huis
+- **l'option** → optie
+- **le pain** → brood
+- **la pomme** → appel
+- **le prix** → prijs
+- **le produit laitier** → zuivelproduct
+- **le rayon** → afdeling
+- **le rayon boulangerie** → bakkerijafdeling
+- **le sac** → tas
+- **le supermarché** → supermarkt
+- **le temps** → tijd
+- **la tomate** → tomaat
+- **le yaourt** → yoghurt

@@ -24,6 +24,8 @@ Jetzt ist alles fertig, und die Familie kann kommen. Guten Appetit!
 
 ## Wortschatz
 
+
+
 - **der Apfelkuchen** → le gâteau aux pommes
 - **die Aufgabe** → la tâche
 - **backen** → cuire au four

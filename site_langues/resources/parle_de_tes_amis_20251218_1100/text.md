@@ -22,6 +22,8 @@ I am happy to have good friends. We have a lot of fun and share nice moments. Fr
 
 ## Vocabulary
 
+
+
 - **bike** → vélo
 - **book** → livre
 - **cartoon** → dessin animé

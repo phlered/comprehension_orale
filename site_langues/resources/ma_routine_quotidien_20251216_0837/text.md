@@ -20,6 +20,8 @@ Je me couche à 22 heures. Avant de dormir, j'écoute de la musique ou je parle 
 
 ## Vocabulaire
 
+
+
 - **aimer** → houden van
 - **boire** → drinken
 - **le café** → koffie

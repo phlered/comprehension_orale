@@ -21,38 +21,40 @@ Mangio tre pasti al giorno: colazione, pranzo e cena. La mia alimentazione è se
 
 ## Vocabolario
 
-il basilico | le basilic
-bere | boire
-la bibita | la boisson
-il broccolo | le brocoli
-la carne | la viande
-la carota | la carotte
-la cena | le dîner
-il cetriolo | le concombre
-il cibo | la nourriture
-la colazione | le petit-déjeuner
-il dolce | le dessert
-evitare | éviter
-la fetta | la tranche
-la frutta | les fruits
-l'acqua | l'eau
-l'energia | l'énergie
-l'insalata | la salade
-il latte | le lait
-la lattuga | la laitue
-mangiare | manger
-la marmellata | la confiture
-la mela | la pomme
-la mozzarella | la mozzarella
-il pane | le pain
-la pasta | les pâtes
-il pasto | le repas
-il pesce | le poisson
-il piatto | le plat
-la pizza | la pizza
-il pomodoro | la tomate
-il pranzo | le déjeuner
-il riso | le riz
-la salute | la santé
-il succo | le jus
-la verdura | le légume
+
+
+- **il basilico** → le basilic
+- **bere** → boire
+- **la bibita** → la boisson
+- **il broccolo** → le brocoli
+- **la carne** → la viande
+- **la carota** → la carotte
+- **la cena** → le dîner
+- **il cetriolo** → le concombre
+- **il cibo** → la nourriture
+- **la colazione** → le petit-déjeuner
+- **il dolce** → le dessert
+- **evitare** → éviter
+- **la fetta** → la tranche
+- **la frutta** → les fruits
+- **l'acqua** → l'eau
+- **l'energia** → l'énergie
+- **l'insalata** → la salade
+- **il latte** → le lait
+- **la lattuga** → la laitue
+- **mangiare** → manger
+- **la marmellata** → la confiture
+- **la mela** → la pomme
+- **la mozzarella** → la mozzarella
+- **il pane** → le pain
+- **la pasta** → les pâtes
+- **il pasto** → le repas
+- **il pesce** → le poisson
+- **il piatto** → le plat
+- **la pizza** → la pizza
+- **il pomodoro** → la tomate
+- **il pranzo** → le déjeuner
+- **il riso** → le riz
+- **la salute** → la santé
+- **il succo** → le jus
+- **la verdura** → le légume

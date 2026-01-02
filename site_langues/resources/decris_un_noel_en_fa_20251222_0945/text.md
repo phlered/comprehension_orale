@@ -20,38 +20,40 @@ The following morning, the air is filled with excitement as children eagerly rus
 
 ## Vocabulary
 
-to begin | commencer
-children | enfants
-chocolate | chocolat
-Christmas | Noël
-Christmas Eve | veille de Noël
-to decorate | décorer
-dessert | dessert
-dinner | dîner
-families | familles
-films | films
-games | jeux
-to gather | rassembler
-gift-giving | distribution de cadeaux
-gifts | cadeaux
-gratitude | gratitude
-ham | jambon
-holiday | vacances
-house | maison
-laughter | rire
-lights | lumières
-loved ones | proches
-midnight Mass | messe de minuit
-morning | matin
-paper | papier
-pie | tarte
-potatoes | pommes de terre
-preparation | préparation
-presence | présence
-to rush | se précipiter
-sauce | sauce
-stuffing | farce
-time | temps
-tree | arbre
-turkey | dinde
-United States | États-Unis
+
+
+- **to begin** → commencer
+- **children** → enfants
+- **chocolate** → chocolat
+- **Christmas** → Noël
+- **Christmas Eve** → veille de Noël
+- **to decorate** → décorer
+- **dessert** → dessert
+- **dinner** → dîner
+- **families** → familles
+- **films** → films
+- **games** → jeux
+- **to gather** → rassembler
+- **gift-giving** → distribution de cadeaux
+- **gifts** → cadeaux
+- **gratitude** → gratitude
+- **ham** → jambon
+- **holiday** → vacances
+- **house** → maison
+- **laughter** → rire
+- **lights** → lumières
+- **loved ones** → proches
+- **midnight Mass** → messe de minuit
+- **morning** → matin
+- **paper** → papier
+- **pie** → tarte
+- **potatoes** → pommes de terre
+- **preparation** → préparation
+- **presence** → présence
+- **to rush** → se précipiter
+- **sauce** → sauce
+- **stuffing** → farce
+- **time** → temps
+- **tree** → arbre
+- **turkey** → dinde
+- **United States** → États-Unis

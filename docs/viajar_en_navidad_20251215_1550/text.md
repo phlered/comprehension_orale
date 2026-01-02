@@ -18,6 +18,8 @@ Sin embargo, es importante recordar que viajar en esta época puede ser un poco 
 
 ## Vocabulario
 
+
+
 - **la alegría** → la joie
 - **los alojamientos** → les hébergements
 - **los amigos** → les amis

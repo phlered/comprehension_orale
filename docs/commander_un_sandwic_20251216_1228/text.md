@@ -21,38 +21,40 @@ Ik ben blij met mijn lunch. De mensen in de sandwicherie zijn vriendelijk. Het i
 
 ## Woordenschat
 
-het antwoord | la réponse
-bestellen | commander
-betalen | payer
-het broodje | le petit pain
-het eten | le repas
-het gezicht | l'apparence
-glimlachen | sourire
-de groente | le légume
-de hap | la bouchée
-de kaas | le fromage
-de kassa | la caisse
-kijken | regarder
-knapperig | croustillant
-lekker | délicieux
-de lunch | le déjeuner
-maken | faire
-de man | l'homme
-de mayonaise | la mayonnaise
-de mensen | les gens
-het menu | le menu
-de optie | l'option
-het plezier | le plaisir
-de sandwich | le sandwich
-de sandwicherie | la sandwicherie
-de saus | la sauce
-de sla | la laitue
-smakelijk | appétissant
-de tafel | la table
-de tomaat | la tomate
-de toonbank | le comptoir
-vers | frais
-vragen | demander
-vriendelijk | amical
-zeggen | dire
-zien | voir
+
+
+- **het antwoord** → la réponse
+- **bestellen** → commander
+- **betalen** → payer
+- **het broodje** → le petit pain
+- **het eten** → le repas
+- **het gezicht** → l'apparence
+- **glimlachen** → sourire
+- **de groente** → le légume
+- **de hap** → la bouchée
+- **de kaas** → le fromage
+- **de kassa** → la caisse
+- **kijken** → regarder
+- **knapperig** → croustillant
+- **lekker** → délicieux
+- **de lunch** → le déjeuner
+- **maken** → faire
+- **de man** → l'homme
+- **de mayonaise** → la mayonnaise
+- **de mensen** → les gens
+- **het menu** → le menu
+- **de optie** → l'option
+- **het plezier** → le plaisir
+- **de sandwich** → le sandwich
+- **de sandwicherie** → la sandwicherie
+- **de saus** → la sauce
+- **de sla** → la laitue
+- **smakelijk** → appétissant
+- **de tafel** → la table
+- **de tomaat** → la tomate
+- **de toonbank** → le comptoir
+- **vers** → frais
+- **vragen** → demander
+- **vriendelijk** → amical
+- **zeggen** → dire
+- **zien** → voir

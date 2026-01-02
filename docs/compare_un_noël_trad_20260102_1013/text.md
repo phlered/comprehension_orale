@@ -22,6 +22,8 @@ Though distinct, each of these Christmas celebrations shares an underlying spiri
 
 ## Vocabulary
 
+
+
 - **atmosphere** → atmosphère
 - **beach** → plage
 - **cake** → gâteau

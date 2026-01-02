@@ -32,6 +32,8 @@ Thus, while AI reshapes the contours of frictional unemployment, it challenges u
 
 ## Vocabulary
 
+
+
 - **access** → accès
 - **to adapt** → s'adapter
 - **adaptation** → adaptation

@@ -22,6 +22,8 @@ Ik eet in kleine restaurants. Ik proef lekkere Franse kaas en croissants. De men
 
 ## Woordenschat
 
+
+
 - **blij** → content
 - **de croissant** → le croissant
 - **de familie** → la famille

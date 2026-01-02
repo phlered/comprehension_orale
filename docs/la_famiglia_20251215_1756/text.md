@@ -18,6 +18,8 @@ Il sabato sera, guardiamo un film tutti insieme. Mangiamo i popcorn e ridiamo mo
 
 ## Vocabolario
 
+
+
 - **amato** → aimé
 - **il calcio** → le football
 - **la domenica** → le dimanche

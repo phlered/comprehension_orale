@@ -24,6 +24,8 @@ Abschließend ist die Rolle der Politik nicht zu unterschätzen. Gesetzliche Vor
 
 ## Wortschatz
 
+
+
 - **das Arbeitsmodell** → le modèle de travail
 - **der Arbeitsplatz** → le lieu de travail
 - **die Arbeitszeit** → le temps de travail

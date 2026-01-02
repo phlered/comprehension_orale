@@ -22,6 +22,8 @@ Anna hat jetzt alles für das Abendessen. Sie ist zufrieden. Einkaufen im Superm
 
 ## Wortschatz
 
+
+
 - **das Abendessen** → le dîner
 - **der Apfel** → la pomme
 - **die Banane** → la banane

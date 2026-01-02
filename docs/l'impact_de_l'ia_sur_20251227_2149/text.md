@@ -23,38 +23,40 @@ The challenge lies not in resisting the juggernaut of AI but in cultivating a wo
 
 ## Vocabulary
 
-adaptation | adaptation
-algorithms | algorithmes
-to ameliorate | améliorer
-artificial | artificiel
-automation | automatisation
-to catalyze | catalyser
-clerical | administratif
-conditions | conditions
-displacement | déplacement
-dynamics | dynamique
-efficiency | efficacité
-employment | emploi
-empowerment | autonomisation
-governments | gouvernements
-innovation | innovation
-intelligence | intelligence
-jobs | emplois
-knowledge | connaissances
-labor | travail
-market | marché
-nature | nature
-opportunities | opportunités
-productivity | productivité
-professions | professions
-to promise | promettre
-reality | réalité
-to replace | remplacer
-to reshape | remodeler
-retraining | reconversion
-shift | changement
-skills | compétences
-systems | systèmes
-tasks | tâches
-workers | travailleurs
-workforce | main-d'œuvre
+
+
+- **adaptation** → adaptation
+- **algorithms** → algorithmes
+- **to ameliorate** → améliorer
+- **artificial** → artificiel
+- **automation** → automatisation
+- **to catalyze** → catalyser
+- **clerical** → administratif
+- **conditions** → conditions
+- **displacement** → déplacement
+- **dynamics** → dynamique
+- **efficiency** → efficacité
+- **employment** → emploi
+- **empowerment** → autonomisation
+- **governments** → gouvernements
+- **innovation** → innovation
+- **intelligence** → intelligence
+- **jobs** → emplois
+- **knowledge** → connaissances
+- **labor** → travail
+- **market** → marché
+- **nature** → nature
+- **opportunities** → opportunités
+- **productivity** → productivité
+- **professions** → professions
+- **to promise** → promettre
+- **reality** → réalité
+- **to replace** → remplacer
+- **to reshape** → remodeler
+- **retraining** → reconversion
+- **shift** → changement
+- **skills** → compétences
+- **systems** → systèmes
+- **tasks** → tâches
+- **workers** → travailleurs
+- **workforce** → main-d'œuvre

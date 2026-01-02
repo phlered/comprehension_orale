@@ -31,6 +31,8 @@ Anna: Ich danke Ihnen. Es war mir eine Freude.
 
 ## Wortschatz
 
+
+
 - **das Selbstporträt** → l'autoportrait
 - **die Künstlerin** → l'artiste (femme)
 - **das Werk** → l'œuvre

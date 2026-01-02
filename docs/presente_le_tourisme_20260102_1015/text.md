@@ -26,6 +26,8 @@ Zusammengefasst lädt Deutschland mit seinem naturverbundenen Tourismusansatz da
 
 ## Wortschatz
 
+
+
 - **die Alpen** → les Alpes
 - **der Angler** → le pêcheur
 - **die Aussicht** → la vue

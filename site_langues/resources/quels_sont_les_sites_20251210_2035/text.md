@@ -20,6 +20,8 @@ Ten slotte is er het Vondelpark. Dit is een groot park in de stad. Je kunt er wa
 
 ## Woordenschat
 
+
+
 - **Amsterdam** → Amsterdam
 - **Anne Frank Huis** → Maison Anne Frank
 - **belangrijk** → important

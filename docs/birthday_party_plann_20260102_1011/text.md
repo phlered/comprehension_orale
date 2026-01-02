@@ -26,6 +26,8 @@ Finally, capture the memories. Take lots of photos or hire a photographer for th
 
 ## Vocabulary
 
+
+
 - **balloons** → ballons
 - **banners** → banderoles
 - **birthday** → anniversaire

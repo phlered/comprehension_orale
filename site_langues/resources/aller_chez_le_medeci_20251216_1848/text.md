@@ -22,6 +22,8 @@ Anna geht zur Apotheke. Sie kauft dort die Medizin. Zu Hause nimmt Anna die Medi
 
 ## Wortschatz
 
+
+
 - **die Anna** → Anna
 - **die Apotheke** → la pharmacie
 - **der Arzt** → le médecin

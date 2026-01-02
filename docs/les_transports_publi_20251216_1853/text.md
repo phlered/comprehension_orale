@@ -24,6 +24,8 @@ Insgesamt sind die öffentlichen Verkehrsmittel in Deutschland zuverlässig und 
 
 ## Wortschatz
 
+
+
 - **das Abonnement** → l'abonnement
 - **die Alternative** → l'alternative
 - **das Auto** → la voiture

@@ -17,37 +17,39 @@ Bij de kassa betaal ik met mijn pinpas. De marktvrouw is vriendelijk. Ze zegt: "
 
 ## Woordenschat
 
-de appel | la pomme
-het bedrag | le montant
-betaal | payer
-de dag | le jour
-druk | animé
-de euro | l'euro
-fris | frais
-het fruit | le fruit
-ga | aller
-het geld | l'argent
-gezond | sain
-de groente | le légume
-het huis | la maison
-de kassa | la caisse
-de kilo | le kilo
-de komkommer | le concombre
-koop | acheter
-kost | coûter
-de kraam | l'échoppe
-lekker | délicieux
-maak | faire
-de markt | le marché
-de marktvrouw | la marchande
-het mens | la personne
-de paprika | le poivron
-de pinpas | la carte bancaire
-de salade | la salade
-de tas | le sac
-de tomaat | la tomate
-veel | beaucoup
-vers | frais
-vriendelijk | aimable
-wil | vouloir
-de zaterdag | le samedi
+
+
+- **de appel** → la pomme
+- **het bedrag** → le montant
+- **betaal** → payer
+- **de dag** → le jour
+- **druk** → animé
+- **de euro** → l'euro
+- **fris** → frais
+- **het fruit** → le fruit
+- **ga** → aller
+- **het geld** → l'argent
+- **gezond** → sain
+- **de groente** → le légume
+- **het huis** → la maison
+- **de kassa** → la caisse
+- **de kilo** → le kilo
+- **de komkommer** → le concombre
+- **koop** → acheter
+- **kost** → coûter
+- **de kraam** → l'échoppe
+- **lekker** → délicieux
+- **maak** → faire
+- **de markt** → le marché
+- **de marktvrouw** → la marchande
+- **het mens** → la personne
+- **de paprika** → le poivron
+- **de pinpas** → la carte bancaire
+- **de salade** → la salade
+- **de tas** → le sac
+- **de tomaat** → la tomate
+- **veel** → beaucoup
+- **vers** → frais
+- **vriendelijk** → aimable
+- **wil** → vouloir
+- **de zaterdag** → le samedi

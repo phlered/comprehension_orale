@@ -22,6 +22,8 @@ Um 17 Uhr endet der Arbeitstag für viele Mitarbeiter. Man verabschiedet sich mi
 
 ## Wortschatz
 
+
+
 - **der Abend** → le soir
 - **arbeiten** → travailler
 - **der Arbeitstag** → le jour de travail

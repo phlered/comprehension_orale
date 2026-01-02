@@ -22,6 +22,8 @@ Thank you for listening to my story. Bye!
 
 ## Vocabulary
 
+
+
 - **art** → art
 - **to be** → être
 - **book** → livre

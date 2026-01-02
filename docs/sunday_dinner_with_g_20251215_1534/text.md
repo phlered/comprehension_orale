@@ -20,6 +20,8 @@ After dinner, we help grandma clean up the table and do the dishes. It's a small
 
 ## Vocabulary
 
+
+
 - **apple** → pomme
 - **aroma** → arôme
 - **to bake** → cuire

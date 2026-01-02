@@ -20,39 +20,41 @@ On Christmas morning, instead of gathering around a traditional hearth, they ass
 
 ## Vocabulary
 
-activity | activité
-adventure | aventure
-arrival | arrivée
-beach | plage
-breeze | brise
-child | enfant
-coat | manteau
-cold | froid
-to decide | décider
-delicacy | délice
-to dream | rêver
-to embark | embarquer
-excitement | excitation
-experience | expérience
-family | famille
-to gather | se rassembler
-gift | cadeau
-hat | chapeau
-holiday | vacances
-to leave | quitter
-market | marché
-morning | matin
-morning | matin
-mount | mont
-ocean | océan
-plane | avion
-relaxation | détente
-resort | station
-sandcastle | château de sable
-shore | rivage
-sky | ciel
-sky | ciel
-snowman | bonhomme de neige
-sun-drenched | baigné de soleil
-swimsuit | maillot de bain
-tree | arbre
+
+
+- **activity** → activité
+- **adventure** → aventure
+- **arrival** → arrivée
+- **beach** → plage
+- **breeze** → brise
+- **child** → enfant
+- **coat** → manteau
+- **cold** → froid
+- **to decide** → décider
+- **delicacy** → délice
+- **to dream** → rêver
+- **to embark** → embarquer
+- **excitement** → excitation
+- **experience** → expérience
+- **family** → famille
+- **to gather** → se rassembler
+- **gift** → cadeau
+- **hat** → chapeau
+- **holiday** → vacances
+- **to leave** → quitter
+- **market** → marché
+- **morning** → matin
+- **morning** → matin
+- **mount** → mont
+- **ocean** → océan
+- **plane** → avion
+- **relaxation** → détente
+- **resort** → station
+- **sandcastle** → château de sable
+- **shore** → rivage
+- **sky** → ciel
+- **sky** → ciel
+- **snowman** → bonhomme de neige
+- **sun-drenched** → baigné de soleil
+- **swimsuit** → maillot de bain
+- **tree** → arbre

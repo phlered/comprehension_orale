@@ -20,6 +20,8 @@ Después de las uvas, se brinda con cava mientras todos se desean "¡Feliz Año 
 
 ## Vocabulario
 
+
+
 - **la alegría** → la joie
 - **los amigos** → les amis
 - **el anterior** → le précédent

@@ -24,6 +24,8 @@ Jede Jahreszeit hat ihren eigenen Charme und bietet verschiedene Erlebnisse und 
 
 ## Wortschatz
 
+
+
 - **der Abend** → le soir
 - **der Baum** → l'arbre
 - **das Blatt** → la feuille

@@ -24,6 +24,8 @@ In that fleeting, magical moment, New York City seemed to pause, bridging the ga
 
 ## Vocabulary
 
+
+
 - **artists** → artistes
 - **aspirations** → aspirations
 - **atmosphere** → atmosphère

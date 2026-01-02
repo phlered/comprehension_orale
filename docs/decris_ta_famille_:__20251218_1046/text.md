@@ -20,6 +20,8 @@ Me gusta mi familia porque nos queremos y hacemos muchas cosas juntos. Estoy fel
 
 ## Vocabulario
 
+
+
 - **alto** → grand
 - **amable** → aimable
 - **bonito** → joli

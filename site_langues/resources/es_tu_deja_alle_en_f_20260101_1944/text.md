@@ -24,6 +24,8 @@ J'ai aimé notre voyage en France. C'était incroyable de découvrir une nouvell
 
 ## Vocabulaire
 
+
+
 - **l'année** → jaar
 - **l'ascenseur** → lift
 - **la baguette** → stokbrood

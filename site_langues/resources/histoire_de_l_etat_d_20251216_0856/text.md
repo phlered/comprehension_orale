@@ -26,6 +26,8 @@ En rétrospective, l'histoire de l'État d'Israël depuis 1945 est celle d'un en
 
 ## Vocabulaire
 
+
+
 - **l'accord** → de overeenkomst
 - **l'accord** → de overeenkomst
 - **l'accord** → de overeenkomst

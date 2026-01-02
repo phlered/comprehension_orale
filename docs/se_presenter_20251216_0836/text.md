@@ -20,6 +20,8 @@ J'aime écouter de la musique. Mon chanteur préféré est Stromae. J'adore voya
 
 ## Vocabulaire
 
+
+
 - **l'ami** → vriend
 - **le bus** → bus
 - **le chanteur** → zanger

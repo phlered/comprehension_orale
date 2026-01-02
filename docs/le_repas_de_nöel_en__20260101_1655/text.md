@@ -20,6 +20,8 @@ On boit aussi du champagne ou du vin pour fêter Noël. Les enfants attendent av
 
 ## Vocabulaire
 
+
+
 - **boire** → drinken
 - **la bûche** → kerststronk
 - **le cadeau** → cadeau

@@ -24,6 +24,8 @@ Obwohl der Leistungsdruck in der Schule manchmal hoch sein kann, ist es wichtig,
 
 ## Wortschatz
 
+
+
 - **der Ausflug** → l'excursion
 - **der Basketball** → le basket-ball
 - **die Biologie** → la biologie

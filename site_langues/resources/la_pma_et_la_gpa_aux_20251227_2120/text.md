@@ -22,6 +22,8 @@ Beide methoden zijn in Nederland bespreekbaar en er wordt veel zorg en aandacht 
 
 ## Woordenschat
 
+
+
 - **de aandacht** → l'attention
 - **de afspraken** → les accords
 - **de baarmoeder** → l'utérus

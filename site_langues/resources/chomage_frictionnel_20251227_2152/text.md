@@ -25,38 +25,40 @@ In der Summe bleibt festzuhalten, dass friktionelle Arbeitslosigkeit und KI zwei
 
 ## Wortschatz
 
-der Algorithmus | l'algorithme
-der Anpassungsdruck | la pression d'adaptation
-die Anstrengung | l'effort
-der Arbeitnehmende | le salarié
-der Arbeitnehmer | le travailleur
-die Arbeitslosigkeit | le chômage
-die Arbeitswelt | le monde du travail
-die Automatisierung | l'automatisation
-das Berufsfeld | le domaine professionnel
-das Beschäftigungsverhältnis | la relation d'emploi
-die Bewerbung | la candidature
-das Bildungssystem | le système éducatif
-die Dauer | la durée
-die Debatte | le débat
-die Entwicklung | le développement
-die Fähigkeit | la compétence
-die Fähigkeit | la compétence
-die Gefahr | le danger
-die Gesellschaft | la société
-die Herausforderung | le défi
-die Künstliche Intelligenz | l'intelligence artificielle
-die Möglichkeit | la possibilité
-das Niedriglohnjob | l'emploi à bas salaire
-die Plattform | la plateforme
-die Politik | la politique
-die Qualifikation | la qualification
-die Stelle | l'emploi
-die Transformation | la transformation
-der Umgang | la gestion
-das Unternehmen | l'entreprise
-die Unterstützung | le soutien
-der Wandel | le changement
-der Wechsel | le changement
-die Weiterbildung | la formation continue
-das Wissen | la connaissance
+
+
+- **der Algorithmus** → l'algorithme
+- **der Anpassungsdruck** → la pression d'adaptation
+- **die Anstrengung** → l'effort
+- **der Arbeitnehmende** → le salarié
+- **der Arbeitnehmer** → le travailleur
+- **die Arbeitslosigkeit** → le chômage
+- **die Arbeitswelt** → le monde du travail
+- **die Automatisierung** → l'automatisation
+- **das Berufsfeld** → le domaine professionnel
+- **das Beschäftigungsverhältnis** → la relation d'emploi
+- **die Bewerbung** → la candidature
+- **das Bildungssystem** → le système éducatif
+- **die Dauer** → la durée
+- **die Debatte** → le débat
+- **die Entwicklung** → le développement
+- **die Fähigkeit** → la compétence
+- **die Fähigkeit** → la compétence
+- **die Gefahr** → le danger
+- **die Gesellschaft** → la société
+- **die Herausforderung** → le défi
+- **die Künstliche Intelligenz** → l'intelligence artificielle
+- **die Möglichkeit** → la possibilité
+- **das Niedriglohnjob** → l'emploi à bas salaire
+- **die Plattform** → la plateforme
+- **die Politik** → la politique
+- **die Qualifikation** → la qualification
+- **die Stelle** → l'emploi
+- **die Transformation** → la transformation
+- **der Umgang** → la gestion
+- **das Unternehmen** → l'entreprise
+- **die Unterstützung** → le soutien
+- **der Wandel** → le changement
+- **der Wechsel** → le changement
+- **die Weiterbildung** → la formation continue
+- **das Wissen** → la connaissance

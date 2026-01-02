@@ -22,6 +22,8 @@ Este es un día normal para mí. Me gusta comer comida variada y saludable. ¿Y 
 
 ## Vocabulario
 
+
+
 - **el agua** → l'eau
 - **el almuerzo** → le déjeuner
 - **el arroz** → le riz

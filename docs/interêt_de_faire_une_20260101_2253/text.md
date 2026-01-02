@@ -26,6 +26,8 @@ In conclusion, sewing is not merely a hobby but a path to enhanced well-being, b
 
 ## Vocabulary
 
+
+
 - **accomplishment** → accomplissement
 - **activity** → activité
 - **anxiety** → anxiété

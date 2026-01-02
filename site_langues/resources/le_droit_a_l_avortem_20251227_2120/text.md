@@ -24,6 +24,8 @@ Abortus is dus een recht in Nederland, maar ook een persoonlijke keuze. Het gesp
 
 ## Woordenschat
 
+
+
 - **de abortus** → l'avortement
 - **de arts** → le médecin
 - **de bedenktijd** → le délai de réflexion

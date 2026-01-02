@@ -24,6 +24,8 @@ En general, los trabajos de adolescentes en España son una excelente manera de 
 
 ## Vocabulario
 
+
+
 - **el adolescente** → l'adolescent
 - **aprender** → apprendre
 - **la bicicleta** → le vélo

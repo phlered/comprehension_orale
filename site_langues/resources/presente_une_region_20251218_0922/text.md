@@ -18,39 +18,41 @@ Zudem ist die Region reich an kulturellen Schätzen. Das berühmte Schloss Neusc
 
 ## Wortschatz
 
-der Alpenregion | la région alpine
-die Aussicht | la vue
-das Berchtesgaden | Berchtesgaden
-der Berg | la montagne
-der Bergsteiger | l'alpiniste
-der Besucher | le visiteur
-das Deutschland | l'Allemagne
-die Freizeitmöglichkeiten | les possibilités de loisirs
-die Hauptstadt | la capitale
-der Kulturliebhaber | l'amateur de culture
-die Kulturszene | la scène culturelle
-die Kunst | l'art
-die Landschaft | le paysage
-die Moderne | la modernité
-der Mountainbiker | le vététiste
-München | Munich
-der Naturfreund | l'ami de la nature
-das Neuschwanstein | Neuschwanstein
-das Oktoberfest | l'Oktoberfest
-das Panorama | le panorama
-der Pfad | le sentier
-die Route | l'itinéraire
-das Schloss | le château
-der See | le lac
-das Skigebiet | le domaine skiable
-der Sommer | l'été
-das Tal | la vallée
-die Touristenregion | la région touristique
-die Tradition | la tradition
-das Urlaubshighlight | l'attraction de vacances
-das Volksfest | la fête populaire
-der Wanderer | le randonneur
-der Watzmann | le Watzmann
-der Winter | l'hiver
-der Wintersportler | le sportif d'hiver
-die Zugspitze | la Zugspitze
+
+
+- **der Alpenregion** → la région alpine
+- **die Aussicht** → la vue
+- **das Berchtesgaden** → Berchtesgaden
+- **der Berg** → la montagne
+- **der Bergsteiger** → l'alpiniste
+- **der Besucher** → le visiteur
+- **das Deutschland** → l'Allemagne
+- **die Freizeitmöglichkeiten** → les possibilités de loisirs
+- **die Hauptstadt** → la capitale
+- **der Kulturliebhaber** → l'amateur de culture
+- **die Kulturszene** → la scène culturelle
+- **die Kunst** → l'art
+- **die Landschaft** → le paysage
+- **die Moderne** → la modernité
+- **der Mountainbiker** → le vététiste
+- **München** → Munich
+- **der Naturfreund** → l'ami de la nature
+- **das Neuschwanstein** → Neuschwanstein
+- **das Oktoberfest** → l'Oktoberfest
+- **das Panorama** → le panorama
+- **der Pfad** → le sentier
+- **die Route** → l'itinéraire
+- **das Schloss** → le château
+- **der See** → le lac
+- **das Skigebiet** → le domaine skiable
+- **der Sommer** → l'été
+- **das Tal** → la vallée
+- **die Touristenregion** → la région touristique
+- **die Tradition** → la tradition
+- **das Urlaubshighlight** → l'attraction de vacances
+- **das Volksfest** → la fête populaire
+- **der Wanderer** → le randonneur
+- **der Watzmann** → le Watzmann
+- **der Winter** → l'hiver
+- **der Wintersportler** → le sportif d'hiver
+- **die Zugspitze** → la Zugspitze

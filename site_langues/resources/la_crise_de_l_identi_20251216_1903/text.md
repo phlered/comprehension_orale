@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 19:03:34
+genre: femme
 langue: Allemand
-prompt: La crise de l'identité européenne
-resume: La crise de l'identité européenne
 longueur: 400
 niveau: C2
-genre: femme
-date_generation: 2025-12-16 19:03:34
+prompt: La crise de l'identité européenne
+resume: La crise de l'identité européenne
 ---
-
 ## Text
 
 Die gegenwärtige Krise der europäischen Identität ist ein Phänomen, das tief in den sozioökonomischen, politischen und kulturellen Strukturen unseres Kontinents verankert ist. Europa, ein historisch reichhaltiges Mosaik aus Nationen, Kulturen und Traditionen, sieht sich heute einer komplexen Gemengelage gegenüber, die das Fundament seiner kollektiven Identität erschüttert.
@@ -24,23 +23,38 @@ Letztlich muss sich Europa der Herausforderung stellen, seine Identität neu zu 
 
 ## Wortschatz
 
-- **der Ausdruck** → l'expression
-- **die Digitalisierung** → la numérisation
-- **die Einheit** → l'unité
-- **die Gemeinschaft** → la communauté
-- **die Globalisierung** → la mondialisation
-- **die Identifizierung** → l'identification
-- **die Identität** → l'identité
-- **die Integration** → l'intégration
-- **der Kontinent** → le continent
-- **die Kraft** → la force
-- **die Krise** → la crise
-- **die Migration** → la migration
-- **das Paradigma** → le paradigme
-- **der Populismus** → le populisme
-- **das Projekt** → le projet
-- **der Respekt** → le respect
-- **die Souveränität** → la souveraineté
-- **die Vielfalt** → la diversité
-- **der Wandel** → le changement
-- **die Zukunft** → l'avenir
+die Assimilation | l’assimilation
+die Bedrohung | la menace
+die Bewegung | le mouvement
+die Dekade | la décennie
+die Digitalisierung | la numérisation
+die Disparität | la disparité
+der Druck | la pression
+die Einheit | l’unité
+die Europäische Union | l'Union européenne
+der Frieden | la paix
+der Föderalismus | le fédéralisme
+die Gefahr | le danger
+die Gemeinschaft | la communauté
+die Generation | la génération
+die Gesellschaft | la société
+die Grenze | la frontière
+die Herausforderung | le défi
+die Identität | l'identité
+die Integration | l’intégration
+der Interessen | l’intérêt
+der Kontinent | le continent
+die Krise | la crise
+die Macht | le pouvoir
+die Migration | la migration
+der Mitgliedsstaat | l'État membre
+die Norm | la norme
+die Politik | la politique
+der Populismus | le populisme
+das Projekt | le projet
+die Renationalisierung | la renationalisation
+der Respekt | le respect
+der Spaltung | la division
+die Vielfalt | la diversité
+der Wandel | le changement
+der Wert | la valeur

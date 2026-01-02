@@ -1,13 +1,11 @@
 ---
-langue: Coréen
-prompt: Raconte la première fois qu’un adolescent découvre un drama coréen : ce qu’il ressent, ce qui le surprend et ce qu’il apprend sur la culture coréenne.
-resume: La découverte d'un drama coréen
-longueur: 150
+date_generation: '2026-01-02 10:42:20'
+genre: femme
+langue: Français
+longueur: 200
 niveau: A2
-genre: homme
-drapeau: 🇰🇷
-voix_variant: cor
-date_generation: 2025-12-18 07:46:13
+prompt: 'Raconte La Premiere '
+resume: 'Raconte La Premiere '
 ---
 
 ## 텍스트

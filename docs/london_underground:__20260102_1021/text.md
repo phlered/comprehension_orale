@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:42:12'
+genre: femme
 langue: Anglais (UK)
-prompt: London Underground: history and daily life
-resume: L'histoire et la vie quotidienne du métro de Londres
-longueur: 200
+longueur: 215
 niveau: A2
-genre: homme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2026-01-02 10:21:56
+prompt: 'London Underground: '
+resume: 'London Underground: '
 ---
 
 ## Text

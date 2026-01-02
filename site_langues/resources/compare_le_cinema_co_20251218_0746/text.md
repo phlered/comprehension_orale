@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 07:46:53
+drapeau: 🇰🇷
+genre: femme
 langue: Coréen
-prompt: Compare le cinéma coréen et le cinéma occidental en parlant des thèmes, des personnages et de la manière de raconter les histoires.
-resume: Comparaison cinéma coréen et cinéma occidental
 longueur: 150
 niveau: A2
-genre: femme
-drapeau: 🇰🇷
+prompt: Compare le cinéma coréen et le cinéma occidental en parlant des thèmes, des
+  personnages et de la manière de raconter les histoires.
+resume: Comparaison cinéma coréen et cinéma occidental
 voix_variant: cor
-date_generation: 2025-12-18 07:46:53
 ---
-
 ## 텍스트
 
 한국 영화와 서양 영화 비교
@@ -22,21 +22,38 @@ date_generation: 2025-12-18 07:46:53
 
 ## 어휘
 
-- **가족** → gajok (famille)
-- **갈등** → galdeung (conflit)
-- **감정** → gamjeong (émotion)
-- **관계** → gwangye (relation)
-- **도전** → dojeon (défi)
-- **모험** → moheom (aventure)
-- **문제** → munje (problème)
-- **사랑** → sarang (amour)
-- **사회** → sahoe (société)
-- **서양** → seoyang (Occident)
-- **액션** → aeksyeon (action)
-- **영화** → yeonghwa (film)
-- **우정** → ujeong (amitié)
-- **인간** → ingan (humain)
-- **캐릭터** → kaerikteo (personnage)
-- **판타지** → pantaji (fantaisie)
-- **한국** → hanguk (Corée)
-- **현실적이다** → hyeonsiljeokida (réaliste)
+가족 | gajok (famille)
+갈등 | galdeung (conflit)
+감동 | gamdong (émotion/profonde impression)
+감정 | gamjeong (émotion)
+강하다 | ganghada (être fort)
+다르다 | dareuda (être différent)
+도전 | dojeon (défi)
+독립적 | dongnipjeok (indépendant)
+면 | myeon (aspect)
+모험 | moheom (aventure)
+문화적 | munhwajeok (culturel)
+발전하다 | baljeonhada (se développer)
+방식 | bangsik (manière/méthode)
+배경 | baegyeong (arrière-plan/context)
+변화 | byeonhwa (changement)
+비교 | bigyo (comparaison)
+빠르게 | ppareuge (rapidement)
+사랑 | sarang (amour)
+사회 문제 | sahoe munje (problème social)
+슈퍼히어로 | syupeohieoro (super-héros)
+스타일 | seutail (style)
+액션 | aeksyeon (action)
+영화 | yeonghwa (film)
+우정 | ujeong (amitié)
+이야기 | iyagi (histoire/récit)
+인간 관계 | ingan gwangye (relation humaine)
+인물 | inmul (personnage)
+전개되다 | jeon-gae dweida (être déployé/développé)
+진행 | jinhaeng (progression)
+집중하다 | jibjunghada (se concentrer)
+캐릭터 | kaerikteo (personnage)
+판타지 | pantaji (fantastique)
+풍부하다 | pungbuhada (être riche/abondant)
+현실적 | hyeonsiljeok (réaliste)
+히어로 | hieoro (héros)

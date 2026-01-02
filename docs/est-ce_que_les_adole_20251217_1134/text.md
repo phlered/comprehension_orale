@@ -1,13 +1,13 @@
 ---
+date_generation: 2025-12-17 11:34:13
+genre: homme
 langue: Coréen
-prompt: Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.
-resume: Les petits boulots pour les adolescents
 longueur: 150
 niveau: A2
-genre: homme
-date_generation: 2025-12-17 11:34:13
+prompt: Est-ce que les adolescents devraient avoir un petit boulot ? Donne un point
+  de vue argumenté en faisant référence aux habitudes ou à la culture d’un pays anglophone.
+resume: Les petits boulots pour les adolescents
 ---
-
 ## 텍스트
 
 십대들이 아르바이트를 해야 할까요? 미국에서는 많은 십대들이 작은 일을 합니다. 예를 들어, 음식점에서 일하거나, 슈퍼마켓에서 물건을 정리합니다. 이런 아르바이트는 좋은 경험이 될 수 있습니다.
@@ -22,23 +22,38 @@ date_generation: 2025-12-17 11:34:13
 
 ## 어휘
 
-- **경험** → gyeongheom (expérience)
-- **관리하다** → gwanrihada (gérer)
-- **기회** → gihoe (opportunité)
-- **돈** → don (argent)
-- **만나다** → mannada (rencontrer)
-- **미국** → miguk (États-Unis)
-- **미래** → mirae (avenir)
-- **배우다** → baeuda (apprendre)
-- **부모님** → bumonim (parents)
-- **사회** → sahoe (société)
-- **사회성** → sahoesung (sociabilité)
-- **시간** → sigan (temps)
-- **십대** → sibdae (adolescent)
-- **아르바이트** → areubaiteu (petit boulot)
-- **영화** → yeonghwa (film)
-- **옷** → ot (vêtement)
-- **의존하다** → uijonhada (dépendre)
-- **중요하다** → jung-yohada (être important)
-- **책임감** → chaegimgam (responsabilité)
-- **협력하다** → hyeomnyeokhada (coopérer)
+경험 | gyeongheom (expérience)
+공부 | gongbu (études)
+관리 | gwanri (gestion)
+기회 | gihoe (opportunité)
+대화 | daehwa (conversation)
+대화하다 | daehwahada (converser)
+도움 | doum (aide)
+돈 | don (argent)
+만나다 | mannada (rencontrer)
+문화 | munhwa (culture)
+미래 | mirae (avenir)
+배우다 | baeuda (apprendre)
+벌다 | beolda (gagner)
+부모님 | bumonim (parents)
+사회 | sahoe (société)
+사회성 | sahoeseong (sociabilité)
+새로운 | saeroun (nouveau)
+습관 | seupgwan (habitude)
+시간 | sigan (temps)
+십대 | sippaedae (adolescent)
+아르바이트 | areubaiteu (petit boulot)
+영향 | yeonghyang (influence)
+영화 | yeonghwa (film)
+옷 | ot (vêtement)
+의존하다 | uijonhada (dépendre de)
+일 | il (travail)
+작다 | jakda (être petit)
+적당하다 | jeokdanghada (être approprié)
+적절하다 | jeokjeolhada (être approprié)
+중요하다 | jung-yohada (être important)
+책임감 | chaegimgam (responsabilité)
+친구 | chingu (ami)
+하다 | hada (faire)
+향상 | hyangsaeng (amélioration)
+협력 | hyeomnyeok (coopération)

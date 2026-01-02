@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 12:28:29
+genre: femme
 langue: Néerlandais
-prompt: Commander un sandwich dans une sandwicherie
-resume: Commander un sandwich
 longueur: 150
 niveau: A1
-genre: femme
-date_generation: 2025-12-16 12:28:29
+prompt: Commander un sandwich dans une sandwicherie
+resume: Commander un sandwich
 ---
-
 ## Tekst
 
 Hallo! Ik ben in een sandwicherie. Ik wil een sandwich bestellen. De man achter de toonbank glimlacht. Hij zegt: "Hallo, wat wil je eten?" Ik kijk naar het menu. Er zijn veel opties. 
@@ -22,10 +21,38 @@ Ik ben blij met mijn lunch. De mensen in de sandwicherie zijn vriendelijk. Het i
 
 ## Woordenschat
 
-- **de groenten** → les légumes
-- **de kaas** → le fromage
-- **de kassa** → la caisse
-- **de man** → l'homme
-- **het menu** → le menu
-- **de sandwich** → le sandwich
-- **de tomaat** → la tomate
+het antwoord | la réponse
+bestellen | commander
+betalen | payer
+het broodje | le petit pain
+het eten | le repas
+het gezicht | l'apparence
+glimlachen | sourire
+de groente | le légume
+de hap | la bouchée
+de kaas | le fromage
+de kassa | la caisse
+kijken | regarder
+knapperig | croustillant
+lekker | délicieux
+de lunch | le déjeuner
+maken | faire
+de man | l'homme
+de mayonaise | la mayonnaise
+de mensen | les gens
+het menu | le menu
+de optie | l'option
+het plezier | le plaisir
+de sandwich | le sandwich
+de sandwicherie | la sandwicherie
+de saus | la sauce
+de sla | la laitue
+smakelijk | appétissant
+de tafel | la table
+de tomaat | la tomate
+de toonbank | le comptoir
+vers | frais
+vragen | demander
+vriendelijk | amical
+zeggen | dire
+zien | voir

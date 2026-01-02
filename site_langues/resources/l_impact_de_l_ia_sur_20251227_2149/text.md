@@ -1,15 +1,14 @@
 ---
+date_generation: 2025-12-27 21:50:10
+drapeau: 🇺🇸
+genre: homme
 langue: Anglais (US)
-prompt: L'impact de l'IA sur le chômage
-resume: L'impact de l'IA sur le chômage
 longueur: 400
 niveau: C2
-genre: homme
-drapeau: 🇺🇸
+prompt: L'impact de l'IA sur le chômage
+resume: L'impact de l'IA sur le chômage
 voix_variant: us
-date_generation: 2025-12-27 21:50:10
 ---
-
 ## Text
 
 The advent of artificial intelligence has undeniably revolutionized numerous sectors, heralding an era akin to a modern industrial revolution. While its benefits are manifold, there lingers an unsettling specter for many: the profound impact of AI on employment dynamics. Discussions surrounding AI and job displacement are as polarized as ever. Yet, it's indisputable that this technological behemoth is reshaping the labor market landscape in unprecedented ways.
@@ -24,25 +23,38 @@ The challenge lies not in resisting the juggernaut of AI but in cultivating a wo
 
 ## Vocabulary
 
-- **to adapt** → s'adapter
-- **algorithm** → algorithme
-- **automation** → automatisation
-- **displacement** → déplacement
-- **efficiency** → efficacité
-- **to empower** → autonomiser
-- **government** → gouvernement
-- **impact** → impact
-- **innovation** → innovation
-- **internet** → internet
-- **job** → emploi
-- **knowledge** → connaissance
-- **learning** → apprentissage
-- **opportunity** → opportunité
-- **retraining** → recyclage professionnel
-- **to revolutionize** → révolutionner
-- **robot** → robot
-- **skill** → compétence
-- **task** → tâche
-- **transition** → transition
-- **unemployment** → chômage
-- **worker** → travailleur
+adaptation | adaptation
+algorithms | algorithmes
+to ameliorate | améliorer
+artificial | artificiel
+automation | automatisation
+to catalyze | catalyser
+clerical | administratif
+conditions | conditions
+displacement | déplacement
+dynamics | dynamique
+efficiency | efficacité
+employment | emploi
+empowerment | autonomisation
+governments | gouvernements
+innovation | innovation
+intelligence | intelligence
+jobs | emplois
+knowledge | connaissances
+labor | travail
+market | marché
+nature | nature
+opportunities | opportunités
+productivity | productivité
+professions | professions
+to promise | promettre
+reality | réalité
+to replace | remplacer
+to reshape | remodeler
+retraining | reconversion
+shift | changement
+skills | compétences
+systems | systèmes
+tasks | tâches
+workers | travailleurs
+workforce | main-d'œuvre

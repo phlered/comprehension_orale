@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:41:43'
+genre: femme
 langue: Anglais (UK)
-prompt: Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.
-resume: Ma maison et mon quartier
-longueur: 150
+longueur: 155
 niveau: A1
-genre: homme
-drapeau: 🇺🇸
-voix_variant: us
-date_generation: 2025-12-18 11:00:29
+prompt: 'Decris L’Endroit Où '
+resume: 'Decris L’Endroit Où '
 ---
 
 ## Text

@@ -1,13 +1,11 @@
 ---
-langue: Allemand
-prompt: Générer un dialogue entre deux jeunes Allemands débattant du Tracht (vêtement traditionnel bavarois ou autrichien) : l'un affirme que c'est un reflet d'identité, l'autre qu'il s'agit uniquement d'un phénomène de mode commercial.
-resume: Le Tracht et l'identité culturelle
-longueur: 300
-niveau: B2
+date_generation: '2026-01-02 10:41:56'
 genre: femme
-drapeau: 🇩🇪
-voix_variant: all
-date_generation: 2026-01-01 22:48:35
+langue: Anglais (UK)
+longueur: 310
+niveau: B2
+prompt: 'Generer Un Dialogue '
+resume: 'Generer Un Dialogue '
 ---
 
 ## Text

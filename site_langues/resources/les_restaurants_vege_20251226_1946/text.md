@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:42:10'
+genre: femme
 langue: Néerlandais
-prompt: Les restaurants végétariens : quelles spécialités ?
-resume: Les spécialités des restaurants végétariens
 longueur: 200
 niveau: A2
-genre: femme
-drapeau: 🇳🇱
-voix_variant: nl
-date_generation: 2025-12-26 19:47:05
+prompt: Les Restaurants Vege
+resume: Les Restaurants Vege
 ---
 
 ## Tekst

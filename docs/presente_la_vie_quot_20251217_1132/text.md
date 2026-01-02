@@ -1,13 +1,13 @@
 ---
+date_generation: 2025-12-17 11:32:17
+genre: femme
 langue: Coréen
-prompt: Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais ressortir les différences et ressemblances avec la vie d’un lycéen français.
-resume: La vie quotidienne d'un adolescent anglophone
 longueur: 150
 niveau: A2
-genre: femme
-date_generation: 2025-12-17 11:32:17
+prompt: Présente la vie quotidienne d’un adolescent dans un pays anglophone et fais
+  ressortir les différences et ressemblances avec la vie d’un lycéen français.
+resume: La vie quotidienne d'un adolescent anglophone
 ---
-
 ## 텍스트
 
 학생들의 일상: 영국과 프랑스
@@ -22,21 +22,37 @@ date_generation: 2025-12-17 11:32:17
 
 ## 어휘
 
-- **게임** → geim (jeu)
-- **과일** → gwail (fruit)
-- **농구** → nonggu (basketball)
-- **수업** → sueop (cours)
-- **숙제** → sukje (devoir)
-- **아침** → achim (matin)
-- **영국** → yeongguk (Angleterre)
-- **운동** → undong (sport)
-- **유니폼** → yunipom (uniforme)
-- **일상** → ilsang (quotidien)
-- **점심시간** → jeomsimsigan (heure du déjeuner)
-- **축구** → chukgu (football)
-- **친구** → chingu (ami)
-- **크루아상** → keuruasang (croissant)
-- **텔레비전** → tellebijeon (télévision)
-- **프랑스** → peurangseu (France)
-- **학교** → hakgyo (école)
-- **학생** → haksaeng (étudiant)
+uniform | yunipeom (uniforme)
+게임 | geim (jeu)
+과일 | gwail (fruits)
+농구 | nonggu (basketball)
+다르다 | dareuda (être différent)
+뜨거운 | tteugeoun (chaud)
+럭비 | reokbi (rugby)
+방과 후 | banggwa hu (après l'école)
+비슷하다 | biseuthada (être similaire)
+빵 | ppang (pain)
+샌드위치 | saendeuwichi (sandwich)
+수업 | sueop (cours)
+숙제 | sukje (devoirs)
+시간 | sigan (temps)
+시간을 보내다 | siganeul bonaeda (passer du temps)
+시리얼 | sirieol (céréales)
+식당 | sikdang (cantine)
+아침 | achim (matin)
+영국 | yeongguk (Angleterre)
+음식 | eumsik (nourriture)
+일상 | ilsang (quotidien)
+일어나다 | ireonada (se lever)
+점심 | jeomsim (déjeuner)
+점심시간 | jeomsimsigan (pause déjeuner)
+좋아하다 | johahada (aimer)
+축구 | chukgu (football)
+친구 | chingu (amis)
+크루아상 | kurwaseong (croissant)
+텔레비전 | tellebijeon (télévision)
+토스트 | toseuteu (toast)
+프랑스 | peurangseu (France)
+학교 | hakgyo (école)
+학교 시간 | hakgyo sigan (horaires scolaires)
+학생 | haksaeng (élève)

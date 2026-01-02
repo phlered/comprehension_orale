@@ -1,13 +1,11 @@
 ---
-langue: Néerlandais
-prompt: Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.
-resume: Les réseaux sociaux et les adolescents
-longueur: 200
-niveau: A2
+date_generation: '2026-01-02 10:42:01'
 genre: femme
-drapeau: 🇳🇱
-voix_variant: nl
-date_generation: 2026-01-01 22:42:02
+langue: Néerlandais
+longueur: 211
+niveau: A2
+prompt: 'Les Reseaux Sociaux '
+resume: 'Les Reseaux Sociaux '
 ---
 
 ## Tekst

@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:42:01'
+genre: femme
 langue: Néerlandais
-prompt: Le repas de Nöel en France : que mange-t'on ?
-resume: Le repas de Noël en France
 longueur: 150
 niveau: A1
-genre: homme
-drapeau: 🇳🇱
-voix_variant: nl
-date_generation: 2026-01-01 16:51:45
+prompt: 'Le Repas De NöEl En '
+resume: 'Le Repas De NöEl En '
 ---
 
 ## Tekst

@@ -1,13 +1,11 @@
 ---
-langue: Espagnol (Espagne)
-prompt: Décris l’endroit où tu habites : ta maison ou ton appartement et ton quartier.
-resume: Ma maison et mon quartier
-longueur: 150
-niveau: A1
+date_generation: '2026-01-02 10:41:40'
 genre: femme
-drapeau: 🇪🇸
-voix_variant: esp
-date_generation: 2025-12-18 10:47:55
+langue: Anglais (UK)
+longueur: 352
+niveau: C1
+prompt: 'Decris L’Endroit Où '
+resume: 'Decris L’Endroit Où '
 ---
 
 ## Texto

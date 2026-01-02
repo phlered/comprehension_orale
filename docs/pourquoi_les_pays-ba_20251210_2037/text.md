@@ -1,13 +1,13 @@
 ---
+date_generation: 2025-12-10 20:37:48
+genre: femme
 langue: Néerlandais
-prompt: Pourquoi les Pays-Bas sont-ils connus pour leurs moulins à vent et leurs tulipes ?
-resume: Les moulins à vent et les tulipes aux Pays-Bas
 longueur: 150
 niveau: A1
-genre: femme
-date_generation: 2025-12-10 20:37:48
+prompt: Pourquoi les Pays-Bas sont-ils connus pour leurs moulins à vent et leurs tulipes
+  ?
+resume: Les moulins à vent et les tulipes aux Pays-Bas
 ---
-
 ## Tekst
 
 De Nederlanden zijn beroemd om molens en tulpen. Maar waarom?
@@ -22,31 +22,38 @@ Dus, molens en tulpen zijn beroemd omdat ze uniek en mooi zijn. Ze zijn een bela
 
 ## Woordenschat
 
-- **belangrijk** → important
-- **bezoeken** → visiter
-- **bloeien** → fleurir
-- **cultuur** → culture
-- **elk** → chaque
-- **foto’s** → photos
-- **genieten** → profiter
-- **graan** → grain
-- **historisch** → historique
-- **jaar** → année
-- **Keukenhof** → Keukenhof
-- **kleurrijk** → coloré
-- **komen** → venir
-- **lente** → printemps
-- **malen** → moudre
-- **mensen** → gens
-- **molens** → moulins
-- **mooi** → beau
-- **Nederlanden** → Pays-Bas
-- **pompen** → pomper
-- **symbool** → symbole
-- **toeristen** → touristes
-- **tuin** → jardin
-- **tulpen** → tulipes
-- **vroeger** → autrefois
-- **water** → eau
-- **wind** → vent
-- **zien** → voir
+belangrijk | important
+bijkomen | ajouter
+bloeien | fleurir
+bloemen | fleurir
+de cultuur | la culture
+het deel | la partie
+elk | chaque
+fotograferen | photographier
+genieten | profiter
+het graan | le grain
+historisch | historique
+jaar | an
+de Keukenhof | le Keukenhof
+kleurrijk | coloré
+komen | venir
+het land | le pays
+het landschap | le paysage
+de lente | le printemps
+maken | rendre
+de mensen | les gens
+de molen | le moulin
+mooi | beau
+de Nederlanden | les Pays-Bas
+Nederlands | néerlandais
+speciaal | spécial
+symbool | symbole
+de toerist | le touriste
+de tuin | le jardin
+de tulp | la tulipe
+uniek | unique
+het voorjaar | le printemps
+vroeger | autrefois
+het water | l'eau
+de wind | le vent
+zien | voir

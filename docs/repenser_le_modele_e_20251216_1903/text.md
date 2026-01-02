@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 19:04:03
+genre: homme
 langue: Allemand
-prompt: Repenser le modèle économique capitaliste
-resume: Le modèle économique capitaliste
 longueur: 400
 niveau: C2
-genre: homme
-date_generation: 2025-12-16 19:04:03
+prompt: Repenser le modèle économique capitaliste
+resume: Le modèle économique capitaliste
 ---
-
 ## Text
 
 Der Kapitalismus als vorherrschendes Wirtschaftssystem hat ohne Zweifel zahlreiche Erfolge verzeichnet, die den Lebensstandard in unzähligen Teilen der Welt beträchtlich erhöht haben. Dennoch häufen sich in den letzten Jahrzehnten Stimmen, die eine grundlegende Neubewertung dieses Modells fordern. Diese Stimmen kommen nicht nur von altbekannten Kapitalismuskritikern, sondern zunehmend auch aus Kreisen etablierter Ökonomen, Unternehmer und Politiker, die realisieren, dass das System in seiner jetzigen Form an seine Grenzen stößt.
@@ -24,22 +23,38 @@ Somit ist ein Umdenken erforderlich, das über kosmetische Änderungen hinausgeh
 
 ## Wortschatz
 
-- **die Demokratie** → la démocratie
-- **die Diskussion** → la discussion
-- **die Ethik** → l'éthique
-- **die Gesellschaft** → la société
-- **die Innovation** → l'innovation
-- **die Investition** → l'investissement
-- **der Kapitalismus** → le capitalisme
-- **die Kluft** → le fossé
-- **die Kreativität** → la créativité
-- **die Macht** → le pouvoir
-- **der Mensch** → l'être humain
-- **die Nachhaltigkeit** → la durabilité
-- **der Paradigmenwechsel** → le changement de paradigme
-- **die Reform** → la réforme
-- **die Ressource** → la ressource
-- **die Ungleichheit** → l'inégalité
-- **das Unternehmen** → l'entreprise
-- **das Wachstum** → la croissance
-- **die Zukunft** → l'avenir
+der Akteur | l'acteur
+die Aktivität | l'activité
+die Alternative | l'alternative
+die Bedrohung | la menace
+die Definition | la définition
+die Demokratie | la démocratie
+das Denken | la pensée
+die Diskussion | la discussion
+die Folge | la conséquence
+die Förderung | le soutien
+die Grenze | la limite
+die Investition | l'investissement
+der Kapitalismus | le capitalisme
+die Kluft | le fossé
+die Logik | la logique
+die Lösung | la solution
+die Macht | le pouvoir
+die Menge | la quantité
+der Mensch | l'être humain
+der Mittelstand | les PME
+die Nachhaltigkeit | la durabilité
+die Neubewertung | la réévaluation
+die Reform | la réforme
+der Reichtum | la richesse
+die Ressource | la ressource
+die Schieflage | le déséquilibre
+die Strategie | la stratégie
+das Unternehmen | l'entreprise
+die Verteilung | la répartition
+das Wachstum | la croissance
+das Wachstum | la croissance
+der Wechsel | le changement
+der Wert | la valeur
+das Wirtschaftssystem | le système économique
+das Wirtschaftssystem | le système économique

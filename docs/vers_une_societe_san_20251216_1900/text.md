@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 19:00:46
+genre: femme
 langue: Allemand
-prompt: Vers une société sans argent liquide ?
-resume: Une société sans argent liquide
 longueur: 350
 niveau: C1
-genre: femme
-date_generation: 2025-12-16 19:00:46
+prompt: Vers une société sans argent liquide ?
+resume: Une société sans argent liquide
 ---
-
 ## Text
 
 Der Trend zu einer bargeldlosen Gesellschaft hat in den letzten Jahren erheblich an Fahrt aufgenommen, insbesondere in Industrieländern, in denen technologische Innovationen den Alltag prägen. Doch welche Auswirkungen hat dieser Wandel auf unser Leben, und ist eine Welt ohne Bargeld wirklich wünschenswert?
@@ -24,29 +23,38 @@ Letztlich ist es wichtig, eine Balance zu finden. Eine gänzlich bargeldlose Ges
 
 ## Wortschatz
 
-- **der Alltag** → le quotidien
-- **die Auswirkungen** → les conséquences
-- **die Balance** → l'équilibre
-- **das Bargeld** → le liquide
-- **die Bedrohung** → la menace
-- **die Cyberkriminalität** → la cybercriminalité
-- **die Datensicherheit** → la sécurité des données
-- **die digitale Ära** → l'ère numérique
-- **das Einkommen** → le revenu
-- **die Exklusion** → l'exclusion
-- **der Fokus** → le focus
-- **die Gesellschaft** → la société
-- **die Innovation** → l'innovation
-- **das Konsumverhalten** → le comportement de consommation
-- **die Kreditkarte** → la carte de crédit
-- **das Risiko** → le risque
-- **die Schulden** → les dettes
-- **die Sorge** → l'inquiétude
-- **die Technologie** → la technologie
-- **die Transaktion** → la transaction
-- **der Trend** → la tendance
-- **der Verbraucher** → le consommateur
-- **der Vertrauen** → la confiance
-- **der Vorteil** → l'avantage
-- **das Zahlungsmittel** → le moyen de paiement
-- **der Zugang** → l'accès
+der Alltag | le quotidien
+das Anliegen | la préoccupation
+die App | l'application
+die Auswirkung | l'impact
+das Bargeld | l'argent liquide
+die Bedrohung | la menace
+die Cyberkriminalität | la cybercriminalité
+die Datensicherheit | la sécurité des données
+die Debitkarte | la carte de débit
+der Diebstahl | le vol
+die Exklusion | l'exclusion
+das Geld | l'argent
+die Gesellschaft | la société
+die Herausforderung | le défi
+das Konsumverhalten | le comportement de consommation
+die Kreditkarte | la carte de crédit
+die Kryptowährung | la cryptomonnaie
+das Leben | la vie
+die Nachverfolgbarkeit | la traçabilité
+das Risiko | le risque
+die Schulden | les dettes
+der Schutz | la protection
+die Sorge | l'inquiétude
+die Stabilität | la stabilité
+die Transaktion | la transaction
+der Trend | la tendance
+das Unternehmen | l'entreprise
+der Verbraucher | le consommateur
+das Vertrauen | la confiance
+der Vorteil | l'avantage
+der Wandel | le changement
+die Welt | le monde
+die Zahlungsmethode | le mode de paiement
+der Zugang | l'accès
+die Ära | l'ère

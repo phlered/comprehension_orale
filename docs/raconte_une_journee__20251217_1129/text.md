@@ -1,13 +1,13 @@
 ---
+date_generation: 2025-12-17 11:30:06
+genre: femme
 langue: Italien
-prompt: Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.
-resume: Une journée d'école inattendue
 longueur: 150
 niveau: A2
-genre: femme
-date_generation: 2025-12-17 11:30:06
+prompt: Raconte une journée d’école qui ne s’est pas passée comme prévu, du point
+  de vue d’un élève, avec un événement surprenant ou inattendu.
+resume: Une journée d'école inattendue
 ---
-
 ## Testo
 
 Ciao! Mi chiamo Luca e voglio raccontarti una giornata di scuola molto speciale. Di solito, la mia giornata inizia alle 8:00 con la prima lezione di matematica. Ma ieri è stato diverso! 
@@ -20,28 +20,38 @@ Alla fine della giornata, tutti erano contenti e abbiamo cantato insieme una can
 
 ## Vocabolario
 
-- **il calcio** → le football
-- **la canzone** → la chanson
-- **la corrente** → le courant
-- **il cortile** → la cour
-- **diverso** → différent
-- **felice** → heureux
-- **la giornata** → la journée
-- **il giorno** → le jour
-- **godersi** → profiter de
-- **imparare** → apprendre
-- **l'amico** → l'ami
-- **l'attività** → l'activité
-- **l'importanza** → l'importance
-- **l'insegnante** → l'enseignant
-- **la lezione** → la leçon
-- **la palestra** → le gymnase
-- **il ping-pong** → le ping-pong
-- **il preside** → le principal
-- **la recita** → la pièce de théâtre
-- **il ritardo** → le retard
-- **la scuola** → l'école
-- **sorpreso** → surpris
-- **lo studente** → l'étudiant
-- **la sveglia** → le réveil
-- **il torneo** → le tournoi
+il calcio | le football
+la canzone | la chanson
+la corrente | le courant
+il cortile | la cour
+divertente | amusant
+elettrica | électrique
+essere | être
+felice | heureux
+felici | heureux
+la fine | la fin
+la giornata | la journée
+godersi | profiter
+ieri | hier
+imparare | apprendre
+indimenticabile | inoubliable
+insieme | ensemble
+l'amico | l’ami
+l'attività | l’activité
+l'importanza | l’importance
+l'insegnante | l’enseignant
+la lezione | la leçon
+il Luca | Luca
+la matematica | les mathématiques
+la mattina | le matin
+il momento | le moment
+la palestra | le gymnase
+il ping-pong | le ping-pong
+il preside | le proviseur
+la recita | la pièce de théâtre
+il ritardo | le retard
+la scuola | l’école
+sorpreso | surpris
+lo studente | l’étudiant
+la sveglia | le réveil
+il torneo | le tournoi

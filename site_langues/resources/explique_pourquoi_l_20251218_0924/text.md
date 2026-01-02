@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 09:24:45
+drapeau: 🇩🇪
+genre: femme
 langue: Allemand
-prompt: Explique pourquoi l’Allemagne est une destination appréciée par les jeunes touristes.
-resume: L'Allemagne comme destination pour les jeunes touristes
 longueur: 150
 niveau: C1
-genre: femme
-drapeau: 🇩🇪
+prompt: Explique pourquoi l’Allemagne est une destination appréciée par les jeunes
+  touristes.
+resume: L'Allemagne comme destination pour les jeunes touristes
 voix_variant: all
-date_generation: 2025-12-18 09:24:45
 ---
-
 ## Text
 
 Deutschland ist bei jungen Touristen aus mehreren überzeugenden Gründen eine überaus geschätzte Destination. Zunächst einmal bietet das Land eine reiche kulturelle Vielfalt, die von historischen Städten wie Berlin und München bis zu malerischen Landschaften im Schwarzwald oder den bayerischen Alpen reicht. Junge Reisende sind oft auf der Suche nach authentischen Erlebnissen, und Deutschland bietet eine Fülle davon, sei es durch die Erkundung der deutschen Geschichte an Orten wie dem Brandenburger Tor oder durch das Eintauchen in die trendigen Viertel Berlins.
@@ -20,17 +20,38 @@ Nicht zuletzt ist das relativ hohe Sicherheitsgefühl im Land ein weiterer wicht
 
 ## Wortschatz
 
-- **attraktiv** → attractif
-- **das Erlebnis** → l'expérience
-- **das Festival** → le festival
-- **die Geschichte** → l'histoire
-- **die Infrastruktur** → l'infrastructure
-- **die Kultur** → la culture
-- **das Land** → le pays
-- **die Landschaft** → le paysage
-- **das Netzwerk** → le réseau
-- **reisen** → voyager
-- **die Sicherheit** → la sécurité
-- **die Stadt** → la ville
-- **der Tourist** → le touriste
-- **die Vielfalt** → la diversité
+die Alpen | les Alpes
+der Aspekt | l'aspect
+attraktiv | attractif
+die Berlinale | la Berlinale
+der Besucher | le visiteur
+das Brandenburger Tor | la Porte de Brandebourg
+der Bus | le bus
+die Destination | la destination
+das Deutschland | l'Allemagne
+effizient | efficace
+das Erlebnis | l'expérience
+das Event | l'événement
+der Faktor | le facteur
+das Festival | le festival
+die Geschichte | l'histoire
+die Infrastruktur | l'infrastructure
+die Kultur | la culture
+das Land | le pays
+die Landschaft | le paysage
+lieblich | charmant
+malerisch | pittoresque
+das Netz | le réseau
+das Oktoberfest | la fête de la bière
+der Ort | le lieu
+die Region | la région
+der Reisende | le voyageur
+das Reiseziel | la destination de voyage
+die Rolle | le rôle
+der Schwarzwald | la Forêt-Noire
+das Sicherheitsgefühl | le sentiment de sécurité
+die Stadt | la ville
+der Tourist | le touriste
+die Vielfalt | la diversité
+das Viertel | le quartier
+der Zug | le train

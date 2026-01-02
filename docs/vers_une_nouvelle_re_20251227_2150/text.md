@@ -1,15 +1,14 @@
 ---
+date_generation: 2025-12-27 21:51:08
+drapeau: 🇺🇸
+genre: homme
 langue: Anglais (US)
-prompt: Vers une nouvelle révolution industrielle avec l'IA ?
-resume: Une nouvelle révolution industrielle avec l'IA
 longueur: 400
 niveau: C2
-genre: homme
-drapeau: 🇺🇸
+prompt: Vers une nouvelle révolution industrielle avec l'IA ?
+resume: Une nouvelle révolution industrielle avec l'IA
 voix_variant: us
-date_generation: 2025-12-27 21:51:08
 ---
-
 ## Text
 
 Title: Towards a New Industrial Revolution with AI?
@@ -28,26 +27,38 @@ Much like previous epochs of industrial transformation, this AI-driven revolutio
 
 ## Vocabulary
 
-- **AI** → IA
-- **algorithms** → algorithmes
-- **automation** → automatisation
-- **autonomous** → autonome
-- **bias** → biais
-- **capabilities** → capacités
-- **data** → données
-- **to diagnose** → diagnostiquer
-- **displacement** → déplacement
-- **education** → éducation
-- **inequities** → inégalités
-- **innovation** → innovation
-- **manufacturing** → fabrication
-- **to mitigate** → atténuer
-- **to optimize** → optimiser
-- **privacy** → confidentialité
-- **to redefine** → redéfinir
-- **to reshape** → reshaper
-- **revolution** → révolution
-- **risk** → risque
-- **stewardship** → gestion
-- **technology** → technologie
-- **transformation** → transformation
+access | accès
+algorithm | algorithme
+automation | automatisation
+bias | biais
+capability | capacité
+challenge | défi
+consequence | conséquence
+data | données
+to diagnose | diagnostiquer
+disease | maladie
+education | éducation
+experience | expérience
+finance | finance
+foresight | prévoyance
+future | avenir
+governance | gouvernance
+healthcare | soins de santé
+innovation | innovation
+intelligence | intelligence
+labor | travail
+learning | apprentissage
+manufacturing | fabrication
+opportunity | opportunité
+precision | précision
+privacy | vie privée
+production | production
+progress | progrès
+retraining | reconversion
+revolution | révolution
+risk | risque
+symbiosis | symbiose
+system | système
+technology | technologie
+to transform | transformer
+trend | tendance

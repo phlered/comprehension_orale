@@ -1,13 +1,11 @@
 ---
-langue: Allemand
-prompt: Gains de productivité : réduction du temps de travail comme seule solution au chômage ?
-resume: Réduction du temps de travail et chômage
-longueur: 400
+date_generation: '2026-01-02 10:41:54'
+genre: femme
+langue: Anglais (UK)
+longueur: 391
 niveau: C2
-genre: homme
-drapeau: 🇩🇪
-voix_variant: all
-date_generation: 2025-12-27 21:54:06
+prompt: Gains De Productivit
+resume: Gains De Productivit
 ---
 
 ## Text

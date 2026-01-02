@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 07:48:12
+drapeau: 🇰🇷
+genre: femme
 langue: Coréen
-prompt: Raconte la vie quotidienne d’un lycéen coréen qui aime la K-pop ou le cinéma et explique comment ces passions influencent sa vie.
-resume: La vie quotidienne d'un lycéen coréen
 longueur: 150
 niveau: A2
-genre: femme
-drapeau: 🇰🇷
+prompt: Raconte la vie quotidienne d’un lycéen coréen qui aime la K-pop ou le cinéma
+  et explique comment ces passions influencent sa vie.
+resume: La vie quotidienne d'un lycéen coréen
 voix_variant: cor
-date_generation: 2025-12-18 07:48:12
 ---
-
 ## 텍스트
 
 안녕하세요! 저는 지훈이에요. 저는 고등학생이에요. 저는 K-팝을 아주 좋아해요. 매일 아침 학교에 가기 전에 K-팝 음악을 들어요. 음악을 들으면 기분이 좋아져요. 학교에서는 친구들과 K-팝 가수에 대해 이야기를 많이 해요. 
@@ -20,19 +20,37 @@ K-팝 덕분에 새로운 친구들을 많이 사귀었어요. 그리고 한국 
 
 ## 어휘
 
-- **K-팝** → kei-pap (K-pop)
-- **공부** → gongbu (études)
-- **댄스** → daenseu (danse)
-- **미래** → mirae (avenir)
-- **연습** → yeonseup (entraînement)
-- **음악** → eumak (musique)
-- **일** → il (travail)
-- **준비** → junbi (préparation)
-- **축제** → chukje (festival)
-- **친구** → chingu (ami)
-- **콘서트** → konseoteu (concert)
-- **팬** → paen (fan)
-- **학교** → hakgyo (école)
-- **학생** → haksaeng (élève)
-- **한국 문화** → hanguk munhwa (culture coréenne)
-- **행복** → haengbok (bonheur)
+가수 | gasu (chanteur)
+감사합니다 | gamsahamnida (merci)
+고등학생 | godeungsaeng (lycéen)
+공부하다 | gongbuhada (étudier)
+관련된 | gwallyeondoen (lié à)
+기분 | gibun (humeur)
+끝나다 | kkeunada (finir)
+노래 | norae (chanson)
+덕분에 | deokbune (grâce à)
+듣다 | deutda (écouter)
+따라 부르다 | ttara bureuda (chanter après)
+매일 | maeil (chaque jour)
+미래 | mirae (avenir)
+보여주다 | boyeojuda (montrer)
+수업 | sueop (cours)
+아침 | achim (matin)
+안녕하세요 | annyeonghaseyo (bonjour)
+연습 | yeonseup (pratique)
+음악 | eumak (musique)
+응원하다 | eungwonhada (encourager)
+이야기 | iyagi (conversation)
+일 | il (travail)
+저 | jeo (je/moi)
+좋아하다 | joahada (aimer)
+주말 | jumal (week-end)
+준비하다 | junbihada (préparer)
+춤 | chum (danse)
+친구 | chingu (ami)
+친구들 | chingudeul (amis)
+콘서트 | konseoteu (concert)
+팬 | paen (fan)
+학교 | hakgyo (école)
+한국 문화 | hanguk munhwa (culture coréenne)
+행복 | haengbok (bonheur)

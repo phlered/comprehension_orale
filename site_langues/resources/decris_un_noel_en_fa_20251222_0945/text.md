@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-22 09:45:57
+drapeau: 🇺🇸
+genre: femme
 langue: Anglais (UK)
-prompt: Décris un Noël en famille aux États-Unis, avec les repas, les cadeaux et les traditions.
-resume: Noël en famille aux États-Unis
 longueur: 150
 niveau: B2
-genre: femme
-drapeau: 🇺🇸
+prompt: Décris un Noël en famille aux États-Unis, avec les repas, les cadeaux et les
+  traditions.
+resume: Noël en famille aux États-Unis
 voix_variant: us
-date_generation: 2025-12-22 09:45:57
 ---
-
 ## Text
 
 Christmas in the United States is a vibrant tapestry of cherished traditions, delicious meals, and familial warmth. An American family Christmas often begins with weeks of preparation, from decorating the house with twinkling lights and a towering evergreen tree to meticulously wrapping gifts in colorful paper. On Christmas Eve, many families attend midnight Mass, a nod to the holiday's spiritual roots.
@@ -20,24 +20,38 @@ The following morning, the air is filled with excitement as children eagerly rus
 
 ## Vocabulary
 
-- **children** → enfants
-- **Christmas** → Noël
-- **to decorate** → décorer
-- **family** → famille
-- **to feast** → festoyer
-- **film** → film
-- **game** → jeu
-- **to gather** → se rassembler
-- **gift** → cadeau
-- **gratitude** → gratitude
-- **house** → maison
-- **meal** → repas
-- **pie** → tarte
-- **potatoes** → pommes de terre
-- **presence** → présence
-- **to rush** → se précipiter
-- **tradition** → tradition
-- **tree** → arbre
-- **turkey** → dinde
-- **to watch** → regarder
-- **to wrap** → emballer
+to begin | commencer
+children | enfants
+chocolate | chocolat
+Christmas | Noël
+Christmas Eve | veille de Noël
+to decorate | décorer
+dessert | dessert
+dinner | dîner
+families | familles
+films | films
+games | jeux
+to gather | rassembler
+gift-giving | distribution de cadeaux
+gifts | cadeaux
+gratitude | gratitude
+ham | jambon
+holiday | vacances
+house | maison
+laughter | rire
+lights | lumières
+loved ones | proches
+midnight Mass | messe de minuit
+morning | matin
+paper | papier
+pie | tarte
+potatoes | pommes de terre
+preparation | préparation
+presence | présence
+to rush | se précipiter
+sauce | sauce
+stuffing | farce
+time | temps
+tree | arbre
+turkey | dinde
+United States | États-Unis

@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-15 18:03:04
+genre: femme
 langue: Italien
-prompt: Comprare i vestiti
-resume: L'achat de vêtements
 longueur: 150
 niveau: A1
-genre: femme
-date_generation: 2025-12-15 18:03:04
+prompt: Comprare i vestiti
+resume: L'achat de vêtements
 ---
-
 ## Testo
 
 Ciao! Oggi voglio parlare di comprare i vestiti. Mi piace andare al negozio di vestiti. Il sabato è il giorno migliore per fare shopping. Io vado con mia mamma e la mia amica Anna. Il negozio ha molti vestiti belli.
@@ -22,31 +21,38 @@ Grazie per aver letto la mia storia! Ciao!
 
 ## Vocabolario
 
-- **la amica** → l'amie
-- **andare** → aller
-- **bello** → beau
-- **blu** → bleu
-- **la cassa** → la caisse
-- **la cintura** → la ceinture
-- **la commessa** → la vendeuse
-- **comprare** → acheter
-- **comprare** → acheter
-- **felice** → heureux
-- **il giorno** → le jour
-- **i jeans** → le jean
-- **la maglietta** → le t-shirt
-- **la mamma** → la maman
-- **il negozio** → le magasin
-- **pagare** → payer
-- **il paio** → la paire
-- **il pantalone** → le pantalon
-- **provare** → essayer
-- **rosso** → rouge
-- **i sacchetti** → les sacs
-- **i sandali** → les sandales
-- **la scarpa** → la chaussure
-- **scegliere** → choisir
-- **lo shopping** → le shopping
-- **i soldi** → l'argent
-- **vedere** → voir
-- **il vestito** → le vêtement
+andare | aller
+bello | beau
+carino | mignon
+la cassa | la caisse
+la cintura | la ceinture
+la commessa | la vendeuse
+comodo | confortable
+comprare | acheter
+comprare | acheter
+divertente | amusant
+felice | heureux
+gentile | aimable
+il giorno | le jour
+guardare | regarder
+il jeans | le jean
+l'acquisto | l'achat
+l'amica | l'amie
+la maglia | la chemise
+la maglietta | le tee-shirt
+la mamma | la maman
+il negozio | le magasin
+nuovo | nouveau
+pagare | payer
+il paio | la paire
+il pantalone | le pantalon
+perfetto | parfait
+provare | essayer
+il sabato | le samedi
+il sacchetto | le sac
+il sandalo | la sandale
+la scarpa | la chaussure
+scegliere | choisir
+lo shopping | le shopping
+i soldi | l'argent
+il vestito | le vêtement

@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: Un correspondant britannique se présente : il parle de ses hobbies, décrit les membres de sa famille et explique sa vie à la campagne dans le Devon.
-resume: La vie à la campagne dans le Devon
-longueur: 150
-niveau: A2
+date_generation: '2026-01-02 10:42:26'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-17 18:37:21
+langue: Anglais (UK)
+longueur: 165
+niveau: A1
+prompt: Un Correspondant Bri
+resume: Un Correspondant Bri
 ---
 
 ## Text
@@ -20,31 +18,38 @@ At home, we have three chickens, and we get fresh eggs every day. We also have a
 
 ## Vocabulary
 
-- **book** → livre
-- **brother** → frère
-- **calm** → calme
-- **chicken** → poulet
-- **countryside** → campagne
-- **cycling** → cyclisme
-- **Devon** → Devon
-- **dog** → chien
-- **egg** → œuf
-- **to enjoy** → apprécier
-- **family** → famille
-- **football** → football
-- **friendly** → amical
-- **hill** → colline
-- **hobby** → passe-temps
-- **home** → maison
-- **life** → vie
-- **to like** → aimer
-- **to love** → aimer
-- **name** → nom
-- **outside** → extérieur
-- **to play** → jouer
-- **quiet** → tranquille
-- **to read** → lire
-- **sister** → sœur
-- **town** → ville
-- **view** → vue
-- **village** → village
+air | air
+bike | vélo
+books | livres
+brother | frère
+brother’s | du frère
+calm | calme
+chickens | poules
+countryside | campagne
+cycling | cyclisme
+Devon | Devon
+dog | chien
+eggs | œufs
+to enjoy | apprécier
+to explore | explorer
+family | famille
+football | football
+friendly | amical
+hiking | randonnée
+hills | collines
+hobbies | loisirs
+home | maison
+life | vie
+to like | aimer
+to live | vivre
+name | nom
+to play | jouer
+quiet | tranquille
+to read | lire
+sister | sœur
+sister’s | de la sœur
+snacks | collations
+time | temps
+town | ville
+views | vues
+village | village

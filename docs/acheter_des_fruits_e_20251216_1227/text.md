@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 12:27:52
+genre: homme
 langue: Néerlandais
-prompt: Acheter des fruits et légumes au marché
-resume: Acheter des fruits et légumes au marché
 longueur: 150
 niveau: A1
-genre: homme
-date_generation: 2025-12-16 12:27:52
+prompt: Acheter des fruits et légumes au marché
+resume: Acheter des fruits et légumes au marché
 ---
-
 ## Tekst
 
 Op zaterdag ga ik naar de markt. Ik koop graag vers fruit en verse groenten. Eerst ga ik naar de appelkraam. Ik koop rode appels. Ze kosten drie euro per kilo. Daarna ga ik naar de groentekraam. Ik wil een kilo tomaten. De tomaten zijn rood en vers. Ze kosten twee euro per kilo. 
@@ -18,10 +17,37 @@ Bij de kassa betaal ik met mijn pinpas. De marktvrouw is vriendelijk. Ze zegt: "
 
 ## Woordenschat
 
-- **de appel** → la pomme
-- **het fruit** → le fruit
-- **het geld** → l'argent
-- **de komkommer** → le concombre
-- **de markt** → le marché
-- **de paprika** → le poivron
-- **de tomaat** → la tomate
+de appel | la pomme
+het bedrag | le montant
+betaal | payer
+de dag | le jour
+druk | animé
+de euro | l'euro
+fris | frais
+het fruit | le fruit
+ga | aller
+het geld | l'argent
+gezond | sain
+de groente | le légume
+het huis | la maison
+de kassa | la caisse
+de kilo | le kilo
+de komkommer | le concombre
+koop | acheter
+kost | coûter
+de kraam | l'échoppe
+lekker | délicieux
+maak | faire
+de markt | le marché
+de marktvrouw | la marchande
+het mens | la personne
+de paprika | le poivron
+de pinpas | la carte bancaire
+de salade | la salade
+de tas | le sac
+de tomaat | la tomate
+veel | beaucoup
+vers | frais
+vriendelijk | aimable
+wil | vouloir
+de zaterdag | le samedi

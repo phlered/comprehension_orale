@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:42:21'
+genre: femme
 langue: Anglais (UK)
-prompt: Un collégien anglais se présente : il dit son prénom, son âge, sa classe et sa nationalité.
-resume: Présentation d'un collégien anglais
-longueur: 150
+longueur: 140
 niveau: A1
-genre: homme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-18 10:58:47
+prompt: Un Collegien Anglais
+resume: Un Collegien Anglais
 ---
 
 ## Text

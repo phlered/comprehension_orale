@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 07:45:56
+drapeau: 🇰🇷
+genre: femme
 langue: Coréen
-prompt: Explique ce qu’est la K-pop et pourquoi elle attire autant de jeunes dans le monde entier, en donnant des exemples de groupes ou d’artistes coréens.
-resume: La K-pop et son attrait mondial
 longueur: 150
 niveau: A2
-genre: femme
-drapeau: 🇰🇷
+prompt: Explique ce qu’est la K-pop et pourquoi elle attire autant de jeunes dans
+  le monde entier, en donnant des exemples de groupes ou d’artistes coréens.
+resume: La K-pop et son attrait mondial
 voix_variant: cor
-date_generation: 2025-12-18 07:45:56
 ---
-
 ## 텍스트
 
 케이팝(K-pop)은 한국의 대중음악입니다. 많은 젊은이들이 케이팝을 좋아합니다. 왜냐하면 케이팝은 멋진 음악과 춤을 보여주기 때문입니다. 케이팝 그룹은 열심히 연습합니다. 그래서 춤과 노래가 아주 잘 맞습니다.
@@ -20,18 +20,39 @@ date_generation: 2025-12-18 07:45:56
 
 ## 어휘
 
-- **가수** → gasu (chanteur)
-- **그룹** → geurup (groupe)
-- **대중음악** → daejungeumak (musique populaire)
-- **문화** → munhwa (culture)
-- **방탄소년단** → Bangtan Sonyeondan (BTS)
-- **소셜 미디어** → sosyeol midieo (réseaux sociaux)
-- **스타일** → seutail (style)
-- **연습하다** → yeonseuphada (s'entraîner)
-- **유명하다** → yumyeonghada (être célèbre)
-- **음악** → eumak (musique)
-- **젊은이** → jeolmeuni (jeunes)
-- **춤** → chum (danse)
-- **케이팝** → keipap (K-pop)
-- **팬** → paen (fan)
-- **한국** → hanguk (Corée du Sud)
+개성 | gaeseong (personnalité)
+그룹 | geureup (groupe)
+꿈 | kkum (rêve)
+나라 | nara (pays)
+노래 | norae (chanson)
+다양하다 | daeyanghada (être varié)
+대중음악 | daejung eumak (musique populaire)
+맞다 | matda (correspondre)
+방법 | bangbeop (méthode)
+방탄소년단 | bangtansonyeondan (BTS)
+배우다 | baeuda (apprendre)
+보여주다 | boyeojuda (montrer)
+블랙핑크 | beullaekpingkeu (BLACKPINK)
+사람 | saram (personne)
+사랑받다 | sarangbatda (être aimé)
+세계 | segye (monde)
+소셜 미디어 | sosyeol midieo (réseaux sociaux)
+스타일 | seutail (style)
+연습 | yeonseup (entraînement)
+예 | ye (exemple)
+용기 | yonggi (courage)
+유명하다 | yumyeonghada (être célèbre)
+유튜브 | yutyubeu (YouTube)
+음악 | eumak (musique)
+전 세계 | jeon segye (monde entier)
+젊은이 | jeolmeuni (jeune)
+젊은이 | jeolmeuni (jeune)
+좋다 | jota (être bon)
+좋아하다 | johahada (aimer)
+춤 | chum (danse)
+케이팝 | keipap (K-pop)
+팬 | paen (fan)
+한국 문화 | hanguk munhwa (culture coréenne)
+한국어 | hangugeo (langue coréenne)
+희망 | huimang (espoir)
+힘 | him (force)

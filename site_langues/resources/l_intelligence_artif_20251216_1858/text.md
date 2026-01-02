@@ -1,11 +1,11 @@
 ---
-langue: Allemand
-prompt: L'intelligence artificielle : opportunité ou menace ?
-resume: L'intelligence artificielle opportunité ou menace
-longueur: 350
-niveau: C1
-genre: homme
-date_generation: 2025-12-16 18:58:55
+date_generation: '2026-01-02 10:41:59'
+genre: femme
+langue: Anglais (UK)
+longueur: 319
+niveau: B2
+prompt: L'Intelligence Artif
+resume: L'Intelligence Artif
 ---
 
 ## Text

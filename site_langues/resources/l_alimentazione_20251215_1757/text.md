@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-15 17:57:54
+genre: femme
 langue: Italien
-prompt: L'alimentazione
-resume: L'alimentation
 longueur: 150
 niveau: A1
-genre: femme
-date_generation: 2025-12-15 17:57:54
+prompt: L'alimentazione
+resume: L'alimentation
 ---
-
 ## Testo
 
 Ciao! Mi chiamo Luca e oggi parlo della mia alimentazione. Mi piace mangiare cibi sani. A colazione, bevo latte e mangio una fetta di pane con marmellata. Mi piace anche la frutta, specialmente le mele.
@@ -22,30 +21,38 @@ Mangio tre pasti al giorno: colazione, pranzo e cena. La mia alimentazione è se
 
 ## Vocabolario
 
-- **il basilico** → le basilic
-- **il broccolo** → le brocoli
-- **la carne** → la viande
-- **la carota** → la carotte
-- **la cena** → le dîner
-- **il cetriolo** → le concombre
-- **il cibo** → la nourriture
-- **la fetta** → la tranche
-- **la frutta** → les fruits
-- **l'acqua** → l'eau
-- **l'insalata** → la salade
-- **il latte** → le lait
-- **la lattuga** → la laitue
-- **la marmellata** → la confiture
-- **la mela** → la pomme
-- **la mozzarella** → la mozzarella
-- **il pane** → le pain
-- **la pasta** → les pâtes
-- **il pesce** → le poisson
-- **il piatto** → le plat
-- **la pizza** → la pizza
-- **il pomodoro** → la tomate
-- **il pomodoro** → la tomate
-- **il pranzo** → le déjeuner
-- **il riso** → le riz
-- **la salute** → la santé
-- **la verdura** → le légume
+il basilico | le basilic
+bere | boire
+la bibita | la boisson
+il broccolo | le brocoli
+la carne | la viande
+la carota | la carotte
+la cena | le dîner
+il cetriolo | le concombre
+il cibo | la nourriture
+la colazione | le petit-déjeuner
+il dolce | le dessert
+evitare | éviter
+la fetta | la tranche
+la frutta | les fruits
+l'acqua | l'eau
+l'energia | l'énergie
+l'insalata | la salade
+il latte | le lait
+la lattuga | la laitue
+mangiare | manger
+la marmellata | la confiture
+la mela | la pomme
+la mozzarella | la mozzarella
+il pane | le pain
+la pasta | les pâtes
+il pasto | le repas
+il pesce | le poisson
+il piatto | le plat
+la pizza | la pizza
+il pomodoro | la tomate
+il pranzo | le déjeuner
+il riso | le riz
+la salute | la santé
+il succo | le jus
+la verdura | le légume

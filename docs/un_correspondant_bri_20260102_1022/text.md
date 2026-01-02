@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:42:28'
+genre: femme
 langue: Anglais (UK)
-prompt: Un correspondant britannique se présente : il parle de ses hobbies, décrit les membres de sa famille et explique sa vie à la campagne dans le Devon.
-resume: La vie à la campagne dans le Devon
-longueur: 200
+longueur: 216
 niveau: A2
-genre: homme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2026-01-02 10:22:52
+prompt: Un Correspondant Bri
+resume: Un Correspondant Bri
 ---
 
 ## Text

@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 07:45:05
+drapeau: 🇰🇷
+genre: femme
 langue: Coréen
-prompt: Présente un film coréen récent et explique de quoi il parle, pourquoi il est populaire et ce qu’il montre de la société coréenne.
-resume: Un film coréen récent
 longueur: 150
 niveau: A2
-genre: femme
-drapeau: 🇰🇷
+prompt: Présente un film coréen récent et explique de quoi il parle, pourquoi il est
+  populaire et ce qu’il montre de la société coréenne.
+resume: Un film coréen récent
 voix_variant: cor
-date_generation: 2025-12-18 07:45:05
 ---
-
 ## 텍스트
 
 한국 영화 "기생충"은 최근에 많은 인기를 얻었습니다. 이 영화는 2019년에 개봉했고, 봉준호 감독이 만들었습니다. "기생충"은 두 가족의 이야기를 다룹니다. 한 가족은 가난하고, 다른 가족은 부자입니다. 가난한 가족은 돈을 벌기 위해 부자 가족의 집에서 일을 시작합니다. 하지만, 여러 문제들이 생기면서 이야기가 복잡해집니다.
@@ -20,18 +20,38 @@ date_generation: 2025-12-18 07:45:05
 
 ## 어휘
 
-- **가난** → ganan (pauvreté)
-- **가족** → gajok (famille)
-- **감독** → gamdok (réalisateur)
-- **기생충** → gisaengchung (parasite)
-- **돈** → don (argent)
-- **문제** → munje (problème)
-- **부자** → buja (riche)
-- **빈부격차** → binbugyeokcha (écart de richesse)
-- **사회** → sahoe (société)
-- **생각** → saenggak (pensée)
-- **세계** → segye (monde)
-- **영화** → yeonghwa (film)
-- **오스카상** → oseukasang (Oscar)
-- **이야기** → iyagi (histoire)
-- **인기** → inki (popularité)
+가난 | ganan (pauvreté)
+가족 | gajok (famille)
+감독 | gamdok (réalisateur)
+개봉 | gaebong (sortie)
+관객 | gwangaek (spectateur)
+기생충 | gisaengchung (parasite)
+다루다 | daruda (traiter)
+다르다 | dareuda (être différent)
+돈 | don (argent)
+돕다 | dopda (aider)
+만들다 | mandeulda (créer)
+문제 | munje (problème)
+벌다 | beolda (gagner)
+보여주다 | boyeojuda (montrer)
+복잡하다 | bokjapada (être complexe)
+부자 | buja (riche)
+빈부격차 | binbugyeokcha (inégalités sociales)
+사람 | saram (personne)
+사랑받다 | salangbatda (être aimé)
+생각 | saenggak (pensée)
+생활 | saenghwal (vie)
+세계 | segye (monde)
+시작 | sijak (commencer)
+얻다 | eotda (obtenir)
+연기 | yeongi (interprétation)
+영화 | yeonghwa (film)
+오스카상 | oseukasang (Oscar)
+유명하다 | yumyeonghada (être célèbre)
+이야기 | iyagi (histoire)
+이유 | iyu (raison)
+이해 | ihae (compréhension)
+인기 | inki (popularité)
+좋아하다 | johahada (aimer)
+한국 | hanguk (Corée)
+흥미롭다 | heungmiropda (être intéressant)

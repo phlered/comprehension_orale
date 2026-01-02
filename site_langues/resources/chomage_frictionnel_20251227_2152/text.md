@@ -1,15 +1,14 @@
 ---
+date_generation: 2025-12-27 21:52:54
+drapeau: 🇩🇪
+genre: homme
 langue: Allemand
-prompt: Chômage frictionnel avec l'IA
-resume: Le chômage frictionnel et l'IA
 longueur: 400
 niveau: C2
-genre: homme
-drapeau: 🇩🇪
+prompt: Chômage frictionnel avec l'IA
+resume: Le chômage frictionnel et l'IA
 voix_variant: all
-date_generation: 2025-12-27 21:52:54
 ---
-
 ## Text
 
 Die moderne Arbeitswelt unterliegt einem ständigen Wandel, und mit der rasanten Entwicklung der Künstlichen Intelligenz (KI) gewinnen bestimmte Debatten an Brisanz, insbesondere jene um den sogenannten "friktionellen Arbeitslosigkeit". Unter friktioneller Arbeitslosigkeit versteht man die vorübergehende Arbeitslosigkeit, die durch den Wechsel von Arbeitnehmenden zwischen zwei Beschäftigungsverhältnissen entsteht. Diese Art der Arbeitslosigkeit ist oft unvermeidlich und wird als natürlicher Teil der Dynamik des Arbeitsmarktes betrachtet. Doch welche Rolle spielt hierbei die Künstliche Intelligenz?
@@ -26,22 +25,38 @@ In der Summe bleibt festzuhalten, dass friktionelle Arbeitslosigkeit und KI zwei
 
 ## Wortschatz
 
-- **der Algorithmus** → l'algorithme
-- **der Arbeitnehmende** → le salarié
-- **der Arbeitsmarkt** → le marché du travail
-- **die Arbeitswelt** → le marché du travail
-- **die Automatisierung** → l'automatisation
-- **die Bewerbung** → la candidature
-- **das Bildung** → l'éducation
-- **die Dynamik** → la dynamique
-- **die friktionelle Arbeitslosigkeit** → le chômage frictionnel
-- **die Gelegenheit** → l'opportunité
-- **die Gesellschaft** → la société
-- **die Herausforderung** → le défi
-- **der Job** → le poste
-- **die Künstliche Intelligenz** → l'intelligence artificielle
-- **das Lernen** → l'apprentissage
-- **die Politik** → la politique
-- **die Qualifikation** → la qualification
-- **der Unternehmen** → l'entreprise
-- **das Wissen** → le savoir
+der Algorithmus | l'algorithme
+der Anpassungsdruck | la pression d'adaptation
+die Anstrengung | l'effort
+der Arbeitnehmende | le salarié
+der Arbeitnehmer | le travailleur
+die Arbeitslosigkeit | le chômage
+die Arbeitswelt | le monde du travail
+die Automatisierung | l'automatisation
+das Berufsfeld | le domaine professionnel
+das Beschäftigungsverhältnis | la relation d'emploi
+die Bewerbung | la candidature
+das Bildungssystem | le système éducatif
+die Dauer | la durée
+die Debatte | le débat
+die Entwicklung | le développement
+die Fähigkeit | la compétence
+die Fähigkeit | la compétence
+die Gefahr | le danger
+die Gesellschaft | la société
+die Herausforderung | le défi
+die Künstliche Intelligenz | l'intelligence artificielle
+die Möglichkeit | la possibilité
+das Niedriglohnjob | l'emploi à bas salaire
+die Plattform | la plateforme
+die Politik | la politique
+die Qualifikation | la qualification
+die Stelle | l'emploi
+die Transformation | la transformation
+der Umgang | la gestion
+das Unternehmen | l'entreprise
+die Unterstützung | le soutien
+der Wandel | le changement
+der Wechsel | le changement
+die Weiterbildung | la formation continue
+das Wissen | la connaissance

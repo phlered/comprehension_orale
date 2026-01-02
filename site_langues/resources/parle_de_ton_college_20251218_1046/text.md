@@ -1,13 +1,11 @@
 ---
-langue: Espagnol (Espagne)
-prompt: Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.
-resume: Mon collège et mes matières étudiées
-longueur: 150
-niveau: A1
-genre: homme
-drapeau: 🇪🇸
-voix_variant: esp
-date_generation: 2025-12-18 10:46:56
+date_generation: '2026-01-02 10:42:18'
+genre: femme
+langue: Anglais (UK)
+longueur: 325
+niveau: C1
+prompt: Parle De Ton College
+resume: Parle De Ton College
 ---
 
 ## Texto

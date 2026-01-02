@@ -1,13 +1,11 @@
 ---
-langue: Espagnol (Espagne)
-prompt: Un collégien espagnol se présente : il dit son prénom, son âge, sa classe et sa nationalité.
-resume: Présentation d'un collégien espagnol
-longueur: 150
-niveau: A1
-genre: homme
-drapeau: 🇪🇸
-voix_variant: esp
-date_generation: 2025-12-18 10:40:03
+date_generation: '2026-01-02 10:42:21'
+genre: femme
+langue: Anglais (UK)
+longueur: 325
+niveau: C1
+prompt: Un Collegien Espagno
+resume: Un Collegien Espagno
 ---
 
 ## Texto

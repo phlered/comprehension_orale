@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-15 17:59:08
+genre: homme
 langue: Italien
-prompt: Dove si trova il campeggio
-resume: Il campeggio
 longueur: 150
 niveau: A1
-genre: homme
-date_generation: 2025-12-15 17:59:08
+prompt: Dove si trova il campeggio
+resume: Il campeggio
 ---
-
 ## Testo
 
 Il campeggio si trova vicino al lago. È un bel posto per passare le vacanze. Per arrivare al campeggio, prendi la strada a destra dopo il ponte. Ci sono molti alberi e fiori intorno. Il campeggio ha tende e bungalow. Le tende sono accoglienti e semplici. I bungalow sono piccoli ma confortevoli.
@@ -18,30 +17,38 @@ Il lago è perfetto per nuotare e prendere il sole. Puoi anche fare una passeggi
 
 ## Vocabolario
 
-- **accoglienti** → accueillants
-- **gli alberi** → les arbres
-- **le amicizie** → les amitiés
-- **i balli** → les danses
-- **i bambini** → les enfants
-- **le bevande** → les boissons
-- **i bungalow** → les bungalows
-- **camminare** → se promener
-- **il campeggio** → le camping
-- **il cibo** → la nourriture
-- **confortevoli** → confortables
-- **felice** → heureux
-- **i fiori** → les fleurs
-- **giocare** → jouer
-- **il lago** → le lac
-- **la musica** → la musique
-- **nuotare** → nager
-- **la piscina** → la piscine
-- **il ponte** → le pont
-- **il posto** → l'endroit
-- **il ristorante** → le restaurant
-- **semplici** → simples
-- **le stelle** → les étoiles
-- **la strada** → la route
-- **il supermercato** → le supermarché
-- **le tende** → les tentes
-- **le vacanze** → les vacances
+accogliente | accueillant
+il ballo | la danse
+il bambino | l’enfant
+bello | beau
+la bevanda | la boisson
+il bungalow | le bungalow
+il campeggio | le camping
+il cibo | la nourriture
+confortevole | confortable
+il fiore | la fleur
+giocare | jouer
+grande | grand
+il lago | le lac
+il luogo | le lieu
+l’albero | l’arbre
+l’amicizia | l’amitié
+la musica | la musique
+nuotare | nager
+la passeggiata | la promenade
+la pasta | les pâtes
+piccolo | petit
+la piscina | la piscine
+la pizza | la pizza
+il ponte | le pont
+il posto | le lieu
+il ristorante | le restaurant
+semplice | simple
+la sera | le soir
+il sole | le soleil
+la stella | l’étoile
+la strada | la route
+il supermercato | le supermarché
+la tenda | la tente
+la vacanza | les vacances
+vicino | proche

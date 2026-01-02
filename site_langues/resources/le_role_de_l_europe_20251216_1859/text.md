@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 18:59:30
+genre: femme
 langue: Allemand
-prompt: Le rôle de l'Europe dans le monde
-resume: Le rôle de l'Europe dans le monde
 longueur: 350
 niveau: C1
-genre: femme
-date_generation: 2025-12-16 18:59:30
+prompt: Le rôle de l'Europe dans le monde
+resume: Le rôle de l'Europe dans le monde
 ---
-
 ## Text
 
 Der Einfluss Europas in der globalen Arena: Eine Analyse
@@ -26,29 +25,38 @@ Zusammenfassend lässt sich feststellen, dass Europas Rolle in der Welt eine del
 
 ## Wortschatz
 
-- **die Arena** → l'arène
-- **die Bedeutung** → la signification
-- **der Brexit** → le Brexit
-- **der Dialog** → le dialogue
-- **der Einfluss** → l'influence
-- **die Europäische Union** → l'Union européenne
-- **der Frieden** → la paix
-- **die Förderung** → la promotion
-- **der Handel** → le commerce
-- **die Herausforderung** → le défi
-- **die Integration** → l'intégration
-- **die Klimapolitik** → la politique climatique
-- **die Krise** → la crise
-- **die Kultur** → la culture
-- **der Markt** → le marché
-- **das Mitglied** → le membre
-- **die Partnerschaft** → le partenariat
-- **politisch** → politique
-- **populistisch** → populiste
-- **die Umwelt** → l'environnement
-- **der Vermittler** → le médiateur
-- **die Verpflichtung** → l'engagement
-- **die Welt** → le monde
-- **wirtschaftlich** → économique
-- **die Zukunft** → l'avenir
-- **die Zusammenarbeit** → la coopération
+das Abkommen | l'accord
+der Austausch | l'échange
+die Bedeutung | l'importance
+der Bereich | le domaine
+die Bewegung | le mouvement
+der Brexit | le Brexit
+die Bühne | la scène
+der Dialog | le dialogue
+der Einfluss | l'influence
+der Frieden | la paix
+die Fähigkeit | la capacité
+der Handel | le commerce
+die Herausforderung | le défi
+das Interesse | l'intérêt
+die Investition | l'investissement
+der Konflikt | le conflit
+die Krise | la crise
+die Kunst | l'art
+der Markt | le marché
+das Modell | le modèle
+die Partnerschaft | le partenariat
+die Politik | la politique
+die Rolle | le rôle
+der Schutz | la protection
+die Strahlkraft | le rayonnement
+die Struktur | la structure
+die Supermacht | la superpuissance
+die Union | l'union
+der Vermittler | le médiateur
+die Welt | le monde
+die Währung | la monnaie
+das Ziel | l'objectif
+die Zivilisation | la civilisation
+die Zukunft | l'avenir
+die Zusammenarbeit | la coopération

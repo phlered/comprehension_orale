@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 09:22:19
+drapeau: 🇩🇪
+genre: femme
 langue: Allemand
-prompt: Présente une grande ville allemande visitée par les touristes et explique ce qui attire les visiteurs (monuments, ambiance, histoire).
-resume: Une grande ville allemande pour les touristes
 longueur: 150
 niveau: C1
-genre: femme
-drapeau: 🇩🇪
+prompt: Présente une grande ville allemande visitée par les touristes et explique
+  ce qui attire les visiteurs (monuments, ambiance, histoire).
+resume: Une grande ville allemande pour les touristes
 voix_variant: all
-date_generation: 2025-12-18 09:22:19
 ---
-
 ## Text
 
 Hamburg, die „Tor zur Welt“, zieht jährlich Millionen von Touristen in ihren Bann und überzeugt durch ihre Vielseitigkeit und den unvergleichlichen Charme. Die historische Speicherstadt, ein UNESCO-Weltkulturerbe, beeindruckt mit ihren majestätischen Backsteingebäuden und den malerischen Fleeten, die Zeugnis der glanzvollen Geschichte als Handelsmetropole ablegen. Nur wenige Schritte entfernt thront die Elbphilharmonie, ein architektonisches Meisterwerk, das nicht nur akustisch, sondern auch visuell ein Highlight darstellt. 
@@ -20,15 +20,38 @@ Die kosmopolitische Atmosphäre, das reiche kulturelle Erbe und die unverwechsel
 
 ## Wortschatz
 
-- **die Atmosphäre** → atmosphère
-- **das Backsteingebäude** → bâtiment en brique
-- **die Elbphilharmonie** → Philharmonie de l'Elbe
-- **das Erbe** → héritage
-- **die Gastfreundschaft** → hospitalité
-- **die Handelsmetropole** → métropole commerciale
-- **die Modelleisenbahn** → train miniature
-- **das Theater** → théâtre
-- **der Touristen** → touristes
-- **die Vielseitigkeit** → diversité
-- **der Viertel** → quartier
-- **das Weltkulturerbe** → patrimoine mondial
+die Atmosphäre | l'atmosphère
+das Backsteingebäude | le bâtiment en briques
+die Bar | le bar
+der Besucher | le visiteur
+der Charme | le charme
+die Coolness | la décontraction
+die Elbphilharmonie | la Philharmonie de l'Elbe
+das Erbe | le patrimoine
+das Erlebnis | l'expérience
+der Fleete | le bras de mer
+die Galerie | la galerie
+die Gastfreundschaft | l'hospitalité
+das Gebäude | le bâtiment
+die Geschichte | l'histoire
+die Handelsmetropole | la métropole commerciale
+das Highlight | le clou du spectacle
+der Kulturliebhaber | l'amateur de culture
+das Leben | la vie
+der Magnet | l'aimant
+das Meisterwerk | le chef-d'œuvre
+das Miniatur Wunderland | le pays des merveilles en miniature
+die Modelleisenbahn | le chemin de fer miniature
+die Moderne | la modernité
+das Museum | le musée
+das Repertoire | le répertoire
+die Speicherstadt | la ville des entrepôts
+St. Pauli | Saint-Pauli
+die Stadt | la ville
+das Theater | le théâtre
+der Touristen | le touriste
+die Tradition | la tradition
+das UNESCO-Weltkulturerbe | le patrimoine mondial de l'UNESCO
+die Vielseitigkeit | la diversité
+das Viertel | le quartier
+die Welt | le monde

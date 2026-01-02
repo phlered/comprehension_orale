@@ -1,13 +1,11 @@
 ---
-langue: Coréen
-prompt: Décris un concert de K-pop vu par un fan : l’ambiance, la musique, les chorégraphies et le lien avec le public.
-resume: Un concert de K-pop vu par un fan
-longueur: 150
+date_generation: '2026-01-02 10:41:48'
+genre: femme
+langue: Français
+longueur: 181
 niveau: A2
-genre: homme
-drapeau: 🇰🇷
-voix_variant: cor
-date_generation: 2025-12-18 07:47:19
+prompt: Decris Un Concert De
+resume: Decris Un Concert De
 ---
 
 ## 텍스트

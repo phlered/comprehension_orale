@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.
-resume: Tes amis et vos activités ensemble
-longueur: 150
-niveau: A1
+date_generation: '2026-01-02 10:42:15'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-18 11:01:08
+langue: Anglais (UK)
+longueur: 143
+niveau: A1
+prompt: 'Parle De Tes Amis : '
+resume: 'Parle De Tes Amis : '
 ---
 
 ## Text

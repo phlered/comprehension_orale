@@ -1,13 +1,13 @@
 ---
+date_generation: 2025-12-17 11:30:27
+genre: homme
 langue: Coréen
-prompt: Raconte une journée d’école qui ne s’est pas passée comme prévu, du point de vue d’un élève, avec un événement surprenant ou inattendu.
-resume: Une journée d'école inattendue
 longueur: 150
 niveau: A2
-genre: homme
-date_generation: 2025-12-17 11:30:27
+prompt: Raconte une journée d’école qui ne s’est pas passée comme prévu, du point
+  de vue d’un élève, avec un événement surprenant ou inattendu.
+resume: Une journée d'école inattendue
 ---
-
 ## 텍스트
 
 어제 학교에서 아주 특별한 일이 있었어요. 아침에는 보통처럼 일어났어요. 학교에 가고 싶지 않았지만, 어쩔 수 없이 갔어요. 첫 번째 수업은 수학이었어요. 수학 수업이 시작될 때 갑자기 불이 꺼졌어요. 모두 깜짝 놀랐어요. 선생님도 어떻게 해야 할지 몰랐어요.
@@ -18,20 +18,38 @@ date_generation: 2025-12-17 11:30:27
 
 ## 어휘
 
-- **갑자기** → gabjagi (soudainement)
-- **놀다** → nolda (s'amuser)
-- **놀라다** → nollada (être surpris)
-- **불** → bul (lumière)
-- **선생님** → seonsaengnim (professeur)
-- **수업** → sueop (cours)
-- **수학** → suhag (mathématiques)
-- **신나다** → sinnada (être excité)
-- **아이스크림** → aiseukeurim (glace)
-- **예상하다** → yesanghada (prévoir)
-- **운동장** → undongjang (terrain de sport)
-- **일어나다** → ireonada (se lever)
-- **재미있다** → jaemiitda (être amusant)
-- **전기** → jeongi (électricité)
-- **창문** → changmun (fenêtre)
-- **친구** → chingu (ami)
-- **학교** → hakgyo (école)
+갑자기 | gabjagi (soudainement)
+교실 | gyosil (classe)
+기다리다 | gidarida (attendre)
+꺼지다 | kkeojida (s'éteindre)
+나누다 | nanuda (distribuer)
+날씨 | nalssi (temps, météo)
+놀다 | nolda (jouer)
+놀라다 | nollada (être surpris)
+놀랍다 | nollapda (étonnant)
+들어오다 | deureooda (revenir)
+만나다 | mannada (rencontrer)
+맑다 | maltda (clair)
+먹다 | meokda (manger)
+모르다 | moreuda (ne pas savoir)
+밖 | bakk (dehors)
+보내다 | bonaeda (passer, consacrer)
+불 | bul (lumière)
+선생님 | seonsaengnim (professeur)
+수업 | sueop (cours)
+수학 | suhag (mathématiques)
+시간 | sigan (temps)
+시작되다 | sijakdoeda (commencer)
+신나다 | sinnada (excité)
+아이스크림 | aiseukeurim (glace)
+아침 | achim (matin)
+예상하다 | yesanghada (prévoir)
+운동장 | undongjang (terrain de sport)
+이야기하다 | iyagihada (discuter)
+일 | il (événement)
+일어나다 | ireonada (se lever)
+재미있다 | jaemiitda (amusant)
+전기 | jeongi (électricité)
+창문 | changmun (fenêtre)
+친구 | chingu (ami)
+학교 | hakgyo (école)

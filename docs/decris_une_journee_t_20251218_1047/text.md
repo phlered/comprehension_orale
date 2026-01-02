@@ -1,13 +1,11 @@
 ---
-langue: Espagnol (Espagne)
-prompt: Décris une journée typique : le matin, l’après-midi et le soir.
-resume: Une journée typique
-longueur: 150
-niveau: A1
+date_generation: '2026-01-02 10:41:52'
 genre: femme
-drapeau: 🇪🇸
-voix_variant: esp
-date_generation: 2025-12-18 10:47:11
+langue: Anglais (UK)
+longueur: 319
+niveau: B2
+prompt: Decris Une Journee T
+resume: Decris Une Journee T
 ---
 
 ## Texto

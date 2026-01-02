@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:41:40'
+genre: femme
 langue: Néerlandais
-prompt: Changer de gare à Paris : prendre le métro d'une gare à l'autre
-resume: Changer de gare à Paris par le métro
-longueur: 150
+longueur: 153
 niveau: A1
-genre: homme
-drapeau: 🇳🇱
-voix_variant: nl
-date_generation: 2026-01-01 16:52:24
+prompt: Changer De Gare À Pa
+resume: Changer De Gare À Pa
 ---
 
 ## Tekst

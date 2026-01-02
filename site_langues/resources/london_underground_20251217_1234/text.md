@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: London Underground: history and daily life
-resume: L'histoire et la vie quotidienne du métro de Londres
-longueur: 110
-niveau: A2
+date_generation: '2026-01-02 10:42:10'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-17 12:34:22
+langue: Anglais (UK)
+longueur: 110
+niveau: A1
+prompt: 'London Underground: '
+resume: 'London Underground: '
 ---
 
 ## Text
@@ -16,22 +14,38 @@ The London Underground is a famous subway system. It opened in 1863, making it t
 
 ## Vocabulary
 
-- **crowded** → bondé
-- **to explore** → explorer
-- **fast** → rapide
-- **to go** → aller
-- **lines** → lignes
-- **map** → carte
-- **oldest** → le plus ancien
-- **to open** → ouvrir
-- **passengers** → passagers
-- **places** → endroits
-- **school** → école
-- **signs** → panneaux
-- **station** → station
-- **subway** → métro
-- **system** → système
-- **to travel** → voyager
-- **tunnel** → tunnel
-- **to use** → utiliser
-- **work** → travail
+to call | appeler
+city | ville
+color | couleur
+crowded | bondé
+day | jour
+evening | soir
+to explore | explorer
+fast | rapide
+to find | trouver
+hour | heure
+line | ligne
+map | carte
+morning | matin
+oldest | plus ancien
+to open | ouvrir
+passenger | passager
+people | gens
+place | endroit
+rush | affluence
+school | école
+shape | forme
+sign | panneau
+station | station
+subway | métro
+system | système
+train | train
+to travel | voyager
+tube | tube
+tunnel | tunnel
+Underground | métro
+to use | utiliser
+to visit | visiter
+way | moyen
+work | travail
+world | monde

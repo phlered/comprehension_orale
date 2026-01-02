@@ -1,13 +1,11 @@
 ---
-langue: Espagnol (Espagne)
-prompt: Parle de tes amis : combien tu en as et ce que vous aimez faire ensemble.
-resume: Mes amis et nos activités ensemble
-longueur: 150
-niveau: A1
-genre: homme
-drapeau: 🇪🇸
-voix_variant: esp
-date_generation: 2025-12-18 10:48:51
+date_generation: '2026-01-02 10:42:12'
+genre: femme
+langue: Anglais (UK)
+longueur: 311
+niveau: B2
+prompt: 'Parle De Tes Amis : '
+resume: 'Parle De Tes Amis : '
 ---
 
 ## Texto

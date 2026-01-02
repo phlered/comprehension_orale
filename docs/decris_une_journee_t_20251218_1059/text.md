@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: Décris une journée typique : le matin, l’après-midi et le soir.
-resume: Une journée typique
-longueur: 150
-niveau: A1
+date_generation: '2026-01-02 10:41:54'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-18 10:59:43
+langue: Anglais (UK)
+longueur: 159
+niveau: A1
+prompt: Decris Une Journee T
+resume: Decris Une Journee T
 ---
 
 ## Text

@@ -1,14 +1,15 @@
 ---
-langue: Allemand
-prompt: Écrire un court essai analysant le rôle des emblèmes nationaux (hymne, drapeau) et leur utilité ou non pour créer un sentiment d'unité dans des pays germanophones caractérisés par un système fédéral (comme l'Allemagne, l'Autriche ou la Suisse).
-resume: Le rôle des emblèmes nationaux dans l'unité
-longueur: 250
-niveau: B2
-voix: femme
 axe: Axe 1. Représentation de soi et rapport à autrui
 date_generation: 2025-12-10 12:53:03
+langue: Allemand
+longueur: 250
+niveau: B2
+prompt: Écrire un court essai analysant le rôle des emblèmes nationaux (hymne, drapeau)
+  et leur utilité ou non pour créer un sentiment d'unité dans des pays germanophones
+  caractérisés par un système fédéral (comme l'Allemagne, l'Autriche ou la Suisse).
+resume: Le rôle des emblèmes nationaux dans l'unité
+voix: femme
 ---
-
 ## Text
 
 Die Rolle von nationalen Symbolen wie Hymnen und Flaggen in föderalen Ländern wie Deutschland, Österreich und der Schweiz ist ein faszinierendes Thema. Diese Symbole dienen oft als Bindeglieder innerhalb eines föderalen Systems, das durch regionale Unterschiede gekennzeichnet ist. In Deutschland beispielsweise hebt das Schwarz-Rot-Gold der Flagge die gemeinsamen Werte von Freiheit und Demokratie hervor, während die Nationalhymne „Das Lied der Deutschen“ eine Befürwortung von Einheit und Recht repräsentiert. Diese Symbole können helfen, ein Gefühl der nationalen Zugehörigkeit zu stärken, obwohl sie historisch gesehen auch kontrovers diskutiert wurden.
@@ -21,28 +22,38 @@ Dennoch gibt es auch kritische Stimmen, die die Bedeutung solcher Symbole hinter
 
 ## Wortschatz
 
-- **das Symbol** → le symbole
-- **die Hymne** → l'hymne
-- **die Flagge** → le drapeau
-- **das Land** → le pays
-- **das System** → le système
-- **die Einheit** → l'unité
-- **der Unterschied** → la différence
-- **die Freiheit** → la liberté
-- **die Demokratie** → la démocratie
-- **die Zugehörigkeit** → l'appartenance
-- **die Kontroverse** → la controverse
-- **das Bundesland** → l'état fédéral
-- **die Errungenschaft** → l'accomplissement
-- **die Erfahrung** → l'expérience
-- **die Kohäsion** → la cohésion
-- **die Neutralität** → la neutralité
-- **die Solidarität** → la solidarité
-- **die Stimme** → la voix
-- **die Bedeutung** → l'importance
-- **die Lösung** → la solution
-- **die Fragmentierung** → la fragmentation
-- **die Identität** → l'identité
-- **das Gefühl** → le sentiment
-- **die Herausforderung** → le défi
-- **unabhängig** → indépendant
+das Bundesland | le land (région)
+die Demokratie | la démocratie
+die Differenz | la différence
+die Diskussion | la discussion
+die Einheit | l'unité
+die Einigkeit | l'unité
+die Erfahrung | l'expérience
+die Errungenschaft | la réalisation
+die Feierlichkeit | la célébration
+die Flagge | le drapeau
+die Fragmentierung | la fragmentation
+das föderale System | le système fédéral
+der Geist | l'esprit
+die Herausforderung | le défi
+die Herausforderung | le défi
+die Hymne | l'hymne
+die Identität | l'identité
+der Kanton | le canton
+die Kohäsion | la cohésion
+kontrovers | controversé
+das Kreuz | la croix
+kritisch | critique
+die Nationalhymne | l'hymne national
+die Neutralität | la neutralité
+das Recht | le droit
+die Solidarität | la solidarité
+die Sprachregion | la région linguistique
+der Staat | l'état
+das Symbol | le symbole
+die Unabhängigkeit | l'indépendance
+der Unterschied | la différence
+der Vertreter | le représentant
+die Widerstandsfähigkeit | la résilience
+die Zugehörigkeit | l'appartenance
+das Zusammengehörigkeitsgefühl | le sentiment d'appartenance

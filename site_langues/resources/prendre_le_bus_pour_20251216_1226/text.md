@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 12:26:35
+genre: homme
 langue: Néerlandais
-prompt: Prendre le bus pour aller au travail
-resume: Prendre le bus pour aller au travail
 longueur: 150
 niveau: A1
-genre: homme
-date_generation: 2025-12-16 12:26:35
+prompt: Prendre le bus pour aller au travail
+resume: Prendre le bus pour aller au travail
 ---
-
 ## Tekst
 
 Elke ochtend neem ik de bus naar mijn werk. De bushalte is dichtbij mijn huis. Om acht uur 's ochtends sta ik bij de halte. De bus is vaak op tijd. Soms is de bus een beetje laat, maar dat is oké.
@@ -20,11 +19,38 @@ De bus nemen is handig en snel. Ik vind het fijn dat ik niet hoef te rijden. Zo 
 
 ## Woordenschat
 
-- **het boek** → le livre
-- **de bus** → le bus
-- **de bushalte** → l'arrêt de bus
-- **de halte** → l'arrêt
-- **handig** → pratique
-- **de muziek** → la musique
-- **de rit** → le trajet
-- **het werk** → le travail
+beginnen | commencer
+het boek | le livre
+de bus | le bus
+de bushalte | l'arrêt de bus
+de dag | la journée
+de halte | l'arrêt
+handig | pratique
+hoeven | avoir besoin
+het huis | la maison
+het kantoor | le bureau
+komen | venir
+laat | tard
+lezen | lire
+lopen | marcher
+luisteren | écouter
+de manier | la manière
+de mens | la personne
+de minuut | la minute
+moeten | devoir
+de muziek | la musique
+de ochtend | le matin
+praten | parler
+reizen | voyager
+rijden | conduire
+de rit | le trajet
+rustig | calmement
+slapen | dormir
+snel | rapide
+stappen | monter/débarquer
+de tijd | le temps
+het uur | l'heure
+vinden | trouver
+de vriendin | l'amie
+het werk | le travail
+zien | voir

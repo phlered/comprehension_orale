@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-22 09:44:34
+drapeau: 🇬🇧
+genre: femme
 langue: Anglais (UK)
-prompt: Compare un Noël traditionnel en Angleterre et un Noël passé à l’étranger (Espagne ou Caraïbes).
-resume: Noël traditionnel en Angleterre et à l'étranger
 longueur: 150
 niveau: B2
-genre: femme
-drapeau: 🇬🇧
+prompt: Compare un Noël traditionnel en Angleterre et un Noël passé à l’étranger (Espagne
+  ou Caraïbes).
+resume: Noël traditionnel en Angleterre et à l'étranger
 voix_variant: eng
-date_generation: 2025-12-22 09:44:34
 ---
-
 ## Text
 
 Celebrating Christmas in England is a blend of tradition and festive spirit. Typically, the holiday revolves around a cozy family gathering. Homes are adorned with twinkling lights and lush, green Christmas trees. On December 25th, families come together to savor a lavish feast featuring roasted turkey, stuffing, and the beloved Christmas pudding. Children excitedly open presents while the Queen's Speech is a customary midday highlight.
@@ -20,22 +20,38 @@ Both experiences have their charm: England’s nostalgic customs and Spain’s v
 
 ## Vocabulary
 
-- **to celebrate** → célébrer
-- **charms** → charmes
-- **Christmas** → Noël
-- **community** → communauté
-- **December** → décembre
-- **dessert** → dessert
-- **event** → événement
-- **family** → famille
-- **feast** → festin
-- **home** → maison
-- **to host** → organiser
-- **joy** → joie
-- **meal** → repas
-- **Midnight Mass** → messe de minuit
-- **to present** → présenter
-- **to savor** → savourer
-- **seafood** → fruits de mer
-- **tradition** → tradition
-- **tradition** → tradition
+to celebrate | célébrer
+to celebrate | célébrer
+charm | charme
+children | enfants
+Christmas | Noël
+to come | venir
+community | communauté
+custom | coutume
+December | décembre
+dessert | dessert
+England | Angleterre
+eve | veille
+events | événements
+family | famille
+feast | festin
+festive | festif
+gathering | rassemblement
+home | maison
+joy | joie
+lights | lumières
+locals | locaux
+mass | messe
+presents | cadeaux
+pudding | pudding
+to savor | savourer
+seafood | fruits de mer
+Spain | Espagne
+speech | discours
+spirit | esprit
+stuffing | farce
+tradition | tradition
+tree | arbre
+turkey | dinde
+unique | unique
+warmth | chaleur

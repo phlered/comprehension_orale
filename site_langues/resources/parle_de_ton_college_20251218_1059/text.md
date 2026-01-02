@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: Parle de ton collège : les matières que tu étudies, ton emploi du temps et ta matière préférée.
-resume: Mon collège et mes matières étudiées
-longueur: 150
-niveau: A1
+date_generation: '2026-01-02 10:42:20'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-18 10:59:29
+langue: Anglais (UK)
+longueur: 148
+niveau: A1
+prompt: Parle De Ton College
+resume: Parle De Ton College
 ---
 
 ## Text

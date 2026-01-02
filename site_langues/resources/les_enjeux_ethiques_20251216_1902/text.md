@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 19:02:40
+genre: homme
 langue: Allemand
-prompt: Les enjeux éthiques de la biotechnologie
-resume: Les enjeux éthiques de la biotechnologie
 longueur: 400
 niveau: C2
-genre: homme
-date_generation: 2025-12-16 19:02:40
+prompt: Les enjeux éthiques de la biotechnologie
+resume: Les enjeux éthiques de la biotechnologie
 ---
-
 ## Text
 
 Die Biotechnologie ist unzweifelhaft ein Feld, das in den letzten Jahrzehnten enorme Fortschritte gemacht hat und weiterhin große Versprechungen für die Zukunft birgt. Doch mit dem beeindruckenden Potenzial dieser wissenschaftlichen Disziplin gehen auch tiefgreifende ethische Fragestellungen einher, die von der Gesellschaft dringend adressiert werden müssen.
@@ -24,22 +23,38 @@ Abschließend bleibt festzuhalten, dass die Biotechnologie zweifellos ein mächt
 
 ## Wortschatz
 
-- **die Biotechnologie** → la biotechnologie
-- **der Fortschritt** → le progrès
-- **die Fortschritte** → les progrès
-- **das Gene-Drifting** → la dérive génétique
-- **das Genom** → le génome
-- **die Gerechtigkeit** → la justice
-- **die Grenze** → la limite
-- **die Heilung** → la guérison
-- **die Identität** → l'identité
-- **die Individualität** → l'individualité
-- **die Innovation** → l'innovation
-- **das Klonen** → le clonage
-- **die Manipulation** → la manipulation
-- **das Risiko** → le risque
-- **der Umweltschutz** → la protection de l'environnement
-- **die Verantwortung** → la responsabilité
-- **der Wissenschaftler** → le scientifique
-- **der Zugriff** → l'accès
-- **das Ökosystem** → l'écosystème
+das Baby | le bébé
+die Bevölkerung | la population
+die Biotechnologie | la biotechnologie
+die Diskussion | la discussion
+der Eingriff | l'intervention
+die Erbkrankheit | la maladie héréditaire
+der Fortschritt | le progrès
+die Frage | la question
+das Genom | le génome
+die Gentechnik | la génie génétique
+die Gerechtigkeit | la justice
+die Gesellschaft | la société
+die Grenze | la limite
+die Heilung | la guérison
+die Identität | l'identité
+die Individualität | l'individualité
+das Klonen | le clonage
+die Konsequenz | la conséquence
+das Land | le pays
+die Manipulation | la manipulation
+der Mensch | l'homme
+die Norm | la norme
+der Nutzen | le bénéfice
+das Risiko | le risque
+die Rolle | le rôle
+die Spezies | l'espèce
+die Technologie | la technologie
+das Tier | l'animal
+der Umweltschutz | la protection de l'environnement
+die Verantwortung | la responsabilité
+das Werkzeug | l'outil
+der Zugang | l'accès
+die Zukunft | l'avenir
+die Zusammenarbeit | la collaboration
+das Ökosystem | l'écosystème

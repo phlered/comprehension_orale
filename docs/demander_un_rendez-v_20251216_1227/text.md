@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 12:27:38
+genre: femme
 langue: Néerlandais
-prompt: Demander un rendez-vous chez le médecin
-resume: Demander un rendez-vous médical
 longueur: 150
 niveau: A1
-genre: femme
-date_generation: 2025-12-16 12:27:38
+prompt: Demander un rendez-vous chez le médecin
+resume: Demander un rendez-vous médical
 ---
-
 ## Tekst
 
 Ik ben Jan. Ik ben ziek. Ik wil een afspraak bij de dokter maken. Ik bel de dokterspraktijk. De assistent antwoordt. 
@@ -34,10 +33,38 @@ Ik ben blij. Ik ga naar de dokter. De dokter kan mij helpen. Ik hoop snel beter 
 
 ## Woordenschat
 
-- **de afspraak** → le rendez-vous
-- **de assistent** → l'assistant
-- **bellen** → appeler
-- **de dokter** → le médecin
-- **het identiteitsbewijs** → la pièce d'identité
-- **de koorts** → la fièvre
-- **het uur** → l'heure
+het advies | le conseil
+de afspraak | le rendez-vous
+de afspraak | le rendez-vous
+de afspraak | le rendez-vous
+het antwoord | la réponse
+de assistent | l'assistant
+de bevestiging | la confirmation
+het bezoek | la visite
+de dokter | le médecin
+de dokterspraktijk | le cabinet médical
+het gesprek | la conversation
+de gezondheid | la santé
+de groet | la salutation
+de hoop | l'espoir
+de hulp | l'aide
+het identiteitsbewijs | la carte d'identité
+de klacht | la plainte
+de koorts | la fièvre
+het lichaam | le corps
+het moment | le moment
+de morgen | le matin
+de naam | le nom
+de patiënt | le patient
+de pijn | la douleur
+het probleem | le problème
+de rust | le repos
+het telefoontje | l'appel téléphonique
+de thee | le thé
+de tijd | le temps
+het uur | l'heure
+de verbetering | l'amélioration
+de volledigheid | la totalité
+het wachten | l'attente
+de ziekte | la maladie
+de zorg | le soin

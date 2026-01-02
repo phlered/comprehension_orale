@@ -1,13 +1,11 @@
 ---
-langue: Anglais (UK)
-prompt: Les marché de Noël en Europe : une expérience à vivre pour les familles britanniques.
-resume: Les marchés de Noël en Europe
-longueur: 300
-niveau: B2
+date_generation: '2026-01-02 10:42:01'
 genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2026-01-02 10:04:43
+langue: Anglais (UK)
+longueur: 329
+niveau: C1
+prompt: Les Marche De NoëL E
+resume: Les Marche De NoëL E
 ---
 
 ## Text

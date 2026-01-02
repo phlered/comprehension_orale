@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-16 19:00:09
+genre: homme
 langue: Allemand
-prompt: La protection des données personnelles
-resume: La protection des données personnelles
 longueur: 350
 niveau: C1
-genre: homme
-date_generation: 2025-12-16 19:00:09
+prompt: La protection des données personnelles
+resume: La protection des données personnelles
 ---
-
 ## Text
 
 Der Schutz personenbezogener Daten ist in der modernen digitalen Gesellschaft zu einer der drängendsten Herausforderungen geworden. Während die digitale Transformation unbestreitbar zahlreiche Vorteile mit sich bringt, ist sie gleichzeitig mit erheblichen Risiken für unsere Privatsphäre verbunden. In einer Welt, in der Informationen als das neue Gold gelten, ist der bewusste und sorgfältige Umgang mit Daten von entscheidender Bedeutung.
@@ -22,29 +21,38 @@ Abschließend lässt sich sagen, dass der Schutz personenbezogener Daten in der 
 
 ## Wortschatz
 
-- **das Bewusstsein** → la prise de conscience
-- **die Daten** → les données
-- **der Diebstahl** → le vol
-- **die Erfassung** → la collecte
-- **die Freiheit** → la liberté
-- **die Gesellschaft** → la société
-- **die Herausforderung** → le défi
-- **die Herausforderung** → le défi
-- **das Imperativ** → l'impératif
-- **die Information** → l'information
-- **die Innovation** → l'innovation
-- **die Maßnahme** → la mesure
-- **der Missbrauch** → l'abus
-- **der Nutzer** → l'utilisateur
-- **die Privatsphäre** → la vie privée
-- **der Schutz** → la protection
-- **die Sicherheit** → la sécurité
-- **die Speicherung** → le stockage
-- **der Umgang** → la gestion
-- **das Unternehmen** → l'entreprise
-- **die Verantwortung** → la responsabilité
-- **der Verbraucher** → le consommateur
-- **die Verordnung** → le règlement
-- **die Verpflichtung** → l'obligation
-- **das Verständnis** → la compréhension
-- **die Werbung** → la publicité
+der Betrug | la fraude
+die Cyberkriminalität | la cybercriminalité
+die Daten | les données
+der Diebstahl | le vol
+die Erfassung | la collecte
+die Freiheit | la liberté
+die Fußspuren | les traces
+die Gefahr | le danger
+die Gesellschaft | la société
+die Herausforderung | le défi
+der Imperativ | l'impératif
+die Information | l'information
+die Information | l'information
+die Maßnahme | la mesure
+der Missbrauch | l'abus
+der Nutzer | l'utilisateur
+das Passwort | le mot de passe
+die Privatsphäre | la vie privée
+das Recht | le droit
+das Risiko | le risque
+der Schutz | la protection
+die Software | le logiciel
+die Speicherung | le stockage
+der Umgang | la gestion
+die Umgebung | l'environnement
+die Umsetzung | la mise en œuvre
+das Unternehmen | l'entreprise
+die Verantwortung | la responsabilité
+die Verantwortung | la responsabilité
+der Verbraucher | le consommateur
+die Verordnung | le règlement
+die Verpflichtung | l'obligation
+das Verständnis | la compréhension
+die Werbung | la publicité
+das Wissen | la connaissance

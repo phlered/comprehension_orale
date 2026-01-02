@@ -1,15 +1,15 @@
 ---
+date_generation: 2025-12-18 07:48:27
+drapeau: 🇰🇷
+genre: homme
 langue: Coréen
-prompt: Présente un lieu culturel en Corée du Sud (cinéma, quartier de Séoul, salle de concert) et explique pourquoi il est important pour la culture coréenne moderne.
-resume: Un lieu culturel en Corée du Sud
 longueur: 150
 niveau: A2
-genre: homme
-drapeau: 🇰🇷
+prompt: Présente un lieu culturel en Corée du Sud (cinéma, quartier de Séoul, salle
+  de concert) et explique pourquoi il est important pour la culture coréenne moderne.
+resume: Un lieu culturel en Corée du Sud
 voix_variant: cor
-date_generation: 2025-12-18 07:48:27
 ---
-
 ## 텍스트
 
 홍대는 서울에서 매우 인기 있는 장소입니다. 홍대는 특히 젊은 사람들 사이에서 유명합니다. 이곳은 많은 예술과 음악이 있는 문화적인 장소입니다. 홍대 거리에는 다양한 카페, 레스토랑 그리고 상점이 있습니다. 또한, 길거리 공연도 자주 열립니다. 
@@ -22,19 +22,39 @@ date_generation: 2025-12-18 07:48:27
 
 ## 어휘
 
-- **거리** → geori (rue)
-- **공연** → gongyeon (spectacle)
-- **레스토랑** → resteorang (restaurant)
-- **방문하다** → bangmunhada (visiter)
-- **상점** → sangjeom (magasin)
-- **서울** → Seoul (Séoul)
-- **스타일** → seutail (style)
-- **예술** → yesul (art)
-- **음악** → eumak (musique)
-- **젊은** → jeolmeun (jeune)
-- **창의적** → chang-uijeok (créatif)
-- **카페** → kape (café)
-- **트렌드** → teuraendeu (tendance)
-- **패션** → paesyeon (mode)
-- **홍대** → Hongdae (Hongdae)
-- **활기차다** → hwalgichada (animé)
+거리 | geori (rue)
+공연 | gongyeon (spectacle)
+기회 | gihoe (opportunité)
+독특한 | dokteukhan (unique)
+레스토랑 | reseutorang (restaurant)
+마술 | masul (magie)
+문화 | munhwa (culture)
+문화적인 | munhwajeokin (culturel)
+방문해야 | bangmunhaeya (devoir visiter)
+버스커들 | beoseukeodeul (artistes de rue)
+사람들 | saramdeul (personnes)
+상점 | sangjeom (magasin)
+서울 | seoul (Séoul)
+스타일 | seutail (style)
+시도하는 | sidohaneun (tenter)
+예술 | yesul (art)
+예술가 | yesulga (artiste)
+옷 | ot (vêtements)
+유명합니다 | yumyeonghamnida (être célèbre)
+음악 | eumak (musique)
+음악 | eumak (musique)
+이해하고 | ihaehago (comprendre)
+인기 | ingi (popularité)
+장소 | jangso (lieu)
+젊은 | jeolmeun (jeunes)
+중요합니다 | jungyohamnida (être important)
+창의적 | chang-uijeok (créatif)
+춤 | chum (danse)
+카페 | kape (café)
+트렌드 | teuraendeu (tendance)
+패션 | paesyeon (mode)
+한국 | hanguk (Corée)
+현대 | hyeondae (moderne)
+홍대 | hongdae (Hongdae)
+활기차고 | hwalgichago (vivant)
+활동 | hwaldong (activité)

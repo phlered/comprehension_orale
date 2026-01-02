@@ -1,13 +1,12 @@
 ---
+date_generation: 2025-12-15 18:02:35
+genre: homme
 langue: Italien
-prompt: I colori
-resume: Les couleurs
 longueur: 150
 niveau: A1
-genre: homme
-date_generation: 2025-12-15 18:02:35
+prompt: I colori
+resume: Les couleurs
 ---
-
 ## Testo
 
 I colori sono molto belli. Il rosso è un colore vivace. Le mele e i pomodori sono rossi. Il blu è il colore del cielo e del mare. Mi piace il blu perché è calmo. 
@@ -22,31 +21,38 @@ Mi piace disegnare con tanti colori. Uso la matita rossa, il pennarello verde e 
 
 ## Vocabolario
 
-- **gli alberi** → les arbres
-- **le arance** → les oranges
-- **il bianco** → le blanc
-- **il blu** → le bleu
-- **i colori** → les couleurs
-- **disegnare** → dessiner
-- **i fiori** → les fleurs
-- **il giallo** → le jaune
-- **l'arancione** → l'orange
-- **l'erba** → l'herbe
-- **la lavanda** → la lavande
-- **il mare** → la mer
-- **la matita** → le crayon
-- **le mele** → les pommes
-- **il mondo** → le monde
-- **la natura** → la nature
-- **il nero** → le noir
-- **la neve** → la neige
-- **la notte** → la nuit
-- **le nuvole** → les nuages
-- **la penna** → le stylo
-- **il pennarello** → le feutre
-- **i pomodori** → les tomates
-- **il rosso** → le rouge
-- **il sole** → le soleil
-- **il verde** → le vert
-- **il viola** → le violet
-- **le zucche** → les citrouilles
+gli alberi | les arbres
+le arance | les oranges
+bello | beau
+il bianco | le blanc
+il blu | le bleu
+il cielo | le ciel
+il colore | la couleur
+i colori | les couleurs
+il disegno | le dessin
+i fiori | les fleurs
+il giallo | le jaune
+l'arancione | l'orange
+l'erba | l'herbe
+la lavanda | la lavande
+il mare | la mer
+la matita | le crayon
+le mele | les pommes
+misterioso | mystérieux
+il mondo | le monde
+la natura | la nature
+il nero | le noir
+la neve | la neige
+la notte | la nuit
+le nuvole | les nuages
+la penna | le stylo
+il pennarello | le feutre
+i pomodori | les tomates
+il preferito | le préféré
+il rosso | le rouge
+il sole | le soleil
+il tuo | ton/votre
+il verde | le vert
+il viola | le violet
+vivace | vif/vivante
+le zucche | les citrouilles

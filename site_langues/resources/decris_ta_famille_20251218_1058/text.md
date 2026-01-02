@@ -1,13 +1,11 @@
 ---
+date_generation: '2026-01-02 10:41:48'
+genre: femme
 langue: Anglais (UK)
-prompt: Décris ta famille : les parents, les frères et sœurs, et explique qui tu aimes passer du temps avec.
-resume: Ma famille et mes relations familiales
 longueur: 150
 niveau: A1
-genre: femme
-drapeau: 🇬🇧
-voix_variant: eng
-date_generation: 2025-12-18 10:59:03
+prompt: 'Decris Ta Famille : '
+resume: 'Decris Ta Famille : '
 ---
 
 ## Text

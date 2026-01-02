@@ -2,49 +2,58 @@
 langue: Italien
 prompt: Les réseaux sociaux dans la vie des adolescents : explique leur importance au quotidien et évoque à la fois les aspects positifs et les risques, en faisant référence à un pays anglophone.
 resume: Les réseaux sociaux et les adolescents
-longueur: 150
+longueur: 200
 niveau: A2
 genre: homme
-date_generation: 2025-12-17 11:27:22
+drapeau: 🇮🇹
+voix_variant: it
+date_generation: 2026-01-02 10:11:38
 ---
 
 ## Testo
 
-I social network sono molto importanti nella vita degli adolescenti. Ogni giorno, i giovani usano piattaforme come Instagram, Facebook e TikTok per comunicare e condividere momenti con gli amici. Negli Stati Uniti, per esempio, molti teenager passano molto tempo sui social network. 
+I social media sono molto importanti nella vita quotidiana degli adolescenti. In un paese come gli Stati Uniti, molti ragazzi usano piattaforme come Instagram, Snapchat e TikTok ogni giorno. Questi social media aiutano a connettersi con amici e familiari. Possono condividere foto, video e messaggi velocemente.
 
-Un aspetto positivo dei social network è che permettono di rimanere in contatto con persone lontane. Gli adolescenti possono scoprire nuove idee e seguire i loro artisti preferiti. Inoltre, i social media offrono opportunità per esprimere la propria creatività, pubblicando foto e video.
+Ci sono molti aspetti positivi. Ad esempio, grazie ai social media, gli adolescenti possono scoprire notizie importanti e imparare nuove cose. Inoltre, i social media permettono di esprimere la propria creatività. Molti ragazzi condividono disegni, musica e pensieri personali.
 
-Tuttavia, ci sono anche dei rischi. A volte i social network possono causare dipendenza e gli adolescenti possono passare troppo tempo online, trascurando lo studio e la vita reale. C'è anche il pericolo del cyberbullismo, dove le persone possono scrivere cose cattive e ferire i sentimenti degli altri.
+Tuttavia, ci sono anche rischi. Passare troppo tempo sui social media può influenzare la salute mentale. Alcuni adolescenti sentono pressione per avere molti "mi piace" o commenti favorevoli. Questo può causare ansia o stress. Inoltre, c’è il rischio di incontrare persone sconosciute o pericolose online. È importante stare attenti e proteggere le proprie informazioni personali.
 
-In conclusione, i social network sono una parte importante della vita quotidiana degli adolescenti, con aspetti sia positivi che negativi. È importante usare i social media in modo responsabile.
+In conclusione, i social media sono strumenti potenti nella vita degli adolescenti. Offrono molte opportunità ma anche alcune sfide. È fondamentale usarli in modo sicuro e responsabile. I genitori e gli insegnanti possono aiutare i ragazzi a comprendere come bilanciare i vantaggi e i rischi dei social media.
 
 ## Vocabolario
 
+- **i "mi piace"** → les "j'aime"
 - **gli adolescenti** → les adolescents
-- **la conclusione** → la conclusion
+- **il commento** → le commentaire
 - **la creatività** → la créativité
-- **il cyberbullismo** → le cyberharcèlement
-- **la dipendenza** → la dépendance
+- **il disegno** → le dessin
+- **la famiglia** → la famille
 - **la foto** → la photo
+- **il genitore** → le parent
 - **il giorno** → le jour
-- **il giovane** → le jeune
+- **Instagram** → Instagram
 - **l'amico** → l'ami
-- **l'artista** → l'artiste
+- **l'ansia** → l'anxiété
 - **l'aspetto** → l'aspect
-- **l'idea** → l'idée
+- **l'insegnante** → l'enseignant
 - **l'opportunità** → l'opportunité
-- **modi** → façons
-- **il pericolo** → le danger
+- **il messaggio** → le message
+- **la musica** → la musique
+- **notizie** → les nouvelles
+- **nuovo** → nouveau
+- **il paese** → le pays
+- **il pensiero** → la pensée
 - **la persona** → la personne
 - **la piattaforma** → la plateforme
-- **responsabile** → responsable
+- **la pressione** → la pression
+- **i ragazzi** → les jeunes
 - **il rischio** → le risque
-- **il sentimento** → le sentiment
-- **i social** → les réseaux
-- **lo Stato** → l'État
-- **lo studio** → l'étude
-- **il teenager** → l'adolescent
-- **il tempo** → le temps
+- **la salute mentale** → la santé mentale
+- **la sicurezza** → la sécurité
+- **Snapchat** → Snapchat
+- **i social media** → les réseaux sociaux
+- **gli Stati Uniti** → les États-Unis
+- **lo stress** → le stress
+- **TikTok** → TikTok
 - **il video** → la vidéo
 - **la vita** → la vie
-- **la vita reale** → la vie réelle

@@ -7,57 +7,55 @@ niveau: B1
 genre: homme
 drapeau: 🇪🇸
 voix_variant: esp
-date_generation: 2026-01-01 22:40:59
+date_generation: 2026-01-02 10:04:18
 ---
 
 ## Texto
 
-Los mercados de Navidad son una tradición muy arraigada en muchos países de Europa, y en España no es la excepción. Durante la temporada navideña, muchas ciudades españolas acogen estos mercadillos llenos de encanto y espíritu festivo. Visitar un mercado de Navidad es una experiencia única que combina cultura, gastronomía y compras.
+Los mercados de Navidad son una tradición muy querida en muchas ciudades de España y de toda Europa. Estos mercados empiezan a finales de noviembre y permanecen abiertos hasta el día de Reyes, el 6 de enero. Son lugares mágicos donde se puede sentir el espíritu navideño en todo su esplendor.
 
-Uno de los mercados más famosos en España es el de la Plaza Mayor en Madrid. Aquí, los visitantes pueden encontrar una gran variedad de productos navideños, desde figuras para el belén hasta adornos para el árbol de Navidad. Pasear por los puestos es toda una experiencia visual, llena de luces brillantes y decoraciones coloridas.
+En los mercados de Navidad, las calles se llenan de luces brillantes, música festiva y un agradable aroma a castañas asadas. En los puestos se pueden encontrar productos artesanales, desde adornos navideños hechos a mano hasta regalos únicos. Muchos visitantes buscan también las deliciosas comidas típicas de esta época, como turrones, mazapanes y polvorones. Además, no puede faltar un buen vaso de vino caliente para combatir el frío invernal.
 
-En Barcelona, destaca la Feria de Santa Llúcia, situada cerca de la catedral. Este mercado ofrece no solo productos navideños, sino también actividades culturales y talleres para toda la familia. Los niños pueden disfrutar de las actuaciones de marionetas y los adultos pueden degustar productos típicos como turrones y castañas asadas.
+Uno de los mercados más famosos de España es el Mercado de Navidad de la Plaza Mayor en Madrid. Este lugar histórico se transforma en un alegre mercado con docenas de casetas. Es un punto de encuentro para familias y amigos que quieren disfrutar de la Navidad en un ambiente acogedor.
 
-Los mercados de Navidad son también una oportunidad perfecta para probar comidas y bebidas típicas de la época. En muchos de ellos, es común encontrar puestos que venden churros con chocolate caliente, vino caliente especiado o polvorones.
+En Barcelona, la Feria de Santa Llúcia es otro mercado tradicional que atrae a muchos visitantes. Ubicada cerca de la catedral, esta feria es famosa por sus belenes y figuras de barro. Además de los productos navideños, se organizan actividades culturales que enriquecen la experiencia.
 
-Además de las compras y la comida, estas ferias ofrecen un ambiente acogedor y festivo que invita a todos a disfrutar del espíritu navideño. Es un lugar donde las familias, las parejas y los amigos pueden pasar un buen rato y crear recuerdos inolvidables.
-
-En resumen, los mercados de Navidad son una tradición que no solo promueve la economía local, sino que también fomenta el encuentro y la celebración en comunidad. Durante la Navidad, no hay mejor manera de entrar en el ambiente festivo que visitando uno de estos encantadores mercados.
+Visitar un mercado de Navidad es una excelente manera de empezar la temporada navideña. Aunque cada mercado tiene su propio encanto y tradiciones, todos comparten la misma magia y alegría. Sea cual sea la ciudad, estos mercados ofrecen una experiencia inolvidable para personas de todas las edades.
 
 ## Vocabulario
 
-- **el adorno** → la décoration
-- **el ambiente** → l'atmosphère
+- **las actividades** → les activités
+- **los adornos** → les décorations
+- **la alegría** → la joie
+- **el ambiente** → l'ambiance
 - **los amigos** → les amis
-- **el belén** → la crèche
+- **el aroma** → l'arôme
+- **el barro** → l'argile
+- **los belenes** → les crèches
+- **las casetas** → les cabanes
 - **las castañas** → les châtaignes
-- **la celebración** → la célébration
-- **el chocolate** → le chocolat
-- **los churros** → les churros
+- **la catedral** → la cathédrale
 - **la ciudad** → la ville
-- **las compras** → les achats
-- **la comunidad** → la communauté
-- **la cultura** → la culture
-- **la decoración** → la décoration
-- **la economía** → l'économie
-- **el encanto** → le charme
-- **el encuentro** → la rencontre
+- **las comidas** → les repas
+- **las edades** → les âges
 - **el espíritu** → l'esprit
 - **la experiencia** → l'expérience
-- **la familia** → la famille
-- **la Feria** → la Foire
-- **la gastronomía** → la gastronomie
+- **las familias** → les familles
+- **la Feria** → la foire
+- **las figuras** → les figurines
+- **el frío** → le froid
 - **las luces** → les lumières
-- **el mercado** → le marché
+- **la manera** → la façon
+- **los mazapanes** → les massepains
 - **los mercados** → les marchés
+- **la música** → la musique
 - **la Navidad** → Noël
-- **los niños** → les enfants
-- **el país** → le pays
-- **la Plaza** → la Place
-- **el producto** → le produit
-- **el recuerdo** → le souvenir
-- **el taller** → l'atelier
-- **la tradición** → la tradition
+- **la Plaza** → la place
+- **los polvorones** → les polvorones
+- **los productos** → les produits
+- **los puestos** → les stands
+- **los regalos** → les cadeaux
+- **la temporada** → la saison
 - **el turrón** → le nougat
 - **el vino** → le vin
-- **el árbol** → l'arbre
+- **los visitantes** → les visiteurs

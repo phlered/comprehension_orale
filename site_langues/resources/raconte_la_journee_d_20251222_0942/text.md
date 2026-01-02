@@ -2,40 +2,57 @@
 langue: Anglais (UK)
 prompt: Raconte la journée de Noël d’un adolescent au Royaume-Uni, du matin jusqu’au soir.
 resume: La journée de Noël au Royaume-Uni
-longueur: 150
+longueur: 300
 niveau: B2
 genre: homme
 drapeau: 🇬🇧
 voix_variant: eng
-date_generation: 2025-12-22 09:43:00
+date_generation: 2026-01-02 10:11:06
 ---
 
 ## Text
 
-On Christmas morning, Alex awoke to a crisp winter chill seeping through the window panes of his room in Bristol. The allure of Christmas had him out of bed before the sun had properly risen. After hurriedly donning a festive sweater, he bounded downstairs where the aroma of cinnamon and pine filled the air, clashing delightfully with the crackling fire in the hearth.
+Christmas morning in the United Kingdom usually starts with an air of excitement, and for James, a fifteen-year-old living in Manchester, it was no different. As the first rays of light peeked through his curtains, he could barely contain his enthusiasm. He quickly hopped out of bed, donning his festive pajamas, and made his way to the living room, where the aroma of pine mingled with the spicy scent of cinnamon and cloves from the decorations his mother had meticulously arranged.
 
-The family gathered around the Christmas tree, its branches laden with twinkling lights and ornaments collected over the years. They exchanged gifts, a palpable excitement hanging in the air. Alex's favorite present was a set of watercolor paints, perfect for capturing the serene landscapes of the nearby countryside.
+Traditionally, the family waits for everyone to gather before opening presents, a ritual that tests his patience. James's younger sister, Emily, was already there, bouncing with glee. Once everyone had settled with a cup of hot chocolate, the unwrapping began. The room soon filled with joyful laughter and gratitude, as brightly colored paper was torn away to reveal thoughtful gifts. James was thrilled to receive a new set of headphones, something he’d been hinting at for months.
 
-The day unfolded in a gentle rhythm. A hearty Christmas lunch ensued, featuring roast turkey with all the trimmings. Later, the family ventured for a brisk walk, the frosty air painting their cheeks red. As dusk descended, they cozily settled to watch classic holiday films, their laughter intertwining with the jubilant chimes of the parish church bells ringing in the distance.
+The afternoon was spent indulging in delightful activities. The family took a brisk walk through the nearby park, a tradition that provided the perfect opportunity to savor the crisp, wintry air and appreciate the festive decorations around the neighborhood. Upon returning home, James helped his father in the kitchen, preparing the much-anticipated Christmas feast. The table was set extravagantly with a golden roast turkey, honey-glazed carrots, and all the traditional trimmings that James had come to associate with the holiday.
+
+As evening descended, the family gathered around the fireplace, basking in the warm glow of the flames. They watched the Queen's Speech, an enduring tradition that prompted reflections on the year past and hopes for the future. The day concluded with board games and shared stories, strengthening family bonds. As James finally retreated to his room, he felt content, enveloped by the comforting sense of togetherness that Christmas unfailingly brings.
 
 ## Vocabulary
 
-- **to awake** → se réveiller
-- **bell** → cloche
-- **to capture** → capturer
-- **Christmas** → Noël
-- **church** → église
-- **dusk** → crépuscule
-- **to exchange** → échanger
-- **family** → famille
+- **bond** → lien
+- **cinnamon** → cannelle
+- **clove** → clou de girofle
+- **curtain** → rideau
+- **enthusiasm** → enthousiasme
+- **evening** → soirée
+- **excitement** → excitation
+- **feast** → festin
+- **fireplace** → cheminée
+- **game** → jeu
 - **to gather** → se rassembler
 - **gift** → cadeau
-- **landscape** → paysage
+- **gratitude** → gratitude
+- **headphone** → casque
+- **to hop** → sauter
+- **to indulge** → se livrer
+- **kitchen** → cuisine
 - **laughter** → rire
-- **lunch** → déjeuner
+- **living room** → salon
 - **morning** → matin
-- **to settle** → s’installer
-- **tree** → arbre
+- **patience** → patience
+- **to peek** → jeter un coup d'œil
+- **pine** → pin
+- **present** → cadeau
+- **to settle** → s'installer
+- **sister** → sœur
+- **speech** → discours
+- **story** → histoire
+- **table** → table
+- **togetherness** → convivialité
+- **tradition** → tradition
 - **turkey** → dinde
-- **to walk** → marcher
-- **to watch** → regarder
+- **to unwrap** → déballer
+- **walk** → promenade

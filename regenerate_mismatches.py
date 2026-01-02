@@ -43,6 +43,14 @@ EXPECTED_LENGTHS = {
 
 
 def load_mismatches():
+    # Charger la liste "todo" pour continuer le run interrompu
+    todo_path = ROOT / "_temp_mismatches_todo.json"
+    if todo_path.exists():
+        data = json.loads(todo_path.read_text(encoding="utf-8"))
+        print(f"Chargement depuis _temp_mismatches_todo.json ({len(data)} items)")
+        return data
+    
+    # Fallback sur l'ancienne liste
     if not MISMATCH_PATH.exists():
         raise FileNotFoundError(f"Liste introuvable: {MISMATCH_PATH}")
     data = json.loads(MISMATCH_PATH.read_text(encoding="utf-8"))
@@ -110,17 +118,20 @@ def regenerate_item(item):
 
 def main():
     items = load_mismatches()
-    print(f"Total a traiter (non FR/KR): {len(items)}")
+    print(f"Total à traiter: {len(items)}")
     for idx, item in enumerate(items, 1):
         try:
             print(f"\n[{idx}/{len(items)}]")
             regenerate_item(item)
         except subprocess.CalledProcessError as e:
-            print(f"Erreur subprocess: {e}")
-            return 1
+            print(f"⚠️ Erreur subprocess: {e}")
+            # Continuer malgré l'erreur pour ne pas interrompre le batch
+            continue
         except Exception as e:
-            print(f"Erreur: {e}")
-            return 1
+            print(f"⚠️ Erreur: {e}")
+            # Continuer malgré l'erreur pour ne pas interrompre le batch
+            continue
+    print(f"\n✅ Batch terminé !")
     return 0
 
 

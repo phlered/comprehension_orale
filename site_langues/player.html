@@ -279,6 +279,14 @@
             animation: slideDownBig 0.4s ease-out;
         }
 
+        #text-section.visible {
+            animation: slideDownBig 0.4s ease-out;
+        }
+
+        #vocab-section.visible {
+            animation: slideDownBig 0.4s ease-out;
+        }
+
         @keyframes slideDownBig {
             from {
                 opacity: 0;
@@ -1085,6 +1093,11 @@
             if (textVisible) {
                 textSection.classList.add('visible');
                 btn.innerHTML = '<span>📄</span><span>Masquer le texte</span>';
+                
+                // Scroller vers le texte avec un délai pour l'animation
+                setTimeout(() => {
+                    textSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
             } else {
                 textSection.classList.remove('visible');
                 btn.innerHTML = '<span>📄</span><span>Afficher le texte</span>';
@@ -1100,6 +1113,11 @@
             if (vocabVisible) {
                 vocabSection.classList.add('visible');
                 btn.innerHTML = '<span>📚</span><span>Masquer le vocabulaire</span>';
+                
+                // Scroller vers le vocabulaire avec un délai pour l'animation
+                setTimeout(() => {
+                    vocabSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
             } else {
                 vocabSection.classList.remove('visible');
                 btn.innerHTML = '<span>📚</span><span>Afficher le vocabulaire</span>';

@@ -375,6 +375,25 @@
             border-left: 4px solid #667eea;
         }
 
+        @media (max-width: 640px) {
+            .action-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .action-card {
+                padding: 12px 8px;
+            }
+
+            .action-icon {
+                font-size: 1.5em;
+                margin-bottom: 2px;
+            }
+
+            .action-label {
+                display: none;
+            }
+        }
+
         @media (max-width: 768px) {
             .header-top {
                 flex-direction: column;

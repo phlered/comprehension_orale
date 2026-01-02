@@ -46,7 +46,7 @@
         .stat-label { color: #4a5568; margin-top: 4px; }
         .quiz-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
         .quiz-score { font-size: 18px; font-weight: 700; color: #667eea; }
-        .quiz-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .quiz-columns { display: grid; grid-template-columns: repeat(2, minmax(160px, 1fr)); gap: 30px; }
         .quiz-column { display: flex; flex-direction: column; gap: 10px; }
         .quiz-column-title { font-weight: 800; color: #2d3748; margin-bottom: 10px; text-align: center; }
         .quiz-word { padding: 15px 20px; background: #f8f9fa; border-radius: 8px; cursor: pointer; transition: all 0.3s; border: 3px solid transparent; text-align: center; font-size: 1.05em; font-weight: 500; }
@@ -58,7 +58,10 @@
         @keyframes correctPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         @keyframes errorShake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
         .pill { display: inline-flex; align-items: center; gap: 6px; background: #e0e7ff; color: #3730a3; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 13px; }
-        @media (max-width: 640px) { .quiz-word { font-size: 15px; } .quiz-columns { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) {
+            .quiz-word { font-size: 15px; }
+            .quiz-columns { grid-template-columns: repeat(2, minmax(140px, 1fr)); gap: 16px; }
+        }
     </style>
 </head>
 <body>
@@ -352,7 +355,16 @@
             document.getElementById('quizTargetTitle').textContent = cfg.name;
             document.getElementById('quizTitle').textContent = `${cfg.flag || ''} ${cfg.name} • ${currentLevel}`;
             document.getElementById('quizCard').style.display = 'block';
+            scrollToQuizCard();
             loadNewQuizPairs();
+        }
+
+        function scrollToQuizCard() {
+            const card = document.getElementById('quizCard');
+            if (!card) return;
+            requestAnimationFrame(() => {
+                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
         }
 
         function loadNewQuizPairs() {

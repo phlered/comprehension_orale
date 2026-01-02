@@ -204,9 +204,16 @@
             document.getElementById('newRoundBtn').addEventListener('click', loadNewQuizPairs);
             document.getElementById('stopQuizBtn').addEventListener('click', stopQuiz);
             document.getElementById('showVocabBtn').addEventListener('click', toggleFullVocab);
+            
+            // Auto-load vocabulary when language or level changes
+            document.getElementById('languageSelect').addEventListener('change', loadVocabularyOnly);
+            document.getElementById('niveauSelect').addEventListener('change', loadVocabularyOnly);
 
+            // Auto-load on init
             if (langParam && levelParam) {
                 handleLoad();
+            } else {
+                loadVocabularyOnly();
             }
         }
 
@@ -244,13 +251,14 @@
             document.getElementById('statLevel').textContent = currentLevel || '--';
         }
 
-        async function handleLoad() {
+        async function loadVocabularyOnly() {
             currentLanguage = document.getElementById('languageSelect').value;
             currentLevel = document.getElementById('niveauSelect').value;
 
             if (!currentLanguage || !currentLevel) {
-                setStatus('Choisissez une langue et un niveau avant de lancer.', true);
-                return;
+                setStatus('Sélectionnez une langue et un niveau.', false);
+                document.getElementById('showVocabBtn').disabled = true;
+                return false;
             }
 
             setStatus('Chargement du vocabulaire...');
@@ -265,7 +273,7 @@
                 document.getElementById('showVocabBtn').disabled = true;
                 hideFullVocab();
                 updateStats();
-                return;
+                return false;
             }
 
             aggregatedVocab = await collectVocabulary(filtered);
@@ -274,14 +282,21 @@
             document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
 
             if (aggregatedVocab.length < 5) {
-                setStatus('Pas assez de vocabulaire (minimum 5 mots requis pour lancer un quiz).', true);
+                setStatus('Vocabulaire chargé mais insuffisant (minimum 5 mots pour lancer un quiz).', false);
                 document.getElementById('quizCard').style.display = 'none';
                 hideFullVocab();
-                return;
+                return false;
             }
 
             setStatus(`Vocabulaire prêt : ${aggregatedVocab.length} mot(s) sur ${filtered.length} doc(s) ${currentLevel}.`, false, true);
-            startQuiz();
+            return true;
+        }
+
+        async function handleLoad() {
+            const ready = await loadVocabularyOnly();
+            if (ready) {
+                startQuiz();
+            }
         }
 
         async function collectVocabulary(resources) {

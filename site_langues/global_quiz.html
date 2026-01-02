@@ -83,6 +83,7 @@
         .vocab-item { background: #f8fafc; padding: 10px 12px; border-radius: 10px; border-left: 4px solid #FF9800; }
         .vocab-word { font-weight: 800; color: #2d3748; }
         .vocab-translation { color: #4a5568; margin-left: 6px; }
+        .vocab-source { color: #94a3b8; font-size: 12px; display: block; margin-top: 2px; }
         @media (max-width: 640px) { .quiz-word { font-size: 15px; } }
     </style>
 </head>
@@ -379,7 +380,7 @@
 
             frenchContainer.innerHTML = quizState.currentPairs.map(pair => `
                 <div class="quiz-word quiz-french" data-id="${pair.id}">
-                    ${pair.french}${pair.sourceTitle ? ` <span style="color:#64748b;font-size:12px;display:block;">${pair.sourceTitle}</span>` : ''}
+                    ${pair.french}
                 </div>
             `).join('');
 
@@ -471,7 +472,7 @@
         function renderFullVocab() {
             const listEl = document.getElementById('fullVocabList');
             listEl.innerHTML = aggregatedVocab
-                .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span></div>`)
+                .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span>${item.sourceTitle ? `<span class=\"vocab-source\">${item.sourceTitle}</span>` : ''}</div>`)
                 .join('');
             document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
         }

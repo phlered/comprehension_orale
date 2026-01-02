@@ -25,32 +25,13 @@
         }
         .header-title { font-size: 28px; font-weight: 800; color: #2d3748; margin-bottom: 6px; }
         .subtitle { color: #4a5568; margin-bottom: 14px; }
-        .back-btn {
-            display: inline-block;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 700;
-            margin-bottom: 14px;
-            transition: transform 0.2s;
-        }
+        .back-btn { display: inline-block; color: #667eea; text-decoration: none; font-weight: 700; margin-bottom: 14px; transition: transform 0.2s; }
         .back-btn:hover { transform: translateX(-4px); }
-        .controls-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 14px;
-            align-items: end;
-            margin-top: 12px;
-        }
+        .controls-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; align-items: end; margin-top: 12px; }
         .control label { display: block; color: #4a5568; font-weight: 700; margin-bottom: 6px; }
-        .control select {
-            width: 100%; padding: 12px; border: 2px solid #cbd5e0; border-radius: 10px;
-            font-size: 15px; background: #fff; transition: border-color 0.2s;
-        }
+        .control select { width: 100%; padding: 12px; border: 2px solid #cbd5e0; border-radius: 10px; font-size: 15px; background: #fff; transition: border-color 0.2s; }
         .control select:focus { outline: none; border-color: #667eea; }
-        .btn {
-            padding: 12px 18px; border: none; border-radius: 10px; font-weight: 700;
-            cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 15px;
-        }
+        .btn { padding: 12px 18px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 15px; }
         .btn-quiz { background: #FF9800; color: white; box-shadow: 0 8px 18px rgba(255,152,0,0.35); }
         .btn-quiz:hover { background: #F57C00; transform: translateY(-2px); }
         .btn-secondary { background: #edf2f7; color: #2d3748; }
@@ -63,33 +44,21 @@
         .stat-item { background: #f8fafc; padding: 14px; border-radius: 12px; text-align: center; }
         .stat-value { font-size: 26px; font-weight: 800; color: #667eea; }
         .stat-label { color: #4a5568; margin-top: 4px; }
-        .quiz-header {
-            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
-            gap: 10px; margin-bottom: 12px;
-        }
-        .quiz-score { font-size: 18px; font-weight: 700; color: #2d3748; }
-        .quiz-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .quiz-column { background: #f8fafc; border-radius: 12px; padding: 12px; min-height: 200px; }
-        .quiz-column-title { font-weight: 800; color: #2d3748; margin-bottom: 10px; }
-        .quiz-word { background: white; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.1s, box-shadow 0.2s; }
-        .quiz-word:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
-        .quiz-word.selected { border: 2px solid #667eea; }
-        .quiz-word.correct { background: #ecfdf3; border: 2px solid #22c55e; color: #14532d; }
-        .quiz-word.error { background: #fef2f2; border: 2px solid #ef4444; color: #991b1b; }
-        .quiz-word.matched { opacity: 0.6; cursor: default; }
+        .quiz-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+        .quiz-score { font-size: 18px; font-weight: 700; color: #667eea; }
+        .quiz-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .quiz-column { display: flex; flex-direction: column; gap: 10px; }
+        .quiz-column-title { font-weight: 800; color: #2d3748; margin-bottom: 10px; text-align: center; }
+        .quiz-word { padding: 15px 20px; background: #f8f9fa; border-radius: 8px; cursor: pointer; transition: all 0.3s; border: 3px solid transparent; text-align: center; font-size: 1.05em; font-weight: 500; }
+        .quiz-word:hover { background: #e9ecef; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .quiz-word.selected { background: #667eea; color: white; border-color: #5568d3; }
+        .quiz-word.correct { background: #4CAF50; color: white; animation: correctPulse 0.5s ease; }
+        .quiz-word.error { background: #f44336; color: white; animation: errorShake 0.5s ease; }
+        .quiz-word.matched { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        @keyframes correctPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        @keyframes errorShake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
         .pill { display: inline-flex; align-items: center; gap: 6px; background: #e0e7ff; color: #3730a3; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 13px; }
-        .hint { color: #4a5568; font-size: 14px; margin-top: 6px; }
-        .vocab-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; margin-top: 10px; }
-        .vocab-item { background: #f8fafc; padding: 10px 12px; border-radius: 10px; border-left: 4px solid #FF9800; }
-        .vocab-word { font-weight: 800; color: #2d3748; }
-        .vocab-translation { color: #4a5568; margin-left: 6px; }
-        .vocab-source { color: #94a3b8; font-size: 12px; display: block; margin-top: 2px; }
-        .vocab-controls { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
-        .vocab-sort-label { font-weight: 700; color: #2d3748; }
-        .vocab-sort-select { padding: 8px 12px; border: 2px solid #cbd5e0; border-radius: 8px; font-size: 14px; background: white; cursor: pointer; }
-        .vocab-sort-select:focus { outline: none; border-color: #FF9800; }
-        .vocab-group-title { font-weight: 800; color: #2d3748; padding: 10px 0 6px 0; margin-top: 6px; border-top: 2px solid #e2e8f0; grid-column: 1 / -1; }
-        @media (max-width: 640px) { .quiz-word { font-size: 15px; } }
+        @media (max-width: 640px) { .quiz-word { font-size: 15px; } .quiz-columns { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -97,7 +66,7 @@
         <div class="card">
             <a href="index.html" class="back-btn">← Retour à l'accueil</a>
             <div class="header-title">🎯 Quiz vocabulaire global</div>
-            <p class="subtitle">Langue déjà choisie : sélectionnez un niveau et le quiz pioche dans tous les docs du niveau choisi.</p>
+            <p class="subtitle">Langue déjà choisie : sélectionnez un niveau puis lancez le quiz.</p>
             <div class="pill" id="selectedLanguage" style="display: inline-flex; margin-top: 8px;"></div>
             <div class="controls-grid">
                 <div class="control">
@@ -118,7 +87,7 @@
                 </div>
                 <div class="control">
                     <label>&nbsp;</label>
-                    <button id="showVocabBtn" class="btn btn-quiz" style="width: 100%;" disabled>Afficher le vocabulaire</button>
+                    <button id="stopQuizBtn" class="btn btn-danger" style="width: 100%;">Arrêter le quiz</button>
                 </div>
             </div>
         </div>
@@ -146,7 +115,7 @@
                 <div class="quiz-score" id="quizScore">Score: 0</div>
                 <div style="display: flex; gap: 8px;">
                     <button class="btn btn-secondary" id="newRoundBtn">Nouveau tirage</button>
-                    <button class="btn btn-danger" id="stopQuizBtn">Arrêter le quiz</button>
+                    <button class="btn btn-danger" id="stopQuizInlineBtn">Arrêter</button>
                 </div>
             </div>
             <div class="quiz-columns">
@@ -159,21 +128,6 @@
                     <div id="quizTarget"></div>
                 </div>
             </div>
-        </div>
-
-        <div class="card" id="vocabListCard" style="display: none;">
-            <div class="quiz-header">
-                <div class="pill">📚 Vocabulaire complet</div>
-                <div class="quiz-score" id="vocabCount">0 mot(s)</div>
-            </div>
-            <div class="vocab-controls">
-                <label class="vocab-sort-label" for="vocabSortSelect">Trier par :</label>
-                <select id="vocabSortSelect" class="vocab-sort-select">
-                    <option value="alphabetic">Alphabétique</option>
-                    <option value="byDoc">Par document</option>
-                </select>
-            </div>
-            <div class="vocab-list" id="fullVocabList"></div>
         </div>
     </div>
 
@@ -194,8 +148,6 @@
         let currentLevel = '';
         let usedResources = [];
         let quizActive = false;
-        let vocabListVisible = false;
-        let vocabSortMode = 'alphabetic'; // 'alphabetic' ou 'byDoc'
 
         const quizState = { score: 0, selectedFrench: null, selectedTarget: null, matchedInRound: 0, currentPairs: [], allVocab: [] };
 
@@ -221,15 +173,9 @@
             document.getElementById('loadBtn').addEventListener('click', handleLoad);
             document.getElementById('newRoundBtn').addEventListener('click', loadNewQuizPairs);
             document.getElementById('stopQuizBtn').addEventListener('click', stopQuiz);
-            document.getElementById('showVocabBtn').addEventListener('click', toggleFullVocab);
-            document.getElementById('vocabSortSelect').addEventListener('change', (e) => {
-                vocabSortMode = e.target.value;
-                renderFullVocab();
-            });
-            
+            document.getElementById('stopQuizInlineBtn').addEventListener('click', stopQuiz);
             document.getElementById('niveauSelect').addEventListener('change', loadVocabularyOnly);
 
-            // Auto-load on init
             if (langParam && levelParam) {
                 handleLoad();
             } else {
@@ -248,9 +194,9 @@
         function disableControls(disabled) {
             document.getElementById('niveauSelect').disabled = disabled;
             document.getElementById('loadBtn').disabled = disabled;
-            document.getElementById('showVocabBtn').disabled = true;
             document.getElementById('newRoundBtn').disabled = disabled;
             document.getElementById('stopQuizBtn').disabled = disabled;
+            document.getElementById('stopQuizInlineBtn').disabled = disabled;
         }
 
         async function loadMetadata() {
@@ -282,13 +228,11 @@
 
             if (!currentLanguage) {
                 setStatus('Aucune langue sélectionnée.', true);
-                document.getElementById('showVocabBtn').disabled = true;
                 return false;
             }
 
             if (!currentLevel) {
                 setStatus('Sélectionnez un niveau.', false);
-                document.getElementById('showVocabBtn').disabled = true;
                 return false;
             }
 
@@ -301,21 +245,16 @@
                 setStatus('Aucun document trouvé pour cette combinaison.', true);
                 aggregatedVocab = [];
                 document.getElementById('quizCard').style.display = 'none';
-                document.getElementById('showVocabBtn').disabled = true;
-                hideFullVocab();
                 updateStats();
                 return false;
             }
 
             aggregatedVocab = await collectVocabulary(filtered);
             updateStats();
-            document.getElementById('showVocabBtn').disabled = aggregatedVocab.length === 0;
-            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
 
             if (aggregatedVocab.length < 5) {
                 setStatus('Vocabulaire chargé mais insuffisant (minimum 5 mots pour lancer un quiz).', false);
                 document.getElementById('quizCard').style.display = 'none';
-                hideFullVocab();
                 return false;
             }
 
@@ -403,90 +342,94 @@
             const numPairs = Math.min(5, quizState.allVocab.length);
             const usedIndices = new Set();
             const pairs = [];
+
             while (pairs.length < numPairs) {
                 const idx = Math.floor(Math.random() * quizState.allVocab.length);
                 if (!usedIndices.has(idx)) {
                     usedIndices.add(idx);
                     const vocabItem = quizState.allVocab[idx];
-                    pairs.push({
-                        id: pairs.length,
-                        french: vocabItem.translation,
-                        target: vocabItem.word,
-                        sourceTitle: vocabItem.sourceTitle || ''
-                    });
+                    pairs.push({ id: pairs.length, french: vocabItem.translation, target: vocabItem.word });
                 }
             }
+
             quizState.currentPairs = pairs;
-            renderPairs();
+            renderQuizPairs(pairs);
         }
 
-        function renderPairs() {
-            const frenchContainer = document.getElementById('quizFrench');
-            const targetContainer = document.getElementById('quizTarget');
+        function renderQuizPairs(pairs) {
+            const frenchCol = document.getElementById('quizFrench');
+            const targetCol = document.getElementById('quizTarget');
 
-            frenchContainer.innerHTML = quizState.currentPairs.map(pair => `
-                <div class="quiz-word quiz-french" data-id="${pair.id}">
-                    ${pair.french}
-                </div>
-            `).join('');
+            const shuffledFrench = shuffleArray([...pairs]);
+            const shuffledTarget = shuffleArray([...pairs]);
 
-            const shuffled = [...quizState.currentPairs].sort(() => Math.random() - 0.5);
-            targetContainer.innerHTML = shuffled.map(pair => `
-                <div class="quiz-word quiz-target" data-id="${pair.id}">
-                    ${pair.target}
-                </div>
-            `).join('');
+            frenchCol.innerHTML = shuffledFrench.map(pair => `<div class="quiz-word quiz-french" data-id="${pair.id}">${pair.french}</div>`).join('');
+            targetCol.innerHTML = shuffledTarget.map(pair => `<div class="quiz-word quiz-target" data-id="${pair.id}">${pair.target}</div>`).join('');
 
-            document.querySelectorAll('.quiz-french').forEach(el => el.addEventListener('click', () => selectFrench(el)));
-            document.querySelectorAll('.quiz-target').forEach(el => el.addEventListener('click', () => selectTarget(el)));
-
-            quizState.selectedFrench = null;
-            quizState.selectedTarget = null;
+            document.querySelectorAll('.quiz-french').forEach(el => {
+                el.addEventListener('click', () => selectFrench(parseInt(el.dataset.id, 10)));
+            });
+            document.querySelectorAll('.quiz-target').forEach(el => {
+                el.addEventListener('click', () => selectTarget(parseInt(el.dataset.id, 10)));
+            });
         }
 
-        function selectFrench(el) {
-            if (el.classList.contains('matched')) return;
-            document.querySelectorAll('.quiz-french').forEach(x => x.classList.remove('selected'));
-            el.classList.add('selected');
-            quizState.selectedFrench = parseInt(el.dataset.id, 10);
-            if (quizState.selectedTarget !== null) verifyMatch();
-        }
-
-        function selectTarget(el) {
-            if (el.classList.contains('matched')) return;
-            document.querySelectorAll('.quiz-target').forEach(x => x.classList.remove('selected'));
-            el.classList.add('selected');
-            quizState.selectedTarget = parseInt(el.dataset.id, 10);
-            if (quizState.selectedFrench !== null) verifyMatch();
-        }
-
-        function verifyMatch() {
+        function selectFrench(id) {
             if (!quizActive) return;
-            if (quizState.selectedFrench === quizState.selectedTarget) {
+            quizState.selectedFrench = id;
+            document.querySelectorAll('.quiz-french').forEach(el => {
+                el.classList.toggle('selected', parseInt(el.dataset.id, 10) === id);
+            });
+            checkMatch();
+        }
+
+        function selectTarget(id) {
+            if (!quizActive) return;
+            quizState.selectedTarget = id;
+            document.querySelectorAll('.quiz-target').forEach(el => {
+                el.classList.toggle('selected', parseInt(el.dataset.id, 10) === id);
+            });
+            checkMatch();
+        }
+
+        function checkMatch() {
+            const { selectedFrench, selectedTarget } = quizState;
+            if (selectedFrench === null || selectedTarget === null) return;
+
+            const isMatch = selectedFrench === selectedTarget;
+            if (isMatch) {
                 quizState.score += 1;
+                quizState.matchedInRound += 1;
                 document.getElementById('quizScore').textContent = `Score: ${quizState.score}`;
-                const fEl = document.querySelector(`.quiz-french[data-id="${quizState.selectedFrench}"]`);
-                const tEl = document.querySelector(`.quiz-target[data-id="${quizState.selectedTarget}"]`);
+
+                const fEl = document.querySelector(`.quiz-french[data-id="${selectedFrench}"]`);
+                const tEl = document.querySelector(`.quiz-target[data-id="${selectedTarget}"]`);
                 fEl.classList.add('correct');
                 tEl.classList.add('correct');
-                quizState.matchedInRound += 1;
+
                 setTimeout(() => {
                     fEl.classList.add('matched');
                     tEl.classList.add('matched');
+                    fEl.classList.remove('selected');
+                    tEl.classList.remove('selected');
+
                     if (quizActive && quizState.matchedInRound >= quizState.currentPairs.length) {
-                        setTimeout(loadNewQuizPairs, 400);
+                        setTimeout(() => {
+                            loadNewQuizPairs();
+                        }, 500);
                     }
-                }, 400);
+                }, 500);
             } else {
-                const fEl = document.querySelector(`.quiz-french[data-id="${quizState.selectedFrench}"]`);
-                const tEl = document.querySelector(`.quiz-target[data-id="${quizState.selectedTarget}"]`);
+                const fEl = document.querySelector(`.quiz-french[data-id="${selectedFrench}"]`);
+                const tEl = document.querySelector(`.quiz-target[data-id="${selectedTarget}"]`);
                 fEl.classList.add('error');
                 tEl.classList.add('error');
                 setTimeout(() => {
                     fEl.classList.remove('error', 'selected');
                     tEl.classList.remove('error', 'selected');
-                }, 1600);
+                }, 2000);
             }
+
             quizState.selectedFrench = null;
             quizState.selectedTarget = null;
         }
@@ -497,80 +440,15 @@
             setStatus('Quiz arrêté. Relancez en cliquant sur "Quiz vocabulaire".', false);
         }
 
-        function toggleFullVocab() {
-            if (!aggregatedVocab.length) return;
-            vocabListVisible = !vocabListVisible;
-            if (vocabListVisible) {
-                renderFullVocab();
-                document.getElementById('vocabListCard').style.display = 'block';
-                document.getElementById('showVocabBtn').textContent = 'Masquer le vocabulaire';
-            } else {
-                hideFullVocab();
+        function shuffleArray(arr) {
+            const cloned = [...arr];
+            for (let i = cloned.length - 1; i > 0; i -= 1) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [cloned[i], cloned[j]] = [cloned[j], cloned[i]];
             }
-        }
-
-        function hideFullVocab() {
-            vocabListVisible = false;
-            document.getElementById('vocabListCard').style.display = 'none';
-            document.getElementById('showVocabBtn').textContent = 'Afficher le vocabulaire';
-        }
-
-        function renderFullVocab() {
-            if (vocabSortMode === 'alphabetic') {
-                renderFullVocabAlphabetic();
-            } else {
-                renderFullVocabByDoc();
-            }
-            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
-        }
-
-        function normalizeForSort(word) {
-            // Enlever les articles courants (FR, NL, ALL, ESP, IT, EN, KO)
-            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
-            return word.trim().toLowerCase().replace(articles, '');
-        }
-
-        function renderFullVocabAlphabetic() {
-            const listEl = document.getElementById('fullVocabList');
-            // Trier par traduction (français) en ignorant les articles
-            const sorted = [...aggregatedVocab].sort((a, b) => {
-                const keyA = normalizeForSort(a.translation);
-                const keyB = normalizeForSort(b.translation);
-                return keyA.localeCompare(keyB, 'fr');
-            });
-            listEl.innerHTML = sorted
-                .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span>${item.sourceTitle ? `<span class=\"vocab-source\">${item.sourceTitle}</span>` : ''}</div>`)
-                .join('');
-        }
-
-        function renderFullVocabByDoc() {
-            const listEl = document.getElementById('fullVocabList');
-            // Regrouper par source (document)
-            const byDoc = {};
-            aggregatedVocab.forEach(item => {
-                const source = item.sourceTitle || 'Sans source';
-                if (!byDoc[source]) byDoc[source] = [];
-                byDoc[source].push(item);
-            });
-            
-            // Trier les docs alphabétiquement
-            const sortedDocs = Object.keys(byDoc).sort((a, b) => a.localeCompare(b, 'fr'));
-            
-            let html = '';
-            sortedDocs.forEach(docTitle => {
-                html += `<div class="vocab-group-title">${docTitle}</div>`;
-                // Trier les mots du doc alphabétiquement
-                const sorted = byDoc[docTitle].sort((a, b) => {
-                    const keyA = normalizeForSort(a.translation);
-                    const keyB = normalizeForSort(b.translation);
-                    return keyA.localeCompare(keyB, 'fr');
-                });
-                html += sorted
-                    .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span></div>`)
-                    .join('');
-            });
-            listEl.innerHTML = html;
+            return cloned;
         }
     </script>
 </body>
 </html>
+```}

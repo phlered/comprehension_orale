@@ -133,6 +133,65 @@
             font-size: 0.9em;
         }
 
+        .vocab-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .vocab-status {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .vocab-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: none;
+        }
+
+        .vocab-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .vocab-count {
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .vocab-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .vocab-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .vocab-item {
+            background: #f8fafc;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .vocab-word { font-weight: 700; color: #2d3748; }
+        .vocab-translation { color: #4a5568; margin-left: 6px; }
+        .vocab-source { display: block; color: #94a3b8; font-size: 12px; margin-top: 3px; }
+
         .resources-container {
             display: grid;
             gap: 15px;
@@ -299,6 +358,7 @@
             </h1>
             <a href="#" id="random-player-link" class="back-btn" style="margin-left: auto;">🎲 Aléatoire</a>
             <a href="#" id="global-quiz-link" class="back-btn" style="margin-left: 10px;">🎯 Quiz global</a>
+            <button id="toggle-vocab-btn" type="button" class="back-btn" style="margin-left: 10px;">📚 Afficher le vocabulaire</button>
         </div>
         
         <div class="search-container">
@@ -330,6 +390,23 @@
         <div class="stats" id="stats">
             Chargement...
         </div>
+
+        <div class="vocab-bar">
+            <span class="vocab-status" id="vocab-status"></span>
+        </div>
+        <div class="vocab-panel" id="vocab-panel">
+            <div class="vocab-header">
+                <div class="vocab-count" id="vocab-count">0 mot(s)</div>
+                <div class="vocab-controls">
+                    <label class="filter-label" for="vocab-sort-select" style="margin-bottom: 0;">Trier</label>
+                    <select id="vocab-sort-select" class="filter-select" style="width: auto; min-width: 160px;">
+                        <option value="alphabetic">Alphabétique</option>
+                        <option value="byDoc">Par document</option>
+                    </select>
+                </div>
+            </div>
+            <div class="vocab-list" id="vocab-list"></div>
+        </div>
     </div>
     
     <div class="resources-container" id="resources-container">
@@ -352,6 +429,10 @@
         let allResources = [];
         let filteredResources = [];
         let currentLanguage = '';
+        let vocabData = [];
+        let vocabVisible = false;
+        let vocabSortMode = 'alphabetic';
+        let vocabLoading = false;
 
         // Récupérer le paramètre de langue depuis l'URL
         function getLanguageFromURL() {
@@ -424,7 +505,15 @@
         // Configurer les événements
         function setupEventListeners() {
             document.getElementById('search-input').addEventListener('input', filterAndDisplayResources);
-            document.getElementById('filter-niveau').addEventListener('change', filterAndDisplayResources);
+            document.getElementById('filter-niveau').addEventListener('change', () => {
+                filterAndDisplayResources();
+                resetVocabularyPanel();
+            });
+            document.getElementById('toggle-vocab-btn').addEventListener('click', toggleVocabularyPanel);
+            document.getElementById('vocab-sort-select').addEventListener('change', (e) => {
+                vocabSortMode = e.target.value;
+                renderVocabularyList();
+            });
         }
 
         // Filtrer et afficher les ressources
@@ -501,6 +590,183 @@
         function updateStats() {
             const stats = document.getElementById('stats');
             stats.textContent = `${filteredResources.length} ressource(s) sur ${allResources.length} disponible(s)`;
+        }
+
+        // Gestion vocabulaire global
+        function resetVocabularyPanel() {
+            vocabData = [];
+            vocabVisible = false;
+            vocabLoading = false;
+            document.getElementById('vocab-panel').style.display = 'none';
+            document.getElementById('toggle-vocab-btn').textContent = '📚 Afficher le vocabulaire';
+            setVocabStatus('');
+        }
+
+        function setVocabStatus(message, isError = false) {
+            const el = document.getElementById('vocab-status');
+            el.textContent = message || '';
+            el.style.color = isError ? '#b91c1c' : '#555';
+        }
+
+        function getResourcesForVocabulary() {
+            const niveauFilter = document.getElementById('filter-niveau').value;
+            return niveauFilter ? allResources.filter(r => r.niveau === niveauFilter) : allResources;
+        }
+
+        async function toggleVocabularyPanel() {
+            if (vocabVisible) {
+                hideVocabularyPanel();
+                return;
+            }
+            await loadAndShowVocabulary();
+        }
+
+        function hideVocabularyPanel() {
+            vocabVisible = false;
+            document.getElementById('vocab-panel').style.display = 'none';
+            document.getElementById('toggle-vocab-btn').textContent = '📚 Afficher le vocabulaire';
+        }
+
+        async function loadAndShowVocabulary() {
+            if (vocabLoading) return;
+            vocabLoading = true;
+            setVocabStatus('Chargement du vocabulaire...');
+            document.getElementById('toggle-vocab-btn').disabled = true;
+
+            const targetResources = getResourcesForVocabulary();
+            if (!targetResources.length) {
+                setVocabStatus('Aucune ressource pour cette langue/niveau.', true);
+                vocabLoading = false;
+                document.getElementById('toggle-vocab-btn').disabled = false;
+                return;
+            }
+
+            vocabData = await collectVocabulary(targetResources);
+            vocabLoading = false;
+            document.getElementById('toggle-vocab-btn').disabled = false;
+
+            if (!vocabData.length) {
+                setVocabStatus('Aucun vocabulaire trouvé dans les ressources filtrées.', true);
+                return;
+            }
+
+            document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
+            renderVocabularyList();
+            document.getElementById('vocab-panel').style.display = 'block';
+            document.getElementById('toggle-vocab-btn').textContent = '📚 Masquer le vocabulaire';
+            vocabVisible = true;
+
+            const niveauLabel = document.getElementById('filter-niveau').value;
+            const scope = niveauLabel ? `niveau ${niveauLabel}` : 'tous niveaux';
+            setVocabStatus(`Vocabulaire chargé sur ${targetResources.length} ressource(s) (${scope}).`);
+        }
+
+        function renderVocabularyList() {
+            const list = document.getElementById('vocab-list');
+            if (!vocabData.length) {
+                list.innerHTML = '<div class="no-results">Aucun vocabulaire disponible.</div>';
+                return;
+            }
+
+            if (vocabSortMode === 'byDoc') {
+                renderVocabByDoc(list);
+            } else {
+                renderVocabAlphabetic(list);
+            }
+        }
+
+        function renderVocabAlphabetic(listEl) {
+            const sorted = [...vocabData].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
+            listEl.innerHTML = sorted.map(item => `
+                <div class="vocab-item">
+                    <span class="vocab-word">${item.translation}</span>
+                    <span class="vocab-translation">→ ${item.word}</span>
+                    ${item.sourceTitle ? `<span class="vocab-source">${item.sourceTitle}</span>` : ''}
+                </div>
+            `).join('');
+        }
+
+        function renderVocabByDoc(listEl) {
+            const grouped = {};
+            vocabData.forEach(item => {
+                const source = item.sourceTitle || 'Sans source';
+                if (!grouped[source]) grouped[source] = [];
+                grouped[source].push(item);
+            });
+
+            const sortedDocs = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'fr'));
+            let html = '';
+            sortedDocs.forEach(doc => {
+                html += `<div class="vocab-item" style="border-left-color:#FF9800; background:#fff7ed;">${doc}</div>`;
+                const words = grouped[doc].sort((a, b) => normalizeForSort(a.translation).localeCompare(normalizeForSort(b.translation), 'fr'));
+                html += words.map(item => `
+                    <div class="vocab-item" style="border-left-color:#667eea;">
+                        <span class="vocab-word">${item.translation}</span>
+                        <span class="vocab-translation">→ ${item.word}</span>
+                    </div>
+                `).join('');
+            });
+            listEl.innerHTML = html;
+        }
+
+        async function collectVocabulary(resources) {
+            const vocabAccumulator = [];
+            const fetches = resources.map(async (res) => {
+                try {
+                    const response = await fetch(res.text_path);
+                    const content = await response.text();
+                    const vocab = extractVocabFromContent(content);
+                    return vocab.map(item => ({ ...item, sourceId: res.id, sourceTitle: res.resume || res.prompt }));
+                } catch (e) {
+                    console.warn('Erreur vocab ressource', res.id, e);
+                    return [];
+                }
+            });
+
+            const results = await Promise.allSettled(fetches);
+            results.forEach(r => {
+                if (r.status === 'fulfilled') {
+                    vocabAccumulator.push(...r.value);
+                }
+            });
+
+            return dedupeVocabulary(vocabAccumulator);
+        }
+
+        function extractVocabFromContent(content) {
+            const frontmatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
+            if (!frontmatterMatch) return [];
+            const body = frontmatterMatch[2];
+            const vocabMatch = body.match(/##\s+(Woordenschat|Wortschatz|Vocabulario|Vocabulaire|Vocabulary|어휘|Vocabolario)\s*\n\n(.*?)$/s);
+            if (!vocabMatch) return [];
+            return parseVocabulary(vocabMatch[2].trim());
+        }
+
+        function parseVocabulary(vocabText) {
+            const lines = vocabText.split('\n');
+            const vocab = [];
+            lines.forEach(line => {
+                const match = line.match(/^\s*[-*]\s+\*\*(.+?)\*\*\s+→\s+(.+)$/);
+                if (match) {
+                    vocab.push({ word: match[1].trim(), translation: match[2].trim() });
+                }
+            });
+            return vocab;
+        }
+
+        function dedupeVocabulary(list) {
+            const seen = new Set();
+            return list.filter(item => {
+                const key = `${item.word.trim().toLowerCase()}|${item.translation.trim().toLowerCase()}`;
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        function normalizeForSort(word) {
+            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
+            return word.trim().toLowerCase().replace(articles, '');
         }
 
         // Initialiser au chargement de la page

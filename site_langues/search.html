@@ -94,6 +94,66 @@
             margin-top: 15px;
         }
 
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .action-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 18px 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            text-decoration: none;
+            color: #333;
+            border: 3px solid transparent;
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .action-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-color: #667eea;
+        }
+
+        .action-card:active {
+            transform: translateY(-1px);
+        }
+
+        .action-icon {
+            font-size: 1.8em;
+            margin-bottom: 6px;
+        }
+
+        .action-label {
+            font-size: 1em;
+        }
+
+        .action-button {
+            border: none;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: inherit;
+        }
+
+        .action-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
         .filter-group {
             flex: 1;
             min-width: 150px;
@@ -356,9 +416,21 @@
                 <span id="language-flag"></span>
                 <span id="language-name"></span>
             </h1>
-            <a href="#" id="random-player-link" class="back-btn" style="margin-left: auto;">🎲 Aléatoire</a>
-            <a href="#" id="global-quiz-link" class="back-btn" style="margin-left: 10px;">🎯 Quiz global</a>
-            <button id="toggle-vocab-btn" type="button" class="back-btn" style="margin-left: 10px;">📚 Afficher le vocabulaire</button>
+        </div>
+
+        <div class="action-grid">
+            <a href="#" id="random-player-link" class="action-card">
+                <span class="action-icon">🎲</span>
+                <span class="action-label">Lecture aléatoire</span>
+            </a>
+            <a href="#" id="global-quiz-link" class="action-card">
+                <span class="action-icon">🎯</span>
+                <span class="action-label">Quiz vocabulaire</span>
+            </a>
+            <button id="toggle-vocab-btn" type="button" class="action-card action-button">
+                <span class="action-icon">📚</span>
+                <span class="action-label">Afficher le vocabulaire</span>
+            </button>
         </div>
         
         <div class="search-container">
@@ -598,7 +670,7 @@
             vocabVisible = false;
             vocabLoading = false;
             document.getElementById('vocab-panel').style.display = 'none';
-            document.getElementById('toggle-vocab-btn').textContent = '📚 Afficher le vocabulaire';
+            setVocabButtonLabel('Afficher le vocabulaire');
             setVocabStatus('');
         }
 
@@ -624,7 +696,7 @@
         function hideVocabularyPanel() {
             vocabVisible = false;
             document.getElementById('vocab-panel').style.display = 'none';
-            document.getElementById('toggle-vocab-btn').textContent = '📚 Afficher le vocabulaire';
+            setVocabButtonLabel('Afficher le vocabulaire');
         }
 
         async function loadAndShowVocabulary() {
@@ -653,7 +725,7 @@
             document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
             renderVocabularyList();
             document.getElementById('vocab-panel').style.display = 'block';
-            document.getElementById('toggle-vocab-btn').textContent = '📚 Masquer le vocabulaire';
+            setVocabButtonLabel('Masquer le vocabulaire');
             vocabVisible = true;
 
             const niveauLabel = document.getElementById('filter-niveau').value;
@@ -762,6 +834,12 @@
                 seen.add(key);
                 return true;
             });
+        }
+
+        function setVocabButtonLabel(label) {
+            const btn = document.getElementById('toggle-vocab-btn');
+            if (!btn) return;
+            btn.innerHTML = `<span class="action-icon">📚</span><span class="action-label">${label}</span>`;
         }
 
         function normalizeForSort(word) {

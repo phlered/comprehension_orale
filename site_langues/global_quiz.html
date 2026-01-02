@@ -64,7 +64,7 @@
 <body>
     <div class="container">
         <div class="card">
-            <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+            <a id="backLink" href="index.html" class="back-btn">← Retour</a>
             <div class="header-title">🎯 Quiz vocabulaire global</div>
             <p class="subtitle">Langue déjà choisie : sélectionnez un niveau puis lancez le quiz.</p>
             <div class="pill" id="selectedLanguage" style="display: inline-flex; margin-top: 8px;"></div>
@@ -165,6 +165,10 @@
             }
 
             currentLanguage = langParam;
+            const backLink = document.getElementById('backLink');
+            if (backLink) {
+                backLink.href = `search.html?lang=${langParam}`;
+            }
             renderSelectedLanguage();
 
             await loadMetadata();

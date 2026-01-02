@@ -84,6 +84,11 @@
         .vocab-word { font-weight: 800; color: #2d3748; }
         .vocab-translation { color: #4a5568; margin-left: 6px; }
         .vocab-source { color: #94a3b8; font-size: 12px; display: block; margin-top: 2px; }
+        .vocab-controls { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+        .vocab-sort-label { font-weight: 700; color: #2d3748; }
+        .vocab-sort-select { padding: 8px 12px; border: 2px solid #cbd5e0; border-radius: 8px; font-size: 14px; background: white; cursor: pointer; }
+        .vocab-sort-select:focus { outline: none; border-color: #FF9800; }
+        .vocab-group-title { font-weight: 800; color: #2d3748; padding: 10px 0 6px 0; margin-top: 6px; border-top: 2px solid #e2e8f0; }
         @media (max-width: 640px) { .quiz-word { font-size: 15px; } }
     </style>
 </head>
@@ -164,6 +169,13 @@
                 <div class="pill">📚 Vocabulaire complet</div>
                 <div class="quiz-score" id="vocabCount">0 mot(s)</div>
             </div>
+            <div class="vocab-controls">
+                <label class="vocab-sort-label" for="vocabSortSelect">Trier par :</label>
+                <select id="vocabSortSelect" class="vocab-sort-select">
+                    <option value="alphabetic">Alphabétique</option>
+                    <option value="byDoc">Par document</option>
+                </select>
+            </div>
             <div class="vocab-list" id="fullVocabList"></div>
         </div>
     </div>
@@ -186,6 +198,7 @@
         let usedResources = [];
         let quizActive = false;
         let vocabListVisible = false;
+        let vocabSortMode = 'alphabetic'; // 'alphabetic' ou 'byDoc'
 
         const quizState = { score: 0, selectedFrench: null, selectedTarget: null, matchedInRound: 0, currentPairs: [], allVocab: [] };
 
@@ -204,6 +217,10 @@
             document.getElementById('newRoundBtn').addEventListener('click', loadNewQuizPairs);
             document.getElementById('stopQuizBtn').addEventListener('click', stopQuiz);
             document.getElementById('showVocabBtn').addEventListener('click', toggleFullVocab);
+            document.getElementById('vocabSortSelect').addEventListener('change', (e) => {
+                vocabSortMode = e.target.value;
+                renderFullVocab();
+            });
             
             // Auto-load vocabulary when language or level changes
             document.getElementById('languageSelect').addEventListener('change', loadVocabularyOnly);
@@ -485,11 +502,60 @@
         }
 
         function renderFullVocab() {
+            if (vocabSortMode === 'alphabetic') {
+                renderFullVocabAlphabetic();
+            } else {
+                renderFullVocabByDoc();
+            }
+            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
+        }
+
+        function normalizeForSort(word) {
+            // Enlever les articles courants (FR, NL, ALL, ESP, IT, EN, KO)
+            const articles = /^(le|la|les|l'|de|het|der|die|das|den|dem|des|ein|eine|einen|einem|eines|einer|el|la|los|las|un|una|unos|unas|il|lo|i|gli|the|a|an)\s+/i;
+            return word.trim().toLowerCase().replace(articles, '');
+        }
+
+        function renderFullVocabAlphabetic() {
             const listEl = document.getElementById('fullVocabList');
-            listEl.innerHTML = aggregatedVocab
+            // Trier par traduction (français) en ignorant les articles
+            const sorted = [...aggregatedVocab].sort((a, b) => {
+                const keyA = normalizeForSort(a.translation);
+                const keyB = normalizeForSort(b.translation);
+                return keyA.localeCompare(keyB, 'fr');
+            });
+            listEl.innerHTML = sorted
                 .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span>${item.sourceTitle ? `<span class=\"vocab-source\">${item.sourceTitle}</span>` : ''}</div>`)
                 .join('');
-            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
+        }
+
+        function renderFullVocabByDoc() {
+            const listEl = document.getElementById('fullVocabList');
+            // Regrouper par source (document)
+            const byDoc = {};
+            aggregatedVocab.forEach(item => {
+                const source = item.sourceTitle || 'Sans source';
+                if (!byDoc[source]) byDoc[source] = [];
+                byDoc[source].push(item);
+            });
+            
+            // Trier les docs alphabétiquement
+            const sortedDocs = Object.keys(byDoc).sort((a, b) => a.localeCompare(b, 'fr'));
+            
+            let html = '';
+            sortedDocs.forEach(docTitle => {
+                html += `<div class="vocab-group-title">${docTitle}</div>`;
+                // Trier les mots du doc alphabétiquement
+                const sorted = byDoc[docTitle].sort((a, b) => {
+                    const keyA = normalizeForSort(a.translation);
+                    const keyB = normalizeForSort(b.translation);
+                    return keyA.localeCompare(keyB, 'fr');
+                });
+                html += sorted
+                    .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span></div>`)
+                    .join('');
+            });
+            listEl.innerHTML = html;
         }
     </script>
 </body>

@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:40'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 352
 niveau: C1
 prompt: 'Decris L’Endroit Où '
 resume: 'Decris L’Endroit Où '
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Vivo en un apartamento pequeño en Madrid. Mi apartamento tiene una sala, una cocina, un baño y un dormitorio. La sala es cómoda. Hay un sofá y una televisión. En la cocina, tengo una mesa pequeña y una nevera. Me gusta cocinar allí. El baño es simple, con una ducha, un lavabo y un inodoro. Mi dormitorio es mi lugar favorito. Tengo una cama y una ventana con cortinas azules.

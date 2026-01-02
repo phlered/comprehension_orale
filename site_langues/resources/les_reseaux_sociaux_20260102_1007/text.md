@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:07'
 genre: femme
-langue: Anglais (UK)
+langue: Allemand
 longueur: 171
 niveau: A2
 prompt: 'Les Reseaux Sociaux '
 resume: 'Les Reseaux Sociaux '
+drapeau: 🇩🇪
 ---
-
 ## Text
 
 Soziale Medien sind sehr wichtig im Leben von Teenagern. In einem englischsprachigen Land wie den USA nutzen viele Jugendliche täglich Plattformen wie Instagram, TikTok und Snapchat. Soziale Medien helfen Teenagern, mit Freunden in Kontakt zu bleiben. Sie können Fotos und Videos teilen und sehen, was ihre Freunde machen.

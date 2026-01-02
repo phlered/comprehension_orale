@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:56'
 genre: femme
-langue: Anglais (UK)
+langue: Allemand
 longueur: 310
 niveau: B2
 prompt: 'Generer Un Dialogue '
 resume: 'Generer Un Dialogue '
+drapeau: 🇩🇪
 ---
-
 ## Text
 
 Lena und Max sitzen auf einer Parkbank im Englischen Garten in München, während sie über das Thema Tracht diskutieren. Es ist ein sonniger Herbsttag, und um sie herum sieht man viele Menschen in Dirndl und Lederhosen, da das Oktoberfest in vollem Gange ist.

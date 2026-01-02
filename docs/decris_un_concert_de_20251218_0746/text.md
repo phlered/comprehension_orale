@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:48'
 genre: femme
-langue: Français
+langue: Coréen
 longueur: 181
 niveau: A2
 prompt: Decris Un Concert De
 resume: Decris Un Concert De
+drapeau: 🇰🇷
 ---
-
 ## 텍스트
 
 지난 주말에 나는 친구와 함께 K-pop 콘서트에 갔습니다. 콘서트장은 아주 크고 사람들로 가득 찼습니다. 팬들이 소리 지르며 응원하고 있었어요. 무대에는 유명한 K-pop 그룹이 나왔습니다. 그들은 멋진 옷을 입고 있었습니다. 음악은 신나고 재미있었어요. 노래마다 다른 스타일과 리듬이 있었습니다.

@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:21'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 325
 niveau: C1
 prompt: Un Collegien Espagno
 resume: Un Collegien Espagno
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Hola, me llamo Miguel. Tengo doce años. Soy un chico español y vivo en Madrid. Estudio en el colegio San José. Estoy en sexto de primaria. Es un colegio grande y bonito. 

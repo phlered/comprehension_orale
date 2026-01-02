@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:43'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 321
 niveau: B2
 prompt: 'Decris Ta Famille : '
 resume: 'Decris Ta Famille : '
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 ¡Hola! Me llamo Carlos y quiero hablar de mi familia. Mi familia es pequeña pero muy unida. Mi padre se llama José y mi madre se llama Ana. Mi padre es profesor y mi madre es enfermera. Ellos son muy amables y trabajadores. Tengo una hermana. Se llama María y tiene diez años. Ella es muy divertida y le gusta jugar al fútbol en el parque.

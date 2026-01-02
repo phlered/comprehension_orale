@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:52'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 319
 niveau: B2
 prompt: Decris Une Journee T
 resume: Decris Une Journee T
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Hola, me llamo Ana y voy a describir mi día típico. Por la mañana, me levanto a las siete. Desayuno cereales con leche y una manzana. Después, me lavo los dientes y me visto. A las ocho, voy al colegio. Me gusta estudiar matemáticas y español. A las diez y media, tenemos un recreo.

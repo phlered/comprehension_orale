@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:54'
 genre: femme
-langue: Anglais (UK)
+langue: Allemand
 longueur: 391
 niveau: C2
 prompt: Gains De Productivit
 resume: Gains De Productivit
+drapeau: 🇩🇪
 ---
-
 ## Text
 
 **Produktivitätsgewinne: Ist die Arbeitszeitverkürzung die einzige Lösung für die Arbeitslosigkeit?**

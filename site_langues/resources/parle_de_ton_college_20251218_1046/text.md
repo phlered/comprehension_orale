@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:18'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 325
 niveau: C1
 prompt: Parle De Ton College
 resume: Parle De Ton College
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Hola, me llamo Javier y estudio en un colegio en España. Mi colegio es grande y moderno. Estudio muchas materias. Tengo clases de matemáticas, ciencias, historia y geografía. También estudio inglés y arte. Las clases empiezan a las nueve de la mañana. Cada clase dura una hora. Por la mañana, tengo tres clases, luego hay un recreo de treinta minutos. Después, tengo dos clases más y luego es la hora de comer.

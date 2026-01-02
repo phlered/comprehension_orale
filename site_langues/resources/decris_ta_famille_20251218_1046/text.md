@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:41:46'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 308
 niveau: B2
 prompt: 'Decris Ta Famille : '
 resume: 'Decris Ta Famille : '
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Mi familia es pequeña. Vivo con mis padres y mi hermana. Mi padre se llama Juan. Él es alto y trabaja en una oficina. Mi madre se llama Ana. Ella es muy amable y cocina muy bien. Mi hermana se llama Lucía. Ella es más joven que yo y le gusta mucho jugar.

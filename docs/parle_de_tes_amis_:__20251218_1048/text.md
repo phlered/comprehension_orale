@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:12'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 311
 niveau: B2
 prompt: 'Parle De Tes Amis : '
 resume: 'Parle De Tes Amis : '
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Tengo tres amigos. Se llaman Ana, Luis y Marta. Ana es alta y muy simpática. Luis es muy divertido y le gusta contar chistes. Marta es muy lista y siempre ayuda con los deberes. Nos gusta pasar tiempo juntos.

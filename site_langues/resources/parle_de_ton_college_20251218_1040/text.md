@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:15'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 306
 niveau: B2
 prompt: Parle De Ton College
 resume: Parle De Ton College
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 Hola, me llamo Ana y voy al colegio en Madrid. Mi colegio es grande y bonito. Estudio muchas materias interesantes. Por la mañana, tengo clases de matemáticas, historia y ciencias. Me gusta mucho la clase de ciencias porque hacemos experimentos. Después del recreo, estudio lengua española e inglés. La profesora de inglés es muy simpática.

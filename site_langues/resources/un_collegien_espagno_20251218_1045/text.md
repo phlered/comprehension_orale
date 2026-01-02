@@ -1,13 +1,13 @@
 ---
 date_generation: '2026-01-02 10:42:23'
 genre: femme
-langue: Anglais (UK)
+langue: Espagnol (Espagne)
 longueur: 311
 niveau: B2
 prompt: Un Collegien Espagno
 resume: Un Collegien Espagno
+drapeau: 🇪🇸
 ---
-
 ## Texto
 
 ¡Hola! Me llamo Alejandro. Tengo doce años. Soy de España. Vivo en Madrid con mi familia. Tengo un hermano y una hermana. Mi hermano se llama Pablo y mi hermana se llama Lucía.

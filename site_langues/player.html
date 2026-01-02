@@ -606,7 +606,7 @@
             selectedTarget: null,
             currentPairs: [],
             allVocab: [],
-            usedIndices: []
+            matchedInRound: 0
         };
 
         // Récupérer l'ID depuis l'URL
@@ -1169,7 +1169,7 @@
             
             quizState.allVocab = [...currentResource.fullVocab];
             quizState.score = 0;
-            quizState.usedIndices = [];
+            quizState.matchedInRound = 0;
             quizState.selectedFrench = null;
             quizState.selectedTarget = null;
             
@@ -1183,30 +1183,17 @@
 
         // Charger 5 nouvelles paires
         function loadNewQuizPairs() {
-            const availableIndices = quizState.allVocab
-                .map((_, i) => i)
-                .filter(i => !quizState.usedIndices.includes(i));
-            
-            if (availableIndices.length === 0) {
-                // Quiz terminé
-                document.getElementById('quiz-container').innerHTML = `
-                    <div class="quiz-congrats">
-                        <div style="font-size: 3em; margin-bottom: 20px;">🎉</div>
-                        <div>Félicitations !</div>
-                        <div style="font-size: 0.8em; margin-top: 10px;">Score final : ${quizState.score}</div>
-                        <button class="quiz-exit-btn" onclick="exitQuiz()" style="margin-top: 30px;">Terminer</button>
-                    </div>
-                `;
-                return;
-            }
-            
-            const numPairs = Math.min(5, availableIndices.length);
+            quizState.matchedInRound = 0;
+            const numPairs = Math.min(5, quizState.allVocab.length);
             const selectedIndices = [];
-            
-            for (let i = 0; i < numPairs; i++) {
-                const randomIndex = Math.floor(Math.random() * availableIndices.length);
-                selectedIndices.push(availableIndices[randomIndex]);
-                availableIndices.splice(randomIndex, 1);
+            const usedLocal = new Set();
+
+            while (selectedIndices.length < numPairs) {
+                const idx = Math.floor(Math.random() * quizState.allVocab.length);
+                if (!usedLocal.has(idx)) {
+                    usedLocal.add(idx);
+                    selectedIndices.push(idx);
+                }
             }
             
             quizState.currentPairs = selectedIndices.map((idx, pairIdx) => ({
@@ -1296,22 +1283,14 @@
                 
                 frenchEl.classList.add('correct');
                 targetEl.classList.add('correct');
-                
-                // Marquer comme utilisé
-                const pair = quizState.currentPairs.find(p => p.id === quizState.selectedFrench);
-                quizState.usedIndices.push(pair.vocabIndex);
+                quizState.matchedInRound += 1;
                 
                 setTimeout(() => {
                     frenchEl.classList.add('matched');
                     targetEl.classList.add('matched');
                     
-                    // Vérifier si toutes les paires sont trouvées
-                    const remainingPairs = quizState.currentPairs.filter(p => 
-                        !quizState.usedIndices.includes(p.vocabIndex)
-                    );
-                    
-                    if (remainingPairs.length === 0) {
-                        // Charger de nouvelles paires après un délai
+                    // Si toutes les paires du round sont trouvées, recharger 5 nouveaux mots
+                    if (quizState.matchedInRound >= quizState.currentPairs.length) {
                         setTimeout(() => {
                             loadNewQuizPairs();
                         }, 500);

@@ -296,12 +296,13 @@
         }
 
         .no-results {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 40px;
             text-align: center;
-            color: #666;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: var(--text-secondary);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border);
         }
 
         .no-results-icon {
@@ -317,11 +318,12 @@
         }
 
         .search-card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow-soft);
             margin-top: 15px;
+            border: 1px solid var(--border);
         }
 
         .search-card .search-container {
@@ -329,12 +331,13 @@
         }
 
         .search-card .stats {
-            background: #f8f9fa;
+            background: var(--card-strong);
             padding: 10px 12px;
             border-radius: 8px;
-            color: #666;
+            color: var(--text-secondary);
             font-size: 0.9em;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid var(--accent);
+            border: 1px solid var(--border);
         }
 
         @media (max-width: 768px) {
@@ -390,8 +393,18 @@
             }
         }
     </style>
+    <script>
+        (function() {
+            const saved = localStorage.getItem('lingoo-theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Basculer le thème">🌙 Mode sombre</button>
     <div class="header">
         <div class="header-top">
             <a href="index.html" class="back-btn">← Retour</a>
@@ -452,6 +465,7 @@
         <div class="loading">⏳ Chargement des ressources...</div>
     </div>
 
+    <script src="theme.js"></script>
     <script>
         // Configuration des langues
         const LANGUAGE_CONFIG = {

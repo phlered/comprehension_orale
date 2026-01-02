@@ -1,0 +1,333 @@
+/* Thème unifié clair/sombre pour Lingoo */
+:root {
+  --bg-gradient: linear-gradient(135deg, #e6ecfb 0%, #d9e4ff 100%);
+  --card-bg: #ffffff;
+  --card-strong: #f5f7fb;
+  --card-muted: #eaf0fb;
+  --surface-gradient: linear-gradient(135deg, #f2f6ff 0%, #e2ebff 100%);
+  --text-primary: #0a1d61;
+  --text-secondary: #30416f;
+  --text-tertiary: #556487;
+  --accent: #0a1d61;
+  --accent-strong: #081749;
+  --accent-soft: #dbe4ff;
+  --success: #1f9d55;
+  --warning: #d97706;
+  --danger: #d14343;
+  --border: #d7deed;
+  --shadow-strong: 0 20px 60px rgba(10, 29, 97, 0.16);
+  --shadow-soft: 0 10px 30px rgba(10, 29, 97, 0.10);
+}
+
+:root[data-theme="dark"] {
+  --bg-gradient: linear-gradient(135deg, #050c23 0%, #081737 55%, #050c23 100%);
+  --card-bg: #0c1427;
+  --card-strong: #0f1c39;
+  --card-muted: #112143;
+  --surface-gradient: linear-gradient(135deg, #0f1c39 0%, #0a1430 100%);
+  --text-primary: #e6ecff;
+  --text-secondary: #c1c8e6;
+  --text-tertiary: #97a0c2;
+  --accent: #7aa2ff;
+  --accent-strong: #5b82e6;
+  --accent-soft: #0d1a3d;
+  --success: #38d364;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --border: #1f2b46;
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background 0.4s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, span, label {
+  color: var(--text-secondary);
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  color: var(--text-primary);
+}
+
+/* Cartes et panneaux */
+.header,
+.card,
+.player-container,
+.search-card,
+.resource-card,
+.vocab-card,
+.no-results,
+.status-card,
+.content-section,
+.session-info,
+.stats,
+.stat-item,
+.vocab-item,
+.vocab-list .vocab-item,
+.quiz-word,
+.vocab-highlight-tooltip {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  transition: background 0.3s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+.header-title,
+.language-title,
+.title,
+.section-title,
+.resource-prompt,
+.vocab-word,
+.quiz-score,
+.vocab-count,
+.quiz-column-title,
+.quiz-column-title,
+.timer-display,
+.stat-value {
+  color: var(--text-primary);
+}
+
+.subtitle,
+.resource-preview,
+.resource-meta,
+.resource-meta-left,
+.vocab-translation,
+.vocab-source,
+.meta,
+.meta-item,
+.text-content,
+.section-subtitle,
+.stats .stat-label,
+.stat-label,
+.vocab-status,
+.session-info,
+.vocab-arrow {
+  color: var(--text-secondary);
+}
+
+/* Actions et boutons */
+.back-btn,
+.toggle-btn,
+.btn,
+.btn-secondary,
+.btn-danger,
+.action-card,
+.action-button,
+.action-grid a,
+.language-card,
+.quiz-exit-btn,
+.quiz-word,
+.theme-toggle {
+  border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.back-btn,
+.btn,
+.toggle-btn,
+.quiz-exit-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.back-btn:hover,
+.btn:hover,
+.toggle-btn:hover,
+.quiz-exit-btn:hover {
+  background: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.btn-secondary,
+.btn-danger {
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-secondary {
+  background: var(--card-muted);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--card-strong);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  filter: brightness(0.95);
+}
+
+.language-card,
+.action-card {
+  background: var(--surface-gradient);
+  color: var(--text-primary);
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-soft);
+}
+
+.language-card:hover,
+.action-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-strong);
+}
+
+.language-name,
+.action-label {
+  color: var(--text-primary);
+}
+
+.niveau-badge,
+.resource-niveau,
+.pill {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+/* Champs de formulaire */
+.search-input,
+.filter-select,
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.search-input:focus,
+.filter-select:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Listes et éléments */
+.vocab-item,
+.vocab-list .vocab-item,
+.quiz-word,
+.resource-card,
+.search-card,
+.stat-item {
+  background: var(--card-strong);
+}
+
+.vocab-item {
+  border-left: 4px solid var(--accent);
+}
+
+.quiz-word:hover {
+  background: var(--card-muted);
+  box-shadow: var(--shadow-soft);
+}
+
+.quiz-word.selected {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent-strong);
+}
+
+.quiz-word.correct {
+  background: var(--success);
+  color: #fff;
+}
+
+.quiz-word.error {
+  background: var(--danger);
+  color: #fff;
+}
+
+.quiz-word.matched {
+  opacity: 0.35;
+}
+
+.resource-preview,
+.no-results,
+.vocab-status,
+.stats {
+  background: var(--card-strong);
+}
+
+.status-card {
+  border-left: 4px solid var(--accent);
+}
+
+.status-card.status-error {
+  border-color: var(--danger);
+}
+
+.status-card.status-success {
+  border-color: var(--success);
+}
+
+.vocab-highlight {
+  background: linear-gradient(180deg, transparent 60%, rgba(250, 204, 21, 0.35) 60%);
+  color: #854d0e;
+}
+
+:root[data-theme="dark"] .vocab-highlight {
+  background: linear-gradient(180deg, transparent 60%, rgba(250, 204, 21, 0.25) 60%);
+  color: #fcd34d;
+}
+
+.audio-player {
+  background: var(--card-bg);
+}
+
+/* Toggle global */
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  z-index: 999;
+}
+
+.theme-toggle:hover {
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    top: 14px;
+    right: 14px;
+    padding: 8px 12px;
+  }
+}

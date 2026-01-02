@@ -1096,7 +1096,7 @@
                 
                 // Scroller vers le texte avec un délai pour l'animation
                 setTimeout(() => {
-                    textSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    textSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 100);
             } else {
                 textSection.classList.remove('visible');
@@ -1116,7 +1116,7 @@
                 
                 // Scroller vers le vocabulaire avec un délai pour l'animation
                 setTimeout(() => {
-                    vocabSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    vocabSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 100);
             } else {
                 vocabSection.classList.remove('visible');
@@ -1145,7 +1145,7 @@
                 
                 // Scroller vers le quiz avec un délai pour l'animation
                 setTimeout(() => {
-                    quizSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 100);
             } else {
                 quizSection.classList.remove('visible');

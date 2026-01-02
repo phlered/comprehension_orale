@@ -51,9 +51,11 @@
             padding: 12px 18px; border: none; border-radius: 10px; font-weight: 700;
             cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 15px;
         }
-        .btn-primary { background: #667eea; color: white; box-shadow: 0 8px 18px rgba(102,126,234,0.35); }
-        .btn-primary:hover { transform: translateY(-2px); }
+        .btn-quiz { background: #FF9800; color: white; box-shadow: 0 8px 18px rgba(255,152,0,0.35); }
+        .btn-quiz:hover { background: #F57C00; transform: translateY(-2px); }
         .btn-secondary { background: #edf2f7; color: #2d3748; }
+        .btn-danger { background: #f44336; color: white; }
+        .btn-danger:hover { background: #d32f2f; }
         .status-card { padding: 14px; border-radius: 12px; background: #edf2f7; color: #2d3748; margin-bottom: 12px; }
         .status-error { background: #fef2f2; color: #b91c1c; }
         .status-success { background: #ecfeff; color: #0f172a; }
@@ -66,7 +68,7 @@
             gap: 10px; margin-bottom: 12px;
         }
         .quiz-score { font-size: 18px; font-weight: 700; color: #2d3748; }
-        .quiz-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+        .quiz-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .quiz-column { background: #f8fafc; border-radius: 12px; padding: 12px; min-height: 200px; }
         .quiz-column-title { font-weight: 800; color: #2d3748; margin-bottom: 10px; }
         .quiz-word { background: white; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.1s, box-shadow 0.2s; }
@@ -77,6 +79,10 @@
         .quiz-word.matched { opacity: 0.6; cursor: default; }
         .pill { display: inline-flex; align-items: center; gap: 6px; background: #e0e7ff; color: #3730a3; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 13px; }
         .hint { color: #4a5568; font-size: 14px; margin-top: 6px; }
+        .vocab-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; margin-top: 10px; }
+        .vocab-item { background: #f8fafc; padding: 10px 12px; border-radius: 10px; border-left: 4px solid #FF9800; }
+        .vocab-word { font-weight: 800; color: #2d3748; }
+        .vocab-translation { color: #4a5568; margin-left: 6px; }
         @media (max-width: 640px) { .quiz-word { font-size: 15px; } }
     </style>
 </head>
@@ -105,10 +111,13 @@
                 </div>
                 <div class="control">
                     <label>&nbsp;</label>
-                    <button id="loadBtn" class="btn btn-primary" style="width: 100%;">Charger le vocabulaire</button>
+                    <button id="loadBtn" class="btn btn-quiz" style="width: 100%;">Quiz vocabulaire</button>
+                </div>
+                <div class="control">
+                    <label>&nbsp;</label>
+                    <button id="showVocabBtn" class="btn btn-quiz" style="width: 100%;" disabled>Afficher le vocabulaire</button>
                 </div>
             </div>
-            <p class="hint">Si vous choisissez A1, seuls les mots A1 sont pris (aucun mélange avec les autres niveaux).</p>
         </div>
 
         <div id="statusCard" class="status-card">Sélectionnez une langue et un niveau pour lancer le quiz.</div>
@@ -134,6 +143,7 @@
                 <div class="quiz-score" id="quizScore">Score: 0</div>
                 <div style="display: flex; gap: 8px;">
                     <button class="btn btn-secondary" id="newRoundBtn">Nouveau tirage</button>
+                    <button class="btn btn-danger" id="stopQuizBtn">Arrêter le quiz</button>
                 </div>
             </div>
             <div class="quiz-columns">
@@ -146,6 +156,14 @@
                     <div id="quizTarget"></div>
                 </div>
             </div>
+        </div>
+
+        <div class="card" id="vocabListCard" style="display: none;">
+            <div class="quiz-header">
+                <div class="pill">📚 Vocabulaire complet</div>
+                <div class="quiz-score" id="vocabCount">0 mot(s)</div>
+            </div>
+            <div class="vocab-list" id="fullVocabList"></div>
         </div>
     </div>
 
@@ -165,6 +183,8 @@
         let currentLanguage = '';
         let currentLevel = '';
         let usedResources = [];
+        let quizActive = false;
+        let vocabListVisible = false;
 
         const quizState = { score: 0, selectedFrench: null, selectedTarget: null, matchedInRound: 0, currentPairs: [], allVocab: [] };
 
@@ -181,6 +201,8 @@
 
             document.getElementById('loadBtn').addEventListener('click', handleLoad);
             document.getElementById('newRoundBtn').addEventListener('click', loadNewQuizPairs);
+            document.getElementById('stopQuizBtn').addEventListener('click', stopQuiz);
+            document.getElementById('showVocabBtn').addEventListener('click', toggleFullVocab);
 
             if (langParam && levelParam) {
                 handleLoad();
@@ -239,16 +261,21 @@
                 setStatus('Aucun document trouvé pour cette combinaison.', true);
                 aggregatedVocab = [];
                 document.getElementById('quizCard').style.display = 'none';
+                document.getElementById('showVocabBtn').disabled = true;
+                hideFullVocab();
                 updateStats();
                 return;
             }
 
             aggregatedVocab = await collectVocabulary(filtered);
             updateStats();
+            document.getElementById('showVocabBtn').disabled = aggregatedVocab.length === 0;
+            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
 
             if (aggregatedVocab.length < 5) {
                 setStatus('Pas assez de vocabulaire (minimum 5 mots requis pour lancer un quiz).', true);
                 document.getElementById('quizCard').style.display = 'none';
+                hideFullVocab();
                 return;
             }
 
@@ -312,6 +339,7 @@
         }
 
         function startQuiz() {
+            quizActive = true;
             quizState.score = 0;
             quizState.allVocab = [...aggregatedVocab];
             document.getElementById('quizScore').textContent = 'Score: 0';
@@ -323,7 +351,7 @@
         }
 
         function loadNewQuizPairs() {
-            if (!quizState.allVocab.length) return;
+            if (!quizActive || !quizState.allVocab.length) return;
             quizState.matchedInRound = 0;
             const numPairs = Math.min(5, quizState.allVocab.length);
             const usedIndices = new Set();
@@ -386,6 +414,7 @@
         }
 
         function verifyMatch() {
+            if (!quizActive) return;
             if (quizState.selectedFrench === quizState.selectedTarget) {
                 quizState.score += 1;
                 document.getElementById('quizScore').textContent = `Score: ${quizState.score}`;
@@ -397,7 +426,7 @@
                 setTimeout(() => {
                     fEl.classList.add('matched');
                     tEl.classList.add('matched');
-                    if (quizState.matchedInRound >= quizState.currentPairs.length) {
+                    if (quizActive && quizState.matchedInRound >= quizState.currentPairs.length) {
                         setTimeout(loadNewQuizPairs, 400);
                     }
                 }, 400);
@@ -413,6 +442,38 @@
             }
             quizState.selectedFrench = null;
             quizState.selectedTarget = null;
+        }
+
+        function stopQuiz() {
+            quizActive = false;
+            document.getElementById('quizCard').style.display = 'none';
+            setStatus('Quiz arrêté. Relancez en cliquant sur "Quiz vocabulaire".', false);
+        }
+
+        function toggleFullVocab() {
+            if (!aggregatedVocab.length) return;
+            vocabListVisible = !vocabListVisible;
+            if (vocabListVisible) {
+                renderFullVocab();
+                document.getElementById('vocabListCard').style.display = 'block';
+                document.getElementById('showVocabBtn').textContent = 'Masquer le vocabulaire';
+            } else {
+                hideFullVocab();
+            }
+        }
+
+        function hideFullVocab() {
+            vocabListVisible = false;
+            document.getElementById('vocabListCard').style.display = 'none';
+            document.getElementById('showVocabBtn').textContent = 'Afficher le vocabulaire';
+        }
+
+        function renderFullVocab() {
+            const listEl = document.getElementById('fullVocabList');
+            listEl.innerHTML = aggregatedVocab
+                .map(item => `<div class="vocab-item"><span class="vocab-word">${item.translation}</span><span class="vocab-translation">→ ${item.word}</span></div>`)
+                .join('');
+            document.getElementById('vocabCount').textContent = `${aggregatedVocab.length} mot(s)`;
         }
     </script>
 </body>

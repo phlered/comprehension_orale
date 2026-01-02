@@ -465,12 +465,10 @@
                                 <span>📝</span>
                                 <span>${resource.longueur} mots</span>
                             </div>
-                            ${resource.niveau !== 'C2' ? `
-                                <div class="meta-item">
-                                    <span>📚</span>
-                                    <span>${resource.vocab_count} mots vocab.</span>
-                                </div>
-                            ` : ''}
+                            <div class="meta-item">
+                                <span>📚</span>
+                                <span>${resource.vocab_count} mots vocab.</span>
+                            </div>
                             ${resource.classe ? `
                                 <div class="meta-item">
                                     <span>🎓</span>

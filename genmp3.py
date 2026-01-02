@@ -258,7 +258,9 @@ Pour chaque mot :
         elif langue_code in ["eng", "us"]:
             vocab_prompt += "- Pour les verbes anglais, indique 'to' avant le verbe\n"
             vocab_prompt += "- NE PAS mettre d'article devant les noms anglais\n"
-            vocab_prompt += "Format strict (un mot par ligne) :\nmot_anglais | traduction_française\n\nExemple:\nto see | voir\nhouse | maison\n"
+            vocab_prompt += "- IMPORTANT: Donne une VRAIE traduction en français, pas un cognate. Par exemple: 'dynamics' → 'dynamique' ❌ NON! → 'dynamique' ✓ OUI!\n"
+            vocab_prompt += "- Évite les traductions qui sont quasiment identiques au mot anglais (cognates). Cherche le vrai sens en français.\n"
+            vocab_prompt += "Format strict (un mot par ligne) :\nmot_anglais | traduction_française\n\nExemples ✓ CORRECTS:\nto see | voir\nhouse | maison\nto challenge | défier\neficiency | rendement\nto spark | susciter\n"
         elif langue_code in ["esp", "hisp"]:
             vocab_prompt += "- Pour les noms espagnols, INDIQUE TOUJOURS l'article défini (el/la/los/las) devant le mot\n"
             vocab_prompt += "Format strict (un mot par ligne) :\narticle mot_espagnol | traduction_française\n\nExemple:\nla casa | la maison\nel perro | le chien\n"

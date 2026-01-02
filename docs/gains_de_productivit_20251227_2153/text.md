@@ -50,3 +50,45 @@ Zusammenfassend lässt sich sagen, dass die Reduzierung der Arbeitszeit lediglic
 - **die Verkürzung** → la réduction
 - **die Wettbewerbsfähigkeit** → la compétitivité
 - **die Zufriedenheit** → la satisfaction
+
+## Vocabulary
+
+
+
+## Wortschatz
+
+- **der Arbeitnehmer** → le salarié
+- **die Arbeitslosigkeit** → le chômage
+- **die Arbeitszeit** → le temps de travail
+- **die Bildung** → l'éducation
+- **die Branche** → le secteur
+- **der Fortschritt** → le progrès
+- **das Gehalt** → le salaire
+- **der Gewinn** → le gain
+- **die Herausforderung** → le défi
+- **die Industrie** → l'industrie
+- **die Investition** → l'investissement
+- **die Lösung** → la solution
+- **die Maßnahme** → la mesure
+- **die Produktivität** → la productivité
+- **die Technologie** → la technologie
+- **die Umschulung** → la reconversion professionnelle
+- **das Unternehmen** → l'entreprise
+- **die Verkürzung** → la réduction
+- **die Wettbewerbsfähigkeit** → la compétitivité
+- **die Zufriedenheit** → la satisfaction
+- **die Lebensqualität** → la qualité de vie
+- **der Fachkräftemangel** → la pénurie de main-d'œuvre qualifiée
+- **die Umsetzung** → la réalisation
+- **die Märkte** → les marchés
+- **die Lohnkosten** → les coûts salariaux
+- **der Wandel** → le changement
+- **der Aspekt** → l'aspect
+- **die erneuerbaren Energien** → les énergies renouvelables
+- **die digitale Technologie** → la technologie numérique
+- **die Beschäftigung** → l'emploi
+- **der Klimawandel** → le changement climatique
+- **die Politik** → la politique
+- **die Rahmenbedingungen** → les conditions cadres
+- **die Arbeitsform** → la forme de travail
+- **die Strategie** → la stratégie

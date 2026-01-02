@@ -6,6 +6,7 @@ python-dotenv>=0.19.0
 
 # Text-to-Speech
 azure-cognitiveservices-speech>=1.31.0
+google-cloud-texttospeech>=2.13.0
 gtts>=2.2.4
 edge-tts>=6.1.0
 

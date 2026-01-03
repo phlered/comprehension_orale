@@ -372,17 +372,11 @@
         }
     </style>
     <script>
-        (function() {
-            const saved = localStorage.getItem('lingoo-theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = saved || (prefersDark ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-theme', theme);
-        })();
+        document.documentElement.setAttribute('data-theme', 'dark');
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Basculer le thème">🌙 Mode sombre</button>
     <script src="theme.js"></script>
     <div class="container">
         <div class="header">

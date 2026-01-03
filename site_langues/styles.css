@@ -1,25 +1,5 @@
-/* Thème unifié clair/sombre pour Lingoo */
+/* Thème unifié mode sombre pour Lingoo */
 :root {
-  --bg-gradient: linear-gradient(135deg, #e6ecfb 0%, #d9e4ff 100%);
-  --card-bg: #ffffff;
-  --card-strong: #f5f7fb;
-  --card-muted: #eaf0fb;
-  --surface-gradient: linear-gradient(135deg, #f2f6ff 0%, #e2ebff 100%);
-  --text-primary: #0a1d61;
-  --text-secondary: #30416f;
-  --text-tertiary: #556487;
-  --accent: #0a1d61;
-  --accent-strong: #081749;
-  --accent-soft: #dbe4ff;
-  --success: #1f9d55;
-  --warning: #d97706;
-  --danger: #d14343;
-  --border: #d7deed;
-  --shadow-strong: 0 20px 60px rgba(10, 29, 97, 0.16);
-  --shadow-soft: 0 10px 30px rgba(10, 29, 97, 0.10);
-}
-
-:root[data-theme="dark"] {
   --bg-gradient: linear-gradient(135deg, #050c23 0%, #081737 55%, #050c23 100%);
   --card-bg: #0c1427;
   --card-strong: #0f1c39;
@@ -304,30 +284,7 @@ textarea:focus {
   background: var(--card-bg);
 }
 
-/* Toggle global */
+/* Toggle global - SUPPRIMER */
 .theme-toggle {
-  position: fixed;
-  top: 18px;
-  right: 18px;
-  padding: 10px 14px;
-  font-weight: 700;
-  cursor: pointer;
-  background: var(--card-bg);
-  color: var(--text-primary);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-soft);
-  z-index: 999;
-}
-
-.theme-toggle:hover {
-  box-shadow: var(--shadow-strong);
-  transform: translateY(-1px);
-}
-
-@media (max-width: 640px) {
-  .theme-toggle {
-    top: 14px;
-    right: 14px;
-    padding: 8px 12px;
-  }
+  display: none;
 }

@@ -11,39 +11,41 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--bg-gradient);
             min-height: 100vh;
             padding: 20px;
+            color: var(--text-primary);
         }
         .container { max-width: 1000px; margin: 0 auto; }
         .card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 24px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+            box-shadow: var(--shadow-soft);
             margin-bottom: 18px;
+            border: 1px solid var(--border);
         }
-        .header-title { font-size: 28px; font-weight: 800; color: #2d3748; margin-bottom: 6px; }
-        .subtitle { color: #4a5568; margin-bottom: 14px; }
-        .back-btn { display: inline-block; color: #667eea; text-decoration: none; font-weight: 700; margin-bottom: 14px; transition: transform 0.2s; }
+        .header-title { font-size: 28px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 14px; }
+        .back-btn { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 700; margin-bottom: 14px; transition: transform 0.2s; }
         .back-btn:hover { transform: translateX(-4px); }
         .controls-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; align-items: end; margin-top: 12px; }
-        .control label { display: block; color: #4a5568; font-weight: 700; margin-bottom: 6px; }
-        .control select { width: 100%; padding: 12px; border: 2px solid #cbd5e0; border-radius: 10px; font-size: 15px; background: #fff; transition: border-color 0.2s; }
-        .control select:focus { outline: none; border-color: #667eea; }
+        .control label { display: block; color: var(--text-secondary); font-weight: 700; margin-bottom: 6px; }
+        .control select { width: 100%; padding: 12px; border: 2px solid var(--border); border-radius: 10px; font-size: 15px; background: var(--card-strong); color: var(--text-primary); transition: border-color 0.2s, background 0.2s, color 0.2s; }
+        .control select:focus { outline: none; border-color: var(--accent); }
         .btn { padding: 12px 18px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 15px; }
         .btn-quiz { background: #FF9800; color: white; box-shadow: 0 8px 18px rgba(255,152,0,0.35); }
         .btn-quiz:hover { background: #F57C00; transform: translateY(-2px); }
-        .btn-secondary { background: #edf2f7; color: #2d3748; }
+        .btn-secondary { background: var(--card-muted); color: var(--text-primary); border: 1px solid var(--border); }
         .btn-danger { background: #f44336; color: white; }
         .btn-danger:hover { background: #d32f2f; }
-        .status-card { padding: 14px; border-radius: 12px; background: #edf2f7; color: #2d3748; margin-bottom: 12px; }
+        .status-card { padding: 14px; border-radius: 12px; background: var(--card-strong); color: var(--text-primary); margin-bottom: 12px; border: 1px solid var(--border); }
         .status-error { background: #fef2f2; color: #b91c1c; }
-        .status-success { background: #ecfeff; color: #0f172a; }
+        .status-success { background: #ecfeff; color: var(--text-primary); }
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-        .stat-item { background: #f8fafc; padding: 14px; border-radius: 12px; text-align: center; }
-        .stat-value { font-size: 26px; font-weight: 800; color: #667eea; }
-        .stat-label { color: #4a5568; margin-top: 4px; }
+        .stat-item { background: var(--card-strong); padding: 14px; border-radius: 12px; text-align: center; border: 1px solid var(--border); }
+        .stat-value { font-size: 26px; font-weight: 800; color: var(--accent); }
+        .stat-label { color: var(--text-secondary); margin-top: 4px; }
         .quiz-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
         .quiz-score { font-size: 18px; font-weight: 700; color: #667eea; }
         .quiz-columns { display: grid; grid-template-columns: repeat(2, minmax(160px, 1fr)); gap: 30px; }
@@ -73,11 +75,8 @@
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Basculer le thème">🌙 Mode sombre</button>
-    <div class="container">
-        <div class="card">
-            <a id="backLink" href="index.html" class="back-btn">← Retour</a>
+</body>
+</html>
             <div class="header-title">🎯 Quiz vocabulaire global</div>
             <p class="subtitle">Langue déjà choisie : sélectionnez un niveau puis lancez le quiz.</p>
             <div class="pill" id="selectedLanguage" style="display: inline-flex; margin-top: 8px;"></div>
@@ -493,4 +492,3 @@
     </script>
 </body>
 </html>
-```}

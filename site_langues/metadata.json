@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-02T20:08:43.490083",
-  "total_resources": 260,
+  "generated_at": "2026-01-03T19:05:36.116780",
+  "total_resources": 261,
   "languages": [
     "esp",
-    "fr",
-    "it",
-    "cor",
     "all",
+    "cor",
+    "nl",
+    "fr",
     "eng",
-    "nl"
+    "it"
   ],
   "resources": [
     {
@@ -4042,6 +4042,24 @@
       "vocab_count": 36,
       "audio_path": "resources/presente_un_acteur_o_20251218_0746/audio.mp3",
       "text_path": "resources/presente_un_acteur_o_20251218_0746/text.md"
+    },
+    {
+      "id": "italie_vs_usa_ou_e_20260103_1859",
+      "langue": "eng",
+      "prompt": "Italie vs USA : où est la meilleure pizza ?",
+      "resume": "La meilleure pizza Italie vs USA",
+      "niveau": "B1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇺🇸",
+      "voix_variant": "us",
+      "date": "2026-01-03 18:59:11",
+      "longueur": 250,
+      "text_preview": "When we think about pizza, two countries often come to mind: Italy and the USA. Both countries have a strong pizza culture, but they offer different experiences. So, where can you find the best pizza?...",
+      "vocab_count": 34,
+      "audio_path": "resources/italie_vs_usa_ou_e_20260103_1859/audio.mp3",
+      "text_path": "resources/italie_vs_usa_ou_e_20260103_1859/text.md"
     },
     {
       "id": "demander_l_heure_d_o_20251210_2033",

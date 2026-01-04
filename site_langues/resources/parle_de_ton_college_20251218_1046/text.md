@@ -5,7 +5,7 @@ langue: Espagnol (Espagne)
 longueur: 153
 niveau: A1
 prompt: Parle De Ton College
-resume: Parle de ton collège
+resume: Parle De Ton College
 drapeau: 🇪🇸
 ---
 ## Texto

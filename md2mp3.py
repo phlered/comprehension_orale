@@ -996,7 +996,7 @@ class AzureTTSGenerator:
         </speak>'''
         
         # Générer l'audio avec SSML - avec retry en cas de timeout ou rate limiting
-        max_retries = 3
+        max_retries = 5  # Plus de tentatives pour 429
         for attempt in range(max_retries):
             try:
                 result = synthesizer.speak_ssml_async(ssml).get()
@@ -1011,8 +1011,9 @@ class AzureTTSGenerator:
                     
                     # Backoff exponentiel pour Timeout ou Rate Limiting (429)
                     if ("Timeout" in error_msg or "429" in error_msg or "Too many requests" in error_msg) and attempt < max_retries - 1:
-                        delay = 2 ** (attempt + 1)  # 2s, 4s, 8s
-                        print(f"⏱️  {['Timeout', 'Rate limit'][1 if '429' in error_msg or 'Too many' in error_msg else 0]} Azure, backoff {delay}s (tentative {attempt + 2}/{max_retries})...")
+                        delay = 3 * (2 ** attempt)  # 3s, 6s, 12s, 24s, 48s
+                        error_type = 'Rate limit' if ('429' in error_msg or 'Too many' in error_msg) else 'Timeout'
+                        print(f"⏱️  {error_type} Azure, backoff {delay}s (tentative {attempt + 2}/{max_retries})...")
                         time.sleep(delay)
                         continue
                     
@@ -1021,7 +1022,7 @@ class AzureTTSGenerator:
                     return False, f"❌ Erreur TTS: Raison inconnue - {result.reason}"
             except Exception as e:
                 if attempt < max_retries - 1:
-                    delay = 2 ** (attempt + 1)  # 2s, 4s, 8s
+                    delay = 3 * (2 ** attempt)  # 3s, 6s, 12s, 24s, 48s
                     print(f"⏱️  Exception, backoff {delay}s (tentative {attempt + 2}/{max_retries}): {str(e)[:100]}")
                     time.sleep(delay)
                     continue

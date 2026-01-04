@@ -418,7 +418,7 @@ class AudioGeneratorMD2MP3:
         
         # Retry logic pour gérer les erreurs temporaires Azure
         max_retries = 3
-        retry_delay = 2  # secondes
+        retry_delay = 3  # secondes - augmenté pour éviter rate limiting
         
         for attempt in range(max_retries):
             try:

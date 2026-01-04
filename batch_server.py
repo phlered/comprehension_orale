@@ -191,7 +191,7 @@ def create_app(project_root: str = "."):
         
         level = request.form.get('level')
         languages = request.form.get('languages')
-        delay = request.form.get('delay', '3.0')  # Default 3 seconds
+        delay = request.form.get('delay', '5.0')  # Default 5 seconds
         
         if not level or not languages:
             return jsonify({"error": "Missing level or languages"}), 400

@@ -417,8 +417,9 @@ class AudioGeneratorMD2MP3:
         sys.stdout.flush()
         
         # Retry logic pour gérer les erreurs temporaires Azure
-        max_retries = 4  # une tentative de plus pour laisser respirer l'API
-        retry_delay = 5  # secondes - plus conservateur
+        # Note: md2mp3.py gère déjà les retries avec pause longue (30s)
+        max_retries = 2  # Juste 1 retry si md2mp3 retourne une erreur
+        retry_delay = 10  # secondes - court car md2mp3 gère les gros retries
         
         for attempt in range(max_retries):
             try:

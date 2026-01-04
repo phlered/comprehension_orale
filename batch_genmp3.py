@@ -16,6 +16,7 @@ import re
 import random
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import List, Tuple
 
@@ -53,12 +54,13 @@ class BatchGenerator:
     """Gère la génération batch de ressources"""
     
     def __init__(self, niveau: str, longueur: int, vitesse: float = None, 
-                 genre: str = None, dry_run: bool = False):
+                 genre: str = None, dry_run: bool = False, delai_entre_generations: float = 3.0):
         self.niveau = niveau
         self.longueur = longueur if longueur is not None else self._default_length_for_level(niveau)
         self.vitesse = vitesse
         self.genre = genre
         self.dry_run = dry_run
+        self.delai_entre_generations = delai_entre_generations
         self.python_exe = ".venv312/bin/python"
 
     @staticmethod
@@ -189,6 +191,12 @@ class BatchGenerator:
                             print("🛑 Arrêt de la génération batch")
                             sys.stdout.flush()
                             return success_count, fail_count
+                
+                # Ajouter un délai entre les générations (sauf après la dernière)
+                if current < total_resources and self.delai_entre_generations > 0:
+                    print(f"⏳ Pause de {self.delai_entre_generations}s avant la prochaine génération...")
+                    sys.stdout.flush()
+                    time.sleep(self.delai_entre_generations)
         
         return success_count, fail_count
 
@@ -262,6 +270,13 @@ Exemples:
         help="Afficher les commandes sans les exécuter"
     )
     
+    parser.add_argument(
+        '--delai',
+        type=float,
+        default=3.0,
+        help="Délai entre chaque génération en secondes (défaut: 3s pour éviter rate limiting Azure)"
+    )
+    
     args = parser.parse_args()
     
     # Vérifier que le fichier de prompts existe
@@ -310,7 +325,8 @@ Exemples:
         longueur=args.longueur,
         vitesse=args.vitesse,
         genre=args.genre,
-        dry_run=args.dry_run
+        dry_run=args.dry_run,
+        delai_entre_generations=args.delai
     )
     
     # Générer toutes les ressources

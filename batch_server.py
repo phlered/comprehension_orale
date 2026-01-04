@@ -39,7 +39,7 @@ class BatchProcessor:
         self.project_root = Path(project_root)
         self.python_exe = str(self.project_root / ".venv312" / "bin" / "python")
         
-    def process_batch(self, prompt_file: str, languages: str, level: str) -> Generator[str, None, None]:
+    def process_batch(self, prompt_file: str, languages: str, level: str, delay: float = 3.0) -> Generator[str, None, None]:
         """
         Lance la génération batch et yield les résultats ligne par ligne
         
@@ -47,6 +47,7 @@ class BatchProcessor:
             prompt_file: Chemin du fichier de prompts
             languages: Langues séparées par virgule (nl,eng,all)
             level: Niveau CECRL (A1-C2)
+            delay: Délai entre les générations en secondes
             
         Yields:
             Lignes JSON avec: type, message, status, current, total
@@ -58,7 +59,8 @@ class BatchProcessor:
             str(self.project_root / "batch_genmp3.py"),
             "-f", prompt_file,
             "-l", languages,
-            "-n", level
+            "-n", level,
+            "--delai", str(delay)
         ]
         
         yield json.dumps({
@@ -189,6 +191,7 @@ def create_app(project_root: str = "."):
         
         level = request.form.get('level')
         languages = request.form.get('languages')
+        delay = request.form.get('delay', '3.0')  # Default 3 seconds
         
         if not level or not languages:
             return jsonify({"error": "Missing level or languages"}), 400
@@ -197,6 +200,14 @@ def create_app(project_root: str = "."):
         valid_levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
         if level not in valid_levels:
             return jsonify({"error": f"Invalid level: {level}"}), 400
+        
+        # Validate delay
+        try:
+            delay_float = float(delay)
+            if delay_float < 0 or delay_float > 30:
+                delay_float = 3.0
+        except (ValueError, TypeError):
+            delay_float = 3.0
         
         # Validate languages
         valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']
@@ -218,7 +229,7 @@ def create_app(project_root: str = "."):
             # Generate streaming response and cleanup the temp file AFTER stream ends
             def stream_and_cleanup():
                 try:
-                    for line in processor.process_batch(filepath, languages, level):
+                    for line in processor.process_batch(filepath, languages, level, delay_float):
                         yield line
                 finally:
                     try:

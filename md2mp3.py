@@ -14,6 +14,7 @@ import argparse
 import os
 import re
 import random
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 import asyncio
@@ -994,7 +995,7 @@ class AzureTTSGenerator:
             </voice>
         </speak>'''
         
-        # Générer l'audio avec SSML - avec retry en cas de timeout
+        # Générer l'audio avec SSML - avec retry en cas de timeout ou rate limiting
         max_retries = 3
         for attempt in range(max_retries):
             try:
@@ -1008,9 +1009,11 @@ class AzureTTSGenerator:
                     if cancellation.error_details:
                         error_msg += f" - {cancellation.error_details}"
                     
-                    # Retry si timeout
-                    if "Timeout" in error_msg and attempt < max_retries - 1:
-                        print(f"⏱️  Timeout Azure, tentative {attempt + 2}/{max_retries}...")
+                    # Backoff exponentiel pour Timeout ou Rate Limiting (429)
+                    if ("Timeout" in error_msg or "429" in error_msg or "Too many requests" in error_msg) and attempt < max_retries - 1:
+                        delay = 2 ** (attempt + 1)  # 2s, 4s, 8s
+                        print(f"⏱️  {['Timeout', 'Rate limit'][1 if '429' in error_msg or 'Too many' in error_msg else 0]} Azure, backoff {delay}s (tentative {attempt + 2}/{max_retries})...")
+                        time.sleep(delay)
                         continue
                     
                     return False, f"❌ Erreur TTS: {error_msg}"
@@ -1018,7 +1021,9 @@ class AzureTTSGenerator:
                     return False, f"❌ Erreur TTS: Raison inconnue - {result.reason}"
             except Exception as e:
                 if attempt < max_retries - 1:
-                    print(f"⏱️  Exception, tentative {attempt + 2}/{max_retries}: {str(e)}")
+                    delay = 2 ** (attempt + 1)  # 2s, 4s, 8s
+                    print(f"⏱️  Exception, backoff {delay}s (tentative {attempt + 2}/{max_retries}): {str(e)[:100]}")
+                    time.sleep(delay)
                     continue
                 return False, f"❌ Erreur TTS: {str(e)}"
         

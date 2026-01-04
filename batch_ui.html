@@ -191,6 +191,27 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
+        .text-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333;
+            background: white;
+            transition: border-color 0.2s;
+        }
+
+        .text-input:hover {
+            border-color: #667eea;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
         .prompt-textarea {
             width: 100%;
             min-height: 200px;
@@ -422,6 +443,13 @@
                 </select>
             </div>
 
+            <!-- Delay Between Generations -->
+            <div class="form-group">
+                <label for="delay">⏳ Délai entre générations (secondes)</label>
+                <input type="number" id="delay" name="delay" class="text-input" min="0" max="30" step="0.5" value="3" required>
+                <small style="color: #666; font-size: 12px; margin-top: 8px; display: block;">Augmentez si vous avez des erreurs 429 (rate limiting Azure). Défaut: 3s</small>
+            </div>
+
             <!-- Buttons -->
             <div class="button-group">
                 <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -575,6 +603,7 @@
             formData.append('promptText', promptText);
             formData.append('level', level);
             formData.append('languages', Array.from(selectedLanguages).join(','));
+            formData.append('delay', document.getElementById('delay').value);
 
             // Disable submit button
             const submitBtn = document.getElementById('submitBtn');

@@ -16,14 +16,14 @@ import re
 class SpeakerAgeDetector:
     """Détecte l'âge apparent du locuteur dans le texte pour choisir une voix adaptée."""
     
-    # Patterns pour détecter adolescents (13-18 ans)
+    # Patterns pour détecter adolescents et jeunes adultes (13-30 ans)
     ADOLESCENT_PATTERNS = [
-        r'\b(I am|je suis|tengo|ho)\s+1[3-8]\b',  # "I am 15", "je suis 16", "tengo 14"
-        r'\b(I am|je suis|tengo|ho)\s+(thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|treize|quatorze|quinze|seize|dix-sept|dix-huit)\b',
-        r'\bschoolboy\b|\bschoolgirl\b|\btélécolier\b|\btélécolière\b|\bestudiante?\b|\badolescent',
-        r'\bteen\b|\btéen\b|\btín\b',
-        r'\b(year|years|ans|años)\s+(old|viejo|vieja)\b',  # "16 years old"
-        r'\bmy name is\b.*\b(I am|je suis|tengo)',  # "my name is X and I am 15"
+        r'\b(I am|je suis|tengo|ho)\s+([1-2][0-9])\b',  # "I am 15", "je suis 20", "tengo 25" (13-29 ans)
+        r'\b(I am|je suis|tengo|ho)\s+(thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|vingt|veintiuno|treize|quatorze|quinze|seize|dix-sept|dix-huit|dix-neuf)\b',
+        r'\bstudent\b|\bestudiant\b|\bschoolgirl\b|\bscholary\b|\btélécolière\b|\bestudiant(e)?\b|\badolescent\b|\bjeune adulte\b',
+        r'\bteen\b|\btéen\b|\btín\b|\byoung\b|\bjoven\b',
+        r'\b(age|âge|años|years|ans)\s+([1-2][0-9])\b',  # "age 20", "âge 25", "años 22"
+        r'\bmy name is\b.*\b(I am|je suis|tengo).*\b([1-2][0-9])\b',  # "my name is X and I am 20"
     ]
     
     # Patterns pour détecter enfants (5-12 ans)
@@ -161,14 +161,14 @@ class GenderDetector:
 class VoiceSelector:
     """Sélectionne une voix Azure optimale selon genre et âge détecté."""
     
-    # Voix juvéniles/adolescentes (18-25 ans perçus)
+    # Voix juvéniles/adolescentes/jeunes adultes (13-30 ans perçus)
     YOUNG_VOICES = {
         "en-US": {
             "female": ["en-US-AriaNeural", "en-US-AvaNeural", "en-US-EmmaNeural"],
             "male": ["en-US-BrianNeural", "en-US-EricNeural"]
         },
         "en-GB": {
-            "female": ["en-GB-SoniaNeural", "en-GB-BellaNeural"],
+            "female": ["en-GB-SoniaNeural", "en-GB-OliviaNeural"],
             "male": ["en-GB-RyanNeural", "en-GB-ElliotNeural"]
         },
         "es-ES": {
@@ -184,8 +184,60 @@ class VoiceSelector:
             "male": ["es-AR-TomasNeural"]
         },
         "fr-FR": {
-            "female": ["fr-FR-DeniseNeural", "fr-FR-EloiseNeural"],
-            "male": ["fr-FR-HenriNeural", "fr-FR-AlainNeural"]
+            "female": ["fr-FR-DeniseNeural", "fr-FR-EloiseNeural", "fr-FR-VivienneNeural"],
+            "male": ["fr-FR-HenriNeural", "fr-FR-AlainNeural", "fr-FR-ClaudeNeural"]
+        },
+        "de-DE": {
+            "female": ["de-DE-KatjaNeural", "de-DE-AmalaNeural"],
+            "male": ["de-DE-ConradNeural", "de-DE-BerndNeural"]
+        },
+        "nl-NL": {
+            "female": ["nl-NL-FennaNeural", "nl-NL-ColetteNeural"],
+            "male": ["nl-NL-MaartenNeural", "nl-NL-CoenNeural"]
+        },
+        "it-IT": {
+            "female": ["it-IT-ElsaNeural", "it-IT-IsabellaNeural"],
+            "male": ["it-IT-DiegoNeural", "it-IT-GiuseppeNeural"]
+        }
+    }
+    
+    # Voix neutres/adultes générales (défaut) - retiré les voix enfant comme BellaNeural
+    ADULT_VOICES = {
+        "en-US": {
+            "female": ["en-US-AriaNeural", "en-US-EmmaNeural", "en-US-MichelleNeural"],
+            "male": ["en-US-GuyNeural", "en-US-JasonNeural"]
+        },
+        "en-GB": {
+            "female": ["en-GB-SoniaNeural", "en-GB-OliviaNeural"],
+            "male": ["en-GB-ThomasNeural", "en-GB-RyanNeural"]
+        },
+        "es-ES": {
+            "female": ["es-ES-ElviraNeural", "es-ES-EstrellaNeural", "es-ES-VerónicaNeural"],
+            "male": ["es-ES-AlvaroNeural", "es-ES-ArnauNeural", "es-ES-TeoNeural"]
+        },
+        "es-MX": {
+            "female": ["es-MX-MartaNeural", "es-MX-BeatrizNeural", "es-MX-CarlotaNeural"],
+            "male": ["es-MX-JorgeNeural", "es-MX-GerardoNeural", "es-MX-LucianoNeural"]
+        },
+        "es-AR": {
+            "female": ["es-AR-ElenaNeural"],
+            "male": ["es-AR-TomasNeural"]
+        },
+        "fr-FR": {
+            "female": ["fr-FR-DeniseNeural", "fr-FR-EloiseNeural", "fr-FR-VivienneNeural", "fr-FR-BrigitteNeural"],
+            "male": ["fr-FR-HenriNeural", "fr-FR-AlainNeural", "fr-FR-ClaudeNeural", "fr-FR-JeromeNeural"]
+        },
+        "de-DE": {
+            "female": ["de-DE-KatjaNeural", "de-DE-AmalaNeural", "de-DE-ElkeNeural"],
+            "male": ["de-DE-ConradNeural", "de-DE-BerndNeural", "de-DE-ChristophNeural"]
+        },
+        "nl-NL": {
+            "female": ["nl-NL-FennaNeural", "nl-NL-ColetteNeural"],
+            "male": ["nl-NL-MaartenNeural", "nl-NL-CoenNeural"]
+        },
+        "it-IT": {
+            "female": ["it-IT-ElsaNeural", "it-IT-IsabellaNeural"],
+            "male": ["it-IT-DiegoNeural", "it-IT-GiuseppeNeural"]
         }
     }
     
@@ -232,7 +284,7 @@ class VoiceSelector:
             age_group: "adolescent", "child", "senior", ou None (adulte)
         
         Returns:
-            Shortname de la voix (ex: "bella") pour md2mp3.py, ou None
+            Shortname de la voix (ex: "bella") pour md2mp3.py, ou une voix adulte par défaut
         """
         gen = "female" if gender.lower() == "femme" else "male"
         
@@ -257,7 +309,14 @@ class VoiceSelector:
                 azure_id = random.choice(voices)
                 return VoiceSelector.azure_to_shortname(azure_id)
         
-        # Fallback: aucune correspondance trouvée
+        # Fallback adulte neutre: utiliser ADULT_VOICES pour la locale (défaut sûr)
+        if locale in VoiceSelector.ADULT_VOICES:
+            voices = VoiceSelector.ADULT_VOICES[locale].get(gen, [])
+            if voices:
+                azure_id = random.choice(voices)
+                return VoiceSelector.azure_to_shortname(azure_id)
+        
+        # Dernier recours: aucune voix trouvée
         return None
 
 

@@ -589,7 +589,7 @@ voix_variant: {voix_variant}
         with open(fichier_md, 'w', encoding='utf-8') as f:
             f.write(contenu)
 
-        return fichier_md, voix_variant, voix_specifique
+        return fichier_md, voix_variant, voix_specifique, genre_final if 'genre_final' in locals() else genre
 
 
 class CompressionOralApp:
@@ -645,7 +645,7 @@ class CompressionOralApp:
             print(f"✅ Résumé généré: \"{resume}\"\n")
 
             # Générer le markdown AVANT l'audio (md2mp3 a besoin du fichier)
-            fichier_md, voix_variant, voix_specifique = self.output_gen.create_markdown(
+            fichier_md, voix_variant, voix_specifique, genre_final = self.output_gen.create_markdown(
                 dossier_sortie,
                 texte,
                 vocabulaire,
@@ -674,7 +674,7 @@ class CompressionOralApp:
             vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 
             # Générer l'audio avec md2mp3.py (passer la variante de voix et la voix spécifique détectée)
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, args.genre, dossier_sortie, vitesse=vitesse_effective, voix=voix_specifique, voix_variant=voix_variant)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, genre_final, dossier_sortie, vitesse=vitesse_effective, voix=voix_specifique, voix_variant=voix_variant)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")

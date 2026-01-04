@@ -2,8 +2,8 @@
 date_generation: '2026-01-02 10:41:40'
 genre: femme
 langue: Espagnol (Espagne)
-longueur: 352
-niveau: C1
+longueur: 159
+niveau: A1
 prompt: 'Decris L’Endroit Où '
 resume: 'Decris L’Endroit Où '
 drapeau: 🇪🇸

@@ -2,8 +2,8 @@
 date_generation: '2026-01-02 10:42:21'
 genre: femme
 langue: Espagnol (Espagne)
-longueur: 325
-niveau: C1
+longueur: 158
+niveau: A1
 prompt: Un Collegien Espagno
 resume: Un Collegien Espagno
 drapeau: 🇪🇸

@@ -2,10 +2,10 @@
 date_generation: '2026-01-02 10:42:18'
 genre: femme
 langue: Espagnol (Espagne)
-longueur: 325
-niveau: C1
+longueur: 153
+niveau: A1
 prompt: Parle De Ton College
-resume: Parle De Ton College
+resume: Parle de ton collège
 drapeau: 🇪🇸
 ---
 ## Texto

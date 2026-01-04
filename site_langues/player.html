@@ -95,6 +95,45 @@
             outline: none;
             height: 70px;
             min-height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            accent-color: #fff;
+        }
+
+        .player-wrapper {
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .play-hint {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: 10;
+            opacity: 0;
+            animation: fadeInOut 3s ease-in-out forwards;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .audio-player::-webkit-media-controls-panel {
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .controls {
@@ -474,6 +513,17 @@
                 padding: 20px;
             }
 
+            .player-wrapper {
+                padding: 12px;
+                margin-bottom: 20px;
+            }
+
+            .audio-player {
+                height: 90px;
+                min-height: 90px;
+                font-size: 1.1em;
+            }
+
             .controls {
                 grid-template-columns: 1fr;
             }
@@ -521,6 +571,21 @@
                 padding: 12px 20px;
                 font-size: 0.95em;
             }
+
+            .player-wrapper {
+                padding: 10px;
+            }
+
+            .audio-player {
+                height: 110px;
+                min-height: 110px;
+                font-size: 1.15em;
+            }
+
+            .play-hint {
+                font-size: 1em;
+                padding: 12px 18px;
+            }
         }
     </style>
     <script>
@@ -536,9 +601,12 @@
         </div>
         
         <div class="player-container" id="player-container" style="display: none;">
-            <audio id="audio-player" class="audio-player" controls preload="auto" playsinline>
-                Votre navigateur ne supporte pas le lecteur audio.
-            </audio>
+            <div class="player-wrapper">
+                <audio id="audio-player" class="audio-player" controls preload="auto" playsinline>
+                    Votre navigateur ne supporte pas le lecteur audio.
+                </audio>
+                <div class="play-hint" id="play-hint">▶️ Appuyez pour écouter</div>
+            </div>
             
             <div class="controls">
                 <button class="toggle-btn show-text" id="toggle-text">
@@ -802,6 +870,18 @@
             document.getElementById('toggle-vocab').addEventListener('click', toggleVocab);
             document.getElementById('toggle-quiz').addEventListener('click', toggleQuiz);
             document.getElementById('quiz-exit-btn').addEventListener('click', exitQuiz);
+
+            // Masquer le message d'indication au premier clic sur le lecteur
+            const audioPlayer = document.getElementById('audio-player');
+            const playHint = document.getElementById('play-hint');
+            if (audioPlayer && playHint) {
+                audioPlayer.addEventListener('play', () => {
+                    playHint.style.opacity = '0';
+                }, { once: true });
+                audioPlayer.addEventListener('click', () => {
+                    playHint.style.opacity = '0';
+                }, { once: true });
+            }
 
             // Tooltips tactiles pour iOS/Android: tap sur un mot surligné pour afficher la traduction
             let activeTooltip = null;

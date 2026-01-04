@@ -996,7 +996,8 @@ class AzureTTSGenerator:
         </speak>'''
         
         # Générer l'audio avec SSML - avec retry en cas de timeout ou rate limiting
-        max_retries = 5  # Plus de tentatives pour 429
+        max_retries = 6  # Plus de tentatives pour absorber les 429
+        base_delay = 10  # secondes de base pour le backoff (plus conservateur)
         for attempt in range(max_retries):
             try:
                 result = synthesizer.speak_ssml_async(ssml).get()
@@ -1011,9 +1012,11 @@ class AzureTTSGenerator:
                     
                     # Backoff exponentiel pour Timeout ou Rate Limiting (429)
                     if ("Timeout" in error_msg or "429" in error_msg or "Too many requests" in error_msg) and attempt < max_retries - 1:
-                        delay = 3 * (2 ** attempt)  # 3s, 6s, 12s, 24s, 48s
+                        # Jitter léger pour éviter les collisions serveur
+                        jitter = random.uniform(0, 2)
+                        delay = base_delay * (2 ** attempt) + jitter  # 10s, 20s, 40s, 80s, 160s, 320s max
                         error_type = 'Rate limit' if ('429' in error_msg or 'Too many' in error_msg) else 'Timeout'
-                        print(f"⏱️  {error_type} Azure, backoff {delay}s (tentative {attempt + 2}/{max_retries})...")
+                        print(f"⏱️  {error_type} Azure, backoff {delay:.1f}s (tentative {attempt + 2}/{max_retries})...")
                         time.sleep(delay)
                         continue
                     
@@ -1022,8 +1025,9 @@ class AzureTTSGenerator:
                     return False, f"❌ Erreur TTS: Raison inconnue - {result.reason}"
             except Exception as e:
                 if attempt < max_retries - 1:
-                    delay = 3 * (2 ** attempt)  # 3s, 6s, 12s, 24s, 48s
-                    print(f"⏱️  Exception, backoff {delay}s (tentative {attempt + 2}/{max_retries}): {str(e)[:100]}")
+                    jitter = random.uniform(0, 2)
+                    delay = base_delay * (2 ** attempt) + jitter
+                    print(f"⏱️  Exception, backoff {delay:.1f}s (tentative {attempt + 2}/{max_retries}): {str(e)[:100]}")
                     time.sleep(delay)
                     continue
                 return False, f"❌ Erreur TTS: {str(e)}"

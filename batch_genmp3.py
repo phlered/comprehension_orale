@@ -273,8 +273,8 @@ Exemples:
     parser.add_argument(
         '--delai',
         type=float,
-        default=5.0,
-        help="Délai entre chaque génération en secondes (défaut: 5s pour éviter rate limiting Azure)"
+        default=8.0,
+        help="Délai entre chaque génération en secondes (défaut: 8s pour éviter rate limiting Azure)"
     )
     
     args = parser.parse_args()

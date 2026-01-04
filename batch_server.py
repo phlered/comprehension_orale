@@ -191,7 +191,7 @@ def create_app(project_root: str = "."):
         
         level = request.form.get('level')
         languages = request.form.get('languages')
-        delay = request.form.get('delay', '5.0')  # Default 5 seconds
+        delay = request.form.get('delay', '8.0')  # Default 8 seconds
         
         if not level or not languages:
             return jsonify({"error": "Missing level or languages"}), 400
@@ -204,10 +204,10 @@ def create_app(project_root: str = "."):
         # Validate delay
         try:
             delay_float = float(delay)
-            if delay_float < 0 or delay_float > 30:
-                delay_float = 3.0
+            if delay_float < 0 or delay_float > 60:
+                delay_float = 8.0
         except (ValueError, TypeError):
-            delay_float = 3.0
+            delay_float = 8.0
         
         # Validate languages
         valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']

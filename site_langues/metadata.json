@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-04T15:23:22.514116",
-  "total_resources": 267,
+  "generated_at": "2026-01-04T17:51:38.735201",
+  "total_resources": 275,
   "languages": [
-    "eng",
-    "fr",
-    "all",
     "nl",
+    "fr",
     "esp",
+    "it",
+    "all",
     "cor",
-    "it"
+    "eng"
   ],
   "resources": [
     {
@@ -894,6 +894,42 @@
       "text_path": "resources/la_scuola_20251215_2215/text.md"
     },
     {
+      "id": "mon_logement_20260104_1641",
+      "langue": "fr",
+      "prompt": "**Mon logement**",
+      "resume": "Mon logement",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:41:22",
+      "longueur": 150,
+      "text_preview": "Bonjour ! Je m'appelle Marie et j'habite dans un petit appartement. Mon appartement est au deuxième étage. Il y a une chambre, une cuisine, un salon et une salle de bain. Dans ma chambre, il y a un li...",
+      "vocab_count": 35,
+      "audio_path": "resources/mon_logement_20260104_1641/audio.mp3",
+      "text_path": "resources/mon_logement_20260104_1641/text.md"
+    },
+    {
+      "id": "la_meteo_aujourdh_20260104_1705",
+      "langue": "fr",
+      "prompt": "**La météo aujourd’hui**",
+      "resume": "La météo aujourd'hui",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 17:05:40",
+      "longueur": 150,
+      "text_preview": "Aujourd'hui, la météo est très belle. Le soleil brille et le ciel est bleu. Il fait chaud, environ 25 degrés. Il n'y a pas de nuages. C'est une journée parfaite pour aller au parc. Beaucoup de gens so...",
+      "vocab_count": 35,
+      "audio_path": "resources/la_meteo_aujourdh_20260104_1705/audio.mp3",
+      "text_path": "resources/la_meteo_aujourdh_20260104_1705/text.md"
+    },
+    {
       "id": "un_lyceen_de_londres_20251217_1913",
       "langue": "eng",
       "prompt": "Un lycéen de Londres parle de ses passe-temps, décrit sa famille et décrit les endroits préférés de sa ville.",
@@ -1470,6 +1506,24 @@
       "text_path": "resources/viaggiare_in_italia_20260102_1048/text.md"
     },
     {
+      "id": "ma_famille_20260104_1640",
+      "langue": "fr",
+      "prompt": "**Ma famille**",
+      "resume": "Ma famille",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:41:01",
+      "longueur": 150,
+      "text_preview": "Bonjour! Je m'appelle Marie. J'ai une petite famille. Dans ma famille, il y a quatre personnes. Il y a ma mère, mon père, mon frère et moi. Ma mère s'appelle Sophie. Elle est très gentille. Mon père s...",
+      "vocab_count": 35,
+      "audio_path": "resources/ma_famille_20260104_1640/audio.mp3",
+      "text_path": "resources/ma_famille_20260104_1640/text.md"
+    },
+    {
       "id": "celebrer_un_annivers_20260102_1045",
       "langue": "fr",
       "prompt": "Célébrer un anniversaire",
@@ -1920,6 +1974,24 @@
       "text_path": "resources/parle_de_ton_college_20251218_1040/text.md"
     },
     {
+      "id": "une_journee_typiqu_20260104_1634",
+      "langue": "fr",
+      "prompt": "**Une journée typique**",
+      "resume": "Une journée typique",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:34:51",
+      "longueur": 150,
+      "text_preview": "Je me réveille à sept heures. Je prends le petit déjeuner. Je mange du pain et je bois du lait. Après, je me douche et je m'habille. Je pars à l'école à huit heures. Je vais à l'école à pied. J'aime m...",
+      "vocab_count": 35,
+      "audio_path": "resources/une_journee_typiqu_20260104_1634/audio.mp3",
+      "text_path": "resources/une_journee_typiqu_20260104_1634/text.md"
+    },
+    {
       "id": "quelles_sont_les_tra_20251210_2036",
       "langue": "nl",
       "prompt": "Quelles sont les traditions liées au King's Day aux Pays-Bas ?",
@@ -2314,6 +2386,24 @@
       "vocab_count": 35,
       "audio_path": "resources/raconte_une_soiree_d_20251222_0945/audio.mp3",
       "text_path": "resources/raconte_une_soiree_d_20251222_0945/text.md"
+    },
+    {
+      "id": "mes_loisirs_20260104_1652",
+      "langue": "fr",
+      "prompt": "**Mes loisirs**",
+      "resume": "Mes loisirs",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:53:03",
+      "longueur": 150,
+      "text_preview": "Bonjour! Je m'appelle Marie. J'habite à Paris. J'ai 10 ans. J'aime beaucoup mes loisirs. Le samedi, je joue au foot avec mes amis. Nous jouons dans le parc près de ma maison. C'est très amusant! \n\nLe ...",
+      "vocab_count": 34,
+      "audio_path": "resources/mes_loisirs_20260104_1652/audio.mp3",
+      "text_path": "resources/mes_loisirs_20260104_1652/text.md"
     },
     {
       "id": "comment_les_habitant_20260102_1019",
@@ -4044,6 +4134,24 @@
       "text_path": "resources/quel_est_ton_sport_p_20260101_1944/text.md"
     },
     {
+      "id": "presentation_perso_20260104_1631",
+      "langue": "fr",
+      "prompt": "**Présentation personnelle**",
+      "resume": "Présentation personnelle",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:32:05",
+      "longueur": 150,
+      "text_preview": "Bonjour ! Je m'appelle Lucas. J'ai 22 ans. Je suis étudiant. J'habite à Paris, en France. J'aime beaucoup ma ville. Elle est grande et belle. \n\nJe suis né à Lyon, mais j'ai déménagé à Paris pour mes é...",
+      "vocab_count": 35,
+      "audio_path": "resources/presentation_perso_20260104_1631/audio.mp3",
+      "text_path": "resources/presentation_perso_20260104_1631/text.md"
+    },
+    {
       "id": "vers_une_societe_san_20251216_1900",
       "langue": "all",
       "prompt": "Vers une société sans argent liquide ?",
@@ -4260,6 +4368,24 @@
       "text_path": "resources/comment_les_habitant_20251210_2036/text.md"
     },
     {
+      "id": "mon_travail_ou_mes_20260104_1718",
+      "langue": "fr",
+      "prompt": "**Mon travail ou mes études**",
+      "resume": "Mon travail ou mes études",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 17:18:10",
+      "longueur": 150,
+      "text_preview": "Je m'appelle Marie. J'ai 20 ans. Je suis étudiante. J'étudie à l'université. Mon université est grande et belle. J'étudie la biologie. J'aime la biologie. C'est intéressant. Mes cours sont le matin. J...",
+      "vocab_count": 35,
+      "audio_path": "resources/mon_travail_ou_mes_20260104_1718/audio.mp3",
+      "text_path": "resources/mon_travail_ou_mes_20260104_1718/text.md"
+    },
+    {
       "id": "presente_une_fete_ou_20251218_1049",
       "langue": "esp",
       "prompt": "Présente une fête ou une tradition simple dans un pays hispanophone.",
@@ -4420,6 +4546,24 @@
       "vocab_count": 35,
       "audio_path": "resources/presente_un_film_cor_20251218_0744/audio.mp3",
       "text_path": "resources/presente_un_film_cor_20251218_0744/text.md"
+    },
+    {
+      "id": "au_cafe_20260104_1652",
+      "langue": "fr",
+      "prompt": "**Au café**",
+      "resume": "Le café",
+      "niveau": "A1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇫🇷",
+      "voix_variant": "fr",
+      "date": "2026-01-04 16:52:31",
+      "longueur": 150,
+      "text_preview": "Au café\n\nCe matin, je vais au café avec mon amie Julie. Le café est près de chez moi. Il fait beau et le soleil brille. Nous aimons nous asseoir dehors. Julie et moi prenons un café. Elle préfère un c...",
+      "vocab_count": 34,
+      "audio_path": "resources/au_cafe_20260104_1652/audio.mp3",
+      "text_path": "resources/au_cafe_20260104_1652/text.md"
     },
     {
       "id": "voluntariado_naviden_20251215_1549",

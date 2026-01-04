@@ -247,6 +247,7 @@
             align-items: center;
             gap: 12px;
             margin-bottom: 12px;
+            flex-wrap: nowrap;
         }
 
         .resource-prompt {
@@ -254,6 +255,7 @@
             font-weight: 600;
             color: #333;
             flex: 1;
+            min-width: 0;
         }
 
         .resource-niveau {
@@ -264,7 +266,7 @@
             font-size: 0.85em;
             font-weight: 600;
             white-space: nowrap;
-            order: -1;
+            flex-shrink: 0;
         }
 
         .resource-preview {
@@ -360,14 +362,9 @@
                 min-width: 100%;
             }
 
-            .resource-header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
             .resource-niveau {
                 margin-left: 0;
-                align-self: flex-start;
+                align-self: center;
             }
 
             .resource-meta {

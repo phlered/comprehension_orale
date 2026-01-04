@@ -243,8 +243,9 @@
 
         .resource-header {
             display: flex;
-            justify-content: space-between;
-            align-items: start;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
             margin-bottom: 12px;
         }
 
@@ -263,7 +264,7 @@
             font-size: 0.85em;
             font-weight: 600;
             white-space: nowrap;
-            margin-left: 10px;
+            order: -1;
         }
 
         .resource-preview {
@@ -634,32 +635,20 @@
             container.innerHTML = filteredResources.map(resource => `
                 <a href="player.html?id=${resource.id}" class="resource-card">
                     <div class="resource-header">
-                        <div class="resource-prompt">${resource.resume || resource.prompt}</div>
                         <div class="resource-niveau">${resource.niveau}</div>
+                        <div class="resource-prompt">${resource.resume || resource.prompt}</div>
                     </div>
                     <div class="resource-preview">${resource.text_preview}</div>
+                    ${resource.classe ? `
                     <div class="resource-meta">
                         <div class="resource-meta-left">
                             <div class="meta-item">
-                                <span>📝</span>
-                                <span>${resource.longueur} mots</span>
+                                <span>🎓</span>
+                                <span>Classe: ${resource.classe}</span>
                             </div>
-                            <div class="meta-item">
-                                <span>📚</span>
-                                <span>${resource.vocab_count} mots vocab.</span>
-                            </div>
-                            ${resource.classe ? `
-                                <div class="meta-item">
-                                    <span>🎓</span>
-                                    <span>Classe: ${resource.classe}</span>
-                                </div>
-                            ` : ''}
-                        </div>
-                        <div class="meta-item">
-                            <span>${resource.drapeau || '🎤'}</span>
-                            <span>${resource.genre}</span>
                         </div>
                     </div>
+                    ` : ''}
                 </a>
             `).join('');
         }

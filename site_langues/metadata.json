@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-04T19:28:00.115513",
+  "generated_at": "2026-01-05T12:06:29.925416",
   "total_resources": 275,
   "languages": [
-    "it",
-    "esp",
     "nl",
-    "cor",
-    "all",
+    "esp",
+    "it",
     "eng",
+    "all",
+    "cor",
     "fr"
   ],
   "resources": [

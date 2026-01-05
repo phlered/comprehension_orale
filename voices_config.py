@@ -259,6 +259,50 @@ class VoiceSelector:
         },
     }
     
+    # Voix adultes neutres (fallback pour tous les cas non spécifiés)
+    ADULT_VOICES = {
+        "en-US": {
+            "female": ["en-US-EmmaNeural", "en-US-JennyNeural"],
+            "male": ["en-US-ChristopherNeural", "en-US-EricNeural"]
+        },
+        "en-GB": {
+            "female": ["en-GB-OliviaNeural", "en-GB-SoniaNeural"],
+            "male": ["en-GB-ThomasNeural", "en-GB-RyanNeural"]
+        },
+        "es-ES": {
+            "female": ["es-ES-VerónicaNeural", "es-ES-IreneNeural"],
+            "male": ["es-ES-AlvaroNeural", "es-ES-EliasNeural"]
+        },
+        "es-MX": {
+            "female": ["es-MX-BeatrizNeural", "es-MX-MarinaNeural"],
+            "male": ["es-MX-JorgeNeural", "es-MX-LibertoNeural"]
+        },
+        "es-AR": {
+            "female": ["es-AR-ElenaNeural"],
+            "male": ["es-AR-TomasNeural"]
+        },
+        "fr-FR": {
+            "female": ["fr-FR-VivienneNeural", "fr-FR-BrigitteNeural", "fr-FR-CelesteNeural"],
+            "male": ["fr-FR-ClaudeNeural", "fr-FR-JeromeNeural", "fr-FR-YvesNeural"]
+        },
+        "de-DE": {
+            "female": ["de-DE-ElkeNeural", "de-DE-TanjaNeural"],
+            "male": ["de-DE-ChristophNeural", "de-DE-KlausNeural"]
+        },
+        "nl-NL": {
+            "female": ["nl-NL-ColetteNeural"],
+            "male": ["nl-NL-MaartenNeural"]
+        },
+        "it-IT": {
+            "female": ["it-IT-IsabellaNeural"],
+            "male": ["it-IT-DiegoNeural"]
+        },
+        "ko-KR": {
+            "female": ["ko-KR-SunHiNeural", "ko-KR-YuJinNeural"],
+            "male": ["ko-KR-InJoonNeural", "ko-KR-SoonBokNeural"]
+        }
+    }
+    
     @staticmethod
     def azure_to_shortname(azure_voice_id):
         """Convertit un ID Azure complet en shortname. Ex: 'en-GB-BellaNeural' → 'bella'"""

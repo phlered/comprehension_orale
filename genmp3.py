@@ -416,11 +416,8 @@ class AudioGeneratorMD2MP3:
         print(f"🎤 Génération de l'audio avec md2mp3.py (langue: {md2mp3_lang}, genre: {genre}, vitesse: {vitesse}x)...")
         sys.stdout.flush()
         
-        # Retry logic pour gérer les erreurs temporaires Azure
-        # Note: md2mp3.py gère déjà les retries avec pause longue (30s)
-        max_retries = 2  # Juste 1 retry si md2mp3 retourne une erreur
-        retry_delay = 10  # secondes - court car md2mp3 gère les gros retries
-        
+        # Retry minimal ici : md2mp3.py gère déjà 2 tentatives avec 30s de pause
+        max_retries = 1  # aucune relance ici; on laisse md2mp3 gérer ses retries
         for attempt in range(max_retries):
             try:
                 # Streamer la sortie au lieu de la capturer
@@ -463,22 +460,12 @@ class AudioGeneratorMD2MP3:
                     raise subprocess.CalledProcessError(returncode, cmd)
                         
             except subprocess.CalledProcessError as e:
-                if attempt < max_retries - 1:
-                    print(f"⚠️ Tentative {attempt + 1}/{max_retries} échouée, nouvelle tentative dans {retry_delay}s...")
-                    sys.stdout.flush()
-                    time.sleep(retry_delay)
-                else:
-                    print(f"❌ Erreur md2mp3.py après {max_retries} tentatives (code {e.returncode})")
-                    sys.stdout.flush()
-                    raise
+                print(f"❌ Erreur md2mp3.py après {max_retries} tentative(s) (code {e.returncode})")
+                sys.stdout.flush()
+                raise
             except Exception as e:
-                if attempt < max_retries - 1:
-                    print(f"⚠️ Tentative {attempt + 1}/{max_retries} échouée, nouvelle tentative dans {retry_delay}s...")
-                    print(f"   Erreur: {str(e)[:200]}")
-                    time.sleep(retry_delay)
-                else:
-                    print(f"❌ Erreur après {max_retries} tentatives: {e}")
-                    raise
+                print(f"❌ Erreur inattendue: {e}")
+                raise
 
 
 class OutputGenerator:

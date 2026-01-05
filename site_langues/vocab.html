@@ -175,51 +175,159 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 12px;
+                padding-bottom: 50px;
+            }
+
+            .container {
+                padding: 0 4px;
+            }
+
             .header {
                 flex-direction: column;
                 align-items: flex-start;
+                padding: 12px;
+                gap: 10px;
             }
 
             .header-title {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 width: 100%;
             }
 
             .back-btn {
                 align-self: flex-start;
+                padding: 8px 14px;
+                font-size: 0.9em;
             }
 
             .vocab-header {
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 10px;
             }
 
             .vocab-controls {
                 width: 100%;
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 8px;
             }
 
             .filter-select {
                 width: 100%;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .vocab-card {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+
+            .vocab-list {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .vocab-item {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 10px;
+                padding-bottom: 45px;
+            }
+
+            .container {
+                padding: 0 2px;
+            }
+
+            .header {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .header-title {
+                font-size: 1.2em;
+            }
+
+            .back-btn {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .vocab-card {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .vocab-count {
+                font-size: 0.9em;
             }
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 15px;
+                padding: 8px;
+                padding-bottom: 40px;
+            }
+
+            .container {
+                padding: 0;
+                max-width: 100%;
             }
 
             .header {
-                padding: 15px;
+                padding: 8px;
+                border-radius: 10px;
+                gap: 6px;
             }
 
             .header-title {
-                font-size: 1.3em;
+                font-size: 1.1em;
+            }
+
+            .back-btn {
+                padding: 6px 10px;
+                font-size: 0.8em;
             }
 
             .vocab-card {
-                padding: 15px;
+                padding: 8px;
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+
+            .vocab-header {
+                gap: 6px;
+            }
+
+            .vocab-controls {
+                gap: 6px;
+            }
+
+            .filter-select {
+                padding: 8px;
+                font-size: 13px;
+            }
+
+            .vocab-count {
+                font-size: 0.85em;
+            }
+
+            .vocab-list {
+                gap: 8px;
+            }
+
+            .vocab-item {
+                padding: 8px;
+                font-size: 13px;
             }
         }
     </style>

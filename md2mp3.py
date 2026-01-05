@@ -995,9 +995,9 @@ class AzureTTSGenerator:
             </voice>
         </speak>'''
         
-        # Générer l'audio avec SSML - avec retry simple (2 tentatives avec pause longue)
-        max_retries = 2  # Juste 2 tentatives - le gating se fait entre les ressources batch
-        retry_delay = 30  # Pause longue pour réinitialiser les compteurs Azure
+        # Générer l'audio avec SSML - 2 tentatives avec pause très longue pour laisser retomber les 429
+        max_retries = 2
+        retry_delay = 60  # 1 minute entre tentatives si 429/timeout
         for attempt in range(max_retries):
             try:
                 result = synthesizer.speak_ssml_async(ssml).get()
@@ -1265,6 +1265,28 @@ Exemples:
     )
 
     args = parser.parse_args()
+
+    # Throttle global pour éviter les 429 si plusieurs appels rapprochés
+    MIN_GAP = float(os.getenv("MD2MP3_MIN_GAP", "70"))  # secondes entre deux synthèses
+    THROTTLE_FILE = "/tmp/md2mp3_last_call"
+    try:
+        last_ts = None
+        if os.path.exists(THROTTLE_FILE):
+            with open(THROTTLE_FILE, "r") as f:
+                last_ts = float(f.read().strip())
+        now = time.time()
+        if last_ts:
+            gap = now - last_ts
+            if gap < MIN_GAP:
+                wait = MIN_GAP - gap
+                print(f"⏳ Throttle global: pause {wait:.1f}s pour éviter 429 (MIN_GAP={MIN_GAP}s)")
+                time.sleep(wait)
+        # Mettre à jour le timestamp dès le démarrage de cette synthèse
+        with open(THROTTLE_FILE, "w") as f:
+            f.write(str(time.time()))
+    except Exception:
+        # En cas d'erreur de throttle, continuer sans bloquer la génération
+        pass
 
     # Valider la vitesse
     if args.vitesse < 0.6 or args.vitesse > 1.0:

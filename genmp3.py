@@ -27,6 +27,7 @@ load_dotenv()
 
 class LanguageConfig:
     """Configuration pour chaque langue supportée"""
+import unicodedata
     LANGUAGES = {
         "fr": {
             "code": "fr",
@@ -598,7 +599,7 @@ class CompressionOralApp:
         # Créer le dossier de sortie dans le répertoire du script (pas le répertoire courant)
         script_dir = os.path.dirname(os.path.abspath(__file__))
         timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-        theme_safe = args.prompt.lower().replace(' ', '_').replace('é', 'e').replace('è', 'e')[:20]
+        theme_safe = self.slugify(args.prompt)
         dossier_nom = f"{theme_safe}_{timestamp}"
         dossier_sortie = os.path.join(script_dir, "docs", dossier_nom)
 
@@ -681,6 +682,16 @@ class CompressionOralApp:
 
         return 0
 
+    @staticmethod
+    def slugify(text, max_length=60):
+        """Slug sûr : conserve les lettres (accents → base), retire le reste."""
+        text = unicodedata.normalize("NFKD", text)
+        text = text.encode("ascii", "ignore").decode("ascii")
+        text = re.sub(r"[^A-Za-z0-9]+", "_", text.lower())
+        text = re.sub(r"_+", "_", text).strip("_")
+        if max_length:
+            text = text[:max_length].rstrip("_")
+        return text or "resource"
 
 def main():
     parser = argparse.ArgumentParser(

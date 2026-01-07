@@ -488,6 +488,12 @@ class MarkdownCleaner:
         
         # Supprimer le frontmatter YAML
         text = re.sub(r'^---.*?---\n', '', text, flags=re.DOTALL)
+
+        # Supprimer le bloc vocabulaire complet (garde uniquement le texte principal)
+        text = MarkdownCleaner._remove_vocabulary_section(text)
+
+        # Supprimer un éventuel titre "Text"/"Texte"/"Texto" isolé en tête de fichier
+        text = re.sub(r'^\s*(?:#{1,6}\s*)?(?:text|texte|texto|tekst)\s*\n+', '', text, flags=re.IGNORECASE)
         
         # Supprimer les titres Markdown
         text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)
@@ -520,6 +526,18 @@ class MarkdownCleaner:
         text = re.sub(r' +', ' ', text)
         
         return text.strip()
+
+    @staticmethod
+    def _remove_vocabulary_section(text):
+        """Supprime la section vocabulaire (quel que soit le heading)"""
+        vocab_headings = [
+            "vocabulaire", "vocabulary", "vocabulario", "wortschatz", "glossary", "vocabulário", "vocabolario"
+        ]
+        pattern = r'^\s*(?:#{1,6}\s*)?(?:' + '|'.join(vocab_headings) + r')\s*$'
+        match = re.search(pattern, text, flags=re.IGNORECASE | re.MULTILINE)
+        if match:
+            return text[:match.start()].rstrip()
+        return text
 
     @staticmethod
     def _convert_equations(text, langue="fr"):

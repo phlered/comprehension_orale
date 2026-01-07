@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-01-05T12:06:29.925416",
-  "total_resources": 275,
+  "generated_at": "2026-01-07T07:53:44.672070",
+  "total_resources": 279,
   "languages": [
     "nl",
-    "esp",
-    "it",
-    "eng",
     "all",
-    "cor",
-    "fr"
+    "eng",
+    "it",
+    "fr",
+    "esp",
+    "cor"
   ],
   "resources": [
     {
@@ -1740,6 +1740,24 @@
       "text_path": "resources/decris_lendroit_ou_20251218_1047/text.md"
     },
     {
+      "id": "climate_change_and_daily_life_20260106_2312",
+      "langue": "eng",
+      "prompt": "Climate change and daily life",
+      "resume": "Changement climatique et vie quotidienne",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2026-01-06 23:12:04",
+      "longueur": 200,
+      "text_preview": "Climate change is a big problem in our world today. It affects our daily life in many ways. The weather is changing. In some places, it is hotter than before. In other places, it rains more, and flood...",
+      "vocab_count": 0,
+      "audio_path": "resources/climate_change_and_daily_life_20260106_2312/audio.mp3",
+      "text_path": "resources/climate_change_and_daily_life_20260106_2312/text.md"
+    },
+    {
       "id": "ganaderia_de_vacas_e_20251217_1233",
       "langue": "esp",
       "prompt": "Ganadería de vacas en Argentina",
@@ -2586,6 +2604,24 @@
       "text_path": "resources/decris_un_site_histo_20251218_0923/text.md"
     },
     {
+      "id": "cmo_afecta_el_cambio_climtico_a_la_vida_diaria_20260106_2333",
+      "langue": "esp",
+      "prompt": "Cómo afecta el cambio climático a la vida diaria",
+      "resume": "Impacto del cambio climático en la vida cotidiana",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2026-01-06 23:33:05",
+      "longueur": 200,
+      "text_preview": "El cambio climático afecta nuestra vida diaria de muchas maneras. Primero, el clima es diferente. En verano hace más calor y en invierno hace menos frío. Esto cambia la forma en que nos vestimos. Ahor...",
+      "vocab_count": 0,
+      "audio_path": "resources/cmo_afecta_el_cambio_climtico_a_la_vida_diaria_20260106_2333/audio.mp3",
+      "text_path": "resources/cmo_afecta_el_cambio_climtico_a_la_vida_diaria_20260106_2333/text.md"
+    },
+    {
       "id": "acheter_des_fruits_e_20251216_1228",
       "langue": "nl",
       "prompt": "Acheter des fruits et légumes au marché",
@@ -3198,6 +3234,24 @@
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
     },
     {
+      "id": "le_rechauffement_climatique_20260106_2300",
+      "langue": "fr",
+      "prompt": "Le réchauffement climatique",
+      "resume": "Réchauffement climatique et ses impacts",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2026-01-06 23:00:30",
+      "longueur": 200,
+      "text_preview": "Le réchauffement climatique est un problème important de notre planète. Il fait de plus en plus chaud chaque année. Cela change le climat et a des conséquences sur la nature et les animaux. Les glacie...",
+      "vocab_count": 0,
+      "audio_path": "resources/le_rechauffement_climatique_20260106_2300/audio.mp3",
+      "text_path": "resources/le_rechauffement_climatique_20260106_2300/text.md"
+    },
+    {
       "id": "nochebuena_en_famili_20251215_1548",
       "langue": "esp",
       "prompt": "Nochebuena en familia",
@@ -3790,6 +3844,24 @@
       "vocab_count": 34,
       "audio_path": "resources/l_alimentation_bio_e_20251216_1853/audio.mp3",
       "text_path": "resources/l_alimentation_bio_e_20251216_1853/text.md"
+    },
+    {
+      "id": "mon_lycee_organise_un_echange_entre_la_france_et_lallemagne_20260106_2228",
+      "langue": "all",
+      "prompt": "Mon lycée organise un échange entre la France et l'Allemagne",
+      "resume": "Échange scolaire France-Allemagne",
+      "niveau": "A2",
+      "classe": "",
+      "axe": "",
+      "genre": "(aléatoire)",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2026-01-06 22:28:00",
+      "longueur": 170,
+      "text_preview": "Mein Gymnasium organisiert einen Austausch zwischen Frankreich und Deutschland. Ich bin sehr aufgeregt! Der Austausch findet nächsten Monat statt und dauert zwei Wochen. Wir bekommen Besuch von deutsc...",
+      "vocab_count": 0,
+      "audio_path": "resources/mon_lycee_organise_un_echange_entre_la_france_et_lallemagne_20260106_2228/audio.mp3",
+      "text_path": "resources/mon_lycee_organise_un_echange_entre_la_france_et_lallemagne_20260106_2228/text.md"
     },
     {
       "id": "explique_pourquoi_l_20251218_0924",

@@ -160,16 +160,24 @@ python md2mp3_google.py text.md -l fr --voix femme --vitesse 0.9
 ### Coût
 
 #### Azure (à partir d'octobre 2024)
-- **Standard:** €10-15 par 1M caractères (~67k ressources à 150 mots)
+- **Standard:** €10-15 par 1M caractères
 - **Neural:** €15-20 par 1M caractères
-- **Engagement annuel:** Remise possible
+- **Calcul:** Pour une ressource de 150 mots (~750 caractères) = **0.01-0.015€**
 
 #### Google Cloud
-- **Neural2:** $0.000016 par caractère (~$16 par 1M caractères, légèrement plus cher)
-- **Wavenet (gratuit):** Ancienne génération, moins bonne qualité
-- **Essai gratuit:** $300 de crédits
+- **Neural2:** $0.000016 par caractère
+  - 150 mots = ~750 caractères
+  - **Coût par ressource = 750 × $0.000016 = $0.012** (~0.01€)
+- **Essai gratuit:** **$300 de crédits** = **~25 000 ressources gratuites** 🎉
 
-**Verdict:** **Azure légèrement moins cher**, mais la différence est minime (<50%).
+**Calcul réel pour toi:**
+- 1 ressource = 150 mots
+- Caractères = 150 mots × 5 car/mot = 750 caractères
+- Coût = 750 × $0.000016 = **$0.012** (~0.01€ par ressource)
+- Avec $300 de crédit gratuit = **25 000 ressources gratuites minimum**
+- **Après 90 jours:** Même sans crédit gratuit, tu payerais ~€250/an pour 25 000 ressources/mois
+
+**Verdict:** **Google Cloud BEAUCOUP moins cher** pour toi. Les $300 de crédit te suffisent pour 6+ mois de production.
 
 ---
 

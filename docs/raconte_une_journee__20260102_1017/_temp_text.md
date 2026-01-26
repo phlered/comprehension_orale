@@ -1,5 +1,0 @@
-Oggi la mia giornata a scuola è stata davvero speciale e un po' strana. Di solito, mi sveglio alle sette del mattino, faccio colazione e vado a scuola con il mio amico Luca. Ma stamattina, ho dimenticato di impostare la sveglia e mi sono svegliato alle otto!
-
-Sono arrivato a scuola in ritardo e la prima lezione era già finita. Ero un po' nervoso, ma la mia insegnante di matematica, la signora Rossi, è stata molto gentile e ha detto di non preoccuparmi. Poi è arrivata la seconda sorpresa della giornata: durante la lezione di scienze, c'è stato un piccolo terremoto! Tutti gli studenti erano sorpresi e un po' spaventati, ma l'insegnante ci ha portato subito nel cortile, dove siamo stati al sicuro.
-
-Dopo l'incidente, la scuola ha deciso di mandarci a casa più presto per precauzione. Così io e il mio amico Luca siamo andati a mangiare un gelato prima di tornare a casa. Alla fine, la giornata non è andata come previsto, ma è stata emozionante e diversa. Quando ho raccontato tutto ai miei genitori, erano sorpresi ma felici che stavo bene. Oggi ho imparato che le cose possono cambiare improvvisamente, ma va tutto bene se rimaniamo calmi.

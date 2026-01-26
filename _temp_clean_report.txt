@@ -1,4 +1,0 @@
-NO_SSML_HAS_TAGS=False
-YES_SSML_HAS_TAGS=False
-NO_SNIPPET=ressantes aussi.  À midi, je mange à la cantine. Les repas sont bons! Après le d
-YES_SNIPPET=itch="+20%" rate="slow" volume="x-loud">cantine</prosody></emphasis>. <break tim

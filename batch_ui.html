@@ -450,6 +450,15 @@
                 <small style="color: #666; font-size: 12px; margin-top: 8px; display: block;">Temps entre chaque ressource. Défaut: 40s (monter si 429 persistants).</small>
             </div>
 
+            <!-- SSML Option -->
+            <div class="form-group">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="ssml" name="ssml" value="1">
+                    <label for="ssml">🎯 Utiliser SSML pour emphases et pauses</label>
+                </div>
+                <small style="color: #666; font-size: 12px; margin-top: 8px; display: block;">Active la conversion des marqueurs Markdown (* ** [p]) en balises SSML pour la synthèse audio.</small>
+            </div>
+
             <!-- Buttons -->
             <div class="button-group">
                 <button type="submit" class="btn btn-primary" id="submitBtn">

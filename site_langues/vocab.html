@@ -348,16 +348,16 @@
 
         <div class="vocab-card">
             <div class="vocab-header">
-                <div class="vocab-count" id="vocab-count">0 mot(s)</div>
+                <div class="vocab-count" id="vocab-count">0 woord(en)</div>
                 <div class="vocab-controls">
-                    <label class="filter-label" for="vocab-sort-select">Trier</label>
+                    <label class="filter-label" for="vocab-sort-select">Sorteren</label>
                     <select id="vocab-sort-select" class="filter-select">
-                        <option value="alphabetic">Alphabétique</option>
+                        <option value="alphabetic">Alfabetisch</option>
                         <option value="byDoc">Par document</option>
                     </select>
                 </div>
             </div>
-            <div class="vocab-status" id="vocab-status">Chargement du vocabulaire...</div>
+            <div class="vocab-status" id="vocab-status">Woordenschat laden...</div>
             <div class="vocab-list" id="vocab-list"></div>
         </div>
     </div>
@@ -441,10 +441,10 @@
                 return;
             }
 
-            document.getElementById('vocab-count').textContent = `${vocabData.length} mot(s)`;
+            document.getElementById('vocab-count').textContent = `${vocabData.length} woord(en)`;
             renderVocabularyList();
-            const scope = currentNiveau ? `niveau ${currentNiveau}` : 'tous niveaux';
-            setVocabStatus(`Vocabulaire sur ${allResources.length} ressource(s) (${scope}).`);
+            const scope = currentNiveau ? `niveau ${currentNiveau}` : 'alle niveaus';
+            setVocabStatus(`Woordenschat uit ${allResources.length} bron(nen) (${scope}).`);
         }
 
         async function collectVocabulary(resources) {

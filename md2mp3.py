@@ -483,8 +483,48 @@ class MarkdownCleaner:
     }
 
     @staticmethod
-    def clean_text(text, langue="fr"):
-        """Supprime la syntaxe Markdown et les éléments non lus"""
+    def markdown_to_ssml(text):
+        """
+        Convertit les marqueurs Markdown en balises SSML.
+        - *mot* → <emphasis> + <prosody pitch="+10%"> (emphasis modérée visible)
+        - **mot** → <emphasis> + <prosody pitch="+20%" rate="slow"> (emphasis forte très marquée)
+        - [p] → <break time="250ms"/>
+        - [p:300] → <break time="300ms"/>
+        
+        Note: Combinaison emphasis + prosody pour forcer Azure à appliquer l'emphasis
+        """
+        # Convertir **mot** en emphasis forte TRÈS marquée
+        # Combiner emphasis, pitch élevé, ralentissement, et volume fort
+        text = re.sub(
+            r'\*\*([^*]+)\*\*',
+            r'<emphasis level="strong"><prosody pitch="+20%" rate="slow" volume="x-loud">\1</prosody></emphasis>',
+            text
+        )
+        
+        # Convertir *mot* en emphasis modérée marquée
+        text = re.sub(
+            r'\*([^*]+)\*',
+            r'<emphasis level="moderate"><prosody pitch="+10%" volume="loud">\1</prosody></emphasis>',
+            text
+        )
+        
+        # Convertir [p:XXX] avec durée custom
+        text = re.sub(r'\[p:(\d+)\]', r'<break time="\1ms"/>', text)
+        
+        # Convertir [p] en pause par défaut (250ms)
+        text = re.sub(r'\[p\]', '<break time="250ms"/>', text)
+        
+        return text
+    
+    @staticmethod
+    def clean_text(text, langue="fr", enable_ssml=False):
+        """Supprime la syntaxe Markdown et les éléments non lus
+        
+        Args:
+            text: Texte Markdown à nettoyer
+            langue: Langue pour la conversion d'équations
+            enable_ssml: Si True, convertit *mot* et [p] en SSML; si False, supprime ces marqueurs
+        """
         
         # Supprimer le frontmatter YAML
         text = re.sub(r'^---.*?---\n', '', text, flags=re.DOTALL)
@@ -498,14 +538,21 @@ class MarkdownCleaner:
         # Supprimer les titres Markdown
         text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)
         
-        # Supprimer le gras et l'italique
-        text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
-        text = re.sub(r'__([^_]+)__', r'\1', text)
-        text = re.sub(r'\*([^*]+)\*', r'\1', text)
-        text = re.sub(r'_([^_]+)_', r'\1', text)
+        # Par défaut (SSML désactivé), supprimer les marqueurs [p], [p:XXX] et les emphasis * **
+        if not enable_ssml:
+            text = re.sub(r'\[p(?::\d+)?\]', '', text)
+            text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
+            text = re.sub(r'\*([^*]+)\*', r'\1', text)
+        else:
+            # SSML activé: convertir les marqueurs markdown vers SSML
+            text = MarkdownCleaner.markdown_to_ssml(text)
         
-        # Supprimer les liens Markdown
+        # Supprimer les liens Markdown (mais garder le texte)
         text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+        
+        # Supprimer le gras et l'italique des underscores (__ et _)
+        text = re.sub(r'__([^_]+)__', r'\1', text)
+        text = re.sub(r'_([^_]+)_', r'\1', text)
         
         # Supprimer les listes Markdown
         text = re.sub(r'^\s*[-*+]\s+', '', text, flags=re.MULTILINE)
@@ -518,8 +565,15 @@ class MarkdownCleaner:
         text = re.sub(r'```.*?```', '', text, flags=re.DOTALL)
         text = re.sub(r'`([^`]+)`', r'\1', text)
         
-        # Supprimer les balises HTML
-        text = re.sub(r'<[^>]+>', '', text)
+        # Supprimer les balises HTML en fonction du mode SSML
+        if enable_ssml:
+            # SSML activé: ne pas supprimer les balises pour éviter de casser la
+            # structure des balises SSML insérées (emphasis/prosody/break).
+            # Les autres nettoyages en amont ont déjà retiré le Markdown.
+            pass
+        else:
+            # SSML désactivé: supprimer toutes les balises
+            text = re.sub(r'<[^>]+>', '', text)
         
         # Nettoyer les espaces superflus
         text = re.sub(r'\n\n+', '\n\n', text)
@@ -1005,13 +1059,28 @@ class AzureTTSGenerator:
         speed_percent = int((self.speed - 1.0) * 100)
         speed_str = f"{speed_percent:+d}%" if speed_percent != 0 else "0%"
         
-        ssml = f'''<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="{voice[:5]}">
-            <voice name="{voice}">
-                <prosody rate="{speed_str}">
-                    {text}
-                </prosody>
-            </voice>
-        </speak>'''
+        # Si le texte contient déjà des balises SSML (prosody, break, etc.),
+        # on l'insère directement sans wrapper prosody rate pour éviter les conflits
+        # Sinon, on wrappe avec prosody rate pour contrôler la vitesse
+        if '<prosody' in text or '<break' in text or '<emphasis' in text:
+            # Texte avec SSML: on applique le rate globalement AUTOUR des balises existantes
+            # Note: on garde le rate dans le wrapper principal, les balises internes ont priorité
+            ssml = f'''<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="{voice[:5]}">
+                <voice name="{voice}">
+                    <prosody rate="{speed_str}">
+                        {text}
+                    </prosody>
+                </voice>
+            </speak>'''
+        else:
+            # Texte sans SSML: wrapper standard
+            ssml = f'''<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="{voice[:5]}">
+                <voice name="{voice}">
+                    <prosody rate="{speed_str}">
+                        {text}
+                    </prosody>
+                </voice>
+            </speak>'''
         
         # Générer l'audio avec SSML - 2 tentatives avec pause très longue pour laisser retomber les 429
         max_retries = 2
@@ -1282,6 +1351,13 @@ Exemples:
         help="Format de sortie (défaut: mp3, utiliser wav si ffmpeg ne fonctionne pas)"
     )
 
+    # Option pour activer la conversion Markdown→SSML (emphases et pauses)
+    parser.add_argument(
+        "--ssml",
+        action='store_true',
+        help="Activer la conversion Markdown→SSML: *mot*, **mot**, [p], [p:ms]"
+    )
+
     args = parser.parse_args()
 
     # Throttle global pour éviter les 429 si plusieurs appels rapprochés
@@ -1343,7 +1419,7 @@ Exemples:
 
     try:
         # Nettoyer le texte avec la langue appropriée
-        cleaned_text = MarkdownCleaner.clean_text(content, args.langue)
+        cleaned_text = MarkdownCleaner.clean_text(content, args.langue, enable_ssml=args.ssml)
         
         # Détecter si c'est un dialogue
         is_dialogue, dialogue_lines = MarkdownCleaner.detect_dialogue(cleaned_text)

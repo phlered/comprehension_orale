@@ -54,13 +54,14 @@ class BatchGenerator:
     """Gère la génération batch de ressources"""
     
     def __init__(self, niveau: str, longueur: int, vitesse: float = None, 
-                 genre: str = None, dry_run: bool = False, delai_entre_generations: float = 3.0):
+                 genre: str = None, dry_run: bool = False, delai_entre_generations: float = 3.0, ssml: bool = False):
         self.niveau = niveau
         self.longueur = longueur if longueur is not None else self._default_length_for_level(niveau)
         self.vitesse = vitesse
         self.genre = genre
         self.dry_run = dry_run
         self.delai_entre_generations = delai_entre_generations
+        self.ssml = ssml
         self.python_exe = ".venv312/bin/python"
 
     @staticmethod
@@ -106,6 +107,10 @@ class BatchGenerator:
         # Ajouter la vitesse si spécifiée
         if self.vitesse is not None:
             cmd.extend(["--vitesse", str(self.vitesse)])
+        
+        # Ajouter --ssml si activé
+        if self.ssml:
+            cmd.append("--ssml")
         
         print(f"\n{'='*80}")
         print(f"📝 [{index}/{total}] Langue: {langue.upper()} | Genre: {genre_effectif}")
@@ -277,6 +282,12 @@ Exemples:
         help="Délai entre chaque génération en secondes (défaut: 40s pour éviter rate limiting Azure)"
     )
     
+    parser.add_argument(
+        '--ssml',
+        action='store_true',
+        help="Activer SSML pour emphases (*, **) et pauses ([p], [p:ms]) lors de la synthèse audio"
+    )
+    
     args = parser.parse_args()
     
     # Vérifier que le fichier de prompts existe
@@ -326,7 +337,8 @@ Exemples:
         vitesse=args.vitesse,
         genre=args.genre,
         dry_run=args.dry_run,
-        delai_entre_generations=args.delai
+        delai_entre_generations=args.delai,
+        ssml=args.ssml
     )
     
     # Générer toutes les ressources

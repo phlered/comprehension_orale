@@ -39,7 +39,7 @@ class BatchProcessor:
         self.project_root = Path(project_root)
         self.python_exe = str(self.project_root / ".venv312" / "bin" / "python")
         
-    def process_batch(self, prompt_file: str, languages: str, level: str, delay: float = 3.0) -> Generator[str, None, None]:
+    def process_batch(self, prompt_file: str, languages: str, level: str, delay: float = 3.0, ssml: bool = False) -> Generator[str, None, None]:
         """
         Lance la génération batch et yield les résultats ligne par ligne
         
@@ -48,6 +48,7 @@ class BatchProcessor:
             languages: Langues séparées par virgule (nl,eng,all)
             level: Niveau CECRL (A1-C2)
             delay: Délai entre les générations en secondes
+            ssml: Activer SSML pour emphases et pauses
             
         Yields:
             Lignes JSON avec: type, message, status, current, total
@@ -62,6 +63,10 @@ class BatchProcessor:
             "-n", level,
             "--delai", str(delay)
         ]
+        
+        # Ajouter --ssml si activé
+        if ssml:
+            cmd.append("--ssml")
         
         yield json.dumps({
             "type": "status",
@@ -192,6 +197,7 @@ def create_app(project_root: str = "."):
         level = request.form.get('level')
         languages = request.form.get('languages')
         delay = request.form.get('delay', '40.0')  # Default 40 seconds
+        ssml = request.form.get('ssml') == '1'  # Checkbox value
         
         if not level or not languages:
             return jsonify({"error": "Missing level or languages"}), 400
@@ -229,7 +235,7 @@ def create_app(project_root: str = "."):
             # Generate streaming response and cleanup the temp file AFTER stream ends
             def stream_and_cleanup():
                 try:
-                    for line in processor.process_batch(filepath, languages, level, delay_float):
+                    for line in processor.process_batch(filepath, languages, level, delay_float, ssml):
                         yield line
                 finally:
                     try:

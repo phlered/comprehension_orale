@@ -17,6 +17,7 @@ import re
 import sys
 import time
 from datetime import datetime
+import unicodedata
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -27,7 +28,6 @@ load_dotenv()
 
 class LanguageConfig:
     """Configuration pour chaque langue supportée"""
-import unicodedata
     LANGUAGES = {
         "fr": {
             "code": "fr",
@@ -369,7 +369,7 @@ class AudioGeneratorMD2MP3:
             return content.strip()
 
     @staticmethod
-    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8, voix=None, voix_variant=None):
+    def generate(markdown_file, langue_code, genre, dossier_sortie, vitesse=0.8, voix=None, voix_variant=None, ssml=False):
         """Génère le fichier audio MP3 avec md2mp3.py
         
         Args:
@@ -409,6 +409,10 @@ class AudioGeneratorMD2MP3:
             "-g", genre,
             "--vitesse", str(vitesse)
         ]
+        
+        # Activer SSML si demandé
+        if ssml:
+            cmd.append("--ssml")
         
         # Ajouter la voix spécifique si fournie
         if voix:
@@ -663,7 +667,7 @@ class CompressionOralApp:
             vitesse_effective = args.vitesse if args.vitesse is not None else default_speeds.get(args.niveau, 0.80)
 
             # Générer l'audio avec md2mp3.py (passer la variante de voix et la voix spécifique détectée)
-            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, genre_final, dossier_sortie, vitesse=vitesse_effective, voix=voix_specifique, voix_variant=voix_variant)
+            AudioGeneratorMD2MP3.generate(fichier_md, args.langue, genre_final, dossier_sortie, vitesse=vitesse_effective, voix=voix_specifique, voix_variant=voix_variant, ssml=args.ssml)
             print(f"✅ Audio généré: audio.mp3\n")
 
             print(f"{'=' * 60}")
@@ -781,6 +785,13 @@ Exemples:
         '--axe',
         type=str,
         help="Axe du programme (optionnel). Accepte: axe1-axe6 ou texte complet (ex: 'Axe 1. Représentation de soi et rapport à autrui')"
+    )
+
+    # Option pour activer le SSML dans md2mp3 (conversion Markdown→SSML)
+    parser.add_argument(
+        '--ssml',
+        action='store_true',
+        help="Activer SSML pour emphases (*, **) et pauses ([p], [p:ms]) lors de la synthèse audio"
     )
 
     args = parser.parse_args()

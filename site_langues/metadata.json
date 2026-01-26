@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-26T18:22:53.545790",
-  "total_resources": 245,
+  "generated_at": "2026-01-26T18:31:18.509993",
+  "total_resources": 249,
   "languages": [
-    "nl",
-    "all",
-    "esp",
     "eng",
     "cor",
-    "it"
+    "it",
+    "all",
+    "esp",
+    "nl"
   ],
   "resources": [
     {
@@ -2009,6 +2009,24 @@
       "text_path": "resources/carta_a_los_reyes_ma_20251215_1549/text.md"
     },
     {
+      "id": "manifestations_a_minneapolis_contre_ice_20260126_1827",
+      "langue": "all",
+      "prompt": "Manifestations à Minneapolis contre ICE",
+      "resume": "Manifestations à Minneapolis contre ICE",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-26 18:27:34",
+      "longueur": 350,
+      "text_preview": "In den letzten Monaten hat sich Minneapolis zu einem zentralen Schauplatz für Proteste gegen die US-amerikanische Einwanderungs- und Zollbehörde (ICE) entwickelt. Diese Bewegung wird von einer vielfäl...",
+      "vocab_count": 36,
+      "audio_path": "resources/manifestations_a_minneapolis_contre_ice_20260126_1827/audio.mp3",
+      "text_path": "resources/manifestations_a_minneapolis_contre_ice_20260126_1827/text.md"
+    },
+    {
       "id": "comment_les_pays_bas_20251210_2038",
       "langue": "nl",
       "prompt": "Comment les Pays-Bas se préparent-ils au réchauffement climatique ?",
@@ -2819,6 +2837,24 @@
       "text_path": "resources/birthday_party_plann_20251215_1537/text.md"
     },
     {
+      "id": "vers_une_montee_des_nationalismes_dans_le_monde_20260126_1829",
+      "langue": "all",
+      "prompt": "Vers une montée des nationalismes dans le monde ?",
+      "resume": "La montée des nationalismes dans le monde",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-26 18:29:39",
+      "longueur": 350,
+      "text_preview": "Der Aufstieg des Nationalismus weltweit ist ein komplexes Phänomen, das in den letzten Jahren verstärkt in den Mittelpunkt der politischen Debatten gerückt ist. Diese Bewegung ist nicht nur durch ihre...",
+      "vocab_count": 35,
+      "audio_path": "resources/vers_une_montee_des_nationalismes_dans_le_monde_20260126_1829/audio.mp3",
+      "text_path": "resources/vers_une_montee_des_nationalismes_dans_le_monde_20260126_1829/text.md"
+    },
+    {
       "id": "decris_un_noel_en_fa_20251222_0945",
       "langue": "eng",
       "prompt": "Décris un Noël en famille aux États-Unis, avec les repas, les cadeaux et les",
@@ -3393,6 +3429,24 @@
       "vocab_count": 34,
       "audio_path": "resources/l_alimentation_bio_e_20251216_1853/audio.mp3",
       "text_path": "resources/l_alimentation_bio_e_20251216_1853/text.md"
+    },
+    {
+      "id": "avec_l_isolationnisme_americain_vers_une_armee_europeenne_20260126_1830",
+      "langue": "all",
+      "prompt": "Avec l'isolationnisme américain, vers une armée européenne ?",
+      "resume": "L'isolationnisme américain et l'armée européenne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-26 18:30:59",
+      "longueur": 350,
+      "text_preview": "In den letzten Jahren hat sich der politische Diskurs in Europa vermehrt um die Frage gedreht, ob der Kontinent angesichts des wiederkehrenden amerikanischen Isolationismus eine eigenständige Verteidi...",
+      "vocab_count": 35,
+      "audio_path": "resources/avec_l_isolationnisme_americain_vers_une_armee_europeenne_20260126_1830/audio.mp3",
+      "text_path": "resources/avec_l_isolationnisme_americain_vers_une_armee_europeenne_20260126_1830/text.md"
     },
     {
       "id": "mon_lycee_organise_un_echange_entre_la_france_et_lallemagne_20260106_2228",
@@ -4149,6 +4203,24 @@
       "vocab_count": 31,
       "audio_path": "resources/presente_tes_loisirs_20251218_1059/audio.mp3",
       "text_path": "resources/presente_tes_loisirs_20251218_1059/text.md"
+    },
+    {
+      "id": "donald_trump_envisage_d_envahir_le_groenland_quelles_reactio_20260126_1828",
+      "langue": "all",
+      "prompt": "Donald Trump envisage d'envahir le Groenland. Quelles réactions en Europe ?",
+      "resume": "L'invasion du Groenland par Donald Trump",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-26 18:28:25",
+      "longueur": 350,
+      "text_preview": "Der kürzliche Plan von Donald Trump, das geopolitische Schachbrett durch eine theoretische Invasion Grönlands zu stören, hat in Europa für Erstaunen und Empörung gesorgt. Obwohl dieser Plan wohl eher ...",
+      "vocab_count": 35,
+      "audio_path": "resources/donald_trump_envisage_d_envahir_le_groenland_quelles_reactio_20260126_1828/audio.mp3",
+      "text_path": "resources/donald_trump_envisage_d_envahir_le_groenland_quelles_reactio_20260126_1828/text.md"
     },
     {
       "id": "une_correspondante_a_20251217_1837",

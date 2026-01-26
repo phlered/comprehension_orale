@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-26T18:31:18.509993",
-  "total_resources": 249,
+  "generated_at": "2026-01-26T18:39:13.053379",
+  "total_resources": 252,
   "languages": [
+    "nl",
     "eng",
-    "cor",
     "it",
+    "cor",
     "all",
-    "esp",
-    "nl"
+    "esp"
   ],
   "resources": [
     {
@@ -585,6 +585,24 @@
       "vocab_count": 31,
       "audio_path": "resources/le_systeme_educatif_20251216_1855/audio.mp3",
       "text_path": "resources/le_systeme_educatif_20251216_1855/text.md"
+    },
+    {
+      "id": "la_chute_du_gouvernement_au_venezuela_suite_a_l_attaque_amer_20260126_1837",
+      "langue": "esp",
+      "prompt": "La chute du gouvernement au Venezuela suite à l'attaque américaine : quel impact pour l'équilibre régional ?",
+      "resume": "La chute du gouvernement au Venezuela",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2026-01-26 18:37:26",
+      "longueur": 350,
+      "text_preview": "La reciente caída del gobierno en Venezuela, precipitada por una intervención militar estadounidense, ha generado una serie de repercusiones significativas en el equilibrio geopolítico de América del ...",
+      "vocab_count": 35,
+      "audio_path": "resources/la_chute_du_gouvernement_au_venezuela_suite_a_l_attaque_amer_20260126_1837/audio.mp3",
+      "text_path": "resources/la_chute_du_gouvernement_au_venezuela_suite_a_l_attaque_amer_20260126_1837/text.md"
     },
     {
       "id": "die_tiere_20260102_1014",
@@ -2603,6 +2621,24 @@
       "text_path": "resources/presente_une_region_20251218_0922/text.md"
     },
     {
+      "id": "le_mercosur_avantages_et_inconvenients_vu_depuis_l_amerique_20260126_1836",
+      "langue": "esp",
+      "prompt": "Le mercosur : avantages et inconvénients vu depuis l'Amérique du Sud",
+      "resume": "Le Mercosur en Amérique du Sud",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇦🇷",
+      "voix_variant": "hisp",
+      "date": "2026-01-26 18:36:40",
+      "longueur": 350,
+      "text_preview": "El Mercosur, o Mercado Común del Sur, es uno de los bloques económicos más significativos en América del Sur, compuesto por Argentina, Brasil, Paraguay, Uruguay y Venezuela, aunque este último está su...",
+      "vocab_count": 35,
+      "audio_path": "resources/le_mercosur_avantages_et_inconvenients_vu_depuis_l_amerique_20260126_1836/audio.mp3",
+      "text_path": "resources/le_mercosur_avantages_et_inconvenients_vu_depuis_l_amerique_20260126_1836/text.md"
+    },
+    {
       "id": "commander_une_pizza_20251216_1220",
       "langue": "nl",
       "prompt": "Commander une pizza",
@@ -3573,6 +3609,24 @@
       "vocab_count": 36,
       "audio_path": "resources/raconte_le_voyage_de_20251222_0946/audio.mp3",
       "text_path": "resources/raconte_le_voyage_de_20251222_0946/text.md"
+    },
+    {
+      "id": "l_histoire_du_venezuela_depuis_1950_20260126_1838",
+      "langue": "esp",
+      "prompt": "L'histoire du Vénézuela depuis 1950",
+      "resume": "L'histoire du Vénézuela depuis 1950",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇪🇸",
+      "voix_variant": "esp",
+      "date": "2026-01-26 18:38:39",
+      "longueur": 350,
+      "text_preview": "Desde 1950, la historia de Venezuela ha sido un reflejo de altibajos económicos, transformaciones políticas y profundos cambios sociales. Durante la década de 1950, el país experimentó un auge económi...",
+      "vocab_count": 35,
+      "audio_path": "resources/l_histoire_du_venezuela_depuis_1950_20260126_1838/audio.mp3",
+      "text_path": "resources/l_histoire_du_venezuela_depuis_1950_20260126_1838/text.md"
     },
     {
       "id": "are_social_media_inf_20251222_0956",

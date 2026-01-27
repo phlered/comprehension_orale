@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-26T18:39:16.617186",
-  "total_resources": 252,
+  "generated_at": "2026-01-27T19:01:54.343390",
+  "total_resources": 256,
   "languages": [
     "all",
-    "eng",
-    "nl",
-    "cor",
+    "esp",
     "it",
-    "esp"
+    "nl",
+    "eng",
+    "cor"
   ],
   "resources": [
     {
@@ -1109,6 +1109,24 @@
       "text_path": "resources/decris_une_journee_t_20251218_1059/text.md"
     },
     {
+      "id": "les_elections_des_deputes_en_angleterre_nombre_de_tours_le_t_20260127_1859",
+      "langue": "eng",
+      "prompt": "Les élections des députés en angleterre : nombre de tours, le type de suffrage",
+      "resume": "Les élections des députés en Angleterre",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2026-01-27 19:00:19",
+      "longueur": 300,
+      "text_preview": "The electoral process for Members of Parliament (MPs) in England is a pivotal aspect of the country's democratic system, known for its unique characteristics and historical significance. In England, t...",
+      "vocab_count": 35,
+      "audio_path": "resources/les_elections_des_deputes_en_angleterre_nombre_de_tours_le_t_20260127_1859/audio.mp3",
+      "text_path": "resources/les_elections_des_deputes_en_angleterre_nombre_de_tours_le_t_20260127_1859/text.md"
+    },
+    {
       "id": "raconte_le_reveillon_20251222_0943",
       "langue": "eng",
       "prompt": "Raconte le réveillon du Nouvel An dans une grande ville américaine.",
@@ -2009,6 +2027,24 @@
       "text_path": "resources/les_reseaux_sociaux_20260102_1007/text.md"
     },
     {
+      "id": "les_partis_politiques_en_angleterre_20260127_1858",
+      "langue": "eng",
+      "prompt": "Les partis politiques en Angleterre",
+      "resume": "Les partis politiques en Angleterre",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2026-01-27 18:59:09",
+      "longueur": 300,
+      "text_preview": "Political parties in England have a rich and diverse history, playing crucial roles in shaping the nation's political landscape. The United Kingdom, of which England is a part, predominantly features ...",
+      "vocab_count": 35,
+      "audio_path": "resources/les_partis_politiques_en_angleterre_20260127_1858/audio.mp3",
+      "text_path": "resources/les_partis_politiques_en_angleterre_20260127_1858/text.md"
+    },
+    {
       "id": "carta_a_los_reyes_ma_20251215_1549",
       "langue": "esp",
       "prompt": "Carta a los Reyes Magos",
@@ -2277,6 +2313,24 @@
       "vocab_count": 35,
       "audio_path": "resources/les_reseaux_sociaux_20251217_1138/audio.mp3",
       "text_path": "resources/les_reseaux_sociaux_20251217_1138/text.md"
+    },
+    {
+      "id": "l_arrivee_de_margaret_thatcher_au_pouvoir_20260127_1857",
+      "langue": "eng",
+      "prompt": "L'arrivée de Margaret Thatcher au pouvoir",
+      "resume": "L'arrivée de Margaret Thatcher au pouvoir",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2026-01-27 18:58:11",
+      "longueur": 300,
+      "text_preview": "Margaret Thatcher's arrival at the helm of British politics marked a significant turning point in the country's history. Born on October 13, 1925, in Grantham, England, Thatcher rose to prominence in ...",
+      "vocab_count": 35,
+      "audio_path": "resources/l_arrivee_de_margaret_thatcher_au_pouvoir_20260127_1857/audio.mp3",
+      "text_path": "resources/l_arrivee_de_margaret_thatcher_au_pouvoir_20260127_1857/text.md"
     },
     {
       "id": "la_pma_et_la_gpa_aux_20251227_2120",
@@ -3753,6 +3807,24 @@
       "vocab_count": 30,
       "audio_path": "resources/quels_sont_les_sites_20251210_2035/audio.mp3",
       "text_path": "resources/quels_sont_les_sites_20251210_2035/text.md"
+    },
+    {
+      "id": "irlande_du_nord_republique_irlandaise_histoire_20260127_1900",
+      "langue": "eng",
+      "prompt": "Irlande du Nord, République Irlandaise : histoire",
+      "resume": "Histoire de l'Irlande du Nord et de la République Irlandaise",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇬🇧",
+      "voix_variant": "eng",
+      "date": "2026-01-27 19:01:22",
+      "longueur": 300,
+      "text_preview": "The history of Northern Ireland and the Republic of Ireland is a tapestry woven with complexity, conflict, and cultural richness. This narrative begins with the Anglo-Norman invasion of Ireland in the...",
+      "vocab_count": 35,
+      "audio_path": "resources/irlande_du_nord_republique_irlandaise_histoire_20260127_1900/audio.mp3",
+      "text_path": "resources/irlande_du_nord_republique_irlandaise_histoire_20260127_1900/text.md"
     },
     {
       "id": "decris_une_journee_t_20251218_1047",

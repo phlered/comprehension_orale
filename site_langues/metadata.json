@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-27T19:01:54.343390",
-  "total_resources": 256,
+  "generated_at": "2026-01-28T08:40:36.364543",
+  "total_resources": 259,
   "languages": [
+    "eng",
     "all",
+    "cor",
     "esp",
     "it",
-    "nl",
-    "eng",
-    "cor"
+    "nl"
   ],
   "resources": [
     {
@@ -443,6 +443,24 @@
       "text_path": "resources/menu_navideno_saluda_20251215_1549/text.md"
     },
     {
+      "id": "vacances_au_salzkammergut_en_autriche_20260128_0838",
+      "langue": "all",
+      "prompt": "Vacances au Salzkammergut en Autriche",
+      "resume": "Vacances au Salzkammergut en Autriche",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-28 08:38:35",
+      "longueur": 300,
+      "text_preview": "Urlaub im Salzkammergut: Ein unvergessliches Erlebnis\n\nDas Salzkammergut, eine der malerischsten Regionen Österreichs, bietet Reisenden eine perfekte Mischung aus natürlicher Schönheit, kulturellem Er...",
+      "vocab_count": 35,
+      "audio_path": "resources/vacances_au_salzkammergut_en_autriche_20260128_0838/audio.mp3",
+      "text_path": "resources/vacances_au_salzkammergut_en_autriche_20260128_0838/text.md"
+    },
+    {
       "id": "demander_un_rendez_v_20251216_1227",
       "langue": "nl",
       "prompt": "Demander un rendez-vous chez le médecin",
@@ -459,6 +477,24 @@
       "vocab_count": 35,
       "audio_path": "resources/demander_un_rendez_v_20251216_1227/audio.mp3",
       "text_path": "resources/demander_un_rendez_v_20251216_1227/text.md"
+    },
+    {
+      "id": "le_salzkammergut_en_autriche_histoire_du_sel_20260128_0837",
+      "langue": "all",
+      "prompt": "Le Salzkammergut en Autriche : histoire du sel",
+      "resume": "L'histoire du sel au Salzkammergut",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-28 08:38:05",
+      "longueur": 300,
+      "text_preview": "Das Salzkammergut ist eine malerische Region in Österreich, die nicht nur für ihre atemberaubenden Seen und majestätischen Berge bekannt ist, sondern auch eine reiche und faszinierende Geschichte des ...",
+      "vocab_count": 34,
+      "audio_path": "resources/le_salzkammergut_en_autriche_histoire_du_sel_20260128_0837/audio.mp3",
+      "text_path": "resources/le_salzkammergut_en_autriche_histoire_du_sel_20260128_0837/text.md"
     },
     {
       "id": "la_crise_de_l_identi_20251216_1903",
@@ -891,6 +927,24 @@
       "vocab_count": 34,
       "audio_path": "resources/aller_travailler_en_20251226_1948/audio.mp3",
       "text_path": "resources/aller_travailler_en_20251226_1948/text.md"
+    },
+    {
+      "id": "salzburg_a_l_epoque_de_mozart_20260128_0839",
+      "langue": "all",
+      "prompt": "Salzburg à l'époque de Mozart",
+      "resume": "Salzburg à l'époque de Mozart",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-01-28 08:39:48",
+      "longueur": 300,
+      "text_preview": "Salzburg zur Zeit Mozarts war eine Stadt voller musikalischer und kultureller Blüte, geprägt durch die Einflüsse des Barocks. Wolfgang Amadeus Mozart wurde 1756 in diese dynamische Umgebung hineingebo...",
+      "vocab_count": 35,
+      "audio_path": "resources/salzburg_a_l_epoque_de_mozart_20260128_0839/audio.mp3",
+      "text_path": "resources/salzburg_a_l_epoque_de_mozart_20260128_0839/text.md"
     },
     {
       "id": "een_dag_op_het_stran_20251227_2144",

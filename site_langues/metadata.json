@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-28T08:40:36.364543",
-  "total_resources": 259,
+  "generated_at": "2026-03-25T19:38:33.381480",
+  "total_resources": 260,
   "languages": [
-    "eng",
-    "all",
-    "cor",
-    "esp",
+    "nl",
     "it",
-    "nl"
+    "all",
+    "esp",
+    "cor",
+    "eng"
   ],
   "resources": [
     {
@@ -4653,6 +4653,24 @@
       "vocab_count": 35,
       "audio_path": "resources/presente_une_grande_20251218_0922/audio.mp3",
       "text_path": "resources/presente_une_grande_20251218_0922/text.md"
+    },
+    {
+      "id": "voyage_allemagne",
+      "langue": "eng",
+      "prompt": "Exchange trip to Germany",
+      "resume": "A French student's week-long exchange in Germany, visiting Mainz, Heidelberg, attending school, and experiencing German culture with her host family",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "",
+      "voix_variant": "",
+      "date": "2026-03-25 19:37:32",
+      "longueur": 1150,
+      "text_preview": "",
+      "vocab_count": 0,
+      "audio_path": "resources/voyage_allemagne/audio.mp3",
+      "text_path": "resources/voyage_allemagne/text.md"
     },
     {
       "id": "un_correspondant_bri_20251217_1837",

@@ -7,6 +7,9 @@ niveau: B2
 genre: femme
 date_generation: 2026-03-25 19:37:32
 ---
+
+## Text
+
 Our trip to Germany began and ended in exactly the same way—with music, and more specifically with “99 Luftballons” by Nena. It instantly set the tone for what turned out to be an unforgettable and truly amazing experience.
 
 First, we had to drive to Dijon. We left at 11:30 a.m., listening to music the whole way (including our now “theme song”), and arrived at the Palais des Sports at around 1:30 p.m. From there, we continued by bus to Trier. The German and French students were separated, and the journey lasted about five and a half hours. We even passed through Luxembourg, saw a stork, and spotted a beautiful rainbow—like a perfect welcome to the adventure ahead.
@@ -32,3 +35,5 @@ On Friday, I had a full morning of classes again: biology, physics, French, math
 On Saturday, we played cards in the morning before leaving at 11:30 with Antonia and her mother. Her father, brother, and sister had gone to a family lunch. Saying goodbye was emotional—we all had tears in our eyes and took a long time to part. Then, between Dijon and Auxerre, Clemence’s parents picked me up.
 
 This trip was absolutely incredible. I discovered a new culture, improved my language skills, met amazing people, and created unforgettable memories. It wasn’t just a school exchange—it was a truly wonderful human experience that I will never forget.
+## Vocabulary
+

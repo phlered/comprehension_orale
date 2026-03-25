@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-25T19:38:33.381480",
+  "generated_at": "2026-03-25T19:44:24.130997",
   "total_resources": 260,
   "languages": [
-    "nl",
+    "eng",
     "it",
-    "all",
     "esp",
-    "cor",
-    "eng"
+    "all",
+    "nl",
+    "cor"
   ],
   "resources": [
     {
@@ -4667,7 +4667,7 @@
       "voix_variant": "",
       "date": "2026-03-25 19:37:32",
       "longueur": 1150,
-      "text_preview": "",
+      "text_preview": "Our trip to Germany began and ended in exactly the same way—with music, and more specifically with “99 Luftballons” by Nena. It instantly set the tone for what turned out to be an unforgettable and tr...",
       "vocab_count": 0,
       "audio_path": "resources/voyage_allemagne/audio.mp3",
       "text_path": "resources/voyage_allemagne/text.md"

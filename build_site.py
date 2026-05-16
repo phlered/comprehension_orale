@@ -22,6 +22,7 @@ RESOURCES_DIR = SITE_DIR / "resources"
 LANGUAGE_MAP = {
     "Français": "fr",
     "Allemand": "all",
+    "Allemand (Autriche)": "all",
     "Anglais": "eng",
     "Anglais (US)": "eng",
     "Anglais (UK)": "eng",

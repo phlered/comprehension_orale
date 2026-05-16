@@ -81,6 +81,14 @@ class VoiceConfig:
                 "de-AT-JonasNeural",
             ]
         },
+        "at": {
+            "female": [
+                "de-AT-IngridNeural",
+            ],
+            "male": [
+                "de-AT-JonasNeural",
+            ]
+        },
         "eng": {
             "female": [
                 "en-GB-LibbyNeural",
@@ -1320,8 +1328,8 @@ Exemples:
     parser.add_argument(
         "-l", "--langue",
         required=True,
-        choices=['fr', 'all', 'eng', 'us', 'esp', 'hisp', 'nl', 'co', 'it'],
-        help="Langue (fr=français, all=allemand, eng=anglais UK, us=anglais US, esp=espagnol, hisp=hispanique, nl=néerlandais, co=coréen)"
+        choices=['fr', 'all', 'eng', 'us', 'esp', 'hisp', 'nl', 'at', 'co', 'it'],
+        help="Langue (fr=français, all=allemand, at=allemand autrichien, eng=anglais UK, us=anglais US, esp=espagnol, hisp=hispanique, nl=néerlandais, co=coréen)"
     )
 
     parser.add_argument(

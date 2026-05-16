@@ -61,6 +61,14 @@ class LanguageConfig:
             "md2mp3_code": "all",
             "description": "en allemand"
         },
+        "at": {
+            "code": "at",
+            "display": "Allemand (Autriche)",
+            "label_text": "Text",
+            "label_vocab": "Wortschatz",
+            "md2mp3_code": "at",
+            "description": "en allemand autrichien"
+        },
         "esp": {
             "code": "esp",
             "display": "Espagnol (Espagne)",

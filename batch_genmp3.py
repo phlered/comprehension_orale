@@ -311,7 +311,7 @@ Exemples:
     langues = [l.strip() for l in args.langues.split(',')]
     
     # Valider les codes de langues
-    valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']
+    valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'at', 'co', 'cor', 'it']
     invalid_langs = [l for l in langues if l not in valid_langs]
     if invalid_langs:
         print(f"❌ Erreur: Code(s) de langue invalide(s): {', '.join(invalid_langs)}")
@@ -323,6 +323,7 @@ Exemples:
         print(f"   esp   = Espagnol Espagne ✅")
         print(f"   hisp  = Espagnol Amérique ⚠️  (voix limitées)")
         print(f"   all   = Allemand ❓ (non testé)")
+        print(f"   at    = Allemand Autrichien ✅ (voix de Vienne)")
         print(f"   co/cor= Coréen ✅")
         print(f"   it    = Italien ✅")
         sys.exit(1)

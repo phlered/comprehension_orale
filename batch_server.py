@@ -216,7 +216,7 @@ def create_app(project_root: str = "."):
             delay_float = 40.0
         
         # Validate languages
-        valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'co', 'cor', 'it']
+        valid_langs = ['fr', 'eng', 'us', 'esp', 'hisp', 'nl', 'all', 'at', 'co', 'cor', 'it']
         langs = [l.strip() for l in languages.split(',')]
         invalid_langs = [l for l in langs if l not in valid_langs]
         if invalid_langs:

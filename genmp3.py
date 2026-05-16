@@ -721,7 +721,7 @@ Exemples:
     parser.add_argument(
         '-l', '--langue',
         required=True,
-        choices=['fr', 'eng', 'us', 'all', 'esp', 'hisp', 'nl', 'cor', 'it'],
+        choices=['fr', 'eng', 'us', 'all', 'at', 'esp', 'hisp', 'nl', 'cor', 'it'],
         help=f"Langue cible. Options: {LanguageConfig.list_languages()}"
     )
 

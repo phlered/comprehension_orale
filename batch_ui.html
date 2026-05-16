@@ -633,6 +633,21 @@
                     body: formData
                 });
 
+                if (!response.ok) {
+                    let errorMessage = `Erreur serveur (${response.status})`;
+                    try {
+                        const errorData = await response.json();
+                        if (errorData.error) {
+                            errorMessage = errorData.error;
+                        }
+                    } catch (e) {
+                        // Réponse non JSON : on garde le message par défaut.
+                    }
+                    showStatus(`❌ ${errorMessage}`, 'error');
+                    appendOutput(`ERREUR API: ${errorMessage}`);
+                    return;
+                }
+
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
                 let buffer = '';

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-16T20:06:08.789017",
-  "total_resources": 262,
+  "generated_at": "2026-05-26T12:09:11.161501",
+  "total_resources": 267,
   "languages": [
-    "it",
-    "all",
     "cor",
-    "esp",
+    "it",
     "nl",
-    "eng"
+    "esp",
+    "eng",
+    "all"
   ],
   "resources": [
     {
@@ -27,6 +27,24 @@
       "vocab_count": 35,
       "audio_path": "resources/should_smartphones_b_20251222_0954/audio.mp3",
       "text_path": "resources/should_smartphones_b_20251222_0954/text.md"
+    },
+    {
+      "id": "histoire_de_la_ville_de_york_20260526_1207",
+      "langue": "all",
+      "prompt": "Histoire de la ville de York",
+      "resume": "L'histoire de la ville de York",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-26 12:07:45",
+      "longueur": 350,
+      "text_preview": "York, eine Stadt im Norden Englands, ist ein faszinierendes Zeugnis der reichen und vielfältigen Geschichte Großbritanniens. Gegründet im Jahr 71 n. Chr. von den Römern unter dem Namen Eboracum, entwi...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_la_ville_de_york_20260526_1207/audio.mp3",
+      "text_path": "resources/histoire_de_la_ville_de_york_20260526_1207/text.md"
     },
     {
       "id": "going_to_the_grocery_20251227_2112",
@@ -2873,6 +2891,24 @@
       "text_path": "resources/demander_des_informa_20251210_2033/text.md"
     },
     {
+      "id": "art_la_peinture_moderne_20260526_1204",
+      "langue": "all",
+      "prompt": "art : la peinture moderne",
+      "resume": "La peinture moderne",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-26 12:04:17",
+      "longueur": 350,
+      "text_preview": "Die moderne Malerei, ein faszinierendes Kaleidoskop der menschlichen Kreativität, hat sich als eine der dynamischsten und einflussreichsten Bewegungen der Kunstgeschichte etabliert. Im Gegensatz zu de...",
+      "vocab_count": 35,
+      "audio_path": "resources/art_la_peinture_moderne_20260526_1204/audio.mp3",
+      "text_path": "resources/art_la_peinture_moderne_20260526_1204/text.md"
+    },
+    {
       "id": "les_reseaux_sociaux_20251216_1856",
       "langue": "all",
       "prompt": "Les réseaux sociaux et les jeunes",
@@ -3071,6 +3107,24 @@
       "text_path": "resources/la_famiglia_20251215_1758/text.md"
     },
     {
+      "id": "histoire_de_pompei_20260526_1206",
+      "langue": "all",
+      "prompt": "Histoire de Pompéi",
+      "resume": "L'histoire de Pompéi",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-26 12:06:36",
+      "longueur": 350,
+      "text_preview": "Die Geschichte von Pompeji ist ebenso faszinierend wie tragisch und bietet uns einen außergewöhnlichen Einblick in das Leben der Antike. Diese römische Stadt, die am Fuße des Vesuvs lag, erlangte eine...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_pompei_20260526_1206/audio.mp3",
+      "text_path": "resources/histoire_de_pompei_20260526_1206/text.md"
+    },
+    {
       "id": "nochebuena_en_famili_20251215_1548",
       "langue": "esp",
       "prompt": "Nochebuena en familia",
@@ -3105,6 +3159,24 @@
       "vocab_count": 30,
       "audio_path": "resources/la_famiglia_20251215_1756/audio.mp3",
       "text_path": "resources/la_famiglia_20251215_1756/text.md"
+    },
+    {
+      "id": "histoire_de_la_ville_de_eindhoven_20260526_1208",
+      "langue": "all",
+      "prompt": "Histoire de la ville de Eindhoven",
+      "resume": "L'histoire de la ville d'Eindhoven",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-26 12:08:50",
+      "longueur": 350,
+      "text_preview": "Die Stadt Eindhoven, bekannt als das Herz der technologischen Innovation in den Niederlanden, hat eine bemerkenswerte Geschichte, die tief in das Mittelalter zurückreicht. Gegründet im Jahr 1232, erhi...",
+      "vocab_count": 34,
+      "audio_path": "resources/histoire_de_la_ville_de_eindhoven_20260526_1208/audio.mp3",
+      "text_path": "resources/histoire_de_la_ville_de_eindhoven_20260526_1208/text.md"
     },
     {
       "id": "partir_en_vacances_e_20251216_1850",
@@ -3501,6 +3573,24 @@
       "vocab_count": 31,
       "audio_path": "resources/explique_ce_que_tu_m_20251218_1047/audio.mp3",
       "text_path": "resources/explique_ce_que_tu_m_20251218_1047/text.md"
+    },
+    {
+      "id": "la_reunification_allemande_20260526_1205",
+      "langue": "all",
+      "prompt": "la réunification allemande",
+      "resume": "La réunification allemande",
+      "niveau": "C1",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-26 12:05:23",
+      "longueur": 350,
+      "text_preview": "Die Wiedervereinigung Deutschlands, die am 3. Oktober 1990 offiziell vollzogen wurde, markiert einen der bedeutendsten Wendepunkte in der jüngeren europäischen Geschichte. Dieses Ereignis besiegelte n...",
+      "vocab_count": 36,
+      "audio_path": "resources/la_reunification_allemande_20260526_1205/audio.mp3",
+      "text_path": "resources/la_reunification_allemande_20260526_1205/text.md"
     },
     {
       "id": "presente_le_tourisme_20251218_0924",

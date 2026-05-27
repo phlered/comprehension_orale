@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-26T12:09:11.161501",
-  "total_resources": 267,
+  "generated_at": "2026-05-27T16:55:18.886148",
+  "total_resources": 268,
   "languages": [
-    "cor",
-    "it",
+    "all",
     "nl",
-    "esp",
+    "it",
     "eng",
-    "all"
+    "cor",
+    "esp"
   ],
   "resources": [
     {
@@ -1125,6 +1125,24 @@
       "vocab_count": 35,
       "audio_path": "resources/faut_il_limiter_l_us_20251216_1858/audio.mp3",
       "text_path": "resources/faut_il_limiter_l_us_20251216_1858/text.md"
+    },
+    {
+      "id": "histoire_de_gemert_20260527_1654",
+      "langue": "all",
+      "prompt": "histoire de Gemert",
+      "resume": "L'histoire de Gemert",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 16:55:07",
+      "longueur": 300,
+      "text_preview": "Gemert, eine charmante Stadt in der Provinz Noord-Brabant in den Niederlanden, hat eine reiche und faszinierende Geschichte, die bis ins Mittelalter zurückreicht. Die ersten urkundlichen Erwähnungen v...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_gemert_20260527_1654/audio.mp3",
+      "text_path": "resources/histoire_de_gemert_20260527_1654/text.md"
     },
     {
       "id": "l_immigration_en_eur_20251216_1855",

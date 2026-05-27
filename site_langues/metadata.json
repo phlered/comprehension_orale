@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-27T16:55:18.886148",
-  "total_resources": 268,
+  "generated_at": "2026-05-27T16:59:17.372037",
+  "total_resources": 269,
   "languages": [
-    "all",
-    "nl",
-    "it",
     "eng",
+    "it",
+    "nl",
     "cor",
+    "all",
     "esp"
   ],
   "resources": [
@@ -27,6 +27,24 @@
       "vocab_count": 35,
       "audio_path": "resources/should_smartphones_b_20251222_0954/audio.mp3",
       "text_path": "resources/should_smartphones_b_20251222_0954/text.md"
+    },
+    {
+      "id": "histoire_de_nijmegen_20260527_1658",
+      "langue": "all",
+      "prompt": "Histoire de Nijmegen",
+      "resume": "L'histoire de Nijmegen",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 16:59:04",
+      "longueur": 300,
+      "text_preview": "Nijmegen, eine der ältesten Städte der Niederlande, bietet eine reiche und faszinierende Geschichte, die tief in die Vergangenheit zurückreicht. Die Ursprünge der Stadt lassen sich bis in die Römerzei...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_nijmegen_20260527_1658/audio.mp3",
+      "text_path": "resources/histoire_de_nijmegen_20260527_1658/text.md"
     },
     {
       "id": "histoire_de_la_ville_de_york_20260526_1207",

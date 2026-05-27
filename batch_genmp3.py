@@ -38,10 +38,13 @@ class PromptParser:
             content = f.read()
         
         # Pattern pour lignes numérotées: "1. ", "2. ", etc.
-        pattern = r'^\s*\d+\.\s+(.+)$'
+        # \s* étendu pour couvrir les caractères invisibles Unicode (U+2060 WORD JOINER, etc.)
+        pattern = r'^\s*\d+[\.\s\u2060\u200b\u200c\u200d\ufeff]*\s*(.+)$'
         
         for line in content.split('\n'):
-            match = re.match(pattern, line)
+            # Nettoyer les caractères invisibles Unicode fréquents (copier-coller mobile)
+            clean_line = line.replace('\u2060', '').replace('\u200b', '').replace('\u200c', '').replace('\u200d', '').replace('\ufeff', '')
+            match = re.match(r'^\s*\d+\.\s*(.+)$', clean_line)
             if match:
                 prompt_text = match.group(1).strip()
                 if prompt_text:  # Ignorer les lignes vides

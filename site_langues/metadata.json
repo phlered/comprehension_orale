@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-27T16:59:17.372037",
-  "total_resources": 269,
+  "generated_at": "2026-05-27T17:12:28.740498",
+  "total_resources": 275,
   "languages": [
-    "eng",
     "it",
-    "nl",
-    "cor",
     "all",
+    "nl",
+    "eng",
+    "cor",
     "esp"
   ],
   "resources": [
@@ -1505,6 +1505,24 @@
       "text_path": "resources/viaggiare_in_italia_20260102_1048/text.md"
     },
     {
+      "id": "les_points_communs_entre_les_langues_germaniques_20260527_1707",
+      "langue": "all",
+      "prompt": "Les points communs entre les langues germaniques",
+      "resume": "Les points communs entre les langues germaniques",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:07:57",
+      "longueur": 300,
+      "text_preview": "Die germanischen Sprachen, zu denen Deutsch, Englisch, Niederländisch, Schwedisch, Dänisch, Norwegisch und Isländisch gehören, teilen viele gemeinsame Merkmale, die auf ihre gemeinsame Ursprungsquelle...",
+      "vocab_count": 35,
+      "audio_path": "resources/les_points_communs_entre_les_langues_germaniques_20260527_1707/audio.mp3",
+      "text_path": "resources/les_points_communs_entre_les_langues_germaniques_20260527_1707/text.md"
+    },
+    {
       "id": "commander_un_sandwic_20251216_1228",
       "langue": "nl",
       "prompt": "Commander un sandwich dans une sandwicherie",
@@ -1737,6 +1755,24 @@
       "vocab_count": 34,
       "audio_path": "resources/generer_un_dialogue_20251210_1246/audio.mp3",
       "text_path": "resources/generer_un_dialogue_20251210_1246/text.md"
+    },
+    {
+      "id": "histoire_de_elsendorp_20260527_1702",
+      "langue": "all",
+      "prompt": "Histoire de Elsendorp",
+      "resume": "Histoire de Elsendorp",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "homme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:02:56",
+      "longueur": 300,
+      "text_preview": "Elsendorp, ein kleines Dorf in der südlichen Region der Niederlande, hat eine Geschichte, die reich an kulturellen und sozialen Veränderungen ist. Obwohl es auf den ersten Blick unauffällig erscheint,...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_elsendorp_20260527_1702/audio.mp3",
+      "text_path": "resources/histoire_de_elsendorp_20260527_1702/text.md"
     },
     {
       "id": "la_democratie_face_a_20251216_1901",
@@ -3413,6 +3449,24 @@
       "text_path": "resources/un_collegien_anglais_20251218_1058/text.md"
     },
     {
+      "id": "langue_et_identite_20260527_1704",
+      "langue": "all",
+      "prompt": "Langue et identité",
+      "resume": "Langue et identité",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:06:56",
+      "longueur": 300,
+      "text_preview": "Die Beziehung zwischen Sprache und Identität ist ein faszinierendes und vielschichtiges Thema. Sprache dient nicht nur der Kommunikation, sondern ist auch ein entscheidender Faktor bei der Bildung und...",
+      "vocab_count": 35,
+      "audio_path": "resources/langue_et_identite_20260527_1704/audio.mp3",
+      "text_path": "resources/langue_et_identite_20260527_1704/text.md"
+    },
+    {
       "id": "comprare_i_vestiti_20251215_1802",
       "langue": "it",
       "prompt": "Comprare i vestiti",
@@ -3627,6 +3681,24 @@
       "vocab_count": 36,
       "audio_path": "resources/la_reunification_allemande_20260526_1205/audio.mp3",
       "text_path": "resources/la_reunification_allemande_20260526_1205/text.md"
+    },
+    {
+      "id": "relation_entre_les_hommes_et_les_animaux_20260527_1703",
+      "langue": "all",
+      "prompt": "Relation entre les hommes et les animaux",
+      "resume": "La relation entre les hommes et les animaux",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:03:39",
+      "longueur": 300,
+      "text_preview": "Die Beziehung zwischen Menschen und Tieren ist seit jeher von großer Bedeutung und hat sich im Laufe der Jahrhunderte vielfältig entwickelt. Ursprünglich lebten Menschen und Tiere in einer gegenseitig...",
+      "vocab_count": 35,
+      "audio_path": "resources/relation_entre_les_hommes_et_les_animaux_20260527_1703/audio.mp3",
+      "text_path": "resources/relation_entre_les_hommes_et_les_animaux_20260527_1703/text.md"
     },
     {
       "id": "presente_le_tourisme_20251218_0924",
@@ -4331,6 +4403,24 @@
       "text_path": "resources/comment_les_habitant_20251210_2036/text.md"
     },
     {
+      "id": "histoire_de_la_musique_20260527_1711",
+      "langue": "all",
+      "prompt": "Histoire de la musique",
+      "resume": "L'histoire de la musique",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:11:55",
+      "longueur": 300,
+      "text_preview": "Die Geschichte der Musik ist ein faszinierendes Thema, das sich über Jahrhunderte erstreckt und viele Kulturen und Gesellschaften umfasst. Die Ursprünge der Musik reichen bis in die prähistorische Zei...",
+      "vocab_count": 35,
+      "audio_path": "resources/histoire_de_la_musique_20260527_1711/audio.mp3",
+      "text_path": "resources/histoire_de_la_musique_20260527_1711/text.md"
+    },
+    {
       "id": "presente_une_fete_ou_20251218_1049",
       "langue": "esp",
       "prompt": "Présente une fête ou une tradition simple dans un pays hispanophone.",
@@ -4797,6 +4887,24 @@
       "vocab_count": 30,
       "audio_path": "resources/l_egalite_hommes_fem_20251216_1856/audio.mp3",
       "text_path": "resources/l_egalite_hommes_fem_20251216_1856/text.md"
+    },
+    {
+      "id": "faits_interessants_par_rapport_au_violon_20260527_1708",
+      "langue": "all",
+      "prompt": "Faits intéressants par rapport au violon",
+      "resume": "Faits intéressants sur le violon",
+      "niveau": "B2",
+      "classe": "",
+      "axe": "",
+      "genre": "femme",
+      "drapeau": "🇩🇪",
+      "voix_variant": "all",
+      "date": "2026-05-27 17:11:06",
+      "longueur": 300,
+      "text_preview": "Der Geige, bekannt als eines der herausforderndsten und elegantesten Instrumente der klassischen Musik, haftet eine beeindruckende Geschichte und viele faszinierende Fakten an. Ursprünglich im 16. Jah...",
+      "vocab_count": 35,
+      "audio_path": "resources/faits_interessants_par_rapport_au_violon_20260527_1708/audio.mp3",
+      "text_path": "resources/faits_interessants_par_rapport_au_violon_20260527_1708/text.md"
     },
     {
       "id": "presente_une_grande_20251218_0922",
